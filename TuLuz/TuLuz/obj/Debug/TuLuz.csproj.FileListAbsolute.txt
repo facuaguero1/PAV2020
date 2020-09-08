@@ -49,3 +49,23 @@ C:\Users\matgo\Desktop\2020\PAV 1\TP\TuLuz\TuLuz\obj\Debug\TuLuz.Forums.Clientes
 C:\Users\matgo\Desktop\2020\PAV 1\TP\TuLuz\TuLuz\obj\Debug\TuLuz.Forums.Clientes.ModificarBarrio.resources
 C:\Users\matgo\Desktop\2020\PAV 1\TP\TuLuz\TuLuz\obj\Debug\TuLuz.Forums.VerPerfil.resources
 C:\Users\Fabri\Desktop\TuLuz\TuLuz\obj\Debug\TuLuz.Forums.VerPerfil.resources
+C:\Users\Fabri\Documents\GitHub\PAV2020\TuLuz\TuLuz\bin\Debug\TuLuz.exe.config
+C:\Users\Fabri\Documents\GitHub\PAV2020\TuLuz\TuLuz\bin\Debug\TuLuz.exe
+C:\Users\Fabri\Documents\GitHub\PAV2020\TuLuz\TuLuz\bin\Debug\TuLuz.pdb
+C:\Users\Fabri\Documents\GitHub\PAV2020\TuLuz\TuLuz\obj\Debug\TuLuz.csprojAssemblyReference.cache
+C:\Users\Fabri\Documents\GitHub\PAV2020\TuLuz\TuLuz\obj\Debug\TuLuz.Forums.AltaBarrio.resources
+C:\Users\Fabri\Documents\GitHub\PAV2020\TuLuz\TuLuz\obj\Debug\TuLuz.Forums.Clientes.BorrarBarrio.resources
+C:\Users\Fabri\Documents\GitHub\PAV2020\TuLuz\TuLuz\obj\Debug\TuLuz.Forums.Clientes.ConsultarBarrio.resources
+C:\Users\Fabri\Documents\GitHub\PAV2020\TuLuz\TuLuz\obj\Debug\TuLuz.Forums.Clientes.ModificarBarrio.resources
+C:\Users\Fabri\Documents\GitHub\PAV2020\TuLuz\TuLuz\obj\Debug\TuLuz.Forums.AltaCliente.resources
+C:\Users\Fabri\Documents\GitHub\PAV2020\TuLuz\TuLuz\obj\Debug\TuLuz.Forums.Clientes.BorrarCliente.resources
+C:\Users\Fabri\Documents\GitHub\PAV2020\TuLuz\TuLuz\obj\Debug\TuLuz.Forums.Clientes.ConsultarCliente.resources
+C:\Users\Fabri\Documents\GitHub\PAV2020\TuLuz\TuLuz\obj\Debug\TuLuz.Forums.Clientes.ModificarCliente.resources
+C:\Users\Fabri\Documents\GitHub\PAV2020\TuLuz\TuLuz\obj\Debug\TuLuz.Forums.Login.resources
+C:\Users\Fabri\Documents\GitHub\PAV2020\TuLuz\TuLuz\obj\Debug\TuLuz.Principal.resources
+C:\Users\Fabri\Documents\GitHub\PAV2020\TuLuz\TuLuz\obj\Debug\TuLuz.Forums.VerPerfil.resources
+C:\Users\Fabri\Documents\GitHub\PAV2020\TuLuz\TuLuz\obj\Debug\TuLuz.Properties.Resources.resources
+C:\Users\Fabri\Documents\GitHub\PAV2020\TuLuz\TuLuz\obj\Debug\TuLuz.csproj.GenerateResource.cache
+C:\Users\Fabri\Documents\GitHub\PAV2020\TuLuz\TuLuz\obj\Debug\TuLuz.csproj.CoreCompileInputs.cache
+C:\Users\Fabri\Documents\GitHub\PAV2020\TuLuz\TuLuz\obj\Debug\TuLuz.exe
+C:\Users\Fabri\Documents\GitHub\PAV2020\TuLuz\TuLuz\obj\Debug\TuLuz.pdb
