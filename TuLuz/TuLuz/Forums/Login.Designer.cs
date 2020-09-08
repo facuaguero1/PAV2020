@@ -84,8 +84,11 @@
             // txtPsw
             // 
             this.txtPsw.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.txtPsw.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtPsw.Location = new System.Drawing.Point(219, 183);
+            this.txtPsw.MaxLength = 14;
             this.txtPsw.Name = "txtPsw";
+            this.txtPsw.PasswordChar = '*';
             this.txtPsw.Size = new System.Drawing.Size(100, 20);
             this.txtPsw.TabIndex = 1;
             // 

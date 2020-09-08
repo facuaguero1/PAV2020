@@ -115,11 +115,19 @@
     <Compile Include="Forums\Principal.Designer.cs">
       <DependentUpon>Principal.cs</DependentUpon>
     </Compile>
+    <Compile Include="Forums\VerPerfil.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forums\VerPerfil.Designer.cs">
+      <DependentUpon>VerPerfil.cs</DependentUpon>
+    </Compile>
     <Compile Include="Negocio\EstructuraNegocios\Es_Barrio.cs" />
     <Compile Include="Negocio\EstructuraNegocios\Es_Clientes.cs" />
+    <Compile Include="Negocio\EstructuraNegocios\Es_Empleados.cs" />
     <Compile Include="Negocio\EstructuraNegocios\Es_Localidad.cs" />
     <Compile Include="Negocio\Ng_Barrios.cs" />
     <Compile Include="Negocio\Ng_Clientes.cs" />
+    <Compile Include="Negocio\Ng_Empleados.cs" />
     <Compile Include="Negocio\Ng_Localidad.cs" />
     <Compile Include="Negocio\Ng_Users.cs" />
     <Compile Include="Program.cs" />
@@ -153,6 +161,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Forums\Principal.resx">
       <DependentUpon>Principal.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forums\VerPerfil.resx">
+      <DependentUpon>VerPerfil.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>

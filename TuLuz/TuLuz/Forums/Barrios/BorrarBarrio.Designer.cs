@@ -51,12 +51,12 @@
             this.Panel_ModificarCliente = new System.Windows.Forms.Panel();
             this.label10 = new System.Windows.Forms.Label();
             this.btn_Aceptar = new System.Windows.Forms.Button();
-            this.label9 = new System.Windows.Forms.Label();
+            this.Localidad = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
             this.txt_NombreNuevo = new TuLuz.Clases.TextBox01();
-            this.txt_ApellidoNuevo = new TuLuz.Clases.TextBox01();
-            this.txt_CuitNuevo = new TuLuz.Clases.TextBox01();
+            this.txt_Localidad = new TuLuz.Clases.TextBox01();
+            this.txt_codBarrio = new TuLuz.Clases.TextBox01();
             this.label5 = new System.Windows.Forms.Label();
             this.btn_salir = new System.Windows.Forms.Button();
             this.btn_Modificar = new System.Windows.Forms.Button();
@@ -125,12 +125,14 @@
             this.Column2.HeaderText = "nombre";
             this.Column2.Name = "Column2";
             this.Column2.ReadOnly = true;
+            this.Column2.Width = 220;
             // 
             // Column3
             // 
             this.Column3.HeaderText = "Localidad";
             this.Column3.Name = "Column3";
             this.Column3.ReadOnly = true;
+            this.Column3.Width = 220;
             // 
             // btn_Buscar
             // 
@@ -274,12 +276,12 @@
             this.Panel_ModificarCliente.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.Panel_ModificarCliente.Controls.Add(this.label10);
             this.Panel_ModificarCliente.Controls.Add(this.btn_Aceptar);
-            this.Panel_ModificarCliente.Controls.Add(this.label9);
+            this.Panel_ModificarCliente.Controls.Add(this.Localidad);
             this.Panel_ModificarCliente.Controls.Add(this.label8);
             this.Panel_ModificarCliente.Controls.Add(this.label7);
             this.Panel_ModificarCliente.Controls.Add(this.txt_NombreNuevo);
-            this.Panel_ModificarCliente.Controls.Add(this.txt_ApellidoNuevo);
-            this.Panel_ModificarCliente.Controls.Add(this.txt_CuitNuevo);
+            this.Panel_ModificarCliente.Controls.Add(this.txt_Localidad);
+            this.Panel_ModificarCliente.Controls.Add(this.txt_codBarrio);
             this.Panel_ModificarCliente.Location = new System.Drawing.Point(110, 421);
             this.Panel_ModificarCliente.Name = "Panel_ModificarCliente";
             this.Panel_ModificarCliente.Size = new System.Drawing.Size(639, 299);
@@ -301,23 +303,23 @@
             this.btn_Aceptar.Name = "btn_Aceptar";
             this.btn_Aceptar.Size = new System.Drawing.Size(99, 42);
             this.btn_Aceptar.TabIndex = 7;
-            this.btn_Aceptar.Text = "Aceptar";
+            this.btn_Aceptar.Text = "Eliminar";
             this.btn_Aceptar.UseVisualStyleBackColor = true;
             this.btn_Aceptar.Click += new System.EventHandler(this.btn_Aceptar_Click);
             // 
-            // label9
+            // Localidad
             // 
-            this.label9.AutoSize = true;
-            this.label9.Location = new System.Drawing.Point(-5, 266);
-            this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(138, 25);
-            this.label9.TabIndex = 5;
-            this.label9.Text = "Cod Localidad";
+            this.Localidad.AutoSize = true;
+            this.Localidad.Location = new System.Drawing.Point(66, 266);
+            this.Localidad.Name = "Localidad";
+            this.Localidad.Size = new System.Drawing.Size(96, 25);
+            this.Localidad.TabIndex = 5;
+            this.Localidad.Text = "Localidad";
             // 
             // label8
             // 
             this.label8.AutoSize = true;
-            this.label8.Location = new System.Drawing.Point(49, 196);
+            this.label8.Location = new System.Drawing.Point(81, 193);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(81, 25);
             this.label8.TabIndex = 4;
@@ -326,7 +328,7 @@
             // label7
             // 
             this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(58, 128);
+            this.label7.Location = new System.Drawing.Point(87, 130);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(75, 25);
             this.label7.TabIndex = 3;
@@ -335,7 +337,7 @@
             // txt_NombreNuevo
             // 
             this.txt_NombreNuevo.Enabled = false;
-            this.txt_NombreNuevo.Location = new System.Drawing.Point(136, 196);
+            this.txt_NombreNuevo.Location = new System.Drawing.Point(182, 193);
             this.txt_NombreNuevo.Name = "txt_NombreNuevo";
             this.txt_NombreNuevo.pp_mensaje_error = null;
             this.txt_NombreNuevo.pp_nombre_campo = null;
@@ -344,29 +346,29 @@
             this.txt_NombreNuevo.Size = new System.Drawing.Size(208, 30);
             this.txt_NombreNuevo.TabIndex = 2;
             // 
-            // txt_ApellidoNuevo
+            // txt_Localidad
             // 
-            this.txt_ApellidoNuevo.Enabled = false;
-            this.txt_ApellidoNuevo.Location = new System.Drawing.Point(136, 263);
-            this.txt_ApellidoNuevo.Name = "txt_ApellidoNuevo";
-            this.txt_ApellidoNuevo.pp_mensaje_error = null;
-            this.txt_ApellidoNuevo.pp_nombre_campo = null;
-            this.txt_ApellidoNuevo.pp_nombre_tabla = null;
-            this.txt_ApellidoNuevo.pp_validable = false;
-            this.txt_ApellidoNuevo.Size = new System.Drawing.Size(208, 30);
-            this.txt_ApellidoNuevo.TabIndex = 1;
+            this.txt_Localidad.Enabled = false;
+            this.txt_Localidad.Location = new System.Drawing.Point(183, 263);
+            this.txt_Localidad.Name = "txt_Localidad";
+            this.txt_Localidad.pp_mensaje_error = null;
+            this.txt_Localidad.pp_nombre_campo = null;
+            this.txt_Localidad.pp_nombre_tabla = null;
+            this.txt_Localidad.pp_validable = false;
+            this.txt_Localidad.Size = new System.Drawing.Size(208, 30);
+            this.txt_Localidad.TabIndex = 1;
             // 
-            // txt_CuitNuevo
+            // txt_codBarrio
             // 
-            this.txt_CuitNuevo.Enabled = false;
-            this.txt_CuitNuevo.Location = new System.Drawing.Point(136, 125);
-            this.txt_CuitNuevo.Name = "txt_CuitNuevo";
-            this.txt_CuitNuevo.pp_mensaje_error = null;
-            this.txt_CuitNuevo.pp_nombre_campo = null;
-            this.txt_CuitNuevo.pp_nombre_tabla = null;
-            this.txt_CuitNuevo.pp_validable = false;
-            this.txt_CuitNuevo.Size = new System.Drawing.Size(208, 30);
-            this.txt_CuitNuevo.TabIndex = 0;
+            this.txt_codBarrio.Enabled = false;
+            this.txt_codBarrio.Location = new System.Drawing.Point(182, 125);
+            this.txt_codBarrio.Name = "txt_codBarrio";
+            this.txt_codBarrio.pp_mensaje_error = null;
+            this.txt_codBarrio.pp_nombre_campo = null;
+            this.txt_codBarrio.pp_nombre_tabla = null;
+            this.txt_codBarrio.pp_validable = false;
+            this.txt_codBarrio.Size = new System.Drawing.Size(208, 30);
+            this.txt_codBarrio.TabIndex = 0;
             // 
             // label5
             // 
@@ -420,6 +422,7 @@
             this.Name = "BorrarBarrio";
             this.Text = "Borrar Barrio";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
+            this.Load += new System.EventHandler(this.BorrarBarrio_Load);
             this.btn_limpiarCampo.ResumeLayout(false);
             this.btn_limpiarCampo.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.grid01)).EndInit();
@@ -454,12 +457,12 @@
         private System.Windows.Forms.Button btn_Buscar;
         private Clases.TextBox01 txt_BuscarCuit;
         private System.Windows.Forms.Button btn_Aceptar;
-        private System.Windows.Forms.Label label9;
+        private System.Windows.Forms.Label Localidad;
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.Label label7;
         private Clases.TextBox01 txt_NombreNuevo;
-        private Clases.TextBox01 txt_ApellidoNuevo;
-        private Clases.TextBox01 txt_CuitNuevo;
+        private Clases.TextBox01 txt_Localidad;
+        private Clases.TextBox01 txt_codBarrio;
         private System.Windows.Forms.Button btn_Modificar;
         private System.Windows.Forms.Label label10;
         private System.Windows.Forms.DataGridView grid01;

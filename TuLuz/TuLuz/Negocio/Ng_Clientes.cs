@@ -9,9 +9,6 @@ using System.Windows.Forms;
 using TuLuz.Negocio.EstructuraNegocios;
 
 
-
-
-
 namespace TuLuz.Negocio
 {
     class Ng_Clientes

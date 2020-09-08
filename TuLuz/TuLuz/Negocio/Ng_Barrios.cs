@@ -17,8 +17,9 @@ namespace TuLuz.Negocio
         public void Insertar(Es_Barrio Barrio)
         {
             String sqlInsertar = "INSERT INTO Barrio(codBarrio,nombre,codLocalidad) VALUES(" +Barrio.codBarrio + ",'" + Barrio.nombre + "'," + Barrio.codLocalidad + ")";
-            MessageBox.Show(sqlInsertar);
+            MessageBox.Show("El Barrio fue creado con exito!", "CREACIÓN EXITOSA", MessageBoxButtons.OK, MessageBoxIcon.Information);
             _BD.Insertar(sqlInsertar);
+            
         }
 
         public DataTable Todos_los_Barrios()

@@ -14,7 +14,7 @@ namespace TuLuz.Clases
     {
         SqlConnection Conexion = new SqlConnection();
         SqlCommand Cmd = new SqlCommand();
-        //string Cadena_Conexion = "Data Source=(Localdb)\\MatiasServidor;Initial Catalog=DATABASE_TULUZ;Integrated Security=True";
+        string Cadena_Conexion = "Data Source=(Localdb)\\MatiasServidor;Initial Catalog=_TuLuz;Integrated Security=True";
 
 
         private void conectar()

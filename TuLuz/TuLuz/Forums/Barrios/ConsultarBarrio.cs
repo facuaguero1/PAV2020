@@ -21,6 +21,7 @@ namespace TuLuz.Forums.Clientes
     public partial class ConsultarBarrio : Form
     {
         Ng_Barrios Barrio = new Ng_Barrios();
+        Ng_Localidad Localidad = new Ng_Localidad();
         public string cod { get; set; } 
         
         public ConsultarBarrio()
@@ -48,11 +49,12 @@ namespace TuLuz.Forums.Clientes
                 this.cod = grid01.CurrentRow.Cells[0].Value.ToString();
                 DataTable tabla = new DataTable();
                 tabla = Barrio.RecuperarBarrio_Codigo(cod);
-                txt_CuitNuevo.Text = tabla.Rows[0]["codBarrio"].ToString();
+                txt_codBarrio.Text = tabla.Rows[0]["codBarrio"].ToString();
                 txt_NombreNuevo.Text = tabla.Rows[0]["nombre"].ToString();
-                txt_ApellidoNuevo.Text = tabla.Rows[0]["codLocalidad"].ToString();
-
-
+                string codBarrio = tabla.Rows[0]["codLocalidad"].ToString();
+                DataTable tabla2 = new DataTable();
+                tabla2 = Localidad.Buscar_Localidad_Codigo(codBarrio);
+                txt_Localidad.Text = tabla2.Rows[0]["nombre"].ToString();
             }
         }
 
@@ -109,6 +111,11 @@ namespace TuLuz.Forums.Clientes
         }
 
         private void label7_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void ConsultarBarrio_Load(object sender, EventArgs e)
         {
 
         }

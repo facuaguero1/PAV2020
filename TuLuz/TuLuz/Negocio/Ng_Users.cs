@@ -18,7 +18,7 @@ namespace TuLuz.Negocio
         public Respuesta validarUsuario(string usr, string pwd)
         {
             string sql = "";
-            sql = "SELECT * FROM Usuario WHERE usuario= '" + usr + "' AND password= '" + pwd+"'";
+            sql = "SELECT * FROM Usuario WHERE usuario= '" + usr + "' AND password= '" + pwd +"'";
             DataTable tabla = new DataTable();
             tabla = BaseDatos.Consulta(sql);
 

@@ -28,7 +28,7 @@ namespace TuLuz.Negocio
         }
         public DataTable Buscar_Localidad_Codigo(string cod)
         {
-            string sql = "SELECT * FROM Localidad WHERE codLocalidad = %" + cod.Trim() + "%";
+            string sql = "SELECT * FROM Localidad WHERE codLocalidad = " + cod.Trim();
             DataTable tabla = new DataTable();
             tabla = _BD.Consulta(sql);
             return tabla;

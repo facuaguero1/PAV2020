@@ -120,13 +120,13 @@
             this.btn_ModificarClientes = new System.Windows.Forms.Button();
             this.btn_RegistrarClientes = new System.Windows.Forms.Button();
             this.btn_Cliente = new System.Windows.Forms.Button();
+            this.Panel_Superior = new System.Windows.Forms.Panel();
             this.Panel_Centro = new System.Windows.Forms.Panel();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.nomEmpleadoLog = new System.Windows.Forms.Button();
             this.panelUsuario = new System.Windows.Forms.Panel();
             this.CerrarSesion = new System.Windows.Forms.Button();
             this.perfil = new System.Windows.Forms.Button();
-            this.Panel_Superior = new System.Windows.Forms.Panel();
             this.Panel_Lateral_Izquierdo.SuspendLayout();
             this.Panel_Estadisticas.SuspendLayout();
             this.Panel_Listados.SuspendLayout();
@@ -1632,6 +1632,17 @@
             this.btn_Cliente.UseVisualStyleBackColor = false;
             this.btn_Cliente.Click += new System.EventHandler(this.btn_Cliente_Click);
             // 
+            // Panel_Superior
+            // 
+            this.Panel_Superior.BackgroundImage = global::TuLuz.Properties.Resources.images;
+            this.Panel_Superior.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.Panel_Superior.Dock = System.Windows.Forms.DockStyle.Top;
+            this.Panel_Superior.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Panel_Superior.Location = new System.Drawing.Point(0, 0);
+            this.Panel_Superior.Name = "Panel_Superior";
+            this.Panel_Superior.Size = new System.Drawing.Size(223, 70);
+            this.Panel_Superior.TabIndex = 0;
+            // 
             // Panel_Centro
             // 
             this.Panel_Centro.BackgroundImage = global::TuLuz.Properties.Resources.slide_1472495120664_4845717524_c0ed47e25824430f4f77768391ecc60c1511935102_1920_1920;
@@ -1651,7 +1662,7 @@
             this.pictureBox1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.pictureBox1.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(489, 55);
+            this.pictureBox1.Location = new System.Drawing.Point(457, 55);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(59, 50);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -1662,8 +1673,9 @@
             // 
             this.nomEmpleadoLog.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.nomEmpleadoLog.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.nomEmpleadoLog.FlatAppearance.BorderSize = 0;
-            this.nomEmpleadoLog.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.nomEmpleadoLog.FlatAppearance.BorderColor = System.Drawing.Color.White;
+            this.nomEmpleadoLog.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
+            this.nomEmpleadoLog.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.nomEmpleadoLog.ForeColor = System.Drawing.SystemColors.Control;
             this.nomEmpleadoLog.Location = new System.Drawing.Point(516, 64);
             this.nomEmpleadoLog.Name = "nomEmpleadoLog";
@@ -1681,18 +1693,18 @@
             this.panelUsuario.Controls.Add(this.perfil);
             this.panelUsuario.Location = new System.Drawing.Point(516, 103);
             this.panelUsuario.Name = "panelUsuario";
-            this.panelUsuario.Size = new System.Drawing.Size(169, 94);
+            this.panelUsuario.Size = new System.Drawing.Size(170, 96);
             this.panelUsuario.TabIndex = 3;
             // 
             // CerrarSesion
             // 
-            this.CerrarSesion.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.CerrarSesion.Dock = System.Windows.Forms.DockStyle.Top;
             this.CerrarSesion.FlatAppearance.BorderSize = 0;
             this.CerrarSesion.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.CerrarSesion.ForeColor = System.Drawing.SystemColors.ControlLight;
-            this.CerrarSesion.Location = new System.Drawing.Point(0, 46);
+            this.CerrarSesion.Location = new System.Drawing.Point(0, 45);
             this.CerrarSesion.Name = "CerrarSesion";
-            this.CerrarSesion.Size = new System.Drawing.Size(169, 38);
+            this.CerrarSesion.Size = new System.Drawing.Size(170, 45);
             this.CerrarSesion.TabIndex = 2;
             this.CerrarSesion.Text = "Cerrar Sesion";
             this.CerrarSesion.UseVisualStyleBackColor = true;
@@ -1700,28 +1712,17 @@
             // 
             // perfil
             // 
-            this.perfil.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.perfil.Dock = System.Windows.Forms.DockStyle.Top;
             this.perfil.FlatAppearance.BorderSize = 0;
             this.perfil.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.perfil.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.perfil.Location = new System.Drawing.Point(0, 8);
+            this.perfil.Location = new System.Drawing.Point(0, 0);
             this.perfil.Name = "perfil";
-            this.perfil.Size = new System.Drawing.Size(169, 41);
+            this.perfil.Size = new System.Drawing.Size(170, 45);
             this.perfil.TabIndex = 1;
             this.perfil.Text = "Ver Perfil";
             this.perfil.UseVisualStyleBackColor = true;
-            this.perfil.Click += new System.EventHandler(this.button5_Click);
-            // 
-            // Panel_Superior
-            // 
-            this.Panel_Superior.BackgroundImage = global::TuLuz.Properties.Resources.images;
-            this.Panel_Superior.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.Panel_Superior.Dock = System.Windows.Forms.DockStyle.Top;
-            this.Panel_Superior.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Panel_Superior.Location = new System.Drawing.Point(0, 0);
-            this.Panel_Superior.Name = "Panel_Superior";
-            this.Panel_Superior.Size = new System.Drawing.Size(223, 70);
-            this.Panel_Superior.TabIndex = 0;
+            this.perfil.Click += new System.EventHandler(this.perfil_Click);
             // 
             // Principal
             // 

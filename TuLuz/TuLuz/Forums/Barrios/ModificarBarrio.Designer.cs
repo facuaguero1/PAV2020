@@ -29,7 +29,11 @@
         private void InitializeComponent()
         {
             this.btn_limpiarCampo = new System.Windows.Forms.GroupBox();
+            this.btn_Limpiar = new System.Windows.Forms.Button();
             this.grid01 = new System.Windows.Forms.DataGridView();
+            this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.btn_Buscar = new System.Windows.Forms.Button();
             this.txt_BuscarCuit = new TuLuz.Clases.TextBox01();
             this.chk_Todos = new System.Windows.Forms.CheckBox();
@@ -45,6 +49,7 @@
             this.button3 = new System.Windows.Forms.Button();
             this.button4 = new System.Windows.Forms.Button();
             this.Panel_ModificarCliente = new System.Windows.Forms.Panel();
+            this.cmbLocalidades = new TuLuz.Clases.ComboBox01();
             this.label10 = new System.Windows.Forms.Label();
             this.btn_Aceptar = new System.Windows.Forms.Button();
             this.btn_Cancelar = new System.Windows.Forms.Button();
@@ -52,15 +57,10 @@
             this.label8 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
             this.txt_NombreNuevo = new TuLuz.Clases.TextBox01();
-            this.txt_ApellidoNuevo = new TuLuz.Clases.TextBox01();
-            this.txt_CuitNuevo = new TuLuz.Clases.TextBox01();
+            this.txt_codBarrio = new TuLuz.Clases.TextBox01();
             this.label5 = new System.Windows.Forms.Label();
             this.btn_salir = new System.Windows.Forms.Button();
             this.btn_Modificar = new System.Windows.Forms.Button();
-            this.btn_Limpiar = new System.Windows.Forms.Button();
-            this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.btn_limpiarCampo.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.grid01)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
@@ -85,6 +85,19 @@
             this.btn_limpiarCampo.TabStop = false;
             this.btn_limpiarCampo.Text = "Filtros";
             // 
+            // btn_Limpiar
+            // 
+            this.btn_Limpiar.BackgroundImage = global::TuLuz.Properties.Resources.___;
+            this.btn_Limpiar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btn_Limpiar.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_Limpiar.Location = new System.Drawing.Point(339, 47);
+            this.btn_Limpiar.Name = "btn_Limpiar";
+            this.btn_Limpiar.Size = new System.Drawing.Size(31, 30);
+            this.btn_Limpiar.TabIndex = 5;
+            this.btn_Limpiar.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.btn_Limpiar.UseVisualStyleBackColor = true;
+            this.btn_Limpiar.Click += new System.EventHandler(this.btn_Limpiar_Click);
+            // 
             // grid01
             // 
             this.grid01.AllowUserToAddRows = false;
@@ -101,6 +114,26 @@
             this.grid01.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.grid01.Size = new System.Drawing.Size(621, 176);
             this.grid01.TabIndex = 4;
+            // 
+            // Column1
+            // 
+            this.Column1.HeaderText = "Codigo";
+            this.Column1.Name = "Column1";
+            this.Column1.ReadOnly = true;
+            // 
+            // Column2
+            // 
+            this.Column2.HeaderText = "Nombre";
+            this.Column2.Name = "Column2";
+            this.Column2.ReadOnly = true;
+            this.Column2.Width = 220;
+            // 
+            // Column3
+            // 
+            this.Column3.HeaderText = "Localidad";
+            this.Column3.Name = "Column3";
+            this.Column3.ReadOnly = true;
+            this.Column3.Width = 220;
             // 
             // btn_Buscar
             // 
@@ -242,6 +275,7 @@
             // Panel_ModificarCliente
             // 
             this.Panel_ModificarCliente.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.Panel_ModificarCliente.Controls.Add(this.cmbLocalidades);
             this.Panel_ModificarCliente.Controls.Add(this.label10);
             this.Panel_ModificarCliente.Controls.Add(this.btn_Aceptar);
             this.Panel_ModificarCliente.Controls.Add(this.btn_Cancelar);
@@ -249,12 +283,28 @@
             this.Panel_ModificarCliente.Controls.Add(this.label8);
             this.Panel_ModificarCliente.Controls.Add(this.label7);
             this.Panel_ModificarCliente.Controls.Add(this.txt_NombreNuevo);
-            this.Panel_ModificarCliente.Controls.Add(this.txt_ApellidoNuevo);
-            this.Panel_ModificarCliente.Controls.Add(this.txt_CuitNuevo);
+            this.Panel_ModificarCliente.Controls.Add(this.txt_codBarrio);
             this.Panel_ModificarCliente.Location = new System.Drawing.Point(110, 421);
             this.Panel_ModificarCliente.Name = "Panel_ModificarCliente";
             this.Panel_ModificarCliente.Size = new System.Drawing.Size(639, 299);
             this.Panel_ModificarCliente.TabIndex = 5;
+            // 
+            // cmbLocalidades
+            // 
+            this.cmbLocalidades.FormattingEnabled = true;
+            this.cmbLocalidades.Location = new System.Drawing.Point(155, 260);
+            this.cmbLocalidades.Name = "cmbLocalidades";
+            this.cmbLocalidades.pp_Display = null;
+            this.cmbLocalidades.pp_mensaje_error = null;
+            this.cmbLocalidades.pp_nombre_campo = null;
+            this.cmbLocalidades.pp_nombre_tabla = null;
+            this.cmbLocalidades.pp_Seleccionado = false;
+            this.cmbLocalidades.pp_Tabla = null;
+            this.cmbLocalidades.pp_validable = false;
+            this.cmbLocalidades.pp_Value = null;
+            this.cmbLocalidades.Size = new System.Drawing.Size(208, 33);
+            this.cmbLocalidades.TabIndex = 9;
+            this.cmbLocalidades.SelectedIndexChanged += new System.EventHandler(this.cmbLocalidades_SelectedIndexChanged);
             // 
             // label10
             // 
@@ -290,16 +340,17 @@
             // label9
             // 
             this.label9.AutoSize = true;
-            this.label9.Location = new System.Drawing.Point(-5, 266);
+            this.label9.Location = new System.Drawing.Point(53, 263);
             this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(138, 25);
+            this.label9.Size = new System.Drawing.Size(96, 25);
             this.label9.TabIndex = 5;
-            this.label9.Text = "Cod Localidad";
+            this.label9.Text = "Localidad";
+            this.label9.Click += new System.EventHandler(this.label9_Click);
             // 
             // label8
             // 
             this.label8.AutoSize = true;
-            this.label8.Location = new System.Drawing.Point(54, 199);
+            this.label8.Location = new System.Drawing.Point(68, 199);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(81, 25);
             this.label8.TabIndex = 4;
@@ -308,7 +359,7 @@
             // label7
             // 
             this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(58, 130);
+            this.label7.Location = new System.Drawing.Point(74, 128);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(75, 25);
             this.label7.TabIndex = 3;
@@ -316,7 +367,7 @@
             // 
             // txt_NombreNuevo
             // 
-            this.txt_NombreNuevo.Location = new System.Drawing.Point(136, 196);
+            this.txt_NombreNuevo.Location = new System.Drawing.Point(155, 196);
             this.txt_NombreNuevo.Name = "txt_NombreNuevo";
             this.txt_NombreNuevo.pp_mensaje_error = null;
             this.txt_NombreNuevo.pp_nombre_campo = null;
@@ -325,28 +376,17 @@
             this.txt_NombreNuevo.Size = new System.Drawing.Size(208, 30);
             this.txt_NombreNuevo.TabIndex = 2;
             // 
-            // txt_ApellidoNuevo
+            // txt_codBarrio
             // 
-            this.txt_ApellidoNuevo.Location = new System.Drawing.Point(136, 263);
-            this.txt_ApellidoNuevo.Name = "txt_ApellidoNuevo";
-            this.txt_ApellidoNuevo.pp_mensaje_error = null;
-            this.txt_ApellidoNuevo.pp_nombre_campo = null;
-            this.txt_ApellidoNuevo.pp_nombre_tabla = null;
-            this.txt_ApellidoNuevo.pp_validable = false;
-            this.txt_ApellidoNuevo.Size = new System.Drawing.Size(208, 30);
-            this.txt_ApellidoNuevo.TabIndex = 1;
-            // 
-            // txt_CuitNuevo
-            // 
-            this.txt_CuitNuevo.Enabled = false;
-            this.txt_CuitNuevo.Location = new System.Drawing.Point(136, 125);
-            this.txt_CuitNuevo.Name = "txt_CuitNuevo";
-            this.txt_CuitNuevo.pp_mensaje_error = null;
-            this.txt_CuitNuevo.pp_nombre_campo = null;
-            this.txt_CuitNuevo.pp_nombre_tabla = null;
-            this.txt_CuitNuevo.pp_validable = false;
-            this.txt_CuitNuevo.Size = new System.Drawing.Size(208, 30);
-            this.txt_CuitNuevo.TabIndex = 0;
+            this.txt_codBarrio.Enabled = false;
+            this.txt_codBarrio.Location = new System.Drawing.Point(155, 125);
+            this.txt_codBarrio.Name = "txt_codBarrio";
+            this.txt_codBarrio.pp_mensaje_error = null;
+            this.txt_codBarrio.pp_nombre_campo = null;
+            this.txt_codBarrio.pp_nombre_tabla = null;
+            this.txt_codBarrio.pp_validable = false;
+            this.txt_codBarrio.Size = new System.Drawing.Size(208, 30);
+            this.txt_codBarrio.TabIndex = 0;
             // 
             // label5
             // 
@@ -385,37 +425,6 @@
             this.btn_Modificar.TabIndex = 3;
             this.btn_Modificar.UseVisualStyleBackColor = true;
             this.btn_Modificar.Click += new System.EventHandler(this.btn_Modificar_Click);
-            // 
-            // btn_Limpiar
-            // 
-            this.btn_Limpiar.BackgroundImage = global::TuLuz.Properties.Resources.___;
-            this.btn_Limpiar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.btn_Limpiar.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_Limpiar.Location = new System.Drawing.Point(339, 47);
-            this.btn_Limpiar.Name = "btn_Limpiar";
-            this.btn_Limpiar.Size = new System.Drawing.Size(31, 30);
-            this.btn_Limpiar.TabIndex = 5;
-            this.btn_Limpiar.TextAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.btn_Limpiar.UseVisualStyleBackColor = true;
-            this.btn_Limpiar.Click += new System.EventHandler(this.btn_Limpiar_Click);
-            // 
-            // Column1
-            // 
-            this.Column1.HeaderText = "Codigo";
-            this.Column1.Name = "Column1";
-            this.Column1.ReadOnly = true;
-            // 
-            // Column2
-            // 
-            this.Column2.HeaderText = "Nombre";
-            this.Column2.Name = "Column2";
-            this.Column2.ReadOnly = true;
-            // 
-            // Column3
-            // 
-            this.Column3.HeaderText = "Localidad";
-            this.Column3.Name = "Column3";
-            this.Column3.ReadOnly = true;
             // 
             // ModificarBarrio
             // 
@@ -470,8 +479,7 @@
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.Label label7;
         private Clases.TextBox01 txt_NombreNuevo;
-        private Clases.TextBox01 txt_ApellidoNuevo;
-        private Clases.TextBox01 txt_CuitNuevo;
+        private Clases.TextBox01 txt_codBarrio;
         private System.Windows.Forms.Button btn_Modificar;
         private System.Windows.Forms.Label label10;
         private System.Windows.Forms.DataGridView grid01;
@@ -480,5 +488,6 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn Column1;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column2;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column3;
+        private Clases.ComboBox01 cmbLocalidades;
     }
 }

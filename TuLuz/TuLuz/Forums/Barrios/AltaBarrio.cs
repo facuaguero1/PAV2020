@@ -40,6 +40,7 @@ namespace TuLuz.Forums
                 _Ec.codLocalidad = cmb_Localidad.SelectedValue.ToString();
                 Barrios.Insertar(_Ec);
             }
+            this.Close();
             
         }
 
@@ -56,6 +57,11 @@ namespace TuLuz.Forums
         private void AltaBarrio_Load(object sender, EventArgs e)
         {
             cmb_Localidad.Cargar(Localidad.EstructuraCombo());
+        }
+
+        private void cmb_Localidad_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }

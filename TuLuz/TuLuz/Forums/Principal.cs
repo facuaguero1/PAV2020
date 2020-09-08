@@ -9,6 +9,9 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using TuLuz.Forums;
 using TuLuz.Forums.Clientes;
+using TuLuz.Clases;
+using TuLuz.Negocio;
+using TuLuz.Negocio.EstructuraNegocios;
 
 namespace TuLuz
 {
@@ -207,14 +210,6 @@ namespace TuLuz
         {
             AbrirFormularioSubMenu(new BorrarCliente());
         }
-
-
-
-        private void button5_Click(object sender, EventArgs e)
-        {
-
-        }
-
         private void nomEmpleadoLog_Click(object sender, EventArgs e)
         {
             MostrarMenu(panelUsuario);
@@ -229,6 +224,10 @@ namespace TuLuz
             {
                 this.Close();
             }
+
+            nomEmpleadoLog.Text = log.Usuario;
+            panelUsuario.Visible = false;
+
         }
 
         private void btn_RegistrarBarrios_Click(object sender, EventArgs e)
@@ -246,14 +245,21 @@ namespace TuLuz
             AbrirFormularioSubMenu(new ConsultarBarrio());
         }
 
-        private void Panel_Centro_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
-
         private void btn_ModificarBarrios_Click(object sender, EventArgs e)
         {
             AbrirFormularioSubMenu(new ModificarBarrio());
+        }
+
+        private void perfil_Click(object sender, EventArgs e)
+        {
+            
+            AbrirFormularioSubMenu(new VerPerfil(nomEmpleadoLog.Text));
+
+        }
+
+        private void Panel_Centro_Paint(object sender, PaintEventArgs e)
+        {
+
         }
     }
 }

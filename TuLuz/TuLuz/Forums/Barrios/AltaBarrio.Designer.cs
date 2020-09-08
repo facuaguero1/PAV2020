@@ -58,7 +58,7 @@
             this.label2.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(75, 165);
+            this.label2.Location = new System.Drawing.Point(63, 165);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(75, 25);
             this.label2.TabIndex = 1;
@@ -69,7 +69,7 @@
             this.label3.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(42, 228);
+            this.label3.Location = new System.Drawing.Point(57, 228);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(81, 25);
             this.label3.TabIndex = 2;
@@ -80,7 +80,7 @@
             this.label4.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(42, 284);
+            this.label4.Location = new System.Drawing.Point(42, 287);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(96, 25);
             this.label4.TabIndex = 3;
@@ -132,8 +132,9 @@
             // cmb_Localidad
             // 
             this.cmb_Localidad.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.cmb_Localidad.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cmb_Localidad.FormattingEnabled = true;
-            this.cmb_Localidad.Location = new System.Drawing.Point(155, 287);
+            this.cmb_Localidad.Location = new System.Drawing.Point(155, 284);
             this.cmb_Localidad.Name = "cmb_Localidad";
             this.cmb_Localidad.pp_Display = null;
             this.cmb_Localidad.pp_mensaje_error = null;
@@ -143,8 +144,9 @@
             this.cmb_Localidad.pp_Tabla = null;
             this.cmb_Localidad.pp_validable = false;
             this.cmb_Localidad.pp_Value = null;
-            this.cmb_Localidad.Size = new System.Drawing.Size(466, 21);
+            this.cmb_Localidad.Size = new System.Drawing.Size(466, 33);
             this.cmb_Localidad.TabIndex = 10;
+            this.cmb_Localidad.SelectedIndexChanged += new System.EventHandler(this.cmb_Localidad_SelectedIndexChanged);
             // 
             // txt_nombreCliente
             // 

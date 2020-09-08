@@ -20,6 +20,7 @@ namespace TuLuz.Forums.Clientes
 {
     public partial class ModificarBarrio : Form
     {
+        Ng_Localidad Localidad = new Ng_Localidad();
         Ng_Barrios Barrio = new Ng_Barrios();
         public string cod { get; set; } 
         
@@ -44,13 +45,13 @@ namespace TuLuz.Forums.Clientes
             }
             else
             {
+                cmbLocalidades.Cargar(Localidad.EstructuraCombo());
                 Panel_ModificarCliente.Visible = true;
                 this.cod = grid01.CurrentRow.Cells[0].Value.ToString();
                 DataTable tabla = new DataTable();
                 tabla = Barrio.RecuperarBarrio_Codigo(cod);
-                txt_CuitNuevo.Text = tabla.Rows[0]["codBarrio"].ToString();
+                txt_codBarrio.Text = tabla.Rows[0]["codBarrio"].ToString();
                 txt_NombreNuevo.Text = tabla.Rows[0]["nombre"].ToString();
-                txt_ApellidoNuevo.Text = tabla.Rows[0]["codLocalidad"].ToString();
 
 
             }
@@ -102,9 +103,9 @@ namespace TuLuz.Forums.Clientes
             Es_Barrio _EC = new Es_Barrio();
             if (tratamiento.validar(this.Controls) == TratamientosEspeciales.Validacion.correcta)
             {
-                _EC.codBarrio = txt_CuitNuevo.Text;
+                _EC.codBarrio = txt_codBarrio.Text;
                 _EC.nombre = txt_NombreNuevo.Text;
-                _EC.codLocalidad = txt_ApellidoNuevo.Text;
+                _EC.codLocalidad = cmbLocalidades.SelectedValue.ToString();
 
                 Barrio.Modificar(_EC);
                 Panel_ModificarCliente.Visible = false;
@@ -118,6 +119,16 @@ namespace TuLuz.Forums.Clientes
         }
 
         private void label10_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label9_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void cmbLocalidades_SelectedIndexChanged(object sender, EventArgs e)
         {
 
         }

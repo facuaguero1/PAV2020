@@ -20,6 +20,7 @@ namespace TuLuz.Forums.Clientes
 {
     public partial class BorrarBarrio : Form
     {
+        Ng_Localidad localidad = new Ng_Localidad();
         Ng_Barrios Barrios = new Ng_Barrios();
         public string cuit { get; set; } 
         
@@ -48,9 +49,12 @@ namespace TuLuz.Forums.Clientes
                 this.cuit = grid01.CurrentRow.Cells[0].Value.ToString();
                 DataTable tabla = new DataTable();
                 tabla = Barrios.RecuperarBarrio_Codigo(cuit);
-                txt_CuitNuevo.Text = tabla.Rows[0]["codBarrio"].ToString();
+                txt_codBarrio.Text = tabla.Rows[0]["codBarrio"].ToString();
                 txt_NombreNuevo.Text = tabla.Rows[0]["nombre"].ToString();
-                txt_ApellidoNuevo.Text = tabla.Rows[0]["codLocalidad"].ToString();
+                string codBarrio = tabla.Rows[0]["codLocalidad"].ToString();
+                DataTable tabla2 = new DataTable();
+                tabla2 = localidad.Buscar_Localidad_Codigo(codBarrio);
+                txt_Localidad.Text = tabla2.Rows[0]["nombre"].ToString();
 
 
             }
@@ -107,6 +111,11 @@ namespace TuLuz.Forums.Clientes
         {
             Barrios.Borrar(this.cuit);
             Panel_ModificarCliente.Visible = false;
+        }
+
+        private void BorrarBarrio_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }

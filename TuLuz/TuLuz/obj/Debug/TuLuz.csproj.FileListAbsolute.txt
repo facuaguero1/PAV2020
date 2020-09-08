@@ -43,3 +43,9 @@ C:\Users\Fabri\Desktop\TuLuz\TuLuz\obj\Debug\TuLuz.Forums.AltaBarrio.resources
 C:\Users\Fabri\Desktop\TuLuz\TuLuz\obj\Debug\TuLuz.Forums.Clientes.BorrarBarrio.resources
 C:\Users\Fabri\Desktop\TuLuz\TuLuz\obj\Debug\TuLuz.Forums.Clientes.ConsultarBarrio.resources
 C:\Users\Fabri\Desktop\TuLuz\TuLuz\obj\Debug\TuLuz.Forums.Clientes.ModificarBarrio.resources
+C:\Users\matgo\Desktop\2020\PAV 1\TP\TuLuz\TuLuz\obj\Debug\TuLuz.Forums.AltaBarrio.resources
+C:\Users\matgo\Desktop\2020\PAV 1\TP\TuLuz\TuLuz\obj\Debug\TuLuz.Forums.Clientes.BorrarBarrio.resources
+C:\Users\matgo\Desktop\2020\PAV 1\TP\TuLuz\TuLuz\obj\Debug\TuLuz.Forums.Clientes.ConsultarBarrio.resources
+C:\Users\matgo\Desktop\2020\PAV 1\TP\TuLuz\TuLuz\obj\Debug\TuLuz.Forums.Clientes.ModificarBarrio.resources
+C:\Users\matgo\Desktop\2020\PAV 1\TP\TuLuz\TuLuz\obj\Debug\TuLuz.Forums.VerPerfil.resources
+C:\Users\Fabri\Desktop\TuLuz\TuLuz\obj\Debug\TuLuz.Forums.VerPerfil.resources

@@ -108,6 +108,9 @@ namespace TuLuz.Forums.Clientes
             Panel_ConsultarCliente.Visible = false;
         }
 
-        
+        private void btn_limpiarCampo_Enter(object sender, EventArgs e)
+        {
+
+        }
     }
 }

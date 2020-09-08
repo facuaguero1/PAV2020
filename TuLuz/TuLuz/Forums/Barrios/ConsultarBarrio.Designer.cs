@@ -55,8 +55,8 @@
             this.label8 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
             this.txt_NombreNuevo = new TuLuz.Clases.TextBox01();
-            this.txt_ApellidoNuevo = new TuLuz.Clases.TextBox01();
-            this.txt_CuitNuevo = new TuLuz.Clases.TextBox01();
+            this.txt_Localidad = new TuLuz.Clases.TextBox01();
+            this.txt_codBarrio = new TuLuz.Clases.TextBox01();
             this.label5 = new System.Windows.Forms.Label();
             this.btn_salir = new System.Windows.Forms.Button();
             this.btn_Consultar = new System.Windows.Forms.Button();
@@ -119,21 +119,20 @@
             this.Column1.HeaderText = "Codigo";
             this.Column1.Name = "Column1";
             this.Column1.ReadOnly = true;
-            this.Column1.Width = 150;
             // 
             // Column2
             // 
             this.Column2.HeaderText = "Nombre";
             this.Column2.Name = "Column2";
             this.Column2.ReadOnly = true;
-            this.Column2.Width = 200;
+            this.Column2.Width = 220;
             // 
             // Column3
             // 
             this.Column3.HeaderText = "Localidad";
             this.Column3.Name = "Column3";
             this.Column3.ReadOnly = true;
-            this.Column3.Width = 150;
+            this.Column3.Width = 220;
             // 
             // btn_Buscar
             // 
@@ -281,8 +280,8 @@
             this.Panel_ConsultarCliente.Controls.Add(this.label8);
             this.Panel_ConsultarCliente.Controls.Add(this.label7);
             this.Panel_ConsultarCliente.Controls.Add(this.txt_NombreNuevo);
-            this.Panel_ConsultarCliente.Controls.Add(this.txt_ApellidoNuevo);
-            this.Panel_ConsultarCliente.Controls.Add(this.txt_CuitNuevo);
+            this.Panel_ConsultarCliente.Controls.Add(this.txt_Localidad);
+            this.Panel_ConsultarCliente.Controls.Add(this.txt_codBarrio);
             this.Panel_ConsultarCliente.Location = new System.Drawing.Point(110, 421);
             this.Panel_ConsultarCliente.Name = "Panel_ConsultarCliente";
             this.Panel_ConsultarCliente.Size = new System.Drawing.Size(639, 299);
@@ -311,16 +310,16 @@
             // label9
             // 
             this.label9.AutoSize = true;
-            this.label9.Location = new System.Drawing.Point(-5, 266);
+            this.label9.Location = new System.Drawing.Point(18, 266);
             this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(138, 25);
+            this.label9.Size = new System.Drawing.Size(96, 25);
             this.label9.TabIndex = 5;
-            this.label9.Text = "Cod Localidad";
+            this.label9.Text = "Localidad";
             // 
             // label8
             // 
             this.label8.AutoSize = true;
-            this.label8.Location = new System.Drawing.Point(49, 199);
+            this.label8.Location = new System.Drawing.Point(75, 199);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(81, 25);
             this.label8.TabIndex = 4;
@@ -329,7 +328,7 @@
             // label7
             // 
             this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(55, 130);
+            this.label7.Location = new System.Drawing.Point(81, 128);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(75, 25);
             this.label7.TabIndex = 3;
@@ -339,7 +338,7 @@
             // txt_NombreNuevo
             // 
             this.txt_NombreNuevo.Enabled = false;
-            this.txt_NombreNuevo.Location = new System.Drawing.Point(136, 196);
+            this.txt_NombreNuevo.Location = new System.Drawing.Point(182, 196);
             this.txt_NombreNuevo.Name = "txt_NombreNuevo";
             this.txt_NombreNuevo.pp_mensaje_error = null;
             this.txt_NombreNuevo.pp_nombre_campo = null;
@@ -348,29 +347,29 @@
             this.txt_NombreNuevo.Size = new System.Drawing.Size(208, 30);
             this.txt_NombreNuevo.TabIndex = 2;
             // 
-            // txt_ApellidoNuevo
+            // txt_Localidad
             // 
-            this.txt_ApellidoNuevo.Enabled = false;
-            this.txt_ApellidoNuevo.Location = new System.Drawing.Point(136, 263);
-            this.txt_ApellidoNuevo.Name = "txt_ApellidoNuevo";
-            this.txt_ApellidoNuevo.pp_mensaje_error = null;
-            this.txt_ApellidoNuevo.pp_nombre_campo = null;
-            this.txt_ApellidoNuevo.pp_nombre_tabla = null;
-            this.txt_ApellidoNuevo.pp_validable = false;
-            this.txt_ApellidoNuevo.Size = new System.Drawing.Size(208, 30);
-            this.txt_ApellidoNuevo.TabIndex = 1;
+            this.txt_Localidad.Enabled = false;
+            this.txt_Localidad.Location = new System.Drawing.Point(182, 263);
+            this.txt_Localidad.Name = "txt_Localidad";
+            this.txt_Localidad.pp_mensaje_error = null;
+            this.txt_Localidad.pp_nombre_campo = null;
+            this.txt_Localidad.pp_nombre_tabla = null;
+            this.txt_Localidad.pp_validable = false;
+            this.txt_Localidad.Size = new System.Drawing.Size(208, 30);
+            this.txt_Localidad.TabIndex = 1;
             // 
-            // txt_CuitNuevo
+            // txt_codBarrio
             // 
-            this.txt_CuitNuevo.Enabled = false;
-            this.txt_CuitNuevo.Location = new System.Drawing.Point(136, 125);
-            this.txt_CuitNuevo.Name = "txt_CuitNuevo";
-            this.txt_CuitNuevo.pp_mensaje_error = null;
-            this.txt_CuitNuevo.pp_nombre_campo = null;
-            this.txt_CuitNuevo.pp_nombre_tabla = null;
-            this.txt_CuitNuevo.pp_validable = false;
-            this.txt_CuitNuevo.Size = new System.Drawing.Size(208, 30);
-            this.txt_CuitNuevo.TabIndex = 0;
+            this.txt_codBarrio.Enabled = false;
+            this.txt_codBarrio.Location = new System.Drawing.Point(182, 125);
+            this.txt_codBarrio.Name = "txt_codBarrio";
+            this.txt_codBarrio.pp_mensaje_error = null;
+            this.txt_codBarrio.pp_nombre_campo = null;
+            this.txt_codBarrio.pp_nombre_tabla = null;
+            this.txt_codBarrio.pp_validable = false;
+            this.txt_codBarrio.Size = new System.Drawing.Size(208, 30);
+            this.txt_codBarrio.TabIndex = 0;
             // 
             // label5
             // 
@@ -424,6 +423,7 @@
             this.Name = "ConsultarBarrio";
             this.Text = "Consultar Barrio";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
+            this.Load += new System.EventHandler(this.ConsultarBarrio_Load);
             this.btn_limpiarCampo.ResumeLayout(false);
             this.btn_limpiarCampo.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.grid01)).EndInit();
@@ -462,8 +462,8 @@
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.Label label7;
         private Clases.TextBox01 txt_NombreNuevo;
-        private Clases.TextBox01 txt_ApellidoNuevo;
-        private Clases.TextBox01 txt_CuitNuevo;
+        private Clases.TextBox01 txt_Localidad;
+        private Clases.TextBox01 txt_codBarrio;
         private System.Windows.Forms.Button btn_Consultar;
         private System.Windows.Forms.Label label10;
         private System.Windows.Forms.DataGridView grid01;
