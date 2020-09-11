@@ -13,9 +13,18 @@ namespace TuLuz.Negocio
     class Ng_Empleados
     {
         Be_BaseDatos _BD = new Be_BaseDatos();
-        public void Insertar(Control.ControlCollection controles)
+        //public void Insertar(Control.ControlCollection controles)
+        //{
+        //    _BD.InsertarAutomatizado("Empleados", controles);
+        //}
+
+        public void Insertar(Es_Empleados Empleado)
         {
-            _BD.InsertarAutomatizado("Empleados", controles);
+
+            String sqlInsertar = "INSERT INTO Empleados(tipoDoc, numDoc, nombre, apellido, direccion, codBarrio, telefono, tipoDocJefe, numDocJefe) VALUES(" + Empleado.tipoDoc + "," + Empleado.numDoc + ",'" + Empleado.nombre + "','" +Empleado.apellido + "','" + Empleado.direccion + "'," + Empleado.codBarrio + ",'" +Empleado.telefono + "'," + Empleado.tipoDocJefe + "," + Empleado.numDocJefe + ")";
+            MessageBox.Show("El Empleado fue creado con exito!", "CREACIÓN EXITOSA", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            _BD.Insertar(sqlInsertar);
+
         }
 
         public DataTable Todos_los_Empleados()
@@ -51,6 +60,7 @@ namespace TuLuz.Negocio
         //    string sqlUpdate = "UPDATE Empleados SET ";
         //    sqlUpdate += "nombre = " + _BD.FormatearDato(datos.nombre, "String");
         //    sqlUpdate += ", apellido = " + _BD.FormatearDato(datos.apellido, "String");
+        //    sqlUpdate += ", direccion = " + _BD.FormatearDato(datos.direccion, "String");
         //    sqlUpdate += " WHERE cuitCliente = " + datos.cuitCliente;
 
         //    MessageBox.Show("El cliente fue modificado con exito!", "MODIFICACIÓN EXITOSA", MessageBoxButtons.OK, MessageBoxIcon.Information);

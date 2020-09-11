@@ -1419,6 +1419,7 @@
             this.btn_RegistrarEmpleados.Text = "Registrar Empleados";
             this.btn_RegistrarEmpleados.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btn_RegistrarEmpleados.UseVisualStyleBackColor = true;
+            this.btn_RegistrarEmpleados.Click += new System.EventHandler(this.btn_RegistrarEmpleados_Click);
             // 
             // btn_Empleados
             // 

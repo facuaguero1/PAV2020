@@ -85,6 +85,12 @@
     <Compile Include="Forums\Clientes\AltaCliente.Designer.cs">
       <DependentUpon>AltaCliente.cs</DependentUpon>
     </Compile>
+    <Compile Include="Forums\Empleados\AltaEmpleados.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forums\Empleados\AltaEmpleados.Designer.cs">
+      <DependentUpon>AltaEmpleados.cs</DependentUpon>
+    </Compile>
     <Compile Include="Forums\Clientes\BorrarCliente.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -125,10 +131,12 @@
     <Compile Include="Negocio\EstructuraNegocios\Es_Clientes.cs" />
     <Compile Include="Negocio\EstructuraNegocios\Es_Empleados.cs" />
     <Compile Include="Negocio\EstructuraNegocios\Es_Localidad.cs" />
+    <Compile Include="Negocio\EstructuraNegocios\Es_Usuario.cs" />
     <Compile Include="Negocio\Ng_Barrios.cs" />
     <Compile Include="Negocio\Ng_Clientes.cs" />
     <Compile Include="Negocio\Ng_Empleados.cs" />
     <Compile Include="Negocio\Ng_Localidad.cs" />
+    <Compile Include="Negocio\Ng_Tipo_Documentos.cs" />
     <Compile Include="Negocio\Ng_Users.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -146,6 +154,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Forums\Clientes\AltaCliente.resx">
       <DependentUpon>AltaCliente.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forums\Empleados\AltaEmpleados.resx">
+      <DependentUpon>AltaEmpleados.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forums\Clientes\BorrarCliente.resx">
       <DependentUpon>BorrarCliente.cs</DependentUpon>
@@ -206,5 +217,6 @@
   <ItemGroup>
     <None Include="Resources\....png" />
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

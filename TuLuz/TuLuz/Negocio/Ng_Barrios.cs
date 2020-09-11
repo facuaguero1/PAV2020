@@ -68,6 +68,15 @@ namespace TuLuz.Negocio
             MessageBox.Show("El Barrio fue eliminado con exito!", "ELIMINACIÓN EXITOSA", MessageBoxButtons.OK, MessageBoxIcon.Information);
             _BD.Borrar(sqlDelete);
         }
+        public EstructuraComboBox EstructuraCombo()
+        {
+            EstructuraComboBox EC = new EstructuraComboBox();
+            EC.Display = "nombre";
+            EC.Value = "codBarrio";
+            EC.Sql = "SELECT * FROM Barrio";
+            EC.Tabla = _BD.Consulta(EC.Sql);
+            return EC;
+        }
     }
 
 }

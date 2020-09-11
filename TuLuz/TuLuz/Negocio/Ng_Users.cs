@@ -35,6 +35,14 @@ namespace TuLuz.Negocio
 
             }
         }
-        
+        public void Insertar(Es_Usuario usuario)
+        {
+            
+            String sqlInsertar = "INSERT INTO Usuario (usuario, password, numDocEmpleado) VALUES('" + usuario.usuario + "','" + usuario.password + "'," + usuario.numDocEmpleado + ")";
+           
+            BaseDatos.Insertar(sqlInsertar);
+
+        }
+
     }
 }

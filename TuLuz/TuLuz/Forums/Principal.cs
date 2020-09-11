@@ -194,7 +194,7 @@ namespace TuLuz
         //  -   -   -   -   -   -   -   -   -   -   CLICK A LOS BOTONES DE LOS SUB MENUS    -   -   -   -   -   -   -   -   -   
         private void btn_RegistrarClientes_Click(object sender, EventArgs e)
         {
-            AbrirFormularioSubMenu(new AltaCliente());
+            AbrirFormularioSubMenu(new brn());
         }
 
         private void btn_ModificarClientes_Click(object sender, EventArgs e)
@@ -260,6 +260,11 @@ namespace TuLuz
         private void Panel_Centro_Paint(object sender, PaintEventArgs e)
         {
 
+        }
+
+        private void btn_RegistrarEmpleados_Click(object sender, EventArgs e)
+        {
+            AbrirFormularioSubMenu(new brn());
         }
     }
 }

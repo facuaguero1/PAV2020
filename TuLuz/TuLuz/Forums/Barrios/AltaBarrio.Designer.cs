@@ -85,7 +85,6 @@
             this.label4.Size = new System.Drawing.Size(96, 25);
             this.label4.TabIndex = 3;
             this.label4.Text = "Localidad";
-            this.label4.Click += new System.EventHandler(this.label4_Click);
             // 
             // btn_salir
             // 
@@ -146,7 +145,6 @@
             this.cmb_Localidad.pp_Value = null;
             this.cmb_Localidad.Size = new System.Drawing.Size(466, 33);
             this.cmb_Localidad.TabIndex = 10;
-            this.cmb_Localidad.SelectedIndexChanged += new System.EventHandler(this.cmb_Localidad_SelectedIndexChanged);
             // 
             // txt_nombreCliente
             // 

@@ -49,19 +49,9 @@ namespace TuLuz.Forums
             this.Close();
         }
 
-        private void label4_Click(object sender, EventArgs e)
-        {
-
-        }
-
         private void AltaBarrio_Load(object sender, EventArgs e)
         {
             cmb_Localidad.Cargar(Localidad.EstructuraCombo());
-        }
-
-        private void cmb_Localidad_SelectedIndexChanged(object sender, EventArgs e)
-        {
-
         }
     }
 }
