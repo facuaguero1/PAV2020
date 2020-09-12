@@ -25,8 +25,11 @@ namespace TuLuz.Forums
         public void Cargar()
         {
             Ng_Empleados Empleado = new Ng_Empleados();
+            Ng_Barrios Barrio = new Ng_Barrios();
+            DataTable tablaBarrio = new DataTable();
             DataTable tabla = new DataTable();
             tabla = Empleado.Buscar_Empleados_Usuario(usuario);
+            tablaBarrio = Barrio.Buscar_Barrio_Codigo(tabla.Rows[0]["codBarrio"].ToString());
 
             for (int i = 0; i < tabla.Rows.Count; i++)
             {
@@ -37,7 +40,7 @@ namespace TuLuz.Forums
                 txt_nombre.Text = tabla.Rows[0]["nombre"].ToString();
                 txt_apellido.Text = tabla.Rows[0]["apellido"].ToString();
                 txt_direccion.Text = tabla.Rows[0]["direccion"].ToString();
-                txt_codbarrio.Text = tabla.Rows[0]["codBarrio"].ToString();
+                txt_barrio.Text = tablaBarrio.Rows[0]["nombre"].ToString();
                 txt_telefono.Text = tabla.Rows[0]["telefono"].ToString();
                 string jefe = tabla.Rows[0]["numDocJefe"].ToString();
                 
@@ -75,6 +78,11 @@ namespace TuLuz.Forums
         }
 
         private void label8_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label6_Click(object sender, EventArgs e)
         {
 
         }

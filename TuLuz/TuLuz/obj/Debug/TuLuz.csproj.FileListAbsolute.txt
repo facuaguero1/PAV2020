@@ -110,3 +110,4 @@ C:\Users\matgo\Desktop\2020\PAV 1\TP\PAV2020\TuLuz\TuLuz\obj\Debug\TuLuz.csproj.
 C:\Users\matgo\Desktop\2020\PAV 1\TP\PAV2020\TuLuz\TuLuz\obj\Debug\TuLuz.exe
 C:\Users\matgo\Desktop\2020\PAV 1\TP\PAV2020\TuLuz\TuLuz\obj\Debug\TuLuz.pdb
 C:\Users\matgo\Desktop\2020\PAV 1\TP\PAV2020\TuLuz\TuLuz\obj\Debug\TuLuz.Forums.brn.resources
+C:\Users\Fabri\Documents\GitHub\PAV2020\TuLuz\TuLuz\obj\Debug\TuLuz.Forums.brn.resources

@@ -40,16 +40,16 @@
             this.button1 = new System.Windows.Forms.Button();
             this.label8 = new System.Windows.Forms.Label();
             this.panelJefe = new System.Windows.Forms.Panel();
-            this.label10 = new System.Windows.Forms.Label();
-            this.label11 = new System.Windows.Forms.Label();
-            this.label12 = new System.Windows.Forms.Label();
-            this.groupJefe = new System.Windows.Forms.GroupBox();
             this.txt_apellidoJefe = new TuLuz.Clases.TextBox01();
             this.txt_nombreJefe = new TuLuz.Clases.TextBox01();
+            this.label12 = new System.Windows.Forms.Label();
             this.txt_NumDocJefe = new TuLuz.Clases.TextBox01();
+            this.label11 = new System.Windows.Forms.Label();
+            this.label10 = new System.Windows.Forms.Label();
+            this.groupJefe = new System.Windows.Forms.GroupBox();
             this.textRango = new TuLuz.Clases.TextBox01();
             this.txt_telefono = new TuLuz.Clases.TextBox01();
-            this.txt_codbarrio = new TuLuz.Clases.TextBox01();
+            this.txt_barrio = new TuLuz.Clases.TextBox01();
             this.txt_direccion = new TuLuz.Clases.TextBox01();
             this.txt_apellido = new TuLuz.Clases.TextBox01();
             this.txt_nombre = new TuLuz.Clases.TextBox01();
@@ -112,12 +112,13 @@
             // label6
             // 
             this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(83, 336);
+            this.label6.Location = new System.Drawing.Point(117, 335);
             this.label6.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(94, 17);
+            this.label6.Size = new System.Drawing.Size(46, 17);
             this.label6.TabIndex = 5;
-            this.label6.Text = "Codigo Barrio";
+            this.label6.Text = "Barrio";
+            this.label6.Click += new System.EventHandler(this.label6_Click);
             // 
             // label7
             // 
@@ -189,46 +190,6 @@
             this.panelJefe.Size = new System.Drawing.Size(308, 161);
             this.panelJefe.TabIndex = 21;
             // 
-            // label10
-            // 
-            this.label10.AutoSize = true;
-            this.label10.Location = new System.Drawing.Point(80, 122);
-            this.label10.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(58, 17);
-            this.label10.TabIndex = 24;
-            this.label10.Text = "Apellido";
-            // 
-            // label11
-            // 
-            this.label11.AutoSize = true;
-            this.label11.Location = new System.Drawing.Point(80, 76);
-            this.label11.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(58, 17);
-            this.label11.TabIndex = 23;
-            this.label11.Text = "Nombre";
-            // 
-            // label12
-            // 
-            this.label12.AutoSize = true;
-            this.label12.Location = new System.Drawing.Point(4, 29);
-            this.label12.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(134, 17);
-            this.label12.TabIndex = 22;
-            this.label12.Text = "Numero Documento";
-            // 
-            // groupJefe
-            // 
-            this.groupJefe.Controls.Add(this.panelJefe);
-            this.groupJefe.Location = new System.Drawing.Point(384, 124);
-            this.groupJefe.Name = "groupJefe";
-            this.groupJefe.Size = new System.Drawing.Size(333, 208);
-            this.groupJefe.TabIndex = 28;
-            this.groupJefe.TabStop = false;
-            this.groupJefe.Text = "Datos del Jefe";
-            // 
             // txt_apellidoJefe
             // 
             this.txt_apellidoJefe.Enabled = false;
@@ -255,6 +216,16 @@
             this.txt_nombreJefe.Size = new System.Drawing.Size(132, 23);
             this.txt_nombreJefe.TabIndex = 26;
             // 
+            // label12
+            // 
+            this.label12.AutoSize = true;
+            this.label12.Location = new System.Drawing.Point(4, 29);
+            this.label12.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label12.Name = "label12";
+            this.label12.Size = new System.Drawing.Size(134, 17);
+            this.label12.TabIndex = 22;
+            this.label12.Text = "Numero Documento";
+            // 
             // txt_NumDocJefe
             // 
             this.txt_NumDocJefe.Enabled = false;
@@ -267,6 +238,36 @@
             this.txt_NumDocJefe.pp_validable = false;
             this.txt_NumDocJefe.Size = new System.Drawing.Size(132, 23);
             this.txt_NumDocJefe.TabIndex = 25;
+            // 
+            // label11
+            // 
+            this.label11.AutoSize = true;
+            this.label11.Location = new System.Drawing.Point(80, 76);
+            this.label11.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label11.Name = "label11";
+            this.label11.Size = new System.Drawing.Size(58, 17);
+            this.label11.TabIndex = 23;
+            this.label11.Text = "Nombre";
+            // 
+            // label10
+            // 
+            this.label10.AutoSize = true;
+            this.label10.Location = new System.Drawing.Point(80, 122);
+            this.label10.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label10.Name = "label10";
+            this.label10.Size = new System.Drawing.Size(58, 17);
+            this.label10.TabIndex = 24;
+            this.label10.Text = "Apellido";
+            // 
+            // groupJefe
+            // 
+            this.groupJefe.Controls.Add(this.panelJefe);
+            this.groupJefe.Location = new System.Drawing.Point(384, 124);
+            this.groupJefe.Name = "groupJefe";
+            this.groupJefe.Size = new System.Drawing.Size(333, 208);
+            this.groupJefe.TabIndex = 28;
+            this.groupJefe.TabStop = false;
+            this.groupJefe.Text = "Datos del Jefe";
             // 
             // textRango
             // 
@@ -294,18 +295,18 @@
             this.txt_telefono.Size = new System.Drawing.Size(132, 23);
             this.txt_telefono.TabIndex = 14;
             // 
-            // txt_codbarrio
+            // txt_barrio
             // 
-            this.txt_codbarrio.Enabled = false;
-            this.txt_codbarrio.Location = new System.Drawing.Point(208, 332);
-            this.txt_codbarrio.Margin = new System.Windows.Forms.Padding(4);
-            this.txt_codbarrio.Name = "txt_codbarrio";
-            this.txt_codbarrio.pp_mensaje_error = null;
-            this.txt_codbarrio.pp_nombre_campo = null;
-            this.txt_codbarrio.pp_nombre_tabla = null;
-            this.txt_codbarrio.pp_validable = false;
-            this.txt_codbarrio.Size = new System.Drawing.Size(132, 23);
-            this.txt_codbarrio.TabIndex = 13;
+            this.txt_barrio.Enabled = false;
+            this.txt_barrio.Location = new System.Drawing.Point(208, 332);
+            this.txt_barrio.Margin = new System.Windows.Forms.Padding(4);
+            this.txt_barrio.Name = "txt_barrio";
+            this.txt_barrio.pp_mensaje_error = null;
+            this.txt_barrio.pp_nombre_campo = null;
+            this.txt_barrio.pp_nombre_tabla = null;
+            this.txt_barrio.pp_validable = false;
+            this.txt_barrio.Size = new System.Drawing.Size(132, 23);
+            this.txt_barrio.TabIndex = 13;
             // 
             // txt_direccion
             // 
@@ -384,7 +385,7 @@
             this.Controls.Add(this.label9);
             this.Controls.Add(this.btn_aceptar);
             this.Controls.Add(this.txt_telefono);
-            this.Controls.Add(this.txt_codbarrio);
+            this.Controls.Add(this.txt_barrio);
             this.Controls.Add(this.txt_direccion);
             this.Controls.Add(this.txt_apellido);
             this.Controls.Add(this.txt_nombre);
@@ -424,7 +425,7 @@
         private Clases.TextBox01 txt_nombre;
         private Clases.TextBox01 txt_apellido;
         private Clases.TextBox01 txt_direccion;
-        private Clases.TextBox01 txt_codbarrio;
+        private Clases.TextBox01 txt_barrio;
         private Clases.TextBox01 txt_telefono;
         private System.Windows.Forms.Button btn_aceptar;
         private System.Windows.Forms.Label label9;

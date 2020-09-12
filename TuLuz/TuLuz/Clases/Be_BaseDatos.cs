@@ -19,8 +19,8 @@ namespace TuLuz.Clases
 
         private void conectar()
         {
-            //Conexion.ConnectionString = "Data Source=DESKTOP-V8659BG;Initial Catalog=BaseDeDatos_TuLuz;Integrated Security=True"; //CONEXION FABRI
-            Conexion.ConnectionString = Cadena_Conexion; //CONEXION MATUTE
+            Conexion.ConnectionString = "Data Source=DESKTOP-V8659BG;Initial Catalog=BaseDeDatos_TuLuz;Integrated Security=True"; //CONEXION FABRI
+            //Conexion.ConnectionString = Cadena_Conexion; //CONEXION MATUTE
             Conexion.Open();
             Cmd.Connection = Conexion;
             Cmd.CommandType = System.Data.CommandType.Text;
