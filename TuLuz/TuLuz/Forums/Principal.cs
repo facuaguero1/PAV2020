@@ -9,6 +9,7 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using TuLuz.Forums;
 using TuLuz.Forums.Clientes;
+using TuLuz.Forums.Provincias;
 using TuLuz.Clases;
 using TuLuz.Negocio;
 using TuLuz.Negocio.EstructuraNegocios;
@@ -265,6 +266,26 @@ namespace TuLuz
         private void btn_RegistrarEmpleados_Click(object sender, EventArgs e)
         {
             AbrirFormularioSubMenu(new brn());
+        }
+
+        private void btn_RegistrarProvincias_Click(object sender, EventArgs e)
+        {
+            AbrirFormularioSubMenu(new AltaProvincia());
+        }
+
+        private void btn_ConsultarProvincias_Click(object sender, EventArgs e)
+        {
+            AbrirFormularioSubMenu(new ConsultarProvincia());
+        }
+
+        private void btn_ModificarProvincias_Click(object sender, EventArgs e)
+        {
+            AbrirFormularioSubMenu(new ModificarProvincia());
+        }
+
+        private void btn_EliminarProvincias_Click(object sender, EventArgs e)
+        {
+            AbrirFormularioSubMenu(new BorrarProvincia());
         }
     }
 }

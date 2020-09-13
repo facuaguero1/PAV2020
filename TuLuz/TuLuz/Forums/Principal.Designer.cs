@@ -896,6 +896,7 @@
             this.btn_EliminarProvincias.Text = "Eliminar Provincias";
             this.btn_EliminarProvincias.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btn_EliminarProvincias.UseVisualStyleBackColor = true;
+            this.btn_EliminarProvincias.Click += new System.EventHandler(this.btn_EliminarProvincias_Click);
             // 
             // btn_ConsultarProvincias
             // 
@@ -912,6 +913,7 @@
             this.btn_ConsultarProvincias.Text = "Consultar Provincias";
             this.btn_ConsultarProvincias.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btn_ConsultarProvincias.UseVisualStyleBackColor = true;
+            this.btn_ConsultarProvincias.Click += new System.EventHandler(this.btn_ConsultarProvincias_Click);
             // 
             // btn_ModificarProvincias
             // 
@@ -928,6 +930,7 @@
             this.btn_ModificarProvincias.Text = "Modificar Provincias";
             this.btn_ModificarProvincias.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btn_ModificarProvincias.UseVisualStyleBackColor = true;
+            this.btn_ModificarProvincias.Click += new System.EventHandler(this.btn_ModificarProvincias_Click);
             // 
             // btn_RegistrarProvincias
             // 
@@ -944,6 +947,7 @@
             this.btn_RegistrarProvincias.Text = "Registrar Provincias ";
             this.btn_RegistrarProvincias.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btn_RegistrarProvincias.UseVisualStyleBackColor = true;
+            this.btn_RegistrarProvincias.Click += new System.EventHandler(this.btn_RegistrarProvincias_Click);
             // 
             // btn_Provincia
             // 

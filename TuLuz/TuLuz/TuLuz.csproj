@@ -121,6 +121,30 @@
     <Compile Include="Forums\Principal.Designer.cs">
       <DependentUpon>Principal.cs</DependentUpon>
     </Compile>
+    <Compile Include="Forums\Provincias\AltaProvincia.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forums\Provincias\AltaProvincia.Designer.cs">
+      <DependentUpon>AltaProvincia.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forums\Provincias\BorrarProvincia.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forums\Provincias\BorrarProvincia.Designer.cs">
+      <DependentUpon>BorrarProvincia.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forums\Provincias\ConsultarProvincia.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forums\Provincias\ConsultarProvincia.Designer.cs">
+      <DependentUpon>ConsultarProvincia.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forums\Provincias\ModificarProvincia.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forums\Provincias\ModificarProvincia.Designer.cs">
+      <DependentUpon>ModificarProvincia.cs</DependentUpon>
+    </Compile>
     <Compile Include="Forums\VerPerfil.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -131,11 +155,13 @@
     <Compile Include="Negocio\EstructuraNegocios\Es_Clientes.cs" />
     <Compile Include="Negocio\EstructuraNegocios\Es_Empleados.cs" />
     <Compile Include="Negocio\EstructuraNegocios\Es_Localidad.cs" />
+    <Compile Include="Negocio\EstructuraNegocios\Es_Provincia.cs" />
     <Compile Include="Negocio\EstructuraNegocios\Es_Usuario.cs" />
     <Compile Include="Negocio\Ng_Barrios.cs" />
     <Compile Include="Negocio\Ng_Clientes.cs" />
     <Compile Include="Negocio\Ng_Empleados.cs" />
     <Compile Include="Negocio\Ng_Localidad.cs" />
+    <Compile Include="Negocio\Ng_Provincias.cs" />
     <Compile Include="Negocio\Ng_Tipo_Documentos.cs" />
     <Compile Include="Negocio\Ng_Users.cs" />
     <Compile Include="Program.cs" />
@@ -172,6 +198,18 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Forums\Principal.resx">
       <DependentUpon>Principal.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forums\Provincias\AltaProvincia.resx">
+      <DependentUpon>AltaProvincia.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forums\Provincias\BorrarProvincia.resx">
+      <DependentUpon>BorrarProvincia.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forums\Provincias\ConsultarProvincia.resx">
+      <DependentUpon>ConsultarProvincia.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forums\Provincias\ModificarProvincia.resx">
+      <DependentUpon>ModificarProvincia.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forums\VerPerfil.resx">
       <DependentUpon>VerPerfil.cs</DependentUpon>
@@ -217,6 +255,5 @@
   <ItemGroup>
     <None Include="Resources\....png" />
   </ItemGroup>
-  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

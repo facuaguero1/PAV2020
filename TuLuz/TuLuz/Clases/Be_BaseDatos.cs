@@ -14,13 +14,14 @@ namespace TuLuz.Clases
     {
         SqlConnection Conexion = new SqlConnection();
         SqlCommand Cmd = new SqlCommand();
-        string Cadena_Conexion = "Data Source=(Localdb)\\MatiasServidor;Initial Catalog=_TuLuz;Integrated Security=True";
+        //string Cadena_Conexion = "Data Source=(Localdb)\\MatiasServidor;Initial Catalog=_TuLuz;Integrated Security=True"; //CONEXION MATUTE
+        //string Cadena_Conexion = "Data Source=DESKTOP-V8659BG;Initial Catalog=BaseDeDatos_TuLuz;Integrated Security=True"; //CONEXION FABRI
+        string Cadena_Conexion = "Data Source=USUARIO-PC\\SQLEXPRESS;Initial Catalog=DATABASE_TULUZ;Integrated Security=True"; // CONEXION FACU
 
 
         private void conectar()
         {
-            Conexion.ConnectionString = "Data Source=DESKTOP-V8659BG;Initial Catalog=BaseDeDatos_TuLuz;Integrated Security=True"; //CONEXION FABRI
-            //Conexion.ConnectionString = Cadena_Conexion; //CONEXION MATUTE
+            Conexion.ConnectionString = Cadena_Conexion;
             Conexion.Open();
             Cmd.Connection = Conexion;
             Cmd.CommandType = System.Data.CommandType.Text;
