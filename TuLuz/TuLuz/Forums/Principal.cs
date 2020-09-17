@@ -195,7 +195,7 @@ namespace TuLuz
         //  -   -   -   -   -   -   -   -   -   -   CLICK A LOS BOTONES DE LOS SUB MENUS    -   -   -   -   -   -   -   -   -   
         private void btn_RegistrarClientes_Click(object sender, EventArgs e)
         {
-            AbrirFormularioSubMenu(new brn());
+            AbrirFormularioSubMenu(new AltaCliente());
         }
 
         private void btn_ModificarClientes_Click(object sender, EventArgs e)
@@ -265,9 +265,21 @@ namespace TuLuz
 
         private void btn_RegistrarEmpleados_Click(object sender, EventArgs e)
         {
-            AbrirFormularioSubMenu(new brn());
+            AbrirFormularioSubMenu(new AltaEmpleados());
         }
 
+        private void btn_ModificarEmpleados_Click_1(object sender, EventArgs e)
+        {
+            AbrirFormularioSubMenu(new ModificarEmpleados());
+        }
+        private void btn_ConsultarEmpleados_Click(object sender, EventArgs e)
+        {
+            AbrirFormularioSubMenu(new ConsultarEmpleados());
+        }
+        private void btn_EliminarEmpleados_Click(object sender, EventArgs e)
+        {
+            AbrirFormularioSubMenu(new BorrarEmpleados());
+        }
         private void btn_RegistrarProvincias_Click(object sender, EventArgs e)
         {
             AbrirFormularioSubMenu(new AltaProvincia());
@@ -287,5 +299,7 @@ namespace TuLuz
         {
             AbrirFormularioSubMenu(new BorrarProvincia());
         }
+
+
     }
 }

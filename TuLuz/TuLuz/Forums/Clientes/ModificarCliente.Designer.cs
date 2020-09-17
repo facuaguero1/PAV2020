@@ -35,6 +35,7 @@
             this.Column2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.btn_Buscar = new System.Windows.Forms.Button();
+            this.txt_BuscarCuit = new TuLuz.Clases.TextBox01();
             this.chk_Todos = new System.Windows.Forms.CheckBox();
             this.label6 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
@@ -54,13 +55,14 @@
             this.label9 = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
-            this.label5 = new System.Windows.Forms.Label();
-            this.btn_Modificar = new System.Windows.Forms.Button();
             this.txt_NombreNuevo = new TuLuz.Clases.TextBox01();
             this.txt_ApellidoNuevo = new TuLuz.Clases.TextBox01();
             this.txt_CuitNuevo = new TuLuz.Clases.TextBox01();
-            this.txt_BuscarCuit = new TuLuz.Clases.TextBox01();
+            this.label5 = new System.Windows.Forms.Label();
+            this.btn_Modificar = new System.Windows.Forms.Button();
             this.btn_salir = new System.Windows.Forms.Button();
+            this.txt_activo = new TuLuz.Clases.TextBox01();
+            this.label11 = new System.Windows.Forms.Label();
             this.btn_limpiarCampo.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.grid01)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
@@ -148,6 +150,17 @@
             this.btn_Buscar.Text = "Buscar";
             this.btn_Buscar.UseVisualStyleBackColor = true;
             this.btn_Buscar.Click += new System.EventHandler(this.btn_Buscar_Click);
+            // 
+            // txt_BuscarCuit
+            // 
+            this.txt_BuscarCuit.Location = new System.Drawing.Point(136, 47);
+            this.txt_BuscarCuit.Name = "txt_BuscarCuit";
+            this.txt_BuscarCuit.pp_mensaje_error = null;
+            this.txt_BuscarCuit.pp_nombre_campo = null;
+            this.txt_BuscarCuit.pp_nombre_tabla = null;
+            this.txt_BuscarCuit.pp_validable = false;
+            this.txt_BuscarCuit.Size = new System.Drawing.Size(197, 30);
+            this.txt_BuscarCuit.TabIndex = 2;
             // 
             // chk_Todos
             // 
@@ -268,6 +281,8 @@
             // Panel_ModificarCliente
             // 
             this.Panel_ModificarCliente.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.Panel_ModificarCliente.Controls.Add(this.label11);
+            this.Panel_ModificarCliente.Controls.Add(this.txt_activo);
             this.Panel_ModificarCliente.Controls.Add(this.label10);
             this.Panel_ModificarCliente.Controls.Add(this.btn_Aceptar);
             this.Panel_ModificarCliente.Controls.Add(this.btn_Cancelar);
@@ -315,7 +330,7 @@
             // label9
             // 
             this.label9.AutoSize = true;
-            this.label9.Location = new System.Drawing.Point(31, 266);
+            this.label9.Location = new System.Drawing.Point(32, 202);
             this.label9.Name = "label9";
             this.label9.Size = new System.Drawing.Size(82, 25);
             this.label9.TabIndex = 5;
@@ -324,7 +339,7 @@
             // label8
             // 
             this.label8.AutoSize = true;
-            this.label8.Location = new System.Drawing.Point(32, 199);
+            this.label8.Location = new System.Drawing.Point(32, 156);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(81, 25);
             this.label8.TabIndex = 4;
@@ -333,11 +348,45 @@
             // label7
             // 
             this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(66, 128);
+            this.label7.Location = new System.Drawing.Point(66, 104);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(47, 25);
             this.label7.TabIndex = 3;
             this.label7.Text = "Cuit";
+            // 
+            // txt_NombreNuevo
+            // 
+            this.txt_NombreNuevo.Location = new System.Drawing.Point(136, 153);
+            this.txt_NombreNuevo.Name = "txt_NombreNuevo";
+            this.txt_NombreNuevo.pp_mensaje_error = null;
+            this.txt_NombreNuevo.pp_nombre_campo = null;
+            this.txt_NombreNuevo.pp_nombre_tabla = null;
+            this.txt_NombreNuevo.pp_validable = false;
+            this.txt_NombreNuevo.Size = new System.Drawing.Size(208, 30);
+            this.txt_NombreNuevo.TabIndex = 2;
+            // 
+            // txt_ApellidoNuevo
+            // 
+            this.txt_ApellidoNuevo.Location = new System.Drawing.Point(136, 199);
+            this.txt_ApellidoNuevo.Name = "txt_ApellidoNuevo";
+            this.txt_ApellidoNuevo.pp_mensaje_error = null;
+            this.txt_ApellidoNuevo.pp_nombre_campo = null;
+            this.txt_ApellidoNuevo.pp_nombre_tabla = null;
+            this.txt_ApellidoNuevo.pp_validable = false;
+            this.txt_ApellidoNuevo.Size = new System.Drawing.Size(208, 30);
+            this.txt_ApellidoNuevo.TabIndex = 1;
+            // 
+            // txt_CuitNuevo
+            // 
+            this.txt_CuitNuevo.Enabled = false;
+            this.txt_CuitNuevo.Location = new System.Drawing.Point(136, 101);
+            this.txt_CuitNuevo.Name = "txt_CuitNuevo";
+            this.txt_CuitNuevo.pp_mensaje_error = null;
+            this.txt_CuitNuevo.pp_nombre_campo = null;
+            this.txt_CuitNuevo.pp_nombre_tabla = null;
+            this.txt_CuitNuevo.pp_validable = false;
+            this.txt_CuitNuevo.Size = new System.Drawing.Size(208, 30);
+            this.txt_CuitNuevo.TabIndex = 0;
             // 
             // label5
             // 
@@ -363,51 +412,6 @@
             this.btn_Modificar.UseVisualStyleBackColor = true;
             this.btn_Modificar.Click += new System.EventHandler(this.btn_Modificar_Click);
             // 
-            // txt_NombreNuevo
-            // 
-            this.txt_NombreNuevo.Location = new System.Drawing.Point(136, 196);
-            this.txt_NombreNuevo.Name = "txt_NombreNuevo";
-            this.txt_NombreNuevo.pp_mensaje_error = null;
-            this.txt_NombreNuevo.pp_nombre_campo = null;
-            this.txt_NombreNuevo.pp_nombre_tabla = null;
-            this.txt_NombreNuevo.pp_validable = false;
-            this.txt_NombreNuevo.Size = new System.Drawing.Size(208, 30);
-            this.txt_NombreNuevo.TabIndex = 2;
-            // 
-            // txt_ApellidoNuevo
-            // 
-            this.txt_ApellidoNuevo.Location = new System.Drawing.Point(136, 263);
-            this.txt_ApellidoNuevo.Name = "txt_ApellidoNuevo";
-            this.txt_ApellidoNuevo.pp_mensaje_error = null;
-            this.txt_ApellidoNuevo.pp_nombre_campo = null;
-            this.txt_ApellidoNuevo.pp_nombre_tabla = null;
-            this.txt_ApellidoNuevo.pp_validable = false;
-            this.txt_ApellidoNuevo.Size = new System.Drawing.Size(208, 30);
-            this.txt_ApellidoNuevo.TabIndex = 1;
-            // 
-            // txt_CuitNuevo
-            // 
-            this.txt_CuitNuevo.Enabled = false;
-            this.txt_CuitNuevo.Location = new System.Drawing.Point(136, 125);
-            this.txt_CuitNuevo.Name = "txt_CuitNuevo";
-            this.txt_CuitNuevo.pp_mensaje_error = null;
-            this.txt_CuitNuevo.pp_nombre_campo = null;
-            this.txt_CuitNuevo.pp_nombre_tabla = null;
-            this.txt_CuitNuevo.pp_validable = false;
-            this.txt_CuitNuevo.Size = new System.Drawing.Size(208, 30);
-            this.txt_CuitNuevo.TabIndex = 0;
-            // 
-            // txt_BuscarCuit
-            // 
-            this.txt_BuscarCuit.Location = new System.Drawing.Point(136, 47);
-            this.txt_BuscarCuit.Name = "txt_BuscarCuit";
-            this.txt_BuscarCuit.pp_mensaje_error = null;
-            this.txt_BuscarCuit.pp_nombre_campo = null;
-            this.txt_BuscarCuit.pp_nombre_tabla = null;
-            this.txt_BuscarCuit.pp_validable = false;
-            this.txt_BuscarCuit.Size = new System.Drawing.Size(197, 30);
-            this.txt_BuscarCuit.TabIndex = 2;
-            // 
             // btn_salir
             // 
             this.btn_salir.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
@@ -421,6 +425,28 @@
             this.btn_salir.Text = "X";
             this.btn_salir.UseVisualStyleBackColor = true;
             this.btn_salir.Click += new System.EventHandler(this.btn_salir_Click);
+            // 
+            // txt_activo
+            // 
+            this.txt_activo.Location = new System.Drawing.Point(136, 245);
+            this.txt_activo.Name = "txt_activo";
+            this.txt_activo.pp_mensaje_error = null;
+            this.txt_activo.pp_nombre_campo = null;
+            this.txt_activo.pp_nombre_tabla = null;
+            this.txt_activo.pp_validable = false;
+            this.txt_activo.Size = new System.Drawing.Size(208, 30);
+            this.txt_activo.TabIndex = 9;
+            this.txt_activo.Visible = false;
+            // 
+            // label11
+            // 
+            this.label11.AutoSize = true;
+            this.label11.Location = new System.Drawing.Point(39, 248);
+            this.label11.Name = "label11";
+            this.label11.Size = new System.Drawing.Size(66, 25);
+            this.label11.TabIndex = 10;
+            this.label11.Text = "Activo";
+            this.label11.Visible = false;
             // 
             // ModificarCliente
             // 
@@ -485,5 +511,7 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn Column3;
         private System.Windows.Forms.Button btn_Limpiar;
         private System.Windows.Forms.Button btn_salir;
+        private System.Windows.Forms.Label label11;
+        private Clases.TextBox01 txt_activo;
     }
 }

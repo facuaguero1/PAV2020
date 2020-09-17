@@ -1375,6 +1375,7 @@
             this.btn_EliminarEmpleados.Text = "Eliminar Empleados";
             this.btn_EliminarEmpleados.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btn_EliminarEmpleados.UseVisualStyleBackColor = true;
+            this.btn_EliminarEmpleados.Click += new System.EventHandler(this.btn_EliminarEmpleados_Click);
             // 
             // btn_ConsultarEmpleados
             // 
@@ -1391,6 +1392,7 @@
             this.btn_ConsultarEmpleados.Text = "Consultar Empleados";
             this.btn_ConsultarEmpleados.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btn_ConsultarEmpleados.UseVisualStyleBackColor = true;
+            this.btn_ConsultarEmpleados.Click += new System.EventHandler(this.btn_ConsultarEmpleados_Click);
             // 
             // btn_ModificarEmpleados
             // 
@@ -1407,6 +1409,7 @@
             this.btn_ModificarEmpleados.Text = "Modificar Empleados";
             this.btn_ModificarEmpleados.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btn_ModificarEmpleados.UseVisualStyleBackColor = true;
+            this.btn_ModificarEmpleados.Click += new System.EventHandler(this.btn_ModificarEmpleados_Click_1);
             // 
             // btn_RegistrarEmpleados
             // 
