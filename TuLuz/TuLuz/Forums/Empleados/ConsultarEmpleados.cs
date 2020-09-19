@@ -18,19 +18,23 @@ using TuLuz.Negocio.EstructuraNegocios;
 
 namespace TuLuz.Forums.Clientes
 {
-    public partial class ModificarBarrio : Form
+    public partial class ConsultarEmpleados : Form
     {
         Ng_Localidad Localidad = new Ng_Localidad();
         Ng_Barrios Barrio = new Ng_Barrios();
-        public string cod { get; set; } 
+        Ng_Empleados Empleados = new Ng_Empleados();
+        Ng_Tipo_Documentos TipoDoc = new Ng_Tipo_Documentos();
+        string EsNull = "";
+
+        public string Doc { get; set; } 
         
-        public ModificarBarrio()
+        public ConsultarEmpleados()
         {
             InitializeComponent();
             CerrarPanel();
-            cmbLocalidades.Cargar(Localidad.EstructuraCombo());
-           
-            
+            cmb_barrio.Cargar(Barrio.EstructuraCombo());
+
+
         }
          private void CerrarPanel ()
         {
@@ -46,16 +50,33 @@ namespace TuLuz.Forums.Clientes
             }
             else
             {
-                cmbLocalidades.Cargar(Localidad.EstructuraCombo());
+                
                 Panel_ModificarCliente.Visible = true;
-                this.cod = grid01.CurrentRow.Cells[0].Value.ToString();
+                this.Doc = grid01.CurrentRow.Cells[0].Value.ToString();
                 DataTable tabla = new DataTable();
-                tabla = Barrio.RecuperarBarrio_Codigo(cod);
-                txt_codBarrio.Text = tabla.Rows[0]["codBarrio"].ToString();
-                txt_NombreNuevo.Text = tabla.Rows[0]["nombre"].ToString();
-                cmbLocalidades.SelectedValue = int.Parse(tabla.Rows[0]["codLocalidad"].ToString());
+                tabla = Empleados.RecuperarEmpleados(Doc);
 
+                EsNull = tabla.Rows[0]["numDocJefe"].ToString();
 
+                txt_TipoDoc.Text = tabla.Rows[0]["tipoDoc"].ToString();
+                txt_NumDoc.Text = tabla.Rows[0]["numDoc"].ToString();
+                txt_Nombre.Text = tabla.Rows[0]["nombre"].ToString();
+                txt_Apellido.Text = tabla.Rows[0]["apellido"].ToString();
+                txt_Direccion.Text = tabla.Rows[0]["direccion"].ToString();
+                cmb_barrio.SelectedValue = int.Parse(tabla.Rows[0]["codBarrio"].ToString());
+                txt_Telefono.Text = tabla.Rows[0]["telefono"].ToString();
+
+                if (EsNull == "")
+                {
+                    cmb_TipoDocJefe.Cargar(TipoDoc.EstructuraCombo());
+                    cmb_TipoDocJefe.SelectedValue = -1;
+                    txt_NumDocJefe.Text = "";
+                }
+                else
+                {
+                    cmb_TipoDocJefe.Cargar(TipoDoc.EstructuraCombo());
+                    txt_NumDocJefe.Text = tabla.Rows[0]["numDocJefe"].ToString();
+                }
             }
         }
 
@@ -68,17 +89,17 @@ namespace TuLuz.Forums.Clientes
         {
             if (chk_Todos.Checked==true)
             {
-                Cargar_grilla(Barrio.Todos_los_Barrios());
+                Cargar_grilla(Empleados.Todos_los_Empleados());
             }
             else
             {
-                if (txt_BuscarCuit.Text == "")
+                if (txt_BuscarDoc.Text == "")
                 {
                     MessageBox.Show("No se ingreso parametro de busqueda");
                 }
                 else
                 {
-                    Cargar_grilla(Barrio.Buscar_Barrio_Codigo(txt_BuscarCuit.Text));
+                    Cargar_grilla(Empleados.Buscar_Empleados(txt_BuscarDoc.Text));
                 }
             }
         }
@@ -88,51 +109,28 @@ namespace TuLuz.Forums.Clientes
             for (int i = 0; i < tabla.Rows.Count; i++)
             {
                 grid01.Rows.Add();
-                grid01.Rows[i].Cells[0].Value = tabla.Rows[i]["codBarrio"].ToString();
+                grid01.Rows[i].Cells[0].Value = tabla.Rows[i]["numDoc"].ToString();
                 grid01.Rows[i].Cells[1].Value = tabla.Rows[i]["nombre"].ToString();
-                grid01.Rows[i].Cells[2].Value = tabla.Rows[i]["codLocalidad"].ToString();
+                grid01.Rows[i].Cells[2].Value = tabla.Rows[i]["apellido"].ToString();
+                grid01.Rows[i].Cells[3].Value = tabla.Rows[i]["direccion"].ToString();
+                grid01.Rows[i].Cells[4].Value = tabla.Rows[i]["codBarrio"].ToString();
+                grid01.Rows[i].Cells[5].Value = tabla.Rows[i]["telefono"].ToString();
 
             }
         }
         private void btn_Limpiar_Click(object sender, EventArgs e)
         {
-            txt_BuscarCuit.Text = "";
+            txt_BuscarDoc.Text = "";
         }
 
         private void btn_Aceptar_Click(object sender, EventArgs e)
         {
-            TratamientosEspeciales tratamiento = new TratamientosEspeciales();
-            Es_Barrio _EC = new Es_Barrio();
-            if (tratamiento.validar(this.Controls) == TratamientosEspeciales.Validacion.correcta)
-            {
-                _EC.codBarrio = txt_codBarrio.Text;
-                _EC.nombre = txt_NombreNuevo.Text;
-                _EC.codLocalidad = cmbLocalidades.SelectedValue.ToString();
-
-                Barrio.Modificar(_EC);
-                Panel_ModificarCliente.Visible = false;
-            }
-            
+            Panel_ModificarCliente.Visible = false;
         }
 
         private void btn_salir_Click(object sender, EventArgs e)
         {
             this.Close();
-        }
-
-        private void label10_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label9_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void cmbLocalidades_SelectedIndexChanged(object sender, EventArgs e)
-        {
-
         }
     }
 }

@@ -1,6 +1,6 @@
-﻿namespace TuLuz.Forums.Clientes
+﻿namespace TuLuz.Forums.Provincias
 {
-    partial class ModificarCliente
+    partial class BorrarLocalidad
     {
         /// <summary>
         /// Required designer variable.
@@ -29,13 +29,8 @@
         private void InitializeComponent()
         {
             this.btn_limpiarCampo = new System.Windows.Forms.GroupBox();
-            this.btn_Limpiar = new System.Windows.Forms.Button();
             this.grid01 = new System.Windows.Forms.DataGridView();
-            this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.btn_Buscar = new System.Windows.Forms.Button();
-            this.txt_BuscarCuit = new TuLuz.Clases.TextBox01();
             this.chk_Todos = new System.Windows.Forms.CheckBox();
             this.label6 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
@@ -48,25 +43,27 @@
             this.button2 = new System.Windows.Forms.Button();
             this.button3 = new System.Windows.Forms.Button();
             this.button4 = new System.Windows.Forms.Button();
-            this.Panel_ModificarCliente = new System.Windows.Forms.Panel();
+            this.Panel_DatosProvincia = new System.Windows.Forms.Panel();
             this.label10 = new System.Windows.Forms.Label();
             this.btn_Aceptar = new System.Windows.Forms.Button();
-            this.btn_Cancelar = new System.Windows.Forms.Button();
-            this.label9 = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
-            this.txt_NombreNuevo = new TuLuz.Clases.TextBox01();
-            this.txt_ApellidoNuevo = new TuLuz.Clases.TextBox01();
-            this.txt_CuitNuevo = new TuLuz.Clases.TextBox01();
             this.label5 = new System.Windows.Forms.Label();
-            this.btn_Modificar = new System.Windows.Forms.Button();
             this.btn_salir = new System.Windows.Forms.Button();
-            this.txt_activo = new TuLuz.Clases.TextBox01();
-            this.label11 = new System.Windows.Forms.Label();
+            this.btn_Modificar = new System.Windows.Forms.Button();
+            this.btn_Limpiar = new System.Windows.Forms.Button();
+            this.label9 = new System.Windows.Forms.Label();
+            this.cmb_Provincia = new TuLuz.Clases.ComboBox01();
+            this.txt_NombreLocalidad = new TuLuz.Clases.TextBox01();
+            this.txt_codLocalidad = new TuLuz.Clases.TextBox01();
+            this.txt_BuscarCodLocalidad = new TuLuz.Clases.TextBox01();
+            this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.btn_limpiarCampo.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.grid01)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
-            this.Panel_ModificarCliente.SuspendLayout();
+            this.Panel_DatosProvincia.SuspendLayout();
             this.SuspendLayout();
             // 
             // btn_limpiarCampo
@@ -75,7 +72,7 @@
             this.btn_limpiarCampo.Controls.Add(this.btn_Limpiar);
             this.btn_limpiarCampo.Controls.Add(this.grid01);
             this.btn_limpiarCampo.Controls.Add(this.btn_Buscar);
-            this.btn_limpiarCampo.Controls.Add(this.txt_BuscarCuit);
+            this.btn_limpiarCampo.Controls.Add(this.txt_BuscarCodLocalidad);
             this.btn_limpiarCampo.Controls.Add(this.chk_Todos);
             this.btn_limpiarCampo.Controls.Add(this.label6);
             this.btn_limpiarCampo.Location = new System.Drawing.Point(110, 9);
@@ -86,19 +83,6 @@
             this.btn_limpiarCampo.TabIndex = 0;
             this.btn_limpiarCampo.TabStop = false;
             this.btn_limpiarCampo.Text = "Filtros";
-            // 
-            // btn_Limpiar
-            // 
-            this.btn_Limpiar.BackgroundImage = global::TuLuz.Properties.Resources.___;
-            this.btn_Limpiar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.btn_Limpiar.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_Limpiar.Location = new System.Drawing.Point(339, 47);
-            this.btn_Limpiar.Name = "btn_Limpiar";
-            this.btn_Limpiar.Size = new System.Drawing.Size(31, 30);
-            this.btn_Limpiar.TabIndex = 5;
-            this.btn_Limpiar.TextAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.btn_Limpiar.UseVisualStyleBackColor = true;
-            this.btn_Limpiar.Click += new System.EventHandler(this.btn_Limpiar_Click);
             // 
             // grid01
             // 
@@ -117,30 +101,6 @@
             this.grid01.Size = new System.Drawing.Size(621, 176);
             this.grid01.TabIndex = 4;
             // 
-            // Column1
-            // 
-            this.Column1.FillWeight = 140F;
-            this.Column1.HeaderText = "CUIT";
-            this.Column1.Name = "Column1";
-            this.Column1.ReadOnly = true;
-            this.Column1.Width = 160;
-            // 
-            // Column2
-            // 
-            this.Column2.FillWeight = 140F;
-            this.Column2.HeaderText = "NOMBRE";
-            this.Column2.Name = "Column2";
-            this.Column2.ReadOnly = true;
-            this.Column2.Width = 200;
-            // 
-            // Column3
-            // 
-            this.Column3.FillWeight = 140F;
-            this.Column3.HeaderText = "APELLIDO";
-            this.Column3.Name = "Column3";
-            this.Column3.ReadOnly = true;
-            this.Column3.Width = 200;
-            // 
             // btn_Buscar
             // 
             this.btn_Buscar.Location = new System.Drawing.Point(523, 96);
@@ -150,17 +110,6 @@
             this.btn_Buscar.Text = "Buscar";
             this.btn_Buscar.UseVisualStyleBackColor = true;
             this.btn_Buscar.Click += new System.EventHandler(this.btn_Buscar_Click);
-            // 
-            // txt_BuscarCuit
-            // 
-            this.txt_BuscarCuit.Location = new System.Drawing.Point(136, 47);
-            this.txt_BuscarCuit.Name = "txt_BuscarCuit";
-            this.txt_BuscarCuit.pp_mensaje_error = null;
-            this.txt_BuscarCuit.pp_nombre_campo = null;
-            this.txt_BuscarCuit.pp_nombre_tabla = null;
-            this.txt_BuscarCuit.pp_validable = false;
-            this.txt_BuscarCuit.Size = new System.Drawing.Size(197, 30);
-            this.txt_BuscarCuit.TabIndex = 2;
             // 
             // chk_Todos
             // 
@@ -177,9 +126,9 @@
             this.label6.AutoSize = true;
             this.label6.Location = new System.Drawing.Point(66, 47);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(47, 25);
+            this.label6.Size = new System.Drawing.Size(75, 25);
             this.label6.TabIndex = 0;
-            this.label6.Text = "Cuit";
+            this.label6.Text = "Codigo";
             // 
             // label1
             // 
@@ -278,68 +227,46 @@
             this.button4.Text = "Cancelar";
             this.button4.UseVisualStyleBackColor = true;
             // 
-            // Panel_ModificarCliente
+            // Panel_DatosProvincia
             // 
-            this.Panel_ModificarCliente.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.Panel_ModificarCliente.Controls.Add(this.label11);
-            this.Panel_ModificarCliente.Controls.Add(this.txt_activo);
-            this.Panel_ModificarCliente.Controls.Add(this.label10);
-            this.Panel_ModificarCliente.Controls.Add(this.btn_Aceptar);
-            this.Panel_ModificarCliente.Controls.Add(this.btn_Cancelar);
-            this.Panel_ModificarCliente.Controls.Add(this.label9);
-            this.Panel_ModificarCliente.Controls.Add(this.label8);
-            this.Panel_ModificarCliente.Controls.Add(this.label7);
-            this.Panel_ModificarCliente.Controls.Add(this.txt_NombreNuevo);
-            this.Panel_ModificarCliente.Controls.Add(this.txt_ApellidoNuevo);
-            this.Panel_ModificarCliente.Controls.Add(this.txt_CuitNuevo);
-            this.Panel_ModificarCliente.Location = new System.Drawing.Point(110, 421);
-            this.Panel_ModificarCliente.Name = "Panel_ModificarCliente";
-            this.Panel_ModificarCliente.Size = new System.Drawing.Size(639, 299);
-            this.Panel_ModificarCliente.TabIndex = 5;
+            this.Panel_DatosProvincia.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.Panel_DatosProvincia.Controls.Add(this.cmb_Provincia);
+            this.Panel_DatosProvincia.Controls.Add(this.label9);
+            this.Panel_DatosProvincia.Controls.Add(this.label10);
+            this.Panel_DatosProvincia.Controls.Add(this.btn_Aceptar);
+            this.Panel_DatosProvincia.Controls.Add(this.label8);
+            this.Panel_DatosProvincia.Controls.Add(this.label7);
+            this.Panel_DatosProvincia.Controls.Add(this.txt_NombreLocalidad);
+            this.Panel_DatosProvincia.Controls.Add(this.txt_codLocalidad);
+            this.Panel_DatosProvincia.Location = new System.Drawing.Point(110, 421);
+            this.Panel_DatosProvincia.Name = "Panel_DatosProvincia";
+            this.Panel_DatosProvincia.Size = new System.Drawing.Size(639, 270);
+            this.Panel_DatosProvincia.TabIndex = 5;
             // 
             // label10
             // 
             this.label10.AutoSize = true;
             this.label10.Font = new System.Drawing.Font("Microsoft Sans Serif", 50F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label10.Location = new System.Drawing.Point(46, 0);
+            this.label10.Location = new System.Drawing.Point(58, 16);
             this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(544, 76);
+            this.label10.Size = new System.Drawing.Size(536, 76);
             this.label10.TabIndex = 8;
-            this.label10.Text = "Modificar Cliente";
+            this.label10.Text = "Borrar Localidad";
             // 
             // btn_Aceptar
             // 
-            this.btn_Aceptar.Location = new System.Drawing.Point(474, 125);
+            this.btn_Aceptar.Location = new System.Drawing.Point(505, 214);
             this.btn_Aceptar.Name = "btn_Aceptar";
             this.btn_Aceptar.Size = new System.Drawing.Size(99, 42);
             this.btn_Aceptar.TabIndex = 7;
-            this.btn_Aceptar.Text = "Aceptar";
+            this.btn_Aceptar.Text = "Eliminar";
             this.btn_Aceptar.UseVisualStyleBackColor = true;
             this.btn_Aceptar.Click += new System.EventHandler(this.btn_Aceptar_Click);
-            // 
-            // btn_Cancelar
-            // 
-            this.btn_Cancelar.Location = new System.Drawing.Point(474, 233);
-            this.btn_Cancelar.Name = "btn_Cancelar";
-            this.btn_Cancelar.Size = new System.Drawing.Size(99, 42);
-            this.btn_Cancelar.TabIndex = 6;
-            this.btn_Cancelar.Text = "Cancelar";
-            this.btn_Cancelar.UseVisualStyleBackColor = true;
-            this.btn_Cancelar.Click += new System.EventHandler(this.btn_Cancelar_Click);
-            // 
-            // label9
-            // 
-            this.label9.AutoSize = true;
-            this.label9.Location = new System.Drawing.Point(32, 202);
-            this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(82, 25);
-            this.label9.TabIndex = 5;
-            this.label9.Text = "Apellido";
             // 
             // label8
             // 
             this.label8.AutoSize = true;
-            this.label8.Location = new System.Drawing.Point(32, 156);
+            this.label8.Location = new System.Drawing.Point(81, 155);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(81, 25);
             this.label8.TabIndex = 4;
@@ -348,45 +275,11 @@
             // label7
             // 
             this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(66, 104);
+            this.label7.Location = new System.Drawing.Point(87, 109);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(47, 25);
+            this.label7.Size = new System.Drawing.Size(75, 25);
             this.label7.TabIndex = 3;
-            this.label7.Text = "Cuit";
-            // 
-            // txt_NombreNuevo
-            // 
-            this.txt_NombreNuevo.Location = new System.Drawing.Point(136, 153);
-            this.txt_NombreNuevo.Name = "txt_NombreNuevo";
-            this.txt_NombreNuevo.pp_mensaje_error = null;
-            this.txt_NombreNuevo.pp_nombre_campo = null;
-            this.txt_NombreNuevo.pp_nombre_tabla = null;
-            this.txt_NombreNuevo.pp_validable = false;
-            this.txt_NombreNuevo.Size = new System.Drawing.Size(208, 30);
-            this.txt_NombreNuevo.TabIndex = 2;
-            // 
-            // txt_ApellidoNuevo
-            // 
-            this.txt_ApellidoNuevo.Location = new System.Drawing.Point(136, 199);
-            this.txt_ApellidoNuevo.Name = "txt_ApellidoNuevo";
-            this.txt_ApellidoNuevo.pp_mensaje_error = null;
-            this.txt_ApellidoNuevo.pp_nombre_campo = null;
-            this.txt_ApellidoNuevo.pp_nombre_tabla = null;
-            this.txt_ApellidoNuevo.pp_validable = false;
-            this.txt_ApellidoNuevo.Size = new System.Drawing.Size(208, 30);
-            this.txt_ApellidoNuevo.TabIndex = 1;
-            // 
-            // txt_CuitNuevo
-            // 
-            this.txt_CuitNuevo.Enabled = false;
-            this.txt_CuitNuevo.Location = new System.Drawing.Point(136, 101);
-            this.txt_CuitNuevo.Name = "txt_CuitNuevo";
-            this.txt_CuitNuevo.pp_mensaje_error = null;
-            this.txt_CuitNuevo.pp_nombre_campo = null;
-            this.txt_CuitNuevo.pp_nombre_tabla = null;
-            this.txt_CuitNuevo.pp_validable = false;
-            this.txt_CuitNuevo.Size = new System.Drawing.Size(208, 30);
-            this.txt_CuitNuevo.TabIndex = 0;
+            this.label7.Text = "Codigo";
             // 
             // label5
             // 
@@ -397,20 +290,6 @@
             this.label5.Size = new System.Drawing.Size(432, 63);
             this.label5.TabIndex = 10;
             this.label5.Text = "Modificar Cliente";
-            // 
-            // btn_Modificar
-            // 
-            this.btn_Modificar.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.btn_Modificar.BackgroundImage = global::TuLuz.Properties.Resources.arrow_down_23784;
-            this.btn_Modificar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.btn_Modificar.FlatAppearance.BorderSize = 0;
-            this.btn_Modificar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_Modificar.Location = new System.Drawing.Point(379, 342);
-            this.btn_Modificar.Name = "btn_Modificar";
-            this.btn_Modificar.Size = new System.Drawing.Size(75, 60);
-            this.btn_Modificar.TabIndex = 3;
-            this.btn_Modificar.UseVisualStyleBackColor = true;
-            this.btn_Modificar.Click += new System.EventHandler(this.btn_Modificar_Click);
             // 
             // btn_salir
             // 
@@ -426,48 +305,137 @@
             this.btn_salir.UseVisualStyleBackColor = true;
             this.btn_salir.Click += new System.EventHandler(this.btn_salir_Click);
             // 
-            // txt_activo
+            // btn_Modificar
             // 
-            this.txt_activo.Location = new System.Drawing.Point(136, 245);
-            this.txt_activo.Name = "txt_activo";
-            this.txt_activo.pp_mensaje_error = null;
-            this.txt_activo.pp_nombre_campo = null;
-            this.txt_activo.pp_nombre_tabla = null;
-            this.txt_activo.pp_validable = false;
-            this.txt_activo.Size = new System.Drawing.Size(208, 30);
-            this.txt_activo.TabIndex = 9;
-            this.txt_activo.Visible = false;
+            this.btn_Modificar.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.btn_Modificar.BackgroundImage = global::TuLuz.Properties.Resources.arrow_down_23784;
+            this.btn_Modificar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btn_Modificar.FlatAppearance.BorderSize = 0;
+            this.btn_Modificar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_Modificar.Location = new System.Drawing.Point(379, 342);
+            this.btn_Modificar.Name = "btn_Modificar";
+            this.btn_Modificar.Size = new System.Drawing.Size(75, 60);
+            this.btn_Modificar.TabIndex = 3;
+            this.btn_Modificar.UseVisualStyleBackColor = true;
+            this.btn_Modificar.Click += new System.EventHandler(this.btn_Modificar_Click);
             // 
-            // label11
+            // btn_Limpiar
             // 
-            this.label11.AutoSize = true;
-            this.label11.Location = new System.Drawing.Point(39, 248);
-            this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(66, 25);
-            this.label11.TabIndex = 10;
-            this.label11.Text = "Activo";
-            this.label11.Visible = false;
+            this.btn_Limpiar.BackgroundImage = global::TuLuz.Properties.Resources.___;
+            this.btn_Limpiar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btn_Limpiar.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_Limpiar.Location = new System.Drawing.Point(339, 47);
+            this.btn_Limpiar.Name = "btn_Limpiar";
+            this.btn_Limpiar.Size = new System.Drawing.Size(31, 30);
+            this.btn_Limpiar.TabIndex = 5;
+            this.btn_Limpiar.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.btn_Limpiar.UseVisualStyleBackColor = true;
+            this.btn_Limpiar.Click += new System.EventHandler(this.btn_Limpiar_Click);
             // 
-            // ModificarCliente
+            // label9
+            // 
+            this.label9.AutoSize = true;
+            this.label9.Location = new System.Drawing.Point(70, 197);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(92, 25);
+            this.label9.TabIndex = 9;
+            this.label9.Text = "Provincia";
+            // 
+            // cmb_Provincia
+            // 
+            this.cmb_Provincia.Enabled = false;
+            this.cmb_Provincia.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cmb_Provincia.FormattingEnabled = true;
+            this.cmb_Provincia.Location = new System.Drawing.Point(182, 194);
+            this.cmb_Provincia.Name = "cmb_Provincia";
+            this.cmb_Provincia.pp_Display = null;
+            this.cmb_Provincia.pp_mensaje_error = null;
+            this.cmb_Provincia.pp_nombre_campo = null;
+            this.cmb_Provincia.pp_nombre_tabla = null;
+            this.cmb_Provincia.pp_Seleccionado = false;
+            this.cmb_Provincia.pp_Tabla = null;
+            this.cmb_Provincia.pp_validable = false;
+            this.cmb_Provincia.pp_Value = null;
+            this.cmb_Provincia.Size = new System.Drawing.Size(208, 32);
+            this.cmb_Provincia.TabIndex = 10;
+            // 
+            // txt_NombreLocalidad
+            // 
+            this.txt_NombreLocalidad.Enabled = false;
+            this.txt_NombreLocalidad.Location = new System.Drawing.Point(182, 152);
+            this.txt_NombreLocalidad.Name = "txt_NombreLocalidad";
+            this.txt_NombreLocalidad.pp_mensaje_error = null;
+            this.txt_NombreLocalidad.pp_nombre_campo = null;
+            this.txt_NombreLocalidad.pp_nombre_tabla = null;
+            this.txt_NombreLocalidad.pp_validable = false;
+            this.txt_NombreLocalidad.Size = new System.Drawing.Size(208, 30);
+            this.txt_NombreLocalidad.TabIndex = 2;
+            // 
+            // txt_codLocalidad
+            // 
+            this.txt_codLocalidad.Enabled = false;
+            this.txt_codLocalidad.Location = new System.Drawing.Point(182, 106);
+            this.txt_codLocalidad.Name = "txt_codLocalidad";
+            this.txt_codLocalidad.pp_mensaje_error = null;
+            this.txt_codLocalidad.pp_nombre_campo = null;
+            this.txt_codLocalidad.pp_nombre_tabla = null;
+            this.txt_codLocalidad.pp_validable = false;
+            this.txt_codLocalidad.Size = new System.Drawing.Size(208, 30);
+            this.txt_codLocalidad.TabIndex = 0;
+            // 
+            // txt_BuscarCodLocalidad
+            // 
+            this.txt_BuscarCodLocalidad.Location = new System.Drawing.Point(136, 47);
+            this.txt_BuscarCodLocalidad.Name = "txt_BuscarCodLocalidad";
+            this.txt_BuscarCodLocalidad.pp_mensaje_error = null;
+            this.txt_BuscarCodLocalidad.pp_nombre_campo = null;
+            this.txt_BuscarCodLocalidad.pp_nombre_tabla = null;
+            this.txt_BuscarCodLocalidad.pp_validable = false;
+            this.txt_BuscarCodLocalidad.Size = new System.Drawing.Size(197, 30);
+            this.txt_BuscarCodLocalidad.TabIndex = 2;
+            // 
+            // Column1
+            // 
+            this.Column1.HeaderText = "Codigo";
+            this.Column1.Name = "Column1";
+            this.Column1.ReadOnly = true;
+            this.Column1.Width = 130;
+            // 
+            // Column2
+            // 
+            this.Column2.HeaderText = "Nombre";
+            this.Column2.Name = "Column2";
+            this.Column2.ReadOnly = true;
+            this.Column2.Width = 220;
+            // 
+            // Column3
+            // 
+            this.Column3.HeaderText = "Provincia";
+            this.Column3.Name = "Column3";
+            this.Column3.ReadOnly = true;
+            this.Column3.Width = 200;
+            // 
+            // BorrarLocalidad
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 25F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(849, 749);
             this.Controls.Add(this.btn_salir);
-            this.Controls.Add(this.Panel_ModificarCliente);
+            this.Controls.Add(this.Panel_DatosProvincia);
             this.Controls.Add(this.btn_Modificar);
             this.Controls.Add(this.btn_limpiarCampo);
             this.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Margin = new System.Windows.Forms.Padding(6);
-            this.Name = "ModificarCliente";
-            this.Text = "ModificarCliente";
+            this.Name = "BorrarLocalidad";
+            this.Text = "Borrar Barrio";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
+            this.Load += new System.EventHandler(this.BorrarBarrio_Load);
             this.btn_limpiarCampo.ResumeLayout(false);
             this.btn_limpiarCampo.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.grid01)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
-            this.Panel_ModificarCliente.ResumeLayout(false);
-            this.Panel_ModificarCliente.PerformLayout();
+            this.Panel_DatosProvincia.ResumeLayout(false);
+            this.Panel_DatosProvincia.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -489,29 +457,26 @@
         private Clases.TextBox01 textBox014;
         private System.Windows.Forms.Button button3;
         private System.Windows.Forms.Button button4;
-        private System.Windows.Forms.Panel Panel_ModificarCliente;
+        private System.Windows.Forms.Panel Panel_DatosProvincia;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.CheckBox chk_Todos;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Button btn_Buscar;
-        private Clases.TextBox01 txt_BuscarCuit;
+        private Clases.TextBox01 txt_BuscarCodLocalidad;
         private System.Windows.Forms.Button btn_Aceptar;
-        private System.Windows.Forms.Button btn_Cancelar;
-        private System.Windows.Forms.Label label9;
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.Label label7;
-        private Clases.TextBox01 txt_NombreNuevo;
-        private Clases.TextBox01 txt_ApellidoNuevo;
-        private Clases.TextBox01 txt_CuitNuevo;
+        private Clases.TextBox01 txt_NombreLocalidad;
+        private Clases.TextBox01 txt_codLocalidad;
         private System.Windows.Forms.Button btn_Modificar;
         private System.Windows.Forms.Label label10;
         private System.Windows.Forms.DataGridView grid01;
+        private System.Windows.Forms.Button btn_Limpiar;
+        private System.Windows.Forms.Button btn_salir;
+        private Clases.ComboBox01 cmb_Provincia;
+        private System.Windows.Forms.Label label9;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column1;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column2;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column3;
-        private System.Windows.Forms.Button btn_Limpiar;
-        private System.Windows.Forms.Button btn_salir;
-        private System.Windows.Forms.Label label11;
-        private Clases.TextBox01 txt_activo;
     }
 }

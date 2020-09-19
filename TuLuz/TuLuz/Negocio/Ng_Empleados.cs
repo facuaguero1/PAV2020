@@ -21,7 +21,7 @@ namespace TuLuz.Negocio
         public void Insertar(Es_Empleados Empleado)
         {
 
-            String sqlInsertar = "INSERT INTO Empleados(tipoDoc, numDoc, nombre, apellido, direccion, codBarrio, telefono, tipoDocJefe, numDocJefe) VALUES(" + Empleado.tipoDoc + "," + Empleado.numDoc + ",'" + Empleado.nombre + "','" +Empleado.apellido + "','" + Empleado.direccion + "'," + Empleado.codBarrio + ",'" +Empleado.telefono + "'," + Empleado.tipoDocJefe + "," + Empleado.numDocJefe + ")";
+            String sqlInsertar = "INSERT INTO Empleados(tipoDoc, numDoc, nombre, apellido, direccion, codBarrio, telefono, tipoDocJefe, numDocJefe, activo) VALUES(" + Empleado.tipoDoc + "," + Empleado.numDoc + ",'" + Empleado.nombre + "','" +Empleado.apellido + "','" + Empleado.direccion + "'," + Empleado.codBarrio + ",'" +Empleado.telefono + "'," + Empleado.tipoDocJefe + "," + Empleado.numDocJefe + ",'" + Empleado.activo + "')";
             MessageBox.Show("El Empleado fue creado con exito!", "CREACIÓN EXITOSA", MessageBoxButtons.OK, MessageBoxIcon.Information);
             _BD.Insertar(sqlInsertar);
 
@@ -55,24 +55,38 @@ namespace TuLuz.Negocio
 
         //AGREGAR BIEN LOS DATOS FALTANTES A LA MODIFICACION Y BORRADO
 
-        //public void Modificar(Es_Empleados datos)
-        //{
-        //    string sqlUpdate = "UPDATE Empleados SET ";
-        //    sqlUpdate += "nombre = " + _BD.FormatearDato(datos.nombre, "String");
-        //    sqlUpdate += ", apellido = " + _BD.FormatearDato(datos.apellido, "String");
-        //    sqlUpdate += ", direccion = " + _BD.FormatearDato(datos.direccion, "String");
-        //    sqlUpdate += " WHERE cuitCliente = " + datos.cuitCliente;
+        public void Modificar(Es_Empleados datos)
+        {
+            string sqlUpdate = "UPDATE Empleados SET ";
+            sqlUpdate += "nombre = " + _BD.FormatearDato(datos.nombre, "String");
+            sqlUpdate += ", apellido = " + _BD.FormatearDato(datos.apellido, "String");
+            sqlUpdate += ", direccion = " + _BD.FormatearDato(datos.direccion, "String");
 
-        //    MessageBox.Show("El cliente fue modificado con exito!", "MODIFICACIÓN EXITOSA", MessageBoxButtons.OK, MessageBoxIcon.Information);
-        //    _BD.Modificar(sqlUpdate);
+            sqlUpdate += ", codBarrio = " + _BD.FormatearDato(datos.codBarrio, "Int");
+            sqlUpdate += ", telefono = " + _BD.FormatearDato(datos.telefono, "String");
 
-        //}
-        //public void Borrar(string cuit)
-        //{
-        //    string sqlDelete = "DELETE FROM Cliente WHERE cuitCliente = " + cuit;
-        //    MessageBox.Show("El cliente fue eliminado con exito!", "ELIMINACIÓN EXITOSA", MessageBoxButtons.OK, MessageBoxIcon.Information);
-        //    _BD.Borrar(sqlDelete);
-        //}
+            if (datos.tipoDocJefe == "")
+            {
+                sqlUpdate += ", tipoDocJefe = " + _BD.FormatearDato("NULL", "String");
+                sqlUpdate += ", numDocJefe = " + _BD.FormatearDato("NULL", "String");
+            }
+            else
+            {
+                sqlUpdate += ", tipoDocJefe = " + _BD.FormatearDato(datos.tipoDocJefe, "String");
+                sqlUpdate += ", numDocJefe = " + _BD.FormatearDato(datos.numDocJefe, "String");
+            }
+            sqlUpdate += " WHERE numDoc = " + datos.numDoc;
+
+            MessageBox.Show("El Empleado fue modificado con exito!", "MODIFICACIÓN EXITOSA", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            _BD.Modificar(sqlUpdate);
+
+        }
+        public void Borrar(string Doc)
+        {
+            string sqlDelete = "DELETE FROM Empleados WHERE numDoc = " + Doc;
+            MessageBox.Show("El Empleado fue eliminado con exito!", "ELIMINACIÓN EXITOSA", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            _BD.Borrar(sqlDelete);
+        }
     }
 }
 

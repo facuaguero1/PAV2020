@@ -13,10 +13,12 @@ using TuLuz.Negocio.EstructuraNegocios;
 
 namespace TuLuz.Forums
 {
-    public partial class AltaCliente : Form
+    public partial class AltaLocalidad : Form
     {
-        Ng_Clientes Cliente = new Ng_Clientes(); 
-        public AltaCliente()
+        Ng_Localidad Localidad = new Ng_Localidad();
+        Ng_Provincias Provincia = new Ng_Provincias();
+        
+        public AltaLocalidad()
         {
             InitializeComponent();
         }
@@ -29,23 +31,28 @@ namespace TuLuz.Forums
         private void btn_aceptar_Click(object sender, EventArgs e)
         {
             TratamientosEspeciales tratamiento = new TratamientosEspeciales();
-            Es_Clientes _Ec = new Es_Clientes();
+            Es_Localidad _EL = new Es_Localidad();
 
-            if (tratamiento.validar(this.Controls) == TratamientosEspeciales.Validacion.correcta)
+            if (tratamiento.validar(this.Controls)==TratamientosEspeciales.Validacion.correcta)
             {
-                _Ec.cuitCliente = txt_CuitCliente.Text;
-                _Ec.nombre = txt_nombreCliente.Text;
-                _Ec.apellido = txt_ApellidoCliente.Text;
-                _Ec.activo = "true";
-                Cliente.Insertar(_Ec);
-                this.Close();
+                _EL.codLocalidad = txt_Cod_localidad.Text;
+                _EL.nombre = txt_nombreLocalidad.Text;
+                _EL.codProvincia = cmb_provincia.SelectedValue.ToString();
+                Localidad.Insertar(_EL);
             }
-           
+            this.Close();
+            
         }
 
         private void btn_salir_Click(object sender, EventArgs e)
         {
             this.Close();
+        }
+
+        private void AltaLocalidad_Load(object sender, EventArgs e)
+        {
+            cmb_provincia.Cargar(Provincia.EstructuraCombo());
+            cmb_provincia.SelectedIndex = - 1;
         }
     }
 }

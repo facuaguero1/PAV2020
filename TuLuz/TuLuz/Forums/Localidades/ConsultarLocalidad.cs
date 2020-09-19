@@ -8,7 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using TuLuz.Forums;
-using TuLuz.Forums.Clientes;
+using TuLuz.Forums.Provincias;
 using TuLuz.Clases;
 using TuLuz.Negocio;
 using TuLuz.Negocio.EstructuraNegocios;
@@ -16,17 +16,19 @@ using TuLuz.Negocio.EstructuraNegocios;
 
 
 
-namespace TuLuz.Forums.Clientes
+namespace TuLuz.Forums.Provincias
 {
-    public partial class ConsultarCliente : Form
+    public partial class ConsultarLocalidad : Form
     {
-        Ng_Clientes cliente = new Ng_Clientes();
-        public string cuit { get; set; } 
+        Ng_Provincias Provincia = new Ng_Provincias();
+        Ng_Localidad Localidad = new Ng_Localidad();
+        public string cod { get; set; } 
         
-        public ConsultarCliente()
+        public ConsultarLocalidad()
         {
             InitializeComponent();
             CerrarPanel();
+            cmb_Provincia.Cargar(Provincia.EstructuraCombo());
            
             
         }
@@ -45,15 +47,12 @@ namespace TuLuz.Forums.Clientes
             else
             {
                 Panel_ConsultarCliente.Visible = true;
-                this.cuit = grid01.CurrentRow.Cells[0].Value.ToString();
+                this.cod = grid01.CurrentRow.Cells[0].Value.ToString();
                 DataTable tabla = new DataTable();
-                tabla = cliente.RecuperarCliente(cuit);
-                txt_CuitNuevo.Text = tabla.Rows[0]["cuitCliente"].ToString();
+                tabla = Localidad.RecuperarLocalidad_Codigo(cod);
+                txt_codLocalidad.Text = tabla.Rows[0]["codLocalidad"].ToString();
                 txt_NombreNuevo.Text = tabla.Rows[0]["nombre"].ToString();
-                txt_ApellidoNuevo.Text = tabla.Rows[0]["apellido"].ToString();
-                txt_activo.Text = tabla.Rows[0]["activo"].ToString();
-
-
+                cmb_Provincia.SelectedValue = int.Parse(tabla.Rows[0]["codProvincia"].ToString());
             }
         }
 
@@ -66,17 +65,17 @@ namespace TuLuz.Forums.Clientes
         {
             if (chk_Todos.Checked==true)
             {
-                Cargar_grilla(cliente.Todos_los_Clientes());
+                Cargar_grilla(Localidad.Todos_las_Localidades());
             }
             else
             {
-                if (txt_BuscarCuit.Text == "")
+                if (txt_BuscarCodigo.Text == "")
                 {
                     MessageBox.Show("No se ingreso parametro de busqueda");
                 }
                 else
                 {
-                    Cargar_grilla(cliente.Buscar_Cliente(txt_BuscarCuit.Text));
+                    Cargar_grilla(Localidad.Buscar_Localidad_Codigo(txt_BuscarCodigo.Text));
                 }
             }
         }
@@ -86,15 +85,15 @@ namespace TuLuz.Forums.Clientes
             for (int i = 0; i < tabla.Rows.Count; i++)
             {
                 grid01.Rows.Add();
-                grid01.Rows[i].Cells[0].Value = tabla.Rows[i]["cuitCliente"].ToString();
+                grid01.Rows[i].Cells[0].Value = tabla.Rows[i]["codLocalidad"].ToString();
                 grid01.Rows[i].Cells[1].Value = tabla.Rows[i]["nombre"].ToString();
-                grid01.Rows[i].Cells[2].Value = tabla.Rows[i]["apellido"].ToString();
+                grid01.Rows[i].Cells[2].Value = tabla.Rows[i]["codProvincia"].ToString();
 
             }
         }
         private void btn_Limpiar_Click(object sender, EventArgs e)
         {
-            txt_BuscarCuit.Text = "";
+            txt_BuscarCodigo.Text = "";
         }
 
         
@@ -109,7 +108,12 @@ namespace TuLuz.Forums.Clientes
             Panel_ConsultarCliente.Visible = false;
         }
 
-        private void btn_limpiarCampo_Enter(object sender, EventArgs e)
+        private void label7_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void ConsultarBarrio_Load(object sender, EventArgs e)
         {
 
         }

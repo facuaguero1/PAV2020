@@ -11,6 +11,7 @@ namespace TuLuz.Negocio.EstructuraNegocios
         public string cuitCliente { get; set; }
         public string nombre { get; set; }
         public string apellido { get; set; }
+        public string activo { get; set; }
 
     }
 }

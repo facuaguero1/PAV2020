@@ -14,10 +14,10 @@ namespace TuLuz.Negocio
     {
         Be_BaseDatos _BD = new Be_BaseDatos();
 
-        public void Insertar(Control.ControlCollection controles)
-        {
-            _BD.InsertarAutomatizado("TiposDoc", controles);
-        }
+        //public void Insertar(Control.ControlCollection controles)
+        //{
+        //    _BD.InsertarAutomatizado("TiposDoc", controles);
+        //}
 
         public DataTable Todos_las_Tipos_Doc()
         {
