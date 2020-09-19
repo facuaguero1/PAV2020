@@ -51,7 +51,6 @@ namespace TuLuz.Forums.Clientes
                 txt_CuitNuevo.Text = tabla.Rows[0]["cuitCliente"].ToString();
                 txt_NombreNuevo.Text = tabla.Rows[0]["nombre"].ToString();
                 txt_ApellidoNuevo.Text = tabla.Rows[0]["apellido"].ToString();
-                txt_activo.Text = tabla.Rows[0]["activo"].ToString();
 
 
             }

@@ -75,7 +75,6 @@ namespace TuLuz.Negocio
             EC.Sql = "SELECT * FROM Provincia";
             EC.Tabla = _BD.Consulta(EC.Sql);
             return EC;
-
         }
     }
 }

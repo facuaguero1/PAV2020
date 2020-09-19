@@ -195,7 +195,7 @@ namespace TuLuz
         //  -   -   -   -   -   -   -   -   -   -   CLICK A LOS BOTONES DE LOS SUB MENUS    -   -   -   -   -   -   -   -   -   
         private void btn_RegistrarClientes_Click(object sender, EventArgs e)
         {
-            AbrirFormularioSubMenu(new AltaCliente());
+            AbrirFormularioSubMenu(new brn());
         }
 
         private void btn_ModificarClientes_Click(object sender, EventArgs e)
@@ -265,21 +265,9 @@ namespace TuLuz
 
         private void btn_RegistrarEmpleados_Click(object sender, EventArgs e)
         {
-            AbrirFormularioSubMenu(new AltaEmpleados());
+            AbrirFormularioSubMenu(new brn());
         }
 
-        private void btn_ModificarEmpleados_Click_1(object sender, EventArgs e)
-        {
-            AbrirFormularioSubMenu(new ModificarEmpleados());
-        }
-        private void btn_ConsultarEmpleados_Click(object sender, EventArgs e)
-        {
-            AbrirFormularioSubMenu(new ConsultarEmpleados());
-        }
-        private void btn_EliminarEmpleados_Click(object sender, EventArgs e)
-        {
-            AbrirFormularioSubMenu(new BorrarEmpleados());
-        }
         private void btn_RegistrarProvincias_Click(object sender, EventArgs e)
         {
             AbrirFormularioSubMenu(new AltaProvincia());
@@ -298,26 +286,6 @@ namespace TuLuz
         private void btn_EliminarProvincias_Click(object sender, EventArgs e)
         {
             AbrirFormularioSubMenu(new BorrarProvincia());
-        }
-
-        private void btn_RegistrarLocalidades_Click(object sender, EventArgs e)
-        {
-            AbrirFormularioSubMenu(new AltaLocalidad());
-        }
-
-        private void btn_EliminarLocalidades_Click(object sender, EventArgs e)
-        {
-            AbrirFormularioSubMenu(new BorrarLocalidad());
-        }
-
-        private void btn_ConsultarLocalidades_Click(object sender, EventArgs e)
-        {
-            AbrirFormularioSubMenu(new ConsultarLocalidad());
-        }
-
-        private void btn_ModificarLocalidades_Click(object sender, EventArgs e)
-        {
-            AbrirFormularioSubMenu(new ModificarLocalidad());
         }
     }
 }

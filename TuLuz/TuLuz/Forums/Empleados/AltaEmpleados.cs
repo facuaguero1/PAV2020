@@ -13,24 +13,19 @@ using TuLuz.Negocio.EstructuraNegocios;
 
 namespace TuLuz.Forums
 {
-    public partial class AltaEmpleados : Form
+    public partial class brn : Form
     {
         Ng_Empleados Empleado = new Ng_Empleados();
         Ng_Barrios Barrio = new Ng_Barrios();
         Ng_Tipo_Documentos TipoDoc = new Ng_Tipo_Documentos();
         Ng_Users Usuario = new Ng_Users();
-        Ng_Provincias Provincia = new Ng_Provincias();
-        Ng_Localidad Localidad = new Ng_Localidad();
 
-        Be_BaseDatos _BD = new Be_BaseDatos();
-
-        public AltaEmpleados()
+        public brn()
         {
             InitializeComponent();
             cmb_Barrio.Cargar(Barrio.EstructuraCombo());
             cmb_Tipo_Doc.Cargar(TipoDoc.EstructuraCombo());
             cmb_Tipo_Doc_Jefe.Cargar(TipoDoc.EstructuraCombo());
-            
         }
 
         private void btn_cancelar_Click(object sender, EventArgs e)
@@ -53,7 +48,6 @@ namespace TuLuz.Forums
                 _Ee.telefono = txt_Telefono.Text;
                 _Ee.tipoDocJefe = cmb_Tipo_Doc.SelectedValue.ToString();
                 _Ee.numDocJefe = txt_Num_Doc_Jefe.Text;
-                _Ee.activo = "true";
               
                 if (txt_Num_Doc_Jefe.Text=="")
                 {
@@ -109,10 +103,5 @@ namespace TuLuz.Forums
                 grp_usr.Visible = true;
             }
         }
-        //public void CargarCombos ()
-        //{
-        //    cmb_provincia.Cargar(Provincia.EstructuraCombo());
-
-        //}
     }
 }

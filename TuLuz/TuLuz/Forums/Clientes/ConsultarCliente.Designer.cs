@@ -31,6 +31,9 @@
             this.btn_limpiarCampo = new System.Windows.Forms.GroupBox();
             this.btn_Limpiar = new System.Windows.Forms.Button();
             this.grid01 = new System.Windows.Forms.DataGridView();
+            this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.btn_Buscar = new System.Windows.Forms.Button();
             this.txt_BuscarCuit = new TuLuz.Clases.TextBox01();
             this.chk_Todos = new System.Windows.Forms.CheckBox();
@@ -57,11 +60,6 @@
             this.label5 = new System.Windows.Forms.Label();
             this.btn_salir = new System.Windows.Forms.Button();
             this.btn_Consultar = new System.Windows.Forms.Button();
-            this.txt_activo = new TuLuz.Clases.TextBox01();
-            this.label11 = new System.Windows.Forms.Label();
-            this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.btn_limpiarCampo.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.grid01)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
@@ -116,6 +114,30 @@
             this.grid01.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.grid01.Size = new System.Drawing.Size(621, 176);
             this.grid01.TabIndex = 4;
+            // 
+            // Column1
+            // 
+            this.Column1.FillWeight = 140F;
+            this.Column1.HeaderText = "CUIT";
+            this.Column1.Name = "Column1";
+            this.Column1.ReadOnly = true;
+            this.Column1.Width = 160;
+            // 
+            // Column2
+            // 
+            this.Column2.FillWeight = 140F;
+            this.Column2.HeaderText = "NOMBRE";
+            this.Column2.Name = "Column2";
+            this.Column2.ReadOnly = true;
+            this.Column2.Width = 200;
+            // 
+            // Column3
+            // 
+            this.Column3.FillWeight = 140F;
+            this.Column3.HeaderText = "APELLIDO";
+            this.Column3.Name = "Column3";
+            this.Column3.ReadOnly = true;
+            this.Column3.Width = 200;
             // 
             // btn_Buscar
             // 
@@ -257,8 +279,6 @@
             // Panel_ConsultarCliente
             // 
             this.Panel_ConsultarCliente.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.Panel_ConsultarCliente.Controls.Add(this.label11);
-            this.Panel_ConsultarCliente.Controls.Add(this.txt_activo);
             this.Panel_ConsultarCliente.Controls.Add(this.label10);
             this.Panel_ConsultarCliente.Controls.Add(this.btn_Aceptar);
             this.Panel_ConsultarCliente.Controls.Add(this.label9);
@@ -284,9 +304,9 @@
             // 
             // btn_Aceptar
             // 
-            this.btn_Aceptar.Location = new System.Drawing.Point(497, 224);
+            this.btn_Aceptar.Location = new System.Drawing.Point(506, 249);
             this.btn_Aceptar.Name = "btn_Aceptar";
-            this.btn_Aceptar.Size = new System.Drawing.Size(108, 51);
+            this.btn_Aceptar.Size = new System.Drawing.Size(99, 42);
             this.btn_Aceptar.TabIndex = 7;
             this.btn_Aceptar.Text = "Aceptar";
             this.btn_Aceptar.UseVisualStyleBackColor = true;
@@ -295,7 +315,7 @@
             // label9
             // 
             this.label9.AutoSize = true;
-            this.label9.Location = new System.Drawing.Point(31, 186);
+            this.label9.Location = new System.Drawing.Point(31, 266);
             this.label9.Name = "label9";
             this.label9.Size = new System.Drawing.Size(82, 25);
             this.label9.TabIndex = 5;
@@ -304,7 +324,7 @@
             // label8
             // 
             this.label8.AutoSize = true;
-            this.label8.Location = new System.Drawing.Point(32, 142);
+            this.label8.Location = new System.Drawing.Point(32, 199);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(81, 25);
             this.label8.TabIndex = 4;
@@ -313,7 +333,7 @@
             // label7
             // 
             this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(66, 98);
+            this.label7.Location = new System.Drawing.Point(66, 128);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(47, 25);
             this.label7.TabIndex = 3;
@@ -322,7 +342,7 @@
             // txt_NombreNuevo
             // 
             this.txt_NombreNuevo.Enabled = false;
-            this.txt_NombreNuevo.Location = new System.Drawing.Point(136, 139);
+            this.txt_NombreNuevo.Location = new System.Drawing.Point(136, 196);
             this.txt_NombreNuevo.Name = "txt_NombreNuevo";
             this.txt_NombreNuevo.pp_mensaje_error = null;
             this.txt_NombreNuevo.pp_nombre_campo = null;
@@ -334,7 +354,7 @@
             // txt_ApellidoNuevo
             // 
             this.txt_ApellidoNuevo.Enabled = false;
-            this.txt_ApellidoNuevo.Location = new System.Drawing.Point(136, 183);
+            this.txt_ApellidoNuevo.Location = new System.Drawing.Point(136, 263);
             this.txt_ApellidoNuevo.Name = "txt_ApellidoNuevo";
             this.txt_ApellidoNuevo.pp_mensaje_error = null;
             this.txt_ApellidoNuevo.pp_nombre_campo = null;
@@ -346,7 +366,7 @@
             // txt_CuitNuevo
             // 
             this.txt_CuitNuevo.Enabled = false;
-            this.txt_CuitNuevo.Location = new System.Drawing.Point(136, 95);
+            this.txt_CuitNuevo.Location = new System.Drawing.Point(136, 125);
             this.txt_CuitNuevo.Name = "txt_CuitNuevo";
             this.txt_CuitNuevo.pp_mensaje_error = null;
             this.txt_CuitNuevo.pp_nombre_campo = null;
@@ -392,52 +412,6 @@
             this.btn_Consultar.TabIndex = 3;
             this.btn_Consultar.UseVisualStyleBackColor = true;
             this.btn_Consultar.Click += new System.EventHandler(this.btn_Consultar_Click);
-            // 
-            // txt_activo
-            // 
-            this.txt_activo.Location = new System.Drawing.Point(136, 224);
-            this.txt_activo.Name = "txt_activo";
-            this.txt_activo.pp_mensaje_error = null;
-            this.txt_activo.pp_nombre_campo = null;
-            this.txt_activo.pp_nombre_tabla = null;
-            this.txt_activo.pp_validable = false;
-            this.txt_activo.Size = new System.Drawing.Size(208, 30);
-            this.txt_activo.TabIndex = 9;
-            this.txt_activo.Visible = false;
-            // 
-            // label11
-            // 
-            this.label11.AutoSize = true;
-            this.label11.Location = new System.Drawing.Point(38, 227);
-            this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(66, 25);
-            this.label11.TabIndex = 10;
-            this.label11.Text = "Activo";
-            this.label11.Visible = false;
-            // 
-            // Column1
-            // 
-            this.Column1.FillWeight = 140F;
-            this.Column1.HeaderText = "CUIT";
-            this.Column1.Name = "Column1";
-            this.Column1.ReadOnly = true;
-            this.Column1.Width = 160;
-            // 
-            // Column2
-            // 
-            this.Column2.FillWeight = 140F;
-            this.Column2.HeaderText = "NOMBRE";
-            this.Column2.Name = "Column2";
-            this.Column2.ReadOnly = true;
-            this.Column2.Width = 200;
-            // 
-            // Column3
-            // 
-            this.Column3.FillWeight = 140F;
-            this.Column3.HeaderText = "APELLIDO";
-            this.Column3.Name = "Column3";
-            this.Column3.ReadOnly = true;
-            this.Column3.Width = 200;
             // 
             // ConsultarCliente
             // 
@@ -496,12 +470,10 @@
         private System.Windows.Forms.Button btn_Consultar;
         private System.Windows.Forms.Label label10;
         private System.Windows.Forms.DataGridView grid01;
-        private System.Windows.Forms.Button btn_Limpiar;
-        private System.Windows.Forms.Button btn_salir;
-        private System.Windows.Forms.Label label11;
-        private Clases.TextBox01 txt_activo;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column1;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column2;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column3;
+        private System.Windows.Forms.Button btn_Limpiar;
+        private System.Windows.Forms.Button btn_salir;
     }
 }

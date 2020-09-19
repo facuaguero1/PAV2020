@@ -14,18 +14,9 @@ namespace TuLuz.Negocio
     class Ng_Clientes
     {
         Be_BaseDatos _BD = new Be_BaseDatos();
-
-        //public void Insertar(Control.ControlCollection controles)
-        //{
-        //    _BD.InsertarAutomatizado("Cliente", controles);
-        //}
-
-        public void Insertar(Es_Clientes Cliente)
+        public void Insertar(Control.ControlCollection controles)
         {
-            String sqlInsertar = "INSERT INTO Cliente(cuitCliente,nombre,apellido,activo) VALUES(" + Cliente.cuitCliente + ",'" + Cliente.nombre + "','" + Cliente.apellido + "','" + Cliente.activo +"')";
-            MessageBox.Show("El Cliente fue registrado con exito!", "REGISTRACION EXITOSA", MessageBoxButtons.OK, MessageBoxIcon.Information);
-            _BD.Insertar(sqlInsertar);
-
+            _BD.InsertarAutomatizado("Cliente", controles);
         }
 
         public DataTable Todos_los_Clientes()
@@ -37,7 +28,7 @@ namespace TuLuz.Negocio
         }
         public DataTable Buscar_Cliente(string cuit)
         {
-            string sql = "SELECT * FROM Cliente WHERE cuitCliente like '%" + cuit.Trim() + "%'";
+            string sql = "SELECT * FROM cliente WHERE cuitCliente like '%" + cuit.Trim() + "%'";
             DataTable tabla = new DataTable();
             tabla = _BD.Consulta(sql);
             return tabla;

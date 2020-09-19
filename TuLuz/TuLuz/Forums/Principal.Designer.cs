@@ -995,7 +995,6 @@
             this.btn_EliminarLocalidades.Text = "Eliminar Localidades";
             this.btn_EliminarLocalidades.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btn_EliminarLocalidades.UseVisualStyleBackColor = true;
-            this.btn_EliminarLocalidades.Click += new System.EventHandler(this.btn_EliminarLocalidades_Click);
             // 
             // btn_ConsultarLocalidades
             // 
@@ -1012,7 +1011,6 @@
             this.btn_ConsultarLocalidades.Text = "Consultar Localidades";
             this.btn_ConsultarLocalidades.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btn_ConsultarLocalidades.UseVisualStyleBackColor = true;
-            this.btn_ConsultarLocalidades.Click += new System.EventHandler(this.btn_ConsultarLocalidades_Click);
             // 
             // btn_ModificarLocalidades
             // 
@@ -1029,7 +1027,6 @@
             this.btn_ModificarLocalidades.Text = "Modificar Localidades";
             this.btn_ModificarLocalidades.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btn_ModificarLocalidades.UseVisualStyleBackColor = true;
-            this.btn_ModificarLocalidades.Click += new System.EventHandler(this.btn_ModificarLocalidades_Click);
             // 
             // btn_RegistrarLocalidades
             // 
@@ -1046,7 +1043,6 @@
             this.btn_RegistrarLocalidades.Text = "Registrar Localidades";
             this.btn_RegistrarLocalidades.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btn_RegistrarLocalidades.UseVisualStyleBackColor = true;
-            this.btn_RegistrarLocalidades.Click += new System.EventHandler(this.btn_RegistrarLocalidades_Click);
             // 
             // btn_Localidades
             // 
@@ -1379,7 +1375,6 @@
             this.btn_EliminarEmpleados.Text = "Eliminar Empleados";
             this.btn_EliminarEmpleados.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btn_EliminarEmpleados.UseVisualStyleBackColor = true;
-            this.btn_EliminarEmpleados.Click += new System.EventHandler(this.btn_EliminarEmpleados_Click);
             // 
             // btn_ConsultarEmpleados
             // 
@@ -1396,7 +1391,6 @@
             this.btn_ConsultarEmpleados.Text = "Consultar Empleados";
             this.btn_ConsultarEmpleados.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btn_ConsultarEmpleados.UseVisualStyleBackColor = true;
-            this.btn_ConsultarEmpleados.Click += new System.EventHandler(this.btn_ConsultarEmpleados_Click);
             // 
             // btn_ModificarEmpleados
             // 
@@ -1413,7 +1407,6 @@
             this.btn_ModificarEmpleados.Text = "Modificar Empleados";
             this.btn_ModificarEmpleados.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btn_ModificarEmpleados.UseVisualStyleBackColor = true;
-            this.btn_ModificarEmpleados.Click += new System.EventHandler(this.btn_ModificarEmpleados_Click_1);
             // 
             // btn_RegistrarEmpleados
             // 

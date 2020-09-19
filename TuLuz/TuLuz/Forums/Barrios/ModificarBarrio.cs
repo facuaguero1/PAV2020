@@ -28,7 +28,6 @@ namespace TuLuz.Forums.Clientes
         {
             InitializeComponent();
             CerrarPanel();
-            cmbLocalidades.Cargar(Localidad.EstructuraCombo());
            
             
         }
@@ -53,7 +52,6 @@ namespace TuLuz.Forums.Clientes
                 tabla = Barrio.RecuperarBarrio_Codigo(cod);
                 txt_codBarrio.Text = tabla.Rows[0]["codBarrio"].ToString();
                 txt_NombreNuevo.Text = tabla.Rows[0]["nombre"].ToString();
-                cmbLocalidades.SelectedValue = int.Parse(tabla.Rows[0]["codLocalidad"].ToString());
 
 
             }
