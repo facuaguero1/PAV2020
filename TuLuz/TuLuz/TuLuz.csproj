@@ -127,6 +127,30 @@
     <Compile Include="Forums\Empleados\ModificarEmpleados.Designer.cs">
       <DependentUpon>ModificarEmpleados.cs</DependentUpon>
     </Compile>
+    <Compile Include="Forums\Localidades\AltaLocalidad.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forums\Localidades\AltaLocalidad.Designer.cs">
+      <DependentUpon>AltaLocalidad.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forums\Localidades\BorrarLocalidad.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forums\Localidades\BorrarLocalidad.Designer.cs">
+      <DependentUpon>BorrarLocalidad.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forums\Localidades\ConsultarLocalidad.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forums\Localidades\ConsultarLocalidad.Designer.cs">
+      <DependentUpon>ConsultarLocalidad.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forums\Localidades\ModificarLocalidad.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forums\Localidades\ModificarLocalidad.Designer.cs">
+      <DependentUpon>ModificarLocalidad.cs</DependentUpon>
+    </Compile>
     <Compile Include="Forums\Login.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -220,6 +244,18 @@
     <EmbeddedResource Include="Forums\Empleados\ModificarEmpleados.resx">
       <DependentUpon>ModificarEmpleados.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Forums\Localidades\AltaLocalidad.resx">
+      <DependentUpon>AltaLocalidad.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forums\Localidades\BorrarLocalidad.resx">
+      <DependentUpon>BorrarLocalidad.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forums\Localidades\ConsultarLocalidad.resx">
+      <DependentUpon>ConsultarLocalidad.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forums\Localidades\ModificarLocalidad.resx">
+      <DependentUpon>ModificarLocalidad.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Forums\Login.resx">
       <DependentUpon>Login.cs</DependentUpon>
     </EmbeddedResource>
@@ -282,5 +318,6 @@
   <ItemGroup>
     <None Include="Resources\....png" />
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

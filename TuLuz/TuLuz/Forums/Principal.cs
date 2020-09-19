@@ -300,6 +300,24 @@ namespace TuLuz
             AbrirFormularioSubMenu(new BorrarProvincia());
         }
 
+        private void btn_RegistrarLocalidades_Click(object sender, EventArgs e)
+        {
+            AbrirFormularioSubMenu(new AltaLocalidad());
+        }
 
+        private void btn_EliminarLocalidades_Click(object sender, EventArgs e)
+        {
+            AbrirFormularioSubMenu(new BorrarLocalidad());
+        }
+
+        private void btn_ConsultarLocalidades_Click(object sender, EventArgs e)
+        {
+            AbrirFormularioSubMenu(new ConsultarLocalidad());
+        }
+
+        private void btn_ModificarLocalidades_Click(object sender, EventArgs e)
+        {
+            AbrirFormularioSubMenu(new ModificarLocalidad());
+        }
     }
 }

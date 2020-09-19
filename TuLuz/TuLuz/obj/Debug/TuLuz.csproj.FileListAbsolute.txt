@@ -171,3 +171,7 @@ C:\Users\matut\Desktop\2020\PAV 1\TP\PAV2020\TuLuz\TuLuz\obj\Debug\TuLuz.csproj.
 C:\Users\matut\Desktop\2020\PAV 1\TP\PAV2020\TuLuz\TuLuz\obj\Debug\TuLuz.csproj.CoreCompileInputs.cache
 C:\Users\matut\Desktop\2020\PAV 1\TP\PAV2020\TuLuz\TuLuz\obj\Debug\TuLuz.exe
 C:\Users\matut\Desktop\2020\PAV 1\TP\PAV2020\TuLuz\TuLuz\obj\Debug\TuLuz.pdb
+C:\Users\matut\Desktop\2020\PAV 1\TP\PAV2020\TuLuz\TuLuz\obj\Debug\TuLuz.Forums.AltaLocalidad.resources
+C:\Users\matut\Desktop\2020\PAV 1\TP\PAV2020\TuLuz\TuLuz\obj\Debug\TuLuz.Forums.Provincias.BorrarLocalidad.resources
+C:\Users\matut\Desktop\2020\PAV 1\TP\PAV2020\TuLuz\TuLuz\obj\Debug\TuLuz.Forums.Provincias.ConsultarLocalidad.resources
+C:\Users\matut\Desktop\2020\PAV 1\TP\PAV2020\TuLuz\TuLuz\obj\Debug\TuLuz.Forums.Provincias.ModificarLocalidad.resources

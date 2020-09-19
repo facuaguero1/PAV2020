@@ -18,7 +18,14 @@ namespace TuLuz.Negocio
         //{
         //    _BD.InsertarAutomatizado("Localidad", controles);
         //}
+        public void Insertar(Es_Localidad localidad)
+        {
 
+            String sqlInsertar = "INSERT INTO Localidad (codLocalidad, nombre, codProvincia) VALUES(" + localidad.codLocalidad + ",'" + localidad.nombre + "'," + localidad.codProvincia + ")";
+            MessageBox.Show("La Localidad fue creada con exito!", "CREACIÓN EXITOSA", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            _BD.Insertar(sqlInsertar);
+
+        }
         public DataTable Todos_las_Localidades()
         {
             string sql = "SELECT * FROM Localidad";
@@ -55,14 +62,14 @@ namespace TuLuz.Negocio
             sqlUpdate += ", nombre = " + _BD.FormatearDato(datos.nombre, "String");
             sqlUpdate += " WHERE codLocalidad = " + datos.codLocalidad;
 
-            MessageBox.Show("El Barrio fue modificado con exito!", "MODIFICACIÓN EXITOSA", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            MessageBox.Show("La Localidad fue modificada con exito!", "MODIFICACIÓN EXITOSA", MessageBoxButtons.OK, MessageBoxIcon.Information);
             _BD.Modificar(sqlUpdate);
 
         }
         public void Borrar(string cod)
         {
             string sqlDelete = "DELETE FROM Localidad WHERE codLocalidad = " + cod;
-            MessageBox.Show("La Localidad fue eliminado con exito!", "ELIMINACIÓN EXITOSA", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            MessageBox.Show("La Localidad fue eliminada con exito!", "ELIMINACIÓN EXITOSA", MessageBoxButtons.OK, MessageBoxIcon.Information);
             _BD.Borrar(sqlDelete);
         }
 

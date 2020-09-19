@@ -32,8 +32,9 @@ namespace TuLuz.Forums.Clientes
         {
             InitializeComponent();
             CerrarPanel();
-           
-            
+            cmb_barrio.Cargar(Barrio.EstructuraCombo());
+
+
         }
          private void CerrarPanel ()
         {
@@ -62,7 +63,7 @@ namespace TuLuz.Forums.Clientes
                 txt_Nombre.Text = tabla.Rows[0]["nombre"].ToString();
                 txt_Apellido.Text = tabla.Rows[0]["apellido"].ToString();
                 txt_Direccion.Text = tabla.Rows[0]["direccion"].ToString();
-                cmb_barrio.Cargar(Barrio.EstructuraCombo());
+                cmb_barrio.SelectedValue = int.Parse(tabla.Rows[0]["codBarrio"].ToString());
                 txt_Telefono.Text = tabla.Rows[0]["telefono"].ToString();
 
                 if (EsNull == "")
@@ -130,21 +131,6 @@ namespace TuLuz.Forums.Clientes
         private void btn_salir_Click(object sender, EventArgs e)
         {
             this.Close();
-        }
-
-        private void label10_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label9_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void cmbLocalidades_SelectedIndexChanged(object sender, EventArgs e)
-        {
-
         }
     }
 }
