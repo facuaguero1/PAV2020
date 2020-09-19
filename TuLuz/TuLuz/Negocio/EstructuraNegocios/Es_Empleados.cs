@@ -17,6 +17,8 @@ namespace TuLuz.Negocio.EstructuraNegocios
         public string telefono { get; set; }
         public string tipoDocJefe { get; set; }
         public string numDocJefe { get; set; }
+        public string activo { get; set; }
+
 
     }
 }

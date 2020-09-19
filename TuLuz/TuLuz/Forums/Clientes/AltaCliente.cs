@@ -15,7 +15,7 @@ namespace TuLuz.Forums
 {
     public partial class AltaCliente : Form
     {
-        Ng_Clientes usuario = new Ng_Clientes(); 
+        Ng_Clientes Cliente = new Ng_Clientes(); 
         public AltaCliente()
         {
             InitializeComponent();
@@ -31,12 +31,16 @@ namespace TuLuz.Forums
             TratamientosEspeciales tratamiento = new TratamientosEspeciales();
             Es_Clientes _Ec = new Es_Clientes();
 
-            if (tratamiento.validar(this.Controls)==TratamientosEspeciales.Validacion.correcta)
+            if (tratamiento.validar(this.Controls) == TratamientosEspeciales.Validacion.correcta)
             {
-                usuario.Insertar(this.Controls);
-                this.Dispose();
+                _Ec.cuitCliente = txt_CuitCliente.Text;
+                _Ec.nombre = txt_nombreCliente.Text;
+                _Ec.apellido = txt_ApellidoCliente.Text;
+                _Ec.activo = "true";
+                Cliente.Insertar(_Ec);
+                this.Close();
             }
-            
+           
         }
 
         private void btn_salir_Click(object sender, EventArgs e)

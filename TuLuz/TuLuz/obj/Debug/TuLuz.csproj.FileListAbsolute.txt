@@ -72,12 +72,10 @@ C:\Users\Fabri\Documents\GitHub\PAV2020\TuLuz\TuLuz\obj\Debug\TuLuz.pdb
 C:\Users\matgo\Documents\GitHub\PAV2020\TuLuz\TuLuz\bin\Debug\TuLuz.exe.config
 C:\Users\matgo\Documents\GitHub\PAV2020\TuLuz\TuLuz\bin\Debug\TuLuz.exe
 C:\Users\matgo\Documents\GitHub\PAV2020\TuLuz\TuLuz\bin\Debug\TuLuz.pdb
-C:\Users\matgo\Documents\GitHub\PAV2020\TuLuz\TuLuz\obj\Debug\TuLuz.csprojAssemblyReference.cache
 C:\Users\matgo\Documents\GitHub\PAV2020\TuLuz\TuLuz\obj\Debug\TuLuz.Forums.AltaBarrio.resources
 C:\Users\matgo\Documents\GitHub\PAV2020\TuLuz\TuLuz\obj\Debug\TuLuz.Forums.Clientes.BorrarBarrio.resources
 C:\Users\matgo\Documents\GitHub\PAV2020\TuLuz\TuLuz\obj\Debug\TuLuz.Forums.Clientes.ConsultarBarrio.resources
 C:\Users\matgo\Documents\GitHub\PAV2020\TuLuz\TuLuz\obj\Debug\TuLuz.Forums.Clientes.ModificarBarrio.resources
-C:\Users\matgo\Documents\GitHub\PAV2020\TuLuz\TuLuz\obj\Debug\TuLuz.Forums.AltaCliente.resources
 C:\Users\matgo\Documents\GitHub\PAV2020\TuLuz\TuLuz\obj\Debug\TuLuz.Forums.Clientes.BorrarCliente.resources
 C:\Users\matgo\Documents\GitHub\PAV2020\TuLuz\TuLuz\obj\Debug\TuLuz.Forums.Clientes.ConsultarCliente.resources
 C:\Users\matgo\Documents\GitHub\PAV2020\TuLuz\TuLuz\obj\Debug\TuLuz.Forums.Clientes.ModificarCliente.resources
@@ -135,3 +133,41 @@ C:\Users\USUARIO\repositorios\PAV2020\TuLuz\TuLuz\bin\Debug\TuLuz.pdb
 C:\Users\USUARIO\repositorios\PAV2020\TuLuz\TuLuz\obj\Debug\TuLuz.Forums.Provincias.ConsultarProvincia.resources
 C:\Users\USUARIO\repositorios\PAV2020\TuLuz\TuLuz\obj\Debug\TuLuz.Forums.Provincias.ModificarProvincia.resources
 C:\Users\USUARIO\repositorios\PAV2020\TuLuz\TuLuz\obj\Debug\TuLuz.Forums.Provincias.BorrarProvincia.resources
+C:\Users\matgo\Documents\GitHub\PAV2020\TuLuz\TuLuz\obj\Debug\TuLuz.Forums.AltaProvincia.resources
+C:\Users\matgo\Documents\GitHub\PAV2020\TuLuz\TuLuz\obj\Debug\TuLuz.Forums.Provincias.BorrarProvincia.resources
+C:\Users\matgo\Documents\GitHub\PAV2020\TuLuz\TuLuz\obj\Debug\TuLuz.Forums.Provincias.ConsultarProvincia.resources
+C:\Users\matgo\Documents\GitHub\PAV2020\TuLuz\TuLuz\obj\Debug\TuLuz.Forums.Provincias.ModificarProvincia.resources
+C:\Users\matgo\Documents\GitHub\PAV2020\TuLuz\TuLuz\obj\Debug\TuLuz.Forums.AltaEmpleados.resources
+C:\Users\matgo\Documents\GitHub\PAV2020\TuLuz\TuLuz\obj\Debug\TuLuz.Forums.AltaCliente.resources
+C:\Users\matgo\Documents\GitHub\PAV2020\TuLuz\TuLuz\obj\Debug\TuLuz.Forums.Clientes.ModificarEmpleados.resources
+C:\Users\matgo\Documents\GitHub\PAV2020\TuLuz\TuLuz\obj\Debug\TuLuz.csprojAssemblyReference.cache
+C:\Users\matgo\Documents\GitHub\PAV2020\TuLuz\TuLuz\obj\Debug\TuLuz.Forums.Clientes.ConsultarEmpleados.resources
+C:\Users\matgo\Documents\GitHub\PAV2020\TuLuz\TuLuz\obj\Debug\TuLuz.Forums.Clientes.BorrarEmpleados.resources
+C:\Users\matut\Desktop\2020\PAV 1\TP\PAV2020\TuLuz\TuLuz\bin\Debug\TuLuz.exe.config
+C:\Users\matut\Desktop\2020\PAV 1\TP\PAV2020\TuLuz\TuLuz\bin\Debug\TuLuz.exe
+C:\Users\matut\Desktop\2020\PAV 1\TP\PAV2020\TuLuz\TuLuz\bin\Debug\TuLuz.pdb
+C:\Users\matut\Desktop\2020\PAV 1\TP\PAV2020\TuLuz\TuLuz\obj\Debug\TuLuz.csprojAssemblyReference.cache
+C:\Users\matut\Desktop\2020\PAV 1\TP\PAV2020\TuLuz\TuLuz\obj\Debug\TuLuz.Forums.AltaBarrio.resources
+C:\Users\matut\Desktop\2020\PAV 1\TP\PAV2020\TuLuz\TuLuz\obj\Debug\TuLuz.Forums.Clientes.BorrarBarrio.resources
+C:\Users\matut\Desktop\2020\PAV 1\TP\PAV2020\TuLuz\TuLuz\obj\Debug\TuLuz.Forums.Clientes.ConsultarBarrio.resources
+C:\Users\matut\Desktop\2020\PAV 1\TP\PAV2020\TuLuz\TuLuz\obj\Debug\TuLuz.Forums.Clientes.ModificarBarrio.resources
+C:\Users\matut\Desktop\2020\PAV 1\TP\PAV2020\TuLuz\TuLuz\obj\Debug\TuLuz.Forums.AltaCliente.resources
+C:\Users\matut\Desktop\2020\PAV 1\TP\PAV2020\TuLuz\TuLuz\obj\Debug\TuLuz.Forums.AltaEmpleados.resources
+C:\Users\matut\Desktop\2020\PAV 1\TP\PAV2020\TuLuz\TuLuz\obj\Debug\TuLuz.Forums.Clientes.BorrarCliente.resources
+C:\Users\matut\Desktop\2020\PAV 1\TP\PAV2020\TuLuz\TuLuz\obj\Debug\TuLuz.Forums.Clientes.ConsultarCliente.resources
+C:\Users\matut\Desktop\2020\PAV 1\TP\PAV2020\TuLuz\TuLuz\obj\Debug\TuLuz.Forums.Clientes.ModificarCliente.resources
+C:\Users\matut\Desktop\2020\PAV 1\TP\PAV2020\TuLuz\TuLuz\obj\Debug\TuLuz.Forums.Clientes.BorrarEmpleados.resources
+C:\Users\matut\Desktop\2020\PAV 1\TP\PAV2020\TuLuz\TuLuz\obj\Debug\TuLuz.Forums.Clientes.ConsultarEmpleados.resources
+C:\Users\matut\Desktop\2020\PAV 1\TP\PAV2020\TuLuz\TuLuz\obj\Debug\TuLuz.Forums.Clientes.ModificarEmpleados.resources
+C:\Users\matut\Desktop\2020\PAV 1\TP\PAV2020\TuLuz\TuLuz\obj\Debug\TuLuz.Forums.Login.resources
+C:\Users\matut\Desktop\2020\PAV 1\TP\PAV2020\TuLuz\TuLuz\obj\Debug\TuLuz.Principal.resources
+C:\Users\matut\Desktop\2020\PAV 1\TP\PAV2020\TuLuz\TuLuz\obj\Debug\TuLuz.Forums.AltaProvincia.resources
+C:\Users\matut\Desktop\2020\PAV 1\TP\PAV2020\TuLuz\TuLuz\obj\Debug\TuLuz.Forums.Provincias.BorrarProvincia.resources
+C:\Users\matut\Desktop\2020\PAV 1\TP\PAV2020\TuLuz\TuLuz\obj\Debug\TuLuz.Forums.Provincias.ConsultarProvincia.resources
+C:\Users\matut\Desktop\2020\PAV 1\TP\PAV2020\TuLuz\TuLuz\obj\Debug\TuLuz.Forums.Provincias.ModificarProvincia.resources
+C:\Users\matut\Desktop\2020\PAV 1\TP\PAV2020\TuLuz\TuLuz\obj\Debug\TuLuz.Forums.VerPerfil.resources
+C:\Users\matut\Desktop\2020\PAV 1\TP\PAV2020\TuLuz\TuLuz\obj\Debug\TuLuz.Properties.Resources.resources
+C:\Users\matut\Desktop\2020\PAV 1\TP\PAV2020\TuLuz\TuLuz\obj\Debug\TuLuz.csproj.GenerateResource.cache
+C:\Users\matut\Desktop\2020\PAV 1\TP\PAV2020\TuLuz\TuLuz\obj\Debug\TuLuz.csproj.CoreCompileInputs.cache
+C:\Users\matut\Desktop\2020\PAV 1\TP\PAV2020\TuLuz\TuLuz\obj\Debug\TuLuz.exe
+C:\Users\matut\Desktop\2020\PAV 1\TP\PAV2020\TuLuz\TuLuz\obj\Debug\TuLuz.pdb
