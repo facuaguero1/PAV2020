@@ -123,8 +123,20 @@ namespace TuLuz.Forums.Clientes
 
         private void btn_Aceptar_Click(object sender, EventArgs e)
         {
-            Empleados.Borrar(this.Doc);
-            Panel_BorrarEmpleado.Visible = false;
+            
+             if (Empleados.ContarCotizacionDelCliente(this.Doc) > 0)
+             {
+
+                MessageBox.Show("El Empleado tiene Cotizaciones asignados, por lo tanto se lo dara de baja pero no se lo eliminara", "ATNENCION");
+                Empleados.DarBaja(this.Doc);
+                Panel_BorrarEmpleado.Visible = false;
+
+             }
+            else
+            {
+                Empleados.Borrar(this.Doc);
+                Panel_BorrarEmpleado.Visible = false;
+            }
         }
 
         private void btn_salir_Click(object sender, EventArgs e)
@@ -150,6 +162,14 @@ namespace TuLuz.Forums.Clientes
         private void btn_limpiarr_Click(object sender, EventArgs e)
         {
            cmb_TipoDocJefe.SelectedIndex = -1;
+        }
+
+        private void txt_BuscarDoc_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (!char.IsControl(e.KeyChar) && !char.IsDigit(e.KeyChar))
+            {
+                e.Handled = true;
+            }
         }
     }
 }

@@ -64,6 +64,7 @@ namespace TuLuz.Forums.Clientes
                 txt_Direccion.Text = tabla.Rows[0]["direccion"].ToString();
                 cmb_barrio.SelectedValue = int.Parse(tabla.Rows[0]["codBarrio"].ToString());
                 txt_Telefono.Text = tabla.Rows[0]["telefono"].ToString();
+                cmb_activo.SelectedItem = tabla.Rows[0]["activo"].ToString();
 
                 if (EsNull == "")
                 {
@@ -140,8 +141,8 @@ namespace TuLuz.Forums.Clientes
                 _EE.telefono = txt_Telefono.Text;
                 if (EsNull == "")
                 {
-                    _EE.tipoDocJefe = null;
-                    _EE.numDocJefe = null;
+                    _EE.tipoDocJefe = "null";
+                    _EE.numDocJefe = "null";
                     Empleados.Modificar(_EE);
                     Panel_ModificarCliente.Visible = false;
 
@@ -150,6 +151,7 @@ namespace TuLuz.Forums.Clientes
                 {
                     _EE.tipoDocJefe = cmb_TipoDocJefe.SelectedValue.ToString();
                     _EE.numDocJefe = txt_NumDocJefe.Text;
+                    _EE.activo = cmb_activo.SelectedItem.ToString();
                     Empleados.Modificar(_EE);
                     Panel_ModificarCliente.Visible = false;
                 }
@@ -182,6 +184,19 @@ namespace TuLuz.Forums.Clientes
         private void btn_limpiarr_Click(object sender, EventArgs e)
         {
            cmb_TipoDocJefe.SelectedIndex = -1;
+        }
+
+        private void label17_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void ModificarEmpleados_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (!char.IsControl(e.KeyChar) && !char.IsDigit(e.KeyChar))
+            {
+                e.Handled = true;
+            }
         }
     }
 }

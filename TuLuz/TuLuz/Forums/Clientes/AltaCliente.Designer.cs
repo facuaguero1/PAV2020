@@ -134,12 +134,13 @@
             this.txt_ApellidoCliente.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txt_ApellidoCliente.Location = new System.Drawing.Point(124, 226);
             this.txt_ApellidoCliente.Name = "txt_ApellidoCliente";
-            this.txt_ApellidoCliente.pp_mensaje_error = "No se ingreso APELLIDO!!";
+            this.txt_ApellidoCliente.pp_mensaje_error = "No se Ingreso algun campo";
             this.txt_ApellidoCliente.pp_nombre_campo = "apellido";
             this.txt_ApellidoCliente.pp_nombre_tabla = "Cliente";
             this.txt_ApellidoCliente.pp_validable = true;
             this.txt_ApellidoCliente.Size = new System.Drawing.Size(466, 30);
             this.txt_ApellidoCliente.TabIndex = 6;
+            this.txt_ApellidoCliente.TextChanged += new System.EventHandler(this.txt_ApellidoCliente_TextChanged);
             // 
             // txt_nombreCliente
             // 
@@ -147,7 +148,7 @@
             this.txt_nombreCliente.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txt_nombreCliente.Location = new System.Drawing.Point(124, 181);
             this.txt_nombreCliente.Name = "txt_nombreCliente";
-            this.txt_nombreCliente.pp_mensaje_error = "No se ingreso NOMBRE!!";
+            this.txt_nombreCliente.pp_mensaje_error = "No se Ingreso algun campo";
             this.txt_nombreCliente.pp_nombre_campo = "nombre";
             this.txt_nombreCliente.pp_nombre_tabla = "Cliente";
             this.txt_nombreCliente.pp_validable = true;
@@ -160,7 +161,7 @@
             this.txt_CuitCliente.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txt_CuitCliente.Location = new System.Drawing.Point(124, 135);
             this.txt_CuitCliente.Name = "txt_CuitCliente";
-            this.txt_CuitCliente.pp_mensaje_error = "No se ingreso CUIT!!";
+            this.txt_CuitCliente.pp_mensaje_error = "No se Ingreso algun campo";
             this.txt_CuitCliente.pp_nombre_campo = "cuitCliente";
             this.txt_CuitCliente.pp_nombre_tabla = "Cliente";
             this.txt_CuitCliente.pp_validable = true;

@@ -21,16 +21,16 @@ namespace TuLuz.Forums.Clientes
     public partial class BorrarCliente : Form
     {
         Ng_Clientes cliente = new Ng_Clientes();
-        public string cuit { get; set; } 
-        
+        public string cuit { get; set; }
+
         public BorrarCliente()
         {
             InitializeComponent();
             CerrarPanel();
-           
-            
+
+
         }
-         private void CerrarPanel ()
+        private void CerrarPanel()
         {
             Panel_ModificarCliente.Visible = false;
         }
@@ -44,14 +44,19 @@ namespace TuLuz.Forums.Clientes
             }
             else
             {
-                Panel_ModificarCliente.Visible = true;
                 this.cuit = grid01.CurrentRow.Cells[0].Value.ToString();
-                DataTable tabla = new DataTable();
-                tabla = cliente.RecuperarCliente(cuit);
-                txt_CuitNuevo.Text = tabla.Rows[0]["cuitCliente"].ToString();
-                txt_NombreNuevo.Text = tabla.Rows[0]["nombre"].ToString();
-                txt_ApellidoNuevo.Text = tabla.Rows[0]["apellido"].ToString();
-
+                DataTable Verificacion = new DataTable();
+                Verificacion = cliente.Buscar_Cliente(this.cuit);
+                if (Verificacion.Rows.Count > 0)
+                {
+                    Panel_ModificarCliente.Visible = true;
+                    this.cuit = grid01.CurrentRow.Cells[0].Value.ToString();
+                    DataTable tabla = new DataTable();
+                    tabla = cliente.RecuperarCliente(cuit);
+                    txt_CuitNuevo.Text = tabla.Rows[0]["cuitCliente"].ToString();
+                    txt_NombreNuevo.Text = tabla.Rows[0]["nombre"].ToString();
+                    txt_ApellidoNuevo.Text = tabla.Rows[0]["apellido"].ToString();
+                }
 
             }
         }
@@ -63,23 +68,38 @@ namespace TuLuz.Forums.Clientes
 
         private void btn_Buscar_Click(object sender, EventArgs e)
         {
-            if (chk_Todos.Checked==true)
+            if (chk_activos.Checked == true)
             {
-                Cargar_grilla(cliente.Todos_los_Clientes());
-            }
-            else
-            {
-                if (txt_BuscarCuit.Text == "")
+                if (chk_noActivos.Checked == true)
                 {
-                    MessageBox.Show("No se ingreso parametro de busqueda");
+                    Cargar_grilla(cliente.Todos_los_Clientes());
                 }
                 else
                 {
-                    Cargar_grilla(cliente.Buscar_Cliente(txt_BuscarCuit.Text));
+                    Cargar_grilla(cliente.Todos_los_ClientesActivos());
+                }
+            }
+            else
+            {
+                if (chk_noActivos.Checked == true)
+                {
+                    Cargar_grilla(cliente.Todos_los_ClientesNoActivos());
+                }
+                else
+                {
+
+                    if (txt_BuscarCuit.Text == "")
+                    {
+                        MessageBox.Show("No se ingreso parametro de busqueda");
+                    }
+                    else
+                    {
+                        Cargar_grilla(cliente.RecuperarCliente(txt_BuscarCuit.Text));
+                    }
                 }
             }
         }
-        private void Cargar_grilla (DataTable tabla)
+        private void Cargar_grilla(DataTable tabla)
         {
             grid01.Rows.Clear();
             for (int i = 0; i < tabla.Rows.Count; i++)
@@ -96,7 +116,7 @@ namespace TuLuz.Forums.Clientes
             txt_BuscarCuit.Text = "";
         }
 
-        
+
 
         private void btn_salir_Click(object sender, EventArgs e)
         {
@@ -105,8 +125,30 @@ namespace TuLuz.Forums.Clientes
 
         private void btn_Aceptar_Click(object sender, EventArgs e)
         {
-            cliente.Borrar(this.cuit);
-            Panel_ModificarCliente.Visible = false;
+            if (cliente.ContarPedidosDelCliente(this.cuit) > 0)
+            {
+                MessageBox.Show("El cliente tiene pedidos asignados, por lo tanto se lo dara de baja pero no se lo eliminara", "ATNENCION");
+                cliente.DarBaja(this.cuit);
+                Panel_ModificarCliente.Visible = false;
+            }
+            else
+            {
+                if (cliente.ContarCotizacionDelCliente(this.cuit) > 0)
+                {
+
+                    MessageBox.Show("El cliente tiene Cotizaciones asignados, por lo tanto se lo dara de baja pero no se lo eliminara", "ATNENCION");
+                    cliente.DarBaja(this.cuit);
+                    Panel_ModificarCliente.Visible = false;
+
+                }
+                else
+                {
+                    cliente.Borrar(this.cuit);
+                    Panel_ModificarCliente.Visible = false;
+                }
+            }
+
         }
     }
 }
+

@@ -30,6 +30,7 @@ namespace TuLuz.Forums
         {
             TratamientosEspeciales tratamiento = new TratamientosEspeciales();
             Es_Clientes _Ec = new Es_Clientes();
+            DataTable Verificacion = new DataTable();
 
             if (tratamiento.validar(this.Controls) == TratamientosEspeciales.Validacion.correcta)
             {
@@ -37,8 +38,18 @@ namespace TuLuz.Forums
                 _Ec.nombre = txt_nombreCliente.Text;
                 _Ec.apellido = txt_ApellidoCliente.Text;
                 _Ec.activo = "true";
-                Cliente.Insertar(_Ec);
-                this.Close();
+                Verificacion = Cliente.Buscar_ClienteMasBajos(_Ec.cuitCliente);
+                if (Verificacion.Rows.Count > 0)
+                {
+
+                    MessageBox.Show("El Cliente que desea insertar ya existe. ", "ATENCION");
+
+                }
+                else
+                {
+                    Cliente.Insertar(_Ec);
+                    this.Close();
+                }
             }
            
         }
@@ -46,6 +57,11 @@ namespace TuLuz.Forums
         private void btn_salir_Click(object sender, EventArgs e)
         {
             this.Close();
+        }
+
+        private void txt_ApellidoCliente_TextChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }

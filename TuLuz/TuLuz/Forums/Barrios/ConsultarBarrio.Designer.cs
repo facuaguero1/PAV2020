@@ -154,6 +154,7 @@
             this.txt_BuscarCodigo.pp_validable = false;
             this.txt_BuscarCodigo.Size = new System.Drawing.Size(197, 30);
             this.txt_BuscarCodigo.TabIndex = 2;
+            this.txt_BuscarCodigo.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txt_BuscarCodigo_KeyPress);
             // 
             // chk_Todos
             // 

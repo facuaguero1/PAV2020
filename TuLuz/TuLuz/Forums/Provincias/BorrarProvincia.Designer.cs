@@ -31,6 +31,8 @@
             this.btn_limpiarCampo = new System.Windows.Forms.GroupBox();
             this.btn_Limpiar = new System.Windows.Forms.Button();
             this.grid01 = new System.Windows.Forms.DataGridView();
+            this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.btn_Buscar = new System.Windows.Forms.Button();
             this.txt_BuscarCodProvincia = new TuLuz.Clases.TextBox01();
             this.chk_Todos = new System.Windows.Forms.CheckBox();
@@ -55,8 +57,6 @@
             this.label5 = new System.Windows.Forms.Label();
             this.btn_salir = new System.Windows.Forms.Button();
             this.btn_Modificar = new System.Windows.Forms.Button();
-            this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.btn_limpiarCampo.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.grid01)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
@@ -110,6 +110,19 @@
             this.grid01.Size = new System.Drawing.Size(621, 176);
             this.grid01.TabIndex = 4;
             // 
+            // Column1
+            // 
+            this.Column1.HeaderText = "Codigo";
+            this.Column1.Name = "Column1";
+            this.Column1.ReadOnly = true;
+            // 
+            // Column2
+            // 
+            this.Column2.HeaderText = "Nombre";
+            this.Column2.Name = "Column2";
+            this.Column2.ReadOnly = true;
+            this.Column2.Width = 440;
+            // 
             // btn_Buscar
             // 
             this.btn_Buscar.Location = new System.Drawing.Point(523, 96);
@@ -130,6 +143,7 @@
             this.txt_BuscarCodProvincia.pp_validable = false;
             this.txt_BuscarCodProvincia.Size = new System.Drawing.Size(197, 30);
             this.txt_BuscarCodProvincia.TabIndex = 2;
+            this.txt_BuscarCodProvincia.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txt_BuscarCodProvincia_KeyPress);
             // 
             // chk_Todos
             // 
@@ -360,19 +374,6 @@
             this.btn_Modificar.TabIndex = 3;
             this.btn_Modificar.UseVisualStyleBackColor = true;
             this.btn_Modificar.Click += new System.EventHandler(this.btn_Modificar_Click);
-            // 
-            // Column1
-            // 
-            this.Column1.HeaderText = "Codigo";
-            this.Column1.Name = "Column1";
-            this.Column1.ReadOnly = true;
-            // 
-            // Column2
-            // 
-            this.Column2.HeaderText = "Nombre";
-            this.Column2.Name = "Column2";
-            this.Column2.ReadOnly = true;
-            this.Column2.Width = 440;
             // 
             // BorrarProvincia
             // 

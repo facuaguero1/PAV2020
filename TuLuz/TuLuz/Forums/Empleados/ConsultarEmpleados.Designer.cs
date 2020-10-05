@@ -195,6 +195,7 @@
             this.txt_BuscarDoc.pp_validable = false;
             this.txt_BuscarDoc.Size = new System.Drawing.Size(197, 30);
             this.txt_BuscarDoc.TabIndex = 2;
+            this.txt_BuscarDoc.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txt_BuscarDoc_KeyPress);
             // 
             // chk_Todos
             // 

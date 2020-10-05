@@ -118,5 +118,13 @@ namespace TuLuz.Forums.Provincias
         {
             this.Close();
         }
+
+        private void txt_BuscarLocalidad_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (!char.IsControl(e.KeyChar) && !char.IsDigit(e.KeyChar))
+            {
+                e.Handled = true;
+            }
+        }
     }
 }

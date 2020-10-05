@@ -154,6 +154,7 @@
             this.txt_BuscarCuit.pp_validable = false;
             this.txt_BuscarCuit.Size = new System.Drawing.Size(197, 30);
             this.txt_BuscarCuit.TabIndex = 2;
+            this.txt_BuscarCuit.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txt_BuscarCuit_KeyPress);
             // 
             // chk_Todos
             // 

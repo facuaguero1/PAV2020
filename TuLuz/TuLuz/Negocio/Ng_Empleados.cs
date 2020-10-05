@@ -67,14 +67,15 @@ namespace TuLuz.Negocio
 
             if (datos.tipoDocJefe == "")
             {
-                sqlUpdate += ", tipoDocJefe = " + _BD.FormatearDato("NULL", "String");
-                sqlUpdate += ", numDocJefe = " + _BD.FormatearDato("NULL", "String");
+                sqlUpdate += ", tipoDocJefe = NULL";
+                sqlUpdate += ", numDocJefe = NULL";
             }
             else
             {
-                sqlUpdate += ", tipoDocJefe = " + _BD.FormatearDato(datos.tipoDocJefe, "String");
-                sqlUpdate += ", numDocJefe = " + _BD.FormatearDato(datos.numDocJefe, "String");
+                sqlUpdate += ", tipoDocJefe = " + datos.tipoDocJefe;
+                sqlUpdate += ", numDocJefe = " + datos.numDocJefe;
             }
+            sqlUpdate += ", activo = " + _BD.FormatearDato(datos.activo, "String");
             sqlUpdate += " WHERE numDoc = " + datos.numDoc;
 
             MessageBox.Show("El Empleado fue modificado con exito!", "MODIFICACIÓN EXITOSA", MessageBoxButtons.OK, MessageBoxIcon.Information);
@@ -86,6 +87,29 @@ namespace TuLuz.Negocio
             string sqlDelete = "DELETE FROM Empleados WHERE numDoc = " + Doc;
             MessageBox.Show("El Empleado fue eliminado con exito!", "ELIMINACIÓN EXITOSA", MessageBoxButtons.OK, MessageBoxIcon.Information);
             _BD.Borrar(sqlDelete);
+        }
+
+        public int ContarCotizacionDelCliente(string cuit)
+        {
+            DataTable Cotizaciones = new DataTable();
+            Cotizaciones = _BD.Consulta("SELECT Empleados.* FROM Empleados, Cotizaciones WHERE " + cuit + " = Cotizaciones.numDocVendedor");
+            return Cotizaciones.Rows.Count;
+        }
+
+        public void DarBaja(string cuit)
+        {
+            string sqlUpdate = "UPDATE Empleados SET activo = 'false' WHERE numDoc = '" + cuit + "'";
+            _BD.Modificar(sqlUpdate);
+        }
+
+        public EstructuraComboBox EstructuraCombo()
+        {
+            EstructuraComboBox EC = new EstructuraComboBox();
+            EC.Display = "numDoc";
+            EC.Value = "numDoc";
+            EC.Sql = "SELECT * FROM Empleados";
+            EC.Tabla = _BD.Consulta(EC.Sql);
+            return EC;
         }
     }
 }

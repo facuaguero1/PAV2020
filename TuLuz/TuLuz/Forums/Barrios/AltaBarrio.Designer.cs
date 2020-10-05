@@ -35,9 +35,13 @@
             this.btn_salir = new System.Windows.Forms.Button();
             this.btn_cancelar = new System.Windows.Forms.Button();
             this.btn_aceptar = new System.Windows.Forms.Button();
+            this.btn_add_localidad = new System.Windows.Forms.Button();
             this.cmb_Localidad = new TuLuz.Clases.ComboBox01();
             this.txt_nombreCliente = new TuLuz.Clases.TextBox01();
-            this.txt_CuitCliente = new TuLuz.Clases.TextBox01();
+            this.txt_codBarrio = new TuLuz.Clases.TextBox01();
+            this.cmb_Provincia = new TuLuz.Clases.ComboBox01();
+            this.btn_add_provincia = new System.Windows.Forms.Button();
+            this.label5 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // label1
@@ -46,7 +50,7 @@
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 50F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.label1.Location = new System.Drawing.Point(142, 36);
+            this.label1.Location = new System.Drawing.Point(161, 58);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(449, 76);
             this.label1.TabIndex = 0;
@@ -58,7 +62,7 @@
             this.label2.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(63, 165);
+            this.label2.Location = new System.Drawing.Point(82, 187);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(75, 25);
             this.label2.TabIndex = 1;
@@ -69,7 +73,7 @@
             this.label3.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(57, 228);
+            this.label3.Location = new System.Drawing.Point(76, 250);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(81, 25);
             this.label3.TabIndex = 2;
@@ -80,11 +84,11 @@
             this.label4.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(42, 287);
+            this.label4.Location = new System.Drawing.Point(61, 309);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(96, 25);
+            this.label4.Size = new System.Drawing.Size(92, 25);
             this.label4.TabIndex = 3;
-            this.label4.Text = "Localidad";
+            this.label4.Text = "Provincia";
             // 
             // btn_salir
             // 
@@ -92,7 +96,7 @@
             this.btn_salir.FlatAppearance.BorderSize = 0;
             this.btn_salir.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn_salir.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_salir.Location = new System.Drawing.Point(712, 12);
+            this.btn_salir.Location = new System.Drawing.Point(749, 12);
             this.btn_salir.Name = "btn_salir";
             this.btn_salir.Size = new System.Drawing.Size(35, 39);
             this.btn_salir.TabIndex = 9;
@@ -107,7 +111,7 @@
             this.btn_cancelar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.btn_cancelar.FlatAppearance.BorderSize = 0;
             this.btn_cancelar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_cancelar.Location = new System.Drawing.Point(531, 338);
+            this.btn_cancelar.Location = new System.Drawing.Point(567, 405);
             this.btn_cancelar.Name = "btn_cancelar";
             this.btn_cancelar.Size = new System.Drawing.Size(90, 80);
             this.btn_cancelar.TabIndex = 8;
@@ -121,19 +125,34 @@
             this.btn_aceptar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.btn_aceptar.FlatAppearance.BorderSize = 0;
             this.btn_aceptar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_aceptar.Location = new System.Drawing.Point(155, 338);
+            this.btn_aceptar.Location = new System.Drawing.Point(174, 405);
             this.btn_aceptar.Name = "btn_aceptar";
             this.btn_aceptar.Size = new System.Drawing.Size(90, 80);
             this.btn_aceptar.TabIndex = 7;
             this.btn_aceptar.UseVisualStyleBackColor = true;
             this.btn_aceptar.Click += new System.EventHandler(this.btn_aceptar_Click);
             // 
+            // btn_add_localidad
+            // 
+            this.btn_add_localidad.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.btn_add_localidad.BackgroundImage = global::TuLuz.Properties.Resources._1486485588_add_create_new_math_sign_cross_plus_81186;
+            this.btn_add_localidad.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btn_add_localidad.FlatAppearance.BorderSize = 0;
+            this.btn_add_localidad.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_add_localidad.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_add_localidad.Location = new System.Drawing.Point(647, 366);
+            this.btn_add_localidad.Name = "btn_add_localidad";
+            this.btn_add_localidad.Size = new System.Drawing.Size(36, 33);
+            this.btn_add_localidad.TabIndex = 12;
+            this.btn_add_localidad.UseVisualStyleBackColor = true;
+            this.btn_add_localidad.Click += new System.EventHandler(this.button2_Click);
+            // 
             // cmb_Localidad
             // 
             this.cmb_Localidad.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.cmb_Localidad.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cmb_Localidad.FormattingEnabled = true;
-            this.cmb_Localidad.Location = new System.Drawing.Point(155, 284);
+            this.cmb_Localidad.Location = new System.Drawing.Point(175, 366);
             this.cmb_Localidad.Name = "cmb_Localidad";
             this.cmb_Localidad.pp_Display = null;
             this.cmb_Localidad.pp_mensaje_error = null;
@@ -145,12 +164,13 @@
             this.cmb_Localidad.pp_Value = null;
             this.cmb_Localidad.Size = new System.Drawing.Size(466, 33);
             this.cmb_Localidad.TabIndex = 10;
+            this.cmb_Localidad.Click += new System.EventHandler(this.cmb_Localidad_Click);
             // 
             // txt_nombreCliente
             // 
             this.txt_nombreCliente.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.txt_nombreCliente.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txt_nombreCliente.Location = new System.Drawing.Point(155, 225);
+            this.txt_nombreCliente.Location = new System.Drawing.Point(174, 247);
             this.txt_nombreCliente.Name = "txt_nombreCliente";
             this.txt_nombreCliente.pp_mensaje_error = "No se ingreso NOMBRE!!";
             this.txt_nombreCliente.pp_nombre_campo = "nombre";
@@ -159,30 +179,81 @@
             this.txt_nombreCliente.Size = new System.Drawing.Size(466, 30);
             this.txt_nombreCliente.TabIndex = 5;
             // 
-            // txt_CuitCliente
+            // txt_codBarrio
             // 
-            this.txt_CuitCliente.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.txt_CuitCliente.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txt_CuitCliente.Location = new System.Drawing.Point(155, 162);
-            this.txt_CuitCliente.Name = "txt_CuitCliente";
-            this.txt_CuitCliente.pp_mensaje_error = "No se ingreso CUIT!!";
-            this.txt_CuitCliente.pp_nombre_campo = "cuitCliente";
-            this.txt_CuitCliente.pp_nombre_tabla = "Cliente";
-            this.txt_CuitCliente.pp_validable = true;
-            this.txt_CuitCliente.Size = new System.Drawing.Size(466, 30);
-            this.txt_CuitCliente.TabIndex = 4;
+            this.txt_codBarrio.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.txt_codBarrio.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txt_codBarrio.Location = new System.Drawing.Point(174, 184);
+            this.txt_codBarrio.Name = "txt_codBarrio";
+            this.txt_codBarrio.pp_mensaje_error = "No se ingreso CUIT!!";
+            this.txt_codBarrio.pp_nombre_campo = "codBarrio";
+            this.txt_codBarrio.pp_nombre_tabla = "Cliente";
+            this.txt_codBarrio.pp_validable = true;
+            this.txt_codBarrio.Size = new System.Drawing.Size(466, 30);
+            this.txt_codBarrio.TabIndex = 4;
+            this.txt_codBarrio.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txt_codBarrio_KeyPress);
+            // 
+            // cmb_Provincia
+            // 
+            this.cmb_Provincia.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.cmb_Provincia.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cmb_Provincia.FormattingEnabled = true;
+            this.cmb_Provincia.Location = new System.Drawing.Point(175, 306);
+            this.cmb_Provincia.Name = "cmb_Provincia";
+            this.cmb_Provincia.pp_Display = null;
+            this.cmb_Provincia.pp_mensaje_error = null;
+            this.cmb_Provincia.pp_nombre_campo = null;
+            this.cmb_Provincia.pp_nombre_tabla = null;
+            this.cmb_Provincia.pp_Seleccionado = false;
+            this.cmb_Provincia.pp_Tabla = null;
+            this.cmb_Provincia.pp_validable = false;
+            this.cmb_Provincia.pp_Value = null;
+            this.cmb_Provincia.Size = new System.Drawing.Size(466, 33);
+            this.cmb_Provincia.TabIndex = 13;
+            this.cmb_Provincia.SelectedIndexChanged += new System.EventHandler(this.cmb_Provincia_SelectedIndexChanged);
+            this.cmb_Provincia.Click += new System.EventHandler(this.cmb_Provincia_Click);
+            // 
+            // btn_add_provincia
+            // 
+            this.btn_add_provincia.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.btn_add_provincia.BackgroundImage = global::TuLuz.Properties.Resources._1486485588_add_create_new_math_sign_cross_plus_81186;
+            this.btn_add_provincia.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btn_add_provincia.FlatAppearance.BorderSize = 0;
+            this.btn_add_provincia.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_add_provincia.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_add_provincia.Location = new System.Drawing.Point(647, 306);
+            this.btn_add_provincia.Name = "btn_add_provincia";
+            this.btn_add_provincia.Size = new System.Drawing.Size(36, 33);
+            this.btn_add_provincia.TabIndex = 14;
+            this.btn_add_provincia.UseVisualStyleBackColor = true;
+            this.btn_add_provincia.Click += new System.EventHandler(this.button1_Click);
+            // 
+            // label5
+            // 
+            this.label5.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.label5.AutoSize = true;
+            this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label5.Location = new System.Drawing.Point(61, 369);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(96, 25);
+            this.label5.TabIndex = 15;
+            this.label5.Text = "Localidad";
             // 
             // AltaBarrio
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(759, 465);
+            this.ClientSize = new System.Drawing.Size(796, 508);
+            this.Controls.Add(this.label5);
+            this.Controls.Add(this.btn_add_provincia);
+            this.Controls.Add(this.cmb_Provincia);
+            this.Controls.Add(this.btn_add_localidad);
             this.Controls.Add(this.cmb_Localidad);
             this.Controls.Add(this.btn_salir);
             this.Controls.Add(this.btn_cancelar);
             this.Controls.Add(this.btn_aceptar);
             this.Controls.Add(this.txt_nombreCliente);
-            this.Controls.Add(this.txt_CuitCliente);
+            this.Controls.Add(this.txt_codBarrio);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
@@ -202,11 +273,15 @@
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label4;
-        private Clases.TextBox01 txt_CuitCliente;
+        private Clases.TextBox01 txt_codBarrio;
         private Clases.TextBox01 txt_nombreCliente;
         private System.Windows.Forms.Button btn_aceptar;
         private System.Windows.Forms.Button btn_cancelar;
         private System.Windows.Forms.Button btn_salir;
         private Clases.ComboBox01 cmb_Localidad;
+        private System.Windows.Forms.Button btn_add_localidad;
+        private Clases.ComboBox01 cmb_Provincia;
+        private System.Windows.Forms.Button btn_add_provincia;
+        private System.Windows.Forms.Label label5;
     }
 }

@@ -51,7 +51,7 @@ namespace TuLuz.Forums.Clientes
                 txt_CuitNuevo.Text = tabla.Rows[0]["cuitCliente"].ToString();
                 txt_NombreNuevo.Text = tabla.Rows[0]["nombre"].ToString();
                 txt_ApellidoNuevo.Text = tabla.Rows[0]["apellido"].ToString();
-                txt_activo.Text = tabla.Rows[0]["activo"].ToString();
+                cmb_activo.SelectedItem = tabla.Rows[0]["activo"].ToString();
             }
         }
 
@@ -62,19 +62,34 @@ namespace TuLuz.Forums.Clientes
 
         private void btn_Buscar_Click(object sender, EventArgs e)
         {
-            if (chk_Todos.Checked==true)
+            if (chk_activos.Checked==true)
             {
-                Cargar_grilla(cliente.Todos_los_Clientes());
-            }
-            else
-            {
-                if (txt_BuscarCuit.Text == "")
+                if (chk_noActivos.Checked == true)
                 {
-                    MessageBox.Show("No se ingreso parametro de busqueda");
+                    Cargar_grilla(cliente.Todos_los_Clientes());
                 }
                 else
                 {
-                    Cargar_grilla(cliente.Buscar_Cliente(txt_BuscarCuit.Text));
+                    Cargar_grilla(cliente.Todos_los_ClientesActivos());
+                }
+            }
+            else
+            {
+                if (chk_noActivos.Checked == true)
+                {
+                    Cargar_grilla(cliente.Todos_los_ClientesNoActivos());
+                }
+                else
+                {
+
+                    if (txt_BuscarCuit.Text == "")
+                    {
+                        MessageBox.Show("No se ingreso parametro de busqueda");
+                    }
+                    else
+                    {
+                        Cargar_grilla(cliente.RecuperarCliente(txt_BuscarCuit.Text));
+                    }
                 }
             }
         }
@@ -104,6 +119,7 @@ namespace TuLuz.Forums.Clientes
                 _EC.cuitCliente = txt_CuitNuevo.Text;
                 _EC.nombre = txt_NombreNuevo.Text;
                 _EC.apellido = txt_ApellidoNuevo.Text;
+                _EC.activo = cmb_activo.SelectedItem.ToString();
 
                 cliente.Modificar(_EC);
                 Panel_ModificarCliente.Visible = false;
@@ -114,6 +130,11 @@ namespace TuLuz.Forums.Clientes
         private void btn_salir_Click(object sender, EventArgs e)
         {
             this.Close();
+        }
+
+        private void chk_activos_CheckedChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }

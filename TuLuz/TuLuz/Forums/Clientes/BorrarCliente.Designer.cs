@@ -29,6 +29,7 @@
         private void InitializeComponent()
         {
             this.btn_limpiarCampo = new System.Windows.Forms.GroupBox();
+            this.chk_noActivos = new System.Windows.Forms.CheckBox();
             this.btn_Limpiar = new System.Windows.Forms.Button();
             this.grid01 = new System.Windows.Forms.DataGridView();
             this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -36,7 +37,7 @@
             this.Column3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.btn_Buscar = new System.Windows.Forms.Button();
             this.txt_BuscarCuit = new TuLuz.Clases.TextBox01();
-            this.chk_Todos = new System.Windows.Forms.CheckBox();
+            this.chk_activos = new System.Windows.Forms.CheckBox();
             this.label6 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.checkBox1 = new System.Windows.Forms.CheckBox();
@@ -69,11 +70,12 @@
             // btn_limpiarCampo
             // 
             this.btn_limpiarCampo.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.btn_limpiarCampo.Controls.Add(this.chk_noActivos);
             this.btn_limpiarCampo.Controls.Add(this.btn_Limpiar);
             this.btn_limpiarCampo.Controls.Add(this.grid01);
             this.btn_limpiarCampo.Controls.Add(this.btn_Buscar);
             this.btn_limpiarCampo.Controls.Add(this.txt_BuscarCuit);
-            this.btn_limpiarCampo.Controls.Add(this.chk_Todos);
+            this.btn_limpiarCampo.Controls.Add(this.chk_activos);
             this.btn_limpiarCampo.Controls.Add(this.label6);
             this.btn_limpiarCampo.Location = new System.Drawing.Point(110, 9);
             this.btn_limpiarCampo.Margin = new System.Windows.Forms.Padding(6);
@@ -83,6 +85,17 @@
             this.btn_limpiarCampo.TabIndex = 0;
             this.btn_limpiarCampo.TabStop = false;
             this.btn_limpiarCampo.Text = "Filtros";
+            // 
+            // chk_noActivos
+            // 
+            this.chk_noActivos.AutoSize = true;
+            this.chk_noActivos.Location = new System.Drawing.Point(246, 96);
+            this.chk_noActivos.Name = "chk_noActivos";
+            this.chk_noActivos.Size = new System.Drawing.Size(122, 29);
+            this.chk_noActivos.TabIndex = 6;
+            this.chk_noActivos.Text = "No activos";
+            this.chk_noActivos.UseVisualStyleBackColor = true;
+
             // 
             // btn_Limpiar
             // 
@@ -159,15 +172,15 @@
             this.txt_BuscarCuit.Size = new System.Drawing.Size(197, 30);
             this.txt_BuscarCuit.TabIndex = 2;
             // 
-            // chk_Todos
+            // chk_activos
             // 
-            this.chk_Todos.AutoSize = true;
-            this.chk_Todos.Location = new System.Drawing.Point(136, 96);
-            this.chk_Todos.Name = "chk_Todos";
-            this.chk_Todos.Size = new System.Drawing.Size(87, 29);
-            this.chk_Todos.TabIndex = 1;
-            this.chk_Todos.Text = "Todos";
-            this.chk_Todos.UseVisualStyleBackColor = true;
+            this.chk_activos.AutoSize = true;
+            this.chk_activos.Location = new System.Drawing.Point(136, 96);
+            this.chk_activos.Name = "chk_activos";
+            this.chk_activos.Size = new System.Drawing.Size(95, 29);
+            this.chk_activos.TabIndex = 1;
+            this.chk_activos.Text = "Activos";
+            this.chk_activos.UseVisualStyleBackColor = true;
             // 
             // label6
             // 
@@ -455,7 +468,7 @@
         private System.Windows.Forms.Button button4;
         private System.Windows.Forms.Panel Panel_ModificarCliente;
         private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.CheckBox chk_Todos;
+        private System.Windows.Forms.CheckBox chk_activos;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Button btn_Buscar;
         private Clases.TextBox01 txt_BuscarCuit;
@@ -474,5 +487,6 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn Column3;
         private System.Windows.Forms.Button btn_Limpiar;
         private System.Windows.Forms.Button btn_salir;
+        private System.Windows.Forms.CheckBox chk_noActivos;
     }
 }

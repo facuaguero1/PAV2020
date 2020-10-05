@@ -73,6 +73,26 @@ namespace TuLuz.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap _1486485588_add_create_new_math_sign_cross_plus_81186 {
+            get {
+                object obj = ResourceManager.GetObject("1486485588-add-create-new-math-sign-cross-plus_81186", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap _4115235_exit_logout_sign_out_114030 {
+            get {
+                object obj = ResourceManager.GetObject("4115235-exit-logout-sign-out_114030", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap arrow_down_23784 {
             get {
                 object obj = ResourceManager.GetObject("arrow-down_23784", resourceCulture);
@@ -83,9 +103,29 @@ namespace TuLuz.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap arrow_refresh_15732 {
+            get {
+                object obj = ResourceManager.GetObject("arrow_refresh_15732", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap cancel_77947 {
             get {
                 object obj = ResourceManager.GetObject("cancel_77947", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap go_back256_24856 {
+            get {
+                object obj = ResourceManager.GetObject("go-back256_24856", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -106,6 +146,16 @@ namespace TuLuz.Properties {
         internal static System.Drawing.Bitmap ok_accept_15562 {
             get {
                 object obj = ResourceManager.GetObject("ok_accept_15562", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap savetheapplication_guardar_2958 {
+            get {
+                object obj = ResourceManager.GetObject("savetheapplication_guardar_2958", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

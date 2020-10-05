@@ -45,18 +45,22 @@ namespace TuLuz.Forums.Clientes
             }
             else
             {
-                Panel_ModificarCliente.Visible = true;
                 this.cuit = grid01.CurrentRow.Cells[0].Value.ToString();
-                DataTable tabla = new DataTable();
-                tabla = Barrios.RecuperarBarrio_Codigo(cuit);
-                txt_codBarrio.Text = tabla.Rows[0]["codBarrio"].ToString();
-                txt_NombreNuevo.Text = tabla.Rows[0]["nombre"].ToString();
-                string codBarrio = tabla.Rows[0]["codLocalidad"].ToString();
-                DataTable tabla2 = new DataTable();
-                tabla2 = localidad.Buscar_Localidad_Codigo(codBarrio);
-                txt_Localidad.Text = tabla2.Rows[0]["nombre"].ToString();
-
-
+                DataTable Verificacion = new DataTable();
+                Verificacion = Barrios.Buscar_Barrio_Codigo(this.cuit);
+                if (Verificacion.Rows.Count > 0)
+                {
+                    Panel_ModificarCliente.Visible = true;
+                    
+                    DataTable tabla = new DataTable();
+                    tabla = Barrios.RecuperarBarrio_Codigo(cuit);
+                    txt_codBarrio.Text = tabla.Rows[0]["codBarrio"].ToString();
+                    txt_NombreNuevo.Text = tabla.Rows[0]["nombre"].ToString();
+                    string codBarrio = tabla.Rows[0]["codLocalidad"].ToString();
+                    DataTable tabla2 = new DataTable();
+                    tabla2 = localidad.Buscar_Localidad_Codigo(codBarrio);
+                    txt_Localidad.Text = tabla2.Rows[0]["nombre"].ToString();
+                }
             }
         }
 
@@ -109,13 +113,34 @@ namespace TuLuz.Forums.Clientes
 
         private void btn_Aceptar_Click(object sender, EventArgs e)
         {
-            Barrios.Borrar(this.cuit);
-            Panel_ModificarCliente.Visible = false;
+            DataTable Verificacion = new DataTable();
+            Verificacion = Barrios.Buscar_Barrio_Codigo(this.cuit);
+            if (Verificacion.Rows.Count == 0)
+            {
+
+                MessageBox.Show("El barrio que desea eliminar no existe. ", "ATENCION");
+
+            }
+            else
+            {
+                Barrios.Borrar(this.cuit);
+                Panel_ModificarCliente.Visible = false;
+          
+            }
+            
         }
 
         private void BorrarBarrio_Load(object sender, EventArgs e)
         {
 
+        }
+
+        private void txt_BuscarCuit_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (!char.IsControl(e.KeyChar) && !char.IsDigit(e.KeyChar))
+            {
+                e.Handled = true;
+            }
         }
     }
 }

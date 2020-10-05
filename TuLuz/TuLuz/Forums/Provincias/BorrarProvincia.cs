@@ -45,12 +45,17 @@ namespace TuLuz.Forums.Provincias
             }
             else
             {
-                Panel_DatosProvincia.Visible = true;
                 this.codProvincia = grid01.CurrentRow.Cells[0].Value.ToString();
-                DataTable tabla = new DataTable();
-                tabla = Provincias.RecuperarProvincia_Codigo(codProvincia);
-                txt_codProvincia.Text = tabla.Rows[0]["codProvincia"].ToString();
-                txt_NombreProvincia.Text = tabla.Rows[0]["nombre"].ToString();
+                DataTable Verificacion = new DataTable();
+                Verificacion = Provincias.Buscar_Provincia_Codigo(this.codProvincia);
+                if (Verificacion.Rows.Count > 0)
+                {
+                    Panel_DatosProvincia.Visible = true;
+                    DataTable tabla = new DataTable();
+                    tabla = Provincias.RecuperarProvincia_Codigo(codProvincia);
+                    txt_codProvincia.Text = tabla.Rows[0]["codProvincia"].ToString();
+                    txt_NombreProvincia.Text = tabla.Rows[0]["nombre"].ToString();
+                }
             }
         }
 
@@ -108,6 +113,14 @@ namespace TuLuz.Forums.Provincias
         private void BorrarBarrio_Load(object sender, EventArgs e)
         {
 
+        }
+
+        private void txt_BuscarCodProvincia_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (!char.IsControl(e.KeyChar) && !char.IsDigit(e.KeyChar))
+            {
+                e.Handled = true;
+            }
         }
     }
 }

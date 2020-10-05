@@ -44,7 +44,7 @@
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 50F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.label1.Location = new System.Drawing.Point(110, 44);
+            this.label1.Location = new System.Drawing.Point(298, 186);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(549, 76);
             this.label1.TabIndex = 0;
@@ -56,7 +56,7 @@
             this.label2.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(63, 165);
+            this.label2.Location = new System.Drawing.Point(251, 307);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(75, 25);
             this.label2.TabIndex = 1;
@@ -67,7 +67,7 @@
             this.label3.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(57, 228);
+            this.label3.Location = new System.Drawing.Point(245, 370);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(81, 25);
             this.label3.TabIndex = 2;
@@ -79,7 +79,7 @@
             this.btn_salir.FlatAppearance.BorderSize = 0;
             this.btn_salir.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn_salir.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_salir.Location = new System.Drawing.Point(712, 12);
+            this.btn_salir.Location = new System.Drawing.Point(1087, 12);
             this.btn_salir.Name = "btn_salir";
             this.btn_salir.Size = new System.Drawing.Size(35, 39);
             this.btn_salir.TabIndex = 9;
@@ -94,7 +94,7 @@
             this.btn_cancelar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.btn_cancelar.FlatAppearance.BorderSize = 0;
             this.btn_cancelar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_cancelar.Location = new System.Drawing.Point(531, 298);
+            this.btn_cancelar.Location = new System.Drawing.Point(719, 440);
             this.btn_cancelar.Name = "btn_cancelar";
             this.btn_cancelar.Size = new System.Drawing.Size(90, 80);
             this.btn_cancelar.TabIndex = 8;
@@ -108,7 +108,7 @@
             this.btn_aceptar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.btn_aceptar.FlatAppearance.BorderSize = 0;
             this.btn_aceptar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_aceptar.Location = new System.Drawing.Point(155, 298);
+            this.btn_aceptar.Location = new System.Drawing.Point(343, 440);
             this.btn_aceptar.Name = "btn_aceptar";
             this.btn_aceptar.Size = new System.Drawing.Size(90, 80);
             this.btn_aceptar.TabIndex = 7;
@@ -119,7 +119,7 @@
             // 
             this.txt_nombreProvincia.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.txt_nombreProvincia.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txt_nombreProvincia.Location = new System.Drawing.Point(155, 225);
+            this.txt_nombreProvincia.Location = new System.Drawing.Point(343, 367);
             this.txt_nombreProvincia.Name = "txt_nombreProvincia";
             this.txt_nombreProvincia.pp_mensaje_error = "No se ingreso un nombre!";
             this.txt_nombreProvincia.pp_nombre_campo = "nombre";
@@ -132,7 +132,7 @@
             // 
             this.txt_codProvincia.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.txt_codProvincia.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txt_codProvincia.Location = new System.Drawing.Point(155, 162);
+            this.txt_codProvincia.Location = new System.Drawing.Point(343, 304);
             this.txt_codProvincia.Name = "txt_codProvincia";
             this.txt_codProvincia.pp_mensaje_error = "No se ingreso un código!";
             this.txt_codProvincia.pp_nombre_campo = "codProvincia";
@@ -140,12 +140,13 @@
             this.txt_codProvincia.pp_validable = true;
             this.txt_codProvincia.Size = new System.Drawing.Size(466, 30);
             this.txt_codProvincia.TabIndex = 4;
+            this.txt_codProvincia.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txt_codProvincia_KeyPress);
             // 
             // AltaProvincia
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(759, 465);
+            this.ClientSize = new System.Drawing.Size(1134, 749);
             this.Controls.Add(this.btn_salir);
             this.Controls.Add(this.btn_cancelar);
             this.Controls.Add(this.btn_aceptar);
@@ -154,9 +155,9 @@
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
+            this.Location = new System.Drawing.Point(240, 0);
             this.Name = "AltaProvincia";
-            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
-            this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
+            this.StartPosition = System.Windows.Forms.FormStartPosition.Manual;
             this.Load += new System.EventHandler(this.AltaProvincia_Load);
             this.ResumeLayout(false);
             this.PerformLayout();

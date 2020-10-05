@@ -14,10 +14,12 @@ namespace TuLuz.Negocio
     {
         Be_BaseDatos _BD = new Be_BaseDatos();
 
-        //public void Insertar(Control.ControlCollection controles)
-        //{
-        //    _BD.InsertarAutomatizado("TiposDoc", controles);
-        //}
+        public void Insertar(Es_TipoDocs Docs)
+        {
+            String sqlInsertar = "INSERT INTO TiposDoc(idTipoDoc,siglas,nombre) VALUES(" + Docs.idTipoDoc + ",'" + Docs.siglas + "','" + Docs.nombre + "')";
+            MessageBox.Show("El Tipo Documento fue creado con exito!", "CREACIÓN EXITOSA", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            _BD.Insertar(sqlInsertar);
+        }
 
         public DataTable Todos_las_Tipos_Doc()
         {
@@ -48,23 +50,24 @@ namespace TuLuz.Negocio
         {
             return _BD.Consulta("SELECT * FROM TiposDoc WHERE nombre like '%" + nom + "%'");
         }
-        //public void Modificar(Es_Tipos_Doc datos)
-        //{
-        //    string sqlUpdate = "UPDATE TiposDoc SET ";
-        //    sqlUpdate += "codProvincia = " + _BD.FormatearDato(datos.codProvincia, "String");
-        //    sqlUpdate += ", nombre = " + _BD.FormatearDato(datos.nombre, "String");
-        //    sqlUpdate += " WHERE codLocalidad = " + datos.codLocalidad;
+        public void Modificar(Es_TipoDocs datos)
+        {
+            string sqlUpdate = "UPDATE TiposDoc SET ";
+            sqlUpdate += "idTipoDoc = " + _BD.FormatearDato(datos.idTipoDoc, "String");
+            sqlUpdate += ", nombre = " + _BD.FormatearDato(datos.nombre, "String");
+            sqlUpdate += ", siglas = " + _BD.FormatearDato(datos.siglas, "String");
+            sqlUpdate += " WHERE idTipoDoc = " + datos.idTipoDoc;
 
-        //    MessageBox.Show("El Barrio fue modificado con exito!", "MODIFICACIÓN EXITOSA", MessageBoxButtons.OK, MessageBoxIcon.Information);
-        //    _BD.Modificar(sqlUpdate);
+           MessageBox.Show("El Tipo Documento fue modificado con exito!", "MODIFICACIÓN EXITOSA", MessageBoxButtons.OK, MessageBoxIcon.Information);
+           _BD.Modificar(sqlUpdate);
 
-        //}
-        //public void Borrar(string cod)
-        //{
-        //    string sqlDelete = "DELETE FROM Localidad WHERE codLocalidad = " + cod;
-        //    MessageBox.Show("La Localidad fue eliminado con exito!", "ELIMINACIÓN EXITOSA", MessageBoxButtons.OK, MessageBoxIcon.Information);
-        //    _BD.Borrar(sqlDelete);
-        //}
+        }
+        public void Borrar(string id)
+        {
+            string sqlDelete = "DELETE FROM TiposDoc WHERE idTipoDoc = " + id;
+            MessageBox.Show("La Tipo Documento fue eliminado con exito!", "ELIMINACIÓN EXITOSA", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            _BD.Borrar(sqlDelete);
+        }
 
         public EstructuraComboBox EstructuraCombo()
         {

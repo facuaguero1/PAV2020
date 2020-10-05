@@ -143,6 +143,7 @@
             this.txt_BuscarCodigo.pp_validable = false;
             this.txt_BuscarCodigo.Size = new System.Drawing.Size(197, 30);
             this.txt_BuscarCodigo.TabIndex = 2;
+            this.txt_BuscarCodigo.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txt_BuscarCodigo_KeyPress);
             // 
             // chk_Todos
             // 
@@ -193,7 +194,7 @@
             // 
             // dataGridView1
             // 
-            this.dataGridView1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left)
+            this.dataGridView1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView1.Location = new System.Drawing.Point(13, 93);

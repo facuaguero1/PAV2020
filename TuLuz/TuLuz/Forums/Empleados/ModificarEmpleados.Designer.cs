@@ -52,6 +52,9 @@
             this.button3 = new System.Windows.Forms.Button();
             this.button4 = new System.Windows.Forms.Button();
             this.Panel_ModificarCliente = new System.Windows.Forms.Panel();
+            this.label17 = new System.Windows.Forms.Label();
+            this.cmb_activo = new TuLuz.Clases.ComboBox01();
+            this.btn_limpiarr = new System.Windows.Forms.Button();
             this.label16 = new System.Windows.Forms.Label();
             this.txt_NumDocJefe = new TuLuz.Clases.TextBox01();
             this.label15 = new System.Windows.Forms.Label();
@@ -76,7 +79,6 @@
             this.label5 = new System.Windows.Forms.Label();
             this.btn_salir = new System.Windows.Forms.Button();
             this.btn_Modificar = new System.Windows.Forms.Button();
-            this.btn_limpiarr = new System.Windows.Forms.Button();
             this.btn_limpiarCampo.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.grid01)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
@@ -316,6 +318,8 @@
             // Panel_ModificarCliente
             // 
             this.Panel_ModificarCliente.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.Panel_ModificarCliente.Controls.Add(this.label17);
+            this.Panel_ModificarCliente.Controls.Add(this.cmb_activo);
             this.Panel_ModificarCliente.Controls.Add(this.btn_limpiarr);
             this.Panel_ModificarCliente.Controls.Add(this.label16);
             this.Panel_ModificarCliente.Controls.Add(this.txt_NumDocJefe);
@@ -342,6 +346,48 @@
             this.Panel_ModificarCliente.Name = "Panel_ModificarCliente";
             this.Panel_ModificarCliente.Size = new System.Drawing.Size(940, 358);
             this.Panel_ModificarCliente.TabIndex = 5;
+            // 
+            // label17
+            // 
+            this.label17.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.label17.AutoSize = true;
+            this.label17.Location = new System.Drawing.Point(546, 234);
+            this.label17.Name = "label17";
+            this.label17.Size = new System.Drawing.Size(66, 25);
+            this.label17.TabIndex = 24;
+            this.label17.Text = "Activo";
+            this.label17.Click += new System.EventHandler(this.label17_Click);
+            // 
+            // cmb_activo
+            // 
+            this.cmb_activo.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.cmb_activo.FormattingEnabled = true;
+            this.cmb_activo.Items.AddRange(new object[] {
+            "true",
+            "false"});
+            this.cmb_activo.Location = new System.Drawing.Point(621, 226);
+            this.cmb_activo.Name = "cmb_activo";
+            this.cmb_activo.pp_Display = null;
+            this.cmb_activo.pp_mensaje_error = null;
+            this.cmb_activo.pp_nombre_campo = null;
+            this.cmb_activo.pp_nombre_tabla = null;
+            this.cmb_activo.pp_Seleccionado = false;
+            this.cmb_activo.pp_Tabla = null;
+            this.cmb_activo.pp_validable = false;
+            this.cmb_activo.pp_Value = null;
+            this.cmb_activo.Size = new System.Drawing.Size(208, 33);
+            this.cmb_activo.TabIndex = 23;
+            // 
+            // btn_limpiarr
+            // 
+            this.btn_limpiarr.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.btn_limpiarr.Location = new System.Drawing.Point(835, 150);
+            this.btn_limpiarr.Name = "btn_limpiarr";
+            this.btn_limpiarr.Size = new System.Drawing.Size(85, 33);
+            this.btn_limpiarr.TabIndex = 22;
+            this.btn_limpiarr.Text = "Limpiar";
+            this.btn_limpiarr.UseVisualStyleBackColor = true;
+            this.btn_limpiarr.Click += new System.EventHandler(this.btn_limpiarr_Click);
             // 
             // label16
             // 
@@ -628,17 +674,6 @@
             this.btn_Modificar.UseVisualStyleBackColor = true;
             this.btn_Modificar.Click += new System.EventHandler(this.btn_Modificar_Click);
             // 
-            // btn_limpiarr
-            // 
-            this.btn_limpiarr.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.btn_limpiarr.Location = new System.Drawing.Point(835, 150);
-            this.btn_limpiarr.Name = "btn_limpiarr";
-            this.btn_limpiarr.Size = new System.Drawing.Size(85, 33);
-            this.btn_limpiarr.TabIndex = 22;
-            this.btn_limpiarr.Text = "Limpiar";
-            this.btn_limpiarr.UseVisualStyleBackColor = true;
-            this.btn_limpiarr.Click += new System.EventHandler(this.btn_limpiarr_Click);
-            // 
             // ModificarEmpleados
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 25F);
@@ -653,6 +688,7 @@
             this.Name = "ModificarEmpleados";
             this.Text = "ModificarBarrio";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
+            this.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.ModificarEmpleados_KeyPress);
             this.btn_limpiarCampo.ResumeLayout(false);
             this.btn_limpiarCampo.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.grid01)).EndInit();
@@ -718,5 +754,7 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn Column5;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column6;
         private System.Windows.Forms.Button btn_limpiarr;
+        private System.Windows.Forms.Label label17;
+        private Clases.ComboBox01 cmb_activo;
     }
 }

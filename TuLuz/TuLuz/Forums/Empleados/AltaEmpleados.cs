@@ -27,10 +27,10 @@ namespace TuLuz.Forums
         public AltaEmpleados()
         {
             InitializeComponent();
-            cmb_Barrio.Cargar(Barrio.EstructuraCombo());
+            //cmb_Barrio.Cargar(Barrio.EstructuraCombo());
+            cmb_provincia.Cargar(Provincia.EstructuraCombo());
             cmb_Tipo_Doc.Cargar(TipoDoc.EstructuraCombo());
             cmb_Tipo_Doc_Jefe.Cargar(TipoDoc.EstructuraCombo());
-            
         }
 
         private void btn_cancelar_Click(object sender, EventArgs e)
@@ -42,6 +42,8 @@ namespace TuLuz.Forums
         {
             TratamientosEspeciales tratamiento = new TratamientosEspeciales();
             Es_Empleados _Ee = new Es_Empleados();
+            DataTable Verificacion = new DataTable();
+            
             if (tratamiento.validar(this.Controls) == TratamientosEspeciales.Validacion.correcta)
             {
                 _Ee.tipoDoc = cmb_Tipo_Doc.SelectedValue.ToString();
@@ -53,8 +55,9 @@ namespace TuLuz.Forums
                 _Ee.telefono = txt_Telefono.Text;
                 _Ee.tipoDocJefe = cmb_Tipo_Doc.SelectedValue.ToString();
                 _Ee.numDocJefe = txt_Num_Doc_Jefe.Text;
+                //string codProv = cmb_provincia.SelectedValue.ToString();
+                //cmb_localidad.Cargar(Localidad.EstructuraComboCOD(codProv));
                 _Ee.activo = "true";
-              
                 if (txt_Num_Doc_Jefe.Text=="")
                 {
                     _Ee.tipoDocJefe = "NULL";
@@ -65,21 +68,27 @@ namespace TuLuz.Forums
                     _Ee.tipoDocJefe = cmb_Tipo_Doc.SelectedValue.ToString();
                     _Ee.numDocJefe = txt_Num_Doc_Jefe.Text;
                 }
-                Empleado.Insertar(_Ee);
+                Verificacion = Empleado.Buscar_Empleados(_Ee.numDoc);
+                if (Verificacion.Rows.Count > 0)
+                {
 
+                    MessageBox.Show("El Empleado que desea insertar ya existe. ", "ATENCION");
+
+                }
+                else
+                {
+                    Empleado.Insertar(_Ee);
+                    if (chk_usr.Checked == true)
+                    {
+                        Es_Usuario user = new Es_Usuario();
+                        user.usuario = txt_user.Text;
+                        user.password = txt_pass.Text;
+                        user.numDocEmpleado = txt_Num_Doc.Text;
+                        Usuario.Insertar(user);
+                    }
+                    this.Close();
+                }
             }
-            if (chk_usr.Checked == true)
-            {
-                Es_Usuario user = new Es_Usuario();
-                user.usuario = txt_user.Text;
-                user.password = txt_pass.Text;
-                user.numDocEmpleado = txt_Num_Doc.Text;
-                Usuario.Insertar(user);
-            }   
-                
-            
-            this.Close();
-
 
         }
 
@@ -96,8 +105,8 @@ namespace TuLuz.Forums
         private void brn_Load(object sender, EventArgs e)
         {
             grp_usr.Visible = false;
+            
         }
-
         private void button1_Click(object sender, EventArgs e)
         {
             if (grp_usr.Visible == true)
@@ -109,10 +118,42 @@ namespace TuLuz.Forums
                 grp_usr.Visible = true;
             }
         }
-        //public void CargarCombos ()
-        //{
-        //    cmb_provincia.Cargar(Provincia.EstructuraCombo());
 
-        //}
+        private void cmb_provincia_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            if (cmb_provincia.SelectedIndex == -1)
+            {
+
+            }
+            else
+            {
+                cmb_localidad.Cargar(new EstructuraComboBox());
+                cmb_localidad.Cargar(Localidad.EstructuraComboEspecial(int.Parse(cmb_provincia.SelectedValue.ToString())));
+            }
+            cmb_localidad.SelectedIndex = -1;
+
+        }
+
+        private void cmb_localidad_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            if (cmb_localidad.SelectedIndex == -1)
+            {
+
+            }
+            else
+            {
+                cmb_Barrio.Cargar(new EstructuraComboBox());
+                cmb_Barrio.Cargar(Barrio.EstructuraComboEspecial(int.Parse(cmb_localidad.SelectedValue.ToString())));
+            }
+            cmb_Barrio.SelectedIndex = -1;
+        }
+
+        private void txt_Num_Doc_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (!char.IsControl(e.KeyChar) && !char.IsDigit(e.KeyChar))
+            {
+                e.Handled = true;
+            }
+        }
     }
 }

@@ -28,9 +28,17 @@ namespace TuLuz.Negocio
 
         }
 
-        public DataTable Todos_los_Clientes()
+        public DataTable Todos_los_ClientesActivos()
         {
-            string sql = "SELECT * FROM cliente";
+            string sql = "SELECT * FROM cliente WHERE activo = 'true'";
+            DataTable tabla = new DataTable();
+            tabla = _BD.Consulta(sql);
+            return tabla;
+        }
+
+        public DataTable Todos_los_ClientesNoActivos()
+        {
+            string sql = "SELECT * FROM cliente WHERE activo = 'false'";
             DataTable tabla = new DataTable();
             tabla = _BD.Consulta(sql);
             return tabla;
@@ -44,13 +52,48 @@ namespace TuLuz.Negocio
         }
         public DataTable RecuperarCliente(string cuit)
         {
-            return _BD.Consulta("SELECT * FROM cliente WHERE cuitCliente = " + cuit);
+            return _BD.Consulta("SELECT * FROM cliente WHERE cuitCliente like " + cuit );
         }
+        public DataTable Todos_los_Clientes()
+        {
+            string sql = "SELECT * FROM cliente";
+            DataTable tabla = new DataTable();
+            tabla = _BD.Consulta(sql);
+            return tabla;
+        }
+
+        public DataTable Buscar_ClienteMasBajos(string cuit)
+        {
+            string sql = "SELECT * FROM Cliente WHERE cuitCliente like '%" + cuit.Trim() + "%' ";
+            DataTable tabla = new DataTable();
+            tabla = _BD.Consulta(sql);
+            return tabla;
+        }
+
+        public int ContarPedidosDelCliente(string cuit) {
+            DataTable Pedidos = new DataTable();
+            Pedidos = _BD.Consulta("SELECT Pedidos.* FROM Cliente, Pedidos WHERE "+ cuit +" = Pedidos.cuitCliente");
+            return Pedidos.Rows.Count;
+        }
+        public int ContarCotizacionDelCliente(string cuit)
+        {
+            DataTable Cotizaciones = new DataTable();
+            Cotizaciones = _BD.Consulta("SELECT Cotizaciones.* FROM Cliente, Cotizaciones WHERE " + cuit + " = Cotizaciones.cuitCliente");
+            return Cotizaciones.Rows.Count;
+        }
+
+        public void DarBaja(string cuit)
+        {
+            string sqlUpdate = "UPDATE Cliente SET activo = 'false' WHERE cuitCliente = '"+ cuit+"'";
+            _BD.Modificar(sqlUpdate);
+        }
+
         public void Modificar (Es_Clientes datos)
         {
             string sqlUpdate = "UPDATE Cliente SET ";
             sqlUpdate += "nombre = " + _BD.FormatearDato(datos.nombre, "String");
             sqlUpdate += ", apellido = " + _BD.FormatearDato(datos.apellido, "String");
+            sqlUpdate += ", activo = " + _BD.FormatearDato(datos.activo, "String");
             sqlUpdate += " WHERE cuitCliente = " + datos.cuitCliente;
 
             MessageBox.Show("El cliente fue modificado con exito!", "MODIFICACIÓN EXITOSA", MessageBoxButtons.OK, MessageBoxIcon.Information);
@@ -62,6 +105,16 @@ namespace TuLuz.Negocio
             string sqlDelete = "DELETE FROM Cliente WHERE cuitCliente = "+ cuit;
             MessageBox.Show("El cliente fue eliminado con exito!", "ELIMINACIÓN EXITOSA", MessageBoxButtons.OK, MessageBoxIcon.Information);
             _BD.Borrar(sqlDelete);
+        }
+
+        public EstructuraComboBox EstructuraCombo()
+        {
+            EstructuraComboBox EC = new EstructuraComboBox();
+            EC.Display = "cuitCliente";
+            EC.Value = "cuitCliente";
+            EC.Sql = "SELECT * FROM Cliente";
+            EC.Tabla = _BD.Consulta(EC.Sql);
+            return EC;
         }
     }
     

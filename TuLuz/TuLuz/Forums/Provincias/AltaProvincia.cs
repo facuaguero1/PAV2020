@@ -31,15 +31,25 @@ namespace TuLuz.Forums
         {
             TratamientosEspeciales tratamiento = new TratamientosEspeciales();
             Es_Provincia _Ep = new Es_Provincia();
+            DataTable Verificacion = new DataTable();
 
             if (tratamiento.validar(this.Controls)==TratamientosEspeciales.Validacion.correcta)
             {
                 _Ep.codProvincia = txt_codProvincia.Text;
                 _Ep.nombre = txt_nombreProvincia.Text;
-                Provincias.Insertar(_Ep);
+                Verificacion = Provincias.Buscar_Provincia_Codigo(_Ep.codProvincia);
+                if (Verificacion.Rows.Count > 0)
+                {
+
+                    MessageBox.Show("La provincia que desea insertar ya existe. ", "ATENCION");
+
+                }
+                else
+                {
+                    Provincias.Insertar(_Ep);
+                    this.Close();
+                }
             }
-            this.Close();
-            
         }
 
         private void btn_salir_Click(object sender, EventArgs e)
@@ -50,6 +60,14 @@ namespace TuLuz.Forums
         private void AltaProvincia_Load(object sender, EventArgs e)
         {
 
+        }
+
+        private void txt_codProvincia_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (!char.IsControl(e.KeyChar) && !char.IsDigit(e.KeyChar))
+            {
+                e.Handled = true;
+            }
         }
     }
 }

@@ -46,13 +46,13 @@
             this.label12 = new System.Windows.Forms.Label();
             this.chk_usr = new System.Windows.Forms.CheckBox();
             this.label11 = new System.Windows.Forms.Label();
+            this.txt_pass = new TuLuz.Clases.TextBox01();
+            this.txt_user = new TuLuz.Clases.TextBox01();
             this.button1 = new System.Windows.Forms.Button();
             this.label13 = new System.Windows.Forms.Label();
             this.label14 = new System.Windows.Forms.Label();
             this.cmb_localidad = new TuLuz.Clases.ComboBox01();
             this.cmb_provincia = new TuLuz.Clases.ComboBox01();
-            this.txt_pass = new TuLuz.Clases.TextBox01();
-            this.txt_user = new TuLuz.Clases.TextBox01();
             this.txt_Num_Doc_Jefe = new TuLuz.Clases.TextBox01();
             this.cmb_Tipo_Doc_Jefe = new TuLuz.Clases.ComboBox01();
             this.cmb_Barrio = new TuLuz.Clases.ComboBox01();
@@ -179,7 +179,7 @@
             this.btn_cancelar.Location = new System.Drawing.Point(762, 542);
             this.btn_cancelar.Name = "btn_cancelar";
             this.btn_cancelar.Size = new System.Drawing.Size(90, 80);
-            this.btn_cancelar.TabIndex = 11;
+            this.btn_cancelar.TabIndex = 14;
             this.btn_cancelar.UseVisualStyleBackColor = true;
             this.btn_cancelar.Click += new System.EventHandler(this.btn_cancelar_Click);
             // 
@@ -193,7 +193,7 @@
             this.btn_aceptar.Location = new System.Drawing.Point(406, 542);
             this.btn_aceptar.Name = "btn_aceptar";
             this.btn_aceptar.Size = new System.Drawing.Size(90, 80);
-            this.btn_aceptar.TabIndex = 10;
+            this.btn_aceptar.TabIndex = 13;
             this.btn_aceptar.UseVisualStyleBackColor = true;
             this.btn_aceptar.Click += new System.EventHandler(this.btn_aceptar_Click);
             // 
@@ -229,7 +229,7 @@
             this.btn_limpiar_campo.Location = new System.Drawing.Point(754, 452);
             this.btn_limpiar_campo.Name = "btn_limpiar_campo";
             this.btn_limpiar_campo.Size = new System.Drawing.Size(91, 29);
-            this.btn_limpiar_campo.TabIndex = 8;
+            this.btn_limpiar_campo.TabIndex = 10;
             this.btn_limpiar_campo.Text = "Limpiar";
             this.btn_limpiar_campo.UseVisualStyleBackColor = true;
             this.btn_limpiar_campo.Click += new System.EventHandler(this.btn_limpiar_campo_Click);
@@ -264,7 +264,7 @@
             this.chk_usr.Location = new System.Drawing.Point(106, 163);
             this.chk_usr.Name = "chk_usr";
             this.chk_usr.Size = new System.Drawing.Size(90, 17);
-            this.chk_usr.TabIndex = 23;
+            this.chk_usr.TabIndex = 2;
             this.chk_usr.Text = "Crear Usuario";
             this.chk_usr.UseVisualStyleBackColor = true;
             // 
@@ -277,13 +277,35 @@
             this.label11.TabIndex = 2;
             this.label11.Text = "Usuario";
             // 
+            // txt_pass
+            // 
+            this.txt_pass.Location = new System.Drawing.Point(106, 111);
+            this.txt_pass.Name = "txt_pass";
+            this.txt_pass.pp_mensaje_error = null;
+            this.txt_pass.pp_nombre_campo = null;
+            this.txt_pass.pp_nombre_tabla = null;
+            this.txt_pass.pp_validable = false;
+            this.txt_pass.Size = new System.Drawing.Size(100, 20);
+            this.txt_pass.TabIndex = 1;
+            // 
+            // txt_user
+            // 
+            this.txt_user.Location = new System.Drawing.Point(106, 41);
+            this.txt_user.Name = "txt_user";
+            this.txt_user.pp_mensaje_error = null;
+            this.txt_user.pp_nombre_campo = null;
+            this.txt_user.pp_nombre_tabla = null;
+            this.txt_user.pp_validable = false;
+            this.txt_user.Size = new System.Drawing.Size(100, 20);
+            this.txt_user.TabIndex = 0;
+            // 
             // button1
             // 
             this.button1.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.button1.Location = new System.Drawing.Point(898, 110);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(136, 23);
-            this.button1.TabIndex = 24;
+            this.button1.TabIndex = 12;
             this.button1.Text = "Crear Usuario";
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.button1_Click);
@@ -318,7 +340,7 @@
             this.cmb_localidad.Location = new System.Drawing.Point(467, 339);
             this.cmb_localidad.Name = "cmb_localidad";
             this.cmb_localidad.pp_Display = null;
-            this.cmb_localidad.pp_mensaje_error = null;
+            this.cmb_localidad.pp_mensaje_error = "No se completo algun dato";
             this.cmb_localidad.pp_nombre_campo = null;
             this.cmb_localidad.pp_nombre_tabla = null;
             this.cmb_localidad.pp_Seleccionado = false;
@@ -326,7 +348,8 @@
             this.cmb_localidad.pp_validable = false;
             this.cmb_localidad.pp_Value = null;
             this.cmb_localidad.Size = new System.Drawing.Size(281, 32);
-            this.cmb_localidad.TabIndex = 26;
+            this.cmb_localidad.TabIndex = 6;
+            this.cmb_localidad.SelectedIndexChanged += new System.EventHandler(this.cmb_localidad_SelectedIndexChanged);
             // 
             // cmb_provincia
             // 
@@ -336,7 +359,7 @@
             this.cmb_provincia.Location = new System.Drawing.Point(467, 301);
             this.cmb_provincia.Name = "cmb_provincia";
             this.cmb_provincia.pp_Display = null;
-            this.cmb_provincia.pp_mensaje_error = null;
+            this.cmb_provincia.pp_mensaje_error = "No se completo algun dato";
             this.cmb_provincia.pp_nombre_campo = null;
             this.cmb_provincia.pp_nombre_tabla = null;
             this.cmb_provincia.pp_Seleccionado = false;
@@ -344,29 +367,8 @@
             this.cmb_provincia.pp_validable = false;
             this.cmb_provincia.pp_Value = null;
             this.cmb_provincia.Size = new System.Drawing.Size(281, 32);
-            this.cmb_provincia.TabIndex = 25;
-            // 
-            // txt_pass
-            // 
-            this.txt_pass.Location = new System.Drawing.Point(106, 111);
-            this.txt_pass.Name = "txt_pass";
-            this.txt_pass.pp_mensaje_error = null;
-            this.txt_pass.pp_nombre_campo = null;
-            this.txt_pass.pp_nombre_tabla = null;
-            this.txt_pass.pp_validable = false;
-            this.txt_pass.Size = new System.Drawing.Size(100, 20);
-            this.txt_pass.TabIndex = 1;
-            // 
-            // txt_user
-            // 
-            this.txt_user.Location = new System.Drawing.Point(106, 41);
-            this.txt_user.Name = "txt_user";
-            this.txt_user.pp_mensaje_error = null;
-            this.txt_user.pp_nombre_campo = null;
-            this.txt_user.pp_nombre_tabla = null;
-            this.txt_user.pp_validable = false;
-            this.txt_user.Size = new System.Drawing.Size(100, 20);
-            this.txt_user.TabIndex = 0;
+            this.cmb_provincia.TabIndex = 5;
+            this.cmb_provincia.SelectedIndexChanged += new System.EventHandler(this.cmb_provincia_SelectedIndexChanged);
             // 
             // txt_Num_Doc_Jefe
             // 
@@ -374,12 +376,12 @@
             this.txt_Num_Doc_Jefe.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txt_Num_Doc_Jefe.Location = new System.Drawing.Point(467, 489);
             this.txt_Num_Doc_Jefe.Name = "txt_Num_Doc_Jefe";
-            this.txt_Num_Doc_Jefe.pp_mensaje_error = null;
+            this.txt_Num_Doc_Jefe.pp_mensaje_error = "No se completo algun dato";
             this.txt_Num_Doc_Jefe.pp_nombre_campo = "numDocJefe";
             this.txt_Num_Doc_Jefe.pp_nombre_tabla = "Empleados";
             this.txt_Num_Doc_Jefe.pp_validable = false;
             this.txt_Num_Doc_Jefe.Size = new System.Drawing.Size(281, 30);
-            this.txt_Num_Doc_Jefe.TabIndex = 9;
+            this.txt_Num_Doc_Jefe.TabIndex = 11;
             // 
             // cmb_Tipo_Doc_Jefe
             // 
@@ -389,7 +391,7 @@
             this.cmb_Tipo_Doc_Jefe.Location = new System.Drawing.Point(467, 451);
             this.cmb_Tipo_Doc_Jefe.Name = "cmb_Tipo_Doc_Jefe";
             this.cmb_Tipo_Doc_Jefe.pp_Display = null;
-            this.cmb_Tipo_Doc_Jefe.pp_mensaje_error = null;
+            this.cmb_Tipo_Doc_Jefe.pp_mensaje_error = "No se completo algun dato";
             this.cmb_Tipo_Doc_Jefe.pp_nombre_campo = "tipoDocJefe";
             this.cmb_Tipo_Doc_Jefe.pp_nombre_tabla = "Empleados";
             this.cmb_Tipo_Doc_Jefe.pp_Seleccionado = false;
@@ -397,7 +399,7 @@
             this.cmb_Tipo_Doc_Jefe.pp_validable = false;
             this.cmb_Tipo_Doc_Jefe.pp_Value = null;
             this.cmb_Tipo_Doc_Jefe.Size = new System.Drawing.Size(281, 32);
-            this.cmb_Tipo_Doc_Jefe.TabIndex = 7;
+            this.cmb_Tipo_Doc_Jefe.TabIndex = 9;
             // 
             // cmb_Barrio
             // 
@@ -407,7 +409,7 @@
             this.cmb_Barrio.Location = new System.Drawing.Point(467, 377);
             this.cmb_Barrio.Name = "cmb_Barrio";
             this.cmb_Barrio.pp_Display = null;
-            this.cmb_Barrio.pp_mensaje_error = "No ingreso el barrio";
+            this.cmb_Barrio.pp_mensaje_error = "No se completo algun dato";
             this.cmb_Barrio.pp_nombre_campo = "codBarrio";
             this.cmb_Barrio.pp_nombre_tabla = "Empleados";
             this.cmb_Barrio.pp_Seleccionado = false;
@@ -415,7 +417,7 @@
             this.cmb_Barrio.pp_validable = false;
             this.cmb_Barrio.pp_Value = null;
             this.cmb_Barrio.Size = new System.Drawing.Size(281, 32);
-            this.cmb_Barrio.TabIndex = 5;
+            this.cmb_Barrio.TabIndex = 7;
             // 
             // txt_Direccion
             // 
@@ -423,7 +425,7 @@
             this.txt_Direccion.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txt_Direccion.Location = new System.Drawing.Point(467, 265);
             this.txt_Direccion.Name = "txt_Direccion";
-            this.txt_Direccion.pp_mensaje_error = "No ingreso una direccion";
+            this.txt_Direccion.pp_mensaje_error = "No se completo algun dato";
             this.txt_Direccion.pp_nombre_campo = "direccion";
             this.txt_Direccion.pp_nombre_tabla = "Empleados";
             this.txt_Direccion.pp_validable = false;
@@ -436,12 +438,13 @@
             this.txt_Num_Doc.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txt_Num_Doc.Location = new System.Drawing.Point(467, 157);
             this.txt_Num_Doc.Name = "txt_Num_Doc";
-            this.txt_Num_Doc.pp_mensaje_error = "Falta Numero de Documento";
+            this.txt_Num_Doc.pp_mensaje_error = "No se completo algun dato";
             this.txt_Num_Doc.pp_nombre_campo = "numDoc";
             this.txt_Num_Doc.pp_nombre_tabla = "Empleados";
             this.txt_Num_Doc.pp_validable = false;
             this.txt_Num_Doc.Size = new System.Drawing.Size(281, 30);
             this.txt_Num_Doc.TabIndex = 1;
+            this.txt_Num_Doc.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txt_Num_Doc_KeyPress);
             // 
             // cmb_Tipo_Doc
             // 
@@ -451,7 +454,7 @@
             this.cmb_Tipo_Doc.Location = new System.Drawing.Point(467, 119);
             this.cmb_Tipo_Doc.Name = "cmb_Tipo_Doc";
             this.cmb_Tipo_Doc.pp_Display = null;
-            this.cmb_Tipo_Doc.pp_mensaje_error = "No selecciono un Tipo de Documento";
+            this.cmb_Tipo_Doc.pp_mensaje_error = "No se completo algun dato";
             this.cmb_Tipo_Doc.pp_nombre_campo = "tipoDoc";
             this.cmb_Tipo_Doc.pp_nombre_tabla = "Empleados";
             this.cmb_Tipo_Doc.pp_Seleccionado = false;
@@ -467,7 +470,7 @@
             this.txt_ApellidoEmpleado.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txt_ApellidoEmpleado.Location = new System.Drawing.Point(467, 229);
             this.txt_ApellidoEmpleado.Name = "txt_ApellidoEmpleado";
-            this.txt_ApellidoEmpleado.pp_mensaje_error = "No se ingreso APELLIDO!!";
+            this.txt_ApellidoEmpleado.pp_mensaje_error = "No se completo algun dato";
             this.txt_ApellidoEmpleado.pp_nombre_campo = "apellido";
             this.txt_ApellidoEmpleado.pp_nombre_tabla = "Empleados";
             this.txt_ApellidoEmpleado.pp_validable = true;
@@ -480,7 +483,7 @@
             this.txt_nombreEmpleado.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txt_nombreEmpleado.Location = new System.Drawing.Point(467, 193);
             this.txt_nombreEmpleado.Name = "txt_nombreEmpleado";
-            this.txt_nombreEmpleado.pp_mensaje_error = "No se ingreso NOMBRE!!";
+            this.txt_nombreEmpleado.pp_mensaje_error = "No se completo algun dato";
             this.txt_nombreEmpleado.pp_nombre_campo = "nombre";
             this.txt_nombreEmpleado.pp_nombre_tabla = "Empleados";
             this.txt_nombreEmpleado.pp_validable = true;
@@ -493,12 +496,12 @@
             this.txt_Telefono.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txt_Telefono.Location = new System.Drawing.Point(467, 415);
             this.txt_Telefono.Name = "txt_Telefono";
-            this.txt_Telefono.pp_mensaje_error = "No se ingreso telefono";
+            this.txt_Telefono.pp_mensaje_error = "No se completo algun dato";
             this.txt_Telefono.pp_nombre_campo = "telefono";
             this.txt_Telefono.pp_nombre_tabla = "Empleados";
             this.txt_Telefono.pp_validable = true;
             this.txt_Telefono.Size = new System.Drawing.Size(281, 30);
-            this.txt_Telefono.TabIndex = 6;
+            this.txt_Telefono.TabIndex = 8;
             // 
             // AltaEmpleados
             // 

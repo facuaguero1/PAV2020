@@ -28,7 +28,6 @@ namespace TuLuz
         {
             Panel_Barrios.Visible = false;
             Panel_Clientes.Visible = false;
-            Panel_Cotizaciones.Visible = false;
             Panel_Empleados.Visible = false;
             Panel_Pedidos.Visible = false;
             Panel_Proveedores.Visible = false;
@@ -48,8 +47,6 @@ namespace TuLuz
                 Panel_Barrios.Visible = false;
             if (Panel_Clientes.Visible == true)
                 Panel_Clientes.Visible = false;
-            if (Panel_Cotizaciones.Visible == true)
-                Panel_Cotizaciones.Visible = false;
             if (Panel_Empleados.Visible == true)
                 Panel_Empleados.Visible = false;
             if (Panel_Pedidos.Visible == true)
@@ -106,10 +103,7 @@ namespace TuLuz
             MostrarMenu(Panel_Clientes);
         }
 
-        private void btn_Cotizaciones_Click(object sender, EventArgs e)
-        {
-            MostrarMenu(Panel_Cotizaciones);
-        }
+       
 
         private void btn_Empleados_Click(object sender, EventArgs e)
         {
@@ -178,7 +172,7 @@ namespace TuLuz
         }
 
         private Form FormularioActivo = null;
-        private void AbrirFormularioSubMenu(Form FormularioSubMenu)
+        public void AbrirFormularioSubMenu(Form FormularioSubMenu)
         {
             if (FormularioActivo != null)
                 FormularioActivo.Close();       //si existe un formulario abierto, lo cerramos 
@@ -318,6 +312,91 @@ namespace TuLuz
         private void btn_ModificarLocalidades_Click(object sender, EventArgs e)
         {
             AbrirFormularioSubMenu(new ModificarLocalidad());
+        }
+
+        private void btn_RegistrarProveedores_Click(object sender, EventArgs e)
+        {
+            AbrirFormularioSubMenu(new AltaProveedor());
+        }
+
+        private void btn_ConsultarProveedores_Click(object sender, EventArgs e)
+        {
+            AbrirFormularioSubMenu(new ConsultarProveedor());
+        }
+
+        private void btn_RegistrarTipoDoc_Click(object sender, EventArgs e)
+        {
+            AbrirFormularioSubMenu(new AltaTipoDoc());
+        }
+
+        private void btn_EliminarTipoDoc_Click(object sender, EventArgs e)
+        {
+            AbrirFormularioSubMenu(new BorrarTipoDoc());
+        }
+
+        private void btn_ConsultarTipoDoc_Click(object sender, EventArgs e)
+        {
+            AbrirFormularioSubMenu(new ConsultarTipoDocs());
+        }
+
+        private void btn_ModificarTipoDoc_Click(object sender, EventArgs e)
+        {
+            AbrirFormularioSubMenu(new ModificarTipoDoc());
+        }
+
+        private void btn_RegistrarProductos_Click(object sender, EventArgs e)
+        {
+            AbrirFormularioSubMenu(new AltaProducto());
+        }
+
+        private void btn_EliminarProductos_Click(object sender, EventArgs e)
+        {
+            AbrirFormularioSubMenu(new BorrarProductos());
+        }
+
+        private void btn_ConsultarProductos_Click(object sender, EventArgs e)
+        {
+            AbrirFormularioSubMenu(new ConsultarProductos());
+        }
+
+        private void btn_ModificarPedidos_Click(object sender, EventArgs e)
+        {
+            AbrirFormularioSubMenu(new ModificarPedidos());
+        }
+
+        private void btn_ModificarProductos_Click(object sender, EventArgs e)
+        {
+            AbrirFormularioSubMenu(new ModificarProductos());
+        }
+
+        private void btn_RegistrarPedidos_Click(object sender, EventArgs e)
+        {
+            AbrirFormularioSubMenu(new AltaPedido());
+        }
+
+        private void btn_EliminarPedidos_Click(object sender, EventArgs e)
+        {
+            AbrirFormularioSubMenu(new BorrarPedido());
+        }
+
+        private void btn_ConsultarPedidos_Click(object sender, EventArgs e)
+        {
+            AbrirFormularioSubMenu(new ConsultarPedidos());
+        }
+        private void btn_EliminarProveedores_Click(object sender, EventArgs e)
+        {
+            AbrirFormularioSubMenu(new BorrarProveedor());
+        }
+
+        private void btn_ModificarProveedores_Click(object sender, EventArgs e)
+        {
+            AbrirFormularioSubMenu(new ModificarProveedor());
+        }
+
+        private void btn_CargarCotizacion_Click(object sender, EventArgs e)
+        {
+            AbrirFormularioSubMenu(new Cotizaciones());
+            
         }
     }
 }

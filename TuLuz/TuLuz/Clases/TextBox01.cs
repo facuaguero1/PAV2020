@@ -14,5 +14,11 @@ namespace TuLuz.Clases
         public string pp_nombre_tabla { get; set; }
         public string pp_mensaje_error { get; set; }
 
+        public TextBox01()
+        {
+            pp_mensaje_error = "No se ingreso algun dato";
+        }
+
+
     }
 }

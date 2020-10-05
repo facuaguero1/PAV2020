@@ -29,8 +29,13 @@
         private void InitializeComponent()
         {
             this.btn_limpiarCampo = new System.Windows.Forms.GroupBox();
+            this.btn_Limpiar = new System.Windows.Forms.Button();
             this.grid01 = new System.Windows.Forms.DataGridView();
+            this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.btn_Buscar = new System.Windows.Forms.Button();
+            this.txt_BuscarCodLocalidad = new TuLuz.Clases.TextBox01();
             this.chk_Todos = new System.Windows.Forms.CheckBox();
             this.label6 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
@@ -44,22 +49,17 @@
             this.button3 = new System.Windows.Forms.Button();
             this.button4 = new System.Windows.Forms.Button();
             this.Panel_DatosProvincia = new System.Windows.Forms.Panel();
+            this.cmb_Provincia = new TuLuz.Clases.ComboBox01();
+            this.label9 = new System.Windows.Forms.Label();
             this.label10 = new System.Windows.Forms.Label();
             this.btn_Aceptar = new System.Windows.Forms.Button();
             this.label8 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
+            this.txt_NombreLocalidad = new TuLuz.Clases.TextBox01();
+            this.txt_codLocalidad = new TuLuz.Clases.TextBox01();
             this.label5 = new System.Windows.Forms.Label();
             this.btn_salir = new System.Windows.Forms.Button();
             this.btn_Modificar = new System.Windows.Forms.Button();
-            this.btn_Limpiar = new System.Windows.Forms.Button();
-            this.label9 = new System.Windows.Forms.Label();
-            this.cmb_Provincia = new TuLuz.Clases.ComboBox01();
-            this.txt_NombreLocalidad = new TuLuz.Clases.TextBox01();
-            this.txt_codLocalidad = new TuLuz.Clases.TextBox01();
-            this.txt_BuscarCodLocalidad = new TuLuz.Clases.TextBox01();
-            this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.btn_limpiarCampo.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.grid01)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
@@ -84,6 +84,19 @@
             this.btn_limpiarCampo.TabStop = false;
             this.btn_limpiarCampo.Text = "Filtros";
             // 
+            // btn_Limpiar
+            // 
+            this.btn_Limpiar.BackgroundImage = global::TuLuz.Properties.Resources.___;
+            this.btn_Limpiar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btn_Limpiar.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_Limpiar.Location = new System.Drawing.Point(339, 47);
+            this.btn_Limpiar.Name = "btn_Limpiar";
+            this.btn_Limpiar.Size = new System.Drawing.Size(31, 30);
+            this.btn_Limpiar.TabIndex = 5;
+            this.btn_Limpiar.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.btn_Limpiar.UseVisualStyleBackColor = true;
+            this.btn_Limpiar.Click += new System.EventHandler(this.btn_Limpiar_Click);
+            // 
             // grid01
             // 
             this.grid01.AllowUserToAddRows = false;
@@ -101,6 +114,27 @@
             this.grid01.Size = new System.Drawing.Size(621, 176);
             this.grid01.TabIndex = 4;
             // 
+            // Column1
+            // 
+            this.Column1.HeaderText = "Codigo";
+            this.Column1.Name = "Column1";
+            this.Column1.ReadOnly = true;
+            this.Column1.Width = 130;
+            // 
+            // Column2
+            // 
+            this.Column2.HeaderText = "Nombre";
+            this.Column2.Name = "Column2";
+            this.Column2.ReadOnly = true;
+            this.Column2.Width = 220;
+            // 
+            // Column3
+            // 
+            this.Column3.HeaderText = "Provincia";
+            this.Column3.Name = "Column3";
+            this.Column3.ReadOnly = true;
+            this.Column3.Width = 200;
+            // 
             // btn_Buscar
             // 
             this.btn_Buscar.Location = new System.Drawing.Point(523, 96);
@@ -110,6 +144,18 @@
             this.btn_Buscar.Text = "Buscar";
             this.btn_Buscar.UseVisualStyleBackColor = true;
             this.btn_Buscar.Click += new System.EventHandler(this.btn_Buscar_Click);
+            // 
+            // txt_BuscarCodLocalidad
+            // 
+            this.txt_BuscarCodLocalidad.Location = new System.Drawing.Point(136, 47);
+            this.txt_BuscarCodLocalidad.Name = "txt_BuscarCodLocalidad";
+            this.txt_BuscarCodLocalidad.pp_mensaje_error = null;
+            this.txt_BuscarCodLocalidad.pp_nombre_campo = null;
+            this.txt_BuscarCodLocalidad.pp_nombre_tabla = null;
+            this.txt_BuscarCodLocalidad.pp_validable = false;
+            this.txt_BuscarCodLocalidad.Size = new System.Drawing.Size(197, 30);
+            this.txt_BuscarCodLocalidad.TabIndex = 2;
+            this.txt_BuscarCodLocalidad.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txt_BuscarCodLocalidad_KeyPress);
             // 
             // chk_Todos
             // 
@@ -243,6 +289,33 @@
             this.Panel_DatosProvincia.Size = new System.Drawing.Size(639, 270);
             this.Panel_DatosProvincia.TabIndex = 5;
             // 
+            // cmb_Provincia
+            // 
+            this.cmb_Provincia.Enabled = false;
+            this.cmb_Provincia.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cmb_Provincia.FormattingEnabled = true;
+            this.cmb_Provincia.Location = new System.Drawing.Point(182, 194);
+            this.cmb_Provincia.Name = "cmb_Provincia";
+            this.cmb_Provincia.pp_Display = null;
+            this.cmb_Provincia.pp_mensaje_error = null;
+            this.cmb_Provincia.pp_nombre_campo = null;
+            this.cmb_Provincia.pp_nombre_tabla = null;
+            this.cmb_Provincia.pp_Seleccionado = false;
+            this.cmb_Provincia.pp_Tabla = null;
+            this.cmb_Provincia.pp_validable = false;
+            this.cmb_Provincia.pp_Value = null;
+            this.cmb_Provincia.Size = new System.Drawing.Size(208, 32);
+            this.cmb_Provincia.TabIndex = 10;
+            // 
+            // label9
+            // 
+            this.label9.AutoSize = true;
+            this.label9.Location = new System.Drawing.Point(70, 197);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(92, 25);
+            this.label9.TabIndex = 9;
+            this.label9.Text = "Provincia";
+            // 
             // label10
             // 
             this.label10.AutoSize = true;
@@ -281,6 +354,30 @@
             this.label7.TabIndex = 3;
             this.label7.Text = "Codigo";
             // 
+            // txt_NombreLocalidad
+            // 
+            this.txt_NombreLocalidad.Enabled = false;
+            this.txt_NombreLocalidad.Location = new System.Drawing.Point(182, 152);
+            this.txt_NombreLocalidad.Name = "txt_NombreLocalidad";
+            this.txt_NombreLocalidad.pp_mensaje_error = null;
+            this.txt_NombreLocalidad.pp_nombre_campo = null;
+            this.txt_NombreLocalidad.pp_nombre_tabla = null;
+            this.txt_NombreLocalidad.pp_validable = false;
+            this.txt_NombreLocalidad.Size = new System.Drawing.Size(208, 30);
+            this.txt_NombreLocalidad.TabIndex = 2;
+            // 
+            // txt_codLocalidad
+            // 
+            this.txt_codLocalidad.Enabled = false;
+            this.txt_codLocalidad.Location = new System.Drawing.Point(182, 106);
+            this.txt_codLocalidad.Name = "txt_codLocalidad";
+            this.txt_codLocalidad.pp_mensaje_error = null;
+            this.txt_codLocalidad.pp_nombre_campo = null;
+            this.txt_codLocalidad.pp_nombre_tabla = null;
+            this.txt_codLocalidad.pp_validable = false;
+            this.txt_codLocalidad.Size = new System.Drawing.Size(208, 30);
+            this.txt_codLocalidad.TabIndex = 0;
+            // 
             // label5
             // 
             this.label5.AutoSize = true;
@@ -318,102 +415,6 @@
             this.btn_Modificar.TabIndex = 3;
             this.btn_Modificar.UseVisualStyleBackColor = true;
             this.btn_Modificar.Click += new System.EventHandler(this.btn_Modificar_Click);
-            // 
-            // btn_Limpiar
-            // 
-            this.btn_Limpiar.BackgroundImage = global::TuLuz.Properties.Resources.___;
-            this.btn_Limpiar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.btn_Limpiar.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_Limpiar.Location = new System.Drawing.Point(339, 47);
-            this.btn_Limpiar.Name = "btn_Limpiar";
-            this.btn_Limpiar.Size = new System.Drawing.Size(31, 30);
-            this.btn_Limpiar.TabIndex = 5;
-            this.btn_Limpiar.TextAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.btn_Limpiar.UseVisualStyleBackColor = true;
-            this.btn_Limpiar.Click += new System.EventHandler(this.btn_Limpiar_Click);
-            // 
-            // label9
-            // 
-            this.label9.AutoSize = true;
-            this.label9.Location = new System.Drawing.Point(70, 197);
-            this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(92, 25);
-            this.label9.TabIndex = 9;
-            this.label9.Text = "Provincia";
-            // 
-            // cmb_Provincia
-            // 
-            this.cmb_Provincia.Enabled = false;
-            this.cmb_Provincia.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.cmb_Provincia.FormattingEnabled = true;
-            this.cmb_Provincia.Location = new System.Drawing.Point(182, 194);
-            this.cmb_Provincia.Name = "cmb_Provincia";
-            this.cmb_Provincia.pp_Display = null;
-            this.cmb_Provincia.pp_mensaje_error = null;
-            this.cmb_Provincia.pp_nombre_campo = null;
-            this.cmb_Provincia.pp_nombre_tabla = null;
-            this.cmb_Provincia.pp_Seleccionado = false;
-            this.cmb_Provincia.pp_Tabla = null;
-            this.cmb_Provincia.pp_validable = false;
-            this.cmb_Provincia.pp_Value = null;
-            this.cmb_Provincia.Size = new System.Drawing.Size(208, 32);
-            this.cmb_Provincia.TabIndex = 10;
-            // 
-            // txt_NombreLocalidad
-            // 
-            this.txt_NombreLocalidad.Enabled = false;
-            this.txt_NombreLocalidad.Location = new System.Drawing.Point(182, 152);
-            this.txt_NombreLocalidad.Name = "txt_NombreLocalidad";
-            this.txt_NombreLocalidad.pp_mensaje_error = null;
-            this.txt_NombreLocalidad.pp_nombre_campo = null;
-            this.txt_NombreLocalidad.pp_nombre_tabla = null;
-            this.txt_NombreLocalidad.pp_validable = false;
-            this.txt_NombreLocalidad.Size = new System.Drawing.Size(208, 30);
-            this.txt_NombreLocalidad.TabIndex = 2;
-            // 
-            // txt_codLocalidad
-            // 
-            this.txt_codLocalidad.Enabled = false;
-            this.txt_codLocalidad.Location = new System.Drawing.Point(182, 106);
-            this.txt_codLocalidad.Name = "txt_codLocalidad";
-            this.txt_codLocalidad.pp_mensaje_error = null;
-            this.txt_codLocalidad.pp_nombre_campo = null;
-            this.txt_codLocalidad.pp_nombre_tabla = null;
-            this.txt_codLocalidad.pp_validable = false;
-            this.txt_codLocalidad.Size = new System.Drawing.Size(208, 30);
-            this.txt_codLocalidad.TabIndex = 0;
-            // 
-            // txt_BuscarCodLocalidad
-            // 
-            this.txt_BuscarCodLocalidad.Location = new System.Drawing.Point(136, 47);
-            this.txt_BuscarCodLocalidad.Name = "txt_BuscarCodLocalidad";
-            this.txt_BuscarCodLocalidad.pp_mensaje_error = null;
-            this.txt_BuscarCodLocalidad.pp_nombre_campo = null;
-            this.txt_BuscarCodLocalidad.pp_nombre_tabla = null;
-            this.txt_BuscarCodLocalidad.pp_validable = false;
-            this.txt_BuscarCodLocalidad.Size = new System.Drawing.Size(197, 30);
-            this.txt_BuscarCodLocalidad.TabIndex = 2;
-            // 
-            // Column1
-            // 
-            this.Column1.HeaderText = "Codigo";
-            this.Column1.Name = "Column1";
-            this.Column1.ReadOnly = true;
-            this.Column1.Width = 130;
-            // 
-            // Column2
-            // 
-            this.Column2.HeaderText = "Nombre";
-            this.Column2.Name = "Column2";
-            this.Column2.ReadOnly = true;
-            this.Column2.Width = 220;
-            // 
-            // Column3
-            // 
-            this.Column3.HeaderText = "Provincia";
-            this.Column3.Name = "Column3";
-            this.Column3.ReadOnly = true;
-            this.Column3.Width = 200;
             // 
             // BorrarLocalidad
             // 

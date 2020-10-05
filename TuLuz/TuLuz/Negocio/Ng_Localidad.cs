@@ -40,6 +40,13 @@ namespace TuLuz.Negocio
             tabla = _BD.Consulta(sql);
             return tabla;
         }
+        public DataTable Buscar_Localidad_X_Codigo_Provincia(string cod)
+        {
+            string sql = "SELECT * FROM Localidad WHERE codProvincia = " + cod.Trim();
+            DataTable tabla = new DataTable();
+            tabla = _BD.Consulta(sql);
+            return tabla;
+        }
         public DataTable Buscar_Localidad_Nombre(string nom)
         {
             string sql = "SELECT * FROM Localidad WHERE nombre like '%" + nom.Trim() + "%'";
@@ -83,6 +90,14 @@ namespace TuLuz.Negocio
             return EC;
         }
 
-
+        public EstructuraComboBox EstructuraComboEspecial(int codProv)
+        {
+            EstructuraComboBox EC = new EstructuraComboBox();
+            EC.Display = "nombre";
+            EC.Value = "codLocalidad";
+            EC.Sql = "SELECT * FROM Localidad WHERE codProvincia = "+ codProv;
+            EC.Tabla = _BD.Consulta(EC.Sql);
+            return EC;
+        }
     }
 }

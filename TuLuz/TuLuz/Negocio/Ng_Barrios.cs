@@ -77,6 +77,16 @@ namespace TuLuz.Negocio
             EC.Tabla = _BD.Consulta(EC.Sql);
             return EC;
         }
+
+        public EstructuraComboBox EstructuraComboEspecial(int cod)
+        {
+            EstructuraComboBox EC = new EstructuraComboBox();
+            EC.Display = "nombre";
+            EC.Value = "codBarrio";
+            EC.Sql = "SELECT * FROM Barrio WHERE codLocalidad = "+ cod;
+            EC.Tabla = _BD.Consulta(EC.Sql);
+            return EC;
+        }
     }
 
 }

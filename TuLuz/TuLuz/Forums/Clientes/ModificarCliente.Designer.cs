@@ -29,6 +29,7 @@
         private void InitializeComponent()
         {
             this.btn_limpiarCampo = new System.Windows.Forms.GroupBox();
+            this.chk_noActivos = new System.Windows.Forms.CheckBox();
             this.btn_Limpiar = new System.Windows.Forms.Button();
             this.grid01 = new System.Windows.Forms.DataGridView();
             this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -36,7 +37,7 @@
             this.Column3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.btn_Buscar = new System.Windows.Forms.Button();
             this.txt_BuscarCuit = new TuLuz.Clases.TextBox01();
-            this.chk_Todos = new System.Windows.Forms.CheckBox();
+            this.chk_activos = new System.Windows.Forms.CheckBox();
             this.label6 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.checkBox1 = new System.Windows.Forms.CheckBox();
@@ -49,6 +50,8 @@
             this.button3 = new System.Windows.Forms.Button();
             this.button4 = new System.Windows.Forms.Button();
             this.Panel_ModificarCliente = new System.Windows.Forms.Panel();
+            this.cmb_activo = new TuLuz.Clases.ComboBox01();
+            this.label11 = new System.Windows.Forms.Label();
             this.label10 = new System.Windows.Forms.Label();
             this.btn_Aceptar = new System.Windows.Forms.Button();
             this.btn_Cancelar = new System.Windows.Forms.Button();
@@ -61,8 +64,6 @@
             this.label5 = new System.Windows.Forms.Label();
             this.btn_Modificar = new System.Windows.Forms.Button();
             this.btn_salir = new System.Windows.Forms.Button();
-            this.txt_activo = new TuLuz.Clases.TextBox01();
-            this.label11 = new System.Windows.Forms.Label();
             this.btn_limpiarCampo.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.grid01)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
@@ -72,11 +73,12 @@
             // btn_limpiarCampo
             // 
             this.btn_limpiarCampo.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.btn_limpiarCampo.Controls.Add(this.chk_noActivos);
             this.btn_limpiarCampo.Controls.Add(this.btn_Limpiar);
             this.btn_limpiarCampo.Controls.Add(this.grid01);
             this.btn_limpiarCampo.Controls.Add(this.btn_Buscar);
             this.btn_limpiarCampo.Controls.Add(this.txt_BuscarCuit);
-            this.btn_limpiarCampo.Controls.Add(this.chk_Todos);
+            this.btn_limpiarCampo.Controls.Add(this.chk_activos);
             this.btn_limpiarCampo.Controls.Add(this.label6);
             this.btn_limpiarCampo.Location = new System.Drawing.Point(110, 9);
             this.btn_limpiarCampo.Margin = new System.Windows.Forms.Padding(6);
@@ -86,6 +88,16 @@
             this.btn_limpiarCampo.TabIndex = 0;
             this.btn_limpiarCampo.TabStop = false;
             this.btn_limpiarCampo.Text = "Filtros";
+            // 
+            // chk_noActivos
+            // 
+            this.chk_noActivos.AutoSize = true;
+            this.chk_noActivos.Location = new System.Drawing.Point(257, 96);
+            this.chk_noActivos.Name = "chk_noActivos";
+            this.chk_noActivos.Size = new System.Drawing.Size(120, 29);
+            this.chk_noActivos.TabIndex = 6;
+            this.chk_noActivos.Text = "NoActivos";
+            this.chk_noActivos.UseVisualStyleBackColor = true;
             // 
             // btn_Limpiar
             // 
@@ -162,15 +174,16 @@
             this.txt_BuscarCuit.Size = new System.Drawing.Size(197, 30);
             this.txt_BuscarCuit.TabIndex = 2;
             // 
-            // chk_Todos
+            // chk_activos
             // 
-            this.chk_Todos.AutoSize = true;
-            this.chk_Todos.Location = new System.Drawing.Point(136, 96);
-            this.chk_Todos.Name = "chk_Todos";
-            this.chk_Todos.Size = new System.Drawing.Size(87, 29);
-            this.chk_Todos.TabIndex = 1;
-            this.chk_Todos.Text = "Todos";
-            this.chk_Todos.UseVisualStyleBackColor = true;
+            this.chk_activos.AutoSize = true;
+            this.chk_activos.Location = new System.Drawing.Point(136, 96);
+            this.chk_activos.Name = "chk_activos";
+            this.chk_activos.Size = new System.Drawing.Size(95, 29);
+            this.chk_activos.TabIndex = 1;
+            this.chk_activos.Text = "Activos";
+            this.chk_activos.UseVisualStyleBackColor = true;
+            this.chk_activos.CheckedChanged += new System.EventHandler(this.chk_activos_CheckedChanged);
             // 
             // label6
             // 
@@ -281,8 +294,8 @@
             // Panel_ModificarCliente
             // 
             this.Panel_ModificarCliente.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.Panel_ModificarCliente.Controls.Add(this.cmb_activo);
             this.Panel_ModificarCliente.Controls.Add(this.label11);
-            this.Panel_ModificarCliente.Controls.Add(this.txt_activo);
             this.Panel_ModificarCliente.Controls.Add(this.label10);
             this.Panel_ModificarCliente.Controls.Add(this.btn_Aceptar);
             this.Panel_ModificarCliente.Controls.Add(this.btn_Cancelar);
@@ -296,6 +309,34 @@
             this.Panel_ModificarCliente.Name = "Panel_ModificarCliente";
             this.Panel_ModificarCliente.Size = new System.Drawing.Size(639, 299);
             this.Panel_ModificarCliente.TabIndex = 5;
+            // 
+            // cmb_activo
+            // 
+            this.cmb_activo.FormattingEnabled = true;
+            this.cmb_activo.Items.AddRange(new object[] {
+            "true",
+            "false"});
+            this.cmb_activo.Location = new System.Drawing.Point(136, 245);
+            this.cmb_activo.Name = "cmb_activo";
+            this.cmb_activo.pp_Display = null;
+            this.cmb_activo.pp_mensaje_error = null;
+            this.cmb_activo.pp_nombre_campo = null;
+            this.cmb_activo.pp_nombre_tabla = null;
+            this.cmb_activo.pp_Seleccionado = false;
+            this.cmb_activo.pp_Tabla = null;
+            this.cmb_activo.pp_validable = false;
+            this.cmb_activo.pp_Value = null;
+            this.cmb_activo.Size = new System.Drawing.Size(208, 33);
+            this.cmb_activo.TabIndex = 11;
+            // 
+            // label11
+            // 
+            this.label11.AutoSize = true;
+            this.label11.Location = new System.Drawing.Point(39, 248);
+            this.label11.Name = "label11";
+            this.label11.Size = new System.Drawing.Size(66, 25);
+            this.label11.TabIndex = 10;
+            this.label11.Text = "Activo";
             // 
             // label10
             // 
@@ -426,28 +467,6 @@
             this.btn_salir.UseVisualStyleBackColor = true;
             this.btn_salir.Click += new System.EventHandler(this.btn_salir_Click);
             // 
-            // txt_activo
-            // 
-            this.txt_activo.Location = new System.Drawing.Point(136, 245);
-            this.txt_activo.Name = "txt_activo";
-            this.txt_activo.pp_mensaje_error = null;
-            this.txt_activo.pp_nombre_campo = null;
-            this.txt_activo.pp_nombre_tabla = null;
-            this.txt_activo.pp_validable = false;
-            this.txt_activo.Size = new System.Drawing.Size(208, 30);
-            this.txt_activo.TabIndex = 9;
-            this.txt_activo.Visible = false;
-            // 
-            // label11
-            // 
-            this.label11.AutoSize = true;
-            this.label11.Location = new System.Drawing.Point(39, 248);
-            this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(66, 25);
-            this.label11.TabIndex = 10;
-            this.label11.Text = "Activo";
-            this.label11.Visible = false;
-            // 
             // ModificarCliente
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 25F);
@@ -491,7 +510,7 @@
         private System.Windows.Forms.Button button4;
         private System.Windows.Forms.Panel Panel_ModificarCliente;
         private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.CheckBox chk_Todos;
+        private System.Windows.Forms.CheckBox chk_activos;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Button btn_Buscar;
         private Clases.TextBox01 txt_BuscarCuit;
@@ -512,6 +531,7 @@
         private System.Windows.Forms.Button btn_Limpiar;
         private System.Windows.Forms.Button btn_salir;
         private System.Windows.Forms.Label label11;
-        private Clases.TextBox01 txt_activo;
+        private Clases.ComboBox01 cmb_activo;
+        private System.Windows.Forms.CheckBox chk_noActivos;
     }
 }

@@ -108,12 +108,6 @@
             this.btn_ModificarEmpleados = new System.Windows.Forms.Button();
             this.btn_RegistrarEmpleados = new System.Windows.Forms.Button();
             this.btn_Empleados = new System.Windows.Forms.Button();
-            this.Panel_Cotizaciones = new System.Windows.Forms.Panel();
-            this.btn_EliminarCotizaciones = new System.Windows.Forms.Button();
-            this.btn_ConsultarCotizaciones = new System.Windows.Forms.Button();
-            this.btn_ModificarCotizaciones = new System.Windows.Forms.Button();
-            this.btn_RegistrarCotizaciones = new System.Windows.Forms.Button();
-            this.btn_Cotizaciones = new System.Windows.Forms.Button();
             this.Panel_Clientes = new System.Windows.Forms.Panel();
             this.btn_EliminarClientes = new System.Windows.Forms.Button();
             this.btn_ConsultarClientes = new System.Windows.Forms.Button();
@@ -139,7 +133,6 @@
             this.Panel_Proveedores.SuspendLayout();
             this.Panel_Pedidos.SuspendLayout();
             this.Panel_Empleados.SuspendLayout();
-            this.Panel_Cotizaciones.SuspendLayout();
             this.Panel_Clientes.SuspendLayout();
             this.Panel_Centro.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -173,8 +166,6 @@
             this.Panel_Lateral_Izquierdo.Controls.Add(this.btn_Pedidos);
             this.Panel_Lateral_Izquierdo.Controls.Add(this.Panel_Empleados);
             this.Panel_Lateral_Izquierdo.Controls.Add(this.btn_Empleados);
-            this.Panel_Lateral_Izquierdo.Controls.Add(this.Panel_Cotizaciones);
-            this.Panel_Lateral_Izquierdo.Controls.Add(this.btn_Cotizaciones);
             this.Panel_Lateral_Izquierdo.Controls.Add(this.Panel_Clientes);
             this.Panel_Lateral_Izquierdo.Controls.Add(this.btn_Cliente);
             this.Panel_Lateral_Izquierdo.Controls.Add(this.Panel_Superior);
@@ -192,7 +183,7 @@
             this.btn_Exit.FlatAppearance.MouseOverBackColor = System.Drawing.SystemColors.HotTrack;
             this.btn_Exit.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn_Exit.ForeColor = System.Drawing.Color.Gainsboro;
-            this.btn_Exit.Location = new System.Drawing.Point(0, 2919);
+            this.btn_Exit.Location = new System.Drawing.Point(0, 2727);
             this.btn_Exit.Name = "btn_Exit";
             this.btn_Exit.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
             this.btn_Exit.Size = new System.Drawing.Size(223, 45);
@@ -216,7 +207,7 @@
             this.Panel_Estadisticas.Controls.Add(this.button41);
             this.Panel_Estadisticas.Controls.Add(this.button42);
             this.Panel_Estadisticas.Dock = System.Windows.Forms.DockStyle.Top;
-            this.Panel_Estadisticas.Location = new System.Drawing.Point(0, 2579);
+            this.Panel_Estadisticas.Location = new System.Drawing.Point(0, 2387);
             this.Panel_Estadisticas.Name = "Panel_Estadisticas";
             this.Panel_Estadisticas.Size = new System.Drawing.Size(223, 340);
             this.Panel_Estadisticas.TabIndex = 28;
@@ -389,7 +380,7 @@
             this.btn_Estadisticas.FlatAppearance.MouseOverBackColor = System.Drawing.SystemColors.HotTrack;
             this.btn_Estadisticas.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn_Estadisticas.ForeColor = System.Drawing.Color.Gainsboro;
-            this.btn_Estadisticas.Location = new System.Drawing.Point(0, 2534);
+            this.btn_Estadisticas.Location = new System.Drawing.Point(0, 2342);
             this.btn_Estadisticas.Name = "btn_Estadisticas";
             this.btn_Estadisticas.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
             this.btn_Estadisticas.Size = new System.Drawing.Size(223, 45);
@@ -413,7 +404,7 @@
             this.Panel_Listados.Controls.Add(this.button38);
             this.Panel_Listados.Controls.Add(this.button39);
             this.Panel_Listados.Dock = System.Windows.Forms.DockStyle.Top;
-            this.Panel_Listados.Location = new System.Drawing.Point(0, 2194);
+            this.Panel_Listados.Location = new System.Drawing.Point(0, 2002);
             this.Panel_Listados.Name = "Panel_Listados";
             this.Panel_Listados.Size = new System.Drawing.Size(223, 340);
             this.Panel_Listados.TabIndex = 26;
@@ -586,7 +577,7 @@
             this.btn_Listados.FlatAppearance.MouseOverBackColor = System.Drawing.SystemColors.HotTrack;
             this.btn_Listados.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn_Listados.ForeColor = System.Drawing.Color.Gainsboro;
-            this.btn_Listados.Location = new System.Drawing.Point(0, 2149);
+            this.btn_Listados.Location = new System.Drawing.Point(0, 1957);
             this.btn_Listados.Name = "btn_Listados";
             this.btn_Listados.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
             this.btn_Listados.Size = new System.Drawing.Size(223, 45);
@@ -603,7 +594,7 @@
             this.Panel_Procesos.Controls.Add(this.btn_ActualizacionStock);
             this.Panel_Procesos.Controls.Add(this.btn_CargaPedido);
             this.Panel_Procesos.Dock = System.Windows.Forms.DockStyle.Top;
-            this.Panel_Procesos.Location = new System.Drawing.Point(0, 2035);
+            this.Panel_Procesos.Location = new System.Drawing.Point(0, 1843);
             this.Panel_Procesos.Name = "Panel_Procesos";
             this.Panel_Procesos.Size = new System.Drawing.Size(223, 114);
             this.Panel_Procesos.TabIndex = 24;
@@ -623,6 +614,7 @@
             this.btn_CargarCotizacion.Text = "Cargar una cotizacion";
             this.btn_CargarCotizacion.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btn_CargarCotizacion.UseVisualStyleBackColor = true;
+            this.btn_CargarCotizacion.Click += new System.EventHandler(this.btn_CargarCotizacion_Click);
             // 
             // btn_ActualizacionStock
             // 
@@ -664,7 +656,7 @@
             this.btn_Procesos.FlatAppearance.MouseOverBackColor = System.Drawing.SystemColors.HotTrack;
             this.btn_Procesos.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn_Procesos.ForeColor = System.Drawing.Color.Gainsboro;
-            this.btn_Procesos.Location = new System.Drawing.Point(0, 1990);
+            this.btn_Procesos.Location = new System.Drawing.Point(0, 1798);
             this.btn_Procesos.Name = "btn_Procesos";
             this.btn_Procesos.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
             this.btn_Procesos.Size = new System.Drawing.Size(223, 45);
@@ -682,7 +674,7 @@
             this.Panel_Tipo_Doc.Controls.Add(this.btn_ModificarTipoDoc);
             this.Panel_Tipo_Doc.Controls.Add(this.btn_RegistrarTipoDoc);
             this.Panel_Tipo_Doc.Dock = System.Windows.Forms.DockStyle.Top;
-            this.Panel_Tipo_Doc.Location = new System.Drawing.Point(0, 1843);
+            this.Panel_Tipo_Doc.Location = new System.Drawing.Point(0, 1651);
             this.Panel_Tipo_Doc.Name = "Panel_Tipo_Doc";
             this.Panel_Tipo_Doc.Size = new System.Drawing.Size(223, 147);
             this.Panel_Tipo_Doc.TabIndex = 22;
@@ -702,6 +694,7 @@
             this.btn_EliminarTipoDoc.Text = "Eliminar Tipo de Documento";
             this.btn_EliminarTipoDoc.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btn_EliminarTipoDoc.UseVisualStyleBackColor = true;
+            this.btn_EliminarTipoDoc.Click += new System.EventHandler(this.btn_EliminarTipoDoc_Click);
             // 
             // btn_ConsultarTipoDoc
             // 
@@ -718,6 +711,7 @@
             this.btn_ConsultarTipoDoc.Text = "Consultar Tipo de Documento";
             this.btn_ConsultarTipoDoc.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btn_ConsultarTipoDoc.UseVisualStyleBackColor = true;
+            this.btn_ConsultarTipoDoc.Click += new System.EventHandler(this.btn_ConsultarTipoDoc_Click);
             // 
             // btn_ModificarTipoDoc
             // 
@@ -734,6 +728,7 @@
             this.btn_ModificarTipoDoc.Text = "Modificar Tipo de Documento";
             this.btn_ModificarTipoDoc.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btn_ModificarTipoDoc.UseVisualStyleBackColor = true;
+            this.btn_ModificarTipoDoc.Click += new System.EventHandler(this.btn_ModificarTipoDoc_Click);
             // 
             // btn_RegistrarTipoDoc
             // 
@@ -750,6 +745,7 @@
             this.btn_RegistrarTipoDoc.Text = "Registrar Tipo de Documento";
             this.btn_RegistrarTipoDoc.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btn_RegistrarTipoDoc.UseVisualStyleBackColor = true;
+            this.btn_RegistrarTipoDoc.Click += new System.EventHandler(this.btn_RegistrarTipoDoc_Click);
             // 
             // btn_Tipo_Doc
             // 
@@ -759,7 +755,7 @@
             this.btn_Tipo_Doc.FlatAppearance.MouseOverBackColor = System.Drawing.SystemColors.HotTrack;
             this.btn_Tipo_Doc.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn_Tipo_Doc.ForeColor = System.Drawing.Color.Gainsboro;
-            this.btn_Tipo_Doc.Location = new System.Drawing.Point(0, 1798);
+            this.btn_Tipo_Doc.Location = new System.Drawing.Point(0, 1606);
             this.btn_Tipo_Doc.Name = "btn_Tipo_Doc";
             this.btn_Tipo_Doc.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
             this.btn_Tipo_Doc.Size = new System.Drawing.Size(223, 45);
@@ -777,7 +773,7 @@
             this.Panel_Barrios.Controls.Add(this.btn_ModificarBarrios);
             this.Panel_Barrios.Controls.Add(this.btn_RegistrarBarrios);
             this.Panel_Barrios.Dock = System.Windows.Forms.DockStyle.Top;
-            this.Panel_Barrios.Location = new System.Drawing.Point(0, 1651);
+            this.Panel_Barrios.Location = new System.Drawing.Point(0, 1459);
             this.Panel_Barrios.Name = "Panel_Barrios";
             this.Panel_Barrios.Size = new System.Drawing.Size(223, 147);
             this.Panel_Barrios.TabIndex = 20;
@@ -858,7 +854,7 @@
             this.btn_Barrio.FlatAppearance.MouseOverBackColor = System.Drawing.SystemColors.HotTrack;
             this.btn_Barrio.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn_Barrio.ForeColor = System.Drawing.Color.Gainsboro;
-            this.btn_Barrio.Location = new System.Drawing.Point(0, 1606);
+            this.btn_Barrio.Location = new System.Drawing.Point(0, 1414);
             this.btn_Barrio.Name = "btn_Barrio";
             this.btn_Barrio.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
             this.btn_Barrio.Size = new System.Drawing.Size(223, 45);
@@ -876,7 +872,7 @@
             this.Panel_Provincias.Controls.Add(this.btn_ModificarProvincias);
             this.Panel_Provincias.Controls.Add(this.btn_RegistrarProvincias);
             this.Panel_Provincias.Dock = System.Windows.Forms.DockStyle.Top;
-            this.Panel_Provincias.Location = new System.Drawing.Point(0, 1459);
+            this.Panel_Provincias.Location = new System.Drawing.Point(0, 1267);
             this.Panel_Provincias.Name = "Panel_Provincias";
             this.Panel_Provincias.Size = new System.Drawing.Size(223, 147);
             this.Panel_Provincias.TabIndex = 18;
@@ -957,7 +953,7 @@
             this.btn_Provincia.FlatAppearance.MouseOverBackColor = System.Drawing.SystemColors.HotTrack;
             this.btn_Provincia.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn_Provincia.ForeColor = System.Drawing.Color.Gainsboro;
-            this.btn_Provincia.Location = new System.Drawing.Point(0, 1414);
+            this.btn_Provincia.Location = new System.Drawing.Point(0, 1222);
             this.btn_Provincia.Name = "btn_Provincia";
             this.btn_Provincia.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
             this.btn_Provincia.Size = new System.Drawing.Size(223, 45);
@@ -975,7 +971,7 @@
             this.Panel_Localidades.Controls.Add(this.btn_ModificarLocalidades);
             this.Panel_Localidades.Controls.Add(this.btn_RegistrarLocalidades);
             this.Panel_Localidades.Dock = System.Windows.Forms.DockStyle.Top;
-            this.Panel_Localidades.Location = new System.Drawing.Point(0, 1267);
+            this.Panel_Localidades.Location = new System.Drawing.Point(0, 1075);
             this.Panel_Localidades.Name = "Panel_Localidades";
             this.Panel_Localidades.Size = new System.Drawing.Size(223, 147);
             this.Panel_Localidades.TabIndex = 16;
@@ -1056,7 +1052,7 @@
             this.btn_Localidades.FlatAppearance.MouseOverBackColor = System.Drawing.SystemColors.HotTrack;
             this.btn_Localidades.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn_Localidades.ForeColor = System.Drawing.Color.Gainsboro;
-            this.btn_Localidades.Location = new System.Drawing.Point(0, 1222);
+            this.btn_Localidades.Location = new System.Drawing.Point(0, 1030);
             this.btn_Localidades.Name = "btn_Localidades";
             this.btn_Localidades.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
             this.btn_Localidades.Size = new System.Drawing.Size(223, 45);
@@ -1074,7 +1070,7 @@
             this.Panel_Productos.Controls.Add(this.btn_ModificarProductos);
             this.Panel_Productos.Controls.Add(this.btn_RegistrarProductos);
             this.Panel_Productos.Dock = System.Windows.Forms.DockStyle.Top;
-            this.Panel_Productos.Location = new System.Drawing.Point(0, 1075);
+            this.Panel_Productos.Location = new System.Drawing.Point(0, 883);
             this.Panel_Productos.Name = "Panel_Productos";
             this.Panel_Productos.Size = new System.Drawing.Size(223, 147);
             this.Panel_Productos.TabIndex = 14;
@@ -1094,6 +1090,7 @@
             this.btn_EliminarProductos.Text = "Eliminar Productos";
             this.btn_EliminarProductos.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btn_EliminarProductos.UseVisualStyleBackColor = true;
+            this.btn_EliminarProductos.Click += new System.EventHandler(this.btn_EliminarProductos_Click);
             // 
             // btn_ConsultarProductos
             // 
@@ -1110,6 +1107,7 @@
             this.btn_ConsultarProductos.Text = "Consultar Productos";
             this.btn_ConsultarProductos.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btn_ConsultarProductos.UseVisualStyleBackColor = true;
+            this.btn_ConsultarProductos.Click += new System.EventHandler(this.btn_ConsultarProductos_Click);
             // 
             // btn_ModificarProductos
             // 
@@ -1126,6 +1124,7 @@
             this.btn_ModificarProductos.Text = "Modificar Productos";
             this.btn_ModificarProductos.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btn_ModificarProductos.UseVisualStyleBackColor = true;
+            this.btn_ModificarProductos.Click += new System.EventHandler(this.btn_ModificarProductos_Click);
             // 
             // btn_RegistrarProductos
             // 
@@ -1142,6 +1141,7 @@
             this.btn_RegistrarProductos.Text = "Registrar Productos";
             this.btn_RegistrarProductos.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btn_RegistrarProductos.UseVisualStyleBackColor = true;
+            this.btn_RegistrarProductos.Click += new System.EventHandler(this.btn_RegistrarProductos_Click);
             // 
             // btn_Productos
             // 
@@ -1151,7 +1151,7 @@
             this.btn_Productos.FlatAppearance.MouseOverBackColor = System.Drawing.SystemColors.HotTrack;
             this.btn_Productos.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn_Productos.ForeColor = System.Drawing.Color.Gainsboro;
-            this.btn_Productos.Location = new System.Drawing.Point(0, 1030);
+            this.btn_Productos.Location = new System.Drawing.Point(0, 838);
             this.btn_Productos.Name = "btn_Productos";
             this.btn_Productos.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
             this.btn_Productos.Size = new System.Drawing.Size(223, 45);
@@ -1169,7 +1169,7 @@
             this.Panel_Proveedores.Controls.Add(this.btn_ModificarProveedores);
             this.Panel_Proveedores.Controls.Add(this.btn_RegistrarProveedores);
             this.Panel_Proveedores.Dock = System.Windows.Forms.DockStyle.Top;
-            this.Panel_Proveedores.Location = new System.Drawing.Point(0, 883);
+            this.Panel_Proveedores.Location = new System.Drawing.Point(0, 691);
             this.Panel_Proveedores.Name = "Panel_Proveedores";
             this.Panel_Proveedores.Size = new System.Drawing.Size(223, 147);
             this.Panel_Proveedores.TabIndex = 12;
@@ -1189,6 +1189,7 @@
             this.btn_EliminarProveedores.Text = "Eliminar Proveedores";
             this.btn_EliminarProveedores.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btn_EliminarProveedores.UseVisualStyleBackColor = true;
+            this.btn_EliminarProveedores.Click += new System.EventHandler(this.btn_EliminarProveedores_Click);
             // 
             // btn_ConsultarProveedores
             // 
@@ -1205,6 +1206,7 @@
             this.btn_ConsultarProveedores.Text = "Consultar Proveedores";
             this.btn_ConsultarProveedores.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btn_ConsultarProveedores.UseVisualStyleBackColor = true;
+            this.btn_ConsultarProveedores.Click += new System.EventHandler(this.btn_ConsultarProveedores_Click);
             // 
             // btn_ModificarProveedores
             // 
@@ -1221,6 +1223,7 @@
             this.btn_ModificarProveedores.Text = "Modificar Proveedores";
             this.btn_ModificarProveedores.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btn_ModificarProveedores.UseVisualStyleBackColor = true;
+            this.btn_ModificarProveedores.Click += new System.EventHandler(this.btn_ModificarProveedores_Click);
             // 
             // btn_RegistrarProveedores
             // 
@@ -1237,6 +1240,7 @@
             this.btn_RegistrarProveedores.Text = "Registrar Proveedores";
             this.btn_RegistrarProveedores.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btn_RegistrarProveedores.UseVisualStyleBackColor = true;
+            this.btn_RegistrarProveedores.Click += new System.EventHandler(this.btn_RegistrarProveedores_Click);
             // 
             // btn_Proveedor
             // 
@@ -1246,7 +1250,7 @@
             this.btn_Proveedor.FlatAppearance.MouseOverBackColor = System.Drawing.SystemColors.HotTrack;
             this.btn_Proveedor.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn_Proveedor.ForeColor = System.Drawing.Color.Gainsboro;
-            this.btn_Proveedor.Location = new System.Drawing.Point(0, 838);
+            this.btn_Proveedor.Location = new System.Drawing.Point(0, 646);
             this.btn_Proveedor.Name = "btn_Proveedor";
             this.btn_Proveedor.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
             this.btn_Proveedor.Size = new System.Drawing.Size(223, 45);
@@ -1264,7 +1268,7 @@
             this.Panel_Pedidos.Controls.Add(this.btn_ModificarPedidos);
             this.Panel_Pedidos.Controls.Add(this.btn_RegistrarPedidos);
             this.Panel_Pedidos.Dock = System.Windows.Forms.DockStyle.Top;
-            this.Panel_Pedidos.Location = new System.Drawing.Point(0, 691);
+            this.Panel_Pedidos.Location = new System.Drawing.Point(0, 499);
             this.Panel_Pedidos.Name = "Panel_Pedidos";
             this.Panel_Pedidos.Size = new System.Drawing.Size(223, 147);
             this.Panel_Pedidos.TabIndex = 10;
@@ -1284,6 +1288,7 @@
             this.btn_EliminarPedidos.Text = "Eliminar Pedidos";
             this.btn_EliminarPedidos.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btn_EliminarPedidos.UseVisualStyleBackColor = true;
+            this.btn_EliminarPedidos.Click += new System.EventHandler(this.btn_EliminarPedidos_Click);
             // 
             // btn_ConsultarPedidos
             // 
@@ -1300,6 +1305,7 @@
             this.btn_ConsultarPedidos.Text = "Consultar Pedidos";
             this.btn_ConsultarPedidos.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btn_ConsultarPedidos.UseVisualStyleBackColor = true;
+            this.btn_ConsultarPedidos.Click += new System.EventHandler(this.btn_ConsultarPedidos_Click);
             // 
             // btn_ModificarPedidos
             // 
@@ -1316,6 +1322,7 @@
             this.btn_ModificarPedidos.Text = "Modificar Pedidos";
             this.btn_ModificarPedidos.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btn_ModificarPedidos.UseVisualStyleBackColor = true;
+            this.btn_ModificarPedidos.Click += new System.EventHandler(this.btn_ModificarPedidos_Click);
             // 
             // btn_RegistrarPedidos
             // 
@@ -1332,6 +1339,7 @@
             this.btn_RegistrarPedidos.Text = "Registrar Pedidos";
             this.btn_RegistrarPedidos.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btn_RegistrarPedidos.UseVisualStyleBackColor = true;
+            this.btn_RegistrarPedidos.Click += new System.EventHandler(this.btn_RegistrarPedidos_Click);
             // 
             // btn_Pedidos
             // 
@@ -1341,7 +1349,7 @@
             this.btn_Pedidos.FlatAppearance.MouseOverBackColor = System.Drawing.SystemColors.HotTrack;
             this.btn_Pedidos.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn_Pedidos.ForeColor = System.Drawing.Color.Gainsboro;
-            this.btn_Pedidos.Location = new System.Drawing.Point(0, 646);
+            this.btn_Pedidos.Location = new System.Drawing.Point(0, 454);
             this.btn_Pedidos.Name = "btn_Pedidos";
             this.btn_Pedidos.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
             this.btn_Pedidos.Size = new System.Drawing.Size(223, 45);
@@ -1359,7 +1367,7 @@
             this.Panel_Empleados.Controls.Add(this.btn_ModificarEmpleados);
             this.Panel_Empleados.Controls.Add(this.btn_RegistrarEmpleados);
             this.Panel_Empleados.Dock = System.Windows.Forms.DockStyle.Top;
-            this.Panel_Empleados.Location = new System.Drawing.Point(0, 499);
+            this.Panel_Empleados.Location = new System.Drawing.Point(0, 307);
             this.Panel_Empleados.Name = "Panel_Empleados";
             this.Panel_Empleados.Size = new System.Drawing.Size(223, 147);
             this.Panel_Empleados.TabIndex = 8;
@@ -1440,7 +1448,7 @@
             this.btn_Empleados.FlatAppearance.MouseOverBackColor = System.Drawing.SystemColors.HotTrack;
             this.btn_Empleados.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn_Empleados.ForeColor = System.Drawing.Color.Gainsboro;
-            this.btn_Empleados.Location = new System.Drawing.Point(0, 454);
+            this.btn_Empleados.Location = new System.Drawing.Point(0, 262);
             this.btn_Empleados.Name = "btn_Empleados";
             this.btn_Empleados.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
             this.btn_Empleados.Size = new System.Drawing.Size(223, 45);
@@ -1449,101 +1457,6 @@
             this.btn_Empleados.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btn_Empleados.UseVisualStyleBackColor = false;
             this.btn_Empleados.Click += new System.EventHandler(this.btn_Empleados_Click);
-            // 
-            // Panel_Cotizaciones
-            // 
-            this.Panel_Cotizaciones.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(32)))), ((int)(((byte)(39)))));
-            this.Panel_Cotizaciones.Controls.Add(this.btn_EliminarCotizaciones);
-            this.Panel_Cotizaciones.Controls.Add(this.btn_ConsultarCotizaciones);
-            this.Panel_Cotizaciones.Controls.Add(this.btn_ModificarCotizaciones);
-            this.Panel_Cotizaciones.Controls.Add(this.btn_RegistrarCotizaciones);
-            this.Panel_Cotizaciones.Dock = System.Windows.Forms.DockStyle.Top;
-            this.Panel_Cotizaciones.Location = new System.Drawing.Point(0, 307);
-            this.Panel_Cotizaciones.Name = "Panel_Cotizaciones";
-            this.Panel_Cotizaciones.Size = new System.Drawing.Size(223, 147);
-            this.Panel_Cotizaciones.TabIndex = 6;
-            // 
-            // btn_EliminarCotizaciones
-            // 
-            this.btn_EliminarCotizaciones.Dock = System.Windows.Forms.DockStyle.Top;
-            this.btn_EliminarCotizaciones.FlatAppearance.BorderSize = 0;
-            this.btn_EliminarCotizaciones.FlatAppearance.MouseOverBackColor = System.Drawing.SystemColors.Highlight;
-            this.btn_EliminarCotizaciones.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_EliminarCotizaciones.ForeColor = System.Drawing.Color.LightGray;
-            this.btn_EliminarCotizaciones.Location = new System.Drawing.Point(0, 99);
-            this.btn_EliminarCotizaciones.Name = "btn_EliminarCotizaciones";
-            this.btn_EliminarCotizaciones.Padding = new System.Windows.Forms.Padding(35, 0, 0, 0);
-            this.btn_EliminarCotizaciones.Size = new System.Drawing.Size(223, 33);
-            this.btn_EliminarCotizaciones.TabIndex = 3;
-            this.btn_EliminarCotizaciones.Text = "Eliminar Cotizaciones";
-            this.btn_EliminarCotizaciones.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btn_EliminarCotizaciones.UseVisualStyleBackColor = true;
-            // 
-            // btn_ConsultarCotizaciones
-            // 
-            this.btn_ConsultarCotizaciones.Dock = System.Windows.Forms.DockStyle.Top;
-            this.btn_ConsultarCotizaciones.FlatAppearance.BorderSize = 0;
-            this.btn_ConsultarCotizaciones.FlatAppearance.MouseOverBackColor = System.Drawing.SystemColors.Highlight;
-            this.btn_ConsultarCotizaciones.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_ConsultarCotizaciones.ForeColor = System.Drawing.Color.LightGray;
-            this.btn_ConsultarCotizaciones.Location = new System.Drawing.Point(0, 66);
-            this.btn_ConsultarCotizaciones.Name = "btn_ConsultarCotizaciones";
-            this.btn_ConsultarCotizaciones.Padding = new System.Windows.Forms.Padding(35, 0, 0, 0);
-            this.btn_ConsultarCotizaciones.Size = new System.Drawing.Size(223, 33);
-            this.btn_ConsultarCotizaciones.TabIndex = 2;
-            this.btn_ConsultarCotizaciones.Text = "Consultar Cotizaciones";
-            this.btn_ConsultarCotizaciones.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btn_ConsultarCotizaciones.UseVisualStyleBackColor = true;
-            // 
-            // btn_ModificarCotizaciones
-            // 
-            this.btn_ModificarCotizaciones.Dock = System.Windows.Forms.DockStyle.Top;
-            this.btn_ModificarCotizaciones.FlatAppearance.BorderSize = 0;
-            this.btn_ModificarCotizaciones.FlatAppearance.MouseOverBackColor = System.Drawing.SystemColors.Highlight;
-            this.btn_ModificarCotizaciones.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_ModificarCotizaciones.ForeColor = System.Drawing.Color.LightGray;
-            this.btn_ModificarCotizaciones.Location = new System.Drawing.Point(0, 33);
-            this.btn_ModificarCotizaciones.Name = "btn_ModificarCotizaciones";
-            this.btn_ModificarCotizaciones.Padding = new System.Windows.Forms.Padding(35, 0, 0, 0);
-            this.btn_ModificarCotizaciones.Size = new System.Drawing.Size(223, 33);
-            this.btn_ModificarCotizaciones.TabIndex = 1;
-            this.btn_ModificarCotizaciones.Text = "Modificar Cotizaciones";
-            this.btn_ModificarCotizaciones.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btn_ModificarCotizaciones.UseVisualStyleBackColor = true;
-            // 
-            // btn_RegistrarCotizaciones
-            // 
-            this.btn_RegistrarCotizaciones.Dock = System.Windows.Forms.DockStyle.Top;
-            this.btn_RegistrarCotizaciones.FlatAppearance.BorderSize = 0;
-            this.btn_RegistrarCotizaciones.FlatAppearance.MouseOverBackColor = System.Drawing.SystemColors.Highlight;
-            this.btn_RegistrarCotizaciones.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_RegistrarCotizaciones.ForeColor = System.Drawing.Color.LightGray;
-            this.btn_RegistrarCotizaciones.Location = new System.Drawing.Point(0, 0);
-            this.btn_RegistrarCotizaciones.Name = "btn_RegistrarCotizaciones";
-            this.btn_RegistrarCotizaciones.Padding = new System.Windows.Forms.Padding(35, 0, 0, 0);
-            this.btn_RegistrarCotizaciones.Size = new System.Drawing.Size(223, 33);
-            this.btn_RegistrarCotizaciones.TabIndex = 0;
-            this.btn_RegistrarCotizaciones.Text = "Registrar Cotizaciones";
-            this.btn_RegistrarCotizaciones.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btn_RegistrarCotizaciones.UseVisualStyleBackColor = true;
-            // 
-            // btn_Cotizaciones
-            // 
-            this.btn_Cotizaciones.BackColor = System.Drawing.Color.Black;
-            this.btn_Cotizaciones.Dock = System.Windows.Forms.DockStyle.Top;
-            this.btn_Cotizaciones.FlatAppearance.BorderSize = 0;
-            this.btn_Cotizaciones.FlatAppearance.MouseOverBackColor = System.Drawing.SystemColors.HotTrack;
-            this.btn_Cotizaciones.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_Cotizaciones.ForeColor = System.Drawing.Color.Gainsboro;
-            this.btn_Cotizaciones.Location = new System.Drawing.Point(0, 262);
-            this.btn_Cotizaciones.Name = "btn_Cotizaciones";
-            this.btn_Cotizaciones.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
-            this.btn_Cotizaciones.Size = new System.Drawing.Size(223, 45);
-            this.btn_Cotizaciones.TabIndex = 2;
-            this.btn_Cotizaciones.Text = "Cotizaciones ";
-            this.btn_Cotizaciones.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btn_Cotizaciones.UseVisualStyleBackColor = false;
-            this.btn_Cotizaciones.Click += new System.EventHandler(this.btn_Cotizaciones_Click);
             // 
             // Panel_Clientes
             // 
@@ -1762,7 +1675,6 @@
             this.Panel_Proveedores.ResumeLayout(false);
             this.Panel_Pedidos.ResumeLayout(false);
             this.Panel_Empleados.ResumeLayout(false);
-            this.Panel_Cotizaciones.ResumeLayout(false);
             this.Panel_Clientes.ResumeLayout(false);
             this.Panel_Centro.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
@@ -1784,11 +1696,6 @@
         private System.Windows.Forms.Button btn_ModificarEmpleados;
         private System.Windows.Forms.Button btn_RegistrarEmpleados;
         private System.Windows.Forms.Button btn_Empleados;
-        private System.Windows.Forms.Panel Panel_Cotizaciones;
-        private System.Windows.Forms.Button btn_ConsultarCotizaciones;
-        private System.Windows.Forms.Button btn_ModificarCotizaciones;
-        private System.Windows.Forms.Button btn_RegistrarCotizaciones;
-        private System.Windows.Forms.Button btn_Cotizaciones;
         private System.Windows.Forms.Panel Panel_Clientes;
         private System.Windows.Forms.Button btn_ConsultarClientes;
         private System.Windows.Forms.Button btn_ModificarClientes;
@@ -1863,7 +1770,6 @@
         private System.Windows.Forms.Button btn_EliminarProveedores;
         private System.Windows.Forms.Button btn_EliminarPedidos;
         private System.Windows.Forms.Button btn_EliminarEmpleados;
-        private System.Windows.Forms.Button btn_EliminarCotizaciones;
         private System.Windows.Forms.Button btn_EliminarClientes;
         private System.Windows.Forms.Panel Panel_Centro;
         private System.Windows.Forms.Panel panelUsuario;

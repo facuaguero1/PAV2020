@@ -85,12 +85,6 @@
     <Compile Include="Forums\Clientes\AltaCliente.Designer.cs">
       <DependentUpon>AltaCliente.cs</DependentUpon>
     </Compile>
-    <Compile Include="Forums\Empleados\AltaEmpleados.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Forums\Empleados\AltaEmpleados.Designer.cs">
-      <DependentUpon>AltaEmpleados.cs</DependentUpon>
-    </Compile>
     <Compile Include="Forums\Clientes\BorrarCliente.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -108,6 +102,18 @@
     </Compile>
     <Compile Include="Forums\Clientes\ModificarCliente.Designer.cs">
       <DependentUpon>ModificarCliente.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forums\Transacciones\Cotizaciones.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forums\Transacciones\Cotizaciones.Designer.cs">
+      <DependentUpon>Cotizaciones.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forums\Empleados\AltaEmpleados.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forums\Empleados\AltaEmpleados.Designer.cs">
+      <DependentUpon>AltaEmpleados.cs</DependentUpon>
     </Compile>
     <Compile Include="Forums\Empleados\BorrarEmpleados.cs">
       <SubType>Form</SubType>
@@ -157,11 +163,89 @@
     <Compile Include="Forums\Login.Designer.cs">
       <DependentUpon>Login.cs</DependentUpon>
     </Compile>
+    <Compile Include="Forums\Pedidos\AltaPedido.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forums\Pedidos\AltaPedido.Designer.cs">
+      <DependentUpon>AltaPedido.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forums\Pedidos\BorrarPedidos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forums\Pedidos\BorrarPedidos.Designer.cs">
+      <DependentUpon>BorrarPedidos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forums\Pedidos\ConsultarPedidos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forums\Pedidos\ConsultarPedidos.Designer.cs">
+      <DependentUpon>ConsultarPedidos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forums\Pedidos\ModificarPedidos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forums\Pedidos\ModificarPedidos.Designer.cs">
+      <DependentUpon>ModificarPedidos.cs</DependentUpon>
+    </Compile>
     <Compile Include="Forums\Principal.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Forums\Principal.Designer.cs">
       <DependentUpon>Principal.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forums\Productos\AltaProducto.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forums\Productos\AltaProducto.Designer.cs">
+      <DependentUpon>AltaProducto.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forums\Productos\BorrarProductos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forums\Productos\BorrarProductos.Designer.cs">
+      <DependentUpon>BorrarProductos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forums\Productos\ConsultarProductos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forums\Productos\ConsultarProductos.Designer.cs">
+      <DependentUpon>ConsultarProductos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forums\Productos\ModificarDetalle.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forums\Productos\ModificarDetalle.Designer.cs">
+      <DependentUpon>ModificarDetalle.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forums\Productos\ModificarProductos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forums\Productos\ModificarProductos.Designer.cs">
+      <DependentUpon>ModificarProductos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forums\Proveedor\AltaProveedor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forums\Proveedor\AltaProveedor.Designer.cs">
+      <DependentUpon>AltaProveedor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forums\Proveedor\BorrarProveedor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forums\Proveedor\BorrarProveedor.Designer.cs">
+      <DependentUpon>BorrarProveedor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forums\Proveedor\ConsultarProveedor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forums\Proveedor\ConsultarProveedor.Designer.cs">
+      <DependentUpon>ConsultarProveedor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forums\Proveedor\ModificarProveedor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forums\Proveedor\ModificarProveedor.Designer.cs">
+      <DependentUpon>ModificarProveedor.cs</DependentUpon>
     </Compile>
     <Compile Include="Forums\Provincias\AltaProvincia.cs">
       <SubType>Form</SubType>
@@ -187,6 +271,30 @@
     <Compile Include="Forums\Provincias\ModificarProvincia.Designer.cs">
       <DependentUpon>ModificarProvincia.cs</DependentUpon>
     </Compile>
+    <Compile Include="Forums\TipoDocs\AltaTipoDocs.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forums\TipoDocs\AltaTipoDocs.Designer.cs">
+      <DependentUpon>AltaTipoDocs.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forums\TipoDocs\BorrarTipoDocs.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forums\TipoDocs\BorrarTipoDocs.Designer.cs">
+      <DependentUpon>BorrarTipoDocs.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forums\TipoDocs\ConsultarTipoDoc.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forums\TipoDocs\ConsultarTipoDoc.Designer.cs">
+      <DependentUpon>ConsultarTipoDoc.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forums\TipoDocs\ModificarTipoDoc.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forums\TipoDocs\ModificarTipoDoc.Designer.cs">
+      <DependentUpon>ModificarTipoDoc.cs</DependentUpon>
+    </Compile>
     <Compile Include="Forums\VerPerfil.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -195,10 +303,25 @@
     </Compile>
     <Compile Include="Negocio\EstructuraNegocios\Es_Barrio.cs" />
     <Compile Include="Negocio\EstructuraNegocios\Es_Clientes.cs" />
+    <Compile Include="Negocio\EstructuraNegocios\Es_Cotizaciones.cs" />
+    <Compile Include="Negocio\EstructuraNegocios\Es_DetallePedido.cs" />
+    <Compile Include="Negocio\EstructuraNegocios\Es_DetalleProducto.cs" />
     <Compile Include="Negocio\EstructuraNegocios\Es_Empleados.cs" />
+    <Compile Include="Negocio\EstructuraNegocios\Es_EstadosCotizaciones.cs" />
     <Compile Include="Negocio\EstructuraNegocios\Es_Localidad.cs" />
+    <Compile Include="Negocio\EstructuraNegocios\Es_Pedidos.cs" />
+    <Compile Include="Negocio\EstructuraNegocios\Es_Producto.cs" />
+    <Compile Include="Negocio\EstructuraNegocios\Es_Proveedor.cs" />
     <Compile Include="Negocio\EstructuraNegocios\Es_Provincia.cs" />
+    <Compile Include="Negocio\EstructuraNegocios\Es_TipoDocs.cs" />
     <Compile Include="Negocio\EstructuraNegocios\Es_Usuario.cs" />
+    <Compile Include="Negocio\Ng_Cotizaciones.cs" />
+    <Compile Include="Negocio\Ng_DetallePedidos.cs" />
+    <Compile Include="Negocio\Ng_DetalleProducto.cs" />
+    <Compile Include="Negocio\Ng_EstadosCotizaciones.cs" />
+    <Compile Include="Negocio\Ng_Pedidos.cs" />
+    <Compile Include="Negocio\Ng_Producto.cs" />
+    <Compile Include="Negocio\Ng_Proveedor.cs" />
     <Compile Include="Negocio\Ng_Barrios.cs" />
     <Compile Include="Negocio\Ng_Clientes.cs" />
     <Compile Include="Negocio\Ng_Empleados.cs" />
@@ -223,9 +346,6 @@
     <EmbeddedResource Include="Forums\Clientes\AltaCliente.resx">
       <DependentUpon>AltaCliente.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Forums\Empleados\AltaEmpleados.resx">
-      <DependentUpon>AltaEmpleados.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="Forums\Clientes\BorrarCliente.resx">
       <DependentUpon>BorrarCliente.cs</DependentUpon>
     </EmbeddedResource>
@@ -234,6 +354,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Forums\Clientes\ModificarCliente.resx">
       <DependentUpon>ModificarCliente.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forums\Transacciones\Cotizaciones.resx">
+      <DependentUpon>Cotizaciones.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forums\Empleados\AltaEmpleados.resx">
+      <DependentUpon>AltaEmpleados.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forums\Empleados\BorrarEmpleados.resx">
       <DependentUpon>BorrarEmpleados.cs</DependentUpon>
@@ -259,8 +385,47 @@
     <EmbeddedResource Include="Forums\Login.resx">
       <DependentUpon>Login.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Forums\Pedidos\AltaPedido.resx">
+      <DependentUpon>AltaPedido.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forums\Pedidos\BorrarPedidos.resx">
+      <DependentUpon>BorrarPedidos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forums\Pedidos\ConsultarPedidos.resx">
+      <DependentUpon>ConsultarPedidos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forums\Pedidos\ModificarPedidos.resx">
+      <DependentUpon>ModificarPedidos.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Forums\Principal.resx">
       <DependentUpon>Principal.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forums\Productos\AltaProducto.resx">
+      <DependentUpon>AltaProducto.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forums\Productos\BorrarProductos.resx">
+      <DependentUpon>BorrarProductos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forums\Productos\ConsultarProductos.resx">
+      <DependentUpon>ConsultarProductos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forums\Productos\ModificarDetalle.resx">
+      <DependentUpon>ModificarDetalle.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forums\Productos\ModificarProductos.resx">
+      <DependentUpon>ModificarProductos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forums\Proveedor\AltaProveedor.resx">
+      <DependentUpon>AltaProveedor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forums\Proveedor\BorrarProveedor.resx">
+      <DependentUpon>BorrarProveedor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forums\Proveedor\ConsultarProveedor.resx">
+      <DependentUpon>ConsultarProveedor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forums\Proveedor\ModificarProveedor.resx">
+      <DependentUpon>ModificarProveedor.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forums\Provincias\AltaProvincia.resx">
       <DependentUpon>AltaProvincia.cs</DependentUpon>
@@ -273,6 +438,18 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Forums\Provincias\ModificarProvincia.resx">
       <DependentUpon>ModificarProvincia.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forums\TipoDocs\AltaTipoDocs.resx">
+      <DependentUpon>AltaTipoDocs.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forums\TipoDocs\BorrarTipoDocs.resx">
+      <DependentUpon>BorrarTipoDocs.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forums\TipoDocs\ConsultarTipoDoc.resx">
+      <DependentUpon>ConsultarTipoDoc.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forums\TipoDocs\ModificarTipoDoc.resx">
+      <DependentUpon>ModificarTipoDoc.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forums\VerPerfil.resx">
       <DependentUpon>VerPerfil.cs</DependentUpon>
@@ -318,6 +495,20 @@
   <ItemGroup>
     <None Include="Resources\....png" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <None Include="Resources\4115235-exit-logout-sign-out_114030.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\arrow_refresh_15732.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\go-back256_24856.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1486485588-add-create-new-math-sign-cross-plus_81186.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\savetheapplication_guardar_2958.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
