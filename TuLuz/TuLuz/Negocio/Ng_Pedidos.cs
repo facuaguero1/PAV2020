@@ -14,12 +14,15 @@ namespace TuLuz.Negocio
     {
 
         Be_BaseDatos _BD = new Be_BaseDatos();
+        //public void Insertar(Control.ControlCollection controles)
+        //{
+        //    _BD.InsertarAutomatizado("Empleados", controles);
+        //}
+
         public void Insertar(Es_Pedidos Pedidos)
         {
 
-            String sqlInsertar = "INSERT INTO Pedidos(numeroPedido, numeroCotizacion, fechaPedido, tipoDniVendedor, numDniVendedor, condicionPago, cuitCliente) " +
-                "VALUES(" + Pedidos.numeroPedido + "," + Pedidos.numeroCotizacion + "," + _BD.FormatearDato(Pedidos.fechaPedido, "Date") + "," + 
-                Pedidos.tipoDniVendedor + "," + Pedidos.numDniVendedor + ",'" + Pedidos.condicionPago + "','" + Pedidos.cuitCliente + "')";
+            String sqlInsertar = "INSERT INTO Pedidos(numeroPedido, numeroCotizacion, fechaPedido, tipoDniVendedor, numDniVendedor, condicionPago, cuitCliente) VALUES(" + Pedidos.numeroPedido + "," + Pedidos.numeroCotizacion + ",'" + Pedidos.fechaPedido + "'," + Pedidos.tipoDniVendedor + "," + Pedidos.numDniVendedor + ",'" + Pedidos.condicionPago + "','" + Pedidos.cuitCliente + "')";
             MessageBox.Show("El Pedido fue creado con exito!", "CREACIÓN EXITOSA", MessageBoxButtons.OK, MessageBoxIcon.Information);
             _BD.Insertar(sqlInsertar);
 
@@ -45,7 +48,7 @@ namespace TuLuz.Negocio
             string sqlUpdate = "UPDATE Pedidos SET ";
             sqlUpdate += "cuitCliente = " + _BD.FormatearDato(datos.cuitCliente, "String");
             sqlUpdate += ", numeroCotizacion = " + _BD.FormatearDato(datos.numeroCotizacion, "Int");
-            sqlUpdate += ", fechaPedido = " + _BD.FormatearDato(datos.fechaPedido, "Date");
+            sqlUpdate += ", fechaPedido = " + _BD.FormatearDato(datos.fechaPedido, "String");
             sqlUpdate += ", tipoDniVendedor = " + _BD.FormatearDato(datos.tipoDniVendedor, "Int");
             sqlUpdate += ", numDniVendedor = " + _BD.FormatearDato(datos.numDniVendedor, "Int");
             sqlUpdate += ", condicionPago = " + _BD.FormatearDato(datos.condicionPago, "String");
@@ -68,6 +71,39 @@ namespace TuLuz.Negocio
         //    EC.Tabla = _BD.Consulta(EC.Sql);
         //    return EC;
         //}
+
+        public String TraerMes(string doc)
+        {
+            string sql = "SELECT MONTH(fechaPedido) FROM Pedidos WHERE numeroPedido =" + doc;
+            DataTable tabla = new DataTable();
+            tabla = _BD.Consulta(sql);
+            return tabla.Rows[0][0].ToString();
+        }
+
+        public String TraerDia(string doc)
+        {
+            string sql = "SELECT DAY(fechaPedido) FROM Pedidos WHERE numeroPedido =" + doc;
+            DataTable tabla = new DataTable();
+            tabla = _BD.Consulta(sql);
+            return tabla.Rows[0][0].ToString();
+        }
+
+        public String TraerAño(string doc)
+        {
+            string sql = "SELECT YEAR(fechaPedido) FROM Pedidos WHERE numeroPedido =" + doc;
+            DataTable tabla = new DataTable();
+            tabla = _BD.Consulta(sql);
+            return tabla.Rows[0][0].ToString();
+        }
+
+        public void IniciarTransaccion()
+        {
+            _BD.IniciarTransaccion();
+        }
+        public void CerrarTransaccion()
+        {
+            _BD.CerrarTransaccion();
+        }
     }
 }
 

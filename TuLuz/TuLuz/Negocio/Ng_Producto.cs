@@ -37,7 +37,7 @@ namespace TuLuz.Negocio
         }
         public DataTable Buscar_ProductoPorCodigo(string codigo)
         {
-            string sql = "SELECT * FROM Productos WHERE codProducto = "+ codigo;
+            string sql = "SELECT * FROM Productos WHERE codProducto = " + codigo;
             DataTable tabla = new DataTable();
             tabla = _BD.Consulta(sql);
             return tabla;
@@ -81,6 +81,30 @@ namespace TuLuz.Negocio
             EC.Sql = "SELECT * FROM Productos";
             EC.Tabla = _BD.Consulta(EC.Sql);
             return EC;
+        }
+        public void actualizarStock(int datos, string cod)
+        {
+            string sqlUpdate = "UPDATE Productos SET ";
+            sqlUpdate += "cantStock = cantStock -" + datos;
+            sqlUpdate += " WHERE codProducto =" + cod;
+            _BD.Modificar(sqlUpdate);
+        }
+
+        public void sumarStock(int datos, string cod)
+        {
+            string sqlUpdate = "UPDATE Productos SET ";
+            sqlUpdate += "cantStock = cantStock +" + datos;
+            sqlUpdate += " WHERE codProducto =" + cod;
+            _BD.Modificar(sqlUpdate);
+        }
+
+        public void IniciarTransaccion()
+        {
+            _BD.IniciarTransaccion();
+        }
+        public void CerrarTransaccion()
+        {
+            _BD.CerrarTransaccion();
         }
     }
 }

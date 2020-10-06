@@ -113,7 +113,7 @@ namespace TuLuz.Forums.Clientes
 
         private void btn_Aceptar_Click(object sender, EventArgs e)
         {
-            Detalle.Borrar(this.codigo);
+            //Detalle.Borrar(this.codigo);
             Pedidos.Borrar(this.codigo);
 
             Panel_BorrarPedido.Visible = false;

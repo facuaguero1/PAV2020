@@ -35,7 +35,7 @@
             this.btn_cancelar = new System.Windows.Forms.Button();
             this.btn_aceptar = new System.Windows.Forms.Button();
             this.label4 = new System.Windows.Forms.Label();
-            this.btn_add_localidad = new System.Windows.Forms.Button();
+            this.button1 = new System.Windows.Forms.Button();
             this.cmb_provincia = new TuLuz.Clases.ComboBox01();
             this.txt_nombreLocalidad = new TuLuz.Clases.TextBox01();
             this.txt_Cod_localidad = new TuLuz.Clases.TextBox01();
@@ -136,20 +136,18 @@
             this.label4.TabIndex = 10;
             this.label4.Text = "Provincia";
             // 
-            // btn_add_localidad
+            // button1
             // 
-            this.btn_add_localidad.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.btn_add_localidad.BackgroundImage = global::TuLuz.Properties.Resources._1486485588_add_create_new_math_sign_cross_plus_81186;
-            this.btn_add_localidad.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.btn_add_localidad.FlatAppearance.BorderSize = 0;
-            this.btn_add_localidad.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_add_localidad.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_add_localidad.Location = new System.Drawing.Point(828, 373);
-            this.btn_add_localidad.Name = "btn_add_localidad";
-            this.btn_add_localidad.Size = new System.Drawing.Size(37, 32);
-            this.btn_add_localidad.TabIndex = 12;
-            this.btn_add_localidad.UseVisualStyleBackColor = true;
-            this.btn_add_localidad.Click += new System.EventHandler(this.button1_Click);
+            this.button1.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.button1.BackgroundImage = global::TuLuz.Properties.Resources._1486485588_add_create_new_math_sign_cross_plus_81186;
+            this.button1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button1.Location = new System.Drawing.Point(828, 373);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(37, 32);
+            this.button1.TabIndex = 12;
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // cmb_provincia
             // 
@@ -202,7 +200,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1134, 749);
-            this.Controls.Add(this.btn_add_localidad);
+            this.Controls.Add(this.button1);
             this.Controls.Add(this.cmb_provincia);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.btn_salir);
@@ -234,6 +232,6 @@
         private System.Windows.Forms.Button btn_salir;
         private System.Windows.Forms.Label label4;
         private Clases.ComboBox01 cmb_provincia;
-        private System.Windows.Forms.Button btn_add_localidad;
+        private System.Windows.Forms.Button button1;
     }
 }

@@ -293,6 +293,7 @@
             // cmb_Dia
             // 
             this.cmb_Dia.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.cmb_Dia.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cmb_Dia.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cmb_Dia.FormattingEnabled = true;
             this.cmb_Dia.Location = new System.Drawing.Point(908, 438);
@@ -303,6 +304,7 @@
             // cmb_Mes
             // 
             this.cmb_Mes.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.cmb_Mes.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cmb_Mes.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cmb_Mes.FormattingEnabled = true;
             this.cmb_Mes.Items.AddRange(new object[] {

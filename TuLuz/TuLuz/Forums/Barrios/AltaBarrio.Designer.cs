@@ -35,12 +35,12 @@
             this.btn_salir = new System.Windows.Forms.Button();
             this.btn_cancelar = new System.Windows.Forms.Button();
             this.btn_aceptar = new System.Windows.Forms.Button();
-            this.btn_add_localidad = new System.Windows.Forms.Button();
+            this.button2 = new System.Windows.Forms.Button();
             this.cmb_Localidad = new TuLuz.Clases.ComboBox01();
             this.txt_nombreCliente = new TuLuz.Clases.TextBox01();
             this.txt_codBarrio = new TuLuz.Clases.TextBox01();
             this.cmb_Provincia = new TuLuz.Clases.ComboBox01();
-            this.btn_add_provincia = new System.Windows.Forms.Button();
+            this.button1 = new System.Windows.Forms.Button();
             this.label5 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
@@ -132,20 +132,18 @@
             this.btn_aceptar.UseVisualStyleBackColor = true;
             this.btn_aceptar.Click += new System.EventHandler(this.btn_aceptar_Click);
             // 
-            // btn_add_localidad
+            // button2
             // 
-            this.btn_add_localidad.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.btn_add_localidad.BackgroundImage = global::TuLuz.Properties.Resources._1486485588_add_create_new_math_sign_cross_plus_81186;
-            this.btn_add_localidad.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.btn_add_localidad.FlatAppearance.BorderSize = 0;
-            this.btn_add_localidad.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_add_localidad.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_add_localidad.Location = new System.Drawing.Point(647, 366);
-            this.btn_add_localidad.Name = "btn_add_localidad";
-            this.btn_add_localidad.Size = new System.Drawing.Size(36, 33);
-            this.btn_add_localidad.TabIndex = 12;
-            this.btn_add_localidad.UseVisualStyleBackColor = true;
-            this.btn_add_localidad.Click += new System.EventHandler(this.button2_Click);
+            this.button2.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.button2.BackgroundImage = global::TuLuz.Properties.Resources._1486485588_add_create_new_math_sign_cross_plus_81186;
+            this.button2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button2.Location = new System.Drawing.Point(647, 366);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(36, 33);
+            this.button2.TabIndex = 12;
+            this.button2.UseVisualStyleBackColor = true;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
             // cmb_Localidad
             // 
@@ -213,20 +211,18 @@
             this.cmb_Provincia.SelectedIndexChanged += new System.EventHandler(this.cmb_Provincia_SelectedIndexChanged);
             this.cmb_Provincia.Click += new System.EventHandler(this.cmb_Provincia_Click);
             // 
-            // btn_add_provincia
+            // button1
             // 
-            this.btn_add_provincia.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.btn_add_provincia.BackgroundImage = global::TuLuz.Properties.Resources._1486485588_add_create_new_math_sign_cross_plus_81186;
-            this.btn_add_provincia.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.btn_add_provincia.FlatAppearance.BorderSize = 0;
-            this.btn_add_provincia.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_add_provincia.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_add_provincia.Location = new System.Drawing.Point(647, 306);
-            this.btn_add_provincia.Name = "btn_add_provincia";
-            this.btn_add_provincia.Size = new System.Drawing.Size(36, 33);
-            this.btn_add_provincia.TabIndex = 14;
-            this.btn_add_provincia.UseVisualStyleBackColor = true;
-            this.btn_add_provincia.Click += new System.EventHandler(this.button1_Click);
+            this.button1.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.button1.BackgroundImage = global::TuLuz.Properties.Resources._1486485588_add_create_new_math_sign_cross_plus_81186;
+            this.button1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button1.Location = new System.Drawing.Point(647, 306);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(36, 33);
+            this.button1.TabIndex = 14;
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // label5
             // 
@@ -245,9 +241,9 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(796, 508);
             this.Controls.Add(this.label5);
-            this.Controls.Add(this.btn_add_provincia);
+            this.Controls.Add(this.button1);
             this.Controls.Add(this.cmb_Provincia);
-            this.Controls.Add(this.btn_add_localidad);
+            this.Controls.Add(this.button2);
             this.Controls.Add(this.cmb_Localidad);
             this.Controls.Add(this.btn_salir);
             this.Controls.Add(this.btn_cancelar);
@@ -279,9 +275,9 @@
         private System.Windows.Forms.Button btn_cancelar;
         private System.Windows.Forms.Button btn_salir;
         private Clases.ComboBox01 cmb_Localidad;
-        private System.Windows.Forms.Button btn_add_localidad;
+        private System.Windows.Forms.Button button2;
         private Clases.ComboBox01 cmb_Provincia;
-        private System.Windows.Forms.Button btn_add_provincia;
+        private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Label label5;
     }
 }

@@ -103,11 +103,23 @@
     <Compile Include="Forums\Clientes\ModificarCliente.Designer.cs">
       <DependentUpon>ModificarCliente.cs</DependentUpon>
     </Compile>
+    <Compile Include="Forums\Transacciones\ActualizarStock.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forums\Transacciones\ActualizarStock.Designer.cs">
+      <DependentUpon>ActualizarStock.cs</DependentUpon>
+    </Compile>
     <Compile Include="Forums\Transacciones\Cotizaciones.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Forums\Transacciones\Cotizaciones.Designer.cs">
       <DependentUpon>Cotizaciones.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forums\Transacciones\Pedidos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forums\Transacciones\Pedidos.designer.cs">
+      <DependentUpon>Pedidos.cs</DependentUpon>
     </Compile>
     <Compile Include="Forums\Empleados\AltaEmpleados.cs">
       <SubType>Form</SubType>
@@ -355,8 +367,14 @@
     <EmbeddedResource Include="Forums\Clientes\ModificarCliente.resx">
       <DependentUpon>ModificarCliente.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Forums\Transacciones\ActualizarStock.resx">
+      <DependentUpon>ActualizarStock.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Forums\Transacciones\Cotizaciones.resx">
       <DependentUpon>Cotizaciones.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forums\Transacciones\Pedidos.resx">
+      <DependentUpon>Pedidos.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forums\Empleados\AltaEmpleados.resx">
       <DependentUpon>AltaEmpleados.cs</DependentUpon>

@@ -22,10 +22,10 @@ namespace TuLuz.Clases
         public EstadoTransaccion ControlTransaccion { get; set; } = EstadoTransaccion.correcta; //seteo la transaccion en correcta
         TipoConexion ControlConexion = TipoConexion.simple; //indico que la transaccion por defecto es simple
 
-        string Cadena_Conexion = "Data Source=LAPTOP-5NV6I6V9;Initial Catalog=_BD_EmpresaTuLuz;Integrated Security=True"; //CONEXION NUEVA MATUTE CON FECHAS EN DATE
+
         //string Cadena_Conexion = "Data Source=LAPTOP-5NV6I6V9;Initial Catalog=_BD_TuLuz;Integrated Security=True"; //CONEXION MATUTE
         //string Cadena_Conexion = "Data Source=DESKTOP-V8659BG;Initial Catalog=DATABASE_TULUZ;Integrated Security=True"; //CONEXION FABRI
-        //string Cadena_Conexion = "Data Source=USUARIO-PC\\SQLEXPRESS;Initial Catalog=DATABASE_TULUZ;Integrated Security=True"; // CONEXION FACU
+        string Cadena_Conexion = "Data Source=USUARIO-PC\\SQLEXPRESS;Initial Catalog=DATABASE_TULUZ;Integrated Security=True"; // CONEXION FACU
 
 
         //-----------------------------------------INICIAR TRANSACCION-----------------------------------------
@@ -176,7 +176,7 @@ namespace TuLuz.Clases
                     return "'" +dato+ "'";
                 case "Date":
                 case "DateTime":
-                    return "convert(date, '" + dato + "', 103)";
+                    return "convert(date, '" + dato + "',103)";
                 default:
                     return dato;
             }

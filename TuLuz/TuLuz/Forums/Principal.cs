@@ -29,7 +29,6 @@ namespace TuLuz
             Panel_Barrios.Visible = false;
             Panel_Clientes.Visible = false;
             Panel_Empleados.Visible = false;
-            Panel_Pedidos.Visible = false;
             Panel_Proveedores.Visible = false;
             Panel_Productos.Visible = false;
             Panel_Localidades.Visible = false;
@@ -49,8 +48,6 @@ namespace TuLuz
                 Panel_Clientes.Visible = false;
             if (Panel_Empleados.Visible == true)
                 Panel_Empleados.Visible = false;
-            if (Panel_Pedidos.Visible == true)
-                Panel_Pedidos.Visible = false;
             if (Panel_Proveedores.Visible == true)
                 Panel_Proveedores.Visible = false;
             if (Panel_Productos.Visible == true)
@@ -108,11 +105,6 @@ namespace TuLuz
         private void btn_Empleados_Click(object sender, EventArgs e)
         {
             MostrarMenu(Panel_Empleados);
-        }
-
-        private void btn_Pedidos_Click(object sender, EventArgs e)
-        {
-            MostrarMenu(Panel_Pedidos);
         }
 
         private void btn_Proveedor_Click(object sender, EventArgs e)
@@ -397,6 +389,17 @@ namespace TuLuz
         {
             AbrirFormularioSubMenu(new Cotizaciones());
             
+        }
+
+        private void btn_CargaPedido_Click(object sender, EventArgs e)
+        {
+            AbrirFormularioSubMenu(new Pedidos());
+                
+        }
+
+        private void btn_ActualizacionStock_Click(object sender, EventArgs e)
+        {
+            AbrirFormularioSubMenu(new ActualizarStock());
         }
     }
 }

@@ -78,7 +78,7 @@ namespace TuLuz.Forums
                 _Ec.nombreSolicitante = txt_nombreSolicitante.Text;
                 _Ec.apellidoSolicitante = txt_ApellidoSolicitante.Text;
                 _Ec.observaciones = txt_Observaciones.Text;
-                _Ec.fecha = cmb_Dia.SelectedItem + "/" + cmb_Mes.SelectedItem + "/" + txt_Año2.Text;
+                _Ec.fecha = cmb_Dia.SelectedItem.ToString() + "/" + cmb_Mes.SelectedItem.ToString() + "/" + txt_Año2.Text;
                 _Ec.precioTotal = txt_Precio.Text;
                 _Ec.motivoPerdida = txt_motivoPerdida.Text;
                 _Ec.nomCompetidor = txt_Competidor.Text;
@@ -339,16 +339,14 @@ namespace TuLuz.Forums
             DataTable tabla = new DataTable();
             tabla = Cotizacion.Buscar_Cotizcion(num);
 
-
             txt_numeroCotizacion.Text = tabla.Rows[0]["numeroCotizacion"].ToString();
-
             txt_Año.Text = tabla.Rows[0]["año"].ToString();
             cmb_Estado.SelectedValue= tabla.Rows[0]["codEstadoCotizacion"].ToString();
             cmb_Vendedor.SelectedValue = tabla.Rows[0]["numDocVendedor"].ToString();
             txt_ApellidoSolicitante.Text = tabla.Rows[0]["apellidoSolicitante"].ToString();
             txt_Precio.Text = tabla.Rows[0]["precioTotal"].ToString();
             cmb_Mes.SelectedItem = Cotizacion.TraerMes(txt_numeroCotizacion.Text);
-            cmb_Dia.SelectedItem = Cotizacion.TraerDia(txt_numeroCotizacion.Text);
+            cmb_Dia.Text = Cotizacion.TraerDia(txt_numeroCotizacion.Text);
             txt_nombreSolicitante.Text = tabla.Rows[0]["nombreSolicitante"].ToString();
             txt_motivoPerdida.Text = tabla.Rows[0]["motivoPerdida"].ToString();
             txt_Competidor.Text = tabla.Rows[0]["nomCompetidor"].ToString();

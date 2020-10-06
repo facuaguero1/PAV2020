@@ -24,9 +24,14 @@ namespace TuLuz.Negocio
             return _BD.Consulta("SELECT * FROM DetallePedido ");
         }
 
-        public void Borrar(int Doc)
+        public DataTable RecuperarDetallesPedido(string num)
         {
-            string sqlDelete = "DELETE FROM DetallePedido WHERE numeroPedido = " + Doc;
+            return _BD.Consulta("SELECT * FROM DetallePedido WHERE numeroPedido = "+ num);
+        }
+
+        public void Borrar(string Doc,string num)
+        {
+            string sqlDelete = "DELETE FROM DetallePedido WHERE numeroPedido = " + Doc+" AND codigoProducto = "+num;
             _BD.Borrar(sqlDelete);
         }
 
