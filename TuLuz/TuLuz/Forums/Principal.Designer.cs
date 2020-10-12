@@ -556,9 +556,10 @@
             this.button39.Padding = new System.Windows.Forms.Padding(35, 0, 0, 0);
             this.button39.Size = new System.Drawing.Size(223, 33);
             this.button39.TabIndex = 0;
-            this.button39.Text = "button39";
+            this.button39.Text = "Pedidos por Empleados";
             this.button39.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.button39.UseVisualStyleBackColor = true;
+            this.button39.Click += new System.EventHandler(this.button39_Click);
             // 
             // btn_Listados
             // 

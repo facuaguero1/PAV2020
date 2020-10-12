@@ -103,6 +103,18 @@
     <Compile Include="Forums\Clientes\ModificarCliente.Designer.cs">
       <DependentUpon>ModificarCliente.cs</DependentUpon>
     </Compile>
+    <Compile Include="Forums\Reportes\PedidosXEmpleados.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forums\Reportes\PedidosXEmpleados.Designer.cs">
+      <DependentUpon>PedidosXEmpleados.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forums\TipoDocs\AltaTipoDocs.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forums\TipoDocs\AltaTipoDocs.Designer.cs">
+      <DependentUpon>AltaTipoDocs.cs</DependentUpon>
+    </Compile>
     <Compile Include="Forums\Transacciones\ActualizarStock.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -283,12 +295,6 @@
     <Compile Include="Forums\Provincias\ModificarProvincia.Designer.cs">
       <DependentUpon>ModificarProvincia.cs</DependentUpon>
     </Compile>
-    <Compile Include="Forums\TipoDocs\AltaTipoDocs.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Forums\TipoDocs\AltaTipoDocs.Designer.cs">
-      <DependentUpon>AltaTipoDocs.cs</DependentUpon>
-    </Compile>
     <Compile Include="Forums\TipoDocs\BorrarTipoDocs.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -366,6 +372,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Forums\Clientes\ModificarCliente.resx">
       <DependentUpon>ModificarCliente.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forums\Reportes\PedidosXEmpleados.resx">
+      <DependentUpon>PedidosXEmpleados.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forums\TipoDocs\AltaTipoDocs.resx">
+      <DependentUpon>AltaTipoDocs.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forums\Transacciones\ActualizarStock.resx">
       <DependentUpon>ActualizarStock.cs</DependentUpon>
@@ -457,9 +469,6 @@
     <EmbeddedResource Include="Forums\Provincias\ModificarProvincia.resx">
       <DependentUpon>ModificarProvincia.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Forums\TipoDocs\AltaTipoDocs.resx">
-      <DependentUpon>AltaTipoDocs.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="Forums\TipoDocs\BorrarTipoDocs.resx">
       <DependentUpon>BorrarTipoDocs.cs</DependentUpon>
     </EmbeddedResource>
@@ -528,5 +537,6 @@
   <ItemGroup>
     <None Include="Resources\savetheapplication_guardar_2958.png" />
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

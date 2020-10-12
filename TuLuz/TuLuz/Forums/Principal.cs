@@ -401,5 +401,10 @@ namespace TuLuz
         {
             AbrirFormularioSubMenu(new ActualizarStock());
         }
+
+        private void button39_Click(object sender, EventArgs e)
+        {
+            AbrirFormularioSubMenu(new PedidosXEmpleados());
+        }
     }
 }
