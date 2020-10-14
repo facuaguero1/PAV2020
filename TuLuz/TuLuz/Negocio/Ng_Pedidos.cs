@@ -104,6 +104,14 @@ namespace TuLuz.Negocio
         {
             _BD.CerrarTransaccion();
         }
+
+        public DataTable Buscar_X_Fecha(string fechaMin, string fechaMax)
+        {
+            string sql = "SELECT * FROM Pedidos WHERE fechaPedido BETWEEN " + _BD.FormatearDato(fechaMin, "Date") + " AND " + _BD.FormatearDato(fechaMax, "Date");
+            DataTable tabla = new DataTable();
+            tabla = _BD.Consulta(sql);
+            return tabla;
+        }
     }
 }
 

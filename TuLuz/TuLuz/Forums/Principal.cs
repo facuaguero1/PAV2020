@@ -406,5 +406,10 @@ namespace TuLuz
         {
             AbrirFormularioSubMenu(new PedidosXEmpleados());
         }
+
+        private void Btn_Pedido_2fechas_Click(object sender, EventArgs e)
+        {
+            AbrirFormularioSubMenu(new Pedido_X_2Fechas());
+        }
     }
 }

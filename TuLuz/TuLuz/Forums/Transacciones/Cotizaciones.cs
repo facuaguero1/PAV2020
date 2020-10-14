@@ -361,6 +361,16 @@ namespace TuLuz.Forums
             Cotizacion.CerrarTransaccion();
             this.Close();
         }
+
+        private void grid01_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
+
+        private void cmb_Dia_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }
 

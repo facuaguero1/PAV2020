@@ -300,6 +300,7 @@
             this.cmb_Dia.Name = "cmb_Dia";
             this.cmb_Dia.Size = new System.Drawing.Size(58, 24);
             this.cmb_Dia.TabIndex = 9;
+            this.cmb_Dia.SelectedIndexChanged += new System.EventHandler(this.cmb_Dia_SelectedIndexChanged);
             // 
             // cmb_Mes
             // 
@@ -384,6 +385,7 @@
             this.grid01.ReadOnly = true;
             this.grid01.Size = new System.Drawing.Size(561, 430);
             this.grid01.TabIndex = 48;
+            this.grid01.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.grid01_CellContentClick);
             this.grid01.CellDoubleClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.grid01_CellDoubleClick);
             // 
             // Column1

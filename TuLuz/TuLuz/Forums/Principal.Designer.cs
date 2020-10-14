@@ -52,7 +52,7 @@
             this.button2 = new System.Windows.Forms.Button();
             this.button3 = new System.Windows.Forms.Button();
             this.button37 = new System.Windows.Forms.Button();
-            this.button38 = new System.Windows.Forms.Button();
+            this.Btn_Pedido_2fechas = new System.Windows.Forms.Button();
             this.button39 = new System.Windows.Forms.Button();
             this.btn_Listados = new System.Windows.Forms.Button();
             this.Panel_Procesos = new System.Windows.Forms.Panel();
@@ -392,7 +392,7 @@
             this.Panel_Listados.Controls.Add(this.button2);
             this.Panel_Listados.Controls.Add(this.button3);
             this.Panel_Listados.Controls.Add(this.button37);
-            this.Panel_Listados.Controls.Add(this.button38);
+            this.Panel_Listados.Controls.Add(this.Btn_Pedido_2fechas);
             this.Panel_Listados.Controls.Add(this.button39);
             this.Panel_Listados.Dock = System.Windows.Forms.DockStyle.Top;
             this.Panel_Listados.Location = new System.Drawing.Point(0, 1810);
@@ -528,21 +528,22 @@
             this.button37.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.button37.UseVisualStyleBackColor = true;
             // 
-            // button38
+            // Btn_Pedido_2fechas
             // 
-            this.button38.Dock = System.Windows.Forms.DockStyle.Top;
-            this.button38.FlatAppearance.BorderSize = 0;
-            this.button38.FlatAppearance.MouseOverBackColor = System.Drawing.SystemColors.Highlight;
-            this.button38.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button38.ForeColor = System.Drawing.Color.LightGray;
-            this.button38.Location = new System.Drawing.Point(0, 33);
-            this.button38.Name = "button38";
-            this.button38.Padding = new System.Windows.Forms.Padding(35, 0, 0, 0);
-            this.button38.Size = new System.Drawing.Size(223, 33);
-            this.button38.TabIndex = 1;
-            this.button38.Text = "button38";
-            this.button38.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button38.UseVisualStyleBackColor = true;
+            this.Btn_Pedido_2fechas.Dock = System.Windows.Forms.DockStyle.Top;
+            this.Btn_Pedido_2fechas.FlatAppearance.BorderSize = 0;
+            this.Btn_Pedido_2fechas.FlatAppearance.MouseOverBackColor = System.Drawing.SystemColors.Highlight;
+            this.Btn_Pedido_2fechas.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.Btn_Pedido_2fechas.ForeColor = System.Drawing.Color.LightGray;
+            this.Btn_Pedido_2fechas.Location = new System.Drawing.Point(0, 33);
+            this.Btn_Pedido_2fechas.Name = "Btn_Pedido_2fechas";
+            this.Btn_Pedido_2fechas.Padding = new System.Windows.Forms.Padding(35, 0, 0, 0);
+            this.Btn_Pedido_2fechas.Size = new System.Drawing.Size(223, 33);
+            this.Btn_Pedido_2fechas.TabIndex = 1;
+            this.Btn_Pedido_2fechas.Text = "Pedidos entre dos fechas";
+            this.Btn_Pedido_2fechas.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.Btn_Pedido_2fechas.UseVisualStyleBackColor = true;
+            this.Btn_Pedido_2fechas.Click += new System.EventHandler(this.Btn_Pedido_2fechas_Click);
             // 
             // button39
             // 
@@ -1608,7 +1609,7 @@
         private System.Windows.Forms.Button btn_Estadisticas;
         private System.Windows.Forms.Panel Panel_Listados;
         private System.Windows.Forms.Button button37;
-        private System.Windows.Forms.Button button38;
+        private System.Windows.Forms.Button Btn_Pedido_2fechas;
         private System.Windows.Forms.Button button39;
         private System.Windows.Forms.Button btn_Listados;
         private System.Windows.Forms.Panel Panel_Procesos;
