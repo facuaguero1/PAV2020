@@ -112,6 +112,14 @@ namespace TuLuz.Negocio
             tabla = _BD.Consulta(sql);
             return tabla;
         }
+
+        public DataTable Buscar_PedidoPorEmpleado(string codigo)
+        {
+            string sql = "SELECT * FROM Pedidos WHERE numDniVendedor = " + codigo;
+            DataTable tabla = new DataTable();
+            tabla = _BD.Consulta(sql);
+            return tabla;
+        }
     }
 }
 

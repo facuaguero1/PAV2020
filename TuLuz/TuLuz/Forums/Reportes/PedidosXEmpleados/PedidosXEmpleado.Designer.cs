@@ -31,9 +31,9 @@
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.btn_salir = new System.Windows.Forms.Button();
-            this.btn_cancelar = new System.Windows.Forms.Button();
-            this.btn_aceptar = new System.Windows.Forms.Button();
+            this.RVPedidosXEmpleados = new Microsoft.Reporting.WinForms.ReportViewer();
             this.cmb_Empleados = new TuLuz.Clases.ComboBox01();
+            this.button1 = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // label1
@@ -74,36 +74,19 @@
             this.btn_salir.UseVisualStyleBackColor = true;
             this.btn_salir.Click += new System.EventHandler(this.btn_salir_Click);
             // 
-            // btn_cancelar
+            // RVPedidosXEmpleados
             // 
-            this.btn_cancelar.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.btn_cancelar.BackgroundImage = global::TuLuz.Properties.Resources.cancel_77947;
-            this.btn_cancelar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.btn_cancelar.FlatAppearance.BorderSize = 0;
-            this.btn_cancelar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_cancelar.Location = new System.Drawing.Point(531, 338);
-            this.btn_cancelar.Name = "btn_cancelar";
-            this.btn_cancelar.Size = new System.Drawing.Size(90, 80);
-            this.btn_cancelar.TabIndex = 8;
-            this.btn_cancelar.UseVisualStyleBackColor = true;
-            this.btn_cancelar.Click += new System.EventHandler(this.btn_cancelar_Click);
-            // 
-            // btn_aceptar
-            // 
-            this.btn_aceptar.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.btn_aceptar.BackgroundImage = global::TuLuz.Properties.Resources.ok_accept_15562;
-            this.btn_aceptar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.btn_aceptar.FlatAppearance.BorderSize = 0;
-            this.btn_aceptar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_aceptar.Location = new System.Drawing.Point(155, 338);
-            this.btn_aceptar.Name = "btn_aceptar";
-            this.btn_aceptar.Size = new System.Drawing.Size(90, 80);
-            this.btn_aceptar.TabIndex = 7;
-            this.btn_aceptar.UseVisualStyleBackColor = true;
-            this.btn_aceptar.Click += new System.EventHandler(this.btn_aceptar_Click);
+            this.RVPedidosXEmpleados.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.RVPedidosXEmpleados.LocalReport.ReportEmbeddedResource = "TuLuz.Forums.Reportes.PedidosXEmpleados.PedidosXEmpleados.rdlc";
+            this.RVPedidosXEmpleados.Location = new System.Drawing.Point(20, 118);
+            this.RVPedidosXEmpleados.Name = "RVPedidosXEmpleados";
+            this.RVPedidosXEmpleados.ServerReport.BearerToken = null;
+            this.RVPedidosXEmpleados.Size = new System.Drawing.Size(727, 335);
+            this.RVPedidosXEmpleados.TabIndex = 11;
             // 
             // cmb_Empleados
             // 
+            this.cmb_Empleados.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.cmb_Empleados.FormattingEnabled = true;
             this.cmb_Empleados.Location = new System.Drawing.Point(124, 90);
             this.cmb_Empleados.Name = "cmb_Empleados";
@@ -119,15 +102,26 @@
             this.cmb_Empleados.TabIndex = 10;
             this.cmb_Empleados.SelectedIndexChanged += new System.EventHandler(this.comboBox011_SelectedIndexChanged);
             // 
+            // button1
+            // 
+            this.button1.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.button1.Location = new System.Drawing.Point(288, 88);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(75, 23);
+            this.button1.TabIndex = 12;
+            this.button1.Text = "Buscar";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
+            // 
             // PedidosXEmpleados
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(759, 465);
+            this.Controls.Add(this.button1);
+            this.Controls.Add(this.RVPedidosXEmpleados);
             this.Controls.Add(this.cmb_Empleados);
             this.Controls.Add(this.btn_salir);
-            this.Controls.Add(this.btn_cancelar);
-            this.Controls.Add(this.btn_aceptar);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Name = "PedidosXEmpleados";
@@ -143,9 +137,9 @@
 
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Button btn_aceptar;
-        private System.Windows.Forms.Button btn_cancelar;
         private System.Windows.Forms.Button btn_salir;
         private Clases.ComboBox01 cmb_Empleados;
+        private Microsoft.Reporting.WinForms.ReportViewer RVPedidosXEmpleados;
+        private System.Windows.Forms.Button button1;
     }
 }

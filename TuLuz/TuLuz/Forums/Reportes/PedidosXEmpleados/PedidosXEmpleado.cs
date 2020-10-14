@@ -10,6 +10,7 @@ using System.Windows.Forms;
 using TuLuz.Negocio;
 using TuLuz.Clases;
 using TuLuz.Negocio.EstructuraNegocios;
+using Microsoft.Reporting.WinForms;
 
 namespace TuLuz.Forums
 {
@@ -37,8 +38,8 @@ namespace TuLuz.Forums
             if (tratamiento.validar(this.Controls) == TratamientosEspeciales.Validacion.correcta)
             {
 
-                
-               
+
+
             }
         }
 
@@ -51,6 +52,7 @@ namespace TuLuz.Forums
         {
             cmb_Empleados.Cargar(Empleados.EstructuraComboxListado());
             cmb_Empleados.SelectedIndex = -1;
+            this.RVPedidosXEmpleados.RefreshReport();
         }
 
         private void label1_Click(object sender, EventArgs e)
@@ -78,10 +80,31 @@ namespace TuLuz.Forums
 
         private void comboBox011_SelectedIndexChanged(object sender, EventArgs e)
         {
-          if (cmb_Empleados.SelectedIndex == -1)
+            
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            if (cmb_Empleados.SelectedIndex == -1)
             {
                 cmb_Empleados.Text = "Seleccionar.";
             }
+            else
+            {
+                DataTable tabla = new DataTable();
+                tabla = Pedidos.Buscar_PedidoPorEmpleado(cmb_Empleados.SelectedValue.ToString());
+                ReportDataSource Datos = new ReportDataSource("DataSet1", tabla);
+                RVPedidosXEmpleados.LocalReport.ReportEmbeddedResource = "TuLuz.Forums.Reportes.PedidosXEmpleados.PedidosXEmpleados.rdlc";
+                ReportParameter[] parametros = new ReportParameter[2];
+                parametros[0] = new ReportParameter("RP01", "Empleados: " + cmb_Empleados.SelectedValue.ToString());
+                parametros[1] = new ReportParameter("RP02", "Fecha: " + DateTime.Today.Day.ToString() + "/" + DateTime.Today.Month.ToString() + "/" + DateTime.Today.Year.ToString());
+                RVPedidosXEmpleados.LocalReport.DataSources.Clear();
+                RVPedidosXEmpleados.LocalReport.SetParameters(parametros);
+                RVPedidosXEmpleados.LocalReport.DataSources.Add(Datos);
+                RVPedidosXEmpleados.RefreshReport();
+
+            }
         }
     }
-}
+}       
+

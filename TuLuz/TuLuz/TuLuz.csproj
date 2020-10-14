@@ -121,11 +121,16 @@
     <Compile Include="Forums\Clientes\ModificarCliente.Designer.cs">
       <DependentUpon>ModificarCliente.cs</DependentUpon>
     </Compile>
-    <Compile Include="Forums\Reportes\PedidosXEmpleados.cs">
+    <Compile Include="Forums\Reportes\PedidosXEmpleados\PedidosXEmpleado.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Forums\Reportes\PedidosXEmpleados.Designer.cs">
-      <DependentUpon>PedidosXEmpleados.cs</DependentUpon>
+    <Compile Include="Forums\Reportes\PedidosXEmpleados\PedidosXEmpleado.Designer.cs">
+      <DependentUpon>PedidosXEmpleado.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forums\Reportes\PedidosXEmpleados\PedidosXEmpleados.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>PedidosXEmpleados.xsd</DependentUpon>
     </Compile>
     <Compile Include="Forums\Reportes\Pedido_Entre_Fechas\Pedido_X_2Fechas.cs">
       <SubType>Form</SubType>
@@ -403,9 +408,10 @@
     <EmbeddedResource Include="Forums\Clientes\ModificarCliente.resx">
       <DependentUpon>ModificarCliente.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Forums\Reportes\PedidosXEmpleados.resx">
-      <DependentUpon>PedidosXEmpleados.cs</DependentUpon>
+    <EmbeddedResource Include="Forums\Reportes\PedidosXEmpleados\PedidosXEmpleado.resx">
+      <DependentUpon>PedidosXEmpleado.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Forums\Reportes\PedidosXEmpleados\PedidosXEmpleados.rdlc" />
     <EmbeddedResource Include="Forums\Reportes\Pedido_Entre_Fechas\Pedido_X_2Fechas.resx">
       <DependentUpon>Pedido_X_2Fechas.cs</DependentUpon>
     </EmbeddedResource>
@@ -525,6 +531,17 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
+    <None Include="Forums\Reportes\PedidosXEmpleados\PedidosXEmpleados.xsc">
+      <DependentUpon>PedidosXEmpleados.xsd</DependentUpon>
+    </None>
+    <None Include="Forums\Reportes\PedidosXEmpleados\PedidosXEmpleados.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>PedidosXEmpleados.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Forums\Reportes\PedidosXEmpleados\PedidosXEmpleados.xss">
+      <DependentUpon>PedidosXEmpleados.xsd</DependentUpon>
+    </None>
     <None Include="Forums\Reportes\Pedido_Entre_Fechas\ReportePedidoXFecha.xsc">
       <DependentUpon>ReportePedidoXFecha.xsd</DependentUpon>
     </None>

@@ -21,7 +21,7 @@ namespace TuLuz.Negocio
         public void Insertar(Es_Empleados Empleado)
         {
 
-            String sqlInsertar = "INSERT INTO Empleados(tipoDoc, numDoc, nombre, apellido, direccion, codBarrio, telefono, tipoDocJefe, numDocJefe, activo) VALUES(" + Empleado.tipoDoc + "," + Empleado.numDoc + ",'" + Empleado.nombre + "','" +Empleado.apellido + "','" + Empleado.direccion + "'," + Empleado.codBarrio + ",'" +Empleado.telefono + "'," + Empleado.tipoDocJefe + "," + Empleado.numDocJefe + ",'" + Empleado.activo + "')";
+            String sqlInsertar = "INSERT INTO Empleados(tipoDoc, numDoc, nombre, apellido, direccion, codBarrio, telefono, tipoDocJefe, numDocJefe, activo) VALUES(" + Empleado.tipoDoc + "," + Empleado.numDoc + ",'" + Empleado.nombre + "','" + Empleado.apellido + "','" + Empleado.direccion + "'," + Empleado.codBarrio + ",'" + Empleado.telefono + "'," + Empleado.tipoDocJefe + "," + Empleado.numDocJefe + ",'" + Empleado.activo + "')";
             MessageBox.Show("El Empleado fue creado con exito!", "CREACIÓN EXITOSA", MessageBoxButtons.OK, MessageBoxIcon.Information);
             _BD.Insertar(sqlInsertar);
 
@@ -43,7 +43,7 @@ namespace TuLuz.Negocio
         }
         public DataTable Buscar_Empleados_Usuario(string usr)
         {
-            string sql = "SELECT Empleados.* FROM Empleados, Usuario WHERE  Empleados.numDoc = Usuario.numDocEmpleado AND Usuario.usuario LIKE '"+usr+"'";
+            string sql = "SELECT Empleados.* FROM Empleados, Usuario WHERE  Empleados.numDoc = Usuario.numDocEmpleado AND Usuario.usuario LIKE '" + usr + "'";
             DataTable tabla = new DataTable();
             tabla = _BD.Consulta(sql);
             return tabla;
@@ -121,6 +121,7 @@ namespace TuLuz.Negocio
             EC.Tabla = _BD.Consulta(EC.Sql);
             return EC;
         }
+
     }
 }
 
