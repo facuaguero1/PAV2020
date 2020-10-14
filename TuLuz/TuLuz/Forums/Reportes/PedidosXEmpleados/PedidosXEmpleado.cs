@@ -80,6 +80,10 @@ namespace TuLuz.Forums
 
         private void comboBox011_SelectedIndexChanged(object sender, EventArgs e)
         {
+            if (cmb_Empleados.SelectedIndex == -1)
+            {
+                cmb_Empleados.Text = "Seleccionar.";
+            }
             
         }
 
@@ -87,7 +91,7 @@ namespace TuLuz.Forums
         {
             if (cmb_Empleados.SelectedIndex == -1)
             {
-                cmb_Empleados.Text = "Seleccionar.";
+                MessageBox.Show("No se selecciono ningun empleado","ATENCION");
             }
             else
             {
