@@ -23,10 +23,10 @@ namespace TuLuz.Clases
         TipoConexion ControlConexion = TipoConexion.simple; //indico que la transaccion por defecto es simple
 
 
-        string Cadena_Conexion = "Data Source=LAPTOP-5NV6I6V9;Initial Catalog=_BD_TuLuz;Integrated Security=True"; //CONEXION MATUTE
+        //string Cadena_Conexion = "Data Source=LAPTOP-5NV6I6V9;Initial Catalog=_BD_TuLuz;Integrated Security=True"; //CONEXION MATUTE
         //string Cadena_Conexion = "Data Source=DESKTOP-V8659BG;Initial Catalog=DATABASE_TULUZ;Integrated Security=True"; //CONEXION FABRI
         //string Cadena_Conexion = "Data Source=USUARIO-PC\\SQLEXPRESS;Initial Catalog=DATABASE_TULUZ;Integrated Security=True"; // CONEXION FACU
-
+        string Cadena_Conexion = "Data Source=LAPTOP-GR111J17;Initial Catalog=TuLuz;Integrated Security=True"; //CONEXION MARTIN
 
         //-----------------------------------------INICIAR TRANSACCION-----------------------------------------
         public void IniciarTransaccion()
