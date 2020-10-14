@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="DS_Reporte_Producto_Equivalente" targetNamespace="http://tempuri.org/DS_Reporte_Producto_Equivalente.xsd" xmlns:mstns="http://tempuri.org/DS_Reporte_Producto_Equivalente.xsd" xmlns="http://tempuri.org/DS_Reporte_Producto_Equivalente.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections />
+        <Tables />
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="DS_Reporte_Producto_Equivalente" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="true" msprop:Generator_DataSetName="DS_Reporte_Producto_Equivalente" msprop:Generator_UserDSName="DS_Reporte_Producto_Equivalente">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="Producto_Equivalente" msprop:Generator_TableClassName="Producto_EquivalenteDataTable" msprop:Generator_TableVarName="tableProducto_Equivalente" msprop:Generator_RowChangedName="Producto_EquivalenteRowChanged" msprop:Generator_TablePropName="Producto_Equivalente" msprop:Generator_RowDeletingName="Producto_EquivalenteRowDeleting" msprop:Generator_RowChangingName="Producto_EquivalenteRowChanging" msprop:Generator_RowEvHandlerName="Producto_EquivalenteRowChangeEventHandler" msprop:Generator_RowDeletedName="Producto_EquivalenteRowDeleted" msprop:Generator_RowClassName="Producto_EquivalenteRow" msprop:Generator_UserTableName="Producto_Equivalente" msprop:Generator_RowEvArgName="Producto_EquivalenteRowChangeEvent">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="codProducto" msprop:Generator_ColumnVarNameInTable="columncodProducto" msprop:Generator_ColumnPropNameInRow="codProducto" msprop:Generator_ColumnPropNameInTable="codProductoColumn" msprop:Generator_UserColumnName="codProducto" type="xs:long" minOccurs="0" />
+              <xs:element name="nombre" msprop:Generator_ColumnVarNameInTable="columnnombre" msprop:Generator_ColumnPropNameInRow="nombre" msprop:Generator_ColumnPropNameInTable="nombreColumn" msprop:Generator_UserColumnName="nombre" type="xs:string" minOccurs="0" />
+              <xs:element name="descripcion" msprop:Generator_ColumnVarNameInTable="columndescripcion" msprop:Generator_ColumnPropNameInRow="descripcion" msprop:Generator_ColumnPropNameInTable="descripcionColumn" msprop:Generator_UserColumnName="descripcion" type="xs:string" minOccurs="0" />
+              <xs:element name="precio" msprop:Generator_ColumnVarNameInTable="columnprecio" msprop:Generator_ColumnPropNameInRow="precio" msprop:Generator_ColumnPropNameInTable="precioColumn" msprop:Generator_UserColumnName="precio" type="xs:long" minOccurs="0" />
+              <xs:element name="cantStock" msprop:Generator_ColumnVarNameInTable="columncantStock" msprop:Generator_ColumnPropNameInRow="cantStock" msprop:Generator_ColumnPropNameInTable="cantStockColumn" msprop:Generator_UserColumnName="cantStock" type="xs:long" minOccurs="0" />
+              <xs:element name="cuitProveedor" msprop:Generator_ColumnVarNameInTable="columncuitProveedor" msprop:Generator_ColumnPropNameInRow="cuitProveedor" msprop:Generator_ColumnPropNameInTable="cuitProveedorColumn" msprop:Generator_UserColumnName="cuitProveedor" type="xs:string" minOccurs="0" />
+              <xs:element name="codProductoEq" msprop:Generator_ColumnVarNameInTable="columncodProductoEq" msprop:Generator_ColumnPropNameInRow="codProductoEq" msprop:Generator_ColumnPropNameInTable="codProductoEqColumn" msprop:Generator_UserColumnName="codProductoEq" type="xs:long" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

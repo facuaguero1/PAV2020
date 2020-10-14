@@ -14,6 +14,7 @@ using TuLuz.Clases;
 using TuLuz.Negocio;
 using TuLuz.Negocio.EstructuraNegocios;
 
+
 namespace TuLuz
 {
     public partial class Principal : Form
@@ -410,6 +411,11 @@ namespace TuLuz
         private void Btn_Pedido_2fechas_Click(object sender, EventArgs e)
         {
             AbrirFormularioSubMenu(new Pedido_X_2Fechas());
+        }
+
+        private void btn_Productos_Equivalentes_Click(object sender, EventArgs e)
+        {
+            AbrirFormularioSubMenu(new ProductoEquivalente());
         }
     }
 }

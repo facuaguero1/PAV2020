@@ -361,7 +361,6 @@ C:\Users\Fabri\Documents\GitHub\PAV2020\TuLuz\TuLuz\obj\Debug\TuLuz.Forums.AltaT
 C:\Users\matut\Documents\GitHub\PAV2020\TuLuz\TuLuz\bin\Debug\TuLuz.exe.config
 C:\Users\matut\Documents\GitHub\PAV2020\TuLuz\TuLuz\bin\Debug\TuLuz.exe
 C:\Users\matut\Documents\GitHub\PAV2020\TuLuz\TuLuz\bin\Debug\TuLuz.pdb
-C:\Users\matut\Documents\GitHub\PAV2020\TuLuz\TuLuz\obj\Debug\TuLuz.csprojAssemblyReference.cache
 C:\Users\matut\Documents\GitHub\PAV2020\TuLuz\TuLuz\obj\Debug\TuLuz.Forums.AltaBarrio.resources
 C:\Users\matut\Documents\GitHub\PAV2020\TuLuz\TuLuz\obj\Debug\TuLuz.Forums.Clientes.BorrarBarrio.resources
 C:\Users\matut\Documents\GitHub\PAV2020\TuLuz\TuLuz\obj\Debug\TuLuz.Forums.Clientes.ConsultarBarrio.resources
@@ -535,3 +534,6 @@ C:\Users\Fabri\Documents\GitHub\PAV2020\TuLuz\TuLuz\bin\Debug\ru\Microsoft.Repor
 C:\Users\Fabri\Documents\GitHub\PAV2020\TuLuz\TuLuz\bin\Debug\zh-CHS\Microsoft.ReportViewer.WinForms.resources.dll
 C:\Users\Fabri\Documents\GitHub\PAV2020\TuLuz\TuLuz\bin\Debug\zh-CHT\Microsoft.ReportViewer.WinForms.resources.dll
 C:\Users\Fabri\Documents\GitHub\PAV2020\TuLuz\TuLuz\obj\Debug\TuLuz.csproj.CopyComplete
+C:\Users\matut\Documents\GitHub\PAV2020\TuLuz\TuLuz\obj\Debug\TuLuz.Clases.LabelText01.resources
+C:\Users\matut\Documents\GitHub\PAV2020\TuLuz\TuLuz\obj\Debug\TuLuz.csprojAssemblyReference.cache
+C:\Users\matut\Documents\GitHub\PAV2020\TuLuz\TuLuz\obj\Debug\TuLuz.Forums.ProductoEquivalente.resources

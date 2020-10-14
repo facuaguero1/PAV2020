@@ -53,10 +53,10 @@
             // 
             this.label2.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(15, 90);
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Location = new System.Drawing.Point(16, 76);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(106, 25);
+            this.label2.Size = new System.Drawing.Size(102, 24);
             this.label2.TabIndex = 1;
             this.label2.Text = "Empleado:";
             // 
@@ -87,8 +87,9 @@
             // cmb_Empleados
             // 
             this.cmb_Empleados.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.cmb_Empleados.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cmb_Empleados.FormattingEnabled = true;
-            this.cmb_Empleados.Location = new System.Drawing.Point(124, 90);
+            this.cmb_Empleados.Location = new System.Drawing.Point(124, 73);
             this.cmb_Empleados.Name = "cmb_Empleados";
             this.cmb_Empleados.pp_Display = null;
             this.cmb_Empleados.pp_mensaje_error = null;
@@ -98,18 +99,22 @@
             this.cmb_Empleados.pp_Tabla = null;
             this.cmb_Empleados.pp_validable = false;
             this.cmb_Empleados.pp_Value = null;
-            this.cmb_Empleados.Size = new System.Drawing.Size(158, 21);
+            this.cmb_Empleados.Size = new System.Drawing.Size(158, 32);
             this.cmb_Empleados.TabIndex = 10;
             this.cmb_Empleados.SelectedIndexChanged += new System.EventHandler(this.comboBox011_SelectedIndexChanged);
             // 
             // button1
             // 
             this.button1.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.button1.Location = new System.Drawing.Point(288, 88);
+            this.button1.BackgroundImage = global::TuLuz.Properties.Resources.buscar;
+            this.button1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.button1.FlatAppearance.BorderSize = 0;
+            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button1.Location = new System.Drawing.Point(314, 73);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(75, 23);
+            this.button1.Size = new System.Drawing.Size(52, 32);
             this.button1.TabIndex = 12;
-            this.button1.Text = "Buscar";
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 

@@ -16,7 +16,7 @@ class Ng_Cotizaciones
 
     public void Insertar(Es_Cotizaciones Cotizacion)
     {
-        String sqlInsertar = "INSERT INTO Cotizaciones(numeroCotizacion, año, cuitCliente, tipoDocVendedor, numDocVendedor, codEstadoCotizacion, nombreSolicitante, apellidoSolicitante, fecha, observaciones, precioTotal, motivoPerdida, nomCompetidor) VALUES(" + Cotizacion.numeroCotizacicon + ",'" + Cotizacion.año + "','" + Cotizacion.cuitCliente + "'," + Cotizacion.tipoDocVendedor + "," + Cotizacion.numDocVendedor + "," + Cotizacion.codEstadoCotizacion + ",'" + Cotizacion.nombreSolicitante + "','" + Cotizacion.apellidoSolicitante + "','" + Cotizacion.fecha + "','" + Cotizacion.observaciones + "'," + Cotizacion.precioTotal + ",'" + Cotizacion.motivoPerdida + "','" + Cotizacion.nomCompetidor + "')";
+        String sqlInsertar = "INSERT INTO Cotizaciones(numeroCotizacion, año, cuitCliente, tipoDocVendedor, numDocVendedor, codEstadoCotizacion, nombreSolicitante, apellidoSolicitante, fecha, observaciones, precioTotal, motivoPerdida, nomCompetidor) VALUES(" + Cotizacion.numeroCotizacicon + ",'" + Cotizacion.año + "','" + Cotizacion.cuitCliente + "'," + Cotizacion.tipoDocVendedor + "," + Cotizacion.numDocVendedor + "," + Cotizacion.codEstadoCotizacion + ",'" + Cotizacion.nombreSolicitante + "','" + Cotizacion.apellidoSolicitante + "','" + _BD.FormatearDato(Cotizacion.fecha, "Date") + "','" + Cotizacion.observaciones + "'," + Cotizacion.precioTotal + ",'" + Cotizacion.motivoPerdida + "','" + Cotizacion.nomCompetidor + "')";
         MessageBox.Show("La Cotizacion fue creado con exito!", "CREACIÓN EXITOSA", MessageBoxButtons.OK, MessageBoxIcon.Information);
         _BD.Insertar(sqlInsertar);
 
@@ -49,7 +49,7 @@ class Ng_Cotizaciones
         sqlUpdate += ", codEstadoCotizacion = " + _BD.FormatearDato(datos.codEstadoCotizacion, "Int");
         sqlUpdate += ", nombreSolicitante = " + _BD.FormatearDato(datos.nombreSolicitante, "String");
         sqlUpdate += ", apellidoSolicitante = " + _BD.FormatearDato(datos.apellidoSolicitante, "String");
-        sqlUpdate += ", fecha = " + _BD.FormatearDato(datos.fecha, "String");
+        sqlUpdate += ", fecha = " + _BD.FormatearDato(datos.fecha, "Date");
         sqlUpdate += ", observaciones = " + _BD.FormatearDato(datos.observaciones, "String");
         sqlUpdate += ", precioTotal = " + _BD.FormatearDato(datos.precioTotal, "Int");
         sqlUpdate += ", motivoPerdida = " + _BD.FormatearDato(datos.motivoPerdida, "String");

@@ -51,9 +51,9 @@
             this.button1 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
             this.button3 = new System.Windows.Forms.Button();
-            this.button37 = new System.Windows.Forms.Button();
+            this.btn_Productos_Equivalentes = new System.Windows.Forms.Button();
             this.Btn_Pedido_2fechas = new System.Windows.Forms.Button();
-            this.button39 = new System.Windows.Forms.Button();
+            this.btn_Pedido_x_empleado = new System.Windows.Forms.Button();
             this.btn_Listados = new System.Windows.Forms.Button();
             this.Panel_Procesos = new System.Windows.Forms.Panel();
             this.btn_CargarCotizacion = new System.Windows.Forms.Button();
@@ -391,9 +391,9 @@
             this.Panel_Listados.Controls.Add(this.button1);
             this.Panel_Listados.Controls.Add(this.button2);
             this.Panel_Listados.Controls.Add(this.button3);
-            this.Panel_Listados.Controls.Add(this.button37);
+            this.Panel_Listados.Controls.Add(this.btn_Productos_Equivalentes);
             this.Panel_Listados.Controls.Add(this.Btn_Pedido_2fechas);
-            this.Panel_Listados.Controls.Add(this.button39);
+            this.Panel_Listados.Controls.Add(this.btn_Pedido_x_empleado);
             this.Panel_Listados.Dock = System.Windows.Forms.DockStyle.Top;
             this.Panel_Listados.Location = new System.Drawing.Point(0, 1810);
             this.Panel_Listados.Name = "Panel_Listados";
@@ -512,21 +512,22 @@
             this.button3.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.button3.UseVisualStyleBackColor = true;
             // 
-            // button37
+            // btn_Productos_Equivalentes
             // 
-            this.button37.Dock = System.Windows.Forms.DockStyle.Top;
-            this.button37.FlatAppearance.BorderSize = 0;
-            this.button37.FlatAppearance.MouseOverBackColor = System.Drawing.SystemColors.Highlight;
-            this.button37.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button37.ForeColor = System.Drawing.Color.LightGray;
-            this.button37.Location = new System.Drawing.Point(0, 66);
-            this.button37.Name = "button37";
-            this.button37.Padding = new System.Windows.Forms.Padding(35, 0, 0, 0);
-            this.button37.Size = new System.Drawing.Size(223, 33);
-            this.button37.TabIndex = 2;
-            this.button37.Text = "button37";
-            this.button37.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button37.UseVisualStyleBackColor = true;
+            this.btn_Productos_Equivalentes.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btn_Productos_Equivalentes.FlatAppearance.BorderSize = 0;
+            this.btn_Productos_Equivalentes.FlatAppearance.MouseOverBackColor = System.Drawing.SystemColors.Highlight;
+            this.btn_Productos_Equivalentes.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_Productos_Equivalentes.ForeColor = System.Drawing.Color.LightGray;
+            this.btn_Productos_Equivalentes.Location = new System.Drawing.Point(0, 66);
+            this.btn_Productos_Equivalentes.Name = "btn_Productos_Equivalentes";
+            this.btn_Productos_Equivalentes.Padding = new System.Windows.Forms.Padding(35, 0, 0, 0);
+            this.btn_Productos_Equivalentes.Size = new System.Drawing.Size(223, 33);
+            this.btn_Productos_Equivalentes.TabIndex = 2;
+            this.btn_Productos_Equivalentes.Text = "Productos equivalentes";
+            this.btn_Productos_Equivalentes.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btn_Productos_Equivalentes.UseVisualStyleBackColor = true;
+            this.btn_Productos_Equivalentes.Click += new System.EventHandler(this.btn_Productos_Equivalentes_Click);
             // 
             // Btn_Pedido_2fechas
             // 
@@ -545,22 +546,22 @@
             this.Btn_Pedido_2fechas.UseVisualStyleBackColor = true;
             this.Btn_Pedido_2fechas.Click += new System.EventHandler(this.Btn_Pedido_2fechas_Click);
             // 
-            // button39
+            // btn_Pedido_x_empleado
             // 
-            this.button39.Dock = System.Windows.Forms.DockStyle.Top;
-            this.button39.FlatAppearance.BorderSize = 0;
-            this.button39.FlatAppearance.MouseOverBackColor = System.Drawing.SystemColors.Highlight;
-            this.button39.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button39.ForeColor = System.Drawing.Color.LightGray;
-            this.button39.Location = new System.Drawing.Point(0, 0);
-            this.button39.Name = "button39";
-            this.button39.Padding = new System.Windows.Forms.Padding(35, 0, 0, 0);
-            this.button39.Size = new System.Drawing.Size(223, 33);
-            this.button39.TabIndex = 0;
-            this.button39.Text = "Pedidos por Empleados";
-            this.button39.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button39.UseVisualStyleBackColor = true;
-            this.button39.Click += new System.EventHandler(this.button39_Click);
+            this.btn_Pedido_x_empleado.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btn_Pedido_x_empleado.FlatAppearance.BorderSize = 0;
+            this.btn_Pedido_x_empleado.FlatAppearance.MouseOverBackColor = System.Drawing.SystemColors.Highlight;
+            this.btn_Pedido_x_empleado.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_Pedido_x_empleado.ForeColor = System.Drawing.Color.LightGray;
+            this.btn_Pedido_x_empleado.Location = new System.Drawing.Point(0, 0);
+            this.btn_Pedido_x_empleado.Name = "btn_Pedido_x_empleado";
+            this.btn_Pedido_x_empleado.Padding = new System.Windows.Forms.Padding(35, 0, 0, 0);
+            this.btn_Pedido_x_empleado.Size = new System.Drawing.Size(223, 33);
+            this.btn_Pedido_x_empleado.TabIndex = 0;
+            this.btn_Pedido_x_empleado.Text = "Pedidos por Empleados";
+            this.btn_Pedido_x_empleado.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btn_Pedido_x_empleado.UseVisualStyleBackColor = true;
+            this.btn_Pedido_x_empleado.Click += new System.EventHandler(this.button39_Click);
             // 
             // btn_Listados
             // 
@@ -1608,9 +1609,9 @@
         private System.Windows.Forms.Button button42;
         private System.Windows.Forms.Button btn_Estadisticas;
         private System.Windows.Forms.Panel Panel_Listados;
-        private System.Windows.Forms.Button button37;
+        private System.Windows.Forms.Button btn_Productos_Equivalentes;
         private System.Windows.Forms.Button Btn_Pedido_2fechas;
-        private System.Windows.Forms.Button button39;
+        private System.Windows.Forms.Button btn_Pedido_x_empleado;
         private System.Windows.Forms.Button btn_Listados;
         private System.Windows.Forms.Panel Panel_Procesos;
         private System.Windows.Forms.Button btn_CargarCotizacion;

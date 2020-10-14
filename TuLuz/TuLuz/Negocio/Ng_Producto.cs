@@ -98,6 +98,13 @@ namespace TuLuz.Negocio
             _BD.Modificar(sqlUpdate);
         }
 
+        public DataTable Buscar_Producto_EQ_PorCodigo(string codigo)
+        {
+            string sql = "SELECT * FROM Productos WHERE codProductoEq = " + codigo;
+            DataTable tabla = new DataTable();
+            tabla = _BD.Consulta(sql);
+            return tabla;
+        }
         public void IniciarTransaccion()
         {
             _BD.IniciarTransaccion();

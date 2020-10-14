@@ -22,7 +22,7 @@ namespace TuLuz.Negocio
         public void Insertar(Es_Pedidos Pedidos)
         {
 
-            String sqlInsertar = "INSERT INTO Pedidos(numeroPedido, numeroCotizacion, fechaPedido, tipoDniVendedor, numDniVendedor, condicionPago, cuitCliente) VALUES(" + Pedidos.numeroPedido + "," + Pedidos.numeroCotizacion + ",'" + Pedidos.fechaPedido + "'," + Pedidos.tipoDniVendedor + "," + Pedidos.numDniVendedor + ",'" + Pedidos.condicionPago + "','" + Pedidos.cuitCliente + "')";
+            String sqlInsertar = "INSERT INTO Pedidos(numeroPedido, numeroCotizacion, fechaPedido, tipoDniVendedor, numDniVendedor, condicionPago, cuitCliente) VALUES(" + Pedidos.numeroPedido + "," + Pedidos.numeroCotizacion + "," + _BD.FormatearDato(Pedidos.fechaPedido, "Date") + "," + Pedidos.tipoDniVendedor + "," + Pedidos.numDniVendedor + ",'" + Pedidos.condicionPago + "','" + Pedidos.cuitCliente + "')";
             MessageBox.Show("El Pedido fue creado con exito!", "CREACIÓN EXITOSA", MessageBoxButtons.OK, MessageBoxIcon.Information);
             _BD.Insertar(sqlInsertar);
 
@@ -48,7 +48,7 @@ namespace TuLuz.Negocio
             string sqlUpdate = "UPDATE Pedidos SET ";
             sqlUpdate += "cuitCliente = " + _BD.FormatearDato(datos.cuitCliente, "String");
             sqlUpdate += ", numeroCotizacion = " + _BD.FormatearDato(datos.numeroCotizacion, "Int");
-            sqlUpdate += ", fechaPedido = " + _BD.FormatearDato(datos.fechaPedido, "String");
+            sqlUpdate += ", fechaPedido = " + _BD.FormatearDato(datos.fechaPedido, "Date");
             sqlUpdate += ", tipoDniVendedor = " + _BD.FormatearDato(datos.tipoDniVendedor, "Int");
             sqlUpdate += ", numDniVendedor = " + _BD.FormatearDato(datos.numDniVendedor, "Int");
             sqlUpdate += ", condicionPago = " + _BD.FormatearDato(datos.condicionPago, "String");

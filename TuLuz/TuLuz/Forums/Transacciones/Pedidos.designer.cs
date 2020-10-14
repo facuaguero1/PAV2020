@@ -606,7 +606,7 @@
             this.cmb_Cotizaciones.pp_validable = false;
             this.cmb_Cotizaciones.pp_Value = null;
             this.cmb_Cotizaciones.Size = new System.Drawing.Size(281, 32);
-            this.cmb_Cotizaciones.TabIndex = 56;
+            this.cmb_Cotizaciones.TabIndex = 1;
             // 
             // txt_CondicionPago
             // 
@@ -619,7 +619,7 @@
             this.txt_CondicionPago.pp_nombre_tabla = "Empleados";
             this.txt_CondicionPago.pp_validable = true;
             this.txt_CondicionPago.Size = new System.Drawing.Size(281, 30);
-            this.txt_CondicionPago.TabIndex = 55;
+            this.txt_CondicionPago.TabIndex = 3;
             // 
             // cmb_cliente
             // 
