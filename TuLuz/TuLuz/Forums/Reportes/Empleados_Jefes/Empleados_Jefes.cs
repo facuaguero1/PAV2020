@@ -27,8 +27,8 @@ namespace TuLuz.Forums.Reportes.Empleados_Jefes
         private void Empleados_Jefes_Load(object sender, EventArgs e)
         {
 
-            this.reportViewer1.RefreshReport();
-            this.reportViewer1.RefreshReport();
+            this.rv_listadoEmpleados_Jefes.RefreshReport();
+            this.rv_listadoEmpleados_Jefes.RefreshReport();
         }
 
         private void reportViewer1_Load(object sender, EventArgs e)
@@ -36,9 +36,37 @@ namespace TuLuz.Forums.Reportes.Empleados_Jefes
 
         }
 
+        //private DataTable Todos_los_Empleados()
+        private DataTable Es_Empleado_Jefe_Supervisor()
+        {
+            {
+                //Tabla = Empleados.Todos_los_Empleados();
+                Tabla = Empleados.Es_Empleado_Jefe_Supervisor();
+            }
+            return Tabla;
+        }
+
+        private void CargarInforme(DataTable Tabla)
+        {
+
+            ReportDataSource Datos = new ReportDataSource("DataSet1", Tabla);
+            rv_listadoEmpleados_Jefes.LocalReport.ReportEmbeddedResource = "TuLuz.Forums.Reportes.Empleados_Jefes.ReporteEmpleados_Jefes.rdlc";
+            rv_listadoEmpleados_Jefes.LocalReport.DataSources.Clear();
+            rv_listadoEmpleados_Jefes.LocalReport.DataSources.Add(Datos);
+            rv_listadoEmpleados_Jefes.RefreshReport();
+        }
+
         private void btn_cancelar_Click(object sender, EventArgs e)
         {
             this.Close();
+        }
+
+        private void btn_buscar_Click(object sender, EventArgs e)
+        {
+            DataTable Tabla = new DataTable();
+            //Tabla = Todos_los_Empleados();
+            Tabla = Es_Empleado_Jefe_Supervisor();
+            CargarInforme(Tabla);
         }
     }
 }

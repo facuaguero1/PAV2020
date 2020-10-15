@@ -33,7 +33,17 @@ namespace TuLuz.Negocio
             DataTable tabla = new DataTable();
             tabla = _BD.Consulta(sql);
             return tabla;
+
         }
+        public DataTable Es_Empleado_Jefe_Supervisor()
+        {
+            string sql = "SELECT j.tipoDoc, j.numDoc, j.nombre, j.apellido, j. direccion , j.telefono FROM empleados e join empleados j ON (e.numDocJefe = j.numDoc)";
+            DataTable tabla = new DataTable();
+            tabla = _BD.Consulta(sql);
+            return tabla;
+
+        }
+
         public DataTable Buscar_Empleados(string doc)
         {
             string sql = "SELECT * FROM empleados WHERE numDoc like '%" + doc.Trim() + "%'";

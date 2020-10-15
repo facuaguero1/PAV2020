@@ -404,7 +404,7 @@
       <Line Name="Line1">
         <Top>1.90182cm</Top>
         <Height>0cm</Height>
-        <Width>19.51948cm</Width>
+        <Width>21.34511cm</Width>
         <ZIndex>2</ZIndex>
         <Style>
           <Border>
@@ -415,7 +415,7 @@
       <Line Name="Line2">
         <Top>2.62474cm</Top>
         <Height>0cm</Height>
-        <Width>19.51948cm</Width>
+        <Width>21.34511cm</Width>
         <ZIndex>3</ZIndex>
         <Style>
           <Border>
@@ -424,10 +424,10 @@
         </Style>
       </Line>
     </ReportItems>
-    <Height>2.67708in</Height>
+    <Height>3.375in</Height>
     <Style />
   </Body>
-  <Width>7.68483in</Width>
+  <Width>8.40358in</Width>
   <Page>
     <PageHeight>29.7cm</PageHeight>
     <PageWidth>21cm</PageWidth>

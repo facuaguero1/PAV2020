@@ -79,6 +79,16 @@
       <SubType>Component</SubType>
     </Compile>
     <Compile Include="Clases\TratamientosEspeciales.cs" />
+    <Compile Include="DATABASE_TULUZDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DATABASE_TULUZDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DATABASE_TULUZDataSet1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DATABASE_TULUZDataSet1.xsd</DependentUpon>
+    </Compile>
     <Compile Include="Forums\Barrios\AltaBarrio.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -126,6 +136,17 @@
     </Compile>
     <Compile Include="Forums\Clientes\ModificarCliente.Designer.cs">
       <DependentUpon>ModificarCliente.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forums\Reportes\Empleados_Jefes\Empleados_Jefes.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forums\Reportes\Empleados_Jefes\Empleados_Jefes.Designer.cs">
+      <DependentUpon>Empleados_Jefes.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forums\Reportes\Empleados_Jefes\ReporteEmpleados_Jefe.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ReporteEmpleados_Jefe.xsd</DependentUpon>
     </Compile>
     <Compile Include="Forums\Reportes\Producto_Equivalente\DS_Reporte_Producto_Equivalente.Designer.cs">
       <AutoGen>True</AutoGen>
@@ -428,6 +449,10 @@
     <EmbeddedResource Include="Forums\Clientes\ModificarCliente.resx">
       <DependentUpon>ModificarCliente.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Forums\Reportes\Empleados_Jefes\Empleados_Jefes.resx">
+      <DependentUpon>Empleados_Jefes.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forums\Reportes\Empleados_Jefes\ReporteEmpleados_Jefes.rdlc" />
     <EmbeddedResource Include="Forums\Reportes\PedidosXEmpleados\PedidosXEmpleado.resx">
       <DependentUpon>PedidosXEmpleado.cs</DependentUpon>
     </EmbeddedResource>
@@ -555,6 +580,39 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
+    <None Include="DATABASE_TULUZDataSet.xsc">
+      <DependentUpon>DATABASE_TULUZDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="DATABASE_TULUZDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DATABASE_TULUZDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="DATABASE_TULUZDataSet.xss">
+      <DependentUpon>DATABASE_TULUZDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="DATABASE_TULUZDataSet1.xsc">
+      <DependentUpon>DATABASE_TULUZDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="DATABASE_TULUZDataSet1.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DATABASE_TULUZDataSet1.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="DATABASE_TULUZDataSet1.xss">
+      <DependentUpon>DATABASE_TULUZDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="Forums\Reportes\Empleados_Jefes\ReporteEmpleados_Jefe.xsc">
+      <DependentUpon>ReporteEmpleados_Jefe.xsd</DependentUpon>
+    </None>
+    <None Include="Forums\Reportes\Empleados_Jefes\ReporteEmpleados_Jefe.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>ReporteEmpleados_Jefe.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="Forums\Reportes\Empleados_Jefes\ReporteEmpleados_Jefe.xss">
+      <DependentUpon>ReporteEmpleados_Jefe.xsd</DependentUpon>
+    </None>
     <None Include="Forums\Reportes\Producto_Equivalente\DS_Reporte_Producto_Equivalente.xsc">
       <DependentUpon>DS_Reporte_Producto_Equivalente.xsd</DependentUpon>
     </None>

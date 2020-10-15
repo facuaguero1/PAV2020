@@ -771,3 +771,4 @@ C:\Users\PC\Documents\GitHub\PAV2020\TuLuz\TuLuz\obj\Debug\TuLuz.csproj.CoreComp
 C:\Users\PC\Documents\GitHub\PAV2020\TuLuz\TuLuz\obj\Debug\TuLuz.csproj.CopyComplete
 C:\Users\PC\Documents\GitHub\PAV2020\TuLuz\TuLuz\obj\Debug\TuLuz.exe
 C:\Users\PC\Documents\GitHub\PAV2020\TuLuz\TuLuz\obj\Debug\TuLuz.pdb
+C:\Users\PC\Documents\GitHub\PAV2020\TuLuz\TuLuz\obj\Debug\TuLuz.Forums.Reportes.Empleados_Jefes.Empleados_Jefes.resources
