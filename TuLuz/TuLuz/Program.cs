@@ -16,11 +16,11 @@ namespace TuLuz
         [STAThread]
         static void Main()
         {
-            //Application.EnableVisualStyles();
-            //Application.SetCompatibleTextRenderingDefault(false);
-            //Application.Run(new Principal());
+            Application.EnableVisualStyles();
+            Application.SetCompatibleTextRenderingDefault(false);
+            Application.Run(new Principal());
             //Application.Run(new ModificarCliente() { cuit = "555"});
-            Application.Run(new Empleados_Jefes());
+            
 
         }
     }
