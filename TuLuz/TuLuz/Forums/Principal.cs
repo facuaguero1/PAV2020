@@ -427,5 +427,10 @@ namespace TuLuz
         {
             AbrirFormularioSubMenu(new CotizacionesXEstado());
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            AbrirFormularioSubMenu(new ProductoXPedidos());
+        }
     }
 }

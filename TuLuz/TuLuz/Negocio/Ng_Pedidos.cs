@@ -120,6 +120,16 @@ namespace TuLuz.Negocio
             tabla = _BD.Consulta(sql);
             return tabla;
         }
+
+        public EstructuraComboBox EstructuraCombo()
+        {
+            EstructuraComboBox EC = new EstructuraComboBox();
+            EC.Display = "numeroPedido";
+            EC.Value = "numeroPedido";
+            EC.Sql = "SELECT * FROM Pedidos";
+            EC.Tabla = _BD.Consulta(EC.Sql);
+            return EC;
+        }
     }
 }
 

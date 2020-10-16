@@ -166,6 +166,17 @@
     <Compile Include="Forums\Reportes\PedidosXEmpleados\PedidosXEmpleado.Designer.cs">
       <DependentUpon>PedidosXEmpleado.cs</DependentUpon>
     </Compile>
+    <Compile Include="Forums\Reportes\ProductosXPedidos\ProductosXPedidos.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ProductosXPedidos.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Forums\Reportes\ProductosXPedidos\ProductoXPedidos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forums\Reportes\ProductosXPedidos\ProductoXPedidos.Designer.cs">
+      <DependentUpon>ProductoXPedidos.cs</DependentUpon>
+    </Compile>
     <Compile Include="Forums\Reportes\Producto_Equivalente\DS_Reporte_Producto_Equivalente.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -480,6 +491,10 @@
       <DependentUpon>Pedido_X_2Fechas.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forums\Reportes\Pedido_Entre_Fechas\ReportePedidoXFecha.rdlc" />
+    <EmbeddedResource Include="Forums\Reportes\ProductosXPedidos\ProductoXPedidos.resx">
+      <DependentUpon>ProductoXPedidos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forums\Reportes\ProductosXPedidos\ReporteProductoXPedidos.rdlc" />
     <EmbeddedResource Include="Forums\Reportes\Producto_Equivalente\ProductoEquivalente.resx">
       <DependentUpon>ProductoEquivalente.cs</DependentUpon>
     </EmbeddedResource>
@@ -632,6 +647,17 @@
     </None>
     <None Include="Forums\Reportes\Empleados_Jefes\ReporteEmpleados_Jefe.xss">
       <DependentUpon>ReporteEmpleados_Jefe.xsd</DependentUpon>
+    </None>
+    <None Include="Forums\Reportes\ProductosXPedidos\ProductosXPedidos.xsc">
+      <DependentUpon>ProductosXPedidos.xsd</DependentUpon>
+    </None>
+    <None Include="Forums\Reportes\ProductosXPedidos\ProductosXPedidos.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>ProductosXPedidos.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="Forums\Reportes\ProductosXPedidos\ProductosXPedidos.xss">
+      <DependentUpon>ProductosXPedidos.xsd</DependentUpon>
     </None>
     <None Include="Forums\Reportes\Producto_Equivalente\DS_Reporte_Producto_Equivalente.xsc">
       <DependentUpon>DS_Reporte_Producto_Equivalente.xsd</DependentUpon>

@@ -775,3 +775,9 @@ C:\Users\PC\Documents\GitHub\PAV2020\TuLuz\TuLuz\obj\Debug\TuLuz.Forums.Reportes
 C:\Users\marti\OneDrive\Documentos\GitHub\PAV2020\TuLuz\TuLuz\obj\Debug\TuLuz.Forums.Reportes.Empleados_Jefes.Empleados_Jefes.resources
 C:\Users\marti\OneDrive\Documentos\GitHub\PAV2020\TuLuz\TuLuz\obj\Debug\TuLuz.Forums.CotizacionesXEmpleados.resources
 C:\Users\marti\OneDrive\Documentos\GitHub\PAV2020\TuLuz\TuLuz\obj\Debug\TuLuz.Forums.Reportes.CotizacionesXEstado.CotizacionesXEstado.resources
+C:\Users\Fabri\Documents\GitHub\PAV2020\TuLuz\TuLuz\obj\Debug\TuLuz.Clases.LabelText01.resources
+C:\Users\Fabri\Documents\GitHub\PAV2020\TuLuz\TuLuz\obj\Debug\TuLuz.Forums.CotizacionesXEmpleados.resources
+C:\Users\Fabri\Documents\GitHub\PAV2020\TuLuz\TuLuz\obj\Debug\TuLuz.Forums.Reportes.CotizacionesXEstado.CotizacionesXEstado.resources
+C:\Users\Fabri\Documents\GitHub\PAV2020\TuLuz\TuLuz\obj\Debug\TuLuz.Forums.Reportes.Empleados_Jefes.Empleados_Jefes.resources
+C:\Users\Fabri\Documents\GitHub\PAV2020\TuLuz\TuLuz\obj\Debug\TuLuz.Forums.ProductoXPedidos.resources
+C:\Users\Fabri\Documents\GitHub\PAV2020\TuLuz\TuLuz\obj\Debug\TuLuz.Forums.ProductoEquivalente.resources

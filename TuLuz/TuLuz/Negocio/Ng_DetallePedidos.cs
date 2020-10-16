@@ -35,5 +35,16 @@ namespace TuLuz.Negocio
             _BD.Borrar(sqlDelete);
         }
 
+        public DataTable  PedidosXProducto(string cod)
+        {
+            return _BD.Consulta("SELECT DetallePedido.*, Productos.nombre FROM DetallePedido, Productos WHERE numeroPedido = " + cod+ " AND DetallePedido.codigoProducto = Productos.codProducto ");
+        }
+
+        public DataTable TodosLosPedidosXProducto()
+        {
+            return _BD.Consulta("SELECT DetallePedido.*, Productos.nombre FROM DetallePedido, Productos WHERE DetallePedido.codigoProducto = Productos.codProducto");
+        }
+
+
     }
 }
