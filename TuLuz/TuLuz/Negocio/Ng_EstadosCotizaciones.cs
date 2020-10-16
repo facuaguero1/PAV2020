@@ -77,6 +77,16 @@ namespace TuLuz.Negocio
             return EC;
 
         }
+        public EstructuraComboBox EstructuraComboxListado()
+        {
+            EstructuraComboBox EC = new EstructuraComboBox();
+            EC.Display = "descripcion";
+            EC.Value = "codEstado";
+            EC.Sql = "SELECT * FROM EstadosCotizaciones";
+            EC.Tabla = _BD.Consulta(EC.Sql);
+            return EC;
+        }
     }
+
 }
 

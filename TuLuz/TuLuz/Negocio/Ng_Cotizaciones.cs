@@ -82,7 +82,20 @@ class Ng_Cotizaciones
         tabla = _BD.Consulta(sql);
         return tabla.Rows[0][0].ToString();
     }
-
+    public DataTable Buscar_CotizacionPorEmpleado(string codigo)
+    {
+        string sql = "SELECT * FROM Cotizaciones WHERE numDocVendedor = " + codigo;
+        DataTable tabla = new DataTable();
+        tabla = _BD.Consulta(sql);
+        return tabla;
+    }
+    public DataTable Buscar_CotizacionPorEstado(string codigo)
+    {
+        string sql = "SELECT * FROM Cotizaciones WHERE codEstadoCotizacion = " + codigo;
+        DataTable tabla = new DataTable();
+        tabla = _BD.Consulta(sql);
+        return tabla;
+    }
     public String TraerDia(string doc)
     {
         string sql = "SELECT DAY(fecha) FROM Cotizaciones WHERE numeroCotizacion =" + doc;

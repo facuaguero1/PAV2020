@@ -127,6 +127,28 @@
     <Compile Include="Forums\Clientes\ModificarCliente.Designer.cs">
       <DependentUpon>ModificarCliente.cs</DependentUpon>
     </Compile>
+    <Compile Include="Forums\Reportes\CotizacionesXEmpleado\CotizacionesXEmpleado.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forums\Reportes\CotizacionesXEmpleado\CotizacionesXEmpleado.Designer.cs">
+      <DependentUpon>CotizacionesXEmpleado.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forums\Reportes\CotizacionesXEmpleado\DataCotizacionesXEmpleado.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DataCotizacionesXEmpleado.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Forums\Reportes\CotizacionesXEstado\CotizacionesXEstado.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forums\Reportes\CotizacionesXEstado\CotizacionesXEstado.Designer.cs">
+      <DependentUpon>CotizacionesXEstado.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forums\Reportes\CotizacionesXEstado\DataCotizacionesXEstado.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DataCotizacionesXEstado.xsd</DependentUpon>
+    </Compile>
     <Compile Include="Forums\Reportes\Empleados_Jefes\Empleados_Jefes.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -138,16 +160,16 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>ReporteEmpleados_Jefe.xsd</DependentUpon>
     </Compile>
-    <Compile Include="Forums\Reportes\Producto_Equivalente\DS_Reporte_Producto_Equivalente.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>DS_Reporte_Producto_Equivalente.xsd</DependentUpon>
-    </Compile>
     <Compile Include="Forums\Reportes\PedidosXEmpleados\PedidosXEmpleado.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Forums\Reportes\PedidosXEmpleados\PedidosXEmpleado.Designer.cs">
       <DependentUpon>PedidosXEmpleado.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forums\Reportes\Producto_Equivalente\DS_Reporte_Producto_Equivalente.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DS_Reporte_Producto_Equivalente.xsd</DependentUpon>
     </Compile>
     <Compile Include="Forums\Reportes\PedidosXEmpleados\PedidosXEmpleados.Designer.cs">
       <AutoGen>True</AutoGen>
@@ -439,6 +461,13 @@
     <EmbeddedResource Include="Forums\Clientes\ModificarCliente.resx">
       <DependentUpon>ModificarCliente.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Forums\Reportes\CotizacionesXEmpleado\CotizacionesXEmpleado.resx">
+      <DependentUpon>CotizacionesXEmpleado.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forums\Reportes\CotizacionesXEstado\CotizacionesXEstado.resx">
+      <DependentUpon>CotizacionesXEstado.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forums\Reportes\CotizacionesXEstado\ReporteCotizacionesXEstado.rdlc" />
     <EmbeddedResource Include="Forums\Reportes\Empleados_Jefes\Empleados_Jefes.resx">
       <DependentUpon>Empleados_Jefes.cs</DependentUpon>
     </EmbeddedResource>
@@ -455,6 +484,7 @@
       <DependentUpon>ProductoEquivalente.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forums\Reportes\Producto_Equivalente\Reporte_Producto_Equivalente.rdlc" />
+    <EmbeddedResource Include="Forums\Reportes\CotizacionesXEmpleado\reporteCotizacionesXEmpleado.rdlc" />
     <EmbeddedResource Include="Forums\TipoDocs\AltaTipoDocs.resx">
       <DependentUpon>AltaTipoDocs.cs</DependentUpon>
     </EmbeddedResource>
@@ -570,6 +600,28 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
+    <None Include="Forums\Reportes\CotizacionesXEmpleado\DataCotizacionesXEmpleado.xsc">
+      <DependentUpon>DataCotizacionesXEmpleado.xsd</DependentUpon>
+    </None>
+    <None Include="Forums\Reportes\CotizacionesXEmpleado\DataCotizacionesXEmpleado.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DataCotizacionesXEmpleado.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="Forums\Reportes\CotizacionesXEmpleado\DataCotizacionesXEmpleado.xss">
+      <DependentUpon>DataCotizacionesXEmpleado.xsd</DependentUpon>
+    </None>
+    <None Include="Forums\Reportes\CotizacionesXEstado\DataCotizacionesXEstado.xsc">
+      <DependentUpon>DataCotizacionesXEstado.xsd</DependentUpon>
+    </None>
+    <None Include="Forums\Reportes\CotizacionesXEstado\DataCotizacionesXEstado.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DataCotizacionesXEstado.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="Forums\Reportes\CotizacionesXEstado\DataCotizacionesXEstado.xss">
+      <DependentUpon>DataCotizacionesXEstado.xsd</DependentUpon>
+    </None>
     <None Include="Forums\Reportes\Empleados_Jefes\ReporteEmpleados_Jefe.xsc">
       <DependentUpon>ReporteEmpleados_Jefe.xsd</DependentUpon>
     </None>
@@ -677,5 +729,6 @@
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

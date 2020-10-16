@@ -772,3 +772,6 @@ C:\Users\PC\Documents\GitHub\PAV2020\TuLuz\TuLuz\obj\Debug\TuLuz.csproj.CopyComp
 C:\Users\PC\Documents\GitHub\PAV2020\TuLuz\TuLuz\obj\Debug\TuLuz.exe
 C:\Users\PC\Documents\GitHub\PAV2020\TuLuz\TuLuz\obj\Debug\TuLuz.pdb
 C:\Users\PC\Documents\GitHub\PAV2020\TuLuz\TuLuz\obj\Debug\TuLuz.Forums.Reportes.Empleados_Jefes.Empleados_Jefes.resources
+C:\Users\marti\OneDrive\Documentos\GitHub\PAV2020\TuLuz\TuLuz\obj\Debug\TuLuz.Forums.Reportes.Empleados_Jefes.Empleados_Jefes.resources
+C:\Users\marti\OneDrive\Documentos\GitHub\PAV2020\TuLuz\TuLuz\obj\Debug\TuLuz.Forums.CotizacionesXEmpleados.resources
+C:\Users\marti\OneDrive\Documentos\GitHub\PAV2020\TuLuz\TuLuz\obj\Debug\TuLuz.Forums.Reportes.CotizacionesXEstado.CotizacionesXEstado.resources

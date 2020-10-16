@@ -13,7 +13,7 @@ using TuLuz.Forums.Provincias;
 using TuLuz.Clases;
 using TuLuz.Negocio;
 using TuLuz.Negocio.EstructuraNegocios;
-
+using TuLuz.Forums.Reportes.CotizacionesXEstado;
 
 namespace TuLuz
 {
@@ -416,6 +416,16 @@ namespace TuLuz
         private void btn_Productos_Equivalentes_Click(object sender, EventArgs e)
         {
             AbrirFormularioSubMenu(new ProductoEquivalente());
+        }
+
+        private void btn_CotzEmpleado_Click(object sender, EventArgs e)
+        {
+            AbrirFormularioSubMenu(new CotizacionesXEmpleados());
+        }
+
+        private void btn_CotzXEst_Click(object sender, EventArgs e)
+        {
+            AbrirFormularioSubMenu(new CotizacionesXEstado());
         }
     }
 }
