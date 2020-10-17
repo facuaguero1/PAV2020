@@ -460,9 +460,10 @@
             this.button45.Padding = new System.Windows.Forms.Padding(35, 0, 0, 0);
             this.button45.Size = new System.Drawing.Size(223, 33);
             this.button45.TabIndex = 6;
-            this.button45.Text = "button45";
+            this.button45.Text = "Producto Entre Precios";
             this.button45.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.button45.UseVisualStyleBackColor = true;
+            this.button45.Click += new System.EventHandler(this.button45_Click);
             // 
             // button1
             // 
