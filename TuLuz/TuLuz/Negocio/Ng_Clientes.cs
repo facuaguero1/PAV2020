@@ -116,6 +116,16 @@ namespace TuLuz.Negocio
             EC.Tabla = _BD.Consulta(EC.Sql);
             return EC;
         }
+
+        public EstructuraComboBox EstructuraComboxListado()
+        {
+            EstructuraComboBox EC = new EstructuraComboBox();
+            EC.Display = "nombre";
+            EC.Value = "cuitCliente";
+            EC.Sql = "SELECT * FROM Cliente";
+            EC.Tabla = _BD.Consulta(EC.Sql);
+            return EC;
+        }
     }
     
 }

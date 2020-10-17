@@ -14,6 +14,7 @@ using TuLuz.Clases;
 using TuLuz.Negocio;
 using TuLuz.Negocio.EstructuraNegocios;
 using TuLuz.Forums.Reportes.CotizacionesXEstado;
+using TuLuz.Forums.Reportes.PedidosXClientes;
 
 namespace TuLuz
 {
@@ -436,6 +437,11 @@ namespace TuLuz
         private void button45_Click(object sender, EventArgs e)
         {
             AbrirFormularioSubMenu(new ProductoXrangoPrecio());
+        }
+
+        private void button44_Click(object sender, EventArgs e)
+        {
+            AbrirFormularioSubMenu(new PedidosXCliente());
         }
     }
 }

@@ -160,6 +160,17 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>ReporteEmpleados_Jefe.xsd</DependentUpon>
     </Compile>
+    <Compile Include="Forums\Reportes\PedidosXClientes\PedidosXCliente.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forums\Reportes\PedidosXClientes\PedidosXCliente.Designer.cs">
+      <DependentUpon>PedidosXCliente.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forums\Reportes\PedidosXClientes\PedidosXClientes1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>PedidosXClientes.xsd</DependentUpon>
+    </Compile>
     <Compile Include="Forums\Reportes\PedidosXEmpleados\PedidosXEmpleado.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -494,6 +505,10 @@
       <DependentUpon>Empleados_Jefes.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forums\Reportes\Empleados_Jefes\ReporteEmpleados_Jefes.rdlc" />
+    <EmbeddedResource Include="Forums\Reportes\PedidosXClientes\PedidosXCliente.resx">
+      <DependentUpon>PedidosXCliente.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forums\Reportes\PedidosXClientes\PedidosXClientes.rdlc" />
     <EmbeddedResource Include="Forums\Reportes\PedidosXEmpleados\PedidosXEmpleado.resx">
       <DependentUpon>PedidosXEmpleado.cs</DependentUpon>
     </EmbeddedResource>
@@ -662,6 +677,16 @@
     </None>
     <None Include="Forums\Reportes\Empleados_Jefes\ReporteEmpleados_Jefe.xss">
       <DependentUpon>ReporteEmpleados_Jefe.xsd</DependentUpon>
+    </None>
+    <None Include="Forums\Reportes\PedidosXClientes\PedidosXClientes.xsc">
+      <DependentUpon>PedidosXClientes.xsd</DependentUpon>
+    </None>
+    <None Include="Forums\Reportes\PedidosXClientes\PedidosXClientes.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>PedidosXClientes1.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="Forums\Reportes\PedidosXClientes\PedidosXClientes.xss">
+      <DependentUpon>PedidosXClientes.xsd</DependentUpon>
     </None>
     <None Include="Forums\Reportes\Productos con rango de precios\ProductoXprecio.xsc">
       <DependentUpon>ProductoXprecio.xsd</DependentUpon>

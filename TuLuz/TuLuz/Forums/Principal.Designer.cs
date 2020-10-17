@@ -444,9 +444,10 @@
             this.button44.Padding = new System.Windows.Forms.Padding(35, 0, 0, 0);
             this.button44.Size = new System.Drawing.Size(223, 33);
             this.button44.TabIndex = 7;
-            this.button44.Text = "button44";
+            this.button44.Text = "Pedidos por Clientes";
             this.button44.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.button44.UseVisualStyleBackColor = true;
+            this.button44.Click += new System.EventHandler(this.button44_Click);
             // 
             // button45
             // 

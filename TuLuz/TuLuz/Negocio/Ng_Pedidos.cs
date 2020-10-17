@@ -121,6 +121,14 @@ namespace TuLuz.Negocio
             return tabla;
         }
 
+        public DataTable Buscar_PedidoPorCliente(string codigo)
+        {
+            string sql = "SELECT * FROM Pedidos WHERE cuitCliente = " + codigo;
+            DataTable tabla = new DataTable();
+            tabla = _BD.Consulta(sql);
+            return tabla;
+        }
+
         public EstructuraComboBox EstructuraCombo()
         {
             EstructuraComboBox EC = new EstructuraComboBox();
