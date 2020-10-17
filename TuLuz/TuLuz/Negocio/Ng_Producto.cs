@@ -113,5 +113,12 @@ namespace TuLuz.Negocio
         {
             _BD.CerrarTransaccion();
         }
+        public DataTable BuscarProductoXprecio(string precioMin, string precioMax)
+        {
+            string sql = "SELECT * FROM Productos WHERE precio between " +precioMin + " and " + precioMax;
+            DataTable tabla = new DataTable();
+            tabla = _BD.Consulta(sql);
+            return tabla;
+        }
     }
 }

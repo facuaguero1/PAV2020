@@ -432,5 +432,10 @@ namespace TuLuz
         {
             AbrirFormularioSubMenu(new ProductoXPedidos());
         }
+
+        private void button45_Click(object sender, EventArgs e)
+        {
+            AbrirFormularioSubMenu(new ProductoXrangoPrecio());
+        }
     }
 }
