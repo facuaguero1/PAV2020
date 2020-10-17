@@ -1009,3 +1009,6 @@ C:\Users\matut\Documents\GitHub\PAV2020\TuLuz\TuLuz\obj\Debug\TuLuz.Forums.Repor
 C:\Users\matut\Documents\GitHub\PAV2020\TuLuz\TuLuz\obj\Debug\TuLuz.Forums.Reportes.PedidosXClientes.PedidosXCliente.resources
 C:\Users\matut\Documents\GitHub\PAV2020\TuLuz\TuLuz\obj\Debug\TuLuz.Forums.ProductoXrangoPrecio.resources
 C:\Users\matut\Documents\GitHub\PAV2020\TuLuz\TuLuz\obj\Debug\TuLuz.Forums.ProductoXPedidos.resources
+C:\Users\Pedro\Documents\GitHub\PAV2020\TuLuz\TuLuz\obj\Debug\TuLuz.Forums.Reportes.ClientesXEstado.ClientesXEstado1.resources
+C:\Users\Pedro\Documents\GitHub\PAV2020\TuLuz\TuLuz\obj\Debug\TuLuz.Forums.cotizacionXprecio.resources
+C:\Users\Pedro\Documents\GitHub\PAV2020\TuLuz\TuLuz\obj\Debug\TuLuz.Forums.Reportes.PedidosXClientes.PedidosXCliente.resources

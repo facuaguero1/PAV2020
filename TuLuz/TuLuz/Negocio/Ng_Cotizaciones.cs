@@ -74,7 +74,13 @@ class Ng_Cotizaciones
         EC.Tabla = _BD.Consulta(EC.Sql);
         return EC;
     }
-
+    public DataTable BuscarCotizacionesXprecio(string precioMinimo, string precioMaximo)
+    {
+        string sql = "SELECT * FROM Cotizaciones WHERE precioTotal between " + precioMinimo + " and " + precioMaximo;
+        DataTable tabla = new DataTable();
+        tabla = _BD.Consulta(sql);
+        return tabla;
+    }
     public String TraerMes(string doc)
     {
         string sql = "SELECT MONTH(fecha) FROM Cotizaciones WHERE numeroCotizacion =" + doc;

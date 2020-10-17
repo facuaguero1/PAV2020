@@ -160,6 +160,17 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>DataCotizacionesXEstado.xsd</DependentUpon>
     </Compile>
+    <Compile Include="Forums\Reportes\CotizacionXprecio\cotizacionXprecio.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forums\Reportes\CotizacionXprecio\cotizacionXprecio.Designer.cs">
+      <DependentUpon>cotizacionXprecio.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forums\Reportes\CotizacionXprecio\CotizacionesXprecio.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CotizacionesXprecio.xsd</DependentUpon>
+    </Compile>
     <Compile Include="Forums\Reportes\Empleados_Jefes\Empleados_Jefes.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -516,6 +527,10 @@
       <DependentUpon>CotizacionesXEstado.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forums\Reportes\CotizacionesXEstado\ReporteCotizacionesXEstado.rdlc" />
+    <EmbeddedResource Include="Forums\Reportes\CotizacionXprecio\cotizacionXprecio.resx">
+      <DependentUpon>cotizacionXprecio.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forums\Reportes\CotizacionXprecio\ReporteCotizacionXprecio.rdlc" />
     <EmbeddedResource Include="Forums\Reportes\Empleados_Jefes\Empleados_Jefes.resx">
       <DependentUpon>Empleados_Jefes.cs</DependentUpon>
     </EmbeddedResource>
@@ -693,6 +708,17 @@
     <None Include="Forums\Reportes\CotizacionesXEstado\DataCotizacionesXEstado.xss">
       <DependentUpon>DataCotizacionesXEstado.xsd</DependentUpon>
     </None>
+    <None Include="Forums\Reportes\CotizacionXprecio\CotizacionesXprecio.xsc">
+      <DependentUpon>CotizacionesXprecio.xsd</DependentUpon>
+    </None>
+    <None Include="Forums\Reportes\CotizacionXprecio\CotizacionesXprecio.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>CotizacionesXprecio.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="Forums\Reportes\CotizacionXprecio\CotizacionesXprecio.xss">
+      <DependentUpon>CotizacionesXprecio.xsd</DependentUpon>
+    </None>
     <None Include="Forums\Reportes\Empleados_Jefes\ReporteEmpleados_Jefe.xsc">
       <DependentUpon>ReporteEmpleados_Jefe.xsd</DependentUpon>
     </None>
@@ -832,8 +858,6 @@
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Forums\Reportes\Cotizaciones según Precio\" />
-  </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
