@@ -782,7 +782,7 @@
     </Content>
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="Forums\Reportes\Listado de Productos con rango de precios\" />
+    <Folder Include="Forums\Reportes\Cotizaciones según Precio\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
