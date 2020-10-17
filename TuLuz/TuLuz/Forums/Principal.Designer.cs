@@ -428,9 +428,10 @@
             this.button43.Padding = new System.Windows.Forms.Padding(35, 0, 0, 0);
             this.button43.Size = new System.Drawing.Size(223, 33);
             this.button43.TabIndex = 8;
-            this.button43.Text = "button43";
+            this.button43.Text = "Clientes por Estado";
             this.button43.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.button43.UseVisualStyleBackColor = true;
+            this.button43.Click += new System.EventHandler(this.button43_Click);
             // 
             // button44
             // 

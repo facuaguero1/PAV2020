@@ -127,6 +127,17 @@
     <Compile Include="Forums\Clientes\ModificarCliente.Designer.cs">
       <DependentUpon>ModificarCliente.cs</DependentUpon>
     </Compile>
+    <Compile Include="Forums\Reportes\ClientesXEstado\ClientesXEstado1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forums\Reportes\ClientesXEstado\ClientesXEstado1.Designer.cs">
+      <DependentUpon>ClientesXEstado1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forums\Reportes\ClientesXEstado\DataClientesXEstado.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DataClientesXEstado.xsd</DependentUpon>
+    </Compile>
     <Compile Include="Forums\Reportes\CotizacionesXEmpleado\CotizacionesXEmpleado.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -494,6 +505,10 @@
     <EmbeddedResource Include="Forums\Clientes\ModificarCliente.resx">
       <DependentUpon>ModificarCliente.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Forums\Reportes\ClientesXEstado\ClientesXEstado.rdlc" />
+    <EmbeddedResource Include="Forums\Reportes\ClientesXEstado\ClientesXEstado1.resx">
+      <DependentUpon>ClientesXEstado1.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Forums\Reportes\CotizacionesXEmpleado\CotizacionesXEmpleado.resx">
       <DependentUpon>CotizacionesXEmpleado.cs</DependentUpon>
     </EmbeddedResource>
@@ -645,6 +660,17 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
+    <None Include="Forums\Reportes\ClientesXEstado\DataClientesXEstado.xsc">
+      <DependentUpon>DataClientesXEstado.xsd</DependentUpon>
+    </None>
+    <None Include="Forums\Reportes\ClientesXEstado\DataClientesXEstado.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DataClientesXEstado.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="Forums\Reportes\ClientesXEstado\DataClientesXEstado.xss">
+      <DependentUpon>DataClientesXEstado.xsd</DependentUpon>
+    </None>
     <None Include="Forums\Reportes\CotizacionesXEmpleado\DataCotizacionesXEmpleado.xsc">
       <DependentUpon>DataCotizacionesXEmpleado.xsd</DependentUpon>
     </None>

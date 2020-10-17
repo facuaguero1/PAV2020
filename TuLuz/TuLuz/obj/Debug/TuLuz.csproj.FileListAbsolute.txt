@@ -1001,3 +1001,4 @@ C:\Users\USUARIO\repositorios\PAV2020\TuLuz\TuLuz\bin\Debug\zh-CHT\Microsoft.Rep
 C:\Users\USUARIO\repositorios\PAV2020\TuLuz\TuLuz\bin\Debug\es\Microsoft.VisualStudio.Data.Services.resources.dll
 C:\Users\USUARIO\repositorios\PAV2020\TuLuz\TuLuz\bin\Debug\es\Microsoft.VisualStudio.Data.Core.resources.dll
 C:\Users\USUARIO\repositorios\PAV2020\TuLuz\TuLuz\obj\Debug\TuLuz.csproj.CopyComplete
+C:\Users\USUARIO\repositorios\PAV2020\TuLuz\TuLuz\obj\Debug\TuLuz.Forums.Reportes.ClientesXEstado.ClientesXEstado1.resources

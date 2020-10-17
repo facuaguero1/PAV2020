@@ -15,6 +15,7 @@ using TuLuz.Negocio;
 using TuLuz.Negocio.EstructuraNegocios;
 using TuLuz.Forums.Reportes.CotizacionesXEstado;
 using TuLuz.Forums.Reportes.PedidosXClientes;
+using TuLuz.Forums.Reportes.ClientesXEstado;
 
 namespace TuLuz
 {
@@ -442,6 +443,11 @@ namespace TuLuz
         private void button44_Click(object sender, EventArgs e)
         {
             AbrirFormularioSubMenu(new PedidosXCliente());
+        }
+
+        private void button43_Click(object sender, EventArgs e)
+        {
+            AbrirFormularioSubMenu(new ClientesXEstado1());
         }
     }
 }
