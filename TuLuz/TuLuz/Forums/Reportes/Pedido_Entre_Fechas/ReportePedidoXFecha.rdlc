@@ -94,11 +94,12 @@
                                   <Value>NumeroPedido</Value>
                                   <Style>
                                     <FontWeight>Bold</FontWeight>
-                                    <Color>DarkBlue</Color>
                                   </Style>
                                 </TextRun>
                               </TextRuns>
-                              <Style />
+                              <Style>
+                                <TextAlign>Center</TextAlign>
+                              </Style>
                             </Paragraph>
                           </Paragraphs>
                           <rd:DefaultName>Textbox5</rd:DefaultName>
@@ -107,6 +108,7 @@
                               <Color>LightGrey</Color>
                               <Style>Solid</Style>
                             </Border>
+                            <BackgroundColor>PaleTurquoise</BackgroundColor>
                             <PaddingLeft>2pt</PaddingLeft>
                             <PaddingRight>2pt</PaddingRight>
                             <PaddingTop>2pt</PaddingTop>
@@ -127,11 +129,12 @@
                                   <Value>NumeroCotizacion</Value>
                                   <Style>
                                     <FontWeight>Bold</FontWeight>
-                                    <Color>DarkBlue</Color>
                                   </Style>
                                 </TextRun>
                               </TextRuns>
-                              <Style />
+                              <Style>
+                                <TextAlign>Center</TextAlign>
+                              </Style>
                             </Paragraph>
                           </Paragraphs>
                           <rd:DefaultName>Textbox7</rd:DefaultName>
@@ -140,6 +143,7 @@
                               <Color>LightGrey</Color>
                               <Style>Solid</Style>
                             </Border>
+                            <BackgroundColor>PaleTurquoise</BackgroundColor>
                             <PaddingLeft>2pt</PaddingLeft>
                             <PaddingRight>2pt</PaddingRight>
                             <PaddingTop>2pt</PaddingTop>
@@ -160,11 +164,12 @@
                                   <Value>FechaPedido</Value>
                                   <Style>
                                     <FontWeight>Bold</FontWeight>
-                                    <Color>DarkBlue</Color>
                                   </Style>
                                 </TextRun>
                               </TextRuns>
-                              <Style />
+                              <Style>
+                                <TextAlign>Center</TextAlign>
+                              </Style>
                             </Paragraph>
                             <Paragraph>
                               <TextRuns>
@@ -182,6 +187,7 @@
                               <Color>LightGrey</Color>
                               <Style>Solid</Style>
                             </Border>
+                            <BackgroundColor>PaleTurquoise</BackgroundColor>
                             <PaddingLeft>2pt</PaddingLeft>
                             <PaddingRight>2pt</PaddingRight>
                             <PaddingTop>2pt</PaddingTop>
@@ -202,11 +208,12 @@
                                   <Value>DNI Vendedor</Value>
                                   <Style>
                                     <FontWeight>Bold</FontWeight>
-                                    <Color>DarkBlue</Color>
                                   </Style>
                                 </TextRun>
                               </TextRuns>
-                              <Style />
+                              <Style>
+                                <TextAlign>Center</TextAlign>
+                              </Style>
                             </Paragraph>
                             <Paragraph>
                               <TextRuns>
@@ -224,6 +231,7 @@
                               <Color>LightGrey</Color>
                               <Style>Solid</Style>
                             </Border>
+                            <BackgroundColor>PaleTurquoise</BackgroundColor>
                             <PaddingLeft>2pt</PaddingLeft>
                             <PaddingRight>2pt</PaddingRight>
                             <PaddingTop>2pt</PaddingTop>
@@ -244,11 +252,12 @@
                                   <Value>CondicionPago</Value>
                                   <Style>
                                     <FontWeight>Bold</FontWeight>
-                                    <Color>DarkBlue</Color>
                                   </Style>
                                 </TextRun>
                               </TextRuns>
-                              <Style />
+                              <Style>
+                                <TextAlign>Center</TextAlign>
+                              </Style>
                             </Paragraph>
                           </Paragraphs>
                           <rd:DefaultName>Textbox13</rd:DefaultName>
@@ -257,6 +266,7 @@
                               <Color>LightGrey</Color>
                               <Style>Solid</Style>
                             </Border>
+                            <BackgroundColor>PaleTurquoise</BackgroundColor>
                             <PaddingLeft>2pt</PaddingLeft>
                             <PaddingRight>2pt</PaddingRight>
                             <PaddingTop>2pt</PaddingTop>
@@ -277,11 +287,12 @@
                                   <Value>CuitCliente</Value>
                                   <Style>
                                     <FontWeight>Bold</FontWeight>
-                                    <Color>DarkBlue</Color>
                                   </Style>
                                 </TextRun>
                               </TextRuns>
-                              <Style />
+                              <Style>
+                                <TextAlign>Center</TextAlign>
+                              </Style>
                             </Paragraph>
                             <Paragraph>
                               <TextRuns>
@@ -299,6 +310,7 @@
                               <Color>LightGrey</Color>
                               <Style>Solid</Style>
                             </Border>
+                            <BackgroundColor>PaleTurquoise</BackgroundColor>
                             <PaddingLeft>2pt</PaddingLeft>
                             <PaddingRight>2pt</PaddingRight>
                             <PaddingTop>2pt</PaddingTop>
@@ -325,7 +337,9 @@
                                   <Style />
                                 </TextRun>
                               </TextRuns>
-                              <Style />
+                              <Style>
+                                <TextAlign>Center</TextAlign>
+                              </Style>
                             </Paragraph>
                           </Paragraphs>
                           <rd:DefaultName>numeroPedido</rd:DefaultName>
@@ -355,7 +369,9 @@
                                   <Style />
                                 </TextRun>
                               </TextRuns>
-                              <Style />
+                              <Style>
+                                <TextAlign>Center</TextAlign>
+                              </Style>
                             </Paragraph>
                           </Paragraphs>
                           <rd:DefaultName>numeroCotizacion</rd:DefaultName>
@@ -385,7 +401,9 @@
                                   <Style />
                                 </TextRun>
                               </TextRuns>
-                              <Style />
+                              <Style>
+                                <TextAlign>Center</TextAlign>
+                              </Style>
                             </Paragraph>
                           </Paragraphs>
                           <rd:DefaultName>fechaPedido</rd:DefaultName>
@@ -415,7 +433,9 @@
                                   <Style />
                                 </TextRun>
                               </TextRuns>
-                              <Style />
+                              <Style>
+                                <TextAlign>Center</TextAlign>
+                              </Style>
                             </Paragraph>
                           </Paragraphs>
                           <rd:DefaultName>numDniVendedor</rd:DefaultName>
@@ -445,7 +465,9 @@
                                   <Style />
                                 </TextRun>
                               </TextRuns>
-                              <Style />
+                              <Style>
+                                <TextAlign>Center</TextAlign>
+                              </Style>
                             </Paragraph>
                           </Paragraphs>
                           <rd:DefaultName>condicionPago</rd:DefaultName>
@@ -475,7 +497,9 @@
                                   <Style />
                                 </TextRun>
                               </TextRuns>
-                              <Style />
+                              <Style>
+                                <TextAlign>Center</TextAlign>
+                              </Style>
                             </Paragraph>
                           </Paragraphs>
                           <rd:DefaultName>cuitCliente</rd:DefaultName>
@@ -598,8 +622,9 @@
                       <Value>=Parameters!RP01.Value</Value>
                       <Style>
                         <FontStyle>Italic</FontStyle>
-                        <FontSize>14pt</FontSize>
+                        <FontSize>12pt</FontSize>
                         <FontWeight>Bold</FontWeight>
+                        <TextDecoration>Underline</TextDecoration>
                         <Color>Red</Color>
                       </Style>
                     </TextRun>
@@ -611,7 +636,7 @@
               <Top>2.2316cm</Top>
               <Left>0.86995cm</Left>
               <Height>0.8993cm</Height>
-              <Width>5.01354cm</Width>
+              <Width>7.09965cm</Width>
               <ZIndex>1</ZIndex>
               <Style>
                 <Border>
@@ -633,8 +658,9 @@
                       <Value>=Parameters!RP02.Value</Value>
                       <Style>
                         <FontStyle>Italic</FontStyle>
-                        <FontSize>14pt</FontSize>
+                        <FontSize>12pt</FontSize>
                         <FontWeight>Bold</FontWeight>
+                        <TextDecoration>Underline</TextDecoration>
                         <Color>Red</Color>
                       </Style>
                     </TextRun>
@@ -646,7 +672,7 @@
               <Top>2.2316cm</Top>
               <Left>8.14599cm</Left>
               <Height>0.8993cm</Height>
-              <Width>5.01354cm</Width>
+              <Width>7.87104cm</Width>
               <ZIndex>2</ZIndex>
               <Style>
                 <Border>

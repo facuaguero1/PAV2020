@@ -44,7 +44,7 @@ namespace TuLuz.Forums
             RV_producto_Eq.LocalReport.ReportEmbeddedResource = "TuLuz.Forums.Reportes.Producto_Equivalente.Reporte_Producto_Equivalente.rdlc";
             ReportParameter[] parametros = new ReportParameter[2];
             parametros[0] = new ReportParameter("RP01", cmb_producto.Text.ToString());
-            parametros[1] = new ReportParameter("RP02", "Fecha: " + DateTime.Today.Day.ToString() + "/" + DateTime.Today.Month.ToString() + "/" + DateTime.Today.Year.ToString());
+            parametros[1] = new ReportParameter("RP02", DateTime.Today.Day.ToString() + "/" + DateTime.Today.Month.ToString() + "/" + DateTime.Today.Year.ToString());
             RV_producto_Eq.LocalReport.DataSources.Clear();
             RV_producto_Eq.LocalReport.SetParameters(parametros);
             RV_producto_Eq.LocalReport.DataSources.Add(Datos);

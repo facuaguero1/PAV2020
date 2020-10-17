@@ -76,7 +76,7 @@
                   <Width>2.5cm</Width>
                 </TablixColumn>
                 <TablixColumn>
-                  <Width>2.5cm</Width>
+                  <Width>3.34667cm</Width>
                 </TablixColumn>
               </TablixColumns>
               <TablixRows>
@@ -92,11 +92,15 @@
                             <Paragraph>
                               <TextRuns>
                                 <TextRun>
-                                  <Value>cod Producto</Value>
-                                  <Style />
+                                  <Value>Producto</Value>
+                                  <Style>
+                                    <FontWeight>Bold</FontWeight>
+                                  </Style>
                                 </TextRun>
                               </TextRuns>
-                              <Style />
+                              <Style>
+                                <TextAlign>Center</TextAlign>
+                              </Style>
                             </Paragraph>
                           </Paragraphs>
                           <rd:DefaultName>Textbox2</rd:DefaultName>
@@ -105,6 +109,7 @@
                               <Color>LightGrey</Color>
                               <Style>Solid</Style>
                             </Border>
+                            <BackgroundColor>PaleTurquoise</BackgroundColor>
                             <PaddingLeft>2pt</PaddingLeft>
                             <PaddingRight>2pt</PaddingRight>
                             <PaddingTop>2pt</PaddingTop>
@@ -122,11 +127,15 @@
                             <Paragraph>
                               <TextRuns>
                                 <TextRun>
-                                  <Value>nombre</Value>
-                                  <Style />
+                                  <Value>Nombre</Value>
+                                  <Style>
+                                    <FontWeight>Bold</FontWeight>
+                                  </Style>
                                 </TextRun>
                               </TextRuns>
-                              <Style />
+                              <Style>
+                                <TextAlign>Center</TextAlign>
+                              </Style>
                             </Paragraph>
                           </Paragraphs>
                           <rd:DefaultName>Textbox4</rd:DefaultName>
@@ -135,6 +144,7 @@
                               <Color>LightGrey</Color>
                               <Style>Solid</Style>
                             </Border>
+                            <BackgroundColor>PaleTurquoise</BackgroundColor>
                             <PaddingLeft>2pt</PaddingLeft>
                             <PaddingRight>2pt</PaddingRight>
                             <PaddingTop>2pt</PaddingTop>
@@ -152,11 +162,15 @@
                             <Paragraph>
                               <TextRuns>
                                 <TextRun>
-                                  <Value>precio</Value>
-                                  <Style />
+                                  <Value>Precio</Value>
+                                  <Style>
+                                    <FontWeight>Bold</FontWeight>
+                                  </Style>
                                 </TextRun>
                               </TextRuns>
-                              <Style />
+                              <Style>
+                                <TextAlign>Center</TextAlign>
+                              </Style>
                             </Paragraph>
                           </Paragraphs>
                           <rd:DefaultName>Textbox6</rd:DefaultName>
@@ -165,6 +179,7 @@
                               <Color>LightGrey</Color>
                               <Style>Solid</Style>
                             </Border>
+                            <BackgroundColor>PaleTurquoise</BackgroundColor>
                             <PaddingLeft>2pt</PaddingLeft>
                             <PaddingRight>2pt</PaddingRight>
                             <PaddingTop>2pt</PaddingTop>
@@ -182,11 +197,15 @@
                             <Paragraph>
                               <TextRuns>
                                 <TextRun>
-                                  <Value>cant Stock</Value>
-                                  <Style />
+                                  <Value>Stock</Value>
+                                  <Style>
+                                    <FontWeight>Bold</FontWeight>
+                                  </Style>
                                 </TextRun>
                               </TextRuns>
-                              <Style />
+                              <Style>
+                                <TextAlign>Center</TextAlign>
+                              </Style>
                             </Paragraph>
                           </Paragraphs>
                           <rd:DefaultName>Textbox8</rd:DefaultName>
@@ -195,6 +214,7 @@
                               <Color>LightGrey</Color>
                               <Style>Solid</Style>
                             </Border>
+                            <BackgroundColor>PaleTurquoise</BackgroundColor>
                             <PaddingLeft>2pt</PaddingLeft>
                             <PaddingRight>2pt</PaddingRight>
                             <PaddingTop>2pt</PaddingTop>
@@ -212,11 +232,15 @@
                             <Paragraph>
                               <TextRuns>
                                 <TextRun>
-                                  <Value>cuit Proveedor</Value>
-                                  <Style />
+                                  <Value>Cuit Proveedor</Value>
+                                  <Style>
+                                    <FontWeight>Bold</FontWeight>
+                                  </Style>
                                 </TextRun>
                               </TextRuns>
-                              <Style />
+                              <Style>
+                                <TextAlign>Center</TextAlign>
+                              </Style>
                             </Paragraph>
                           </Paragraphs>
                           <rd:DefaultName>Textbox10</rd:DefaultName>
@@ -225,6 +249,7 @@
                               <Color>LightGrey</Color>
                               <Style>Solid</Style>
                             </Border>
+                            <BackgroundColor>PaleTurquoise</BackgroundColor>
                             <PaddingLeft>2pt</PaddingLeft>
                             <PaddingRight>2pt</PaddingRight>
                             <PaddingTop>2pt</PaddingTop>
@@ -251,7 +276,9 @@
                                   <Style />
                                 </TextRun>
                               </TextRuns>
-                              <Style />
+                              <Style>
+                                <TextAlign>Center</TextAlign>
+                              </Style>
                             </Paragraph>
                           </Paragraphs>
                           <rd:DefaultName>codProducto</rd:DefaultName>
@@ -281,7 +308,9 @@
                                   <Style />
                                 </TextRun>
                               </TextRuns>
-                              <Style />
+                              <Style>
+                                <TextAlign>Center</TextAlign>
+                              </Style>
                             </Paragraph>
                           </Paragraphs>
                           <rd:DefaultName>nombre</rd:DefaultName>
@@ -311,7 +340,9 @@
                                   <Style />
                                 </TextRun>
                               </TextRuns>
-                              <Style />
+                              <Style>
+                                <TextAlign>Center</TextAlign>
+                              </Style>
                             </Paragraph>
                           </Paragraphs>
                           <rd:DefaultName>precio</rd:DefaultName>
@@ -341,7 +372,9 @@
                                   <Style />
                                 </TextRun>
                               </TextRuns>
-                              <Style />
+                              <Style>
+                                <TextAlign>Center</TextAlign>
+                              </Style>
                             </Paragraph>
                           </Paragraphs>
                           <rd:DefaultName>cantStock</rd:DefaultName>
@@ -371,7 +404,9 @@
                                   <Style />
                                 </TextRun>
                               </TextRuns>
-                              <Style />
+                              <Style>
+                                <TextAlign>Center</TextAlign>
+                              </Style>
                             </Paragraph>
                           </Paragraphs>
                           <rd:DefaultName>cuitProveedor</rd:DefaultName>
@@ -415,7 +450,7 @@
             <Top>0.86995cm</Top>
             <Left>1.6637cm</Left>
             <Height>1.2cm</Height>
-            <Width>12.5cm</Width>
+            <Width>13.34667cm</Width>
             <Style>
               <Border>
                 <Style>None</Style>
@@ -423,13 +458,13 @@
             </Style>
           </Tablix>
         </ReportItems>
-        <Height>2in</Height>
+        <Height>1.38542in</Height>
         <Style />
       </Body>
       <Width>6.5in</Width>
       <Page>
         <PageHeader>
-          <Height>2.54cm</Height>
+          <Height>1.86682cm</Height>
           <PrintOnFirstPage>true</PrintOnFirstPage>
           <PrintOnLastPage>true</PrintOnLastPage>
           <ReportItems>
@@ -441,17 +476,23 @@
                   <TextRuns>
                     <TextRun>
                       <Value>Listado de los productos equivalente de: </Value>
-                      <Style />
+                      <Style>
+                        <FontSize>14pt</FontSize>
+                        <FontWeight>Bold</FontWeight>
+                        <TextDecoration>Underline</TextDecoration>
+                      </Style>
                     </TextRun>
                   </TextRuns>
-                  <Style />
+                  <Style>
+                    <TextAlign>Center</TextAlign>
+                  </Style>
                 </Paragraph>
               </Paragraphs>
               <rd:DefaultName>Textbox1</rd:DefaultName>
-              <Top>0.47307cm</Top>
-              <Left>1.9812cm</Left>
-              <Height>0.6cm</Height>
-              <Width>7.04139cm</Width>
+              <Top>0.79057cm</Top>
+              <Left>2.2225cm</Left>
+              <Height>0.94396cm</Height>
+              <Width>10.26931cm</Width>
               <Style>
                 <Border>
                   <Style>None</Style>
@@ -470,16 +511,20 @@
                   <TextRuns>
                     <TextRun>
                       <Value>=Parameters!RP01.Value</Value>
-                      <Style />
+                      <Style>
+                        <FontSize>14pt</FontSize>
+                        <FontWeight>Bold</FontWeight>
+                        <TextDecoration>Underline</TextDecoration>
+                      </Style>
                     </TextRun>
                   </TextRuns>
                   <Style />
                 </Paragraph>
               </Paragraphs>
               <rd:DefaultName>RP01</rd:DefaultName>
-              <Top>0.47307cm</Top>
-              <Left>9.1637cm</Left>
-              <Height>0.6cm</Height>
+              <Top>0.79057cm</Top>
+              <Left>12.31542cm</Left>
+              <Height>0.94396cm</Height>
               <Width>2.5cm</Width>
               <ZIndex>1</ZIndex>
               <Style>
@@ -500,17 +545,19 @@
                   <TextRuns>
                     <TextRun>
                       <Value>=Parameters!RP02.Value</Value>
-                      <Style />
+                      <Style>
+                        <FontSize>11pt</FontSize>
+                        <FontWeight>Bold</FontWeight>
+                      </Style>
                     </TextRun>
                   </TextRuns>
                   <Style />
                 </Paragraph>
               </Paragraphs>
               <rd:DefaultName>RP02</rd:DefaultName>
-              <Top>0.47307cm</Top>
-              <Left>13.64933cm</Left>
+              <Left>13.12016cm</Left>
               <Height>0.6cm</Height>
-              <Width>2.5cm</Width>
+              <Width>2.86067cm</Width>
               <ZIndex>2</ZIndex>
               <Style>
                 <Border>

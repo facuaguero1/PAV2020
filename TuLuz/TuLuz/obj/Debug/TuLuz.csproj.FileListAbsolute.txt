@@ -1002,3 +1002,10 @@ C:\Users\USUARIO\repositorios\PAV2020\TuLuz\TuLuz\bin\Debug\es\Microsoft.VisualS
 C:\Users\USUARIO\repositorios\PAV2020\TuLuz\TuLuz\bin\Debug\es\Microsoft.VisualStudio.Data.Core.resources.dll
 C:\Users\USUARIO\repositorios\PAV2020\TuLuz\TuLuz\obj\Debug\TuLuz.csproj.CopyComplete
 C:\Users\USUARIO\repositorios\PAV2020\TuLuz\TuLuz\obj\Debug\TuLuz.Forums.Reportes.ClientesXEstado.ClientesXEstado1.resources
+C:\Users\matut\Documents\GitHub\PAV2020\TuLuz\TuLuz\obj\Debug\TuLuz.Forums.Reportes.ClientesXEstado.ClientesXEstado1.resources
+C:\Users\matut\Documents\GitHub\PAV2020\TuLuz\TuLuz\obj\Debug\TuLuz.Forums.CotizacionesXEmpleados.resources
+C:\Users\matut\Documents\GitHub\PAV2020\TuLuz\TuLuz\obj\Debug\TuLuz.Forums.Reportes.CotizacionesXEstado.CotizacionesXEstado.resources
+C:\Users\matut\Documents\GitHub\PAV2020\TuLuz\TuLuz\obj\Debug\TuLuz.Forums.Reportes.Empleados_Jefes.Empleados_Jefes.resources
+C:\Users\matut\Documents\GitHub\PAV2020\TuLuz\TuLuz\obj\Debug\TuLuz.Forums.Reportes.PedidosXClientes.PedidosXCliente.resources
+C:\Users\matut\Documents\GitHub\PAV2020\TuLuz\TuLuz\obj\Debug\TuLuz.Forums.ProductoXrangoPrecio.resources
+C:\Users\matut\Documents\GitHub\PAV2020\TuLuz\TuLuz\obj\Debug\TuLuz.Forums.ProductoXPedidos.resources

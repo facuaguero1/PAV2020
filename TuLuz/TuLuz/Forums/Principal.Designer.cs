@@ -115,6 +115,9 @@
             this.panelUsuario = new System.Windows.Forms.Panel();
             this.CerrarSesion = new System.Windows.Forms.Button();
             this.perfil = new System.Windows.Forms.Button();
+            this.button2 = new System.Windows.Forms.Button();
+            this.button3 = new System.Windows.Forms.Button();
+            this.button4 = new System.Windows.Forms.Button();
             this.Panel_Lateral_Izquierdo.SuspendLayout();
             this.Panel_Estadisticas.SuspendLayout();
             this.Panel_Listados.SuspendLayout();
@@ -174,7 +177,7 @@
             this.btn_Exit.FlatAppearance.MouseOverBackColor = System.Drawing.SystemColors.HotTrack;
             this.btn_Exit.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn_Exit.ForeColor = System.Drawing.Color.Gainsboro;
-            this.btn_Exit.Location = new System.Drawing.Point(0, 2535);
+            this.btn_Exit.Location = new System.Drawing.Point(0, 2635);
             this.btn_Exit.Name = "btn_Exit";
             this.btn_Exit.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
             this.btn_Exit.Size = new System.Drawing.Size(223, 45);
@@ -198,7 +201,7 @@
             this.Panel_Estadisticas.Controls.Add(this.button41);
             this.Panel_Estadisticas.Controls.Add(this.button42);
             this.Panel_Estadisticas.Dock = System.Windows.Forms.DockStyle.Top;
-            this.Panel_Estadisticas.Location = new System.Drawing.Point(0, 2195);
+            this.Panel_Estadisticas.Location = new System.Drawing.Point(0, 2295);
             this.Panel_Estadisticas.Name = "Panel_Estadisticas";
             this.Panel_Estadisticas.Size = new System.Drawing.Size(223, 340);
             this.Panel_Estadisticas.TabIndex = 28;
@@ -371,7 +374,7 @@
             this.btn_Estadisticas.FlatAppearance.MouseOverBackColor = System.Drawing.SystemColors.HotTrack;
             this.btn_Estadisticas.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn_Estadisticas.ForeColor = System.Drawing.Color.Gainsboro;
-            this.btn_Estadisticas.Location = new System.Drawing.Point(0, 2150);
+            this.btn_Estadisticas.Location = new System.Drawing.Point(0, 2250);
             this.btn_Estadisticas.Name = "btn_Estadisticas";
             this.btn_Estadisticas.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
             this.btn_Estadisticas.Size = new System.Drawing.Size(223, 45);
@@ -384,6 +387,9 @@
             // Panel_Listados
             // 
             this.Panel_Listados.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(32)))), ((int)(((byte)(39)))));
+            this.Panel_Listados.Controls.Add(this.button4);
+            this.Panel_Listados.Controls.Add(this.button3);
+            this.Panel_Listados.Controls.Add(this.button2);
             this.Panel_Listados.Controls.Add(this.button48);
             this.Panel_Listados.Controls.Add(this.button43);
             this.Panel_Listados.Controls.Add(this.button44);
@@ -397,7 +403,7 @@
             this.Panel_Listados.Dock = System.Windows.Forms.DockStyle.Top;
             this.Panel_Listados.Location = new System.Drawing.Point(0, 1810);
             this.Panel_Listados.Name = "Panel_Listados";
-            this.Panel_Listados.Size = new System.Drawing.Size(223, 340);
+            this.Panel_Listados.Size = new System.Drawing.Size(223, 440);
             this.Panel_Listados.TabIndex = 26;
             // 
             // button48
@@ -1552,6 +1558,54 @@
             this.perfil.UseVisualStyleBackColor = true;
             this.perfil.Click += new System.EventHandler(this.perfil_Click);
             // 
+            // button2
+            // 
+            this.button2.Dock = System.Windows.Forms.DockStyle.Top;
+            this.button2.FlatAppearance.BorderSize = 0;
+            this.button2.FlatAppearance.MouseOverBackColor = System.Drawing.SystemColors.Highlight;
+            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button2.ForeColor = System.Drawing.Color.LightGray;
+            this.button2.Location = new System.Drawing.Point(0, 330);
+            this.button2.Name = "button2";
+            this.button2.Padding = new System.Windows.Forms.Padding(35, 0, 0, 0);
+            this.button2.Size = new System.Drawing.Size(223, 33);
+            this.button2.TabIndex = 10;
+            this.button2.Text = "button2";
+            this.button2.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.button2.UseVisualStyleBackColor = true;
+            // 
+            // button3
+            // 
+            this.button3.Dock = System.Windows.Forms.DockStyle.Top;
+            this.button3.FlatAppearance.BorderSize = 0;
+            this.button3.FlatAppearance.MouseOverBackColor = System.Drawing.SystemColors.Highlight;
+            this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button3.ForeColor = System.Drawing.Color.LightGray;
+            this.button3.Location = new System.Drawing.Point(0, 363);
+            this.button3.Name = "button3";
+            this.button3.Padding = new System.Windows.Forms.Padding(35, 0, 0, 0);
+            this.button3.Size = new System.Drawing.Size(223, 33);
+            this.button3.TabIndex = 11;
+            this.button3.Text = "button3";
+            this.button3.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.button3.UseVisualStyleBackColor = true;
+            // 
+            // button4
+            // 
+            this.button4.Dock = System.Windows.Forms.DockStyle.Top;
+            this.button4.FlatAppearance.BorderSize = 0;
+            this.button4.FlatAppearance.MouseOverBackColor = System.Drawing.SystemColors.Highlight;
+            this.button4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button4.ForeColor = System.Drawing.Color.LightGray;
+            this.button4.Location = new System.Drawing.Point(0, 396);
+            this.button4.Name = "button4";
+            this.button4.Padding = new System.Windows.Forms.Padding(35, 0, 0, 0);
+            this.button4.Size = new System.Drawing.Size(223, 33);
+            this.button4.TabIndex = 12;
+            this.button4.Text = "button4";
+            this.button4.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.button4.UseVisualStyleBackColor = true;
+            // 
             // Principal
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -1673,6 +1727,9 @@
         private System.Windows.Forms.Button perfil;
         private System.Windows.Forms.Button nomEmpleadoLog;
         private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.Button button4;
+        private System.Windows.Forms.Button button3;
+        private System.Windows.Forms.Button button2;
     }
 }
 
