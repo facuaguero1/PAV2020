@@ -5,7 +5,6 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using TuLuz.Forums;
 using TuLuz.Forums.Reportes.Empleados_Jefes;
-using TuLuz.Forums.Reportes.Proveedores_Activos_Inactivos;
 
 namespace TuLuz
 {
@@ -17,7 +16,7 @@ namespace TuLuz
         [STAThread]
         static void Main()
         {
-            
+ 
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
             Application.Run(new Principal());

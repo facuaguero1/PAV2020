@@ -44,6 +44,15 @@ namespace TuLuz.Negocio
 
         }
 
+        public DataTable EsJefeS(string tipo, string doc)
+        {
+            string sql = "SELECT * FROM empleados WHERE numDocJefe like " + doc.Trim() + " AND tipoDocJefe like " + tipo.Trim();
+            DataTable Tabla = new DataTable();
+            Tabla = _BD.Consulta(sql);
+            return Tabla;
+        }
+
+
         public DataTable Buscar_Empleados(string doc)
         {
             string sql = "SELECT * FROM empleados WHERE numDoc like '%" + doc.Trim() + "%'";

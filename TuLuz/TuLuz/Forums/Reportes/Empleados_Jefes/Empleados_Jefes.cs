@@ -37,11 +37,11 @@ namespace TuLuz.Forums.Reportes.Empleados_Jefes
         }
 
         //private DataTable Todos_los_Empleados()
-        private DataTable Es_Empleado_Jefe_Supervisor()
+        private DataTable EsJefeS()
         {
             {
                 //Tabla = Empleados.Todos_los_Empleados();
-                Tabla = Empleados.Es_Empleado_Jefe_Supervisor();
+                Tabla = Empleados.EsJefeS(txt_tipoDoc.Text,txt_numDoc.Text);
             }
             return Tabla;
         }
@@ -65,7 +65,7 @@ namespace TuLuz.Forums.Reportes.Empleados_Jefes
         {
             DataTable Tabla = new DataTable();
             //Tabla = Todos_los_Empleados();
-            Tabla = Es_Empleado_Jefe_Supervisor();
+            Tabla = EsJefeS();
             CargarInforme(Tabla);
         }
     }
