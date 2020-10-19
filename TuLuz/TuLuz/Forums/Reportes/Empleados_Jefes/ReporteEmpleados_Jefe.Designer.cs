@@ -281,7 +281,7 @@ namespace TuLuz.Forums.Reportes.Empleados_Jefes {
             
             private global::System.Data.DataColumn columntipoDoc;
             
-            private global::System.Data.DataColumn columnnroDoc;
+            private global::System.Data.DataColumn columnnumDoc;
             
             private global::System.Data.DataColumn columnnombre;
             
@@ -334,9 +334,9 @@ namespace TuLuz.Forums.Reportes.Empleados_Jefes {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public global::System.Data.DataColumn nroDocColumn {
+            public global::System.Data.DataColumn numDocColumn {
                 get {
-                    return this.columnnroDoc;
+                    return this.columnnumDoc;
                 }
             }
             
@@ -409,11 +409,11 @@ namespace TuLuz.Forums.Reportes.Empleados_Jefes {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public DataTable1Row AddDataTable1Row(string tipoDoc, string nroDoc, string nombre, string direccion, string telefono, string apellido) {
+            public DataTable1Row AddDataTable1Row(string tipoDoc, string numDoc, string nombre, string direccion, string telefono, string apellido) {
                 DataTable1Row rowDataTable1Row = ((DataTable1Row)(this.NewRow()));
                 object[] columnValuesArray = new object[] {
                         tipoDoc,
-                        nroDoc,
+                        numDoc,
                         nombre,
                         direccion,
                         telefono,
@@ -441,7 +441,7 @@ namespace TuLuz.Forums.Reportes.Empleados_Jefes {
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
             internal void InitVars() {
                 this.columntipoDoc = base.Columns["tipoDoc"];
-                this.columnnroDoc = base.Columns["nroDoc"];
+                this.columnnumDoc = base.Columns["numDoc"];
                 this.columnnombre = base.Columns["nombre"];
                 this.columndireccion = base.Columns["direccion"];
                 this.columntelefono = base.Columns["telefono"];
@@ -453,8 +453,8 @@ namespace TuLuz.Forums.Reportes.Empleados_Jefes {
             private void InitClass() {
                 this.columntipoDoc = new global::System.Data.DataColumn("tipoDoc", typeof(string), null, global::System.Data.MappingType.Element);
                 base.Columns.Add(this.columntipoDoc);
-                this.columnnroDoc = new global::System.Data.DataColumn("nroDoc", typeof(string), null, global::System.Data.MappingType.Element);
-                base.Columns.Add(this.columnnroDoc);
+                this.columnnumDoc = new global::System.Data.DataColumn("numDoc", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnnumDoc);
                 this.columnnombre = new global::System.Data.DataColumn("nombre", typeof(string), null, global::System.Data.MappingType.Element);
                 base.Columns.Add(this.columnnombre);
                 this.columndireccion = new global::System.Data.DataColumn("direccion", typeof(string), null, global::System.Data.MappingType.Element);
@@ -621,17 +621,17 @@ namespace TuLuz.Forums.Reportes.Empleados_Jefes {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public string nroDoc {
+            public string numDoc {
                 get {
                     try {
-                        return ((string)(this[this.tableDataTable1.nroDocColumn]));
+                        return ((string)(this[this.tableDataTable1.numDocColumn]));
                     }
                     catch (global::System.InvalidCastException e) {
-                        throw new global::System.Data.StrongTypingException("El valor de la columna \'nroDoc\' de la tabla \'DataTable1\' es DBNull.", e);
+                        throw new global::System.Data.StrongTypingException("El valor de la columna \'numDoc\' de la tabla \'DataTable1\' es DBNull.", e);
                     }
                 }
                 set {
-                    this[this.tableDataTable1.nroDocColumn] = value;
+                    this[this.tableDataTable1.numDocColumn] = value;
                 }
             }
             
@@ -713,14 +713,14 @@ namespace TuLuz.Forums.Reportes.Empleados_Jefes {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public bool IsnroDocNull() {
-                return this.IsNull(this.tableDataTable1.nroDocColumn);
+            public bool IsnumDocNull() {
+                return this.IsNull(this.tableDataTable1.numDocColumn);
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public void SetnroDocNull() {
-                this[this.tableDataTable1.nroDocColumn] = global::System.Convert.DBNull;
+            public void SetnumDocNull() {
+                this[this.tableDataTable1.numDocColumn] = global::System.Convert.DBNull;
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]

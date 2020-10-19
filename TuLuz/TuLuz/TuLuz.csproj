@@ -166,6 +166,9 @@
     <Compile Include="Forums\Reportes\Empleados_Jefes\Empleados_Jefes.Designer.cs">
       <DependentUpon>Empleados_Jefes.cs</DependentUpon>
     </Compile>
+    <Compile Include="Forums\Reportes\Empleados_Jefes\ReporteEmpleados_Jefe.cs">
+      <DependentUpon>ReporteEmpleados_Jefe.xsd</DependentUpon>
+    </Compile>
     <Compile Include="Forums\Reportes\Empleados_Jefes\ReporteEmpleados_Jefe.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>

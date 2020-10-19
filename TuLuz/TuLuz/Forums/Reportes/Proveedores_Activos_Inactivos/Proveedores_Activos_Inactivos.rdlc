@@ -4,23 +4,23 @@
     <ReportItems>
       <Line Name="Line1">
         <Top>1.0287cm</Top>
-        <Left>0cm</Left>
         <Height>0cm</Height>
-        <Width>16.51cm</Width>
+        <Width>18.0975cm</Width>
         <Style>
           <Border>
+            <Color>Red</Color>
             <Style>Solid</Style>
           </Border>
         </Style>
       </Line>
       <Line Name="Line2">
         <Top>1.66687cm</Top>
-        <Left>0cm</Left>
         <Height>0cm</Height>
-        <Width>16.51cm</Width>
+        <Width>18.6525cm</Width>
         <ZIndex>1</ZIndex>
         <Style>
           <Border>
+            <Color>Red</Color>
             <Style>Solid</Style>
           </Border>
         </Style>
@@ -33,15 +33,19 @@
             <TextRuns>
               <TextRun>
                 <Value>Listado de Proveedores Activos y No activos</Value>
-                <Style />
+                <Style>
+                  <Color>Blue</Color>
+                </Style>
               </TextRun>
             </TextRuns>
-            <Style />
+            <Style>
+              <TextAlign>Center</TextAlign>
+            </Style>
           </Paragraph>
         </Paragraphs>
         <rd:DefaultName>Textbox1</rd:DefaultName>
         <Top>0.23495cm</Top>
-        <Left>4.07141cm</Left>
+        <Left>5.19495cm</Left>
         <Height>0.6cm</Height>
         <Width>7.10375cm</Width>
         <ZIndex>2</ZIndex>
@@ -59,19 +63,19 @@
         <TablixBody>
           <TablixColumns>
             <TablixColumn>
-              <Width>2.5cm</Width>
+              <Width>2.611cm</Width>
             </TablixColumn>
             <TablixColumn>
-              <Width>2.5cm</Width>
+              <Width>2.611cm</Width>
             </TablixColumn>
             <TablixColumn>
-              <Width>2.65875cm</Width>
+              <Width>2.76975cm</Width>
             </TablixColumn>
             <TablixColumn>
-              <Width>2.5cm</Width>
+              <Width>2.611cm</Width>
             </TablixColumn>
             <TablixColumn>
-              <Width>2.5cm</Width>
+              <Width>2.611cm</Width>
             </TablixColumn>
           </TablixColumns>
           <TablixRows>
@@ -87,7 +91,7 @@
                         <Paragraph>
                           <TextRuns>
                             <TextRun>
-                              <Value>cuit Proveedor</Value>
+                              <Value>Cuit Proveedor</Value>
                               <Style />
                             </TextRun>
                           </TextRuns>
@@ -117,7 +121,7 @@
                         <Paragraph>
                           <TextRuns>
                             <TextRun>
-                              <Value>razon Social</Value>
+                              <Value>Razon Social</Value>
                               <Style />
                             </TextRun>
                           </TextRuns>
@@ -177,7 +181,7 @@
                         <Paragraph>
                           <TextRuns>
                             <TextRun>
-                              <Value>telefono</Value>
+                              <Value>Telefono</Value>
                               <Style />
                             </TextRun>
                           </TextRuns>
@@ -416,10 +420,10 @@
           </TablixMembers>
         </TablixRowHierarchy>
         <DataSetName>DataSet1</DataSetName>
-        <Top>2.6162cm</Top>
+        <Top>2.21932cm</Top>
         <Left>2.13995cm</Left>
         <Height>1.2cm</Height>
-        <Width>12.65875cm</Width>
+        <Width>13.21375cm</Width>
         <ZIndex>3</ZIndex>
         <Style>
           <Border>
@@ -431,7 +435,7 @@
     <Height>2in</Height>
     <Style />
   </Body>
-  <Width>6.50334in</Width>
+  <Width>7.3435in</Width>
   <Page>
     <PageHeight>29.7cm</PageHeight>
     <PageWidth>21cm</PageWidth>

@@ -63,11 +63,6 @@ namespace TuLuz.Forums.Reportes.Empleados_Jefes
             }
         }
 
-        private void btn_cancelar_Click(object sender, EventArgs e)
-        {
-            this.Close();
-        }
-
         private void btn_buscar_Click(object sender, EventArgs e)
         {
             if (txt_numDoc.Text == "" || txt_tipoDoc.Text == "")
@@ -82,6 +77,11 @@ namespace TuLuz.Forums.Reportes.Empleados_Jefes
                 Tabla = EsJefeS();
                 CargarInforme(Tabla);
             }
+        }
+
+        private void btn_salir_Click(object sender, EventArgs e)
+        {
+            this.Close();
         }
     }
 }

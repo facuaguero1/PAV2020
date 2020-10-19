@@ -29,7 +29,7 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            Microsoft.Reporting.WinForms.ReportDataSource reportDataSource1 = new Microsoft.Reporting.WinForms.ReportDataSource();
+            Microsoft.Reporting.WinForms.ReportDataSource reportDataSource2 = new Microsoft.Reporting.WinForms.ReportDataSource();
             this.DataTable1BindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.RepProveedores_Activos_Inactivos = new TuLuz.Forums.Reportes.Proveedores_Activos_Inactivos.RepProveedores_Activos_Inactivos();
             this.label1 = new System.Windows.Forms.Label();
@@ -56,7 +56,7 @@
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(67, 24);
+            this.label1.Location = new System.Drawing.Point(69, 9);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(620, 33);
             this.label1.TabIndex = 0;
@@ -64,15 +64,15 @@
             // 
             // rv_Proveedores_Activos_NoActivos
             // 
-            reportDataSource1.Name = "DataSet1";
-            reportDataSource1.Value = this.DataTable1BindingSource;
-            this.rv_Proveedores_Activos_NoActivos.LocalReport.DataSources.Add(reportDataSource1);
+            reportDataSource2.Name = "DataSet1";
+            reportDataSource2.Value = this.DataTable1BindingSource;
+            this.rv_Proveedores_Activos_NoActivos.LocalReport.DataSources.Add(reportDataSource2);
             this.rv_Proveedores_Activos_NoActivos.LocalReport.ReportEmbeddedResource = "TuLuz.Forums.Reportes.Proveedores_Activos_Inactivos.Proveedores_Activos_Inactivos" +
     ".rdlc";
-            this.rv_Proveedores_Activos_NoActivos.Location = new System.Drawing.Point(38, 117);
+            this.rv_Proveedores_Activos_NoActivos.Location = new System.Drawing.Point(44, 103);
             this.rv_Proveedores_Activos_NoActivos.Name = "rv_Proveedores_Activos_NoActivos";
             this.rv_Proveedores_Activos_NoActivos.ServerReport.BearerToken = null;
-            this.rv_Proveedores_Activos_NoActivos.Size = new System.Drawing.Size(663, 271);
+            this.rv_Proveedores_Activos_NoActivos.Size = new System.Drawing.Size(685, 271);
             this.rv_Proveedores_Activos_NoActivos.TabIndex = 1;
             // 
             // btn_cancelar
@@ -107,7 +107,7 @@
             // 
             this.checkBoxActivo.AutoSize = true;
             this.checkBoxActivo.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.checkBoxActivo.Location = new System.Drawing.Point(208, 73);
+            this.checkBoxActivo.Location = new System.Drawing.Point(208, 63);
             this.checkBoxActivo.Name = "checkBoxActivo";
             this.checkBoxActivo.Size = new System.Drawing.Size(77, 24);
             this.checkBoxActivo.TabIndex = 55;
@@ -118,7 +118,7 @@
             // 
             this.checkBoxNoActivo.AutoSize = true;
             this.checkBoxNoActivo.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.checkBoxNoActivo.Location = new System.Drawing.Point(394, 73);
+            this.checkBoxNoActivo.Location = new System.Drawing.Point(391, 63);
             this.checkBoxNoActivo.Name = "checkBoxNoActivo";
             this.checkBoxNoActivo.Size = new System.Drawing.Size(104, 24);
             this.checkBoxNoActivo.TabIndex = 56;
