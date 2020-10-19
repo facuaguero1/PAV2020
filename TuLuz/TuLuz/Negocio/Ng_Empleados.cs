@@ -51,6 +51,14 @@ namespace TuLuz.Negocio
             tabla = _BD.Consulta(sql);
             return tabla;
         }
+
+        public DataTable Buscar_Empleados_Jefes(string doc)
+        {
+            string sql = "SELECT * FROM empleados WHERE numDocJefe like '%" + doc.Trim() + "%'";
+            DataTable tabla = new DataTable();
+            tabla = _BD.Consulta(sql);
+            return tabla;
+        }
         public DataTable Buscar_Empleados_Usuario(string usr)
         {
             string sql = "SELECT Empleados.* FROM Empleados, Usuario WHERE  Empleados.numDoc = Usuario.numDocEmpleado AND Usuario.usuario LIKE '" + usr + "'";
