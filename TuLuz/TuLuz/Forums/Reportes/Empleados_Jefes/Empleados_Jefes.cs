@@ -48,12 +48,19 @@ namespace TuLuz.Forums.Reportes.Empleados_Jefes
 
         private void CargarInforme(DataTable Tabla)
         {
-
-            ReportDataSource Datos = new ReportDataSource("DataSet1", Tabla);
-            rv_listadoEmpleados_Jefes.LocalReport.ReportEmbeddedResource = "TuLuz.Forums.Reportes.Empleados_Jefes.ReporteEmpleados_Jefes.rdlc";
-            rv_listadoEmpleados_Jefes.LocalReport.DataSources.Clear();
-            rv_listadoEmpleados_Jefes.LocalReport.DataSources.Add(Datos);
-            rv_listadoEmpleados_Jefes.RefreshReport();
+            if (Tabla.Rows.Count == 0)
+            {
+                MessageBox.Show("No se ha seleccionado un jefe de manera correcta", "Atencion: ", MessageBoxButtons.OK);
+                return;
+            }
+            else
+            {
+                ReportDataSource Datos = new ReportDataSource("DataSet1", Tabla);
+                rv_listadoEmpleados_Jefes.LocalReport.ReportEmbeddedResource = "TuLuz.Forums.Reportes.Empleados_Jefes.ReporteEmpleados_Jefes.rdlc";
+                rv_listadoEmpleados_Jefes.LocalReport.DataSources.Clear();
+                rv_listadoEmpleados_Jefes.LocalReport.DataSources.Add(Datos);
+                rv_listadoEmpleados_Jefes.RefreshReport();
+            }
         }
 
         private void btn_cancelar_Click(object sender, EventArgs e)
@@ -63,10 +70,18 @@ namespace TuLuz.Forums.Reportes.Empleados_Jefes
 
         private void btn_buscar_Click(object sender, EventArgs e)
         {
-            DataTable Tabla = new DataTable();
-            //Tabla = Todos_los_Empleados();
-            Tabla = EsJefeS();
-            CargarInforme(Tabla);
+            if (txt_numDoc.Text == "" || txt_tipoDoc.Text == "")
+            {
+                MessageBox.Show("No se ha insertado el Tipo o Numero de Documento", "Atencion: ", MessageBoxButtons.OK);
+                return;
+            }
+            else
+            {
+                DataTable Tabla = new DataTable();
+                //Tabla 
+                Tabla = EsJefeS();
+                CargarInforme(Tabla);
+            }
         }
     }
 }
