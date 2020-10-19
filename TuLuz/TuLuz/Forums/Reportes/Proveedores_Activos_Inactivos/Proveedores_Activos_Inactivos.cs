@@ -17,7 +17,6 @@ namespace TuLuz.Forums.Reportes.Proveedores_Activos_Inactivos
     public partial class Proveedores_Activos_Inactivos : Form
     {
         Ng_Proveedor Proveedor = new Ng_Proveedor();
-        DataTable Tabla = new DataTable();
 
         public Proveedores_Activos_Inactivos()
         {
@@ -26,35 +25,9 @@ namespace TuLuz.Forums.Reportes.Proveedores_Activos_Inactivos
 
         private void Proveedores_Activos_Inactivos_Load(object sender, EventArgs e)
         {
-
             this.rv_Proveedores_Activos_NoActivos.RefreshReport();
         }
-        private DataTable Todos_los_proveedoresActivos()
-        {
-            {
-                //Tabla = 
-                Tabla = Proveedor.Todos_los_proveedoresActivos();
-            }
-            return Tabla;
-        }
-        private DataTable Todos_los_proveedoresNoActivos()
-        {
-            {
-                //Tabla = 
-                Tabla = Proveedor.Todos_los_proveedoresNoActivos();
-            }
-            return Tabla;
-        }
-
-        private void CargarInforme(DataTable Tabla)
-        {
-
-            ReportDataSource Datos = new ReportDataSource("DataSet1", Tabla);
-            rv_Proveedores_Activos_NoActivos.LocalReport.ReportEmbeddedResource = "TuLuz.Forums.Reportes.Proveedores_Activos_Inactivos.Proveedores_Activos_Inactivos.rdlc";
-            rv_Proveedores_Activos_NoActivos.LocalReport.DataSources.Clear();
-            rv_Proveedores_Activos_NoActivos.LocalReport.DataSources.Add(Datos);
-            rv_Proveedores_Activos_NoActivos.RefreshReport();
-        }
+      
 
         private void btn_cancelar_Click(object sender, EventArgs e)
         {
@@ -63,22 +36,51 @@ namespace TuLuz.Forums.Reportes.Proveedores_Activos_Inactivos
 
         private void btn_buscar_Click(object sender, EventArgs e)
         {
-            DataTable Tabla = new DataTable();
+            DataTable tabla = new DataTable();
 
             //Verificar si estan o no activos
 
             if(checkBoxActivo.Checked == true)
             {
-                Tabla = Todos_los_proveedoresActivos();
+                tabla = Proveedor.Todos_los_proveedoresActivos();
             }
 
             if (checkBoxNoActivo.Checked == true)
             {
-                Tabla = Todos_los_proveedoresNoActivos();
+                tabla = Proveedor.Todos_los_proveedoresNoActivos();
             }
 
+            ReportDataSource Datos = new ReportDataSource("DataSet1", tabla);
+            rv_Proveedores_Activos_NoActivos.LocalReport.ReportEmbeddedResource = "TuLuz.Forums.Reportes.Proveedores_Activos_Inactivos.Proveedores_Activos_Inactivos.rdlc";
 
-            CargarInforme(Tabla);
+            rv_Proveedores_Activos_NoActivos.LocalReport.DataSources.Clear();
+            rv_Proveedores_Activos_NoActivos.LocalReport.DataSources.Add(Datos);
+            rv_Proveedores_Activos_NoActivos.RefreshReport();
         }
+
+        private void btn_buscar_Click_1(object sender, EventArgs e)
+        {
+            DataTable tabla = new DataTable();
+
+            //Verificar si estan o no activos
+
+            if (checkBoxActivo.Checked == true)
+            {
+                tabla = Proveedor.Todos_los_proveedoresActivos();
+            }
+
+            if (checkBoxNoActivo.Checked == true)
+            {
+                tabla = Proveedor.Todos_los_proveedoresNoActivos();
+            }
+
+            ReportDataSource Datos = new ReportDataSource("DataSet1", tabla);
+            rv_Proveedores_Activos_NoActivos.LocalReport.ReportEmbeddedResource = "TuLuz.Forums.Reportes.Proveedores_Activos_Inactivos.Proveedores_Activos_Inactivos.rdlc";
+
+            rv_Proveedores_Activos_NoActivos.LocalReport.DataSources.Clear();
+            rv_Proveedores_Activos_NoActivos.LocalReport.DataSources.Add(Datos);
+            rv_Proveedores_Activos_NoActivos.RefreshReport();
+        }
+
     }
 }

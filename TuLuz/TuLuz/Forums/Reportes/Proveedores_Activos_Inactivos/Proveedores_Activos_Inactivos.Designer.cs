@@ -30,17 +30,27 @@
         {
             this.components = new System.ComponentModel.Container();
             Microsoft.Reporting.WinForms.ReportDataSource reportDataSource1 = new Microsoft.Reporting.WinForms.ReportDataSource();
+            this.DataTable1BindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.RepProveedores_Activos_Inactivos = new TuLuz.Forums.Reportes.Proveedores_Activos_Inactivos.RepProveedores_Activos_Inactivos();
             this.label1 = new System.Windows.Forms.Label();
             this.rv_Proveedores_Activos_NoActivos = new Microsoft.Reporting.WinForms.ReportViewer();
-            this.RepProveedores_Activos_Inactivos = new TuLuz.Forums.Reportes.Proveedores_Activos_Inactivos.RepProveedores_Activos_Inactivos();
-            this.DataTable1BindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.btn_cancelar = new System.Windows.Forms.Button();
             this.btn_buscar = new System.Windows.Forms.Button();
             this.checkBoxActivo = new System.Windows.Forms.CheckBox();
             this.checkBoxNoActivo = new System.Windows.Forms.CheckBox();
-            ((System.ComponentModel.ISupportInitialize)(this.RepProveedores_Activos_Inactivos)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.DataTable1BindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.RepProveedores_Activos_Inactivos)).BeginInit();
             this.SuspendLayout();
+            // 
+            // DataTable1BindingSource
+            // 
+            this.DataTable1BindingSource.DataMember = "DataTable1";
+            this.DataTable1BindingSource.DataSource = this.RepProveedores_Activos_Inactivos;
+            // 
+            // RepProveedores_Activos_Inactivos
+            // 
+            this.RepProveedores_Activos_Inactivos.DataSetName = "RepProveedores_Activos_Inactivos";
+            this.RepProveedores_Activos_Inactivos.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
             // 
             // label1
             // 
@@ -64,16 +74,6 @@
             this.rv_Proveedores_Activos_NoActivos.ServerReport.BearerToken = null;
             this.rv_Proveedores_Activos_NoActivos.Size = new System.Drawing.Size(663, 271);
             this.rv_Proveedores_Activos_NoActivos.TabIndex = 1;
-            // 
-            // RepProveedores_Activos_Inactivos
-            // 
-            this.RepProveedores_Activos_Inactivos.DataSetName = "RepProveedores_Activos_Inactivos";
-            this.RepProveedores_Activos_Inactivos.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
-            // 
-            // DataTable1BindingSource
-            // 
-            this.DataTable1BindingSource.DataMember = "DataTable1";
-            this.DataTable1BindingSource.DataSource = this.RepProveedores_Activos_Inactivos;
             // 
             // btn_cancelar
             // 
@@ -101,6 +101,7 @@
             this.btn_buscar.Size = new System.Drawing.Size(66, 55);
             this.btn_buscar.TabIndex = 53;
             this.btn_buscar.UseVisualStyleBackColor = true;
+            this.btn_buscar.Click += new System.EventHandler(this.btn_buscar_Click_1);
             // 
             // checkBoxActivo
             // 
@@ -138,8 +139,8 @@
             this.Name = "Proveedores_Activos_Inactivos";
             this.Text = "Proveedores_Activos_Inactivos";
             this.Load += new System.EventHandler(this.Proveedores_Activos_Inactivos_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.RepProveedores_Activos_Inactivos)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.DataTable1BindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.RepProveedores_Activos_Inactivos)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
