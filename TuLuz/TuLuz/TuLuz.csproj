@@ -248,6 +248,17 @@
     <Compile Include="Forums\Reportes\Producto_Equivalente\ProductoEquivalente.Designer.cs">
       <DependentUpon>ProductoEquivalente.cs</DependentUpon>
     </Compile>
+    <Compile Include="Forums\Reportes\Proveedores_Activos_Inactivos\Proveedores_Activos_Inactivos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forums\Reportes\Proveedores_Activos_Inactivos\Proveedores_Activos_Inactivos.Designer.cs">
+      <DependentUpon>Proveedores_Activos_Inactivos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forums\Reportes\Proveedores_Activos_Inactivos\RepProveedores_Activos_Inactivos.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>RepProveedores_Activos_Inactivos.xsd</DependentUpon>
+    </Compile>
     <Compile Include="Forums\TipoDocs\AltaTipoDocs.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -560,6 +571,10 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Forums\Reportes\Producto_Equivalente\Reporte_Producto_Equivalente.rdlc" />
     <EmbeddedResource Include="Forums\Reportes\CotizacionesXEmpleado\reporteCotizacionesXEmpleado.rdlc" />
+    <EmbeddedResource Include="Forums\Reportes\Proveedores_Activos_Inactivos\Proveedores_Activos_Inactivos.rdlc" />
+    <EmbeddedResource Include="Forums\Reportes\Proveedores_Activos_Inactivos\Proveedores_Activos_Inactivos.resx">
+      <DependentUpon>Proveedores_Activos_Inactivos.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Forums\TipoDocs\AltaTipoDocs.resx">
       <DependentUpon>AltaTipoDocs.cs</DependentUpon>
     </EmbeddedResource>
@@ -794,6 +809,17 @@
     </None>
     <None Include="Forums\Reportes\Pedido_Entre_Fechas\ReportePedidoXFecha.xss">
       <DependentUpon>ReportePedidoXFecha.xsd</DependentUpon>
+    </None>
+    <None Include="Forums\Reportes\Proveedores_Activos_Inactivos\RepProveedores_Activos_Inactivos.xsc">
+      <DependentUpon>RepProveedores_Activos_Inactivos.xsd</DependentUpon>
+    </None>
+    <None Include="Forums\Reportes\Proveedores_Activos_Inactivos\RepProveedores_Activos_Inactivos.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>RepProveedores_Activos_Inactivos.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="Forums\Reportes\Proveedores_Activos_Inactivos\RepProveedores_Activos_Inactivos.xss">
+      <DependentUpon>RepProveedores_Activos_Inactivos.xsd</DependentUpon>
     </None>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
