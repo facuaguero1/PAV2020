@@ -21,6 +21,7 @@ namespace TuLuz
             Application.Run(new Principal());
             //Application.Run(new ModificarCliente() { cuit = "555"});
 
+            //Application.Run(new ());
         }
     }
 }
