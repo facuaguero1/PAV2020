@@ -40,10 +40,10 @@
             // 
             this.RVPedidosXClientes.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.RVPedidosXClientes.LocalReport.ReportEmbeddedResource = "TuLuz.Forums.Reportes.PedidosXClientes.PedidosXClientes.rdlc";
-            this.RVPedidosXClientes.Location = new System.Drawing.Point(20, 118);
+            this.RVPedidosXClientes.Location = new System.Drawing.Point(96, 125);
             this.RVPedidosXClientes.Name = "RVPedidosXClientes";
             this.RVPedidosXClientes.ServerReport.BearerToken = null;
-            this.RVPedidosXClientes.Size = new System.Drawing.Size(727, 335);
+            this.RVPedidosXClientes.Size = new System.Drawing.Size(702, 408);
             this.RVPedidosXClientes.TabIndex = 0;
             // 
             // label1
@@ -52,7 +52,7 @@
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 30F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))));
             this.label1.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.label1.Location = new System.Drawing.Point(12, 5);
+            this.label1.Location = new System.Drawing.Point(148, 16);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(581, 46);
             this.label1.TabIndex = 1;
@@ -64,7 +64,7 @@
             this.cmb_Clientes.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.cmb_Clientes.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cmb_Clientes.FormattingEnabled = true;
-            this.cmb_Clientes.Location = new System.Drawing.Point(104, 69);
+            this.cmb_Clientes.Location = new System.Drawing.Point(171, 80);
             this.cmb_Clientes.Name = "cmb_Clientes";
             this.cmb_Clientes.pp_Display = null;
             this.cmb_Clientes.pp_mensaje_error = null;
@@ -83,7 +83,7 @@
             this.label2.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(25, 72);
+            this.label2.Location = new System.Drawing.Point(92, 83);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(73, 24);
             this.label2.TabIndex = 12;
@@ -97,7 +97,7 @@
             this.button1.FlatAppearance.BorderSize = 0;
             this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.Location = new System.Drawing.Point(294, 68);
+            this.button1.Location = new System.Drawing.Point(361, 79);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(52, 32);
             this.button1.TabIndex = 13;
@@ -110,7 +110,7 @@
             this.btn_salir.FlatAppearance.BorderSize = 0;
             this.btn_salir.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn_salir.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_salir.Location = new System.Drawing.Point(712, 16);
+            this.btn_salir.Location = new System.Drawing.Point(882, 16);
             this.btn_salir.Name = "btn_salir";
             this.btn_salir.Size = new System.Drawing.Size(35, 39);
             this.btn_salir.TabIndex = 14;
@@ -122,7 +122,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(759, 465);
+            this.ClientSize = new System.Drawing.Size(929, 545);
             this.Controls.Add(this.btn_salir);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.label2);

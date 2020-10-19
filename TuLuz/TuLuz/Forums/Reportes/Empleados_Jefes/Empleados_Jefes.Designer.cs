@@ -29,7 +29,7 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            Microsoft.Reporting.WinForms.ReportDataSource reportDataSource6 = new Microsoft.Reporting.WinForms.ReportDataSource();
+            Microsoft.Reporting.WinForms.ReportDataSource reportDataSource2 = new Microsoft.Reporting.WinForms.ReportDataSource();
             this.DataTable1BindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.ReporteEmpleados_Jefe = new TuLuz.Forums.Reportes.Empleados_Jefes.ReporteEmpleados_Jefe();
             this.label1 = new System.Windows.Forms.Label();
@@ -60,7 +60,7 @@
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 30F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))));
             this.label1.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.label1.Location = new System.Drawing.Point(49, 18);
+            this.label1.Location = new System.Drawing.Point(103, 25);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(691, 46);
             this.label1.TabIndex = 1;
@@ -69,14 +69,15 @@
             // 
             // rv_listadoEmpleados_Jefes
             // 
-            reportDataSource6.Name = "DataSet1";
-            reportDataSource6.Value = this.DataTable1BindingSource;
-            this.rv_listadoEmpleados_Jefes.LocalReport.DataSources.Add(reportDataSource6);
+            this.rv_listadoEmpleados_Jefes.Anchor = System.Windows.Forms.AnchorStyles.None;
+            reportDataSource2.Name = "DataSet1";
+            reportDataSource2.Value = this.DataTable1BindingSource;
+            this.rv_listadoEmpleados_Jefes.LocalReport.DataSources.Add(reportDataSource2);
             this.rv_listadoEmpleados_Jefes.LocalReport.ReportEmbeddedResource = "TuLuz.Forums.Reportes.Empleados_Jefes.ReporteEmpleados_Jefes.rdlc";
-            this.rv_listadoEmpleados_Jefes.Location = new System.Drawing.Point(49, 171);
+            this.rv_listadoEmpleados_Jefes.Location = new System.Drawing.Point(64, 125);
             this.rv_listadoEmpleados_Jefes.Name = "rv_listadoEmpleados_Jefes";
             this.rv_listadoEmpleados_Jefes.ServerReport.BearerToken = null;
-            this.rv_listadoEmpleados_Jefes.Size = new System.Drawing.Size(738, 245);
+            this.rv_listadoEmpleados_Jefes.Size = new System.Drawing.Size(702, 408);
             this.rv_listadoEmpleados_Jefes.TabIndex = 2;
             this.rv_listadoEmpleados_Jefes.Load += new System.EventHandler(this.reportViewer1_Load);
             // 
@@ -87,32 +88,35 @@
             this.btn_buscar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.btn_buscar.FlatAppearance.BorderSize = 0;
             this.btn_buscar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_buscar.Location = new System.Drawing.Point(647, 98);
+            this.btn_buscar.Location = new System.Drawing.Point(710, 86);
             this.btn_buscar.Name = "btn_buscar";
-            this.btn_buscar.Size = new System.Drawing.Size(65, 50);
+            this.btn_buscar.Size = new System.Drawing.Size(56, 32);
             this.btn_buscar.TabIndex = 51;
             this.btn_buscar.UseVisualStyleBackColor = true;
             this.btn_buscar.Click += new System.EventHandler(this.btn_buscar_Click);
             // 
             // txt_tipoDoc
             // 
-            this.txt_tipoDoc.Location = new System.Drawing.Point(183, 113);
+            this.txt_tipoDoc.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.txt_tipoDoc.Location = new System.Drawing.Point(231, 99);
             this.txt_tipoDoc.Name = "txt_tipoDoc";
             this.txt_tipoDoc.Size = new System.Drawing.Size(37, 20);
             this.txt_tipoDoc.TabIndex = 53;
             // 
             // txt_numDoc
             // 
-            this.txt_numDoc.Location = new System.Drawing.Point(483, 113);
+            this.txt_numDoc.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.txt_numDoc.Location = new System.Drawing.Point(531, 99);
             this.txt_numDoc.Name = "txt_numDoc";
             this.txt_numDoc.Size = new System.Drawing.Size(100, 20);
             this.txt_numDoc.TabIndex = 54;
             // 
             // label2
             // 
+            this.label2.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(12, 108);
+            this.label2.Location = new System.Drawing.Point(60, 94);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(166, 24);
             this.label2.TabIndex = 55;
@@ -120,9 +124,10 @@
             // 
             // label3
             // 
+            this.label3.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(278, 109);
+            this.label3.Location = new System.Drawing.Point(326, 95);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(199, 24);
             this.label3.TabIndex = 56;
@@ -130,11 +135,11 @@
             // 
             // btn_salir
             // 
-            this.btn_salir.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.btn_salir.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.btn_salir.FlatAppearance.BorderSize = 0;
             this.btn_salir.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn_salir.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_salir.Location = new System.Drawing.Point(763, 25);
+            this.btn_salir.Location = new System.Drawing.Point(868, 25);
             this.btn_salir.Name = "btn_salir";
             this.btn_salir.Size = new System.Drawing.Size(35, 39);
             this.btn_salir.TabIndex = 57;
@@ -146,7 +151,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(824, 442);
+            this.ClientSize = new System.Drawing.Size(929, 545);
             this.Controls.Add(this.btn_salir);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
@@ -157,6 +162,7 @@
             this.Controls.Add(this.label1);
             this.Name = "Empleados_Jefes";
             this.Text = "Empleados_Jefes";
+            this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.Load += new System.EventHandler(this.Empleados_Jefes_Load);
             ((System.ComponentModel.ISupportInitialize)(this.DataTable1BindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.ReporteEmpleados_Jefe)).EndInit();

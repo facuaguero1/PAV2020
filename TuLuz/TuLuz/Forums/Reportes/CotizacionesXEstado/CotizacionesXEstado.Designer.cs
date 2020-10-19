@@ -44,10 +44,9 @@
             this.btn_Buscar.FlatAppearance.BorderSize = 0;
             this.btn_Buscar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn_Buscar.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_Buscar.Location = new System.Drawing.Point(572, 106);
-            this.btn_Buscar.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.btn_Buscar.Location = new System.Drawing.Point(380, 89);
             this.btn_Buscar.Name = "btn_Buscar";
-            this.btn_Buscar.Size = new System.Drawing.Size(78, 49);
+            this.btn_Buscar.Size = new System.Drawing.Size(52, 32);
             this.btn_Buscar.TabIndex = 17;
             this.btn_Buscar.UseVisualStyleBackColor = true;
             this.btn_Buscar.Click += new System.EventHandler(this.btn_Buscar_Click);
@@ -56,11 +55,10 @@
             // 
             this.RVCotizacionesXEstados.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.RVCotizacionesXEstados.LocalReport.ReportEmbeddedResource = "TuLuz.Forums.Reportes.PedidosXEmpleados.PedidosXEmpleados.rdlc";
-            this.RVCotizacionesXEstados.Location = new System.Drawing.Point(131, 176);
-            this.RVCotizacionesXEstados.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.RVCotizacionesXEstados.Location = new System.Drawing.Point(115, 131);
             this.RVCotizacionesXEstados.Name = "RVCotizacionesXEstados";
             this.RVCotizacionesXEstados.ServerReport.BearerToken = null;
-            this.RVCotizacionesXEstados.Size = new System.Drawing.Size(1090, 514);
+            this.RVCotizacionesXEstados.Size = new System.Drawing.Size(702, 408);
             this.RVCotizacionesXEstados.TabIndex = 16;
             // 
             // cmb_Estados
@@ -68,8 +66,7 @@
             this.cmb_Estados.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.cmb_Estados.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cmb_Estados.FormattingEnabled = true;
-            this.cmb_Estados.Location = new System.Drawing.Point(287, 106);
-            this.cmb_Estados.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.cmb_Estados.Location = new System.Drawing.Point(190, 89);
             this.cmb_Estados.Name = "cmb_Estados";
             this.cmb_Estados.pp_Display = null;
             this.cmb_Estados.pp_mensaje_error = null;
@@ -79,7 +76,7 @@
             this.cmb_Estados.pp_Tabla = null;
             this.cmb_Estados.pp_validable = false;
             this.cmb_Estados.pp_Value = null;
-            this.cmb_Estados.Size = new System.Drawing.Size(235, 40);
+            this.cmb_Estados.Size = new System.Drawing.Size(158, 32);
             this.cmb_Estados.TabIndex = 15;
             this.cmb_Estados.SelectedIndexChanged += new System.EventHandler(this.cmb_Estados_SelectedIndexChanged);
             // 
@@ -88,10 +85,9 @@
             this.label2.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(125, 111);
-            this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label2.Location = new System.Drawing.Point(111, 93);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(112, 32);
+            this.label2.Size = new System.Drawing.Size(73, 24);
             this.label2.TabIndex = 14;
             this.label2.Text = "Estado:";
             // 
@@ -101,10 +97,9 @@
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 30F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))));
             this.label1.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.label1.Location = new System.Drawing.Point(119, 2);
-            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label1.Location = new System.Drawing.Point(97, 25);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(999, 69);
+            this.label1.Size = new System.Drawing.Size(685, 46);
             this.label1.TabIndex = 13;
             this.label1.Text = "Listado de Cotizaciones por Estado";
             this.label1.TextAlign = System.Drawing.ContentAlignment.TopCenter;
@@ -115,10 +110,9 @@
             this.btn_salir.FlatAppearance.BorderSize = 0;
             this.btn_salir.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn_salir.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_salir.Location = new System.Drawing.Point(1257, 14);
-            this.btn_salir.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.btn_salir.Location = new System.Drawing.Point(874, 9);
             this.btn_salir.Name = "btn_salir";
-            this.btn_salir.Size = new System.Drawing.Size(52, 60);
+            this.btn_salir.Size = new System.Drawing.Size(35, 39);
             this.btn_salir.TabIndex = 18;
             this.btn_salir.Text = "X";
             this.btn_salir.UseVisualStyleBackColor = true;
@@ -126,15 +120,16 @@
             // 
             // CotizacionesXEstado
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1340, 693);
+            this.ClientSize = new System.Drawing.Size(929, 545);
             this.Controls.Add(this.btn_salir);
             this.Controls.Add(this.btn_Buscar);
             this.Controls.Add(this.RVCotizacionesXEstados);
             this.Controls.Add(this.cmb_Estados);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "CotizacionesXEstado";
             this.Text = "CotizacionesXEstado";
             this.Load += new System.EventHandler(this.CotizacionesXEstado_Load);

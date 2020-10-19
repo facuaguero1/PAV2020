@@ -42,7 +42,7 @@
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 30F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.label1.Location = new System.Drawing.Point(170, 24);
+            this.label1.Location = new System.Drawing.Point(258, 27);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(420, 46);
             this.label1.TabIndex = 0;
@@ -55,7 +55,7 @@
             this.btn_salir.FlatAppearance.BorderSize = 0;
             this.btn_salir.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn_salir.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_salir.Location = new System.Drawing.Point(749, 12);
+            this.btn_salir.Location = new System.Drawing.Point(882, 12);
             this.btn_salir.Name = "btn_salir";
             this.btn_salir.Size = new System.Drawing.Size(35, 39);
             this.btn_salir.TabIndex = 9;
@@ -68,7 +68,7 @@
             this.label2.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(36, 91);
+            this.label2.Location = new System.Drawing.Point(109, 87);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(86, 24);
             this.label2.TabIndex = 10;
@@ -81,9 +81,9 @@
             this.btn_aceptar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.btn_aceptar.FlatAppearance.BorderSize = 0;
             this.btn_aceptar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_aceptar.Location = new System.Drawing.Point(441, 86);
+            this.btn_aceptar.Location = new System.Drawing.Point(375, 84);
             this.btn_aceptar.Name = "btn_aceptar";
-            this.btn_aceptar.Size = new System.Drawing.Size(50, 29);
+            this.btn_aceptar.Size = new System.Drawing.Size(50, 32);
             this.btn_aceptar.TabIndex = 12;
             this.btn_aceptar.UseVisualStyleBackColor = true;
             this.btn_aceptar.Click += new System.EventHandler(this.btn_aceptar_Click);
@@ -91,10 +91,10 @@
             // RV_producto_Eq
             // 
             this.RV_producto_Eq.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.RV_producto_Eq.Location = new System.Drawing.Point(40, 168);
+            this.RV_producto_Eq.Location = new System.Drawing.Point(103, 124);
             this.RV_producto_Eq.Name = "RV_producto_Eq";
             this.RV_producto_Eq.ServerReport.BearerToken = null;
-            this.RV_producto_Eq.Size = new System.Drawing.Size(732, 246);
+            this.RV_producto_Eq.Size = new System.Drawing.Size(702, 408);
             this.RV_producto_Eq.TabIndex = 13;
             // 
             // cmb_producto
@@ -102,7 +102,7 @@
             this.cmb_producto.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.cmb_producto.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cmb_producto.FormattingEnabled = true;
-            this.cmb_producto.Location = new System.Drawing.Point(128, 88);
+            this.cmb_producto.Location = new System.Drawing.Point(201, 84);
             this.cmb_producto.Name = "cmb_producto";
             this.cmb_producto.pp_Display = null;
             this.cmb_producto.pp_mensaje_error = null;
@@ -120,7 +120,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(796, 508);
+            this.ClientSize = new System.Drawing.Size(929, 545);
             this.Controls.Add(this.RV_producto_Eq);
             this.Controls.Add(this.btn_aceptar);
             this.Controls.Add(this.cmb_producto);

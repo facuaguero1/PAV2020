@@ -53,12 +53,6 @@
             this.txt_motivoPerdida = new TuLuz.Clases.TextBox01();
             this.txt_Competidor = new TuLuz.Clases.TextBox01();
             this.grid01 = new System.Windows.Forms.DataGridView();
-            this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column5 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column6 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.button1 = new System.Windows.Forms.Button();
             this.btn_guardar = new System.Windows.Forms.Button();
             this.btn_aceptar = new System.Windows.Forms.Button();
@@ -73,6 +67,12 @@
             this.cmb_Vendedor = new TuLuz.Clases.ComboBox01();
             this.txt_numeroCotizacion = new TuLuz.Clases.TextBox01();
             this.txt_ApellidoSolicitante = new TuLuz.Clases.TextBox01();
+            this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column5 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column6 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.grid01)).BeginInit();
             this.SuspendLayout();
@@ -83,10 +83,9 @@
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 40F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.label1.Location = new System.Drawing.Point(511, 18);
-            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label1.Location = new System.Drawing.Point(570, 143);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(505, 91);
+            this.label1.Size = new System.Drawing.Size(350, 63);
             this.label1.TabIndex = 0;
             this.label1.Text = "Cotizaciones";
             this.label1.TextAlign = System.Drawing.ContentAlignment.TopCenter;
@@ -96,10 +95,9 @@
             this.label2.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(985, 166);
-            this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label2.Location = new System.Drawing.Point(886, 239);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(268, 36);
+            this.label2.Size = new System.Drawing.Size(178, 25);
             this.label2.TabIndex = 1;
             this.label2.Text = "Numero Cotizacion";
             // 
@@ -108,10 +106,9 @@
             this.label4.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(1105, 275);
-            this.label4.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label4.Location = new System.Drawing.Point(966, 310);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(146, 36);
+            this.label4.Size = new System.Drawing.Size(98, 25);
             this.label4.TabIndex = 3;
             this.label4.Text = "Vendedor";
             // 
@@ -120,10 +117,9 @@
             this.label5.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(1180, 222);
-            this.label5.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label5.Location = new System.Drawing.Point(1016, 275);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(70, 36);
+            this.label5.Size = new System.Drawing.Size(48, 25);
             this.label5.TabIndex = 10;
             this.label5.Text = "Año";
             // 
@@ -132,10 +128,9 @@
             this.label6.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.Location = new System.Drawing.Point(1123, 334);
-            this.label6.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label6.Location = new System.Drawing.Point(978, 348);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(108, 36);
+            this.label6.Size = new System.Drawing.Size(73, 25);
             this.label6.TabIndex = 11;
             this.label6.Text = "Estado";
             // 
@@ -144,10 +139,9 @@
             this.label7.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label7.AutoSize = true;
             this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.Location = new System.Drawing.Point(988, 591);
-            this.label7.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label7.Location = new System.Drawing.Point(888, 515);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(270, 36);
+            this.label7.Size = new System.Drawing.Size(177, 25);
             this.label7.TabIndex = 12;
             this.label7.Text = "Apellido Solicitante";
             // 
@@ -156,10 +150,9 @@
             this.label8.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label8.AutoSize = true;
             this.label8.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            this.label8.Location = new System.Drawing.Point(1277, 637);
-            this.label8.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label8.Location = new System.Drawing.Point(1080, 545);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(41, 25);
+            this.label8.Size = new System.Drawing.Size(29, 17);
             this.label8.TabIndex = 13;
             this.label8.Text = "Dia";
             // 
@@ -168,10 +161,9 @@
             this.label9.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label9.AutoSize = true;
             this.label9.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label9.Location = new System.Drawing.Point(1153, 672);
-            this.label9.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label9.Location = new System.Drawing.Point(998, 568);
             this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(97, 36);
+            this.label9.Size = new System.Drawing.Size(67, 25);
             this.label9.TabIndex = 20;
             this.label9.Text = "Fecha";
             // 
@@ -180,10 +172,9 @@
             this.label10.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label10.AutoSize = true;
             this.label10.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label10.Location = new System.Drawing.Point(1037, 734);
-            this.label10.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label10.Location = new System.Drawing.Point(920, 608);
             this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(213, 36);
+            this.label10.Size = new System.Drawing.Size(144, 25);
             this.label10.TabIndex = 21;
             this.label10.Text = "Observaciones";
             // 
@@ -192,10 +183,9 @@
             this.label13.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label13.AutoSize = true;
             this.label13.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label13.Location = new System.Drawing.Point(1063, 392);
-            this.label13.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label13.Location = new System.Drawing.Point(938, 386);
             this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(168, 36);
+            this.label13.Size = new System.Drawing.Size(113, 25);
             this.label13.TabIndex = 27;
             this.label13.Text = "Cuit Cliente";
             // 
@@ -204,10 +194,9 @@
             this.label14.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label14.AutoSize = true;
             this.label14.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label14.Location = new System.Drawing.Point(988, 522);
-            this.label14.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label14.Location = new System.Drawing.Point(888, 470);
             this.label14.Name = "label14";
-            this.label14.Size = new System.Drawing.Size(266, 36);
+            this.label14.Size = new System.Drawing.Size(176, 25);
             this.label14.TabIndex = 28;
             this.label14.Text = "Nombre Solicitante";
             // 
@@ -216,10 +205,9 @@
             this.solicita.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.solicita.AutoSize = true;
             this.solicita.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.solicita.Location = new System.Drawing.Point(1263, 448);
-            this.solicita.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.solicita.Location = new System.Drawing.Point(1071, 422);
             this.solicita.Name = "solicita";
-            this.solicita.Size = new System.Drawing.Size(180, 29);
+            this.solicita.Size = new System.Drawing.Size(131, 21);
             this.solicita.TabIndex = 5;
             this.solicita.Text = "El cliente solicita";
             this.solicita.UseVisualStyleBackColor = true;
@@ -230,10 +218,9 @@
             this.label3.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            this.label3.Location = new System.Drawing.Point(1407, 637);
-            this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label3.Location = new System.Drawing.Point(1167, 545);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(50, 25);
+            this.label3.Size = new System.Drawing.Size(34, 17);
             this.label3.TabIndex = 32;
             this.label3.Text = "Mes";
             // 
@@ -242,10 +229,9 @@
             this.label11.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label11.AutoSize = true;
             this.label11.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            this.label11.Location = new System.Drawing.Point(1545, 637);
-            this.label11.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label11.Location = new System.Drawing.Point(1259, 545);
             this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(48, 25);
+            this.label11.Size = new System.Drawing.Size(33, 17);
             this.label11.TabIndex = 33;
             this.label11.Text = "Año";
             // 
@@ -254,10 +240,9 @@
             this.label12.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label12.AutoSize = true;
             this.label12.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            this.label12.Location = new System.Drawing.Point(1357, 675);
-            this.label12.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label12.Location = new System.Drawing.Point(1134, 570);
             this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(18, 25);
+            this.label12.Size = new System.Drawing.Size(12, 17);
             this.label12.TabIndex = 36;
             this.label12.Text = "/";
             // 
@@ -266,10 +251,9 @@
             this.label15.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label15.AutoSize = true;
             this.label15.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            this.label15.Location = new System.Drawing.Point(1493, 675);
-            this.label15.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label15.Location = new System.Drawing.Point(1224, 570);
             this.label15.Name = "label15";
-            this.label15.Size = new System.Drawing.Size(18, 25);
+            this.label15.Size = new System.Drawing.Size(12, 17);
             this.label15.TabIndex = 37;
             this.label15.Text = "/";
             // 
@@ -278,10 +262,9 @@
             this.label16.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label16.AutoSize = true;
             this.label16.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label16.Location = new System.Drawing.Point(1079, 789);
-            this.label16.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label16.Location = new System.Drawing.Point(948, 644);
             this.label16.Name = "label16";
-            this.label16.Size = new System.Drawing.Size(174, 36);
+            this.label16.Size = new System.Drawing.Size(116, 25);
             this.label16.TabIndex = 41;
             this.label16.Text = "Precio Total";
             // 
@@ -290,10 +273,9 @@
             this.label17.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label17.AutoSize = true;
             this.label17.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label17.Location = new System.Drawing.Point(3, 51);
-            this.label17.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label17.Location = new System.Drawing.Point(2, 33);
             this.label17.Name = "label17";
-            this.label17.Size = new System.Drawing.Size(215, 36);
+            this.label17.Size = new System.Drawing.Size(142, 25);
             this.label17.TabIndex = 42;
             this.label17.Text = "Motivo Perdida";
             // 
@@ -302,10 +284,9 @@
             this.label18.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label18.AutoSize = true;
             this.label18.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label18.Location = new System.Drawing.Point(46, 120);
-            this.label18.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label18.Location = new System.Drawing.Point(31, 78);
             this.label18.Name = "label18";
-            this.label18.Size = new System.Drawing.Size(168, 36);
+            this.label18.Size = new System.Drawing.Size(113, 25);
             this.label18.TabIndex = 43;
             this.label18.Text = "Competidor";
             // 
@@ -315,10 +296,9 @@
             this.cmb_Dia.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cmb_Dia.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cmb_Dia.FormattingEnabled = true;
-            this.cmb_Dia.Location = new System.Drawing.Point(1261, 674);
-            this.cmb_Dia.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.cmb_Dia.Location = new System.Drawing.Point(1070, 569);
             this.cmb_Dia.Name = "cmb_Dia";
-            this.cmb_Dia.Size = new System.Drawing.Size(85, 33);
+            this.cmb_Dia.Size = new System.Drawing.Size(58, 24);
             this.cmb_Dia.TabIndex = 9;
             this.cmb_Dia.SelectedIndexChanged += new System.EventHandler(this.cmb_Dia_SelectedIndexChanged);
             // 
@@ -341,10 +321,9 @@
             "10",
             "11",
             "12"});
-            this.cmb_Mes.Location = new System.Drawing.Point(1385, 674);
-            this.cmb_Mes.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.cmb_Mes.Location = new System.Drawing.Point(1152, 569);
             this.cmb_Mes.Name = "cmb_Mes";
-            this.cmb_Mes.Size = new System.Drawing.Size(85, 33);
+            this.cmb_Mes.Size = new System.Drawing.Size(58, 24);
             this.cmb_Mes.TabIndex = 8;
             this.cmb_Mes.SelectedIndexChanged += new System.EventHandler(this.cmb_Mes_SelectedIndexChanged);
             // 
@@ -355,11 +334,9 @@
             this.groupBox1.Controls.Add(this.txt_Competidor);
             this.groupBox1.Controls.Add(this.label17);
             this.groupBox1.Controls.Add(this.label18);
-            this.groupBox1.Location = new System.Drawing.Point(1029, 846);
-            this.groupBox1.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.groupBox1.Location = new System.Drawing.Point(915, 681);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Padding = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.groupBox1.Size = new System.Drawing.Size(670, 188);
+            this.groupBox1.Size = new System.Drawing.Size(447, 122);
             this.groupBox1.TabIndex = 47;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Perdida";
@@ -368,28 +345,26 @@
             // 
             this.txt_motivoPerdida.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.txt_motivoPerdida.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txt_motivoPerdida.Location = new System.Drawing.Point(232, 46);
-            this.txt_motivoPerdida.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.txt_motivoPerdida.Location = new System.Drawing.Point(155, 30);
             this.txt_motivoPerdida.Name = "txt_motivoPerdida";
             this.txt_motivoPerdida.pp_mensaje_error = null;
             this.txt_motivoPerdida.pp_nombre_campo = "numDocJefe";
             this.txt_motivoPerdida.pp_nombre_tabla = "Empleados";
             this.txt_motivoPerdida.pp_validable = false;
-            this.txt_motivoPerdida.Size = new System.Drawing.Size(420, 41);
+            this.txt_motivoPerdida.Size = new System.Drawing.Size(281, 30);
             this.txt_motivoPerdida.TabIndex = 0;
             // 
             // txt_Competidor
             // 
             this.txt_Competidor.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.txt_Competidor.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txt_Competidor.Location = new System.Drawing.Point(232, 115);
-            this.txt_Competidor.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.txt_Competidor.Location = new System.Drawing.Point(155, 75);
             this.txt_Competidor.Name = "txt_Competidor";
             this.txt_Competidor.pp_mensaje_error = null;
             this.txt_Competidor.pp_nombre_campo = "numDocJefe";
             this.txt_Competidor.pp_nombre_tabla = "Empleados";
             this.txt_Competidor.pp_validable = false;
-            this.txt_Competidor.Size = new System.Drawing.Size(420, 41);
+            this.txt_Competidor.Size = new System.Drawing.Size(281, 30);
             this.txt_Competidor.TabIndex = 1;
             // 
             // grid01
@@ -405,15 +380,220 @@
             this.Column4,
             this.Column5,
             this.Column6});
-            this.grid01.Location = new System.Drawing.Point(69, 166);
-            this.grid01.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.grid01.Location = new System.Drawing.Point(214, 239);
             this.grid01.Name = "grid01";
             this.grid01.ReadOnly = true;
             this.grid01.RowHeadersWidth = 62;
-            this.grid01.Size = new System.Drawing.Size(842, 662);
+            this.grid01.Size = new System.Drawing.Size(622, 430);
             this.grid01.TabIndex = 48;
             this.grid01.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.grid01_CellContentClick);
             this.grid01.CellDoubleClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.grid01_CellDoubleClick);
+            // 
+            // button1
+            // 
+            this.button1.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.button1.BackgroundImage = global::TuLuz.Properties.Resources._4115235_exit_logout_sign_out_114030;
+            this.button1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.button1.FlatAppearance.BorderSize = 0;
+            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button1.Location = new System.Drawing.Point(1283, 143);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(79, 59);
+            this.button1.TabIndex = 49;
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
+            // 
+            // btn_guardar
+            // 
+            this.btn_guardar.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.btn_guardar.BackgroundImage = global::TuLuz.Properties.Resources.savetheapplication_guardar_2958;
+            this.btn_guardar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btn_guardar.FlatAppearance.BorderSize = 0;
+            this.btn_guardar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_guardar.Location = new System.Drawing.Point(1170, 809);
+            this.btn_guardar.Name = "btn_guardar";
+            this.btn_guardar.Size = new System.Drawing.Size(70, 58);
+            this.btn_guardar.TabIndex = 14;
+            this.btn_guardar.UseVisualStyleBackColor = true;
+            this.btn_guardar.Click += new System.EventHandler(this.btn_cancelar_Click);
+            // 
+            // btn_aceptar
+            // 
+            this.btn_aceptar.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.btn_aceptar.BackgroundImage = global::TuLuz.Properties.Resources._1486485588_add_create_new_math_sign_cross_plus_81186;
+            this.btn_aceptar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btn_aceptar.FlatAppearance.BorderSize = 0;
+            this.btn_aceptar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_aceptar.Location = new System.Drawing.Point(1171, 810);
+            this.btn_aceptar.Name = "btn_aceptar";
+            this.btn_aceptar.Size = new System.Drawing.Size(69, 58);
+            this.btn_aceptar.TabIndex = 13;
+            this.btn_aceptar.UseVisualStyleBackColor = true;
+            this.btn_aceptar.Click += new System.EventHandler(this.btn_aceptar_Click);
+            // 
+            // btn_ingresar_cotizacion
+            // 
+            this.btn_ingresar_cotizacion.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.btn_ingresar_cotizacion.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_ingresar_cotizacion.Location = new System.Drawing.Point(214, 693);
+            this.btn_ingresar_cotizacion.Name = "btn_ingresar_cotizacion";
+            this.btn_ingresar_cotizacion.Size = new System.Drawing.Size(622, 48);
+            this.btn_ingresar_cotizacion.TabIndex = 50;
+            this.btn_ingresar_cotizacion.Text = "INGRESAR NUEVA COTIZACION";
+            this.btn_ingresar_cotizacion.UseVisualStyleBackColor = true;
+            this.btn_ingresar_cotizacion.Click += new System.EventHandler(this.btn_ingresar_cotizacion_Click);
+            // 
+            // txt_Año2
+            // 
+            this.txt_Año2.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.txt_Año2.Enabled = false;
+            this.txt_Año2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txt_Año2.Location = new System.Drawing.Point(1243, 569);
+            this.txt_Año2.Name = "txt_Año2";
+            this.txt_Año2.pp_mensaje_error = "Falta Numero de Documento";
+            this.txt_Año2.pp_nombre_campo = "numDoc";
+            this.txt_Año2.pp_nombre_tabla = "Empleados";
+            this.txt_Año2.pp_validable = false;
+            this.txt_Año2.Size = new System.Drawing.Size(59, 23);
+            this.txt_Año2.TabIndex = 10;
+            // 
+            // txt_Precio
+            // 
+            this.txt_Precio.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.txt_Precio.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txt_Precio.Location = new System.Drawing.Point(1071, 641);
+            this.txt_Precio.Name = "txt_Precio";
+            this.txt_Precio.pp_mensaje_error = "No se Ingreso algun dato";
+            this.txt_Precio.pp_nombre_campo = "numDocJefe";
+            this.txt_Precio.pp_nombre_tabla = "Empleados";
+            this.txt_Precio.pp_validable = false;
+            this.txt_Precio.Size = new System.Drawing.Size(281, 30);
+            this.txt_Precio.TabIndex = 12;
+            this.txt_Precio.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txt_Precio_KeyPress);
+            // 
+            // cmb_cliente
+            // 
+            this.cmb_cliente.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.cmb_cliente.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cmb_cliente.FormattingEnabled = true;
+            this.cmb_cliente.Location = new System.Drawing.Point(1071, 384);
+            this.cmb_cliente.Name = "cmb_cliente";
+            this.cmb_cliente.pp_Display = null;
+            this.cmb_cliente.pp_mensaje_error = "No se Ingreso algun dato";
+            this.cmb_cliente.pp_nombre_campo = null;
+            this.cmb_cliente.pp_nombre_tabla = null;
+            this.cmb_cliente.pp_Seleccionado = false;
+            this.cmb_cliente.pp_Tabla = null;
+            this.cmb_cliente.pp_validable = false;
+            this.cmb_cliente.pp_Value = null;
+            this.cmb_cliente.Size = new System.Drawing.Size(281, 32);
+            this.cmb_cliente.TabIndex = 4;
+            // 
+            // cmb_Estado
+            // 
+            this.cmb_Estado.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.cmb_Estado.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cmb_Estado.FormattingEnabled = true;
+            this.cmb_Estado.Location = new System.Drawing.Point(1071, 346);
+            this.cmb_Estado.Name = "cmb_Estado";
+            this.cmb_Estado.pp_Display = null;
+            this.cmb_Estado.pp_mensaje_error = "No se Ingreso algun dato";
+            this.cmb_Estado.pp_nombre_campo = null;
+            this.cmb_Estado.pp_nombre_tabla = null;
+            this.cmb_Estado.pp_Seleccionado = false;
+            this.cmb_Estado.pp_Tabla = null;
+            this.cmb_Estado.pp_validable = false;
+            this.cmb_Estado.pp_Value = null;
+            this.cmb_Estado.Size = new System.Drawing.Size(281, 32);
+            this.cmb_Estado.TabIndex = 3;
+            this.cmb_Estado.SelectedIndexChanged += new System.EventHandler(this.cmb_Estado_SelectedIndexChanged);
+            // 
+            // txt_Observaciones
+            // 
+            this.txt_Observaciones.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.txt_Observaciones.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txt_Observaciones.Location = new System.Drawing.Point(1070, 605);
+            this.txt_Observaciones.Name = "txt_Observaciones";
+            this.txt_Observaciones.pp_mensaje_error = "No se Ingreso algun dato";
+            this.txt_Observaciones.pp_nombre_campo = "numDocJefe";
+            this.txt_Observaciones.pp_nombre_tabla = "Empleados";
+            this.txt_Observaciones.pp_validable = false;
+            this.txt_Observaciones.Size = new System.Drawing.Size(281, 30);
+            this.txt_Observaciones.TabIndex = 11;
+            // 
+            // txt_nombreSolicitante
+            // 
+            this.txt_nombreSolicitante.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.txt_nombreSolicitante.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txt_nombreSolicitante.Location = new System.Drawing.Point(1070, 467);
+            this.txt_nombreSolicitante.Name = "txt_nombreSolicitante";
+            this.txt_nombreSolicitante.pp_mensaje_error = "No se Ingreso algun dato";
+            this.txt_nombreSolicitante.pp_nombre_campo = "direccion";
+            this.txt_nombreSolicitante.pp_nombre_tabla = "Empleados";
+            this.txt_nombreSolicitante.pp_validable = false;
+            this.txt_nombreSolicitante.Size = new System.Drawing.Size(281, 30);
+            this.txt_nombreSolicitante.TabIndex = 6;
+            // 
+            // txt_Año
+            // 
+            this.txt_Año.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.txt_Año.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txt_Año.Location = new System.Drawing.Point(1070, 272);
+            this.txt_Año.Name = "txt_Año";
+            this.txt_Año.pp_mensaje_error = "No se Ingreso algun dato";
+            this.txt_Año.pp_nombre_campo = "numDoc";
+            this.txt_Año.pp_nombre_tabla = "Empleados";
+            this.txt_Año.pp_validable = false;
+            this.txt_Año.Size = new System.Drawing.Size(281, 30);
+            this.txt_Año.TabIndex = 1;
+            this.txt_Año.TextChanged += new System.EventHandler(this.txt_Año_TextChanged);
+            this.txt_Año.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txt_Año_KeyPress);
+            // 
+            // cmb_Vendedor
+            // 
+            this.cmb_Vendedor.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.cmb_Vendedor.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cmb_Vendedor.FormattingEnabled = true;
+            this.cmb_Vendedor.Location = new System.Drawing.Point(1070, 308);
+            this.cmb_Vendedor.Name = "cmb_Vendedor";
+            this.cmb_Vendedor.pp_Display = null;
+            this.cmb_Vendedor.pp_mensaje_error = "No se Ingreso algun dato";
+            this.cmb_Vendedor.pp_nombre_campo = "tipoDoc";
+            this.cmb_Vendedor.pp_nombre_tabla = "Empleados";
+            this.cmb_Vendedor.pp_Seleccionado = false;
+            this.cmb_Vendedor.pp_Tabla = null;
+            this.cmb_Vendedor.pp_validable = false;
+            this.cmb_Vendedor.pp_Value = null;
+            this.cmb_Vendedor.Size = new System.Drawing.Size(281, 32);
+            this.cmb_Vendedor.TabIndex = 2;
+            this.cmb_Vendedor.SelectedIndexChanged += new System.EventHandler(this.cmb_Vendedor_SelectedIndexChanged);
+            // 
+            // txt_numeroCotizacion
+            // 
+            this.txt_numeroCotizacion.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.txt_numeroCotizacion.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txt_numeroCotizacion.Location = new System.Drawing.Point(1070, 236);
+            this.txt_numeroCotizacion.Name = "txt_numeroCotizacion";
+            this.txt_numeroCotizacion.pp_mensaje_error = "No se Ingreso algun dato";
+            this.txt_numeroCotizacion.pp_nombre_campo = "apellido";
+            this.txt_numeroCotizacion.pp_nombre_tabla = "Empleados";
+            this.txt_numeroCotizacion.pp_validable = true;
+            this.txt_numeroCotizacion.Size = new System.Drawing.Size(281, 30);
+            this.txt_numeroCotizacion.TabIndex = 0;
+            this.txt_numeroCotizacion.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txt_numeroCotizacion_KeyPress);
+            // 
+            // txt_ApellidoSolicitante
+            // 
+            this.txt_ApellidoSolicitante.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.txt_ApellidoSolicitante.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txt_ApellidoSolicitante.Location = new System.Drawing.Point(1070, 512);
+            this.txt_ApellidoSolicitante.Name = "txt_ApellidoSolicitante";
+            this.txt_ApellidoSolicitante.pp_mensaje_error = "No se Ingreso algun dato";
+            this.txt_ApellidoSolicitante.pp_nombre_campo = "telefono";
+            this.txt_ApellidoSolicitante.pp_nombre_tabla = "Empleados";
+            this.txt_ApellidoSolicitante.pp_validable = true;
+            this.txt_ApellidoSolicitante.Size = new System.Drawing.Size(281, 30);
+            this.txt_ApellidoSolicitante.TabIndex = 7;
             // 
             // Column1
             // 
@@ -453,7 +633,7 @@
             this.Column5.MinimumWidth = 8;
             this.Column5.Name = "Column5";
             this.Column5.ReadOnly = true;
-            this.Column5.Width = 150;
+            this.Column5.Width = 120;
             // 
             // Column6
             // 
@@ -463,231 +643,11 @@
             this.Column6.ReadOnly = true;
             this.Column6.Width = 70;
             // 
-            // button1
-            // 
-            this.button1.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.button1.BackgroundImage = global::TuLuz.Properties.Resources._4115235_exit_logout_sign_out_114030;
-            this.button1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.button1.FlatAppearance.BorderSize = 0;
-            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button1.Location = new System.Drawing.Point(1581, 18);
-            this.button1.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(118, 91);
-            this.button1.TabIndex = 49;
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
-            // 
-            // btn_guardar
-            // 
-            this.btn_guardar.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.btn_guardar.BackgroundImage = global::TuLuz.Properties.Resources.savetheapplication_guardar_2958;
-            this.btn_guardar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.btn_guardar.FlatAppearance.BorderSize = 0;
-            this.btn_guardar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_guardar.Location = new System.Drawing.Point(1411, 1043);
-            this.btn_guardar.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.btn_guardar.Name = "btn_guardar";
-            this.btn_guardar.Size = new System.Drawing.Size(105, 89);
-            this.btn_guardar.TabIndex = 14;
-            this.btn_guardar.UseVisualStyleBackColor = true;
-            this.btn_guardar.Click += new System.EventHandler(this.btn_cancelar_Click);
-            // 
-            // btn_aceptar
-            // 
-            this.btn_aceptar.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.btn_aceptar.BackgroundImage = global::TuLuz.Properties.Resources._1486485588_add_create_new_math_sign_cross_plus_81186;
-            this.btn_aceptar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.btn_aceptar.FlatAppearance.BorderSize = 0;
-            this.btn_aceptar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_aceptar.Location = new System.Drawing.Point(1413, 1045);
-            this.btn_aceptar.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.btn_aceptar.Name = "btn_aceptar";
-            this.btn_aceptar.Size = new System.Drawing.Size(104, 89);
-            this.btn_aceptar.TabIndex = 13;
-            this.btn_aceptar.UseVisualStyleBackColor = true;
-            this.btn_aceptar.Click += new System.EventHandler(this.btn_aceptar_Click);
-            // 
-            // btn_ingresar_cotizacion
-            // 
-            this.btn_ingresar_cotizacion.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.btn_ingresar_cotizacion.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_ingresar_cotizacion.Location = new System.Drawing.Point(69, 865);
-            this.btn_ingresar_cotizacion.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.btn_ingresar_cotizacion.Name = "btn_ingresar_cotizacion";
-            this.btn_ingresar_cotizacion.Size = new System.Drawing.Size(842, 74);
-            this.btn_ingresar_cotizacion.TabIndex = 50;
-            this.btn_ingresar_cotizacion.Text = "INGRESAR NUEVA COTIZACION";
-            this.btn_ingresar_cotizacion.UseVisualStyleBackColor = true;
-            this.btn_ingresar_cotizacion.Click += new System.EventHandler(this.btn_ingresar_cotizacion_Click);
-            // 
-            // txt_Año2
-            // 
-            this.txt_Año2.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.txt_Año2.Enabled = false;
-            this.txt_Año2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txt_Año2.Location = new System.Drawing.Point(1521, 674);
-            this.txt_Año2.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.txt_Año2.Name = "txt_Año2";
-            this.txt_Año2.pp_mensaje_error = "Falta Numero de Documento";
-            this.txt_Año2.pp_nombre_campo = "numDoc";
-            this.txt_Año2.pp_nombre_tabla = "Empleados";
-            this.txt_Año2.pp_validable = false;
-            this.txt_Año2.Size = new System.Drawing.Size(86, 30);
-            this.txt_Año2.TabIndex = 10;
-            // 
-            // txt_Precio
-            // 
-            this.txt_Precio.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.txt_Precio.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txt_Precio.Location = new System.Drawing.Point(1263, 785);
-            this.txt_Precio.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.txt_Precio.Name = "txt_Precio";
-            this.txt_Precio.pp_mensaje_error = "No se Ingreso algun dato";
-            this.txt_Precio.pp_nombre_campo = "numDocJefe";
-            this.txt_Precio.pp_nombre_tabla = "Empleados";
-            this.txt_Precio.pp_validable = false;
-            this.txt_Precio.Size = new System.Drawing.Size(420, 41);
-            this.txt_Precio.TabIndex = 12;
-            this.txt_Precio.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txt_Precio_KeyPress);
-            // 
-            // cmb_cliente
-            // 
-            this.cmb_cliente.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.cmb_cliente.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.cmb_cliente.FormattingEnabled = true;
-            this.cmb_cliente.Location = new System.Drawing.Point(1263, 389);
-            this.cmb_cliente.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.cmb_cliente.Name = "cmb_cliente";
-            this.cmb_cliente.pp_Display = null;
-            this.cmb_cliente.pp_mensaje_error = "No se Ingreso algun dato";
-            this.cmb_cliente.pp_nombre_campo = null;
-            this.cmb_cliente.pp_nombre_tabla = null;
-            this.cmb_cliente.pp_Seleccionado = false;
-            this.cmb_cliente.pp_Tabla = null;
-            this.cmb_cliente.pp_validable = false;
-            this.cmb_cliente.pp_Value = null;
-            this.cmb_cliente.Size = new System.Drawing.Size(420, 40);
-            this.cmb_cliente.TabIndex = 4;
-            // 
-            // cmb_Estado
-            // 
-            this.cmb_Estado.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.cmb_Estado.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.cmb_Estado.FormattingEnabled = true;
-            this.cmb_Estado.Location = new System.Drawing.Point(1263, 331);
-            this.cmb_Estado.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.cmb_Estado.Name = "cmb_Estado";
-            this.cmb_Estado.pp_Display = null;
-            this.cmb_Estado.pp_mensaje_error = "No se Ingreso algun dato";
-            this.cmb_Estado.pp_nombre_campo = null;
-            this.cmb_Estado.pp_nombre_tabla = null;
-            this.cmb_Estado.pp_Seleccionado = false;
-            this.cmb_Estado.pp_Tabla = null;
-            this.cmb_Estado.pp_validable = false;
-            this.cmb_Estado.pp_Value = null;
-            this.cmb_Estado.Size = new System.Drawing.Size(420, 40);
-            this.cmb_Estado.TabIndex = 3;
-            this.cmb_Estado.SelectedIndexChanged += new System.EventHandler(this.cmb_Estado_SelectedIndexChanged);
-            // 
-            // txt_Observaciones
-            // 
-            this.txt_Observaciones.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.txt_Observaciones.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txt_Observaciones.Location = new System.Drawing.Point(1261, 729);
-            this.txt_Observaciones.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.txt_Observaciones.Name = "txt_Observaciones";
-            this.txt_Observaciones.pp_mensaje_error = "No se Ingreso algun dato";
-            this.txt_Observaciones.pp_nombre_campo = "numDocJefe";
-            this.txt_Observaciones.pp_nombre_tabla = "Empleados";
-            this.txt_Observaciones.pp_validable = false;
-            this.txt_Observaciones.Size = new System.Drawing.Size(420, 41);
-            this.txt_Observaciones.TabIndex = 11;
-            // 
-            // txt_nombreSolicitante
-            // 
-            this.txt_nombreSolicitante.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.txt_nombreSolicitante.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txt_nombreSolicitante.Location = new System.Drawing.Point(1261, 517);
-            this.txt_nombreSolicitante.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.txt_nombreSolicitante.Name = "txt_nombreSolicitante";
-            this.txt_nombreSolicitante.pp_mensaje_error = "No se Ingreso algun dato";
-            this.txt_nombreSolicitante.pp_nombre_campo = "direccion";
-            this.txt_nombreSolicitante.pp_nombre_tabla = "Empleados";
-            this.txt_nombreSolicitante.pp_validable = false;
-            this.txt_nombreSolicitante.Size = new System.Drawing.Size(420, 41);
-            this.txt_nombreSolicitante.TabIndex = 6;
-            // 
-            // txt_Año
-            // 
-            this.txt_Año.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.txt_Año.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txt_Año.Location = new System.Drawing.Point(1261, 217);
-            this.txt_Año.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.txt_Año.Name = "txt_Año";
-            this.txt_Año.pp_mensaje_error = "No se Ingreso algun dato";
-            this.txt_Año.pp_nombre_campo = "numDoc";
-            this.txt_Año.pp_nombre_tabla = "Empleados";
-            this.txt_Año.pp_validable = false;
-            this.txt_Año.Size = new System.Drawing.Size(420, 41);
-            this.txt_Año.TabIndex = 1;
-            this.txt_Año.TextChanged += new System.EventHandler(this.txt_Año_TextChanged);
-            this.txt_Año.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txt_Año_KeyPress);
-            // 
-            // cmb_Vendedor
-            // 
-            this.cmb_Vendedor.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.cmb_Vendedor.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.cmb_Vendedor.FormattingEnabled = true;
-            this.cmb_Vendedor.Location = new System.Drawing.Point(1261, 272);
-            this.cmb_Vendedor.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.cmb_Vendedor.Name = "cmb_Vendedor";
-            this.cmb_Vendedor.pp_Display = null;
-            this.cmb_Vendedor.pp_mensaje_error = "No se Ingreso algun dato";
-            this.cmb_Vendedor.pp_nombre_campo = "tipoDoc";
-            this.cmb_Vendedor.pp_nombre_tabla = "Empleados";
-            this.cmb_Vendedor.pp_Seleccionado = false;
-            this.cmb_Vendedor.pp_Tabla = null;
-            this.cmb_Vendedor.pp_validable = false;
-            this.cmb_Vendedor.pp_Value = null;
-            this.cmb_Vendedor.Size = new System.Drawing.Size(420, 40);
-            this.cmb_Vendedor.TabIndex = 2;
-            this.cmb_Vendedor.SelectedIndexChanged += new System.EventHandler(this.cmb_Vendedor_SelectedIndexChanged);
-            // 
-            // txt_numeroCotizacion
-            // 
-            this.txt_numeroCotizacion.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.txt_numeroCotizacion.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txt_numeroCotizacion.Location = new System.Drawing.Point(1261, 162);
-            this.txt_numeroCotizacion.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.txt_numeroCotizacion.Name = "txt_numeroCotizacion";
-            this.txt_numeroCotizacion.pp_mensaje_error = "No se Ingreso algun dato";
-            this.txt_numeroCotizacion.pp_nombre_campo = "apellido";
-            this.txt_numeroCotizacion.pp_nombre_tabla = "Empleados";
-            this.txt_numeroCotizacion.pp_validable = true;
-            this.txt_numeroCotizacion.Size = new System.Drawing.Size(420, 41);
-            this.txt_numeroCotizacion.TabIndex = 0;
-            this.txt_numeroCotizacion.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txt_numeroCotizacion_KeyPress);
-            // 
-            // txt_ApellidoSolicitante
-            // 
-            this.txt_ApellidoSolicitante.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.txt_ApellidoSolicitante.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txt_ApellidoSolicitante.Location = new System.Drawing.Point(1261, 586);
-            this.txt_ApellidoSolicitante.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.txt_ApellidoSolicitante.Name = "txt_ApellidoSolicitante";
-            this.txt_ApellidoSolicitante.pp_mensaje_error = "No se Ingreso algun dato";
-            this.txt_ApellidoSolicitante.pp_nombre_campo = "telefono";
-            this.txt_ApellidoSolicitante.pp_nombre_tabla = "Empleados";
-            this.txt_ApellidoSolicitante.pp_validable = true;
-            this.txt_ApellidoSolicitante.Size = new System.Drawing.Size(420, 41);
-            this.txt_ApellidoSolicitante.TabIndex = 7;
-            // 
             // Cotizaciones
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1722, 1050);
+            this.ClientSize = new System.Drawing.Size(1370, 749);
             this.Controls.Add(this.btn_ingresar_cotizacion);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.grid01);
@@ -723,7 +683,6 @@
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
-            this.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.Name = "Cotizaciones";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Datos de Usuario";
@@ -777,12 +736,12 @@
         private System.Windows.Forms.GroupBox groupBox1;
         private System.Windows.Forms.DataGridView grid01;
         private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button btn_ingresar_cotizacion;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column1;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column2;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column3;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column4;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column5;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column6;
-        private System.Windows.Forms.Button btn_ingresar_cotizacion;
     }
 }

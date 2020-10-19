@@ -44,7 +44,7 @@
             this.btn_Buscar.FlatAppearance.BorderSize = 0;
             this.btn_Buscar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn_Buscar.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_Buscar.Location = new System.Drawing.Point(294, 68);
+            this.btn_Buscar.Location = new System.Drawing.Point(292, 72);
             this.btn_Buscar.Name = "btn_Buscar";
             this.btn_Buscar.Size = new System.Drawing.Size(52, 32);
             this.btn_Buscar.TabIndex = 17;
@@ -55,10 +55,10 @@
             // 
             this.RVClientesXEstados.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.RVClientesXEstados.LocalReport.ReportEmbeddedResource = "TuLuz.Forums.Reportes.PedidosXEmpleados.PedidosXEmpleados.rdlc";
-            this.RVClientesXEstados.Location = new System.Drawing.Point(87, 114);
+            this.RVClientesXEstados.Location = new System.Drawing.Point(85, 125);
             this.RVClientesXEstados.Name = "RVClientesXEstados";
             this.RVClientesXEstados.ServerReport.BearerToken = null;
-            this.RVClientesXEstados.Size = new System.Drawing.Size(727, 335);
+            this.RVClientesXEstados.Size = new System.Drawing.Size(702, 408);
             this.RVClientesXEstados.TabIndex = 16;
             // 
             // label2
@@ -66,7 +66,7 @@
             this.label2.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(83, 72);
+            this.label2.Location = new System.Drawing.Point(81, 76);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(73, 24);
             this.label2.TabIndex = 14;
@@ -78,7 +78,7 @@
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 30F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))));
             this.label1.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.label1.Location = new System.Drawing.Point(157, 2);
+            this.label1.Location = new System.Drawing.Point(126, 9);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(594, 46);
             this.label1.TabIndex = 13;
@@ -91,7 +91,7 @@
             this.btn_salir.FlatAppearance.BorderSize = 0;
             this.btn_salir.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn_salir.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_salir.Location = new System.Drawing.Point(838, 9);
+            this.btn_salir.Location = new System.Drawing.Point(874, 9);
             this.btn_salir.Name = "btn_salir";
             this.btn_salir.Size = new System.Drawing.Size(35, 39);
             this.btn_salir.TabIndex = 18;
@@ -104,7 +104,7 @@
             this.checkBoxEstado.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.checkBoxEstado.AutoSize = true;
             this.checkBoxEstado.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.checkBoxEstado.Location = new System.Drawing.Point(191, 72);
+            this.checkBoxEstado.Location = new System.Drawing.Point(189, 76);
             this.checkBoxEstado.Name = "checkBoxEstado";
             this.checkBoxEstado.Size = new System.Drawing.Size(71, 24);
             this.checkBoxEstado.TabIndex = 19;
@@ -115,7 +115,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(893, 450);
+            this.ClientSize = new System.Drawing.Size(929, 545);
             this.Controls.Add(this.checkBoxEstado);
             this.Controls.Add(this.btn_salir);
             this.Controls.Add(this.btn_Buscar);

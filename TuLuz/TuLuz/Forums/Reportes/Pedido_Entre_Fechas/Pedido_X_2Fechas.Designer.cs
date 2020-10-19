@@ -66,16 +66,16 @@
             // rv_listadoPedido_x_fecha
             // 
             this.rv_listadoPedido_x_fecha.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.rv_listadoPedido_x_fecha.Location = new System.Drawing.Point(17, 125);
+            this.rv_listadoPedido_x_fecha.Location = new System.Drawing.Point(88, 125);
             this.rv_listadoPedido_x_fecha.Name = "rv_listadoPedido_x_fecha";
             this.rv_listadoPedido_x_fecha.ServerReport.BearerToken = null;
-            this.rv_listadoPedido_x_fecha.Size = new System.Drawing.Size(900, 408);
+            this.rv_listadoPedido_x_fecha.Size = new System.Drawing.Size(702, 408);
             this.rv_listadoPedido_x_fecha.TabIndex = 51;
             // 
             // txt_fechaDesde
             // 
             this.txt_fechaDesde.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.txt_fechaDesde.Location = new System.Drawing.Point(12, 70);
+            this.txt_fechaDesde.Location = new System.Drawing.Point(88, 70);
             this.txt_fechaDesde.Name = "txt_fechaDesde";
             this.txt_fechaDesde.PP_Ancho = 10;
             this.txt_fechaDesde.PP_Decimales = 2;
@@ -93,7 +93,7 @@
             // txt_fechaHasta
             // 
             this.txt_fechaHasta.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.txt_fechaHasta.Location = new System.Drawing.Point(289, 70);
+            this.txt_fechaHasta.Location = new System.Drawing.Point(365, 70);
             this.txt_fechaHasta.Name = "txt_fechaHasta";
             this.txt_fechaHasta.PP_Ancho = 10;
             this.txt_fechaHasta.PP_Decimales = 2;
@@ -115,7 +115,7 @@
             this.btn_buscar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.btn_buscar.FlatAppearance.BorderSize = 0;
             this.btn_buscar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_buscar.Location = new System.Drawing.Point(868, 80);
+            this.btn_buscar.Location = new System.Drawing.Point(728, 80);
             this.btn_buscar.Name = "btn_buscar";
             this.btn_buscar.Size = new System.Drawing.Size(49, 39);
             this.btn_buscar.TabIndex = 50;

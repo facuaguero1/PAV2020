@@ -461,10 +461,10 @@
         <Height>1.38542in</Height>
         <Style />
       </Body>
-      <Width>6.5in</Width>
+      <Width>7.23139in</Width>
       <Page>
         <PageHeader>
-          <Height>1.86682cm</Height>
+          <Height>2.5812cm</Height>
           <PrintOnFirstPage>true</PrintOnFirstPage>
           <PrintOnLastPage>true</PrintOnLastPage>
           <ReportItems>
@@ -477,7 +477,7 @@
                     <TextRun>
                       <Value>Listado de los productos equivalente de: </Value>
                       <Style>
-                        <FontSize>14pt</FontSize>
+                        <FontSize>19pt</FontSize>
                         <FontWeight>Bold</FontWeight>
                         <TextDecoration>Underline</TextDecoration>
                       </Style>
@@ -489,10 +489,9 @@
                 </Paragraph>
               </Paragraphs>
               <rd:DefaultName>Textbox1</rd:DefaultName>
-              <Top>0.79057cm</Top>
-              <Left>2.2225cm</Left>
+              <Top>1.27536cm</Top>
               <Height>0.94396cm</Height>
-              <Width>10.26931cm</Width>
+              <Width>13.25722cm</Width>
               <Style>
                 <Border>
                   <Style>None</Style>
@@ -512,9 +511,10 @@
                     <TextRun>
                       <Value>=Parameters!RP01.Value</Value>
                       <Style>
-                        <FontSize>14pt</FontSize>
+                        <FontSize>19pt</FontSize>
                         <FontWeight>Bold</FontWeight>
                         <TextDecoration>Underline</TextDecoration>
+                        <Color>Red</Color>
                       </Style>
                     </TextRun>
                   </TextRuns>
@@ -522,10 +522,10 @@
                 </Paragraph>
               </Paragraphs>
               <rd:DefaultName>RP01</rd:DefaultName>
-              <Top>0.79057cm</Top>
-              <Left>12.31542cm</Left>
+              <Top>1.27536cm</Top>
+              <Left>12.94098cm</Left>
               <Height>0.94396cm</Height>
-              <Width>2.5cm</Width>
+              <Width>5.06645cm</Width>
               <ZIndex>1</ZIndex>
               <Style>
                 <Border>
@@ -555,9 +555,9 @@
                 </Paragraph>
               </Paragraphs>
               <rd:DefaultName>RP02</rd:DefaultName>
-              <Left>13.12016cm</Left>
+              <Left>14.50202cm</Left>
               <Height>0.6cm</Height>
-              <Width>2.86067cm</Width>
+              <Width>3.50541cm</Width>
               <ZIndex>2</ZIndex>
               <Style>
                 <Border>
@@ -588,8 +588,8 @@
         </PageFooter>
         <PageHeight>29.7cm</PageHeight>
         <PageWidth>21cm</PageWidth>
-        <LeftMargin>2cm</LeftMargin>
-        <RightMargin>2cm</RightMargin>
+        <LeftMargin>1cm</LeftMargin>
+        <RightMargin>1cm</RightMargin>
         <TopMargin>2cm</TopMargin>
         <BottomMargin>2cm</BottomMargin>
         <ColumnSpacing>0.13cm</ColumnSpacing>

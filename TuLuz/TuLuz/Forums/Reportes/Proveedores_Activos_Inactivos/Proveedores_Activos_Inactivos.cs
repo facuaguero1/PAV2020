@@ -69,5 +69,9 @@ namespace TuLuz.Forums.Reportes.Proveedores_Activos_Inactivos
             rv_Proveedores_Activos_NoActivos.RefreshReport();
         }
 
+        private void btn_salir_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
     }
 }

@@ -44,7 +44,7 @@
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.label1.Location = new System.Drawing.Point(126, 68);
+            this.label1.Location = new System.Drawing.Point(194, 29);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(531, 31);
             this.label1.TabIndex = 0;
@@ -56,7 +56,7 @@
             this.label2.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(49, 133);
+            this.label2.Location = new System.Drawing.Point(94, 84);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(135, 25);
             this.label2.TabIndex = 1;
@@ -67,7 +67,7 @@
             this.label3.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(313, 133);
+            this.label3.Location = new System.Drawing.Point(358, 84);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(141, 25);
             this.label3.TabIndex = 2;
@@ -80,7 +80,7 @@
             this.btn_salir.FlatAppearance.BorderSize = 0;
             this.btn_salir.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn_salir.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_salir.Location = new System.Drawing.Point(749, 12);
+            this.btn_salir.Location = new System.Drawing.Point(882, 12);
             this.btn_salir.Name = "btn_salir";
             this.btn_salir.Size = new System.Drawing.Size(35, 39);
             this.btn_salir.TabIndex = 9;
@@ -91,20 +91,23 @@
             // RVproductoXprecio
             // 
             this.RVproductoXprecio.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.RVproductoXprecio.Location = new System.Drawing.Point(68, 196);
+            this.RVproductoXprecio.Location = new System.Drawing.Point(99, 125);
             this.RVproductoXprecio.Name = "RVproductoXprecio";
             this.RVproductoXprecio.ServerReport.BearerToken = null;
-            this.RVproductoXprecio.Size = new System.Drawing.Size(656, 268);
+            this.RVproductoXprecio.Size = new System.Drawing.Size(702, 408);
             this.RVproductoXprecio.TabIndex = 10;
             // 
             // button1
             // 
             this.button1.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.button1.Location = new System.Drawing.Point(600, 134);
+            this.button1.BackgroundImage = global::TuLuz.Properties.Resources.buscar;
+            this.button1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.button1.FlatAppearance.BorderSize = 0;
+            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button1.Location = new System.Drawing.Point(645, 84);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(75, 28);
+            this.button1.Size = new System.Drawing.Size(54, 30);
             this.button1.TabIndex = 11;
-            this.button1.Text = "Buscar";
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
@@ -112,7 +115,7 @@
             // 
             this.txt_precioMax.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.txt_precioMax.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txt_precioMax.Location = new System.Drawing.Point(460, 128);
+            this.txt_precioMax.Location = new System.Drawing.Point(505, 84);
             this.txt_precioMax.Name = "txt_precioMax";
             this.txt_precioMax.pp_mensaje_error = "No se ingreso NOMBRE!!";
             this.txt_precioMax.pp_nombre_campo = "nombre";
@@ -125,7 +128,7 @@
             // 
             this.txt_pracioMin.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.txt_pracioMin.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txt_pracioMin.Location = new System.Drawing.Point(190, 133);
+            this.txt_pracioMin.Location = new System.Drawing.Point(235, 84);
             this.txt_pracioMin.Name = "txt_pracioMin";
             this.txt_pracioMin.pp_mensaje_error = "No se ingreso CUIT!!";
             this.txt_pracioMin.pp_nombre_campo = "codBarrio";
@@ -139,7 +142,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(796, 508);
+            this.ClientSize = new System.Drawing.Size(929, 545);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.RVproductoXprecio);
             this.Controls.Add(this.btn_salir);

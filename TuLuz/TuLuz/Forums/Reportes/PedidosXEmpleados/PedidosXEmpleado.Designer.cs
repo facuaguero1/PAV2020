@@ -42,7 +42,7 @@
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 30F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))));
             this.label1.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.label1.Location = new System.Drawing.Point(12, 5);
+            this.label1.Location = new System.Drawing.Point(119, 21);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(641, 46);
             this.label1.TabIndex = 0;
@@ -54,7 +54,7 @@
             this.label2.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(16, 76);
+            this.label2.Location = new System.Drawing.Point(91, 81);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(102, 24);
             this.label2.TabIndex = 1;
@@ -66,7 +66,7 @@
             this.btn_salir.FlatAppearance.BorderSize = 0;
             this.btn_salir.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn_salir.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_salir.Location = new System.Drawing.Point(712, 12);
+            this.btn_salir.Location = new System.Drawing.Point(882, 12);
             this.btn_salir.Name = "btn_salir";
             this.btn_salir.Size = new System.Drawing.Size(35, 39);
             this.btn_salir.TabIndex = 9;
@@ -78,10 +78,10 @@
             // 
             this.RVPedidosXEmpleados.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.RVPedidosXEmpleados.LocalReport.ReportEmbeddedResource = "TuLuz.Forums.Reportes.PedidosXEmpleados.PedidosXEmpleados.rdlc";
-            this.RVPedidosXEmpleados.Location = new System.Drawing.Point(20, 118);
+            this.RVPedidosXEmpleados.Location = new System.Drawing.Point(93, 116);
             this.RVPedidosXEmpleados.Name = "RVPedidosXEmpleados";
             this.RVPedidosXEmpleados.ServerReport.BearerToken = null;
-            this.RVPedidosXEmpleados.Size = new System.Drawing.Size(727, 335);
+            this.RVPedidosXEmpleados.Size = new System.Drawing.Size(702, 408);
             this.RVPedidosXEmpleados.TabIndex = 11;
             // 
             // cmb_Empleados
@@ -89,7 +89,7 @@
             this.cmb_Empleados.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.cmb_Empleados.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cmb_Empleados.FormattingEnabled = true;
-            this.cmb_Empleados.Location = new System.Drawing.Point(124, 73);
+            this.cmb_Empleados.Location = new System.Drawing.Point(199, 78);
             this.cmb_Empleados.Name = "cmb_Empleados";
             this.cmb_Empleados.pp_Display = null;
             this.cmb_Empleados.pp_mensaje_error = null;
@@ -111,7 +111,7 @@
             this.button1.FlatAppearance.BorderSize = 0;
             this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.Location = new System.Drawing.Point(314, 73);
+            this.button1.Location = new System.Drawing.Point(389, 78);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(52, 32);
             this.button1.TabIndex = 12;
@@ -122,7 +122,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(759, 465);
+            this.ClientSize = new System.Drawing.Size(929, 545);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.RVPedidosXEmpleados);
             this.Controls.Add(this.cmb_Empleados);

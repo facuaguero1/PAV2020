@@ -16,6 +16,8 @@ using TuLuz.Negocio.EstructuraNegocios;
 using TuLuz.Forums.Reportes.CotizacionesXEstado;
 using TuLuz.Forums.Reportes.PedidosXClientes;
 using TuLuz.Forums.Reportes.ClientesXEstado;
+using TuLuz.Forums.Reportes.Empleados_Jefes;
+using TuLuz.Forums.Reportes.Proveedores_Activos_Inactivos;
 
 namespace TuLuz
 {
@@ -453,6 +455,17 @@ namespace TuLuz
         private void button48_Click(object sender, EventArgs e)
         {
             AbrirFormularioSubMenu(new cotizacionXprecio());
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            AbrirFormularioSubMenu(new Empleados_Jefes());
+
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            AbrirFormularioSubMenu(new Proveedores_Activos_Inactivos());
         }
     }
 }

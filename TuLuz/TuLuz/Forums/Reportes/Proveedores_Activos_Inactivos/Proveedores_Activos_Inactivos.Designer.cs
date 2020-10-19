@@ -29,15 +29,15 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            Microsoft.Reporting.WinForms.ReportDataSource reportDataSource2 = new Microsoft.Reporting.WinForms.ReportDataSource();
+            Microsoft.Reporting.WinForms.ReportDataSource reportDataSource1 = new Microsoft.Reporting.WinForms.ReportDataSource();
             this.DataTable1BindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.RepProveedores_Activos_Inactivos = new TuLuz.Forums.Reportes.Proveedores_Activos_Inactivos.RepProveedores_Activos_Inactivos();
             this.label1 = new System.Windows.Forms.Label();
             this.rv_Proveedores_Activos_NoActivos = new Microsoft.Reporting.WinForms.ReportViewer();
-            this.btn_cancelar = new System.Windows.Forms.Button();
             this.btn_buscar = new System.Windows.Forms.Button();
             this.checkBoxActivo = new System.Windows.Forms.CheckBox();
             this.checkBoxNoActivo = new System.Windows.Forms.CheckBox();
+            this.btn_salir = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.DataTable1BindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.RepProveedores_Activos_Inactivos)).BeginInit();
             this.SuspendLayout();
@@ -54,9 +54,10 @@
             // 
             // label1
             // 
+            this.label1.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(69, 9);
+            this.label1.Location = new System.Drawing.Point(138, 9);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(620, 33);
             this.label1.TabIndex = 0;
@@ -64,30 +65,17 @@
             // 
             // rv_Proveedores_Activos_NoActivos
             // 
-            reportDataSource2.Name = "DataSet1";
-            reportDataSource2.Value = this.DataTable1BindingSource;
-            this.rv_Proveedores_Activos_NoActivos.LocalReport.DataSources.Add(reportDataSource2);
+            this.rv_Proveedores_Activos_NoActivos.Anchor = System.Windows.Forms.AnchorStyles.None;
+            reportDataSource1.Name = "DataSet1";
+            reportDataSource1.Value = this.DataTable1BindingSource;
+            this.rv_Proveedores_Activos_NoActivos.LocalReport.DataSources.Add(reportDataSource1);
             this.rv_Proveedores_Activos_NoActivos.LocalReport.ReportEmbeddedResource = "TuLuz.Forums.Reportes.Proveedores_Activos_Inactivos.Proveedores_Activos_Inactivos" +
     ".rdlc";
-            this.rv_Proveedores_Activos_NoActivos.Location = new System.Drawing.Point(44, 103);
+            this.rv_Proveedores_Activos_NoActivos.Location = new System.Drawing.Point(100, 103);
             this.rv_Proveedores_Activos_NoActivos.Name = "rv_Proveedores_Activos_NoActivos";
             this.rv_Proveedores_Activos_NoActivos.ServerReport.BearerToken = null;
-            this.rv_Proveedores_Activos_NoActivos.Size = new System.Drawing.Size(685, 271);
+            this.rv_Proveedores_Activos_NoActivos.Size = new System.Drawing.Size(702, 408);
             this.rv_Proveedores_Activos_NoActivos.TabIndex = 1;
-            // 
-            // btn_cancelar
-            // 
-            this.btn_cancelar.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.btn_cancelar.BackgroundImage = global::TuLuz.Properties.Resources.cancel_77947;
-            this.btn_cancelar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.btn_cancelar.FlatAppearance.BorderSize = 0;
-            this.btn_cancelar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_cancelar.Location = new System.Drawing.Point(492, 408);
-            this.btn_cancelar.Name = "btn_cancelar";
-            this.btn_cancelar.Size = new System.Drawing.Size(72, 68);
-            this.btn_cancelar.TabIndex = 54;
-            this.btn_cancelar.UseVisualStyleBackColor = true;
-            this.btn_cancelar.Click += new System.EventHandler(this.btn_cancelar_Click);
             // 
             // btn_buscar
             // 
@@ -96,18 +84,19 @@
             this.btn_buscar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.btn_buscar.FlatAppearance.BorderSize = 0;
             this.btn_buscar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_buscar.Location = new System.Drawing.Point(150, 408);
+            this.btn_buscar.Location = new System.Drawing.Point(277, 52);
             this.btn_buscar.Name = "btn_buscar";
-            this.btn_buscar.Size = new System.Drawing.Size(66, 55);
+            this.btn_buscar.Size = new System.Drawing.Size(54, 45);
             this.btn_buscar.TabIndex = 53;
             this.btn_buscar.UseVisualStyleBackColor = true;
             this.btn_buscar.Click += new System.EventHandler(this.btn_buscar_Click_1);
             // 
             // checkBoxActivo
             // 
+            this.checkBoxActivo.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.checkBoxActivo.AutoSize = true;
             this.checkBoxActivo.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.checkBoxActivo.Location = new System.Drawing.Point(208, 63);
+            this.checkBoxActivo.Location = new System.Drawing.Point(106, 52);
             this.checkBoxActivo.Name = "checkBoxActivo";
             this.checkBoxActivo.Size = new System.Drawing.Size(77, 24);
             this.checkBoxActivo.TabIndex = 55;
@@ -116,28 +105,44 @@
             // 
             // checkBoxNoActivo
             // 
+            this.checkBoxNoActivo.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.checkBoxNoActivo.AutoSize = true;
             this.checkBoxNoActivo.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.checkBoxNoActivo.Location = new System.Drawing.Point(391, 63);
+            this.checkBoxNoActivo.Location = new System.Drawing.Point(106, 73);
             this.checkBoxNoActivo.Name = "checkBoxNoActivo";
             this.checkBoxNoActivo.Size = new System.Drawing.Size(104, 24);
             this.checkBoxNoActivo.TabIndex = 56;
             this.checkBoxNoActivo.Text = "No Activo";
             this.checkBoxNoActivo.UseVisualStyleBackColor = true;
             // 
+            // btn_salir
+            // 
+            this.btn_salir.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.btn_salir.FlatAppearance.BorderSize = 0;
+            this.btn_salir.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_salir.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_salir.Location = new System.Drawing.Point(882, 12);
+            this.btn_salir.Name = "btn_salir";
+            this.btn_salir.Size = new System.Drawing.Size(35, 39);
+            this.btn_salir.TabIndex = 57;
+            this.btn_salir.Text = "X";
+            this.btn_salir.UseVisualStyleBackColor = true;
+            this.btn_salir.Click += new System.EventHandler(this.btn_salir_Click);
+            // 
             // Proveedores_Activos_Inactivos
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(766, 497);
+            this.ClientSize = new System.Drawing.Size(929, 545);
+            this.Controls.Add(this.btn_salir);
             this.Controls.Add(this.checkBoxNoActivo);
             this.Controls.Add(this.checkBoxActivo);
-            this.Controls.Add(this.btn_cancelar);
             this.Controls.Add(this.btn_buscar);
             this.Controls.Add(this.rv_Proveedores_Activos_NoActivos);
             this.Controls.Add(this.label1);
             this.Name = "Proveedores_Activos_Inactivos";
             this.Text = "Proveedores_Activos_Inactivos";
+            this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.Load += new System.EventHandler(this.Proveedores_Activos_Inactivos_Load);
             ((System.ComponentModel.ISupportInitialize)(this.DataTable1BindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.RepProveedores_Activos_Inactivos)).EndInit();
@@ -152,9 +157,9 @@
         private Microsoft.Reporting.WinForms.ReportViewer rv_Proveedores_Activos_NoActivos;
         private System.Windows.Forms.BindingSource DataTable1BindingSource;
         private RepProveedores_Activos_Inactivos RepProveedores_Activos_Inactivos;
-        private System.Windows.Forms.Button btn_cancelar;
         private System.Windows.Forms.Button btn_buscar;
         private System.Windows.Forms.CheckBox checkBoxActivo;
         private System.Windows.Forms.CheckBox checkBoxNoActivo;
+        private System.Windows.Forms.Button btn_salir;
     }
 }

@@ -528,10 +528,10 @@
         <Height>2in</Height>
         <Style />
       </Body>
-      <Width>7.63722in</Width>
+      <Width>6.88722in</Width>
       <Page>
         <PageHeader>
-          <Height>2.54cm</Height>
+          <Height>3.31611cm</Height>
           <PrintOnFirstPage>true</PrintOnFirstPage>
           <PrintOnLastPage>true</PrintOnLastPage>
           <ReportItems>
@@ -556,7 +556,7 @@
                 </Paragraph>
               </Paragraphs>
               <rd:DefaultName>Textbox1</rd:DefaultName>
-              <Top>0.22034cm</Top>
+              <Top>1.17284cm</Top>
               <Left>3.18115cm</Left>
               <Height>1.18181cm</Height>
               <Width>11.12542cm</Width>
@@ -592,7 +592,7 @@
                 </Paragraph>
               </Paragraphs>
               <rd:DefaultName>RP01</rd:DefaultName>
-              <Top>1.57854cm</Top>
+              <Top>2.53104cm</Top>
               <Left>0.36396cm</Left>
               <Height>0.78507cm</Height>
               <Width>5.80729cm</Width>
@@ -625,10 +625,10 @@
                 </Paragraph>
               </Paragraphs>
               <rd:DefaultName>RP02</rd:DefaultName>
-              <Top>0.22034cm</Top>
-              <Left>15.62948cm</Left>
+              <Top>0.35263cm</Top>
+              <Left>12.87781cm</Left>
               <Height>0.6cm</Height>
-              <Width>3.55833cm</Width>
+              <Width>4.29823cm</Width>
               <ZIndex>2</ZIndex>
               <Style>
                 <Border>
@@ -659,10 +659,10 @@
         </PageFooter>
         <PageHeight>29.7cm</PageHeight>
         <PageWidth>21cm</PageWidth>
-        <LeftMargin>2cm</LeftMargin>
-        <RightMargin>2cm</RightMargin>
-        <TopMargin>2cm</TopMargin>
-        <BottomMargin>2cm</BottomMargin>
+        <LeftMargin>0.5cm</LeftMargin>
+        <RightMargin>0.5cm</RightMargin>
+        <TopMargin>0.5cm</TopMargin>
+        <BottomMargin>0.5cm</BottomMargin>
         <ColumnSpacing>0.13cm</ColumnSpacing>
         <Style />
       </Page>
