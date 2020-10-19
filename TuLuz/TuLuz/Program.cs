@@ -4,7 +4,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using TuLuz.Forums;
-using TuLuz.Forums.Reportes.Empleados_Jefes;
+
 
 namespace TuLuz
 {
@@ -20,7 +20,8 @@ namespace TuLuz
             Application.SetCompatibleTextRenderingDefault(false);
             Application.Run(new Principal());
             //Application.Run(new ModificarCliente() { cuit = "555"});
-            
+
+            //Application.Run(new ());
         }
     }
 }

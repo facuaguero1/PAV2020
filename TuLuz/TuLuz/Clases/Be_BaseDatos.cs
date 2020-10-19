@@ -27,8 +27,8 @@ namespace TuLuz.Clases
         //string Cadena_Conexion = "Data Source=DESKTOP-V8659BG;Initial Catalog=DATABASE_TULUZ;Integrated Security=True"; //CONEXION FABRI
         //string Cadena_Conexion = "Data Source=USUARIO-PC\\SQLEXPRESS;Initial Catalog=DATABASE_TULUZ;Integrated Security=True"; // CONEXION FACU
         //string Cadena_Conexion = "Data Source=LAPTOP-GR111J17;Initial Catalog=TuLuz;Integrated Security=True"; //CONEXION MARTIN
-        //string Cadena_Conexion = "Data Source=desktop-a7p75ig\\sqlexpress;Initial Catalog=DATABASE_TULUZ;Integrated Security=True"; //CONEXION agusto
-        string Cadena_Conexion = "Data Source=DESKTOP-LBDC65G;Initial Catalog=TuLuz;Integrated Security=True"; // CONEXION PEDRO
+        string Cadena_Conexion = "Data Source=desktop-a7p75ig\\sqlexpress;Initial Catalog=DATABASE_TULUZ;Integrated Security=True"; //CONEXION agusto
+        //string Cadena_Conexion = "Data Source=DESKTOP-LBDC65G;Initial Catalog=TuLuz;Integrated Security=True"; // CONEXION PEDRO
 
         //-----------------------------------------INICIAR TRANSACCION-----------------------------------------
         public void IniciarTransaccion()

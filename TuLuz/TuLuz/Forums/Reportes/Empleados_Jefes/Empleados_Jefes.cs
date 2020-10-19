@@ -37,36 +37,51 @@ namespace TuLuz.Forums.Reportes.Empleados_Jefes
         }
 
         //private DataTable Todos_los_Empleados()
-        private DataTable Es_Empleado_Jefe_Supervisor()
+        private DataTable EsJefeS()
         {
             {
                 //Tabla = Empleados.Todos_los_Empleados();
-                Tabla = Empleados.Es_Empleado_Jefe_Supervisor();
+                Tabla = Empleados.EsJefeS(txt_tipoDoc.Text,txt_numDoc.Text);
             }
             return Tabla;
         }
 
         private void CargarInforme(DataTable Tabla)
         {
-
-            ReportDataSource Datos = new ReportDataSource("DataSet1", Tabla);
-            rv_listadoEmpleados_Jefes.LocalReport.ReportEmbeddedResource = "TuLuz.Forums.Reportes.Empleados_Jefes.ReporteEmpleados_Jefes.rdlc";
-            rv_listadoEmpleados_Jefes.LocalReport.DataSources.Clear();
-            rv_listadoEmpleados_Jefes.LocalReport.DataSources.Add(Datos);
-            rv_listadoEmpleados_Jefes.RefreshReport();
-        }
-
-        private void btn_cancelar_Click(object sender, EventArgs e)
-        {
-            this.Close();
+            if (Tabla.Rows.Count == 0)
+            {
+                MessageBox.Show("No se ha seleccionado un jefe de manera correcta", "Atencion: ", MessageBoxButtons.OK);
+                return;
+            }
+            else
+            {
+                ReportDataSource Datos = new ReportDataSource("DataSet1", Tabla);
+                rv_listadoEmpleados_Jefes.LocalReport.ReportEmbeddedResource = "TuLuz.Forums.Reportes.Empleados_Jefes.ReporteEmpleados_Jefes.rdlc";
+                rv_listadoEmpleados_Jefes.LocalReport.DataSources.Clear();
+                rv_listadoEmpleados_Jefes.LocalReport.DataSources.Add(Datos);
+                rv_listadoEmpleados_Jefes.RefreshReport();
+            }
         }
 
         private void btn_buscar_Click(object sender, EventArgs e)
         {
-            DataTable Tabla = new DataTable();
-            //Tabla = Todos_los_Empleados();
-            Tabla = Es_Empleado_Jefe_Supervisor();
-            CargarInforme(Tabla);
+            if (txt_numDoc.Text == "" || txt_tipoDoc.Text == "")
+            {
+                MessageBox.Show("No se ha insertado el Tipo o Numero de Documento", "Atencion: ", MessageBoxButtons.OK);
+                return;
+            }
+            else
+            {
+                DataTable Tabla = new DataTable();
+                //Tabla 
+                Tabla = EsJefeS();
+                CargarInforme(Tabla);
+            }
+        }
+
+        private void btn_salir_Click(object sender, EventArgs e)
+        {
+            this.Close();
         }
     }
 }

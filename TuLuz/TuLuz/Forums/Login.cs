@@ -63,5 +63,10 @@ namespace TuLuz.Forums
         {
 
         }
+
+        private void panel2_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
     }
 }

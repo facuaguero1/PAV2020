@@ -63,5 +63,10 @@ namespace TuLuz.Forums
         {
 
         }
+
+        private void AltaCliente_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

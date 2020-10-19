@@ -16,10 +16,11 @@
           <xs:complexType>
             <xs:sequence>
               <xs:element name="tipoDoc" msprop:Generator_ColumnVarNameInTable="columntipoDoc" msprop:Generator_ColumnPropNameInRow="tipoDoc" msprop:Generator_ColumnPropNameInTable="tipoDocColumn" msprop:Generator_UserColumnName="tipoDoc" type="xs:string" minOccurs="0" />
-              <xs:element name="nroDoc" msprop:Generator_ColumnVarNameInTable="columnnroDoc" msprop:Generator_ColumnPropNameInRow="nroDoc" msprop:Generator_ColumnPropNameInTable="nroDocColumn" msprop:Generator_UserColumnName="nroDoc" type="xs:string" minOccurs="0" />
+              <xs:element name="numDoc" msprop:Generator_ColumnVarNameInTable="columnnumDoc" msprop:Generator_ColumnPropNameInRow="numDoc" msprop:Generator_ColumnPropNameInTable="numDocColumn" msprop:Generator_UserColumnName="numDoc" type="xs:string" minOccurs="0" />
               <xs:element name="nombre" msprop:Generator_ColumnVarNameInTable="columnnombre" msprop:Generator_ColumnPropNameInRow="nombre" msprop:Generator_ColumnPropNameInTable="nombreColumn" msprop:Generator_UserColumnName="nombre" type="xs:string" minOccurs="0" />
               <xs:element name="direccion" msprop:Generator_ColumnVarNameInTable="columndireccion" msprop:Generator_ColumnPropNameInRow="direccion" msprop:Generator_ColumnPropNameInTable="direccionColumn" msprop:Generator_UserColumnName="direccion" type="xs:string" minOccurs="0" />
               <xs:element name="telefono" msprop:Generator_ColumnVarNameInTable="columntelefono" msprop:Generator_ColumnPropNameInRow="telefono" msprop:Generator_ColumnPropNameInTable="telefonoColumn" msprop:Generator_UserColumnName="telefono" type="xs:string" minOccurs="0" />
+              <xs:element name="apellido" msprop:Generator_ColumnVarNameInTable="columnapellido" msprop:Generator_ColumnPropNameInRow="apellido" msprop:Generator_ColumnPropNameInTable="apellidoColumn" msprop:Generator_UserColumnName="apellido" type="xs:string" minOccurs="0" />
             </xs:sequence>
           </xs:complexType>
         </xs:element>
