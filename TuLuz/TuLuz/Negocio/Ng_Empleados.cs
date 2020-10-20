@@ -44,9 +44,9 @@ namespace TuLuz.Negocio
 
         }
 
-        public DataTable EsJefeS(string tipo, string doc)
+        public DataTable EsJefeS(string doc)
         {
-            string sql = "SELECT * FROM empleados WHERE numDocJefe like " + doc.Trim() + " AND tipoDocJefe like " + tipo.Trim();
+            string sql = "SELECT * FROM empleados WHERE numDocJefe like " + doc.Trim();
             DataTable Tabla = new DataTable();
             Tabla = _BD.Consulta(sql);
             return Tabla;
@@ -61,13 +61,6 @@ namespace TuLuz.Negocio
             return tabla;
         }
 
-        public DataTable Buscar_Empleados_Jefes(string doc)
-        {
-            string sql = "SELECT * FROM empleados WHERE numDocJefe like '%" + doc.Trim() + "%'";
-            DataTable tabla = new DataTable();
-            tabla = _BD.Consulta(sql);
-            return tabla;
-        }
         public DataTable Buscar_Empleados_Usuario(string usr)
         {
             string sql = "SELECT Empleados.* FROM Empleados, Usuario WHERE  Empleados.numDoc = Usuario.numDocEmpleado AND Usuario.usuario LIKE '" + usr + "'";
@@ -142,13 +135,20 @@ namespace TuLuz.Negocio
         public EstructuraComboBox EstructuraComboxListado()
         {
             EstructuraComboBox EC = new EstructuraComboBox();
-            EC.Display = "nombre";
+            EC.Display = "numDoc";
             EC.Value = "numDoc";
             EC.Sql = "SELECT * FROM Empleados";
             EC.Tabla = _BD.Consulta(EC.Sql);
             return EC;
         }
+        public DataTable Todos_los_Jefes()
+        {
+            string sql = "SELECT * FROM Empleados WHERE numDocJefe is NULL ";  
+            DataTable tabla = new DataTable();
+            tabla = _BD.Consulta(sql);
+            return tabla;
 
+        }
     }
 }
 

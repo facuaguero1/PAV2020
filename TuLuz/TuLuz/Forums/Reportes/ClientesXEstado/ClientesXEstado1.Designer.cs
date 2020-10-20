@@ -33,7 +33,8 @@
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.btn_salir = new System.Windows.Forms.Button();
-            this.checkBoxEstado = new System.Windows.Forms.CheckBox();
+            this.chk_Activos = new System.Windows.Forms.CheckBox();
+            this.Chk_no_Activos = new System.Windows.Forms.CheckBox();
             this.SuspendLayout();
             // 
             // btn_Buscar
@@ -44,7 +45,7 @@
             this.btn_Buscar.FlatAppearance.BorderSize = 0;
             this.btn_Buscar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn_Buscar.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_Buscar.Location = new System.Drawing.Point(292, 72);
+            this.btn_Buscar.Location = new System.Drawing.Point(313, 76);
             this.btn_Buscar.Name = "btn_Buscar";
             this.btn_Buscar.Size = new System.Drawing.Size(52, 32);
             this.btn_Buscar.TabIndex = 17;
@@ -66,7 +67,7 @@
             this.label2.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(81, 76);
+            this.label2.Location = new System.Drawing.Point(110, 65);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(73, 24);
             this.label2.TabIndex = 14;
@@ -99,24 +100,37 @@
             this.btn_salir.UseVisualStyleBackColor = true;
             this.btn_salir.Click += new System.EventHandler(this.btn_salir_Click);
             // 
-            // checkBoxEstado
+            // chk_Activos
             // 
-            this.checkBoxEstado.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.checkBoxEstado.AutoSize = true;
-            this.checkBoxEstado.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.checkBoxEstado.Location = new System.Drawing.Point(189, 76);
-            this.checkBoxEstado.Name = "checkBoxEstado";
-            this.checkBoxEstado.Size = new System.Drawing.Size(71, 24);
-            this.checkBoxEstado.TabIndex = 19;
-            this.checkBoxEstado.Text = "Activo";
-            this.checkBoxEstado.UseVisualStyleBackColor = true;
+            this.chk_Activos.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.chk_Activos.AutoSize = true;
+            this.chk_Activos.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.chk_Activos.Location = new System.Drawing.Point(189, 67);
+            this.chk_Activos.Name = "chk_Activos";
+            this.chk_Activos.Size = new System.Drawing.Size(71, 24);
+            this.chk_Activos.TabIndex = 19;
+            this.chk_Activos.Text = "Activo";
+            this.chk_Activos.UseVisualStyleBackColor = true;
+            // 
+            // Chk_no_Activos
+            // 
+            this.Chk_no_Activos.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.Chk_no_Activos.AutoSize = true;
+            this.Chk_no_Activos.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Chk_no_Activos.Location = new System.Drawing.Point(189, 95);
+            this.Chk_no_Activos.Name = "Chk_no_Activos";
+            this.Chk_no_Activos.Size = new System.Drawing.Size(103, 24);
+            this.Chk_no_Activos.TabIndex = 20;
+            this.Chk_no_Activos.Text = "No Activos";
+            this.Chk_no_Activos.UseVisualStyleBackColor = true;
             // 
             // ClientesXEstado1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(929, 545);
-            this.Controls.Add(this.checkBoxEstado);
+            this.Controls.Add(this.Chk_no_Activos);
+            this.Controls.Add(this.chk_Activos);
             this.Controls.Add(this.btn_salir);
             this.Controls.Add(this.btn_Buscar);
             this.Controls.Add(this.RVClientesXEstados);
@@ -138,6 +152,7 @@
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Button btn_salir;
-        private System.Windows.Forms.CheckBox checkBoxEstado;
+        private System.Windows.Forms.CheckBox chk_Activos;
+        private System.Windows.Forms.CheckBox Chk_no_Activos;
     }
 }

@@ -29,7 +29,7 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            Microsoft.Reporting.WinForms.ReportDataSource reportDataSource1 = new Microsoft.Reporting.WinForms.ReportDataSource();
+            Microsoft.Reporting.WinForms.ReportDataSource reportDataSource4 = new Microsoft.Reporting.WinForms.ReportDataSource();
             this.DataTable1BindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.RepProveedores_Activos_Inactivos = new TuLuz.Forums.Reportes.Proveedores_Activos_Inactivos.RepProveedores_Activos_Inactivos();
             this.label1 = new System.Windows.Forms.Label();
@@ -56,19 +56,19 @@
             // 
             this.label1.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(138, 9);
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 30F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(110, 3);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(620, 33);
+            this.label1.Size = new System.Drawing.Size(654, 46);
             this.label1.TabIndex = 0;
-            this.label1.Text = "PROVEEDORES ACTIVOS Y NO ACTIVOS";
+            this.label1.Text = "Proveedores Activos y No Activos\r\n";
             // 
             // rv_Proveedores_Activos_NoActivos
             // 
             this.rv_Proveedores_Activos_NoActivos.Anchor = System.Windows.Forms.AnchorStyles.None;
-            reportDataSource1.Name = "DataSet1";
-            reportDataSource1.Value = this.DataTable1BindingSource;
-            this.rv_Proveedores_Activos_NoActivos.LocalReport.DataSources.Add(reportDataSource1);
+            reportDataSource4.Name = "DataSet1";
+            reportDataSource4.Value = this.DataTable1BindingSource;
+            this.rv_Proveedores_Activos_NoActivos.LocalReport.DataSources.Add(reportDataSource4);
             this.rv_Proveedores_Activos_NoActivos.LocalReport.ReportEmbeddedResource = "TuLuz.Forums.Reportes.Proveedores_Activos_Inactivos.Proveedores_Activos_Inactivos" +
     ".rdlc";
             this.rv_Proveedores_Activos_NoActivos.Location = new System.Drawing.Point(100, 103);
@@ -117,13 +117,13 @@
             // 
             // btn_salir
             // 
-            this.btn_salir.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.btn_salir.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.btn_salir.FlatAppearance.BorderSize = 0;
             this.btn_salir.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn_salir.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_salir.Location = new System.Drawing.Point(882, 12);
             this.btn_salir.Name = "btn_salir";
-            this.btn_salir.Size = new System.Drawing.Size(35, 39);
+            this.btn_salir.Size = new System.Drawing.Size(35, 37);
             this.btn_salir.TabIndex = 57;
             this.btn_salir.Text = "X";
             this.btn_salir.UseVisualStyleBackColor = true;

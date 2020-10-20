@@ -30,25 +30,39 @@ namespace TuLuz.Forums.Reportes.ClientesXEstado
 
         private void ClientesXEstado_Load(object sender, EventArgs e)
         {
-            
+
         }
 
 
         private void btn_Buscar_Click(object sender, EventArgs e)
         {
+
             DataTable tabla = new DataTable();
-            string estado;
-            if (checkBoxEstado.Checked)
+            string estado = "";
+
+            if (chk_Activos.Checked == true)
             {
-                tabla = Clientes.Todos_los_ClientesActivos();
-                estado = "Activo";
+                if (Chk_no_Activos.Checked == true)
+                {
+                    tabla = Clientes.Todos_los_Clientes();
+                    estado = "Activos y No Activos";
+
+                }
+                else
+                {
+                    tabla = Clientes.Todos_los_ClientesActivos();
+                    estado = "Activos";
+                }
             }
-            else
+
+            if (Chk_no_Activos.Checked == true)
             {
-                tabla = Clientes.Todos_los_ClientesNoActivos();
-                estado = "Inactivo";
+                if (chk_Activos.Checked == false)
+                {
+                    tabla = Clientes.Todos_los_ClientesNoActivos();
+                    estado = "No Activos";
+                }
             }
-            
             ReportDataSource Datos = new ReportDataSource("DataSet2", tabla);
             RVClientesXEstados.LocalReport.ReportEmbeddedResource = "TuLuz.Forums.Reportes.ClientesXEstado.ClientesXEstado.rdlc";
             ReportParameter[] parametros = new ReportParameter[2];
@@ -58,8 +72,7 @@ namespace TuLuz.Forums.Reportes.ClientesXEstado
             RVClientesXEstados.LocalReport.SetParameters(parametros);
             RVClientesXEstados.LocalReport.DataSources.Add(Datos);
             RVClientesXEstados.RefreshReport();
-
-            }
         }
+    }
 }
 
