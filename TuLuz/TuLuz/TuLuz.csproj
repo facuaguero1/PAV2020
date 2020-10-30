@@ -79,6 +79,17 @@
       <SubType>Component</SubType>
     </Compile>
     <Compile Include="Clases\TratamientosEspeciales.cs" />
+    <Compile Include="Forums\Estadisticas\Clientes_Activos_NoActivos\DataSet_Clientes_Ac_NoAc.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DataSet_Clientes_Ac_NoAc.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Forums\Estadisticas\Clientes_Activos_NoActivos\Estadistica_Clientes_Ac_NoAc.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forums\Estadisticas\Clientes_Activos_NoActivos\Estadistica_Clientes_Ac_NoAc.Designer.cs">
+      <DependentUpon>Estadistica_Clientes_Ac_NoAc.cs</DependentUpon>
+    </Compile>
     <Compile Include="Forums\Barrios\AltaBarrio.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -506,6 +517,9 @@
     <EmbeddedResource Include="Clases\LabelText01.resx">
       <DependentUpon>LabelText01.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Forums\Estadisticas\Clientes_Activos_NoActivos\Estadistica_Clientes_Ac_NoAc.resx">
+      <DependentUpon>Estadistica_Clientes_Ac_NoAc.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Forums\Barrios\AltaBarrio.resx">
       <DependentUpon>AltaBarrio.cs</DependentUpon>
     </EmbeddedResource>
@@ -530,6 +544,7 @@
     <EmbeddedResource Include="Forums\Clientes\ModificarCliente.resx">
       <DependentUpon>ModificarCliente.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Forums\Estadisticas\Clientes_Activos_NoActivos\Rv_Clientes_Ac_NoAc.rdlc" />
     <EmbeddedResource Include="Forums\Reportes\ClientesXEstado\ClientesXEstado.rdlc" />
     <EmbeddedResource Include="Forums\Reportes\ClientesXEstado\ClientesXEstado1.resx">
       <DependentUpon>ClientesXEstado1.cs</DependentUpon>
@@ -693,6 +708,17 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
+    <None Include="Forums\Estadisticas\Clientes_Activos_NoActivos\DataSet_Clientes_Ac_NoAc.xsc">
+      <DependentUpon>DataSet_Clientes_Ac_NoAc.xsd</DependentUpon>
+    </None>
+    <None Include="Forums\Estadisticas\Clientes_Activos_NoActivos\DataSet_Clientes_Ac_NoAc.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DataSet_Clientes_Ac_NoAc.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="Forums\Estadisticas\Clientes_Activos_NoActivos\DataSet_Clientes_Ac_NoAc.xss">
+      <DependentUpon>DataSet_Clientes_Ac_NoAc.xsd</DependentUpon>
+    </None>
     <None Include="Forums\Reportes\ClientesXEstado\DataClientesXEstado.xsc">
       <DependentUpon>DataClientesXEstado.xsd</DependentUpon>
     </None>

@@ -361,9 +361,10 @@
             this.button42.Padding = new System.Windows.Forms.Padding(35, 0, 0, 0);
             this.button42.Size = new System.Drawing.Size(223, 33);
             this.button42.TabIndex = 0;
-            this.button42.Text = "button42";
+            this.button42.Text = "Clientes Activos y No Activos";
             this.button42.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.button42.UseVisualStyleBackColor = true;
+            this.button42.Click += new System.EventHandler(this.button42_Click);
             // 
             // btn_Estadisticas
             // 

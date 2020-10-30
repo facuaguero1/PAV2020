@@ -1018,3 +1018,4 @@ C:\Users\PC\Documents\GitHub\PAV2020\TuLuz\TuLuz\obj\Debug\TuLuz.Forums.Producto
 C:\Users\PC\Documents\GitHub\PAV2020\TuLuz\TuLuz\obj\Debug\TuLuz.Forums.Reportes.Proveedores_Activos_Inactivos.Proveedores_Activos_Inactivos.resources
 C:\Users\matut\Documents\GitHub\PAV2020\TuLuz\TuLuz\obj\Debug\TuLuz.Forums.cotizacionXprecio.resources
 C:\Users\matut\Documents\GitHub\PAV2020\TuLuz\TuLuz\obj\Debug\TuLuz.Forums.Reportes.Proveedores_Activos_Inactivos.Proveedores_Activos_Inactivos.resources
+C:\Users\matut\Documents\GitHub\PAV2020\TuLuz\TuLuz\obj\Debug\TuLuz.Forums._Estadisticas.Prod_con_ProdEq.Estadistica_Clientes_Ac_NoAc.resources
