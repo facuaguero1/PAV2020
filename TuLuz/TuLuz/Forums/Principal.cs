@@ -19,6 +19,7 @@ using TuLuz.Forums.Reportes.ClientesXEstado;
 using TuLuz.Forums.Reportes.Empleados_Jefes;
 using TuLuz.Forums.Reportes.Proveedores_Activos_Inactivos;
 using TuLuz.Forums._Estadisticas.Prod_con_ProdEq;
+using TuLuz.Forums.Estadisticas.Pedidos_Entre_Años;
 
 namespace TuLuz
 {
@@ -472,6 +473,11 @@ namespace TuLuz
         private void button42_Click(object sender, EventArgs e)
         {
             AbrirFormularioSubMenu(new Estadistica_Clientes_Ac_NoAc());
+        }
+
+        private void button41_Click(object sender, EventArgs e)
+        {
+            AbrirFormularioSubMenu(new Pedidos_Entre_Años());
         }
     }
 }

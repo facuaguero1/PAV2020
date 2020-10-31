@@ -50,8 +50,7 @@ namespace TuLuz.Forums._Estadisticas.Prod_con_ProdEq
             DataTable tablaAC = new DataTable();
 
             tablaAC = clientes.Todos_los_ClientesActivos();
-
-            return tabla.Rows.Count;
+            return tablaAC.Rows.Count;
             
         }
         private void btn_Buscar_Click(object sender, EventArgs e)

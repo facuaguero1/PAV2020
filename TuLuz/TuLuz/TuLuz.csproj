@@ -138,6 +138,17 @@
     <Compile Include="Forums\Clientes\ModificarCliente.Designer.cs">
       <DependentUpon>ModificarCliente.cs</DependentUpon>
     </Compile>
+    <Compile Include="Forums\Estadisticas\Pedidos_Entre_Años\DataSet1_Pedidos_Fechas.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DataSet1_Pedidos_Fechas.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Forums\Estadisticas\Pedidos_Entre_Años\Pedidos_Entre_Años.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forums\Estadisticas\Pedidos_Entre_Años\Pedidos_Entre_Años.Designer.cs">
+      <DependentUpon>Pedidos_Entre_Años.cs</DependentUpon>
+    </Compile>
     <Compile Include="Forums\Reportes\ClientesXEstado\ClientesXEstado1.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -545,6 +556,10 @@
       <DependentUpon>ModificarCliente.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forums\Estadisticas\Clientes_Activos_NoActivos\Rv_Clientes_Ac_NoAc.rdlc" />
+    <EmbeddedResource Include="Forums\Estadisticas\Pedidos_Entre_Años\Pedidos_Entre_Años.resx">
+      <DependentUpon>Pedidos_Entre_Años.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forums\Estadisticas\Pedidos_Entre_Años\Rv_Pedidos_Fechas.rdlc" />
     <EmbeddedResource Include="Forums\Reportes\ClientesXEstado\ClientesXEstado.rdlc" />
     <EmbeddedResource Include="Forums\Reportes\ClientesXEstado\ClientesXEstado1.resx">
       <DependentUpon>ClientesXEstado1.cs</DependentUpon>
@@ -718,6 +733,17 @@
     </None>
     <None Include="Forums\Estadisticas\Clientes_Activos_NoActivos\DataSet_Clientes_Ac_NoAc.xss">
       <DependentUpon>DataSet_Clientes_Ac_NoAc.xsd</DependentUpon>
+    </None>
+    <None Include="Forums\Estadisticas\Pedidos_Entre_Años\DataSet1_Pedidos_Fechas.xsc">
+      <DependentUpon>DataSet1_Pedidos_Fechas.xsd</DependentUpon>
+    </None>
+    <None Include="Forums\Estadisticas\Pedidos_Entre_Años\DataSet1_Pedidos_Fechas.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DataSet1_Pedidos_Fechas.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="Forums\Estadisticas\Pedidos_Entre_Años\DataSet1_Pedidos_Fechas.xss">
+      <DependentUpon>DataSet1_Pedidos_Fechas.xsd</DependentUpon>
     </None>
     <None Include="Forums\Reportes\ClientesXEstado\DataClientesXEstado.xsc">
       <DependentUpon>DataClientesXEstado.xsd</DependentUpon>

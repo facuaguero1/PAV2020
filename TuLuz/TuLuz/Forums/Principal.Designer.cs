@@ -345,9 +345,10 @@
             this.button41.Padding = new System.Windows.Forms.Padding(35, 0, 0, 0);
             this.button41.Size = new System.Drawing.Size(223, 33);
             this.button41.TabIndex = 1;
-            this.button41.Text = "button41";
+            this.button41.Text = "Pedidos Entre dos Fechas";
             this.button41.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.button41.UseVisualStyleBackColor = true;
+            this.button41.Click += new System.EventHandler(this.button41_Click);
             // 
             // button42
             // 

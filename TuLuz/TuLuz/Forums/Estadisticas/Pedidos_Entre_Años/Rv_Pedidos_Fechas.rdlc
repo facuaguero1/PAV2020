@@ -2,41 +2,53 @@
 <Report xmlns="http://schemas.microsoft.com/sqlserver/reporting/2016/01/reportdefinition" xmlns:rd="http://schemas.microsoft.com/SQLServer/reporting/reportdesigner">
   <AutoRefresh>0</AutoRefresh>
   <DataSources>
-    <DataSource Name="DataSet_Clientes_Ac_NoAc">
+    <DataSource Name="DataSet1_Pedidos_Fechas">
       <ConnectionProperties>
         <DataProvider>System.Data.DataSet</DataProvider>
         <ConnectString>/* Local Connection */</ConnectString>
       </ConnectionProperties>
-      <rd:DataSourceID>ca5f425f-246a-48ef-834d-a5f70cf26a48</rd:DataSourceID>
+      <rd:DataSourceID>9c9f095d-a443-4dc1-b719-333808edb1c1</rd:DataSourceID>
     </DataSource>
   </DataSources>
   <DataSets>
     <DataSet Name="DataSet1">
       <Query>
-        <DataSourceName>DataSet_Clientes_Ac_NoAc</DataSourceName>
+        <DataSourceName>DataSet1_Pedidos_Fechas</DataSourceName>
         <CommandText>/* Local Query */</CommandText>
       </Query>
       <Fields>
+        <Field Name="numeroPedido">
+          <DataField>numeroPedido</DataField>
+          <rd:TypeName>System.Int64</rd:TypeName>
+        </Field>
+        <Field Name="numeroCotizacion">
+          <DataField>numeroCotizacion</DataField>
+          <rd:TypeName>System.Int64</rd:TypeName>
+        </Field>
+        <Field Name="fechaPedido">
+          <DataField>fechaPedido</DataField>
+          <rd:TypeName>System.DateTime</rd:TypeName>
+        </Field>
+        <Field Name="tipoDniVendedor">
+          <DataField>tipoDniVendedor</DataField>
+          <rd:TypeName>System.Int64</rd:TypeName>
+        </Field>
+        <Field Name="numDniVendedor">
+          <DataField>numDniVendedor</DataField>
+          <rd:TypeName>System.Int64</rd:TypeName>
+        </Field>
+        <Field Name="condicionPago">
+          <DataField>condicionPago</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
         <Field Name="cuitCliente">
           <DataField>cuitCliente</DataField>
           <rd:TypeName>System.String</rd:TypeName>
         </Field>
-        <Field Name="nombre">
-          <DataField>nombre</DataField>
-          <rd:TypeName>System.String</rd:TypeName>
-        </Field>
-        <Field Name="apellido">
-          <DataField>apellido</DataField>
-          <rd:TypeName>System.String</rd:TypeName>
-        </Field>
-        <Field Name="activo">
-          <DataField>activo</DataField>
-          <rd:TypeName>System.String</rd:TypeName>
-        </Field>
       </Fields>
       <rd:DataSetInfo>
-        <rd:DataSetName>DataSet_Clientes_Ac_NoAc</rd:DataSetName>
-        <rd:SchemaPath>C:\Users\matut\Documents\GitHub\PAV2020\TuLuz\TuLuz\Forums\Estadisticas\Clientes_Activos_NoActivos\DataSet_Clientes_Ac_NoAc.xsd</rd:SchemaPath>
+        <rd:DataSetName>DataSet1_Pedidos_Fechas</rd:DataSetName>
+        <rd:SchemaPath>C:\Users\matut\Documents\GitHub\PAV2020\TuLuz\TuLuz\Forums\Estadisticas\Pedidos_Entre_Años\DataSet1_Pedidos_Fechas.xsd</rd:SchemaPath>
         <rd:TableName>DataTable1</rd:TableName>
         <rd:TableAdapterFillMethod />
         <rd:TableAdapterGetDataMethod />
@@ -48,43 +60,70 @@
     <ReportSection>
       <Body>
         <ReportItems>
+          <Textbox Name="RP01">
+            <CanGrow>true</CanGrow>
+            <KeepTogether>true</KeepTogether>
+            <Paragraphs>
+              <Paragraph>
+                <TextRuns>
+                  <TextRun>
+                    <Value>=Parameters!RP01.Value</Value>
+                    <Style />
+                  </TextRun>
+                </TextRuns>
+                <Style />
+              </Paragraph>
+            </Paragraphs>
+            <rd:DefaultName>RP01</rd:DefaultName>
+            <Top>0.36724cm</Top>
+            <Left>1.27677cm</Left>
+            <Height>0.6cm</Height>
+            <Width>12.95105cm</Width>
+            <Style>
+              <Border>
+                <Style>None</Style>
+              </Border>
+              <PaddingLeft>2pt</PaddingLeft>
+              <PaddingRight>2pt</PaddingRight>
+              <PaddingTop>2pt</PaddingTop>
+              <PaddingBottom>2pt</PaddingBottom>
+            </Style>
+          </Textbox>
           <Chart Name="Chart1">
             <ChartCategoryHierarchy>
               <ChartMembers>
                 <ChartMember>
                   <Group Name="Chart1_CategoryGroup">
                     <GroupExpressions>
-                      <GroupExpression>=Fields!activo.Value</GroupExpression>
+                      <GroupExpression>=Fields!fechaPedido.Value</GroupExpression>
                     </GroupExpressions>
                   </Group>
                   <SortExpressions>
                     <SortExpression>
-                      <Value>=Fields!activo.Value</Value>
+                      <Value>=Fields!fechaPedido.Value</Value>
                     </SortExpression>
                   </SortExpressions>
-                  <Label>=Fields!activo.Value</Label>
+                  <Label>=Fields!fechaPedido.Value</Label>
                 </ChartMember>
               </ChartMembers>
             </ChartCategoryHierarchy>
             <ChartSeriesHierarchy>
               <ChartMembers>
                 <ChartMember>
-                  <Label>activo</Label>
+                  <Label>fecha Pedido</Label>
                 </ChartMember>
               </ChartMembers>
             </ChartSeriesHierarchy>
             <ChartData>
               <ChartSeriesCollection>
-                <ChartSeries Name="activo">
+                <ChartSeries Name="fechaPedido">
                   <ChartDataPoints>
                     <ChartDataPoint>
                       <ChartDataPointValues>
-                        <Y>=Count(Fields!activo.Value)</Y>
+                        <Y>=Count(Fields!fechaPedido.Value)</Y>
                       </ChartDataPointValues>
                       <ChartDataLabel>
                         <Style />
-                        <Label>#PERCENT</Label>
-                        <Visible>true</Visible>
                       </ChartDataLabel>
                       <Style />
                       <ChartMarker>
@@ -94,6 +133,7 @@
                     </ChartDataPoint>
                   </ChartDataPoints>
                   <Type>Shape</Type>
+                  <Subtype>ExplodedPie</Subtype>
                   <Style />
                   <ChartEmptyPoints>
                     <Style />
@@ -354,8 +394,6 @@
                   <BackgroundGradientType>None</BackgroundGradientType>
                   <FontSize>8pt</FontSize>
                 </Style>
-                <Position>RightCenter</Position>
-                <DockOutsideChartArea>true</DockOutsideChartArea>
                 <ChartLegendTitle>
                   <Caption />
                   <Style>
@@ -368,6 +406,20 @@
                 <ColumnSeparatorColor>Black</ColumnSeparatorColor>
               </ChartLegend>
             </ChartLegends>
+            <ChartTitles>
+              <ChartTitle Name="Default">
+                <Caption>Título del gráfico</Caption>
+                <Style>
+                  <BackgroundGradientType>None</BackgroundGradientType>
+                  <FontSize>9pt</FontSize>
+                  <FontWeight>Normal</FontWeight>
+                  <TextAlign>Left</TextAlign>
+                  <VerticalAlign>Top</VerticalAlign>
+                  <Color>#a6a6a6</Color>
+                </Style>
+                <Position>TopLeft</Position>
+              </ChartTitle>
+            </ChartTitles>
             <Palette>Pacific</Palette>
             <ChartBorderSkin>
               <Style>
@@ -386,10 +438,11 @@
               </Style>
             </ChartNoDataMessage>
             <DataSetName>DataSet1</DataSetName>
-            <Top>1.23182cm</Top>
-            <Left>2.51037cm</Left>
-            <Height>6.53458cm</Height>
-            <Width>14.45854cm</Width>
+            <Top>1.53141cm</Top>
+            <Left>1.27677cm</Left>
+            <Height>5.55562cm</Height>
+            <Width>11.89208cm</Width>
+            <ZIndex>1</ZIndex>
             <Style>
               <Border>
                 <Color>LightGrey</Color>
@@ -399,41 +452,11 @@
               <BackgroundGradientType>None</BackgroundGradientType>
             </Style>
           </Chart>
-          <Textbox Name="RP01">
-            <CanGrow>true</CanGrow>
-            <KeepTogether>true</KeepTogether>
-            <Paragraphs>
-              <Paragraph>
-                <TextRuns>
-                  <TextRun>
-                    <Value>=Parameters!RP01.Value</Value>
-                    <Style />
-                  </TextRun>
-                </TextRuns>
-                <Style />
-              </Paragraph>
-            </Paragraphs>
-            <rd:DefaultName>RP01</rd:DefaultName>
-            <Top>0.52599cm</Top>
-            <Left>2.51037cm</Left>
-            <Height>0.6cm</Height>
-            <Width>14.45854cm</Width>
-            <ZIndex>1</ZIndex>
-            <Style>
-              <Border>
-                <Style>None</Style>
-              </Border>
-              <PaddingLeft>2pt</PaddingLeft>
-              <PaddingRight>2pt</PaddingRight>
-              <PaddingTop>2pt</PaddingTop>
-              <PaddingBottom>2pt</PaddingBottom>
-            </Style>
-          </Textbox>
         </ReportItems>
-        <Height>3.21725in</Height>
+        <Height>2.9985in</Height>
         <Style />
       </Body>
-      <Width>7.99317in</Width>
+      <Width>7.58692in</Width>
       <Page>
         <PageHeader>
           <Height>2.54cm</Height>
@@ -447,7 +470,7 @@
                 <Paragraph>
                   <TextRuns>
                     <TextRun>
-                      <Value>Calculo Estadisticos de Clientes Activos y No Activos</Value>
+                      <Value>Calculo Estadisticos de Pedidos entre dos fechas</Value>
                       <Style />
                     </TextRun>
                   </TextRuns>
@@ -457,8 +480,8 @@
                 </Paragraph>
               </Paragraphs>
               <rd:DefaultName>Textbox1</rd:DefaultName>
-              <Top>0.57891cm</Top>
-              <Left>2.51037cm</Left>
+              <Top>0.46729cm</Top>
+              <Left>1.27677cm</Left>
               <Height>0.6cm</Height>
               <Width>12.95105cm</Width>
               <Style>
@@ -486,10 +509,10 @@
                 </Paragraph>
               </Paragraphs>
               <rd:DefaultName>RP02</rd:DefaultName>
-              <Top>0.57891cm</Top>
-              <Left>16.401cm</Left>
+              <Top>0.46729cm</Top>
+              <Left>14.94578cm</Left>
               <Height>0.6cm</Height>
-              <Width>3.53187cm</Width>
+              <Width>3.82292cm</Width>
               <ZIndex>1</ZIndex>
               <Style>
                 <Border>
@@ -542,11 +565,6 @@
       <AllowBlank>true</AllowBlank>
       <Prompt>ReportParameter1</Prompt>
     </ReportParameter>
-    <ReportParameter Name="RP03">
-      <DataType>Float</DataType>
-      <Nullable>true</Nullable>
-      <Prompt>ReportParameter1</Prompt>
-    </ReportParameter>
   </ReportParameters>
   <ReportParametersLayout>
     <GridLayoutDefinition>
@@ -563,14 +581,9 @@
           <RowIndex>0</RowIndex>
           <ParameterName>RP02</ParameterName>
         </CellDefinition>
-        <CellDefinition>
-          <ColumnIndex>2</ColumnIndex>
-          <RowIndex>0</RowIndex>
-          <ParameterName>RP03</ParameterName>
-        </CellDefinition>
       </CellDefinitions>
     </GridLayoutDefinition>
   </ReportParametersLayout>
   <rd:ReportUnitType>Cm</rd:ReportUnitType>
-  <rd:ReportID>2162e00c-66a1-4f0e-ab52-d9d7d63a8c7f</rd:ReportID>
+  <rd:ReportID>f214e029-c2eb-4fdc-9e36-411910aa1efe</rd:ReportID>
 </Report>
