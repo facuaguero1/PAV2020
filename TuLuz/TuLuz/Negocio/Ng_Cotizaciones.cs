@@ -81,6 +81,23 @@ class Ng_Cotizaciones
         tabla = _BD.Consulta(sql);
         return tabla;
     }
+
+    public DataTable Buscar_X_Fecha(string fechaMin, string fechaMax,string codEstado)
+    {
+        string sql = "SELECT *,YEAR(fecha) AS 'año' FROM Cotizaciones WHERE fecha between " + _BD.FormatearDato(fechaMin, "Date") + " and " + _BD.FormatearDato(fechaMax, "Date") + " and codEstadoCotizacion = "+ codEstado;
+        DataTable tabla = new DataTable();
+        tabla = _BD.Consulta(sql);
+        return tabla;
+    }
+
+    public DataTable Contar_Cotizaciones_X_Año(string fechaMin, string fechaMax, string codEstado)
+    {
+        string sql = "SELECT YEAR(fecha) AS 'año',COUNT(numeroCotizacion) as 'cantidad' FROM Cotizaciones WHERE fecha between " + _BD.FormatearDato(fechaMin, "Date") + " and " + _BD.FormatearDato(fechaMax, "Date") + " and codEstadoCotizacion = " + codEstado+ " GROUP BY YEAR(fecha)";
+        DataTable tabla = new DataTable();
+        tabla = _BD.Consulta(sql);
+        return tabla;
+    }
+
     public String TraerMes(string doc)
     {
         string sql = "SELECT MONTH(fecha) FROM Cotizaciones WHERE numeroCotizacion =" + doc;
@@ -102,6 +119,15 @@ class Ng_Cotizaciones
         tabla = _BD.Consulta(sql);
         return tabla;
     }
+
+    public DataTable ContarCotizacionesXEstado()
+    {
+        string sql = "SELECT Cotizaciones.codEstadoCotizacion,EstadosCotizaciones.descripcion as 'nombre',COUNT(Cotizaciones.numeroCotizacion) as 'cantidad' FROM Cotizaciones, EstadosCotizaciones WHERE Cotizaciones.codEstadoCotizacion = EstadosCotizaciones.codEstado GROUP BY Cotizaciones.codEstadoCotizacion,EstadosCotizaciones.descripcion";
+        DataTable tabla = new DataTable();
+        tabla = _BD.Consulta(sql);
+        return tabla;
+    }
+
     public String TraerDia(string doc)
     {
         string sql = "SELECT DAY(fecha) FROM Cotizaciones WHERE numeroCotizacion =" + doc;

@@ -479,5 +479,15 @@ namespace TuLuz
         {
             AbrirFormularioSubMenu(new Pedidos_Entre_Años());
         }
+
+        private void button40_Click(object sender, EventArgs e)
+        {
+            AbrirFormularioSubMenu(new CotizacionXEstado());
+        }
+
+        private void button51_Click(object sender, EventArgs e)
+        {
+            AbrirFormularioSubMenu(new CotizacionesXFechaXEstado());
+        }
     }
 }

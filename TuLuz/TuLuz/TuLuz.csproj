@@ -79,6 +79,12 @@
       <SubType>Component</SubType>
     </Compile>
     <Compile Include="Clases\TratamientosEspeciales.cs" />
+    <Compile Include="Forums\Barrios\AltaBarrio.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forums\Barrios\AltaBarrio.Designer.cs">
+      <DependentUpon>AltaBarrio.cs</DependentUpon>
+    </Compile>
     <Compile Include="Forums\Estadisticas\Clientes_Activos_NoActivos\DataSet_Clientes_Ac_NoAc.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -89,12 +95,6 @@
     </Compile>
     <Compile Include="Forums\Estadisticas\Clientes_Activos_NoActivos\Estadistica_Clientes_Ac_NoAc.Designer.cs">
       <DependentUpon>Estadistica_Clientes_Ac_NoAc.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Forums\Barrios\AltaBarrio.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Forums\Barrios\AltaBarrio.Designer.cs">
-      <DependentUpon>AltaBarrio.cs</DependentUpon>
     </Compile>
     <Compile Include="Forums\Barrios\BorrarBarrio.cs">
       <SubType>Form</SubType>
@@ -137,6 +137,31 @@
     </Compile>
     <Compile Include="Forums\Clientes\ModificarCliente.Designer.cs">
       <DependentUpon>ModificarCliente.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forums\Estadisticas\CotizacionesXEntreAñosXEstado\CotizacionesXFechaXEstado.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forums\Estadisticas\CotizacionesXEntreAñosXEstado\CotizacionesXFechaXEstado.Designer.cs">
+      <DependentUpon>CotizacionesXFechaXEstado.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forums\Estadisticas\CotizacionesXEntreAñosXEstado\DS_CotizacionesXFechaXEstado.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DS_CotizacionesXFechaXEstado.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Forums\Estadisticas\CotizacionesXEstado\CotizacionXEstado.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forums\Estadisticas\CotizacionesXEstado\CotizacionXEstado.Designer.cs">
+      <DependentUpon>CotizacionXEstado.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forums\Estadisticas\CotizacionesXEstado\DS_CotizacionesXEstado.cs">
+      <DependentUpon>DS_CotizacionesXEstado.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Forums\Estadisticas\CotizacionesXEstado\DS_CotizacionesXEstado.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DS_CotizacionesXEstado.xsd</DependentUpon>
     </Compile>
     <Compile Include="Forums\Estadisticas\Pedidos_Entre_Años\DataSet1_Pedidos_Fechas.Designer.cs">
       <AutoGen>True</AutoGen>
@@ -528,11 +553,11 @@
     <EmbeddedResource Include="Clases\LabelText01.resx">
       <DependentUpon>LabelText01.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Forums\Estadisticas\Clientes_Activos_NoActivos\Estadistica_Clientes_Ac_NoAc.resx">
-      <DependentUpon>Estadistica_Clientes_Ac_NoAc.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="Forums\Barrios\AltaBarrio.resx">
       <DependentUpon>AltaBarrio.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forums\Estadisticas\Clientes_Activos_NoActivos\Estadistica_Clientes_Ac_NoAc.resx">
+      <DependentUpon>Estadistica_Clientes_Ac_NoAc.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forums\Barrios\BorrarBarrio.resx">
       <DependentUpon>BorrarBarrio.cs</DependentUpon>
@@ -556,6 +581,14 @@
       <DependentUpon>ModificarCliente.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forums\Estadisticas\Clientes_Activos_NoActivos\Rv_Clientes_Ac_NoAc.rdlc" />
+    <EmbeddedResource Include="Forums\Estadisticas\CotizacionesXEntreAñosXEstado\CotizacionesXFechaXEstado.resx">
+      <DependentUpon>CotizacionesXFechaXEstado.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forums\Estadisticas\CotizacionesXEntreAñosXEstado\rpv_CotizacionesXFechaYEstado.rdlc" />
+    <EmbeddedResource Include="Forums\Estadisticas\CotizacionesXEstado\CotizacionXEstado.resx">
+      <DependentUpon>CotizacionXEstado.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forums\Estadisticas\CotizacionesXEstado\Rp_CotizacionesXEstado.rdlc" />
     <EmbeddedResource Include="Forums\Estadisticas\Pedidos_Entre_Años\Pedidos_Entre_Años.resx">
       <DependentUpon>Pedidos_Entre_Años.cs</DependentUpon>
     </EmbeddedResource>
@@ -733,6 +766,28 @@
     </None>
     <None Include="Forums\Estadisticas\Clientes_Activos_NoActivos\DataSet_Clientes_Ac_NoAc.xss">
       <DependentUpon>DataSet_Clientes_Ac_NoAc.xsd</DependentUpon>
+    </None>
+    <None Include="Forums\Estadisticas\CotizacionesXEntreAñosXEstado\DS_CotizacionesXFechaXEstado.xsc">
+      <DependentUpon>DS_CotizacionesXFechaXEstado.xsd</DependentUpon>
+    </None>
+    <None Include="Forums\Estadisticas\CotizacionesXEntreAñosXEstado\DS_CotizacionesXFechaXEstado.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DS_CotizacionesXFechaXEstado.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="Forums\Estadisticas\CotizacionesXEntreAñosXEstado\DS_CotizacionesXFechaXEstado.xss">
+      <DependentUpon>DS_CotizacionesXFechaXEstado.xsd</DependentUpon>
+    </None>
+    <None Include="Forums\Estadisticas\CotizacionesXEstado\DS_CotizacionesXEstado.xsc">
+      <DependentUpon>DS_CotizacionesXEstado.xsd</DependentUpon>
+    </None>
+    <None Include="Forums\Estadisticas\CotizacionesXEstado\DS_CotizacionesXEstado.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DS_CotizacionesXEstado.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="Forums\Estadisticas\CotizacionesXEstado\DS_CotizacionesXEstado.xss">
+      <DependentUpon>DS_CotizacionesXEstado.xsd</DependentUpon>
     </None>
     <None Include="Forums\Estadisticas\Pedidos_Entre_Años\DataSet1_Pedidos_Fechas.xsc">
       <DependentUpon>DataSet1_Pedidos_Fechas.xsd</DependentUpon>

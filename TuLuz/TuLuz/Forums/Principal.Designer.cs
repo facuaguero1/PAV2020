@@ -313,9 +313,10 @@
             this.button51.Padding = new System.Windows.Forms.Padding(35, 0, 0, 0);
             this.button51.Size = new System.Drawing.Size(223, 33);
             this.button51.TabIndex = 3;
-            this.button51.Text = "button51";
+            this.button51.Text = "Cotizaciones entre fechas por estado";
             this.button51.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.button51.UseVisualStyleBackColor = true;
+            this.button51.Click += new System.EventHandler(this.button51_Click);
             // 
             // button40
             // 
@@ -329,9 +330,10 @@
             this.button40.Padding = new System.Windows.Forms.Padding(35, 0, 0, 0);
             this.button40.Size = new System.Drawing.Size(223, 33);
             this.button40.TabIndex = 2;
-            this.button40.Text = "button40";
+            this.button40.Text = "Cotizaciones por estado";
             this.button40.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.button40.UseVisualStyleBackColor = true;
+            this.button40.Click += new System.EventHandler(this.button40_Click);
             // 
             // button41
             // 
