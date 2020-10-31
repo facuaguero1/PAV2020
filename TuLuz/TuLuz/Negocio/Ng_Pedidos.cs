@@ -107,7 +107,14 @@ namespace TuLuz.Negocio
 
         public DataTable Buscar_X_Fecha(string fechaMin, string fechaMax)
         {
-            string sql = "SELECT * FROM Pedidos WHERE fechaPedido BETWEEN " + _BD.FormatearDato(fechaMin, "Date") + " AND " + _BD.FormatearDato(fechaMax, "Date");
+            string sql = "SELECT *,YEAR(Pedidos.fechaPedido) AS 'año' FROM Pedidos WHERE fechaPedido BETWEEN " + _BD.FormatearDato(fechaMin, "Date") + " AND " + _BD.FormatearDato(fechaMax, "Date");
+            DataTable tabla = new DataTable();
+            tabla = _BD.Consulta(sql);
+            return tabla;
+        }
+        public DataTable Contar_Pedido_x_Año(string fechaMin, string fechaMax)
+        {
+            string sql = "SELECT YEAR(Pedidos.fechaPedido) AS 'año',COUNT(Pedidos.numeroPedido) AS 'cantidad' FROM Pedidos WHERE fechaPedido BETWEEN " + _BD.FormatearDato(fechaMin, "Date") + " AND " + _BD.FormatearDato(fechaMax, "Date") + " GROUP BY YEAR(Pedidos.fechaPedido)";
             DataTable tabla = new DataTable();
             tabla = _BD.Consulta(sql);
             return tabla;

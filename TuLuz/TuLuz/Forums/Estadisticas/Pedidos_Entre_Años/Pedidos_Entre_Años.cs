@@ -66,15 +66,19 @@ namespace TuLuz.Forums.Estadisticas.Pedidos_Entre_Años
             }
             else
             {
+                DataTable tabla2 = new DataTable();
+                tabla2 = pedidos.Contar_Pedido_x_Año(LblText_Desde.PP_Text , LblTxt_FechaHasta.PP_Text);
                 Be_BaseDatos _BD = new Be_BaseDatos();
                 ReportDataSource Datos = new ReportDataSource("DataSet1", tabla);
+                ReportDataSource Datos1 = new ReportDataSource("DataSet2", tabla2);
                 rv_pedido_fechas.LocalReport.ReportEmbeddedResource = "TuLuz.Forums.Estadisticas.Pedidos_Entre_Años.Rv_Pedidos_Fechas.rdlc";
                 ReportParameter[] parametros = new ReportParameter[2];
-                parametros[0] = new ReportParameter("RP01", "Grafico sobre los pedidos entre: " + LblText_Desde + "hasta: " + LblTxt_FechaHasta);
+                parametros[0] = new ReportParameter("RP01", "Grafico sobre los pedidos entre: " + LblText_Desde.PP_Text + " hasta: " + LblTxt_FechaHasta.PP_Text);
                 parametros[1] = new ReportParameter("RP02", "Fecha: " + DateTime.Today.Day.ToString() + "/" + DateTime.Today.Month.ToString() + "/" + DateTime.Today.Year.ToString());
                 rv_pedido_fechas.LocalReport.DataSources.Clear();
                 rv_pedido_fechas.LocalReport.SetParameters(parametros);
                 rv_pedido_fechas.LocalReport.DataSources.Add(Datos);
+                rv_pedido_fechas.LocalReport.DataSources.Add(Datos1);
                 rv_pedido_fechas.RefreshReport();
             }
 

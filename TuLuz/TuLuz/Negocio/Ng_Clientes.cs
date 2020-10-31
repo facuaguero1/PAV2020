@@ -62,6 +62,14 @@ namespace TuLuz.Negocio
             return tabla;
         }
 
+        public DataTable ContarClientesAcNoAc ()
+        {
+            string sql = "SELECT Cliente.activo, COUNT (Cliente.cuitCliente) AS 'cantidad' FROM Cliente GROUP BY Cliente.activo";
+            DataTable tabla = new DataTable();
+            tabla = _BD.Consulta(sql);
+            return tabla;
+        }
+
         public DataTable Buscar_ClienteMasBajos(string cuit)
         {
             string sql = "SELECT * FROM Cliente WHERE cuitCliente like '%" + cuit.Trim() + "%' ";
