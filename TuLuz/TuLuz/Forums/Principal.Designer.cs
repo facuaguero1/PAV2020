@@ -281,9 +281,10 @@
             this.button49.Padding = new System.Windows.Forms.Padding(35, 0, 0, 0);
             this.button49.Size = new System.Drawing.Size(223, 33);
             this.button49.TabIndex = 5;
-            this.button49.Text = "button49";
+            this.button49.Text = "Cantidad de jefes y empleados";
             this.button49.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.button49.UseVisualStyleBackColor = true;
+            this.button49.Click += new System.EventHandler(this.button49_Click);
             // 
             // button50
             // 
@@ -297,9 +298,10 @@
             this.button50.Padding = new System.Windows.Forms.Padding(35, 0, 0, 0);
             this.button50.Size = new System.Drawing.Size(223, 33);
             this.button50.TabIndex = 4;
-            this.button50.Text = "button50";
+            this.button50.Text = "Proveedores activos e inactivos";
             this.button50.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.button50.UseVisualStyleBackColor = true;
+            this.button50.Click += new System.EventHandler(this.button50_Click);
             // 
             // button51
             // 

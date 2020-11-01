@@ -35,6 +35,32 @@ namespace TuLuz.Negocio
             return tabla;
 
         }
+
+        public DataTable Todos_los_Jefes_Y_Empleados()
+        {
+            string sql = "SELECT 'Jefes' as tipo, * from Empleados AS e1 "+
+                          "WHERE EXISTS(SELECT* FROM Empleados AS e2 WHERE e2.numDocJefe = e1.numDoc) "+
+                          "UNION "+
+                          "SELECT 'Empleados' as tipo, *FROM Empleados AS e3 "+
+                          "WHERE NOT EXISTS(SELECT* FROM Empleados AS e4 WHERE e4.numDocJefe = e3.numDoc)";
+            DataTable tabla = new DataTable();
+            tabla = _BD.Consulta(sql);
+            return tabla;
+
+        }
+
+        public DataTable ContarJefesYEmpleados()
+        {
+            string sql = "SELECT 'Jefes' as tipo, COUNT(*) as cantidad from Empleados AS e1 " +
+                         "WHERE EXISTS(SELECT * FROM Empleados AS e2 WHERE e2.numDocJefe = e1.numDoc) " +
+                         "UNION " +
+                         "SELECT 'Empleados' as tipo, COUNT(*) as cantidad FROM Empleados AS e3 " +
+                         "WHERE NOT EXISTS(SELECT * FROM Empleados AS e4 WHERE e4.numDocJefe = e3.numDoc)";
+            DataTable tabla = new DataTable();
+            tabla = _BD.Consulta(sql);
+            return tabla;
+        }
+
         public DataTable Es_Empleado_Jefe_Supervisor()
         {
             string sql = "SELECT j.tipoDoc, j.numDoc, j.nombre, j.apellido, j. direccion , j.telefono FROM empleados e join empleados j ON (e.numDocJefe = j.numDoc)";
