@@ -85,6 +85,20 @@
     <Compile Include="Forums\Barrios\AltaBarrio.Designer.cs">
       <DependentUpon>AltaBarrio.cs</DependentUpon>
     </Compile>
+    <Compile Include="Forums\Estadisticas\Cantidades_Jefes_Empleados\DataSet_Cantidades_Jefes_Empleados.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DataSet_Cantidades_Jefes_Empleados.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Forums\Estadisticas\Cantidades_Jefes_Empleados\Estadistica_Cantidades_Jefes_Empleados.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forums\Estadisticas\Cantidades_Jefes_Empleados\Estadistica_Cantidades_Jefes_Empleados.Designer.cs">
+      <DependentUpon>Estadistica_Cantidades_Jefes_Empleados.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forums\Estadisticas\Clientes_Activos_NoActivos\DataSet_Clientes_Ac_NoAc.cs">
+      <DependentUpon>DataSet_Clientes_Ac_NoAc.xsd</DependentUpon>
+    </Compile>
     <Compile Include="Forums\Estadisticas\Clientes_Activos_NoActivos\DataSet_Clientes_Ac_NoAc.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -173,6 +187,17 @@
     </Compile>
     <Compile Include="Forums\Estadisticas\Pedidos_Entre_Años\Pedidos_Entre_Años.Designer.cs">
       <DependentUpon>Pedidos_Entre_Años.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forums\Estadisticas\Proveedores_Activos_NoActivos\DataSet_Proveedores_Ac_NoAc.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DataSet_Proveedores_Ac_NoAc.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Forums\Estadisticas\Proveedores_Activos_NoActivos\Estadistica_Proveedores_Ac_NoAc.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forums\Estadisticas\Proveedores_Activos_NoActivos\Estadistica_Proveedores_Ac_NoAc.Designer.cs">
+      <DependentUpon>Estadistica_Proveedores_Ac_NoAc.cs</DependentUpon>
     </Compile>
     <Compile Include="Forums\Reportes\ClientesXEstado\ClientesXEstado1.cs">
       <SubType>Form</SubType>
@@ -556,6 +581,10 @@
     <EmbeddedResource Include="Forums\Barrios\AltaBarrio.resx">
       <DependentUpon>AltaBarrio.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Forums\Estadisticas\Cantidades_Jefes_Empleados\Estadistica_Cantidades_Jefes_Empleados.resx">
+      <DependentUpon>Estadistica_Cantidades_Jefes_Empleados.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forums\Estadisticas\Cantidades_Jefes_Empleados\Rv_Cantidades_Jefes_Empleados.rdlc" />
     <EmbeddedResource Include="Forums\Estadisticas\Clientes_Activos_NoActivos\Estadistica_Clientes_Ac_NoAc.resx">
       <DependentUpon>Estadistica_Clientes_Ac_NoAc.cs</DependentUpon>
     </EmbeddedResource>
@@ -593,6 +622,10 @@
       <DependentUpon>Pedidos_Entre_Años.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forums\Estadisticas\Pedidos_Entre_Años\Rv_Pedidos_Fechas.rdlc" />
+    <EmbeddedResource Include="Forums\Estadisticas\Proveedores_Activos_NoActivos\Estadistica_Proveedores_Ac_NoAc.resx">
+      <DependentUpon>Estadistica_Proveedores_Ac_NoAc.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forums\Estadisticas\Proveedores_Activos_NoActivos\Rv_Proveedores_Ac_NoAc.rdlc" />
     <EmbeddedResource Include="Forums\Reportes\ClientesXEstado\ClientesXEstado.rdlc" />
     <EmbeddedResource Include="Forums\Reportes\ClientesXEstado\ClientesXEstado1.resx">
       <DependentUpon>ClientesXEstado1.cs</DependentUpon>
@@ -756,6 +789,17 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
+    <None Include="Forums\Estadisticas\Cantidades_Jefes_Empleados\DataSet_Cantidades_Jefes_Empleados.xsc">
+      <DependentUpon>DataSet_Cantidades_Jefes_Empleados.xsd</DependentUpon>
+    </None>
+    <None Include="Forums\Estadisticas\Cantidades_Jefes_Empleados\DataSet_Cantidades_Jefes_Empleados.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DataSet_Cantidades_Jefes_Empleados.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="Forums\Estadisticas\Cantidades_Jefes_Empleados\DataSet_Cantidades_Jefes_Empleados.xss">
+      <DependentUpon>DataSet_Cantidades_Jefes_Empleados.xsd</DependentUpon>
+    </None>
     <None Include="Forums\Estadisticas\Clientes_Activos_NoActivos\DataSet_Clientes_Ac_NoAc.xsc">
       <DependentUpon>DataSet_Clientes_Ac_NoAc.xsd</DependentUpon>
     </None>
@@ -799,6 +843,17 @@
     </None>
     <None Include="Forums\Estadisticas\Pedidos_Entre_Años\DataSet1_Pedidos_Fechas.xss">
       <DependentUpon>DataSet1_Pedidos_Fechas.xsd</DependentUpon>
+    </None>
+    <None Include="Forums\Estadisticas\Proveedores_Activos_NoActivos\DataSet_Proveedores_Ac_NoAc.xsc">
+      <DependentUpon>DataSet_Proveedores_Ac_NoAc.xsd</DependentUpon>
+    </None>
+    <None Include="Forums\Estadisticas\Proveedores_Activos_NoActivos\DataSet_Proveedores_Ac_NoAc.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DataSet_Proveedores_Ac_NoAc.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="Forums\Estadisticas\Proveedores_Activos_NoActivos\DataSet_Proveedores_Ac_NoAc.xss">
+      <DependentUpon>DataSet_Proveedores_Ac_NoAc.xsd</DependentUpon>
     </None>
     <None Include="Forums\Reportes\ClientesXEstado\DataClientesXEstado.xsc">
       <DependentUpon>DataClientesXEstado.xsd</DependentUpon>

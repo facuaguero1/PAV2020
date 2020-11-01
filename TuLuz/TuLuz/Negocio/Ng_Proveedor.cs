@@ -45,6 +45,14 @@ namespace TuLuz.Negocio.EstructuraNegocios
             return tabla;
         }
 
+        public DataTable ContarProveedoresAcNoAc()
+        {
+            string sql = "SELECT Proveedor.activo, COUNT (Proveedor.cuitProveedor) AS 'cantidad' FROM Proveedor GROUP BY Proveedor.activo";
+            DataTable tabla = new DataTable();
+            tabla = _BD.Consulta(sql);
+            return tabla;
+        }
+
         public DataTable Buscar_Proveedor_Codigo(string cod)
         {
             string sql = "SELECT * FROM Proveedor WHERE cuitProveedor = " + cod.Trim();

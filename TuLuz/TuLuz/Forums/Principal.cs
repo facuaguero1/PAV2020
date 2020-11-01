@@ -20,6 +20,9 @@ using TuLuz.Forums.Reportes.Empleados_Jefes;
 using TuLuz.Forums.Reportes.Proveedores_Activos_Inactivos;
 using TuLuz.Forums._Estadisticas.Prod_con_ProdEq;
 using TuLuz.Forums.Estadisticas.Pedidos_Entre_Años;
+using TuLuz.Forums.Estadisticas.Proveedores_Activos_NoActivos;
+using TuLuz.Forums.Estadisticas.Cantidades_Jefes_Empleados;
+
 
 namespace TuLuz
 {
@@ -488,6 +491,16 @@ namespace TuLuz
         private void button51_Click(object sender, EventArgs e)
         {
             AbrirFormularioSubMenu(new CotizacionesXFechaXEstado());
+        }
+
+        private void button50_Click(object sender, EventArgs e)
+        {
+            AbrirFormularioSubMenu(new Estadistica_Proveedores_Ac_NoAc());
+        }
+
+        private void button49_Click(object sender, EventArgs e)
+        {
+            AbrirFormularioSubMenu(new Estadistica_Cantidades_Jefes_Empleados());
         }
     }
 }
