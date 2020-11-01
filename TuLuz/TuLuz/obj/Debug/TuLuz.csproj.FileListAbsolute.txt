@@ -1037,3 +1037,11 @@ C:\Users\USUARIO\repositorios\PAV2020\TuLuz\TuLuz\obj\Debug\TuLuz.Forums.cotizac
 C:\Users\USUARIO\repositorios\PAV2020\TuLuz\TuLuz\obj\Debug\TuLuz.Forums.Reportes.Proveedores_Activos_Inactivos.Proveedores_Activos_Inactivos.resources
 C:\Users\USUARIO\repositorios\PAV2020\TuLuz\TuLuz\obj\Debug\TuLuz.Forums.Estadisticas.Proveedores_Activos_NoActivos.Estadistica_Proveedores_Ac_NoAc.resources
 C:\Users\USUARIO\repositorios\PAV2020\TuLuz\TuLuz\obj\Debug\TuLuz.Forums.Estadisticas.Cantidades_Jefes_Empleados.Estadistica_Cantidades_Jefes_Empleados.resources
+C:\Users\PC\Documents\GitHub\PAV2020\TuLuz\TuLuz\obj\Debug\TuLuz.Forums.Estadisticas.Cantidades_Jefes_Empleados.Estadistica_Cantidades_Jefes_Empleados.resources
+C:\Users\PC\Documents\GitHub\PAV2020\TuLuz\TuLuz\obj\Debug\TuLuz.Forums._Estadisticas.Prod_con_ProdEq.Estadistica_Clientes_Ac_NoAc.resources
+C:\Users\PC\Documents\GitHub\PAV2020\TuLuz\TuLuz\obj\Debug\TuLuz.Forums.Estadisticas.Pedidos_Entre_Años.CotizacionesXFechaXEstado.resources
+C:\Users\PC\Documents\GitHub\PAV2020\TuLuz\TuLuz\obj\Debug\TuLuz.Forums.CotizacionXEstado.resources
+C:\Users\PC\Documents\GitHub\PAV2020\TuLuz\TuLuz\obj\Debug\TuLuz.Forums.Estadisticas.Pedidos_Entre_Años.Pedidos_Entre_Años.resources
+C:\Users\PC\Documents\GitHub\PAV2020\TuLuz\TuLuz\obj\Debug\TuLuz.Forums.Estadisticas.Proveedores_Activos_NoActivos.Estadistica_Proveedores_Ac_NoAc.resources
+C:\Users\PC\Documents\GitHub\PAV2020\TuLuz\TuLuz\obj\Debug\TuLuz.Forums.cotizacionXprecio.resources
+C:\Users\PC\Documents\GitHub\PAV2020\TuLuz\TuLuz\obj\Debug\TuLuz.Forums.Estadisticas.VentasXMes.Estadistica_VentaXMes.resources

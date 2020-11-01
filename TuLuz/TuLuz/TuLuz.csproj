@@ -199,6 +199,20 @@
     <Compile Include="Forums\Estadisticas\Proveedores_Activos_NoActivos\Estadistica_Proveedores_Ac_NoAc.Designer.cs">
       <DependentUpon>Estadistica_Proveedores_Ac_NoAc.cs</DependentUpon>
     </Compile>
+    <Compile Include="Forums\Estadisticas\VentasXMes\DataSet1_VentasXMes.cs">
+      <DependentUpon>DataSet1_VentasXMes.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Forums\Estadisticas\VentasXMes\DataSet1_VentasXMes.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DataSet1_VentasXMes.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Forums\Estadisticas\VentasXMes\Estadistica_VentaXMes.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forums\Estadisticas\VentasXMes\Estadistica_VentaXMes.Designer.cs">
+      <DependentUpon>Estadistica_VentaXMes.cs</DependentUpon>
+    </Compile>
     <Compile Include="Forums\Reportes\ClientesXEstado\ClientesXEstado1.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -626,6 +640,10 @@
       <DependentUpon>Estadistica_Proveedores_Ac_NoAc.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forums\Estadisticas\Proveedores_Activos_NoActivos\Rv_Proveedores_Ac_NoAc.rdlc" />
+    <EmbeddedResource Include="Forums\Estadisticas\VentasXMes\Estadistica_VentaXMes.resx">
+      <DependentUpon>Estadistica_VentaXMes.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forums\Estadisticas\VentasXMes\Rv_VentasXMes.rdlc" />
     <EmbeddedResource Include="Forums\Reportes\ClientesXEstado\ClientesXEstado.rdlc" />
     <EmbeddedResource Include="Forums\Reportes\ClientesXEstado\ClientesXEstado1.resx">
       <DependentUpon>ClientesXEstado1.cs</DependentUpon>
@@ -854,6 +872,17 @@
     </None>
     <None Include="Forums\Estadisticas\Proveedores_Activos_NoActivos\DataSet_Proveedores_Ac_NoAc.xss">
       <DependentUpon>DataSet_Proveedores_Ac_NoAc.xsd</DependentUpon>
+    </None>
+    <None Include="Forums\Estadisticas\VentasXMes\DataSet1_VentasXMes.xsc">
+      <DependentUpon>DataSet1_VentasXMes.xsd</DependentUpon>
+    </None>
+    <None Include="Forums\Estadisticas\VentasXMes\DataSet1_VentasXMes.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DataSet1_VentasXMes.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="Forums\Estadisticas\VentasXMes\DataSet1_VentasXMes.xss">
+      <DependentUpon>DataSet1_VentasXMes.xsd</DependentUpon>
     </None>
     <None Include="Forums\Reportes\ClientesXEstado\DataClientesXEstado.xsc">
       <DependentUpon>DataClientesXEstado.xsd</DependentUpon>
