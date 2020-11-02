@@ -152,6 +152,20 @@
     <Compile Include="Forums\Clientes\ModificarCliente.Designer.cs">
       <DependentUpon>ModificarCliente.cs</DependentUpon>
     </Compile>
+    <Compile Include="Forums\Estadisticas\ComprasXValor_EntreFechas\DataSetComprasXValor_EntreFechas.cs">
+      <DependentUpon>DataSetComprasXValor_EntreFechas.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Forums\Estadisticas\ComprasXValor_EntreFechas\DataSetComprasXValor_EntreFechas.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DataSetComprasXValor_EntreFechas.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Forums\Estadisticas\ComprasXValor_EntreFechas\PedidosXValor_EntreFechas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forums\Estadisticas\ComprasXValor_EntreFechas\PedidosXValor_EntreFechas.Designer.cs">
+      <DependentUpon>PedidosXValor_EntreFechas.cs</DependentUpon>
+    </Compile>
     <Compile Include="Forums\Estadisticas\CotizacionesXEntreAñosXEstado\CotizacionesXFechaXEstado.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -649,6 +663,10 @@
       <DependentUpon>ModificarCliente.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forums\Estadisticas\Clientes_Activos_NoActivos\Rv_Clientes_Ac_NoAc.rdlc" />
+    <EmbeddedResource Include="Forums\Estadisticas\ComprasXValor_EntreFechas\PedidosXValor_EntreFechas.resx">
+      <DependentUpon>PedidosXValor_EntreFechas.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forums\Estadisticas\ComprasXValor_EntreFechas\RpComprasXValor_EntreFechasrdlc.rdlc" />
     <EmbeddedResource Include="Forums\Estadisticas\CotizacionesXEntreAñosXEstado\CotizacionesXFechaXEstado.resx">
       <DependentUpon>CotizacionesXFechaXEstado.cs</DependentUpon>
     </EmbeddedResource>
@@ -861,6 +879,17 @@
     </None>
     <None Include="Forums\Estadisticas\Clientes_Activos_NoActivos\DataSet_Clientes_Ac_NoAc.xss">
       <DependentUpon>DataSet_Clientes_Ac_NoAc.xsd</DependentUpon>
+    </None>
+    <None Include="Forums\Estadisticas\ComprasXValor_EntreFechas\DataSetComprasXValor_EntreFechas.xsc">
+      <DependentUpon>DataSetComprasXValor_EntreFechas.xsd</DependentUpon>
+    </None>
+    <None Include="Forums\Estadisticas\ComprasXValor_EntreFechas\DataSetComprasXValor_EntreFechas.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DataSetComprasXValor_EntreFechas.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="Forums\Estadisticas\ComprasXValor_EntreFechas\DataSetComprasXValor_EntreFechas.xss">
+      <DependentUpon>DataSetComprasXValor_EntreFechas.xsd</DependentUpon>
     </None>
     <None Include="Forums\Estadisticas\CotizacionesXEntreAñosXEstado\DS_CotizacionesXFechaXEstado.xsc">
       <DependentUpon>DS_CotizacionesXFechaXEstado.xsd</DependentUpon>

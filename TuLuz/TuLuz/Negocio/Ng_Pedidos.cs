@@ -153,7 +153,20 @@ namespace TuLuz.Negocio
             EC.Sql = "SELECT * FROM Pedidos";
             EC.Tabla = _BD.Consulta(EC.Sql);
             return EC;
+
+        }
+        public DataTable PedidosXValor_EntreFechas(string fechaMin,string fechaMax,int precio)
+        {
+            string sql = "SELECT P.numeroPedido AS 'numeroPedido' ,SUM(DP.precio) AS 'precio' " +
+                "FROM Pedidos P JOIN DetallePedido DP ON (P.numeroPedido = DP.numeroPedido) " +
+                "WHERE P.fechaPedido BETWEEN " + _BD.FormatearDato(fechaMin, "Date") + " AND " + _BD.FormatearDato(fechaMax, "Date") +
+                "GROUP BY P.numeroPedido " +
+                "HAVING SUM(DP.precio) > " + precio;
+            DataTable tabla = new DataTable();
+            tabla = _BD.Consulta(sql);
+            return tabla;
         }
     }
+
 }
 

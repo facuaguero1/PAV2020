@@ -507,5 +507,10 @@ namespace TuLuz
         {
             AbrirFormularioSubMenu(new Estadistica_Cantidades_Productos_Equivalentes());
         }
+
+        private void button52_Click(object sender, EventArgs e)
+        {
+            AbrirFormularioSubMenu(new Pedidos_Entre_Años_Y_PrecioMin()); 
+        }
     }
 }
