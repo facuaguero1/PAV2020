@@ -1062,3 +1062,10 @@ C:\Users\marti\OneDrive\Documentos\GitHub\PAV2020\TuLuz\TuLuz\obj\Debug\TuLuz.Fo
 C:\Users\marti\OneDrive\Documentos\GitHub\PAV2020\TuLuz\TuLuz\obj\Debug\TuLuz.Forums.Reportes.Proveedores_Activos_Inactivos.Proveedores_Activos_Inactivos.resources
 C:\Users\marti\OneDrive\Documentos\GitHub\PAV2020\TuLuz\TuLuz\obj\Debug\TuLuz.Forums.Estadisticas.Cantidades_Jefes_Empleados.Estadistica_Cantidades_Productos_Equivalentes.resources
 C:\Users\marti\OneDrive\Documentos\GitHub\PAV2020\TuLuz\TuLuz\obj\Debug\TuLuz.Forums.Estadisticas.Pedidos_Entre_Años.Pedidos_Entre_Años_Y_PrecioMin.resources
+C:\Users\Fabri\Documents\GitHub\PAV2020\TuLuz\TuLuz\obj\Debug\TuLuz.Forums.Estadisticas.Cantidades_Jefes_Empleados.Estadistica_Cantidades_Jefes_Empleados.resources
+C:\Users\Fabri\Documents\GitHub\PAV2020\TuLuz\TuLuz\obj\Debug\TuLuz.Forums.Estadisticas.Pedidos_Entre_Años.Pedidos_Entre_Años_Y_PrecioMin.resources
+C:\Users\Fabri\Documents\GitHub\PAV2020\TuLuz\TuLuz\obj\Debug\TuLuz.Forums.Estadisticas.VentasXMes.Estadistica_ProductoMasVendido.resources
+C:\Users\Fabri\Documents\GitHub\PAV2020\TuLuz\TuLuz\obj\Debug\TuLuz.Forums.Estadisticas.Cantidades_Jefes_Empleados.Estadistica_Cantidades_Productos_Equivalentes.resources
+C:\Users\Fabri\Documents\GitHub\PAV2020\TuLuz\TuLuz\obj\Debug\TuLuz.Forums.Estadisticas.Proveedores_Activos_NoActivos.Estadistica_Proveedores_Ac_NoAc.resources
+C:\Users\Fabri\Documents\GitHub\PAV2020\TuLuz\TuLuz\obj\Debug\TuLuz.Forums.Estadisticas.VendedoresXCotizaciones.Estadistica_VendedoresXCotizaciones.resources
+C:\Users\Fabri\Documents\GitHub\PAV2020\TuLuz\TuLuz\obj\Debug\TuLuz.Forums.Estadisticas.VentasXMes.Estadistica_VentaXMes.resources

@@ -202,6 +202,17 @@
     <Compile Include="Forums\Estadisticas\Pedidos_Entre_Años\Pedidos_Entre_Años.Designer.cs">
       <DependentUpon>Pedidos_Entre_Años.cs</DependentUpon>
     </Compile>
+    <Compile Include="Forums\Estadisticas\ProductosMasVendidos\ds_ProductosMasVendidos.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ds_ProductosMasVendidos.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Forums\Estadisticas\ProductosMasVendidos\Estadisitica_ProductoMasVendido.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forums\Estadisticas\ProductosMasVendidos\Estadisitica_ProductoMasVendido.Designer.cs">
+      <DependentUpon>Estadisitica_ProductoMasVendido.cs</DependentUpon>
+    </Compile>
     <Compile Include="Forums\Estadisticas\ProductosYEquivalentes\DataSetCantidades_Productos_Equivalente.cs">
       <DependentUpon>DataSetCantidades_Productos_Equivalente.xsd</DependentUpon>
     </Compile>
@@ -679,6 +690,10 @@
       <DependentUpon>Pedidos_Entre_Años.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forums\Estadisticas\Pedidos_Entre_Años\Rv_Pedidos_Fechas.rdlc" />
+    <EmbeddedResource Include="Forums\Estadisticas\ProductosMasVendidos\Estadisitica_ProductoMasVendido.resx">
+      <DependentUpon>Estadisitica_ProductoMasVendido.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forums\Estadisticas\ProductosMasVendidos\rp_ProductosMasVendidos.rdlc" />
     <EmbeddedResource Include="Forums\Estadisticas\ProductosYEquivalentes\Estadistica_Cantidades_Productos_Equivalentes.rdlc" />
     <EmbeddedResource Include="Forums\Estadisticas\ProductosYEquivalentes\Estadistica_Cantidades_Productos_Equivalentes.resx">
       <DependentUpon>Estadistica_Cantidades_Productos_Equivalentes.cs</DependentUpon>
@@ -923,6 +938,17 @@
     </None>
     <None Include="Forums\Estadisticas\Pedidos_Entre_Años\DataSet1_Pedidos_Fechas.xss">
       <DependentUpon>DataSet1_Pedidos_Fechas.xsd</DependentUpon>
+    </None>
+    <None Include="Forums\Estadisticas\ProductosMasVendidos\ds_ProductosMasVendidos.xsc">
+      <DependentUpon>ds_ProductosMasVendidos.xsd</DependentUpon>
+    </None>
+    <None Include="Forums\Estadisticas\ProductosMasVendidos\ds_ProductosMasVendidos.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>ds_ProductosMasVendidos.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="Forums\Estadisticas\ProductosMasVendidos\ds_ProductosMasVendidos.xss">
+      <DependentUpon>ds_ProductosMasVendidos.xsd</DependentUpon>
     </None>
     <None Include="Forums\Estadisticas\ProductosYEquivalentes\DataSetCantidades_Productos_Equivalente.xsc">
       <DependentUpon>DataSetCantidades_Productos_Equivalente.xsd</DependentUpon>

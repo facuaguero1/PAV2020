@@ -22,6 +22,7 @@ using TuLuz.Forums._Estadisticas.Prod_con_ProdEq;
 using TuLuz.Forums.Estadisticas.Pedidos_Entre_Años;
 using TuLuz.Forums.Estadisticas.Proveedores_Activos_NoActivos;
 using TuLuz.Forums.Estadisticas.Cantidades_Jefes_Empleados;
+using TuLuz.Forums.Estadisticas.VentasXMes;
 
 
 namespace TuLuz
@@ -511,6 +512,11 @@ namespace TuLuz
         private void button52_Click(object sender, EventArgs e)
         {
             AbrirFormularioSubMenu(new Pedidos_Entre_Años_Y_PrecioMin()); 
+        }
+
+        private void button47_Click(object sender, EventArgs e)
+        {
+            AbrirFormularioSubMenu(new Estadistica_ProductoMasVendido());
         }
     }
 }
