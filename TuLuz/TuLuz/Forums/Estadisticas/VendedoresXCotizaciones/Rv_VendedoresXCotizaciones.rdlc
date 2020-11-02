@@ -2,38 +2,42 @@
 <Report xmlns="http://schemas.microsoft.com/sqlserver/reporting/2016/01/reportdefinition" xmlns:rd="http://schemas.microsoft.com/SQLServer/reporting/reportdesigner">
   <AutoRefresh>0</AutoRefresh>
   <DataSources>
-    <DataSource Name="DataSet1_VentasXMes">
+    <DataSource Name="DataSet1_VendedoresXCotizacion">
       <ConnectionProperties>
         <DataProvider>System.Data.DataSet</DataProvider>
         <ConnectString>/* Local Connection */</ConnectString>
       </ConnectionProperties>
-      <rd:DataSourceID>527a9d03-4ab3-4041-bb35-42b81f99d7bf</rd:DataSourceID>
+      <rd:DataSourceID>cbde908c-3dfd-496e-a0bd-7f513539a00b</rd:DataSourceID>
     </DataSource>
   </DataSources>
   <DataSets>
     <DataSet Name="DataSet1">
       <Query>
-        <DataSourceName>DataSet1_VentasXMes</DataSourceName>
+        <DataSourceName>DataSet1_VendedoresXCotizacion</DataSourceName>
         <CommandText>/* Local Query */</CommandText>
       </Query>
       <Fields>
-        <Field Name="numeroPedido">
-          <DataField>numeroPedido</DataField>
+        <Field Name="numeroCotizacion">
+          <DataField>numeroCotizacion</DataField>
           <rd:TypeName>System.String</rd:TypeName>
         </Field>
-        <Field Name="mes">
-          <DataField>mes</DataField>
+        <Field Name="tipoDocVendedor">
+          <DataField>tipoDocVendedor</DataField>
           <rd:TypeName>System.String</rd:TypeName>
         </Field>
-        <Field Name="codigoProducto">
-          <DataField>codigoProducto</DataField>
+        <Field Name="nroDocVendedor">
+          <DataField>nroDocVendedor</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="precioTotal">
+          <DataField>precioTotal</DataField>
           <rd:TypeName>System.String</rd:TypeName>
         </Field>
       </Fields>
       <rd:DataSetInfo>
-        <rd:DataSetName>DataSet1_VentasXMes</rd:DataSetName>
-        <rd:SchemaPath>C:\Users\PC\Documents\GitHub\PAV2020\TuLuz\TuLuz\Forums\Estadisticas\VentasXMes\DataSet1_VentasXMes.xsd</rd:SchemaPath>
-        <rd:TableName>datosBD</rd:TableName>
+        <rd:DataSetName>DataSet1_VendedoresXCotizacion</rd:DataSetName>
+        <rd:SchemaPath>C:\Users\PC\Documents\GitHub\PAV2020\TuLuz\TuLuz\Forums\Estadisticas\VendedoresXCotizaciones\DataSet1_VendedoresXCotizacion.xsd</rd:SchemaPath>
+        <rd:TableName>data BD</rd:TableName>
         <rd:TableAdapterFillMethod />
         <rd:TableAdapterGetDataMethod />
         <rd:TableAdapterName />
@@ -41,22 +45,22 @@
     </DataSet>
     <DataSet Name="DataSet2">
       <Query>
-        <DataSourceName>DataSet1_VentasXMes</DataSourceName>
+        <DataSourceName>DataSet1_VendedoresXCotizacion</DataSourceName>
         <CommandText>/* Local Query */</CommandText>
       </Query>
       <Fields>
-        <Field Name="mes">
-          <DataField>mes</DataField>
+        <Field Name="nroDocVendedor">
+          <DataField>nroDocVendedor</DataField>
           <rd:TypeName>System.String</rd:TypeName>
         </Field>
-        <Field Name="cantidad">
-          <DataField>cantidad</DataField>
+        <Field Name="cotizacionesGanadas">
+          <DataField>cotizacionesGanadas</DataField>
           <rd:TypeName>System.String</rd:TypeName>
         </Field>
       </Fields>
       <rd:DataSetInfo>
-        <rd:DataSetName>DataSet1_VentasXMes</rd:DataSetName>
-        <rd:SchemaPath>C:\Users\PC\Documents\GitHub\PAV2020\TuLuz\TuLuz\Forums\Estadisticas\VentasXMes\DataSet1_VentasXMes.xsd</rd:SchemaPath>
+        <rd:DataSetName>DataSet1_VendedoresXCotizacion</rd:DataSetName>
+        <rd:SchemaPath>C:\Users\PC\Documents\GitHub\PAV2020\TuLuz\TuLuz\Forums\Estadisticas\VendedoresXCotizaciones\DataSet1_VendedoresXCotizacion.xsd</rd:SchemaPath>
         <rd:TableName>DataTable1</rd:TableName>
         <rd:TableAdapterFillMethod />
         <rd:TableAdapterGetDataMethod />
@@ -68,38 +72,87 @@
     <ReportSection>
       <Body>
         <ReportItems>
+          <Textbox Name="Textbox5">
+            <CanGrow>true</CanGrow>
+            <KeepTogether>true</KeepTogether>
+            <Paragraphs>
+              <Paragraph>
+                <TextRuns>
+                  <TextRun>
+                    <Value>@RP01</Value>
+                    <Style />
+                  </TextRun>
+                </TextRuns>
+                <Style />
+              </Paragraph>
+              <Paragraph>
+                <TextRuns>
+                  <TextRun>
+                    <Value />
+                    <Style />
+                  </TextRun>
+                </TextRuns>
+                <Style />
+              </Paragraph>
+              <Paragraph>
+                <TextRuns>
+                  <TextRun>
+                    <Value />
+                    <Style>
+                      <FontStyle>Italic</FontStyle>
+                    </Style>
+                  </TextRun>
+                </TextRuns>
+                <Style />
+              </Paragraph>
+            </Paragraphs>
+            <rd:DefaultName>Textbox4</rd:DefaultName>
+            <Top>0.73188cm</Top>
+            <Left>0.76083cm</Left>
+            <Height>0.6cm</Height>
+            <Width>2.5cm</Width>
+            <Style>
+              <Border>
+                <Style>None</Style>
+              </Border>
+              <PaddingLeft>2pt</PaddingLeft>
+              <PaddingRight>2pt</PaddingRight>
+              <PaddingTop>2pt</PaddingTop>
+              <PaddingBottom>2pt</PaddingBottom>
+            </Style>
+          </Textbox>
           <Chart Name="Chart1">
             <ChartCategoryHierarchy>
               <ChartMembers>
                 <ChartMember>
                   <Group Name="Chart1_CategoryGroup">
                     <GroupExpressions>
-                      <GroupExpression>=Fields!mes.Value</GroupExpression>
+                      <GroupExpression>=Fields!nroDocVendedor.Value</GroupExpression>
                     </GroupExpressions>
                   </Group>
                   <SortExpressions>
                     <SortExpression>
-                      <Value>=Fields!mes.Value</Value>
+                      <Value>=Fields!nroDocVendedor.Value</Value>
                     </SortExpression>
                   </SortExpressions>
-                  <Label>=Fields!mes.Value</Label>
+                  <Label>=Fields!nroDocVendedor.Value</Label>
                 </ChartMember>
               </ChartMembers>
             </ChartCategoryHierarchy>
             <ChartSeriesHierarchy>
               <ChartMembers>
                 <ChartMember>
-                  <Label>mes</Label>
+                  <Label>nro Doc Vendedor</Label>
                 </ChartMember>
               </ChartMembers>
             </ChartSeriesHierarchy>
             <ChartData>
               <ChartSeriesCollection>
-                <ChartSeries Name="mes">
+                <ChartSeries Name="nroDocVendedor">
                   <ChartDataPoints>
                     <ChartDataPoint>
                       <ChartDataPointValues>
-                        <Y>=Count(Fields!mes.Value)</Y>
+                        <Y>=Count(Fields!nroDocVendedor.Value)</Y>
                       </ChartDataPointValues>
                       <ChartDataLabel>
                         <Style />
@@ -358,6 +411,9 @@
                     </ChartAxisScaleBreak>
                   </ChartAxis>
                 </ChartValueAxes>
+                <ChartThreeDProperties>
+                  <Enabled>true</Enabled>
+                </ChartThreeDProperties>
                 <Style>
                   <BackgroundColor>#00ffffff</BackgroundColor>
                   <BackgroundGradientType>None</BackgroundGradientType>
@@ -384,7 +440,7 @@
             </ChartLegends>
             <ChartTitles>
               <ChartTitle Name="Default">
-                <Caption>Título del gráfico</Caption>
+                <Caption />
                 <Style>
                   <BackgroundGradientType>None</BackgroundGradientType>
                   <FontSize>9pt</FontSize>
@@ -414,10 +470,11 @@
               </Style>
             </ChartNoDataMessage>
             <DataSetName>DataSet1</DataSetName>
-            <Top>1.5314cm</Top>
-            <Left>1.13453cm</Left>
+            <Top>2.00766cm</Top>
+            <Left>2.00736cm</Left>
             <Height>5cm</Height>
             <Width>7.5cm</Width>
+            <ZIndex>1</ZIndex>
             <Style>
               <Border>
                 <Color>LightGrey</Color>
@@ -427,11 +484,11 @@
               <BackgroundGradientType>None</BackgroundGradientType>
             </Style>
           </Chart>
-          <Tablix Name="Tablix2">
+          <Tablix Name="Tablix1">
             <TablixBody>
               <TablixColumns>
                 <TablixColumn>
-                  <Width>2.79104cm</Width>
+                  <Width>2.5cm</Width>
                 </TablixColumn>
                 <TablixColumn>
                   <Width>2.5cm</Width>
@@ -443,30 +500,21 @@
                   <TablixCells>
                     <TablixCell>
                       <CellContents>
-                        <Textbox Name="Textbox9">
+                        <Textbox Name="Textbox6">
                           <CanGrow>true</CanGrow>
                           <KeepTogether>true</KeepTogether>
                           <Paragraphs>
                             <Paragraph>
                               <TextRuns>
                                 <TextRun>
-                                  <Value>Numero de Mes</Value>
-                                  <Style />
-                                </TextRun>
-                              </TextRuns>
-                              <Style />
-                            </Paragraph>
-                            <Paragraph>
-                              <TextRuns>
-                                <TextRun>
-                                  <Value />
+                                  <Value>Nro. Doc.</Value>
                                   <Style />
                                 </TextRun>
                               </TextRuns>
                               <Style />
                             </Paragraph>
                           </Paragraphs>
-                          <rd:DefaultName>Textbox9</rd:DefaultName>
+                          <rd:DefaultName>Textbox6</rd:DefaultName>
                           <Style>
                             <Border>
                               <Color>LightGrey</Color>
@@ -482,21 +530,21 @@
                     </TablixCell>
                     <TablixCell>
                       <CellContents>
-                        <Textbox Name="Textbox11">
+                        <Textbox Name="Textbox8">
                           <CanGrow>true</CanGrow>
                           <KeepTogether>true</KeepTogether>
                           <Paragraphs>
                             <Paragraph>
                               <TextRuns>
                                 <TextRun>
-                                  <Value>Cantidad</Value>
+                                  <Value>Ganadas</Value>
                                   <Style />
                                 </TextRun>
                               </TextRuns>
                               <Style />
                             </Paragraph>
                           </Paragraphs>
-                          <rd:DefaultName>Textbox11</rd:DefaultName>
+                          <rd:DefaultName>Textbox8</rd:DefaultName>
                           <Style>
                             <Border>
                               <Color>LightGrey</Color>
@@ -517,21 +565,21 @@
                   <TablixCells>
                     <TablixCell>
                       <CellContents>
-                        <Textbox Name="mes">
+                        <Textbox Name="nroDocVendedor">
                           <CanGrow>true</CanGrow>
                           <KeepTogether>true</KeepTogether>
                           <Paragraphs>
                             <Paragraph>
                               <TextRuns>
                                 <TextRun>
-                                  <Value>=Fields!mes.Value</Value>
+                                  <Value>=Fields!nroDocVendedor.Value</Value>
                                   <Style />
                                 </TextRun>
                               </TextRuns>
                               <Style />
                             </Paragraph>
                           </Paragraphs>
-                          <rd:DefaultName>mes</rd:DefaultName>
+                          <rd:DefaultName>nroDocVendedor</rd:DefaultName>
                           <Style>
                             <Border>
                               <Color>LightGrey</Color>
@@ -547,21 +595,21 @@
                     </TablixCell>
                     <TablixCell>
                       <CellContents>
-                        <Textbox Name="cantidad">
+                        <Textbox Name="cotizacionesGanadas">
                           <CanGrow>true</CanGrow>
                           <KeepTogether>true</KeepTogether>
                           <Paragraphs>
                             <Paragraph>
                               <TextRuns>
                                 <TextRun>
-                                  <Value>=Fields!cantidad.Value</Value>
+                                  <Value>=Fields!cotizacionesGanadas.Value</Value>
                                   <Style />
                                 </TextRun>
                               </TextRuns>
                               <Style />
                             </Paragraph>
                           </Paragraphs>
-                          <rd:DefaultName>cantidad</rd:DefaultName>
+                          <rd:DefaultName>cotizacionesGanadas</rd:DefaultName>
                           <Style>
                             <Border>
                               <Color>LightGrey</Color>
@@ -596,55 +644,25 @@
               </TablixMembers>
             </TablixRowHierarchy>
             <DataSetName>DataSet2</DataSetName>
-            <Top>2.77496cm</Top>
-            <Left>10.36849cm</Left>
+            <Top>2.9337cm</Top>
+            <Left>10.73891cm</Left>
             <Height>1.2cm</Height>
-            <Width>5.29104cm</Width>
-            <ZIndex>1</ZIndex>
+            <Width>5cm</Width>
+            <ZIndex>2</ZIndex>
             <Style>
               <Border>
                 <Style>None</Style>
               </Border>
             </Style>
           </Tablix>
-          <Textbox Name="Textbox2">
-            <CanGrow>true</CanGrow>
-            <KeepTogether>true</KeepTogether>
-            <Paragraphs>
-              <Paragraph>
-                <TextRuns>
-                  <TextRun>
-                    <Value>@RP01</Value>
-                    <Style />
-                  </TextRun>
-                </TextRuns>
-                <Style />
-              </Paragraph>
-            </Paragraphs>
-            <rd:DefaultName>Textbox2</rd:DefaultName>
-            <Top>0.34079cm</Top>
-            <Left>1.13453cm</Left>
-            <Height>0.6cm</Height>
-            <Width>2.5cm</Width>
-            <ZIndex>2</ZIndex>
-            <Style>
-              <Border>
-                <Style>None</Style>
-              </Border>
-              <PaddingLeft>2pt</PaddingLeft>
-              <PaddingRight>2pt</PaddingRight>
-              <PaddingTop>2pt</PaddingTop>
-              <PaddingBottom>2pt</PaddingBottom>
-            </Style>
-          </Textbox>
         </ReportItems>
-        <Height>2.73808in</Height>
+        <Height>2.98809in</Height>
         <Style />
       </Body>
-      <Width>7.30568in</Width>
+      <Width>7.40984in</Width>
       <Page>
         <PageHeader>
-          <Height>2.54cm</Height>
+          <Height>2.03729cm</Height>
           <PrintOnFirstPage>true</PrintOnFirstPage>
           <PrintOnLastPage>true</PrintOnLastPage>
           <ReportItems>
@@ -655,7 +673,7 @@
                 <Paragraph>
                   <TextRuns>
                     <TextRun>
-                      <Value>Cálculo Estadístico de Ventas por mes de un producto</Value>
+                      <Value>Cálculo Estadístico de Vendedores con mayor cotizacion</Value>
                       <Style />
                     </TextRun>
                   </TextRuns>
@@ -663,8 +681,8 @@
                 </Paragraph>
               </Paragraphs>
               <rd:DefaultName>ReportName</rd:DefaultName>
-              <Top>0.97cm</Top>
-              <Left>1.13453cm</Left>
+              <Top>0.98323cm</Top>
+              <Left>1.34528cm</Left>
               <Height>0.6cm</Height>
               <Width>9.00875cm</Width>
               <Style>
@@ -677,7 +695,7 @@
                 <PaddingBottom>2pt</PaddingBottom>
               </Style>
             </Textbox>
-            <Textbox Name="Textbox1">
+            <Textbox Name="Textbox4">
               <CanGrow>true</CanGrow>
               <KeepTogether>true</KeepTogether>
               <Paragraphs>
@@ -690,10 +708,21 @@
                   </TextRuns>
                   <Style />
                 </Paragraph>
+                <Paragraph>
+                  <TextRuns>
+                    <TextRun>
+                      <Value />
+                      <Style>
+                        <FontStyle>Italic</FontStyle>
+                      </Style>
+                    </TextRun>
+                  </TextRuns>
+                  <Style />
+                </Paragraph>
               </Paragraphs>
-              <rd:DefaultName>Textbox1</rd:DefaultName>
-              <Top>0.97cm</Top>
-              <Left>15.15745cm</Left>
+              <rd:DefaultName>Textbox4</rd:DefaultName>
+              <Top>0.98323cm</Top>
+              <Left>12.51162cm</Left>
               <Height>0.6cm</Height>
               <Width>2.5cm</Width>
               <ZIndex>1</ZIndex>
@@ -715,7 +744,7 @@
           </Style>
         </PageHeader>
         <PageFooter>
-          <Height>1.93146cm</Height>
+          <Height>2.54cm</Height>
           <PrintOnFirstPage>true</PrintOnFirstPage>
           <PrintOnLastPage>true</PrintOnLastPage>
           <Style>
@@ -742,5 +771,5 @@
     </GridLayoutDefinition>
   </ReportParametersLayout>
   <rd:ReportUnitType>Cm</rd:ReportUnitType>
-  <rd:ReportID>ecfee8d8-376c-48c1-bf2e-f1d955998e0e</rd:ReportID>
+  <rd:ReportID>f013d0e5-56de-42fa-86ae-bc40d76bb3c8</rd:ReportID>
 </Report>

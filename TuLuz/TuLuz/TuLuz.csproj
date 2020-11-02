@@ -199,6 +199,17 @@
     <Compile Include="Forums\Estadisticas\Proveedores_Activos_NoActivos\Estadistica_Proveedores_Ac_NoAc.Designer.cs">
       <DependentUpon>Estadistica_Proveedores_Ac_NoAc.cs</DependentUpon>
     </Compile>
+    <Compile Include="Forums\Estadisticas\VendedoresXCotizaciones\DataSet1_VendedoresXCotizacion.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DataSet1_VendedoresXCotizacion.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Forums\Estadisticas\VendedoresXCotizaciones\Estadistica_VendedoresXCotizaciones.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forums\Estadisticas\VendedoresXCotizaciones\Estadistica_VendedoresXCotizaciones.Designer.cs">
+      <DependentUpon>Estadistica_VendedoresXCotizaciones.cs</DependentUpon>
+    </Compile>
     <Compile Include="Forums\Estadisticas\VentasXMes\DataSet1_VentasXMes.cs">
       <DependentUpon>DataSet1_VentasXMes.xsd</DependentUpon>
     </Compile>
@@ -640,6 +651,10 @@
       <DependentUpon>Estadistica_Proveedores_Ac_NoAc.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forums\Estadisticas\Proveedores_Activos_NoActivos\Rv_Proveedores_Ac_NoAc.rdlc" />
+    <EmbeddedResource Include="Forums\Estadisticas\VendedoresXCotizaciones\Estadistica_VendedoresXCotizaciones.resx">
+      <DependentUpon>Estadistica_VendedoresXCotizaciones.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forums\Estadisticas\VendedoresXCotizaciones\Rv_VendedoresXCotizaciones.rdlc" />
     <EmbeddedResource Include="Forums\Estadisticas\VentasXMes\Estadistica_VentaXMes.resx">
       <DependentUpon>Estadistica_VentaXMes.cs</DependentUpon>
     </EmbeddedResource>
@@ -872,6 +887,17 @@
     </None>
     <None Include="Forums\Estadisticas\Proveedores_Activos_NoActivos\DataSet_Proveedores_Ac_NoAc.xss">
       <DependentUpon>DataSet_Proveedores_Ac_NoAc.xsd</DependentUpon>
+    </None>
+    <None Include="Forums\Estadisticas\VendedoresXCotizaciones\DataSet1_VendedoresXCotizacion.xsc">
+      <DependentUpon>DataSet1_VendedoresXCotizacion.xsd</DependentUpon>
+    </None>
+    <None Include="Forums\Estadisticas\VendedoresXCotizaciones\DataSet1_VendedoresXCotizacion.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DataSet1_VendedoresXCotizacion.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="Forums\Estadisticas\VendedoresXCotizaciones\DataSet1_VendedoresXCotizacion.xss">
+      <DependentUpon>DataSet1_VendedoresXCotizacion.xsd</DependentUpon>
     </None>
     <None Include="Forums\Estadisticas\VentasXMes\DataSet1_VentasXMes.xsc">
       <DependentUpon>DataSet1_VentasXMes.xsd</DependentUpon>

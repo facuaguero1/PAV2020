@@ -1045,3 +1045,4 @@ C:\Users\PC\Documents\GitHub\PAV2020\TuLuz\TuLuz\obj\Debug\TuLuz.Forums.Estadist
 C:\Users\PC\Documents\GitHub\PAV2020\TuLuz\TuLuz\obj\Debug\TuLuz.Forums.Estadisticas.Proveedores_Activos_NoActivos.Estadistica_Proveedores_Ac_NoAc.resources
 C:\Users\PC\Documents\GitHub\PAV2020\TuLuz\TuLuz\obj\Debug\TuLuz.Forums.cotizacionXprecio.resources
 C:\Users\PC\Documents\GitHub\PAV2020\TuLuz\TuLuz\obj\Debug\TuLuz.Forums.Estadisticas.VentasXMes.Estadistica_VentaXMes.resources
+C:\Users\PC\Documents\GitHub\PAV2020\TuLuz\TuLuz\obj\Debug\TuLuz.Forums.Estadisticas.VendedoresXCotizaciones.Estadistica_VendedoresXCotizaciones.resources
