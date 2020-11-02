@@ -138,7 +138,7 @@ namespace TuLuz.Negocio
 
         public DataTable VentasXProductos(string codigoProducto)
         {
-            string sql = "select MONTH(Pedidos.fechaPedido) as 'Mes' , COUNT (DP.codigoProducto) as 'Cantidad' from Pedidos Pedidos join DetallePedido DP on (Pedidos.numeroPedido = DP.numeroPedido) where  YEAR(Pedidos.fechaPedido) = 2020 and DP.codigoProducto = " + codigoProducto + "group by MONTH(Pedidos.fechaPedido)";
+            string sql = "select MONTH(Pedidos.fechaPedido) as 'mes' , COUNT (DP.codigoProducto) as 'cantidad' from Pedidos Pedidos join DetallePedido DP on (Pedidos.numeroPedido = DP.numeroPedido) where  YEAR(Pedidos.fechaPedido) = 2020 and DP.codigoProducto = " + codigoProducto + "group by MONTH(Pedidos.fechaPedido)";
             DataTable tabla = new DataTable();
             tabla = _BD.Consulta(sql);
             return tabla;

@@ -98,6 +98,14 @@ class Ng_Cotizaciones
         return tabla;
     }
 
+    public DataTable Cotizaciones_X_Vendedores()
+    {
+        string sql = "select tipoDocVendedor , numDocVendedor , SUM(precioTotal) as 'cotizacionesGanadas' from Cotizaciones group by tipoDocVendedor,numDocVendedor ";
+        DataTable tabla = new DataTable();
+        tabla = _BD.Consulta(sql);
+        return tabla;
+    }
+
     public String TraerMes(string doc)
     {
         string sql = "SELECT MONTH(fecha) FROM Cotizaciones WHERE numeroCotizacion =" + doc;
