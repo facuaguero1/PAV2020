@@ -607,6 +607,8 @@ namespace TuLuz.Forums.Estadisticas.VendedoresXCotizaciones {
             
             private global::System.Data.DataColumn columncotizacionesGanadas;
             
+            private global::System.Data.DataColumn columntipoDocVendedor;
+            
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
             public DataTable1DataTable() {
@@ -658,6 +660,14 @@ namespace TuLuz.Forums.Estadisticas.VendedoresXCotizaciones {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public global::System.Data.DataColumn tipoDocVendedorColumn {
+                get {
+                    return this.columntipoDocVendedor;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
             [global::System.ComponentModel.Browsable(false)]
             public int Count {
                 get {
@@ -693,11 +703,12 @@ namespace TuLuz.Forums.Estadisticas.VendedoresXCotizaciones {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public DataTable1Row AddDataTable1Row(string nroDocVendedor, string cotizacionesGanadas) {
+            public DataTable1Row AddDataTable1Row(string nroDocVendedor, string cotizacionesGanadas, string tipoDocVendedor) {
                 DataTable1Row rowDataTable1Row = ((DataTable1Row)(this.NewRow()));
                 object[] columnValuesArray = new object[] {
                         nroDocVendedor,
-                        cotizacionesGanadas};
+                        cotizacionesGanadas,
+                        tipoDocVendedor};
                 rowDataTable1Row.ItemArray = columnValuesArray;
                 this.Rows.Add(rowDataTable1Row);
                 return rowDataTable1Row;
@@ -722,6 +733,7 @@ namespace TuLuz.Forums.Estadisticas.VendedoresXCotizaciones {
             internal void InitVars() {
                 this.columnnroDocVendedor = base.Columns["nroDocVendedor"];
                 this.columncotizacionesGanadas = base.Columns["cotizacionesGanadas"];
+                this.columntipoDocVendedor = base.Columns["tipoDocVendedor"];
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -731,6 +743,8 @@ namespace TuLuz.Forums.Estadisticas.VendedoresXCotizaciones {
                 base.Columns.Add(this.columnnroDocVendedor);
                 this.columncotizacionesGanadas = new global::System.Data.DataColumn("cotizacionesGanadas", typeof(string), null, global::System.Data.MappingType.Element);
                 base.Columns.Add(this.columncotizacionesGanadas);
+                this.columntipoDocVendedor = new global::System.Data.DataColumn("tipoDocVendedor", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columntipoDocVendedor);
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -1032,6 +1046,22 @@ namespace TuLuz.Forums.Estadisticas.VendedoresXCotizaciones {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public string tipoDocVendedor {
+                get {
+                    try {
+                        return ((string)(this[this.tableDataTable1.tipoDocVendedorColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("El valor de la columna \'tipoDocVendedor\' de la tabla \'DataTable1\' es DBNull.", e);
+                    }
+                }
+                set {
+                    this[this.tableDataTable1.tipoDocVendedorColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
             public bool IsnroDocVendedorNull() {
                 return this.IsNull(this.tableDataTable1.nroDocVendedorColumn);
             }
@@ -1052,6 +1082,18 @@ namespace TuLuz.Forums.Estadisticas.VendedoresXCotizaciones {
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
             public void SetcotizacionesGanadasNull() {
                 this[this.tableDataTable1.cotizacionesGanadasColumn] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public bool IstipoDocVendedorNull() {
+                return this.IsNull(this.tableDataTable1.tipoDocVendedorColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public void SettipoDocVendedorNull() {
+                this[this.tableDataTable1.tipoDocVendedorColumn] = global::System.Convert.DBNull;
             }
         }
         
