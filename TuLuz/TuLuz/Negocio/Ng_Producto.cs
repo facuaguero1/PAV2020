@@ -115,7 +115,29 @@ namespace TuLuz.Negocio
         }
         public DataTable BuscarProductoXprecio(string precioMin, string precioMax)
         {
-            string sql = "SELECT * FROM Productos WHERE precio between " +precioMin + " and " + precioMax;
+            string sql = "SELECT * FROM Productos WHERE precio between " + precioMin + " and " + precioMax;
+            DataTable tabla = new DataTable();
+            tabla = _BD.Consulta(sql);
+            return tabla;
+        }
+        public DataTable BuscarProductoEq()
+        {
+            string sql = "SELECT 'Productos equivalente' as tipo, *from Productos AS e1 " +
+                "WHERE EXISTS(SELECT* FROM Productos AS e2 WHERE e2.codProductoEq = e1.codProducto) " +
+                "UNION " +
+                "SELECT 'Productos no equivalente' as tipo, *FROM Productos AS e3 " +
+                "WHERE NOT EXISTS(SELECT* FROM Productos AS e4 WHERE e4.codProductoEq = e3.codProducto)";
+            DataTable tabla = new DataTable();
+            tabla = _BD.Consulta(sql);
+            return tabla;
+        }
+        public DataTable ContarEquivalente()
+        {
+            string sql = " SELECT 'Producto equivalente' as tipo, COUNT(*) as cantidad from Productos AS e1  " +
+                "WHERE EXISTS(SELECT* FROM Productos AS e2 WHERE e2.codProductoEq = e1.codProducto) " +
+                "UNION " +
+                "SELECT 'Producto no equivalente' as tipo, COUNT(*) as cantidad FROM Productos AS e3 " +
+                "WHERE NOT EXISTS(SELECT * FROM Productos AS e4 WHERE e4.codProductoEq = e3.codProducto)";
             DataTable tabla = new DataTable();
             tabla = _BD.Consulta(sql);
             return tabla;

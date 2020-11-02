@@ -502,5 +502,10 @@ namespace TuLuz
         {
             AbrirFormularioSubMenu(new Estadistica_Cantidades_Jefes_Empleados());
         }
+
+        private void button53_Click(object sender, EventArgs e)
+        {
+            AbrirFormularioSubMenu(new Estadistica_Cantidades_Productos_Equivalentes());
+        }
     }
 }
