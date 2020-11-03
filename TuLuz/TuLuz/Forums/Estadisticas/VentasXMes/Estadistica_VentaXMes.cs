@@ -34,8 +34,8 @@ namespace TuLuz.Forums.Estadisticas.VentasXMes
         private void CalcularEstadistica_VentasXMes()
         {
             DataTable tabla2 = new DataTable();
-            tabla = pedidos.Todos_los_Pedidos();
-            tabla2 = pedidos.VentasXProductos(txt_CodProducto.Text);
+            tabla = pedidos.VentasXProductos(txt_CodProducto.Text);
+            tabla2 = pedidos.ContarVentasXProductos(txt_CodProducto.Text);
             Be_BaseDatos _BD = new Be_BaseDatos();
             ReportDataSource Datos = new ReportDataSource("DataSet1", tabla);
             ReportDataSource Datos1 = new ReportDataSource("DataSet2", tabla2);

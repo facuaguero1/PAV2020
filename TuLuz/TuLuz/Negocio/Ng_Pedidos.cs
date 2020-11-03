@@ -154,13 +154,22 @@ namespace TuLuz.Negocio
             return tabla;
         }
 
-        public DataTable VentasXProductos(string codigoProducto)
+        public DataTable VentasXProductos(string mes)
         {
-            string sql = "select MONTH(Pedidos.fechaPedido) as 'mes' , COUNT (DP.codigoProducto) as 'cantidad' from Pedidos Pedidos join DetallePedido DP on (Pedidos.numeroPedido = DP.numeroPedido) where  YEAR(Pedidos.fechaPedido) = 2020 and DP.codigoProducto = " + codigoProducto + "group by MONTH(Pedidos.fechaPedido)";
+            string sql = "SELECT Pedidos.numeroPedido,DetallePedido.codigoProducto, Productos.nombre FROM Pedidos, DetallePedido, Productos WHERE Pedidos.numeroPedido = DetallePedido.numeroPedido AND DetallePedido.codigoProducto = Productos.codProducto AND MONTH(Pedidos.fechaPedido) = "+ mes;
             DataTable tabla = new DataTable();
             tabla = _BD.Consulta(sql);
             return tabla;
         }
+
+        public DataTable ContarVentasXProductos(string mes)
+        {
+            string sql = "SELECT COUNT(DetallePedido.codigoProducto)as cantidad, Productos.nombre, Productos.codProducto FROM Pedidos, DetallePedido, Productos WHERE Pedidos.numeroPedido = DetallePedido.numeroPedido AND DetallePedido.codigoProducto = Productos.codProducto AND MONTH(Pedidos.fechaPedido) = " + mes + " GROUP BY  Productos.nombre,  Productos.codProducto";
+            DataTable tabla = new DataTable();
+            tabla = _BD.Consulta(sql);
+            return tabla;
+        }
+
 
 
         public EstructuraComboBox EstructuraCombo()

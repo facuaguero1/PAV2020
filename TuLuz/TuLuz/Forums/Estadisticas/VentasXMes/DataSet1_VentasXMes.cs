@@ -4,5 +4,8 @@
 
     partial class DataSet1_VentasXMes
     {
+        partial class DataTable1DataTable
+        {
+        }
     }
 }

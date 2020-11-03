@@ -249,6 +249,9 @@
     <Compile Include="Forums\Estadisticas\Proveedores_Activos_NoActivos\Estadistica_Proveedores_Ac_NoAc.Designer.cs">
       <DependentUpon>Estadistica_Proveedores_Ac_NoAc.cs</DependentUpon>
     </Compile>
+    <Compile Include="Forums\Estadisticas\VendedoresXCotizaciones\DataSet1_VendedoresXCotizacion.cs">
+      <DependentUpon>DataSet1_VendedoresXCotizacion.xsd</DependentUpon>
+    </Compile>
     <Compile Include="Forums\Estadisticas\VendedoresXCotizaciones\DataSet1_VendedoresXCotizacion.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>

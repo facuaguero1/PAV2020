@@ -75,7 +75,7 @@
             // txt_CodProducto
             // 
             this.txt_CodProducto.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txt_CodProducto.Location = new System.Drawing.Point(449, 87);
+            this.txt_CodProducto.Location = new System.Drawing.Point(398, 85);
             this.txt_CodProducto.Name = "txt_CodProducto";
             this.txt_CodProducto.Size = new System.Drawing.Size(100, 26);
             this.txt_CodProducto.TabIndex = 21;
@@ -84,11 +84,11 @@
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(225, 86);
+            this.label2.Location = new System.Drawing.Point(336, 86);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(220, 25);
+            this.label2.Size = new System.Drawing.Size(56, 25);
             this.label2.TabIndex = 22;
-            this.label2.Text = "Codigo de Producto";
+            this.label2.Text = "Mes";
             // 
             // Estadistica_VentaXMes
             // 

@@ -21,22 +21,14 @@
           <DataField>numeroCotizacion</DataField>
           <rd:TypeName>System.String</rd:TypeName>
         </Field>
-        <Field Name="tipoDocVendedor">
-          <DataField>tipoDocVendedor</DataField>
-          <rd:TypeName>System.String</rd:TypeName>
-        </Field>
-        <Field Name="nroDocVendedor">
-          <DataField>nroDocVendedor</DataField>
-          <rd:TypeName>System.String</rd:TypeName>
-        </Field>
-        <Field Name="precioTotal">
-          <DataField>precioTotal</DataField>
+        <Field Name="numDoc">
+          <DataField>numDoc</DataField>
           <rd:TypeName>System.String</rd:TypeName>
         </Field>
       </Fields>
       <rd:DataSetInfo>
         <rd:DataSetName>DataSet1_VendedoresXCotizacion</rd:DataSetName>
-        <rd:SchemaPath>C:\Users\PC\Documents\GitHub\PAV2020\TuLuz\TuLuz\Forums\Estadisticas\VendedoresXCotizaciones\DataSet1_VendedoresXCotizacion.xsd</rd:SchemaPath>
+        <rd:SchemaPath>C:\Users\Fabri\Documents\GitHub\PAV2020\TuLuz\TuLuz\Forums\Estadisticas\VendedoresXCotizaciones\DataSet1_VendedoresXCotizacion.xsd</rd:SchemaPath>
         <rd:TableName>data BD</rd:TableName>
         <rd:TableAdapterFillMethod />
         <rd:TableAdapterGetDataMethod />
@@ -49,22 +41,22 @@
         <CommandText>/* Local Query */</CommandText>
       </Query>
       <Fields>
-        <Field Name="numDocVendedor">
-          <DataField>numDocVendedor</DataField>
+        <Field Name="Cantidad">
+          <DataField>Cantidad</DataField>
           <rd:TypeName>System.String</rd:TypeName>
         </Field>
-        <Field Name="cotizacionesGanadas">
-          <DataField>cotizacionesGanadas</DataField>
+        <Field Name="numDoc">
+          <DataField>numDoc</DataField>
           <rd:TypeName>System.String</rd:TypeName>
         </Field>
-        <Field Name="tipoDocVendedor">
-          <DataField>tipoDocVendedor</DataField>
+        <Field Name="nombre">
+          <DataField>nombre</DataField>
           <rd:TypeName>System.String</rd:TypeName>
         </Field>
       </Fields>
       <rd:DataSetInfo>
         <rd:DataSetName>DataSet1_VendedoresXCotizacion</rd:DataSetName>
-        <rd:SchemaPath>C:\Users\PC\Documents\GitHub\PAV2020\TuLuz\TuLuz\Forums\Estadisticas\VendedoresXCotizaciones\DataSet1_VendedoresXCotizacion.xsd</rd:SchemaPath>
+        <rd:SchemaPath>C:\Users\Fabri\Documents\GitHub\PAV2020\TuLuz\TuLuz\Forums\Estadisticas\VendedoresXCotizaciones\DataSet1_VendedoresXCotizacion.xsd</rd:SchemaPath>
         <rd:TableName>DataTable1</rd:TableName>
         <rd:TableAdapterFillMethod />
         <rd:TableAdapterGetDataMethod />
@@ -178,7 +170,7 @@
                             <Paragraph>
                               <TextRuns>
                                 <TextRun>
-                                  <Value>Tipo Doc</Value>
+                                  <Value>Nro. Doc</Value>
                                   <Style>
                                     <FontSize>12pt</FontSize>
                                     <FontWeight>Bold</FontWeight>
@@ -214,7 +206,7 @@
                             <Paragraph>
                               <TextRuns>
                                 <TextRun>
-                                  <Value>Nro. Doc.</Value>
+                                  <Value>Nombre</Value>
                                   <Style>
                                     <FontSize>12pt</FontSize>
                                     <FontWeight>Bold</FontWeight>
@@ -284,14 +276,14 @@
                   <TablixCells>
                     <TablixCell>
                       <CellContents>
-                        <Textbox Name="tipoDocVendedor">
+                        <Textbox Name="numDoc">
                           <CanGrow>true</CanGrow>
                           <KeepTogether>true</KeepTogether>
                           <Paragraphs>
                             <Paragraph>
                               <TextRuns>
                                 <TextRun>
-                                  <Value>=Fields!tipoDocVendedor.Value</Value>
+                                  <Value>=Fields!numDoc.Value</Value>
                                   <Style />
                                 </TextRun>
                               </TextRuns>
@@ -300,7 +292,7 @@
                               </Style>
                             </Paragraph>
                           </Paragraphs>
-                          <rd:DefaultName>tipoDocVendedor</rd:DefaultName>
+                          <rd:DefaultName>numDoc</rd:DefaultName>
                           <Style>
                             <Border>
                               <Color>LightGrey</Color>
@@ -316,14 +308,14 @@
                     </TablixCell>
                     <TablixCell>
                       <CellContents>
-                        <Textbox Name="numDocVendedor">
+                        <Textbox Name="nombre">
                           <CanGrow>true</CanGrow>
                           <KeepTogether>true</KeepTogether>
                           <Paragraphs>
                             <Paragraph>
                               <TextRuns>
                                 <TextRun>
-                                  <Value>=Fields!numDocVendedor.Value</Value>
+                                  <Value>=Fields!nombre.Value</Value>
                                   <Style />
                                 </TextRun>
                               </TextRuns>
@@ -332,7 +324,7 @@
                               </Style>
                             </Paragraph>
                           </Paragraphs>
-                          <rd:DefaultName>numDocVendedor</rd:DefaultName>
+                          <rd:DefaultName>nombre</rd:DefaultName>
                           <Style>
                             <Border>
                               <Color>LightGrey</Color>
@@ -348,14 +340,14 @@
                     </TablixCell>
                     <TablixCell>
                       <CellContents>
-                        <Textbox Name="cotizacionesGanadas">
+                        <Textbox Name="Cantidad">
                           <CanGrow>true</CanGrow>
                           <KeepTogether>true</KeepTogether>
                           <Paragraphs>
                             <Paragraph>
                               <TextRuns>
                                 <TextRun>
-                                  <Value>=Fields!cotizacionesGanadas.Value</Value>
+                                  <Value>=Fields!Cantidad.Value</Value>
                                   <Style />
                                 </TextRun>
                               </TextRuns>
@@ -364,7 +356,7 @@
                               </Style>
                             </Paragraph>
                           </Paragraphs>
-                          <rd:DefaultName>cotizacionesGanadas</rd:DefaultName>
+                          <rd:DefaultName>Cantidad</rd:DefaultName>
                           <Style>
                             <Border>
                               <Color>LightGrey</Color>
@@ -400,7 +392,7 @@
               </TablixMembers>
             </TablixRowHierarchy>
             <DataSetName>DataSet2</DataSetName>
-            <Top>1.55787cm</Top>
+            <Top>3.5687cm</Top>
             <Left>10.31576cm</Left>
             <Height>1.2cm</Height>
             <Width>7.5cm</Width>
@@ -411,38 +403,38 @@
               </Border>
             </Style>
           </Tablix>
-          <Chart Name="Chart2">
+          <Chart Name="Chart1">
             <ChartCategoryHierarchy>
               <ChartMembers>
                 <ChartMember>
-                  <Group Name="Chart2_CategoryGroup">
-                    <GroupExpressions>
-                      <GroupExpression>=Fields!numDocVendedor.Value</GroupExpression>
-                    </GroupExpressions>
-                  </Group>
-                  <SortExpressions>
-                    <SortExpression>
-                      <Value>=Fields!numDocVendedor.Value</Value>
-                    </SortExpression>
-                  </SortExpressions>
-                  <Label>=Fields!numDocVendedor.Value</Label>
+                  <Label />
                 </ChartMember>
               </ChartMembers>
             </ChartCategoryHierarchy>
             <ChartSeriesHierarchy>
               <ChartMembers>
                 <ChartMember>
-                  <Label>cotizaciones Ganadas</Label>
+                  <Group Name="Chart1_SeriesGroup">
+                    <GroupExpressions>
+                      <GroupExpression>=Fields!numDoc.Value</GroupExpression>
+                    </GroupExpressions>
+                  </Group>
+                  <SortExpressions>
+                    <SortExpression>
+                      <Value>=Fields!numDoc.Value</Value>
+                    </SortExpression>
+                  </SortExpressions>
+                  <Label>=Fields!numDoc.Value</Label>
                 </ChartMember>
               </ChartMembers>
             </ChartSeriesHierarchy>
             <ChartData>
               <ChartSeriesCollection>
-                <ChartSeries Name="cotizacionesGanadas">
+                <ChartSeries Name="numDoc">
                   <ChartDataPoints>
                     <ChartDataPoint>
                       <ChartDataPointValues>
-                        <Y>=Sum(Fields!cotizacionesGanadas.Value)</Y>
+                        <Y>=Count(Fields!numDoc.Value)</Y>
                       </ChartDataPointValues>
                       <ChartDataLabel>
                         <Style />
@@ -457,7 +449,6 @@
                     </ChartDataPoint>
                   </ChartDataPoints>
                   <Type>Shape</Type>
-                  <Subtype>ExplodedPie</Subtype>
                   <Style />
                   <ChartEmptyPoints>
                     <Style />
@@ -730,6 +721,20 @@
                 <ColumnSeparatorColor>Black</ColumnSeparatorColor>
               </ChartLegend>
             </ChartLegends>
+            <ChartTitles>
+              <ChartTitle Name="Default">
+                <Caption>Título del gráfico</Caption>
+                <Style>
+                  <BackgroundGradientType>None</BackgroundGradientType>
+                  <FontSize>9pt</FontSize>
+                  <FontWeight>Normal</FontWeight>
+                  <TextAlign>Left</TextAlign>
+                  <VerticalAlign>Top</VerticalAlign>
+                  <Color>#a6a6a6</Color>
+                </Style>
+                <Position>TopLeft</Position>
+              </ChartTitle>
+            </ChartTitles>
             <Palette>Pacific</Palette>
             <ChartBorderSkin>
               <Style>
@@ -747,11 +752,11 @@
                 <VerticalAlign>Top</VerticalAlign>
               </Style>
             </ChartNoDataMessage>
-            <DataSetName>DataSet2</DataSetName>
-            <Top>1.55787cm</Top>
-            <Left>0.44333cm</Left>
-            <Height>6.66688cm</Height>
-            <Width>9.69604cm</Width>
+            <DataSetName>DataSet1</DataSetName>
+            <Top>2.61621cm</Top>
+            <Left>1.87537cm</Left>
+            <Height>5cm</Height>
+            <Width>7.5cm</Width>
             <ZIndex>2</ZIndex>
             <Style>
               <Border>

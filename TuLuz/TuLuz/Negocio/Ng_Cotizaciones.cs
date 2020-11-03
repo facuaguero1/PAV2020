@@ -100,7 +100,15 @@ class Ng_Cotizaciones
 
     public DataTable Cotizaciones_X_Vendedores()
     {
-        string sql = "select tipoDocVendedor , numDocVendedor , SUM(precioTotal) as 'cotizacionesGanadas' from Cotizaciones group by tipoDocVendedor, numDocVendedor order by cotizacionesGanadas desc";
+        string sql = "SELECT Cotizaciones.numeroCotizacion ,Empleados.numDoc FROM Empleados, Cotizaciones WHERE Cotizaciones.numDocVendedor = Empleados.numDoc AND Cotizaciones.codEstadoCotizacion = 1";
+        DataTable tabla = new DataTable();
+        tabla = _BD.Consulta(sql);
+        return tabla;
+    }
+
+    public DataTable ContarCotizaciones_X_Vendedores()
+    {
+        string sql = "SELECT Count(Cotizaciones.numeroCotizacion) as Cantidad,Empleados.numDoc, Empleados.nombre FROM Empleados, Cotizaciones WHERE Cotizaciones.numDocVendedor = Empleados.numDoc AND Cotizaciones.codEstadoCotizacion = 1 GROUP BY Empleados.numDoc, Empleados.nombre";
         DataTable tabla = new DataTable();
         tabla = _BD.Consulta(sql);
         return tabla;

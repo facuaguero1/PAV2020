@@ -39,8 +39,8 @@ namespace TuLuz.Forums.Estadisticas.VendedoresXCotizaciones
         private void CalcularEstadistica_VendedoresXCotizaciones()
         {
             DataTable tabla2 = new DataTable();
-            tabla = cotizaciones.Todas_Las_Cotizciones();
-            tabla2 = cotizaciones.Cotizaciones_X_Vendedores();
+            tabla2 = cotizaciones.ContarCotizaciones_X_Vendedores();
+            tabla = cotizaciones.Cotizaciones_X_Vendedores();
             Be_BaseDatos _BD = new Be_BaseDatos();
             ReportDataSource Datos = new ReportDataSource("DataSet1", tabla);
             ReportDataSource Datos1 = new ReportDataSource("DataSet2", tabla2);
