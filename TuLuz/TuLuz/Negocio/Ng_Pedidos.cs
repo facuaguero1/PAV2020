@@ -156,7 +156,7 @@ namespace TuLuz.Negocio
 
         public DataTable VentasXProductos(string mes)
         {
-            string sql = "SELECT Pedidos.numeroPedido,DetallePedido.codigoProducto, Productos.nombre FROM Pedidos, DetallePedido, Productos WHERE Pedidos.numeroPedido = DetallePedido.numeroPedido AND DetallePedido.codigoProducto = Productos.codProducto AND MONTH(Pedidos.fechaPedido) = "+ mes;
+            string sql = "SELECT Pedidos.numeroPedido,DetallePedido.codigoProducto, Productos.nombre, DetallePedido.cantidad FROM Pedidos, DetallePedido, Productos WHERE Pedidos.numeroPedido = DetallePedido.numeroPedido AND DetallePedido.codigoProducto = Productos.codProducto AND MONTH(Pedidos.fechaPedido) = "+ mes;
             DataTable tabla = new DataTable();
             tabla = _BD.Consulta(sql);
             return tabla;
@@ -164,7 +164,7 @@ namespace TuLuz.Negocio
 
         public DataTable ContarVentasXProductos(string mes)
         {
-            string sql = "SELECT COUNT(DetallePedido.codigoProducto)as cantidad, Productos.nombre, Productos.codProducto FROM Pedidos, DetallePedido, Productos WHERE Pedidos.numeroPedido = DetallePedido.numeroPedido AND DetallePedido.codigoProducto = Productos.codProducto AND MONTH(Pedidos.fechaPedido) = " + mes + " GROUP BY  Productos.nombre,  Productos.codProducto";
+            string sql = "SELECT SUM(DetallePedido.cantidad)as cantidad, Productos.nombre, Productos.codProducto FROM Pedidos, DetallePedido, Productos WHERE Pedidos.numeroPedido = DetallePedido.numeroPedido AND DetallePedido.codigoProducto = Productos.codProducto AND MONTH(Pedidos.fechaPedido) = " + mes + " GROUP BY  Productos.nombre,  Productos.codProducto";
             DataTable tabla = new DataTable();
             tabla = _BD.Consulta(sql);
             return tabla;

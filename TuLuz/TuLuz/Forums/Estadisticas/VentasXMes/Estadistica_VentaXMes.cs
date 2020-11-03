@@ -55,5 +55,10 @@ namespace TuLuz.Forums.Estadisticas.VentasXMes
         {
             CalcularEstadistica_VentasXMes();
         }
+
+        private void txt_CodProducto_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }

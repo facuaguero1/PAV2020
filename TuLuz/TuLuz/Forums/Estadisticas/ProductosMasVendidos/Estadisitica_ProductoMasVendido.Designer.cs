@@ -40,10 +40,11 @@
             // 
             this.rv_productoMasVendido.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.rv_productoMasVendido.LocalReport.ReportEmbeddedResource = "TuLuz.Forums.Estadisticas.VentasXMes.Rv_VentasXMes.rdlc";
-            this.rv_productoMasVendido.Location = new System.Drawing.Point(12, 147);
+            this.rv_productoMasVendido.Location = new System.Drawing.Point(16, 181);
+            this.rv_productoMasVendido.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.rv_productoMasVendido.Name = "rv_productoMasVendido";
             this.rv_productoMasVendido.ServerReport.BearerToken = null;
-            this.rv_productoMasVendido.Size = new System.Drawing.Size(905, 368);
+            this.rv_productoMasVendido.Size = new System.Drawing.Size(1206, 452);
             this.rv_productoMasVendido.TabIndex = 0;
             // 
             // label1
@@ -52,12 +53,14 @@
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 30F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))));
             this.label1.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.label1.Location = new System.Drawing.Point(203, 24);
+            this.label1.Location = new System.Drawing.Point(327, 26);
+            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(553, 46);
+            this.label1.Size = new System.Drawing.Size(526, 58);
             this.label1.TabIndex = 16;
-            this.label1.Text = "Ventas de Producto por mes";
+            this.label1.Text = "Productos por Pedido";
             this.label1.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
             // btn_Buscar
             // 
@@ -67,9 +70,10 @@
             this.btn_Buscar.FlatAppearance.BorderSize = 0;
             this.btn_Buscar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn_Buscar.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_Buscar.Location = new System.Drawing.Point(524, 85);
+            this.btn_Buscar.Location = new System.Drawing.Point(699, 105);
+            this.btn_Buscar.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btn_Buscar.Name = "btn_Buscar";
-            this.btn_Buscar.Size = new System.Drawing.Size(62, 44);
+            this.btn_Buscar.Size = new System.Drawing.Size(83, 54);
             this.btn_Buscar.TabIndex = 20;
             this.btn_Buscar.UseVisualStyleBackColor = true;
             this.btn_Buscar.Click += new System.EventHandler(this.btn_Buscar_Click);
@@ -78,9 +82,10 @@
             // 
             this.chk_filtro.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.chk_filtro.AutoSize = true;
-            this.chk_filtro.Location = new System.Drawing.Point(76, 85);
+            this.chk_filtro.Location = new System.Drawing.Point(101, 105);
+            this.chk_filtro.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.chk_filtro.Name = "chk_filtro";
-            this.chk_filtro.Size = new System.Drawing.Size(112, 17);
+            this.chk_filtro.Size = new System.Drawing.Size(150, 21);
             this.chk_filtro.TabIndex = 24;
             this.chk_filtro.Text = "Filtrar por periodos";
             this.chk_filtro.UseVisualStyleBackColor = true;
@@ -89,7 +94,8 @@
             // lblHasta
             // 
             this.lblHasta.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.lblHasta.Location = new System.Drawing.Point(275, 85);
+            this.lblHasta.Location = new System.Drawing.Point(367, 105);
+            this.lblHasta.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
             this.lblHasta.Name = "lblHasta";
             this.lblHasta.PP_Ancho = 10;
             this.lblHasta.PP_Decimales = 2;
@@ -101,13 +107,14 @@
             this.lblHasta.PP_Text = "  /  /";
             this.lblHasta.PP_TipoDato = TuLuz.Clases.LabelText01.TipoDato.fecha;
             this.lblHasta.PP_Validable = false;
-            this.lblHasta.Size = new System.Drawing.Size(243, 56);
+            this.lblHasta.Size = new System.Drawing.Size(324, 69);
             this.lblHasta.TabIndex = 23;
             // 
             // lbl_Desde
             // 
             this.lbl_Desde.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.lbl_Desde.Location = new System.Drawing.Point(76, 85);
+            this.lbl_Desde.Location = new System.Drawing.Point(101, 105);
+            this.lbl_Desde.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
             this.lbl_Desde.Name = "lbl_Desde";
             this.lbl_Desde.PP_Ancho = 10;
             this.lbl_Desde.PP_Decimales = 2;
@@ -119,20 +126,21 @@
             this.lbl_Desde.PP_Text = "  /  /";
             this.lbl_Desde.PP_TipoDato = TuLuz.Clases.LabelText01.TipoDato.fecha;
             this.lbl_Desde.PP_Validable = false;
-            this.lbl_Desde.Size = new System.Drawing.Size(243, 56);
+            this.lbl_Desde.Size = new System.Drawing.Size(324, 69);
             this.lbl_Desde.TabIndex = 22;
             // 
             // Estadistica_ProductoMasVendido
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(929, 545);
+            this.ClientSize = new System.Drawing.Size(1239, 671);
             this.Controls.Add(this.chk_filtro);
             this.Controls.Add(this.lblHasta);
             this.Controls.Add(this.lbl_Desde);
             this.Controls.Add(this.btn_Buscar);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.rv_productoMasVendido);
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "Estadistica_ProductoMasVendido";
             this.Text = "Estadistica_VentaXMes";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;

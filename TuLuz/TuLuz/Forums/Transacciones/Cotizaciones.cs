@@ -15,7 +15,7 @@ namespace TuLuz.Forums
 {
     public partial class Cotizaciones : Form
     {
-        
+
 
         Be_BaseDatos _BD = new Be_BaseDatos();
         Ng_Cotizaciones Cotizacion = new Ng_Cotizaciones();
@@ -29,7 +29,7 @@ namespace TuLuz.Forums
         public Cotizaciones()
         {
             InitializeComponent();
-            
+
             cmb_cliente.Cargar(Clientes.EstructuraCombo());
             cmb_Vendedor.Cargar(Empleados.EstructuraCombo());
             cmb_Estado.Cargar(EstadosCot.EstructuraCombo());
@@ -37,67 +37,67 @@ namespace TuLuz.Forums
         }
 
         //BOTON MODIFICAR....
-        private void btn_cancelar_Click(object sender, EventArgs e)
-        {
-            TratamientosEspeciales tratamiento = new TratamientosEspeciales();
-            Es_Cotizaciones _Ec = new Es_Cotizaciones();
-            if (tratamiento.validar(this.Controls) == TratamientosEspeciales.Validacion.correcta)
-            {
-                DataTable tabla = new DataTable();
-                tabla = Cotizacion.Buscar_Cotizcion(txt_numeroCotizacion.Text);
-                _Ec.numeroCotizacicon = txt_numeroCotizacion.Text;
-                _Ec.año = txt_Año.Text;
-                _Ec.cuitCliente = cmb_cliente.SelectedValue.ToString();
-                _Ec.numDocVendedor = cmb_Vendedor.SelectedValue.ToString();
-                _Ec.codEstadoCotizacion = cmb_Estado.SelectedValue.ToString();
-                _Ec.nombreSolicitante = txt_nombreSolicitante.Text;
-                _Ec.tipoDocVendedor = tabla.Rows[0]["tipoDocVendedor"].ToString();
-                _Ec.apellidoSolicitante = txt_ApellidoSolicitante.Text;
-                _Ec.observaciones = txt_Observaciones.Text;
-                _Ec.fecha = cmb_Dia.SelectedItem.ToString() + "/" + cmb_Mes.SelectedItem.ToString() + "/" + txt_Año2.Text;
-                _Ec.precioTotal = txt_Precio.Text;
-                _Ec.motivoPerdida = txt_motivoPerdida.Text;
-                _Ec.nomCompetidor = txt_Competidor.Text;
-                Cotizacion.Modificar(_Ec);
-                Cargar_grilla(Cotizacion.Todas_Las_Cotizciones());
+        //private void btn_cancelar_Click(object sender, EventArgs e)
+        //{
+        //    TratamientosEspeciales tratamiento = new TratamientosEspeciales();
+        //    Es_Cotizaciones _Ec = new Es_Cotizaciones();
+        //    if (tratamiento.validar(this.Controls) == TratamientosEspeciales.Validacion.correcta)
+        //    {
+        //        DataTable tabla = new DataTable();
+        //        tabla = Cotizacion.Buscar_Cotizcion(txt_numeroCotizacion.Text);
+        //        _Ec.numeroCotizacicon = txt_numeroCotizacion.Text;
+        //        _Ec.año = txt_Año.Text;
+        //        _Ec.cuitCliente = cmb_cliente.SelectedValue.ToString();
+        //        _Ec.numDocVendedor = cmb_Vendedor.SelectedValue.ToString();
+        //        _Ec.codEstadoCotizacion = cmb_Estado.SelectedValue.ToString();
+        //        _Ec.nombreSolicitante = txt_nombreSolicitante.Text;
+        //        _Ec.tipoDocVendedor = tabla.Rows[0]["tipoDocVendedor"].ToString();
+        //        _Ec.apellidoSolicitante = txt_ApellidoSolicitante.Text;
+        //        _Ec.observaciones = txt_Observaciones.Text;
+        //        _Ec.fecha = cmb_Dia.SelectedItem.ToString() + "/" + cmb_Mes.SelectedItem.ToString() + "/" + txt_Año2.Text;
+        //        _Ec.precioTotal = txt_Precio.Text;
+        //        _Ec.motivoPerdida = txt_motivoPerdida.Text;
+        //        _Ec.nomCompetidor = txt_Competidor.Text;
+        //        Cotizacion.Modificar(_Ec);
+        //        Cargar_grilla(Cotizacion.Todas_Las_Cotizciones());
 
-            }
-        }
-            private void btn_aceptar_Click(object sender, EventArgs e)
-        {
-            TratamientosEspeciales tratamiento = new TratamientosEspeciales();
-            DataTable Verificacion = new DataTable();
+        //    }
+        //}
+        //private void btn_aceptar_Click(object sender, EventArgs e)
+        //{
+        //    //TratamientosEspeciales tratamiento = new TratamientosEspeciales();
+        //    //DataTable Verificacion = new DataTable();
 
-            if (tratamiento.validar(this.Controls) == TratamientosEspeciales.Validacion.correcta)
-            {
-                _Ec.numeroCotizacicon = txt_numeroCotizacion.Text;
-                _Ec.año = txt_Año.Text;
-                _Ec.cuitCliente = cmb_cliente.SelectedValue.ToString();
-                _Ec.numDocVendedor = cmb_Vendedor.SelectedValue.ToString();
-                _Ec.codEstadoCotizacion = cmb_Estado.SelectedValue.ToString();
-                _Ec.nombreSolicitante = txt_nombreSolicitante.Text;
-                _Ec.apellidoSolicitante = txt_ApellidoSolicitante.Text;
-                _Ec.observaciones = txt_Observaciones.Text;
-                _Ec.fecha = cmb_Dia.SelectedItem.ToString() + "/" + cmb_Mes.SelectedItem.ToString() + "/" + txt_Año2.Text;
-                _Ec.precioTotal = txt_Precio.Text;
-                _Ec.motivoPerdida = txt_motivoPerdida.Text;
-                _Ec.nomCompetidor = txt_Competidor.Text;
-                Verificacion = Cotizacion.Buscar_Cotizcion(_Ec.numeroCotizacicon);
-                if (Verificacion.Rows.Count > 0)
-                {
+        //    //if (tratamiento.validar(this.Controls) == TratamientosEspeciales.Validacion.correcta)
+        //    //{
+        //    //    _Ec.numeroCotizacicon = txt_numeroCotizacion.Text;
+        //    //    _Ec.año = txt_Año.Text;
+        //    //    _Ec.cuitCliente = cmb_cliente.SelectedValue.ToString();
+        //    //    _Ec.numDocVendedor = cmb_Vendedor.SelectedValue.ToString();
+        //    //    _Ec.codEstadoCotizacion = cmb_Estado.SelectedValue.ToString();
+        //    //    _Ec.nombreSolicitante = txt_nombreSolicitante.Text;
+        //    //    _Ec.apellidoSolicitante = txt_ApellidoSolicitante.Text;
+        //    //    _Ec.observaciones = txt_Observaciones.Text;
+        //    //    _Ec.fecha = cmb_Dia.SelectedItem.ToString() + "/" + cmb_Mes.SelectedItem.ToString() + "/" + txt_Año2.Text;
+        //    //    _Ec.precioTotal = txt_Precio.Text;
+        //    //    _Ec.motivoPerdida = txt_motivoPerdida.Text;
+        //    //    _Ec.nomCompetidor = txt_Competidor.Text;
+        //    //    Verificacion = Cotizacion.Buscar_Cotizcion(_Ec.numeroCotizacicon);
+        //    //    if (Verificacion.Rows.Count > 0)
+        //    //    {
 
-                    MessageBox.Show("La cotizacion que desea insertar ya existe. ", "ATENCION");
+        //    //        MessageBox.Show("La cotizacion que desea insertar ya existe. ", "ATENCION");
 
-                }
-                else
-                {
-                    Cotizacion.Insertar(_Ec);
-                    Cargar_grilla(Cotizacion.Todas_Las_Cotizciones());
-                }
-                
-            }
-        }
-            
+        //    //    }
+        //    //    else
+        //    //    {
+        //    //        Cotizacion.Insertar(_Ec);
+        //    //        Cargar_grilla(Cotizacion.Todas_Las_Cotizciones());
+        //    //    }
+
+        //    //}
+        //}
+
 
         private void brn_Load(object sender, EventArgs e)
         {
@@ -177,20 +177,20 @@ namespace TuLuz.Forums
 
         private void cmb_Vendedor_SelectedIndexChanged(object sender, EventArgs e)
         {
-            if(cmb_Vendedor.SelectedIndex==-1)
+            if (cmb_Vendedor.SelectedIndex == -1)
             {
-                
+
             }
             else
             {
                 DataTable Vendedor = new DataTable();
-                Vendedor= Empleados.Buscar_Empleados(cmb_Vendedor.SelectedValue.ToString());
+                Vendedor = Empleados.Buscar_Empleados(cmb_Vendedor.SelectedValue.ToString());
                 _Ec.tipoDocVendedor = Vendedor.Rows[0]["tipoDoc"].ToString();
             }
-            
+
         }
 
-        
+
 
         private void cmb_Mes_SelectedIndexChanged(object sender, EventArgs e)
         {
@@ -203,13 +203,13 @@ namespace TuLuz.Forums
                 }
             }
             else
-            {       
+            {
                 if (cmb_Mes.SelectedItem.ToString() == "4" || cmb_Mes.SelectedItem.ToString() == "6" || cmb_Mes.SelectedItem.ToString() == "9" || cmb_Mes.SelectedItem.ToString() == "11")
                 {
                     cmb_Dia.Items.Clear();
                     for (int i = 1; i < 31; i++)
                     {
-                        
+
                         cmb_Dia.Items.Add(i);
                     }
                 }
@@ -218,20 +218,20 @@ namespace TuLuz.Forums
                     cmb_Dia.Items.Clear();
                     for (int i = 1; i < 32; i++)
                     {
-                       
+
                         cmb_Dia.Items.Add(i);
                     }
                 }
 
             }
-                
+
         }
 
         private void cmb_Estado_SelectedIndexChanged(object sender, EventArgs e)
         {
             if (cmb_Estado.SelectedValue == null)
             {
-                groupBox1.Visible = false;   
+                groupBox1.Visible = false;
             }
             else
             {
@@ -320,7 +320,7 @@ namespace TuLuz.Forums
             txt_numeroCotizacion.Text = "";
             txt_Observaciones.Text = "";
             txt_Precio.Text = "";
-           
+
 
             cmb_cliente.SelectedIndex = 0;
             cmb_Estado.SelectedIndex = 0;
@@ -341,7 +341,7 @@ namespace TuLuz.Forums
 
             txt_numeroCotizacion.Text = tabla.Rows[0]["numeroCotizacion"].ToString();
             txt_Año.Text = tabla.Rows[0]["año"].ToString();
-            cmb_Estado.SelectedValue= tabla.Rows[0]["codEstadoCotizacion"].ToString();
+            cmb_Estado.SelectedValue = tabla.Rows[0]["codEstadoCotizacion"].ToString();
             cmb_Vendedor.SelectedValue = tabla.Rows[0]["numDocVendedor"].ToString();
             txt_ApellidoSolicitante.Text = tabla.Rows[0]["apellidoSolicitante"].ToString();
             txt_Precio.Text = tabla.Rows[0]["precioTotal"].ToString();
@@ -370,6 +370,67 @@ namespace TuLuz.Forums
         private void cmb_Dia_SelectedIndexChanged(object sender, EventArgs e)
         {
 
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            TratamientosEspeciales tratamiento = new TratamientosEspeciales();
+            Es_Cotizaciones _Ec = new Es_Cotizaciones();
+            if (tratamiento.validar(this.Controls) == TratamientosEspeciales.Validacion.correcta)
+            {
+                DataTable tabla = new DataTable();
+                tabla = Cotizacion.Buscar_Cotizcion(txt_numeroCotizacion.Text);
+                _Ec.numeroCotizacicon = txt_numeroCotizacion.Text;
+                _Ec.año = txt_Año.Text;
+                _Ec.cuitCliente = cmb_cliente.SelectedValue.ToString();
+                _Ec.numDocVendedor = cmb_Vendedor.SelectedValue.ToString();
+                _Ec.codEstadoCotizacion = cmb_Estado.SelectedValue.ToString();
+                _Ec.nombreSolicitante = txt_nombreSolicitante.Text;
+                _Ec.tipoDocVendedor = tabla.Rows[0]["tipoDocVendedor"].ToString();
+                _Ec.apellidoSolicitante = txt_ApellidoSolicitante.Text;
+                _Ec.observaciones = txt_Observaciones.Text;
+                _Ec.fecha = cmb_Dia.SelectedItem.ToString() + "/" + cmb_Mes.SelectedItem.ToString() + "/" + txt_Año2.Text;
+                _Ec.precioTotal = txt_Precio.Text;
+                _Ec.motivoPerdida = txt_motivoPerdida.Text;
+                _Ec.nomCompetidor = txt_Competidor.Text;
+                Cotizacion.Modificar(_Ec);
+                Cargar_grilla(Cotizacion.Todas_Las_Cotizciones());
+            }
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            TratamientosEspeciales tratamiento = new TratamientosEspeciales();
+            DataTable Verificacion = new DataTable();
+
+            if (tratamiento.validar(this.Controls) == TratamientosEspeciales.Validacion.correcta)
+            {
+                _Ec.numeroCotizacicon = txt_numeroCotizacion.Text;
+                _Ec.año = txt_Año.Text;
+                _Ec.cuitCliente = cmb_cliente.SelectedValue.ToString();
+                _Ec.numDocVendedor = cmb_Vendedor.SelectedValue.ToString();
+                _Ec.codEstadoCotizacion = cmb_Estado.SelectedValue.ToString();
+                _Ec.nombreSolicitante = txt_nombreSolicitante.Text;
+                _Ec.apellidoSolicitante = txt_ApellidoSolicitante.Text;
+                _Ec.observaciones = txt_Observaciones.Text;
+                _Ec.fecha = cmb_Dia.SelectedItem.ToString() + "/" + cmb_Mes.SelectedItem.ToString() + "/" + txt_Año2.Text;
+                _Ec.precioTotal = txt_Precio.Text;
+                _Ec.motivoPerdida = txt_motivoPerdida.Text;
+                _Ec.nomCompetidor = txt_Competidor.Text;
+                Verificacion = Cotizacion.Buscar_Cotizcion(_Ec.numeroCotizacicon);
+                if (Verificacion.Rows.Count > 0)
+                {
+
+                    MessageBox.Show("La cotizacion que desea insertar ya existe. ", "ATENCION");
+
+                }
+                else
+                {
+                    Cotizacion.Insertar(_Ec);
+                    Cargar_grilla(Cotizacion.Todas_Las_Cotizciones());
+                }
+
+            }
         }
     }
 }

@@ -93,6 +93,11 @@ namespace TuLuz.Forums.Estadisticas.VentasXMes
                 lbl_Desde.Enabled = false;
             }
         }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 
 }
