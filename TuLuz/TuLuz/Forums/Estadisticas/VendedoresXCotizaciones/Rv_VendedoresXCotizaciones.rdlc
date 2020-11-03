@@ -369,11 +369,11 @@
               </Border>
             </Style>
           </Tablix>
-          <Chart Name="Chart1">
+          <Chart Name="Chart2">
             <ChartCategoryHierarchy>
               <ChartMembers>
                 <ChartMember>
-                  <Group Name="Chart1_CategoryGroup">
+                  <Group Name="Chart2_CategoryGroup">
                     <GroupExpressions>
                       <GroupExpression>=Fields!numDocVendedor.Value</GroupExpression>
                     </GroupExpressions>
@@ -400,7 +400,7 @@
                   <ChartDataPoints>
                     <ChartDataPoint>
                       <ChartDataPointValues>
-                        <Y>=Count(Fields!cotizacionesGanadas.Value)</Y>
+                        <Y>=Sum(Fields!cotizacionesGanadas.Value)</Y>
                       </ChartDataPointValues>
                       <ChartDataLabel>
                         <Style />
@@ -720,10 +720,10 @@
               </Style>
             </ChartNoDataMessage>
             <DataSetName>DataSet2</DataSetName>
-            <Top>1.55787cm</Top>
-            <Left>1.37266cm</Left>
-            <Height>5.42333cm</Height>
-            <Width>8.58479cm</Width>
+            <Top>2.45745cm</Top>
+            <Left>1.14682cm</Left>
+            <Height>5.52917cm</Height>
+            <Width>8.37312cm</Width>
             <ZIndex>2</ZIndex>
             <Style>
               <Border>
@@ -735,10 +735,10 @@
             </Style>
           </Chart>
         </ReportItems>
-        <Height>2.98809in</Height>
+        <Height>4.49851in</Height>
         <Style />
       </Body>
-      <Width>7.40984in</Width>
+      <Width>7.59734in</Width>
       <Page>
         <PageHeader>
           <Height>1.34937cm</Height>
