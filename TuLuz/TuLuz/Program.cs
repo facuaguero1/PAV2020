@@ -4,7 +4,8 @@ using System.Linq;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using TuLuz.Forums;
-
+using TuLuz.Forums.Estadisticas.VendedoresXCotizaciones;
+using TuLuz.Forums.Estadisticas.VentasXMes;
 
 namespace TuLuz
 {
@@ -21,7 +22,7 @@ namespace TuLuz
             Application.Run(new Principal());
             //Application.Run(new ModificarCliente() { cuit = "555"});
 
-            //Application.Run(new ());
-        }
+            //Application.Run(new ()); 
+                }
     }
 }

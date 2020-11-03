@@ -38,7 +38,7 @@
             // rv_VentasXMes
             // 
             this.rv_VentasXMes.LocalReport.ReportEmbeddedResource = "TuLuz.Forums.Estadisticas.VentasXMes.Rv_VentasXMes.rdlc";
-            this.rv_VentasXMes.Location = new System.Drawing.Point(91, 166);
+            this.rv_VentasXMes.Location = new System.Drawing.Point(44, 287);
             this.rv_VentasXMes.Name = "rv_VentasXMes";
             this.rv_VentasXMes.ServerReport.BearerToken = null;
             this.rv_VentasXMes.Size = new System.Drawing.Size(836, 272);
@@ -50,10 +50,10 @@
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 30F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))));
             this.label1.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.label1.Location = new System.Drawing.Point(98, 39);
+            this.label1.Location = new System.Drawing.Point(36, 30);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(553, 46);
-            this.label1.TabIndex = 16;
+            this.label1.TabIndex = 15;
             this.label1.Text = "Ventas de Producto por mes";
             this.label1.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
@@ -65,7 +65,7 @@
             this.btn_Buscar.FlatAppearance.BorderSize = 0;
             this.btn_Buscar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn_Buscar.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_Buscar.Location = new System.Drawing.Point(771, 98);
+            this.btn_Buscar.Location = new System.Drawing.Point(402, 179);
             this.btn_Buscar.Name = "btn_Buscar";
             this.btn_Buscar.Size = new System.Drawing.Size(62, 44);
             this.btn_Buscar.TabIndex = 20;
@@ -74,7 +74,7 @@
             // 
             // txt_CodProducto
             // 
-            this.txt_CodProducto.Location = new System.Drawing.Point(348, 121);
+            this.txt_CodProducto.Location = new System.Drawing.Point(509, 123);
             this.txt_CodProducto.Name = "txt_CodProducto";
             this.txt_CodProducto.Size = new System.Drawing.Size(100, 20);
             this.txt_CodProducto.TabIndex = 21;
@@ -83,7 +83,7 @@
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(101, 116);
+            this.label2.Location = new System.Drawing.Point(262, 118);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(220, 25);
             this.label2.TabIndex = 22;
@@ -93,12 +93,14 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(959, 450);
+            this.ClientSize = new System.Drawing.Size(932, 749);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.txt_CodProducto);
             this.Controls.Add(this.btn_Buscar);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.rv_VentasXMes);
+            this.MaximizeBox = false;
+            this.MinimizeBox = false;
             this.Name = "Estadistica_VentaXMes";
             this.Text = "Estadistica_VentaXMes";
             this.Load += new System.EventHandler(this.Estadistica_VentaXMes_Load);

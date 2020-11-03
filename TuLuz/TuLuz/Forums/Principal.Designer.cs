@@ -117,6 +117,7 @@
             this.panelUsuario = new System.Windows.Forms.Panel();
             this.CerrarSesion = new System.Windows.Forms.Button();
             this.perfil = new System.Windows.Forms.Button();
+            this.button4 = new System.Windows.Forms.Button();
             this.Panel_Lateral_Izquierdo.SuspendLayout();
             this.Panel_Estadisticas.SuspendLayout();
             this.Panel_Listados.SuspendLayout();
@@ -176,7 +177,7 @@
             this.btn_Exit.FlatAppearance.MouseOverBackColor = System.Drawing.SystemColors.HotTrack;
             this.btn_Exit.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn_Exit.ForeColor = System.Drawing.Color.Gainsboro;
-            this.btn_Exit.Location = new System.Drawing.Point(0, 2608);
+            this.btn_Exit.Location = new System.Drawing.Point(0, 2631);
             this.btn_Exit.Name = "btn_Exit";
             this.btn_Exit.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
             this.btn_Exit.Size = new System.Drawing.Size(223, 45);
@@ -189,6 +190,7 @@
             // Panel_Estadisticas
             // 
             this.Panel_Estadisticas.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(32)))), ((int)(((byte)(39)))));
+            this.Panel_Estadisticas.Controls.Add(this.button4);
             this.Panel_Estadisticas.Controls.Add(this.button46);
             this.Panel_Estadisticas.Controls.Add(this.button47);
             this.Panel_Estadisticas.Controls.Add(this.button52);
@@ -202,7 +204,7 @@
             this.Panel_Estadisticas.Dock = System.Windows.Forms.DockStyle.Top;
             this.Panel_Estadisticas.Location = new System.Drawing.Point(0, 2268);
             this.Panel_Estadisticas.Name = "Panel_Estadisticas";
-            this.Panel_Estadisticas.Size = new System.Drawing.Size(223, 340);
+            this.Panel_Estadisticas.Size = new System.Drawing.Size(223, 363);
             this.Panel_Estadisticas.TabIndex = 28;
             // 
             // button46
@@ -217,9 +219,10 @@
             this.button46.Padding = new System.Windows.Forms.Padding(34, 0, 0, 0);
             this.button46.Size = new System.Drawing.Size(223, 33);
             this.button46.TabIndex = 9;
-            this.button46.Text = "button46";
+            this.button46.Text = "Producto vendido por mes";
             this.button46.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.button46.UseVisualStyleBackColor = true;
+            this.button46.Click += new System.EventHandler(this.button46_Click);
             // 
             // button47
             // 
@@ -1600,6 +1603,23 @@
             this.perfil.UseVisualStyleBackColor = true;
             this.perfil.Click += new System.EventHandler(this.perfil_Click);
             // 
+            // button4
+            // 
+            this.button4.Dock = System.Windows.Forms.DockStyle.Top;
+            this.button4.FlatAppearance.BorderSize = 0;
+            this.button4.FlatAppearance.MouseOverBackColor = System.Drawing.SystemColors.Highlight;
+            this.button4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button4.ForeColor = System.Drawing.Color.LightGray;
+            this.button4.Location = new System.Drawing.Point(0, 330);
+            this.button4.Name = "button4";
+            this.button4.Padding = new System.Windows.Forms.Padding(34, 0, 0, 0);
+            this.button4.Size = new System.Drawing.Size(223, 33);
+            this.button4.TabIndex = 10;
+            this.button4.Text = "Ganancia de cotizacion por vendedores";
+            this.button4.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.button4.UseVisualStyleBackColor = true;
+            this.button4.Click += new System.EventHandler(this.button4_Click);
+            // 
             // Principal
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -1723,6 +1743,7 @@
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Button button3;
         private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Button button4;
     }
 }
 

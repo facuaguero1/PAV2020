@@ -23,7 +23,7 @@ using TuLuz.Forums.Estadisticas.Pedidos_Entre_Años;
 using TuLuz.Forums.Estadisticas.Proveedores_Activos_NoActivos;
 using TuLuz.Forums.Estadisticas.Cantidades_Jefes_Empleados;
 using TuLuz.Forums.Estadisticas.VentasXMes;
-
+using TuLuz.Forums.Estadisticas.VendedoresXCotizaciones;
 
 namespace TuLuz
 {
@@ -517,6 +517,16 @@ namespace TuLuz
         private void button47_Click(object sender, EventArgs e)
         {
             AbrirFormularioSubMenu(new Estadistica_ProductoMasVendido());
+        }
+
+        private void button46_Click(object sender, EventArgs e)
+        {
+            AbrirFormularioSubMenu(new Estadistica_VentaXMes());
+        }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+            AbrirFormularioSubMenu(new Estadistica_VendedoresXCotizaciones());
         }
     }
 }

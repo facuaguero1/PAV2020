@@ -40,11 +40,11 @@ namespace TuLuz.Forums.Estadisticas.VentasXMes
             ReportDataSource Datos = new ReportDataSource("DataSet1", tabla);
             ReportDataSource Datos1 = new ReportDataSource("DataSet2", tabla2);
             rv_VentasXMes.LocalReport.ReportEmbeddedResource = "TuLuz.Forums.Estadisticas.VentasXMes.Rv_VentasXMes.rdlc";
-            //ReportParameter[] parametros = new ReportParameter[2];
-            //parametros[0] = new ReportParameter("RP01", "Grafico sobre las ventas de un producto por mes");
-            //parametros[1] = new ReportParameter("RP02", "Fecha: " + DateTime.Today.Day.ToString() + "/" + DateTime.Today.Month.ToString() + "/" + DateTime.Today.Year.ToString());
+            ReportParameter[] parametros = new ReportParameter[2];
+            parametros[0] = new ReportParameter("RP01", "Grafico sobre las ventas de un producto por mes");
+            parametros[1] = new ReportParameter("RP02", "Fecha: " + DateTime.Today.Day.ToString() + "/" + DateTime.Today.Month.ToString() + "/" + DateTime.Today.Year.ToString());
             rv_VentasXMes.LocalReport.DataSources.Clear();
-            //Rrv_VentasXMes.LocalReport.SetParameters(parametros);
+            rv_VentasXMes.LocalReport.SetParameters(parametros);
             rv_VentasXMes.LocalReport.DataSources.Add(Datos);
             rv_VentasXMes.LocalReport.DataSources.Add(Datos1);
             rv_VentasXMes.RefreshReport();

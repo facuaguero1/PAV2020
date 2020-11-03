@@ -45,12 +45,12 @@ namespace TuLuz.Forums.Estadisticas.VendedoresXCotizaciones
             ReportDataSource Datos = new ReportDataSource("DataSet1", tabla);
             ReportDataSource Datos1 = new ReportDataSource("DataSet2", tabla2);
             rv_VendedoresXCotizaciones.LocalReport.ReportEmbeddedResource = "TuLuz.Forums.Estadisticas.VendedoresXCotizaciones.Rv_VendedoresXCotizaciones.rdlc";
-            //ReportParameter[] parametros = new ReportParameter[2];
-            //parametros[0] = new ReportParameter("RP01", "Grafico sobre los vendedores por cotizaciones ganadas");
-            //parametros[1] = new ReportParameter("RP02", "Fecha: " + DateTime.Today.Day.ToString() + "/" + DateTime.Today.Month.ToString() + "/" + DateTime.Today.Year.ToString());
+            ReportParameter[] parametros = new ReportParameter[2];
+            parametros[0] = new ReportParameter("RP01", "Grafico sobre los vendedores por cotizaciones ganadas");
+            parametros[1] = new ReportParameter("RP02", "Fecha: " + DateTime.Today.Day.ToString() + "/" + DateTime.Today.Month.ToString() + "/" + DateTime.Today.Year.ToString());
 
             rv_VendedoresXCotizaciones.LocalReport.DataSources.Clear();
-            //rv_VendedoresXCotizaciones.LocalReport.SetParameters(parametros);
+            rv_VendedoresXCotizaciones.LocalReport.SetParameters(parametros);
             rv_VendedoresXCotizaciones.LocalReport.DataSources.Add(Datos);
             rv_VendedoresXCotizaciones.LocalReport.DataSources.Add(Datos1);
             rv_VendedoresXCotizaciones.RefreshReport();

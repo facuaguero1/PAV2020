@@ -603,7 +603,7 @@ namespace TuLuz.Forums.Estadisticas.VendedoresXCotizaciones {
         [global::System.Xml.Serialization.XmlSchemaProviderAttribute("GetTypedTableSchema")]
         public partial class DataTable1DataTable : global::System.Data.TypedTableBase<DataTable1Row> {
             
-            private global::System.Data.DataColumn columnnroDocVendedor;
+            private global::System.Data.DataColumn columnnumDocVendedor;
             
             private global::System.Data.DataColumn columncotizacionesGanadas;
             
@@ -644,9 +644,9 @@ namespace TuLuz.Forums.Estadisticas.VendedoresXCotizaciones {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public global::System.Data.DataColumn nroDocVendedorColumn {
+            public global::System.Data.DataColumn numDocVendedorColumn {
                 get {
-                    return this.columnnroDocVendedor;
+                    return this.columnnumDocVendedor;
                 }
             }
             
@@ -703,10 +703,10 @@ namespace TuLuz.Forums.Estadisticas.VendedoresXCotizaciones {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public DataTable1Row AddDataTable1Row(string nroDocVendedor, string cotizacionesGanadas, string tipoDocVendedor) {
+            public DataTable1Row AddDataTable1Row(string numDocVendedor, string cotizacionesGanadas, string tipoDocVendedor) {
                 DataTable1Row rowDataTable1Row = ((DataTable1Row)(this.NewRow()));
                 object[] columnValuesArray = new object[] {
-                        nroDocVendedor,
+                        numDocVendedor,
                         cotizacionesGanadas,
                         tipoDocVendedor};
                 rowDataTable1Row.ItemArray = columnValuesArray;
@@ -731,7 +731,7 @@ namespace TuLuz.Forums.Estadisticas.VendedoresXCotizaciones {
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
             internal void InitVars() {
-                this.columnnroDocVendedor = base.Columns["nroDocVendedor"];
+                this.columnnumDocVendedor = base.Columns["numDocVendedor"];
                 this.columncotizacionesGanadas = base.Columns["cotizacionesGanadas"];
                 this.columntipoDocVendedor = base.Columns["tipoDocVendedor"];
             }
@@ -739,8 +739,8 @@ namespace TuLuz.Forums.Estadisticas.VendedoresXCotizaciones {
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
             private void InitClass() {
-                this.columnnroDocVendedor = new global::System.Data.DataColumn("nroDocVendedor", typeof(string), null, global::System.Data.MappingType.Element);
-                base.Columns.Add(this.columnnroDocVendedor);
+                this.columnnumDocVendedor = new global::System.Data.DataColumn("numDocVendedor", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnnumDocVendedor);
                 this.columncotizacionesGanadas = new global::System.Data.DataColumn("cotizacionesGanadas", typeof(string), null, global::System.Data.MappingType.Element);
                 base.Columns.Add(this.columncotizacionesGanadas);
                 this.columntipoDocVendedor = new global::System.Data.DataColumn("tipoDocVendedor", typeof(string), null, global::System.Data.MappingType.Element);
@@ -1014,17 +1014,17 @@ namespace TuLuz.Forums.Estadisticas.VendedoresXCotizaciones {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public string nroDocVendedor {
+            public string numDocVendedor {
                 get {
                     try {
-                        return ((string)(this[this.tableDataTable1.nroDocVendedorColumn]));
+                        return ((string)(this[this.tableDataTable1.numDocVendedorColumn]));
                     }
                     catch (global::System.InvalidCastException e) {
-                        throw new global::System.Data.StrongTypingException("El valor de la columna \'nroDocVendedor\' de la tabla \'DataTable1\' es DBNull.", e);
+                        throw new global::System.Data.StrongTypingException("El valor de la columna \'numDocVendedor\' de la tabla \'DataTable1\' es DBNull.", e);
                     }
                 }
                 set {
-                    this[this.tableDataTable1.nroDocVendedorColumn] = value;
+                    this[this.tableDataTable1.numDocVendedorColumn] = value;
                 }
             }
             
@@ -1062,14 +1062,14 @@ namespace TuLuz.Forums.Estadisticas.VendedoresXCotizaciones {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public bool IsnroDocVendedorNull() {
-                return this.IsNull(this.tableDataTable1.nroDocVendedorColumn);
+            public bool IsnumDocVendedorNull() {
+                return this.IsNull(this.tableDataTable1.numDocVendedorColumn);
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public void SetnroDocVendedorNull() {
-                this[this.tableDataTable1.nroDocVendedorColumn] = global::System.Convert.DBNull;
+            public void SetnumDocVendedorNull() {
+                this[this.tableDataTable1.numDocVendedorColumn] = global::System.Convert.DBNull;
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]

@@ -35,13 +35,14 @@
             // 
             // rv_VendedoresXCotizaciones
             // 
+            this.rv_VendedoresXCotizaciones.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.rv_VendedoresXCotizaciones.LocalReport.ReportEmbeddedResource = "TuLuz.Forums.Estadisticas.VendedoresXCotizaciones.Rv_VendedoresXCotizaciones.rdlc" +
     "";
-            this.rv_VendedoresXCotizaciones.Location = new System.Drawing.Point(44, 158);
+            this.rv_VendedoresXCotizaciones.Location = new System.Drawing.Point(77, 197);
             this.rv_VendedoresXCotizaciones.Name = "rv_VendedoresXCotizaciones";
             this.rv_VendedoresXCotizaciones.ServerReport.BearerToken = null;
             this.rv_VendedoresXCotizaciones.Size = new System.Drawing.Size(696, 313);
-            this.rv_VendedoresXCotizaciones.TabIndex = 0;
+            this.rv_VendedoresXCotizaciones.TabIndex = 20;
             this.rv_VendedoresXCotizaciones.Load += new System.EventHandler(this.reportViewer1_Load);
             // 
             // btn_Buscar
@@ -52,7 +53,7 @@
             this.btn_Buscar.FlatAppearance.BorderSize = 0;
             this.btn_Buscar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn_Buscar.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_Buscar.Location = new System.Drawing.Point(348, 89);
+            this.btn_Buscar.Location = new System.Drawing.Point(399, 101);
             this.btn_Buscar.Name = "btn_Buscar";
             this.btn_Buscar.Size = new System.Drawing.Size(62, 44);
             this.btn_Buscar.TabIndex = 20;
@@ -65,10 +66,10 @@
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 30F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))));
             this.label1.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.label1.Location = new System.Drawing.Point(52, 21);
+            this.label1.Location = new System.Drawing.Point(57, 28);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(736, 46);
-            this.label1.TabIndex = 21;
+            this.label1.TabIndex = 16;
             this.label1.Text = "Vendedores por cotizaciones ganadas";
             this.label1.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
@@ -76,7 +77,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(822, 483);
+            this.ClientSize = new System.Drawing.Size(904, 510);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.btn_Buscar);
             this.Controls.Add(this.rv_VendedoresXCotizaciones);

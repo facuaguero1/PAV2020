@@ -100,7 +100,7 @@ class Ng_Cotizaciones
 
     public DataTable Cotizaciones_X_Vendedores()
     {
-        string sql = "select tipoDocVendedor , numDocVendedor , SUM(precioTotal) as 'cotizacionesGanadas' from Cotizaciones group by tipoDocVendedor,numDocVendedor ";
+        string sql = "select tipoDocVendedor , numDocVendedor , SUM(precioTotal) as 'cotizacionesGanadas' from Cotizaciones group by tipoDocVendedor, numDocVendedor order by cotizacionesGanadas desc";
         DataTable tabla = new DataTable();
         tabla = _BD.Consulta(sql);
         return tabla;
