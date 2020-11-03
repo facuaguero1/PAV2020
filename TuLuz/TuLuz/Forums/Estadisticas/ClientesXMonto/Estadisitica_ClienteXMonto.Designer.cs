@@ -129,6 +129,7 @@
             this.Controls.Add(this.rv_ClienteXMonto);
             this.Name = "Estadistica_ClienteXMonto";
             this.Text = "Estadistica_VentaXMes";
+            this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.Load += new System.EventHandler(this.Estadistica_VentaXMes_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
