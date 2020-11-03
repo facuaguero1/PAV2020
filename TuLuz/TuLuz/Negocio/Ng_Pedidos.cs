@@ -35,6 +35,24 @@ namespace TuLuz.Negocio
             tabla = _BD.Consulta(sql);
             return tabla;
         }
+
+        public DataTable ClientesXPedidosEntreMonto(string min, string max)
+        {
+            string sql = "SELECT  Pedidos.numeroPedido, Pedidos.cuitCliente,Cliente.nombre,SUM(DetallePedido.precio) as Monto  FROM Pedidos, DetallePedido, Cliente WHERE(DetallePedido.numeroPedido = Pedidos.numeroPedido) AND (Pedidos.cuitCliente = Cliente.cuitCliente) GROUP BY Pedidos.cuitCliente, Cliente.nombre,  Pedidos.numeroPedido HAVING SUM(DetallePedido.precio) BETWEEN "+ min + " AND " +max;
+            DataTable tabla = new DataTable();
+            tabla = _BD.Consulta(sql);
+            return tabla;
+        }
+        public DataTable ContarClientesXPedidosEntreMonto(string min, string max)
+        {
+            string sql = " SELECT Count(Pedidos.numeroPedido) as cantidad, Pedidos.cuitCliente, Cliente.nombre FROM Pedidos, Cliente, DetallePedido WHERE Pedidos.cuitCliente = Cliente.cuitCliente AND DetallePedido.numeroPedido = Pedidos.numeroPedido GROUP BY Pedidos.cuitCliente, Cliente.nombre HAVING SUM(DetallePedido.precio) BETWEEN " + min+" AND "+ max;
+            DataTable tabla = new DataTable();
+            tabla = _BD.Consulta(sql);
+            return tabla;
+        }
+       
+
+
         public DataTable Buscar_PedidoPorNumero(int codigo)
         {
             string sql = "SELECT * FROM Pedidos WHERE numeroPedido = " + codigo;

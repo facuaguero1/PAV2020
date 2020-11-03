@@ -96,6 +96,17 @@
     <Compile Include="Forums\Estadisticas\Cantidades_Jefes_Empleados\Estadistica_Cantidades_Jefes_Empleados.Designer.cs">
       <DependentUpon>Estadistica_Cantidades_Jefes_Empleados.cs</DependentUpon>
     </Compile>
+    <Compile Include="Forums\Estadisticas\ClientesXMonto\DS_ClienteXMonto.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DS_ClienteXMonto.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Forums\Estadisticas\ClientesXMonto\Estadisitica_ClienteXMonto.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forums\Estadisticas\ClientesXMonto\Estadisitica_ClienteXMonto.Designer.cs">
+      <DependentUpon>Estadisitica_ClienteXMonto.cs</DependentUpon>
+    </Compile>
     <Compile Include="Forums\Estadisticas\Clientes_Activos_NoActivos\DataSet_Clientes_Ac_NoAc.cs">
       <DependentUpon>DataSet_Clientes_Ac_NoAc.xsd</DependentUpon>
     </Compile>
@@ -649,6 +660,10 @@
       <DependentUpon>Estadistica_Cantidades_Jefes_Empleados.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forums\Estadisticas\Cantidades_Jefes_Empleados\Rv_Cantidades_Jefes_Empleados.rdlc" />
+    <EmbeddedResource Include="Forums\Estadisticas\ClientesXMonto\Estadisitica_ClienteXMonto.resx">
+      <DependentUpon>Estadisitica_ClienteXMonto.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forums\Estadisticas\ClientesXMonto\rp_ClientesXMonto.rdlc" />
     <EmbeddedResource Include="Forums\Estadisticas\Clientes_Activos_NoActivos\Estadistica_Clientes_Ac_NoAc.resx">
       <DependentUpon>Estadistica_Clientes_Ac_NoAc.cs</DependentUpon>
     </EmbeddedResource>
@@ -883,6 +898,17 @@
     </None>
     <None Include="Forums\Estadisticas\Cantidades_Jefes_Empleados\DataSet_Cantidades_Jefes_Empleados.xss">
       <DependentUpon>DataSet_Cantidades_Jefes_Empleados.xsd</DependentUpon>
+    </None>
+    <None Include="Forums\Estadisticas\ClientesXMonto\DS_ClienteXMonto.xsc">
+      <DependentUpon>DS_ClienteXMonto.xsd</DependentUpon>
+    </None>
+    <None Include="Forums\Estadisticas\ClientesXMonto\DS_ClienteXMonto.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DS_ClienteXMonto.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="Forums\Estadisticas\ClientesXMonto\DS_ClienteXMonto.xss">
+      <DependentUpon>DS_ClienteXMonto.xsd</DependentUpon>
     </None>
     <None Include="Forums\Estadisticas\Clientes_Activos_NoActivos\DataSet_Clientes_Ac_NoAc.xsc">
       <DependentUpon>DataSet_Clientes_Ac_NoAc.xsd</DependentUpon>
