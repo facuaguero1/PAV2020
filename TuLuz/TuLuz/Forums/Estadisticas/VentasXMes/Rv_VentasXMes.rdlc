@@ -92,16 +92,24 @@
                               <TextRuns>
                                 <TextRun>
                                   <Value>Numero de Mes</Value>
-                                  <Style />
+                                  <Style>
+                                    <FontSize>12pt</FontSize>
+                                    <FontWeight>Bold</FontWeight>
+                                  </Style>
                                 </TextRun>
                               </TextRuns>
-                              <Style />
+                              <Style>
+                                <TextAlign>Center</TextAlign>
+                              </Style>
                             </Paragraph>
                             <Paragraph>
                               <TextRuns>
                                 <TextRun>
                                   <Value />
-                                  <Style />
+                                  <Style>
+                                    <FontSize>12pt</FontSize>
+                                    <FontWeight>Bold</FontWeight>
+                                  </Style>
                                 </TextRun>
                               </TextRuns>
                               <Style />
@@ -113,6 +121,7 @@
                               <Color>LightGrey</Color>
                               <Style>Solid</Style>
                             </Border>
+                            <BackgroundColor>PaleTurquoise</BackgroundColor>
                             <PaddingLeft>2pt</PaddingLeft>
                             <PaddingRight>2pt</PaddingRight>
                             <PaddingTop>2pt</PaddingTop>
@@ -131,10 +140,15 @@
                               <TextRuns>
                                 <TextRun>
                                   <Value>Cantidad</Value>
-                                  <Style />
+                                  <Style>
+                                    <FontSize>12pt</FontSize>
+                                    <FontWeight>Bold</FontWeight>
+                                  </Style>
                                 </TextRun>
                               </TextRuns>
-                              <Style />
+                              <Style>
+                                <TextAlign>Center</TextAlign>
+                              </Style>
                             </Paragraph>
                           </Paragraphs>
                           <rd:DefaultName>Textbox11</rd:DefaultName>
@@ -143,6 +157,7 @@
                               <Color>LightGrey</Color>
                               <Style>Solid</Style>
                             </Border>
+                            <BackgroundColor>PaleTurquoise</BackgroundColor>
                             <PaddingLeft>2pt</PaddingLeft>
                             <PaddingRight>2pt</PaddingRight>
                             <PaddingTop>2pt</PaddingTop>
@@ -169,7 +184,9 @@
                                   <Style />
                                 </TextRun>
                               </TextRuns>
-                              <Style />
+                              <Style>
+                                <TextAlign>Center</TextAlign>
+                              </Style>
                             </Paragraph>
                           </Paragraphs>
                           <rd:DefaultName>mes</rd:DefaultName>
@@ -199,7 +216,9 @@
                                   <Style />
                                 </TextRun>
                               </TextRuns>
-                              <Style />
+                              <Style>
+                                <TextAlign>Center</TextAlign>
+                              </Style>
                             </Paragraph>
                           </Paragraphs>
                           <rd:DefaultName>cantidad</rd:DefaultName>
@@ -237,8 +256,8 @@
               </TablixMembers>
             </TablixRowHierarchy>
             <DataSetName>DataSet2</DataSetName>
-            <Top>2.29871cm</Top>
-            <Left>11.00349cm</Left>
+            <Top>1.24036cm</Top>
+            <Left>10.21321cm</Left>
             <Height>1.2cm</Height>
             <Width>5.29104cm</Width>
             <Style>
@@ -255,7 +274,12 @@
                 <TextRuns>
                   <TextRun>
                     <Value>=Parameters!RP01.Value</Value>
-                    <Style />
+                    <Style>
+                      <FontStyle>Italic</FontStyle>
+                      <FontSize>11pt</FontSize>
+                      <FontWeight>Bold</FontWeight>
+                      <Color>Maroon</Color>
+                    </Style>
                   </TextRun>
                 </TextRuns>
                 <Style />
@@ -263,9 +287,9 @@
             </Paragraphs>
             <rd:DefaultName>Textbox2</rd:DefaultName>
             <Top>0.34079cm</Top>
-            <Left>1.13453cm</Left>
+            <Left>0.28786cm</Left>
             <Height>0.6cm</Height>
-            <Width>2.5cm</Width>
+            <Width>11.97208cm</Width>
             <ZIndex>1</ZIndex>
             <Style>
               <Border>
@@ -596,20 +620,6 @@
                 <ColumnSeparatorColor>Black</ColumnSeparatorColor>
               </ChartLegend>
             </ChartLegends>
-            <ChartTitles>
-              <ChartTitle Name="Default">
-                <Caption>Título del gráfico</Caption>
-                <Style>
-                  <BackgroundGradientType>None</BackgroundGradientType>
-                  <FontSize>9pt</FontSize>
-                  <FontWeight>Normal</FontWeight>
-                  <TextAlign>Left</TextAlign>
-                  <VerticalAlign>Top</VerticalAlign>
-                  <Color>#a6a6a6</Color>
-                </Style>
-                <Position>TopLeft</Position>
-              </ChartTitle>
-            </ChartTitles>
             <Palette>Pacific</Palette>
             <ChartBorderSkin>
               <Style>
@@ -628,10 +638,10 @@
               </Style>
             </ChartNoDataMessage>
             <DataSetName>DataSet2</DataSetName>
-            <Top>1.61078cm</Top>
-            <Left>1.87537cm</Left>
-            <Height>5cm</Height>
-            <Width>7.5cm</Width>
+            <Top>1.24036cm</Top>
+            <Left>0.28786cm</Left>
+            <Height>5.93487cm</Height>
+            <Width>9.74896cm</Width>
             <ZIndex>2</ZIndex>
             <Style>
               <Border>
@@ -661,20 +671,25 @@
                   <TextRuns>
                     <TextRun>
                       <Value>Cálculo Estadístico de Ventas por mes de un producto</Value>
-                      <Style />
+                      <Style>
+                        <FontSize>14pt</FontSize>
+                        <FontWeight>Bold</FontWeight>
+                        <TextDecoration>Underline</TextDecoration>
+                      </Style>
                     </TextRun>
                   </TextRuns>
                   <Style />
                 </Paragraph>
               </Paragraphs>
               <rd:DefaultName>ReportName</rd:DefaultName>
-              <Top>0.97cm</Top>
-              <Left>1.13453cm</Left>
-              <Height>0.6cm</Height>
-              <Width>9.00875cm</Width>
+              <Top>0.30854cm</Top>
+              <Left>0.28786cm</Left>
+              <Height>0.9175cm</Height>
+              <Width>13.50667cm</Width>
               <Style>
                 <Border>
-                  <Style>None</Style>
+                  <Style>Solid</Style>
+                  <Width>1.5pt</Width>
                 </Border>
                 <PaddingLeft>2pt</PaddingLeft>
                 <PaddingRight>2pt</PaddingRight>
@@ -690,17 +705,22 @@
                   <TextRuns>
                     <TextRun>
                       <Value>=Parameters!RP02.Value</Value>
-                      <Style />
+                      <Style>
+                        <FontStyle>Italic</FontStyle>
+                        <FontSize>11pt</FontSize>
+                        <FontWeight>Bold</FontWeight>
+                        <Color>Maroon</Color>
+                      </Style>
                     </TextRun>
                   </TextRuns>
                   <Style />
                 </Paragraph>
               </Paragraphs>
               <rd:DefaultName>Textbox1</rd:DefaultName>
-              <Top>0.97cm</Top>
-              <Left>15.15745cm</Left>
-              <Height>0.6cm</Height>
-              <Width>2.5cm</Width>
+              <Top>0.30854cm</Top>
+              <Left>14.54891cm</Left>
+              <Height>0.9175cm</Height>
+              <Width>3.55833cm</Width>
               <ZIndex>1</ZIndex>
               <Style>
                 <Border>

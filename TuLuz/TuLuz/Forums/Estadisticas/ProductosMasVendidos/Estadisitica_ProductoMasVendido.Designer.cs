@@ -40,10 +40,10 @@
             // 
             this.rv_productoMasVendido.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.rv_productoMasVendido.LocalReport.ReportEmbeddedResource = "TuLuz.Forums.Estadisticas.VentasXMes.Rv_VentasXMes.rdlc";
-            this.rv_productoMasVendido.Location = new System.Drawing.Point(91, 166);
+            this.rv_productoMasVendido.Location = new System.Drawing.Point(12, 147);
             this.rv_productoMasVendido.Name = "rv_productoMasVendido";
             this.rv_productoMasVendido.ServerReport.BearerToken = null;
-            this.rv_productoMasVendido.Size = new System.Drawing.Size(836, 272);
+            this.rv_productoMasVendido.Size = new System.Drawing.Size(905, 368);
             this.rv_productoMasVendido.TabIndex = 0;
             // 
             // label1
@@ -52,7 +52,7 @@
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 30F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))));
             this.label1.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.label1.Location = new System.Drawing.Point(98, 39);
+            this.label1.Location = new System.Drawing.Point(203, 24);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(553, 46);
             this.label1.TabIndex = 16;
@@ -67,7 +67,7 @@
             this.btn_Buscar.FlatAppearance.BorderSize = 0;
             this.btn_Buscar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn_Buscar.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_Buscar.Location = new System.Drawing.Point(539, 104);
+            this.btn_Buscar.Location = new System.Drawing.Point(524, 85);
             this.btn_Buscar.Name = "btn_Buscar";
             this.btn_Buscar.Size = new System.Drawing.Size(62, 44);
             this.btn_Buscar.TabIndex = 20;
@@ -78,7 +78,7 @@
             // 
             this.chk_filtro.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.chk_filtro.AutoSize = true;
-            this.chk_filtro.Location = new System.Drawing.Point(91, 104);
+            this.chk_filtro.Location = new System.Drawing.Point(76, 85);
             this.chk_filtro.Name = "chk_filtro";
             this.chk_filtro.Size = new System.Drawing.Size(112, 17);
             this.chk_filtro.TabIndex = 24;
@@ -89,7 +89,7 @@
             // lblHasta
             // 
             this.lblHasta.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.lblHasta.Location = new System.Drawing.Point(290, 104);
+            this.lblHasta.Location = new System.Drawing.Point(275, 85);
             this.lblHasta.Name = "lblHasta";
             this.lblHasta.PP_Ancho = 10;
             this.lblHasta.PP_Decimales = 2;
@@ -107,7 +107,7 @@
             // lbl_Desde
             // 
             this.lbl_Desde.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.lbl_Desde.Location = new System.Drawing.Point(91, 104);
+            this.lbl_Desde.Location = new System.Drawing.Point(76, 85);
             this.lbl_Desde.Name = "lbl_Desde";
             this.lbl_Desde.PP_Ancho = 10;
             this.lbl_Desde.PP_Decimales = 2;
@@ -126,7 +126,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(959, 450);
+            this.ClientSize = new System.Drawing.Size(929, 545);
             this.Controls.Add(this.chk_filtro);
             this.Controls.Add(this.lblHasta);
             this.Controls.Add(this.lbl_Desde);
@@ -135,6 +135,7 @@
             this.Controls.Add(this.rv_productoMasVendido);
             this.Name = "Estadistica_ProductoMasVendido";
             this.Text = "Estadistica_VentaXMes";
+            this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.Load += new System.EventHandler(this.Estadistica_VentaXMes_Load);
             this.ResumeLayout(false);
             this.PerformLayout();

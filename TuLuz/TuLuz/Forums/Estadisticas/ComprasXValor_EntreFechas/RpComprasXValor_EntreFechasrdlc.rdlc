@@ -354,20 +354,6 @@
                 <ColumnSeparatorColor>Black</ColumnSeparatorColor>
               </ChartLegend>
             </ChartLegends>
-            <ChartTitles>
-              <ChartTitle Name="Default">
-                <Caption>Título del gráfico</Caption>
-                <Style>
-                  <BackgroundGradientType>None</BackgroundGradientType>
-                  <FontSize>9pt</FontSize>
-                  <FontWeight>Normal</FontWeight>
-                  <TextAlign>Left</TextAlign>
-                  <VerticalAlign>Top</VerticalAlign>
-                  <Color>#a6a6a6</Color>
-                </Style>
-                <Position>TopLeft</Position>
-              </ChartTitle>
-            </ChartTitles>
             <Palette>Pacific</Palette>
             <ChartBorderSkin>
               <Style>
@@ -386,10 +372,10 @@
               </Style>
             </ChartNoDataMessage>
             <DataSetName>DataSet1</DataSetName>
-            <Top>0.85937cm</Top>
-            <Left>2.51037cm</Left>
-            <Height>5cm</Height>
-            <Width>7.5cm</Width>
+            <Top>0.43604cm</Top>
+            <Left>0.3937cm</Left>
+            <Height>6.03188cm</Height>
+            <Width>9.45792cm</Width>
             <Style>
               <Border>
                 <Color>LightGrey</Color>
@@ -422,11 +408,16 @@
                             <Paragraph>
                               <TextRuns>
                                 <TextRun>
-                                  <Value>NUMERO PEDIDO</Value>
-                                  <Style />
+                                  <Value>N° Pedido</Value>
+                                  <Style>
+                                    <FontSize>12pt</FontSize>
+                                    <FontWeight>Bold</FontWeight>
+                                  </Style>
                                 </TextRun>
                               </TextRuns>
-                              <Style />
+                              <Style>
+                                <TextAlign>Center</TextAlign>
+                              </Style>
                             </Paragraph>
                           </Paragraphs>
                           <rd:DefaultName>Textbox2</rd:DefaultName>
@@ -435,6 +426,7 @@
                               <Color>LightGrey</Color>
                               <Style>Solid</Style>
                             </Border>
+                            <BackgroundColor>PaleTurquoise</BackgroundColor>
                             <PaddingLeft>2pt</PaddingLeft>
                             <PaddingRight>2pt</PaddingRight>
                             <PaddingTop>2pt</PaddingTop>
@@ -452,11 +444,30 @@
                             <Paragraph>
                               <TextRuns>
                                 <TextRun>
-                                  <Value>PRECIO TOTAL</Value>
-                                  <Style />
+                                  <Value>PrecioTotal</Value>
+                                  <Style>
+                                    <FontSize>12pt</FontSize>
+                                    <FontWeight>Bold</FontWeight>
+                                  </Style>
                                 </TextRun>
                               </TextRuns>
-                              <Style />
+                              <Style>
+                                <TextAlign>Center</TextAlign>
+                              </Style>
+                            </Paragraph>
+                            <Paragraph>
+                              <TextRuns>
+                                <TextRun>
+                                  <Value />
+                                  <Style>
+                                    <FontSize>12pt</FontSize>
+                                    <FontWeight>Bold</FontWeight>
+                                  </Style>
+                                </TextRun>
+                              </TextRuns>
+                              <Style>
+                                <TextAlign>Center</TextAlign>
+                              </Style>
                             </Paragraph>
                           </Paragraphs>
                           <rd:DefaultName>Textbox4</rd:DefaultName>
@@ -465,6 +476,7 @@
                               <Color>LightGrey</Color>
                               <Style>Solid</Style>
                             </Border>
+                            <BackgroundColor>PaleTurquoise</BackgroundColor>
                             <PaddingLeft>2pt</PaddingLeft>
                             <PaddingRight>2pt</PaddingRight>
                             <PaddingTop>2pt</PaddingTop>
@@ -491,7 +503,9 @@
                                   <Style />
                                 </TextRun>
                               </TextRuns>
-                              <Style />
+                              <Style>
+                                <TextAlign>Center</TextAlign>
+                              </Style>
                             </Paragraph>
                           </Paragraphs>
                           <rd:DefaultName>numeroPedido</rd:DefaultName>
@@ -521,7 +535,9 @@
                                   <Style />
                                 </TextRun>
                               </TextRuns>
-                              <Style />
+                              <Style>
+                                <TextAlign>Center</TextAlign>
+                              </Style>
                             </Paragraph>
                           </Paragraphs>
                           <rd:DefaultName>precio</rd:DefaultName>
@@ -559,8 +575,8 @@
               </TablixMembers>
             </TablixRowHierarchy>
             <DataSetName>DataSet1</DataSetName>
-            <Top>1.4097cm</Top>
-            <Left>12.2682cm</Left>
+            <Top>0.43604cm</Top>
+            <Left>10.15153cm</Left>
             <Height>1.2cm</Height>
             <Width>5cm</Width>
             <ZIndex>1</ZIndex>
@@ -574,10 +590,10 @@
         <Height>2.74017in</Height>
         <Style />
       </Body>
-      <Width>7.54109in</Width>
+      <Width>7.39526in</Width>
       <Page>
         <PageHeader>
-          <Height>2.54cm</Height>
+          <Height>2.48708cm</Height>
           <PrintOnFirstPage>true</PrintOnFirstPage>
           <PrintOnLastPage>true</PrintOnLastPage>
           <ReportItems>
@@ -589,21 +605,31 @@
                   <TextRuns>
                     <TextRun>
                       <Value>PEDIDOS ENTRE DOS FECHAS Y CON PRECIO MAYOR A: $</Value>
-                      <Style />
+                      <Style>
+                        <FontSize>14pt</FontSize>
+                        <FontWeight>Bold</FontWeight>
+                        <TextDecoration>Underline</TextDecoration>
+                      </Style>
                     </TextRun>
                   </TextRuns>
-                  <Style />
+                  <Style>
+                    <TextAlign>Center</TextAlign>
+                  </Style>
                 </Paragraph>
               </Paragraphs>
               <rd:DefaultName>Textbox1</rd:DefaultName>
-              <Top>0.63472cm</Top>
-              <Left>0.8382cm</Left>
+              <Top>1.16389cm</Top>
+              <Left>0.0762cm</Left>
               <Height>0.854cm</Height>
-              <Width>10.10589cm</Width>
+              <Width>14.692cm</Width>
               <Style>
                 <Border>
-                  <Style>None</Style>
+                  <Style>Solid</Style>
+                  <Width>1.5pt</Width>
                 </Border>
+                <RightBorder>
+                  <Style>None</Style>
+                </RightBorder>
                 <PaddingLeft>2pt</PaddingLeft>
                 <PaddingRight>2pt</PaddingRight>
                 <PaddingTop>2pt</PaddingTop>
@@ -618,22 +644,32 @@
                   <TextRuns>
                     <TextRun>
                       <Value>=Parameters!RP01.Value</Value>
-                      <Style />
+                      <Style>
+                        <FontSize>14pt</FontSize>
+                        <FontWeight>Bold</FontWeight>
+                        <TextDecoration>Underline</TextDecoration>
+                      </Style>
                     </TextRun>
                   </TextRuns>
-                  <Style />
+                  <Style>
+                    <TextAlign>Center</TextAlign>
+                  </Style>
                 </Paragraph>
               </Paragraphs>
               <rd:DefaultName>RP01</rd:DefaultName>
-              <Top>0.63472cm</Top>
-              <Left>10.97937cm</Left>
-              <Height>0.6cm</Height>
+              <Top>1.16389cm</Top>
+              <Left>14.80348cm</Left>
+              <Height>0.854cm</Height>
               <Width>2.5cm</Width>
               <ZIndex>1</ZIndex>
               <Style>
                 <Border>
-                  <Style>None</Style>
+                  <Style>Solid</Style>
+                  <Width>1.5pt</Width>
                 </Border>
+                <LeftBorder>
+                  <Style>None</Style>
+                </LeftBorder>
                 <PaddingLeft>2pt</PaddingLeft>
                 <PaddingRight>2pt</PaddingRight>
                 <PaddingTop>2pt</PaddingTop>
@@ -648,17 +684,22 @@
                   <TextRuns>
                     <TextRun>
                       <Value>=Parameters!RP02.Value</Value>
-                      <Style />
+                      <Style>
+                        <FontStyle>Italic</FontStyle>
+                        <FontSize>11pt</FontSize>
+                        <FontWeight>Bold</FontWeight>
+                        <Color>Maroon</Color>
+                      </Style>
                     </TextRun>
                   </TextRuns>
                   <Style />
                 </Paragraph>
               </Paragraphs>
               <rd:DefaultName>RP02</rd:DefaultName>
-              <Top>0.63472cm</Top>
-              <Left>14.7682cm</Left>
-              <Height>0.6cm</Height>
-              <Width>3.09033cm</Width>
+              <Top>0.28166cm</Top>
+              <Left>15.35853cm</Left>
+              <Height>0.70583cm</Height>
+              <Width>3.29375cm</Width>
               <ZIndex>2</ZIndex>
               <Style>
                 <Border>

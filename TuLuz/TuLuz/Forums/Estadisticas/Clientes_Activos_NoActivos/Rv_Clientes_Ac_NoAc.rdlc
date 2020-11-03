@@ -410,10 +410,10 @@
               </Style>
             </ChartNoDataMessage>
             <DataSetName>DataSet1</DataSetName>
-            <Top>1.2671cm</Top>
-            <Left>2.51037cm</Left>
-            <Height>6.53458cm</Height>
-            <Width>14.45854cm</Width>
+            <Top>1.30238cm</Top>
+            <Left>0.31433cm</Left>
+            <Height>6.72832cm</Height>
+            <Width>11.25708cm</Width>
             <Style>
               <Border>
                 <Color>LightGrey</Color>
@@ -431,7 +431,12 @@
                 <TextRuns>
                   <TextRun>
                     <Value>=Parameters!RP01.Value</Value>
-                    <Style />
+                    <Style>
+                      <FontStyle>Italic</FontStyle>
+                      <FontSize>11pt</FontSize>
+                      <FontWeight>Bold</FontWeight>
+                      <Color>Maroon</Color>
+                    </Style>
                   </TextRun>
                 </TextRuns>
                 <Style />
@@ -439,7 +444,7 @@
             </Paragraphs>
             <rd:DefaultName>RP01</rd:DefaultName>
             <Top>0.52599cm</Top>
-            <Left>2.51037cm</Left>
+            <Left>0.31433cm</Left>
             <Height>0.6cm</Height>
             <Width>14.45854cm</Width>
             <ZIndex>1</ZIndex>
@@ -457,10 +462,10 @@
             <TablixBody>
               <TablixColumns>
                 <TablixColumn>
-                  <Width>4.16687cm</Width>
+                  <Width>4.43145cm</Width>
                 </TablixColumn>
                 <TablixColumn>
-                  <Width>2.5cm</Width>
+                  <Width>2.20896cm</Width>
                 </TablixColumn>
               </TablixColumns>
               <TablixRows>
@@ -477,10 +482,15 @@
                               <TextRuns>
                                 <TextRun>
                                   <Value>Condicion de Activo</Value>
-                                  <Style />
+                                  <Style>
+                                    <FontSize>12pt</FontSize>
+                                    <FontWeight>Bold</FontWeight>
+                                  </Style>
                                 </TextRun>
                               </TextRuns>
-                              <Style />
+                              <Style>
+                                <TextAlign>Center</TextAlign>
+                              </Style>
                             </Paragraph>
                           </Paragraphs>
                           <rd:DefaultName>Textbox8</rd:DefaultName>
@@ -489,6 +499,7 @@
                               <Color>LightGrey</Color>
                               <Style>Solid</Style>
                             </Border>
+                            <BackgroundColor>PaleTurquoise</BackgroundColor>
                             <PaddingLeft>2pt</PaddingLeft>
                             <PaddingRight>2pt</PaddingRight>
                             <PaddingTop>2pt</PaddingTop>
@@ -507,10 +518,15 @@
                               <TextRuns>
                                 <TextRun>
                                   <Value>Cantidad</Value>
-                                  <Style />
+                                  <Style>
+                                    <FontSize>12pt</FontSize>
+                                    <FontWeight>Bold</FontWeight>
+                                  </Style>
                                 </TextRun>
                               </TextRuns>
-                              <Style />
+                              <Style>
+                                <TextAlign>Center</TextAlign>
+                              </Style>
                             </Paragraph>
                           </Paragraphs>
                           <rd:DefaultName>Textbox10</rd:DefaultName>
@@ -519,6 +535,7 @@
                               <Color>LightGrey</Color>
                               <Style>Solid</Style>
                             </Border>
+                            <BackgroundColor>PaleTurquoise</BackgroundColor>
                             <PaddingLeft>2pt</PaddingLeft>
                             <PaddingRight>2pt</PaddingRight>
                             <PaddingTop>2pt</PaddingTop>
@@ -545,7 +562,9 @@
                                   <Style />
                                 </TextRun>
                               </TextRuns>
-                              <Style />
+                              <Style>
+                                <TextAlign>Center</TextAlign>
+                              </Style>
                             </Paragraph>
                           </Paragraphs>
                           <rd:DefaultName>activo</rd:DefaultName>
@@ -575,7 +594,9 @@
                                   <Style />
                                 </TextRun>
                               </TextRuns>
-                              <Style />
+                              <Style>
+                                <TextAlign>Center</TextAlign>
+                              </Style>
                             </Paragraph>
                           </Paragraphs>
                           <rd:DefaultName>cantidad</rd:DefaultName>
@@ -613,10 +634,10 @@
               </TablixMembers>
             </TablixRowHierarchy>
             <DataSetName>DataSet2</DataSetName>
-            <Top>1.2671cm</Top>
-            <Left>17.59162cm</Left>
+            <Top>1.30238cm</Top>
+            <Left>11.67724cm</Left>
             <Height>1.2cm</Height>
-            <Width>6.66687cm</Width>
+            <Width>6.64041cm</Width>
             <ZIndex>2</ZIndex>
             <Style>
               <Border>
@@ -628,10 +649,10 @@
         <Height>3.21725in</Height>
         <Style />
       </Body>
-      <Width>11.62859in</Width>
+      <Width>7.26401in</Width>
       <Page>
         <PageHeader>
-          <Height>2.54cm</Height>
+          <Height>1.905cm</Height>
           <PrintOnFirstPage>true</PrintOnFirstPage>
           <PrintOnLastPage>true</PrintOnLastPage>
           <ReportItems>
@@ -643,7 +664,11 @@
                   <TextRuns>
                     <TextRun>
                       <Value>Calculo Estadisticos de Clientes Activos y No Activos</Value>
-                      <Style />
+                      <Style>
+                        <FontSize>14pt</FontSize>
+                        <FontWeight>Bold</FontWeight>
+                        <TextDecoration>Underline</TextDecoration>
+                      </Style>
                     </TextRun>
                   </TextRuns>
                   <Style>
@@ -653,12 +678,13 @@
               </Paragraphs>
               <rd:DefaultName>Textbox1</rd:DefaultName>
               <Top>0.57891cm</Top>
-              <Left>2.51037cm</Left>
-              <Height>0.6cm</Height>
-              <Width>12.95105cm</Width>
+              <Left>0.31433cm</Left>
+              <Height>0.97042cm</Height>
+              <Width>13.40084cm</Width>
               <Style>
                 <Border>
-                  <Style>None</Style>
+                  <Style>Solid</Style>
+                  <Width>1.5pt</Width>
                 </Border>
                 <PaddingLeft>2pt</PaddingLeft>
                 <PaddingRight>2pt</PaddingRight>
@@ -674,7 +700,12 @@
                   <TextRuns>
                     <TextRun>
                       <Value>=Parameters!RP02.Value</Value>
-                      <Style />
+                      <Style>
+                        <FontStyle>Italic</FontStyle>
+                        <FontSize>11pt</FontSize>
+                        <FontWeight>Bold</FontWeight>
+                        <Color>Maroon</Color>
+                      </Style>
                     </TextRun>
                   </TextRuns>
                   <Style />
@@ -682,9 +713,9 @@
               </Paragraphs>
               <rd:DefaultName>RP02</rd:DefaultName>
               <Top>0.57891cm</Top>
-              <Left>16.401cm</Left>
-              <Height>0.6cm</Height>
-              <Width>3.53187cm</Width>
+              <Left>13.99329cm</Left>
+              <Height>0.97042cm</Height>
+              <Width>3.69062cm</Width>
               <ZIndex>1</ZIndex>
               <Style>
                 <Border>

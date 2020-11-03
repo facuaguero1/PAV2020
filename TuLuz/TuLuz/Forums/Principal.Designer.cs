@@ -32,6 +32,7 @@
             this.Panel_Lateral_Izquierdo = new System.Windows.Forms.Panel();
             this.btn_Exit = new System.Windows.Forms.Button();
             this.Panel_Estadisticas = new System.Windows.Forms.Panel();
+            this.button4 = new System.Windows.Forms.Button();
             this.button46 = new System.Windows.Forms.Button();
             this.button47 = new System.Windows.Forms.Button();
             this.button52 = new System.Windows.Forms.Button();
@@ -117,7 +118,7 @@
             this.panelUsuario = new System.Windows.Forms.Panel();
             this.CerrarSesion = new System.Windows.Forms.Button();
             this.perfil = new System.Windows.Forms.Button();
-            this.button4 = new System.Windows.Forms.Button();
+            this.button5 = new System.Windows.Forms.Button();
             this.Panel_Lateral_Izquierdo.SuspendLayout();
             this.Panel_Estadisticas.SuspendLayout();
             this.Panel_Listados.SuspendLayout();
@@ -177,7 +178,7 @@
             this.btn_Exit.FlatAppearance.MouseOverBackColor = System.Drawing.SystemColors.HotTrack;
             this.btn_Exit.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn_Exit.ForeColor = System.Drawing.Color.Gainsboro;
-            this.btn_Exit.Location = new System.Drawing.Point(0, 2631);
+            this.btn_Exit.Location = new System.Drawing.Point(0, 2691);
             this.btn_Exit.Name = "btn_Exit";
             this.btn_Exit.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
             this.btn_Exit.Size = new System.Drawing.Size(223, 45);
@@ -190,6 +191,7 @@
             // Panel_Estadisticas
             // 
             this.Panel_Estadisticas.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(32)))), ((int)(((byte)(39)))));
+            this.Panel_Estadisticas.Controls.Add(this.button5);
             this.Panel_Estadisticas.Controls.Add(this.button4);
             this.Panel_Estadisticas.Controls.Add(this.button46);
             this.Panel_Estadisticas.Controls.Add(this.button47);
@@ -204,8 +206,25 @@
             this.Panel_Estadisticas.Dock = System.Windows.Forms.DockStyle.Top;
             this.Panel_Estadisticas.Location = new System.Drawing.Point(0, 2268);
             this.Panel_Estadisticas.Name = "Panel_Estadisticas";
-            this.Panel_Estadisticas.Size = new System.Drawing.Size(223, 363);
+            this.Panel_Estadisticas.Size = new System.Drawing.Size(223, 423);
             this.Panel_Estadisticas.TabIndex = 28;
+            // 
+            // button4
+            // 
+            this.button4.Dock = System.Windows.Forms.DockStyle.Top;
+            this.button4.FlatAppearance.BorderSize = 0;
+            this.button4.FlatAppearance.MouseOverBackColor = System.Drawing.SystemColors.Highlight;
+            this.button4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button4.ForeColor = System.Drawing.Color.LightGray;
+            this.button4.Location = new System.Drawing.Point(0, 337);
+            this.button4.Name = "button4";
+            this.button4.Padding = new System.Windows.Forms.Padding(34, 0, 0, 0);
+            this.button4.Size = new System.Drawing.Size(223, 40);
+            this.button4.TabIndex = 10;
+            this.button4.Text = "Ganancia de cotizacion por vendedores";
+            this.button4.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.button4.UseVisualStyleBackColor = true;
+            this.button4.Click += new System.EventHandler(this.button4_Click);
             // 
             // button46
             // 
@@ -214,7 +233,7 @@
             this.button46.FlatAppearance.MouseOverBackColor = System.Drawing.SystemColors.Highlight;
             this.button46.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button46.ForeColor = System.Drawing.Color.LightGray;
-            this.button46.Location = new System.Drawing.Point(0, 297);
+            this.button46.Location = new System.Drawing.Point(0, 304);
             this.button46.Name = "button46";
             this.button46.Padding = new System.Windows.Forms.Padding(34, 0, 0, 0);
             this.button46.Size = new System.Drawing.Size(223, 33);
@@ -231,7 +250,7 @@
             this.button47.FlatAppearance.MouseOverBackColor = System.Drawing.SystemColors.Highlight;
             this.button47.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button47.ForeColor = System.Drawing.Color.LightGray;
-            this.button47.Location = new System.Drawing.Point(0, 264);
+            this.button47.Location = new System.Drawing.Point(0, 271);
             this.button47.Name = "button47";
             this.button47.Padding = new System.Windows.Forms.Padding(34, 0, 0, 0);
             this.button47.Size = new System.Drawing.Size(223, 33);
@@ -248,7 +267,7 @@
             this.button52.FlatAppearance.MouseOverBackColor = System.Drawing.SystemColors.Highlight;
             this.button52.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button52.ForeColor = System.Drawing.Color.LightGray;
-            this.button52.Location = new System.Drawing.Point(0, 231);
+            this.button52.Location = new System.Drawing.Point(0, 238);
             this.button52.Name = "button52";
             this.button52.Padding = new System.Windows.Forms.Padding(34, 0, 0, 0);
             this.button52.Size = new System.Drawing.Size(223, 33);
@@ -265,7 +284,7 @@
             this.button53.FlatAppearance.MouseOverBackColor = System.Drawing.SystemColors.Highlight;
             this.button53.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button53.ForeColor = System.Drawing.Color.LightGray;
-            this.button53.Location = new System.Drawing.Point(0, 198);
+            this.button53.Location = new System.Drawing.Point(0, 205);
             this.button53.Name = "button53";
             this.button53.Padding = new System.Windows.Forms.Padding(34, 0, 0, 0);
             this.button53.Size = new System.Drawing.Size(223, 33);
@@ -282,7 +301,7 @@
             this.button49.FlatAppearance.MouseOverBackColor = System.Drawing.SystemColors.Highlight;
             this.button49.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button49.ForeColor = System.Drawing.Color.LightGray;
-            this.button49.Location = new System.Drawing.Point(0, 165);
+            this.button49.Location = new System.Drawing.Point(0, 172);
             this.button49.Name = "button49";
             this.button49.Padding = new System.Windows.Forms.Padding(34, 0, 0, 0);
             this.button49.Size = new System.Drawing.Size(223, 33);
@@ -299,7 +318,7 @@
             this.button50.FlatAppearance.MouseOverBackColor = System.Drawing.SystemColors.Highlight;
             this.button50.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button50.ForeColor = System.Drawing.Color.LightGray;
-            this.button50.Location = new System.Drawing.Point(0, 132);
+            this.button50.Location = new System.Drawing.Point(0, 139);
             this.button50.Name = "button50";
             this.button50.Padding = new System.Windows.Forms.Padding(34, 0, 0, 0);
             this.button50.Size = new System.Drawing.Size(223, 33);
@@ -319,7 +338,7 @@
             this.button51.Location = new System.Drawing.Point(0, 99);
             this.button51.Name = "button51";
             this.button51.Padding = new System.Windows.Forms.Padding(34, 0, 0, 0);
-            this.button51.Size = new System.Drawing.Size(223, 33);
+            this.button51.Size = new System.Drawing.Size(223, 40);
             this.button51.TabIndex = 3;
             this.button51.Text = "Cotizaciones entre fechas por estado";
             this.button51.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -1603,22 +1622,22 @@
             this.perfil.UseVisualStyleBackColor = true;
             this.perfil.Click += new System.EventHandler(this.perfil_Click);
             // 
-            // button4
+            // button5
             // 
-            this.button4.Dock = System.Windows.Forms.DockStyle.Top;
-            this.button4.FlatAppearance.BorderSize = 0;
-            this.button4.FlatAppearance.MouseOverBackColor = System.Drawing.SystemColors.Highlight;
-            this.button4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button4.ForeColor = System.Drawing.Color.LightGray;
-            this.button4.Location = new System.Drawing.Point(0, 330);
-            this.button4.Name = "button4";
-            this.button4.Padding = new System.Windows.Forms.Padding(34, 0, 0, 0);
-            this.button4.Size = new System.Drawing.Size(223, 33);
-            this.button4.TabIndex = 10;
-            this.button4.Text = "Ganancia de cotizacion por vendedores";
-            this.button4.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button4.UseVisualStyleBackColor = true;
-            this.button4.Click += new System.EventHandler(this.button4_Click);
+            this.button5.Dock = System.Windows.Forms.DockStyle.Top;
+            this.button5.FlatAppearance.BorderSize = 0;
+            this.button5.FlatAppearance.MouseOverBackColor = System.Drawing.SystemColors.Highlight;
+            this.button5.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button5.ForeColor = System.Drawing.Color.LightGray;
+            this.button5.Location = new System.Drawing.Point(0, 377);
+            this.button5.Name = "button5";
+            this.button5.Padding = new System.Windows.Forms.Padding(34, 0, 0, 0);
+            this.button5.Size = new System.Drawing.Size(223, 34);
+            this.button5.TabIndex = 11;
+            this.button5.Text = "Clientes por Monto";
+            this.button5.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.button5.UseVisualStyleBackColor = true;
+            this.button5.Click += new System.EventHandler(this.button5_Click);
             // 
             // Principal
             // 
@@ -1744,6 +1763,7 @@
         private System.Windows.Forms.Button button3;
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Button button4;
+        private System.Windows.Forms.Button button5;
     }
 }
 

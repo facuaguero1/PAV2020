@@ -76,7 +76,12 @@
                 <TextRuns>
                   <TextRun>
                     <Value>=Parameters!RP01.Value</Value>
-                    <Style />
+                    <Style>
+                      <FontStyle>Italic</FontStyle>
+                      <FontSize>11pt</FontSize>
+                      <FontWeight>Bold</FontWeight>
+                      <Color>Maroon</Color>
+                    </Style>
                   </TextRun>
                 </TextRuns>
                 <Style />
@@ -86,7 +91,7 @@
             <Top>0.17639cm</Top>
             <Left>0.34079cm</Left>
             <Height>0.6cm</Height>
-            <Width>21.46999cm</Width>
+            <Width>19.72374cm</Width>
             <Style>
               <Border>
                 <Style>None</Style>
@@ -416,19 +421,6 @@
                 <ColumnSeparatorColor>Black</ColumnSeparatorColor>
               </ChartLegend>
             </ChartLegends>
-            <ChartTitles>
-              <ChartTitle Name="Default">
-                <Caption />
-                <Style>
-                  <BackgroundGradientType>None</BackgroundGradientType>
-                  <FontSize>9pt</FontSize>
-                  <FontWeight>Normal</FontWeight>
-                  <TextAlign>General</TextAlign>
-                  <VerticalAlign>Top</VerticalAlign>
-                </Style>
-                <Position>TopLeft</Position>
-              </ChartTitle>
-            </ChartTitles>
             <Palette>Pacific</Palette>
             <ChartBorderSkin>
               <Style>
@@ -448,9 +440,9 @@
             </ChartNoDataMessage>
             <DataSetName>DataSet1</DataSetName>
             <Top>1.27592cm</Top>
-            <Left>2.37808cm</Left>
-            <Height>5.0829cm</Height>
-            <Width>10.62271cm</Width>
+            <Left>0.34079cm</Left>
+            <Height>5.82373cm</Height>
+            <Width>11.97208cm</Width>
             <ZIndex>1</ZIndex>
             <Style>
               <Border>
@@ -485,10 +477,15 @@
                               <TextRuns>
                                 <TextRun>
                                   <Value>Están activos</Value>
-                                  <Style />
+                                  <Style>
+                                    <FontSize>12pt</FontSize>
+                                    <FontWeight>Bold</FontWeight>
+                                  </Style>
                                 </TextRun>
                               </TextRuns>
-                              <Style />
+                              <Style>
+                                <TextAlign>Center</TextAlign>
+                              </Style>
                             </Paragraph>
                           </Paragraphs>
                           <rd:DefaultName>Textbox4</rd:DefaultName>
@@ -497,6 +494,7 @@
                               <Color>LightGrey</Color>
                               <Style>Solid</Style>
                             </Border>
+                            <BackgroundColor>PaleTurquoise</BackgroundColor>
                             <PaddingLeft>2pt</PaddingLeft>
                             <PaddingRight>2pt</PaddingRight>
                             <PaddingTop>2pt</PaddingTop>
@@ -515,10 +513,15 @@
                               <TextRuns>
                                 <TextRun>
                                   <Value>Cantidad</Value>
-                                  <Style />
+                                  <Style>
+                                    <FontSize>12pt</FontSize>
+                                    <FontWeight>Bold</FontWeight>
+                                  </Style>
                                 </TextRun>
                               </TextRuns>
-                              <Style />
+                              <Style>
+                                <TextAlign>Center</TextAlign>
+                              </Style>
                             </Paragraph>
                           </Paragraphs>
                           <rd:DefaultName>Textbox6</rd:DefaultName>
@@ -527,6 +530,7 @@
                               <Color>LightGrey</Color>
                               <Style>Solid</Style>
                             </Border>
+                            <BackgroundColor>PaleTurquoise</BackgroundColor>
                             <PaddingLeft>2pt</PaddingLeft>
                             <PaddingRight>2pt</PaddingRight>
                             <PaddingTop>2pt</PaddingTop>
@@ -553,7 +557,9 @@
                                   <Style />
                                 </TextRun>
                               </TextRuns>
-                              <Style />
+                              <Style>
+                                <TextAlign>Center</TextAlign>
+                              </Style>
                             </Paragraph>
                           </Paragraphs>
                           <rd:DefaultName>activo</rd:DefaultName>
@@ -583,7 +589,9 @@
                                   <Style />
                                 </TextRun>
                               </TextRuns>
-                              <Style />
+                              <Style>
+                                <TextAlign>Center</TextAlign>
+                              </Style>
                             </Paragraph>
                           </Paragraphs>
                           <rd:DefaultName>cantidad</rd:DefaultName>
@@ -621,8 +629,8 @@
               </TablixMembers>
             </TablixRowHierarchy>
             <DataSetName>DataSet2</DataSetName>
-            <Top>2.16641cm</Top>
-            <Left>14.14229cm</Left>
+            <Top>1.27592cm</Top>
+            <Left>12.71354cm</Left>
             <Height>1.2cm</Height>
             <Width>6.26118cm</Width>
             <ZIndex>2</ZIndex>
@@ -651,20 +659,27 @@
                   <TextRuns>
                     <TextRun>
                       <Value>Cálculo Estadístico de Proveedores Activos e Inactivos</Value>
-                      <Style />
+                      <Style>
+                        <FontSize>14pt</FontSize>
+                        <FontWeight>Bold</FontWeight>
+                        <TextDecoration>Underline</TextDecoration>
+                      </Style>
                     </TextRun>
                   </TextRuns>
-                  <Style />
+                  <Style>
+                    <TextAlign>Center</TextAlign>
+                  </Style>
                 </Paragraph>
               </Paragraphs>
               <rd:DefaultName>ReportName</rd:DefaultName>
               <Top>0.55245cm</Top>
-              <Left>5.60097cm</Left>
-              <Height>0.6cm</Height>
-              <Width>9.00875cm</Width>
+              <Left>0.34079cm</Left>
+              <Height>0.78521cm</Height>
+              <Width>13.76622cm</Width>
               <Style>
                 <Border>
-                  <Style>None</Style>
+                  <Style>Solid</Style>
+                  <Width>1.5pt</Width>
                 </Border>
                 <PaddingLeft>2pt</PaddingLeft>
                 <PaddingRight>2pt</PaddingRight>
@@ -680,17 +695,22 @@
                   <TextRuns>
                     <TextRun>
                       <Value>=Parameters!RP02.Value</Value>
-                      <Style />
+                      <Style>
+                        <FontStyle>Italic</FontStyle>
+                        <FontSize>11pt</FontSize>
+                        <FontWeight>Bold</FontWeight>
+                        <Color>Maroon</Color>
+                      </Style>
                     </TextRun>
                   </TextRuns>
                   <Style />
                 </Paragraph>
               </Paragraphs>
               <rd:DefaultName>RP02</rd:DefaultName>
-              <Top>1.16099cm</Top>
-              <Left>16.60292cm</Left>
+              <Top>0.55245cm</Top>
+              <Left>15.06834cm</Left>
               <Height>0.6cm</Height>
-              <Width>2.5cm</Width>
+              <Width>3.00271cm</Width>
               <ZIndex>1</ZIndex>
               <Style>
                 <Border>

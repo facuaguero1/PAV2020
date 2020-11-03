@@ -41,10 +41,10 @@
             // 
             this.rv_ClienteXMonto.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.rv_ClienteXMonto.LocalReport.ReportEmbeddedResource = "TuLuz.Forums.Estadisticas.VentasXMes.Rv_VentasXMes.rdlc";
-            this.rv_ClienteXMonto.Location = new System.Drawing.Point(91, 166);
+            this.rv_ClienteXMonto.Location = new System.Drawing.Point(12, 143);
             this.rv_ClienteXMonto.Name = "rv_ClienteXMonto";
             this.rv_ClienteXMonto.ServerReport.BearerToken = null;
-            this.rv_ClienteXMonto.Size = new System.Drawing.Size(836, 272);
+            this.rv_ClienteXMonto.Size = new System.Drawing.Size(905, 368);
             this.rv_ClienteXMonto.TabIndex = 0;
             // 
             // label1
@@ -53,7 +53,7 @@
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 30F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))));
             this.label1.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.label1.Location = new System.Drawing.Point(98, 39);
+            this.label1.Location = new System.Drawing.Point(84, 19);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(767, 46);
             this.label1.TabIndex = 16;
@@ -68,7 +68,7 @@
             this.btn_Buscar.FlatAppearance.BorderSize = 0;
             this.btn_Buscar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn_Buscar.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_Buscar.Location = new System.Drawing.Point(539, 104);
+            this.btn_Buscar.Location = new System.Drawing.Point(802, 83);
             this.btn_Buscar.Name = "btn_Buscar";
             this.btn_Buscar.Size = new System.Drawing.Size(62, 44);
             this.btn_Buscar.TabIndex = 20;
@@ -77,41 +77,49 @@
             // 
             // label2
             // 
+            this.label2.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(103, 130);
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Location = new System.Drawing.Point(101, 93);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(40, 13);
+            this.label2.Size = new System.Drawing.Size(72, 24);
             this.label2.TabIndex = 21;
             this.label2.Text = "Minimo";
             // 
             // label3
             // 
+            this.label3.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(288, 129);
+            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.Location = new System.Drawing.Point(323, 93);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(43, 13);
+            this.label3.Size = new System.Drawing.Size(77, 24);
             this.label3.TabIndex = 22;
             this.label3.Text = "Maximo";
             // 
             // lbl_Desde
             // 
-            this.lbl_Desde.Location = new System.Drawing.Point(148, 127);
+            this.lbl_Desde.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.lbl_Desde.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_Desde.Location = new System.Drawing.Point(179, 90);
             this.lbl_Desde.Name = "lbl_Desde";
-            this.lbl_Desde.Size = new System.Drawing.Size(100, 20);
+            this.lbl_Desde.Size = new System.Drawing.Size(100, 29);
             this.lbl_Desde.TabIndex = 23;
             // 
             // lbl_Hasta
             // 
-            this.lbl_Hasta.Location = new System.Drawing.Point(337, 126);
+            this.lbl_Hasta.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.lbl_Hasta.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_Hasta.Location = new System.Drawing.Point(418, 90);
             this.lbl_Hasta.Name = "lbl_Hasta";
-            this.lbl_Hasta.Size = new System.Drawing.Size(100, 20);
+            this.lbl_Hasta.Size = new System.Drawing.Size(100, 29);
             this.lbl_Hasta.TabIndex = 24;
             // 
             // Estadistica_ClienteXMonto
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(959, 450);
+            this.ClientSize = new System.Drawing.Size(929, 545);
             this.Controls.Add(this.lbl_Hasta);
             this.Controls.Add(this.lbl_Desde);
             this.Controls.Add(this.label3);

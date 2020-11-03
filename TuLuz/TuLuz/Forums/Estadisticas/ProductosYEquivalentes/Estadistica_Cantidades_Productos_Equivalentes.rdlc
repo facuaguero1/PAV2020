@@ -84,10 +84,15 @@
                               <TextRuns>
                                 <TextRun>
                                   <Value>tipo</Value>
-                                  <Style />
+                                  <Style>
+                                    <FontSize>12pt</FontSize>
+                                    <FontWeight>Bold</FontWeight>
+                                  </Style>
                                 </TextRun>
                               </TextRuns>
-                              <Style />
+                              <Style>
+                                <TextAlign>Center</TextAlign>
+                              </Style>
                             </Paragraph>
                           </Paragraphs>
                           <rd:DefaultName>Textbox11</rd:DefaultName>
@@ -96,6 +101,7 @@
                               <Color>LightGrey</Color>
                               <Style>Solid</Style>
                             </Border>
+                            <BackgroundColor>PaleTurquoise</BackgroundColor>
                             <PaddingLeft>2pt</PaddingLeft>
                             <PaddingRight>2pt</PaddingRight>
                             <PaddingTop>2pt</PaddingTop>
@@ -114,10 +120,15 @@
                               <TextRuns>
                                 <TextRun>
                                   <Value>cantidad</Value>
-                                  <Style />
+                                  <Style>
+                                    <FontSize>12pt</FontSize>
+                                    <FontWeight>Bold</FontWeight>
+                                  </Style>
                                 </TextRun>
                               </TextRuns>
-                              <Style />
+                              <Style>
+                                <TextAlign>Center</TextAlign>
+                              </Style>
                             </Paragraph>
                           </Paragraphs>
                           <rd:DefaultName>Textbox13</rd:DefaultName>
@@ -126,6 +137,7 @@
                               <Color>LightGrey</Color>
                               <Style>Solid</Style>
                             </Border>
+                            <BackgroundColor>PaleTurquoise</BackgroundColor>
                             <PaddingLeft>2pt</PaddingLeft>
                             <PaddingRight>2pt</PaddingRight>
                             <PaddingTop>2pt</PaddingTop>
@@ -152,7 +164,9 @@
                                   <Style />
                                 </TextRun>
                               </TextRuns>
-                              <Style />
+                              <Style>
+                                <TextAlign>Center</TextAlign>
+                              </Style>
                             </Paragraph>
                           </Paragraphs>
                           <rd:DefaultName>tipo</rd:DefaultName>
@@ -182,7 +196,9 @@
                                   <Style />
                                 </TextRun>
                               </TextRuns>
-                              <Style />
+                              <Style>
+                                <TextAlign>Center</TextAlign>
+                              </Style>
                             </Paragraph>
                           </Paragraphs>
                           <rd:DefaultName>cantidad</rd:DefaultName>
@@ -220,8 +236,8 @@
               </TablixMembers>
             </TablixRowHierarchy>
             <DataSetName>DataSet1</DataSetName>
-            <Top>1.61078cm</Top>
-            <Left>14.39425cm</Left>
+            <Top>0.58773cm</Top>
+            <Left>13.82036cm</Left>
             <Height>1.2cm</Height>
             <Width>5cm</Width>
             <Style>
@@ -583,10 +599,10 @@
               </Style>
             </ChartNoDataMessage>
             <DataSetName>DataSet2</DataSetName>
-            <Top>0.85231cm</Top>
-            <Left>2.79259cm</Left>
-            <Height>7.24014cm</Height>
-            <Width>11.09833cm</Width>
+            <Top>0.58773cm</Top>
+            <Left>0.60536cm</Left>
+            <Height>7.98097cm</Height>
+            <Width>13.10916cm</Width>
             <ZIndex>1</ZIndex>
             <Style>
               <Border>
@@ -604,7 +620,7 @@
       <Width>9.78137in</Width>
       <Page>
         <PageHeader>
-          <Height>2.54cm</Height>
+          <Height>1.79917cm</Height>
           <PrintOnFirstPage>true</PrintOnFirstPage>
           <PrintOnLastPage>true</PrintOnLastPage>
           <ReportItems>
@@ -616,20 +632,27 @@
                   <TextRuns>
                     <TextRun>
                       <Value>CANTIDAD DE PRODUCTOS EQUIVALENTES POR PRODUCTOS</Value>
-                      <Style />
+                      <Style>
+                        <FontSize>14pt</FontSize>
+                        <FontWeight>Bold</FontWeight>
+                        <TextDecoration>Underline</TextDecoration>
+                      </Style>
                     </TextRun>
                   </TextRuns>
-                  <Style />
+                  <Style>
+                    <TextAlign>Center</TextAlign>
+                  </Style>
                 </Paragraph>
               </Paragraphs>
               <rd:DefaultName>Textbox1</rd:DefaultName>
               <Top>0.53481cm</Top>
-              <Left>2.40453cm</Left>
-              <Height>0.6cm</Height>
-              <Width>11.81333cm</Width>
+              <Left>0.60536cm</Left>
+              <Height>0.98806cm</Height>
+              <Width>15.75562cm</Width>
               <Style>
                 <Border>
-                  <Style>None</Style>
+                  <Style>Solid</Style>
+                  <Width>1.5pt</Width>
                 </Border>
                 <PaddingLeft>2pt</PaddingLeft>
                 <PaddingRight>2pt</PaddingRight>
@@ -645,17 +668,22 @@
                   <TextRuns>
                     <TextRun>
                       <Value>=Parameters!RP02.Value</Value>
-                      <Style />
+                      <Style>
+                        <FontStyle>Italic</FontStyle>
+                        <FontSize>11pt</FontSize>
+                        <FontWeight>Bold</FontWeight>
+                        <Color>Maroon</Color>
+                      </Style>
                     </TextRun>
                   </TextRuns>
                   <Style />
                 </Paragraph>
               </Paragraphs>
               <rd:DefaultName>RP02</rd:DefaultName>
-              <Top>0.92287cm</Top>
-              <Left>14.98106cm</Left>
-              <Height>0.6cm</Height>
-              <Width>3.36431cm</Width>
+              <Top>0.53481cm</Top>
+              <Left>17.41523cm</Left>
+              <Height>0.98806cm</Height>
+              <Width>3.78764cm</Width>
               <ZIndex>1</ZIndex>
               <Style>
                 <Border>

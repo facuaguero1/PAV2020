@@ -528,5 +528,10 @@ namespace TuLuz
         {
             AbrirFormularioSubMenu(new Estadistica_VendedoresXCotizaciones());
         }
+
+        private void button5_Click(object sender, EventArgs e)
+        {
+            AbrirFormularioSubMenu(new Estadistica_ClienteXMonto());
+        }
     }
 }
