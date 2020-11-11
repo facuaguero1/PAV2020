@@ -172,7 +172,6 @@
             this.label6.Size = new System.Drawing.Size(28, 25);
             this.label6.TabIndex = 0;
             this.label6.Text = "Id";
-            this.label6.Click += new System.EventHandler(this.label6_Click);
             // 
             // label1
             // 
@@ -333,7 +332,6 @@
             this.label7.Size = new System.Drawing.Size(28, 25);
             this.label7.TabIndex = 3;
             this.label7.Text = "Id";
-            this.label7.Click += new System.EventHandler(this.label7_Click);
             // 
             // txt_Nombre
             // 
@@ -423,7 +421,6 @@
             this.Name = "ConsultarTipoDocs";
             this.Text = "Consultar Barrio";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
-            this.Load += new System.EventHandler(this.ConsultarBarrio_Load);
             this.btn_limpiarCampo.ResumeLayout(false);
             this.btn_limpiarCampo.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.grid01)).EndInit();

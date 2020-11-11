@@ -29,11 +29,8 @@ namespace TuLuz.Forums.Clientes
         {
             InitializeComponent();
             CerrarPanel();
-           
             cmb_cuitProveedor.Cargar(Proveedores.EstructuraCombo());
             cmb_codProductoEq.Cargar(Productos.EstructuraCombo());
-            
-
         }
          private void CerrarPanel ()
         {
@@ -83,7 +80,6 @@ namespace TuLuz.Forums.Clientes
                 }
             }
         }
-
         private void btn_Cancelar_Click(object sender, EventArgs e)
         {
             CerrarPanel();
@@ -152,24 +148,18 @@ namespace TuLuz.Forums.Clientes
                 Productos.Modificar(_EP);
                 Cargar_grilla(Productos.Todos_los_Productos());
                 CerrarPanel();
-
-
-
-            }
-            
+            } 
         }
         private void btn_limpiarr_Click(object sender, EventArgs e)
         {
            cmb_codProductoEq.SelectedIndex = -1;
         }
-
         private void btn_ModificarDetalle_Click(object sender, EventArgs e)
         {
             ModificarDetalle modDetalle = new ModificarDetalle(txt_codigo.Text);
             AbrirFormularioSubMenu(modDetalle);
             CerrarPanel();
         }
-
         public void AbrirFormularioSubMenu(Form FormularioSubMenu)
         {
             //this.SendToBack();      //si existe un formulario abierto, lo cerramos 
@@ -178,7 +168,6 @@ namespace TuLuz.Forums.Clientes
             FormularioSubMenu.Dock = DockStyle.Fill;    //para rellenar formulario en el centro
             FormularioSubMenu.BringToFront(); //traer el formulario por delante de la imagen de fondo
             FormularioSubMenu.Show() ; //ejecutar formulario
-
         }
         private void button5_Click(object sender, EventArgs e)
         {

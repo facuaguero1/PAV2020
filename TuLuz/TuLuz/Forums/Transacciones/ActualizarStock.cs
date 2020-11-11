@@ -15,9 +15,6 @@ namespace TuLuz.Forums
 {
     public partial class ActualizarStock : Form
     {
-        
-
-        Be_BaseDatos _BD = new Be_BaseDatos();
         Ng_Producto Producto = new Ng_Producto();
 
         public string num { get; set; }
@@ -27,17 +24,7 @@ namespace TuLuz.Forums
             InitializeComponent();
 
         }
-
-        //BOTON MODIFICAR....
-        private void btn_cancelar_Click(object sender, EventArgs e)
-        {
-            Producto.sumarStock(int.Parse(txt_agregar.Text), txt_codigo.Text);
-            Cargar_grilla(Producto.Todos_los_Productos());
-
-   
-        }
-        
-        private void brn_Load(object sender, EventArgs e)
+        private void ActualizarStock_Load(object sender, EventArgs e)
         {
             Producto.IniciarTransaccion();
             Cargar_grilla(Producto.Todos_los_Productos());
@@ -46,8 +33,6 @@ namespace TuLuz.Forums
             txt_codigo.Enabled = false;
             txt_nombre.Enabled = false;
             txt_total.Enabled = false;
-
-
         }
         private void Cargar_grilla(DataTable tabla)
         {
@@ -61,9 +46,6 @@ namespace TuLuz.Forums
             }
         }
 
-
-
-
         private void grid01_CellDoubleClick(object sender, DataGridViewCellEventArgs e)
         {
             txt_agregar.Enabled = true;
@@ -76,23 +58,6 @@ namespace TuLuz.Forums
             txt_nombre.Text= tabla.Rows[0]["nombre"].ToString();
            
         }
-
-        private void button1_Click(object sender, EventArgs e)
-        {
-            Producto.CerrarTransaccion();
-            this.Close();
-        }
-
-        private void label1_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label14_Click(object sender, EventArgs e)
-        {
-
-        }
-
         private void txt_agregar_TextChanged(object sender, EventArgs e)
         {
             if (txt_agregar.Text == "")
@@ -112,6 +77,18 @@ namespace TuLuz.Forums
             {
                 e.Handled = true;
             }
+        }
+
+        private void btn_guardar_Click(object sender, EventArgs e)
+        {
+            Producto.sumarStock(int.Parse(txt_agregar.Text), txt_codigo.Text);
+            Cargar_grilla(Producto.Todos_los_Productos());
+        }
+
+        private void btn_salir_Click(object sender, EventArgs e)
+        {
+            Producto.CerrarTransaccion();
+            this.Close();
         }
     }
 }

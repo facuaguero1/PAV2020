@@ -186,7 +186,6 @@
             this.Name = "AltaTipoDoc";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
-            this.Load += new System.EventHandler(this.AltaBarrio_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 

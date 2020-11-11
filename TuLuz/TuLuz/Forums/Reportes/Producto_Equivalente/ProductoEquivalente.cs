@@ -27,13 +27,6 @@ namespace TuLuz.Forums
             this.Close();
         }
 
-        private void AltaBarrio_Load(object sender, EventArgs e)
-        {
-            
-            cmb_producto.Cargar(Producto.EstructuraCombo());
-            cmb_producto.SelectedIndex = -1;
-        }
-
         private void btn_aceptar_Click(object sender, EventArgs e)
         {
             DataTable tabla = new DataTable();
@@ -57,6 +50,12 @@ namespace TuLuz.Forums
             {
                 cmb_producto.Text = "Seleccionar...";
             }
+        }
+
+        private void ProductoEquivalente_Load(object sender, EventArgs e)
+        {
+            cmb_producto.Cargar(Producto.EstructuraCombo());
+            cmb_producto.SelectedIndex = -1;
         }
     }
 }

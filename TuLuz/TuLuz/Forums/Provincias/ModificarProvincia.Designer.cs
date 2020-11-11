@@ -286,7 +286,6 @@
             this.label10.Size = new System.Drawing.Size(614, 76);
             this.label10.TabIndex = 8;
             this.label10.Text = "Modificar Provincia";
-            this.label10.Click += new System.EventHandler(this.label10_Click);
             // 
             // btn_Aceptar
             // 

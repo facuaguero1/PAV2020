@@ -27,8 +27,6 @@ namespace TuLuz.Forums.Clientes
         {
             InitializeComponent();
             CerrarPanel();
-
-
         }
         private void CerrarPanel()
         {
@@ -58,12 +56,6 @@ namespace TuLuz.Forums.Clientes
                 }
             }
         }
-
-        private void btn_Cancelar_Click(object sender, EventArgs e)
-        {
-            CerrarPanel();
-        }
-
         private void btn_Buscar_Click(object sender, EventArgs e)
         {
             if (chk_Todos.Checked == true)
@@ -98,9 +90,6 @@ namespace TuLuz.Forums.Clientes
         {
             txt_BuscarId.Text = "";
         }
-
-
-
         private void btn_salir_Click(object sender, EventArgs e)
         {
             this.Close();
@@ -111,22 +100,6 @@ namespace TuLuz.Forums.Clientes
             Documentos.Borrar(this.Id);
             Panel_BorrarTipoDoc.Visible = false;
         }
-
-        private void BorrarBarrio_Load(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label6_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label10_Click(object sender, EventArgs e)
-        {
-
-        }
-
         private void txt_BuscarId_KeyPress(object sender, KeyPressEventArgs e)
         {
             if (!char.IsControl(e.KeyChar) && !char.IsDigit(e.KeyChar))

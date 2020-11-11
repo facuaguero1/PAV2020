@@ -32,7 +32,7 @@
             this.label1 = new System.Windows.Forms.Label();
             this.cmb_Clientes = new TuLuz.Clases.ComboBox01();
             this.label2 = new System.Windows.Forms.Label();
-            this.button1 = new System.Windows.Forms.Button();
+            this.btn_buscar = new System.Windows.Forms.Button();
             this.btn_salir = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
@@ -89,20 +89,20 @@
             this.label2.TabIndex = 12;
             this.label2.Text = "Cliente:";
             // 
-            // button1
+            // btn_buscar
             // 
-            this.button1.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.button1.BackgroundImage = global::TuLuz.Properties.Resources.buscar;
-            this.button1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.button1.FlatAppearance.BorderSize = 0;
-            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.Location = new System.Drawing.Point(361, 79);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(52, 32);
-            this.button1.TabIndex = 13;
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
+            this.btn_buscar.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.btn_buscar.BackgroundImage = global::TuLuz.Properties.Resources.buscar;
+            this.btn_buscar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btn_buscar.FlatAppearance.BorderSize = 0;
+            this.btn_buscar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_buscar.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_buscar.Location = new System.Drawing.Point(361, 79);
+            this.btn_buscar.Name = "btn_buscar";
+            this.btn_buscar.Size = new System.Drawing.Size(52, 32);
+            this.btn_buscar.TabIndex = 13;
+            this.btn_buscar.UseVisualStyleBackColor = true;
+            this.btn_buscar.Click += new System.EventHandler(this.btn_buscar_Click);
             // 
             // btn_salir
             // 
@@ -124,7 +124,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(929, 545);
             this.Controls.Add(this.btn_salir);
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.btn_buscar);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.cmb_Clientes);
             this.Controls.Add(this.label1);
@@ -145,7 +145,7 @@
         private System.Windows.Forms.Label label1;
         private Clases.ComboBox01 cmb_Clientes;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button btn_buscar;
         private System.Windows.Forms.Button btn_salir;
     }
 }

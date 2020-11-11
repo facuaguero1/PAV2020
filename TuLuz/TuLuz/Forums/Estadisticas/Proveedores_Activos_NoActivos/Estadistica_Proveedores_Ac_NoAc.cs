@@ -22,13 +22,6 @@ namespace TuLuz.Forums.Estadisticas.Proveedores_Activos_NoActivos
         {
             InitializeComponent();
         }
-
-        private void Estadistica_Proveedores_Ac_NoAc_Load(object sender, EventArgs e)
-        {
-
-            this.RV_Proveedores_AC_NAC.RefreshReport();
-        }
-
         private void CalcularEstadistica()
         {
             DataTable tabla2 = new DataTable();
@@ -41,7 +34,6 @@ namespace TuLuz.Forums.Estadisticas.Proveedores_Activos_NoActivos
             ReportParameter[] parametros = new ReportParameter[2];
             parametros[0] = new ReportParameter("RP01", "Grafico sobre los proveedores activos y no activos");
             parametros[1] = new ReportParameter("RP02", "Fecha: " + DateTime.Today.Day.ToString() + "/" + DateTime.Today.Month.ToString() + "/" + DateTime.Today.Year.ToString());
-            //parametros[2] = new ReportParameter("RP03", Activos().ToString());
             RV_Proveedores_AC_NAC.LocalReport.DataSources.Clear();
             RV_Proveedores_AC_NAC.LocalReport.SetParameters(parametros);
             RV_Proveedores_AC_NAC.LocalReport.DataSources.Add(Datos);

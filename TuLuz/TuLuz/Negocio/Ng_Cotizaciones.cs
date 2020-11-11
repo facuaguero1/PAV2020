@@ -12,14 +12,11 @@ using TuLuz.Negocio.EstructuraNegocios;
 class Ng_Cotizaciones
 {
     Be_BaseDatos _BD = new Be_BaseDatos();
-
-
     public void Insertar(Es_Cotizaciones Cotizacion)
     {
         String sqlInsertar = "INSERT INTO Cotizaciones(numeroCotizacion, año, cuitCliente, tipoDocVendedor, numDocVendedor, codEstadoCotizacion, nombreSolicitante, apellidoSolicitante, fecha, observaciones, precioTotal, motivoPerdida, nomCompetidor) VALUES(" + Cotizacion.numeroCotizacicon + ",'" + Cotizacion.año + "','" + Cotizacion.cuitCliente + "'," + Cotizacion.tipoDocVendedor + "," + Cotizacion.numDocVendedor + "," + Cotizacion.codEstadoCotizacion + ",'" + Cotizacion.nombreSolicitante + "','" + Cotizacion.apellidoSolicitante + "'," + _BD.FormatearDato(Cotizacion.fecha, "Date") + ",'" + Cotizacion.observaciones + "'," + Cotizacion.precioTotal + ",'" + Cotizacion.motivoPerdida + "','" + Cotizacion.nomCompetidor + "')";
         MessageBox.Show("La Cotizacion fue creado con exito!", "CREACIÓN EXITOSA", MessageBoxButtons.OK, MessageBoxIcon.Information);
         _BD.Insertar(sqlInsertar);
-
     }
 
     public DataTable Todas_Las_Cotizciones()
@@ -36,9 +33,6 @@ class Ng_Cotizaciones
         tabla = _BD.Consulta(sql);
         return tabla;
     }
-
-    //AGREGAR BIEN LOS DATOS FALTANTES A LA MODIFICACION Y BORRADO
-
     public void Modificar(Es_Cotizaciones datos)
     {
         string sqlUpdate = "UPDATE Cotizaciones SET ";
@@ -59,12 +53,6 @@ class Ng_Cotizaciones
         _BD.Modificar(sqlUpdate);
 
     }
-    public void Borrar(string Doc)
-    {
-        string sqlDelete = "DELETE FROM Cotizaciones WHERE numeroCotizacion = " + Doc;
-        MessageBox.Show("La cotizacion fue eliminada con exito!", "ELIMINACIÓN EXITOSA", MessageBoxButtons.OK, MessageBoxIcon.Information);
-        _BD.Borrar(sqlDelete);
-    }
     public EstructuraComboBox EstructuraCombo()
     {
         EstructuraComboBox EC = new EstructuraComboBox();
@@ -81,7 +69,6 @@ class Ng_Cotizaciones
         tabla = _BD.Consulta(sql);
         return tabla;
     }
-
     public DataTable Buscar_X_Fecha(string fechaMin, string fechaMax,string codEstado)
     {
         string sql = "SELECT *,YEAR(fecha) AS 'año' FROM Cotizaciones WHERE fecha between " + _BD.FormatearDato(fechaMin, "Date") + " and " + _BD.FormatearDato(fechaMax, "Date") + " and codEstadoCotizacion = "+ codEstado;
@@ -89,7 +76,6 @@ class Ng_Cotizaciones
         tabla = _BD.Consulta(sql);
         return tabla;
     }
-
     public DataTable Contar_Cotizaciones_X_Año(string fechaMin, string fechaMax, string codEstado)
     {
         string sql = "SELECT YEAR(fecha) AS 'año',COUNT(numeroCotizacion) as 'cantidad' FROM Cotizaciones WHERE fecha between " + _BD.FormatearDato(fechaMin, "Date") + " and " + _BD.FormatearDato(fechaMax, "Date") + " and codEstadoCotizacion = " + codEstado+ " GROUP BY YEAR(fecha)";
@@ -113,7 +99,6 @@ class Ng_Cotizaciones
         tabla = _BD.Consulta(sql);
         return tabla;
     }
-
     public String TraerMes(string doc)
     {
         string sql = "SELECT MONTH(fecha) FROM Cotizaciones WHERE numeroCotizacion =" + doc;
@@ -143,7 +128,6 @@ class Ng_Cotizaciones
         tabla = _BD.Consulta(sql);
         return tabla;
     }
-
     public String TraerDia(string doc)
     {
         string sql = "SELECT DAY(fecha) FROM Cotizaciones WHERE numeroCotizacion =" + doc;
@@ -151,7 +135,6 @@ class Ng_Cotizaciones
         tabla = _BD.Consulta(sql);
         return tabla.Rows[0][0].ToString();
     }
-
     public void IniciarTransaccion()
     {
         _BD.IniciarTransaccion();

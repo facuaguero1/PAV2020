@@ -169,7 +169,6 @@
             this.label6.Size = new System.Drawing.Size(147, 25);
             this.label6.TabIndex = 0;
             this.label6.Text = "Numero Pedido";
-            this.label6.Click += new System.EventHandler(this.label6_Click);
             // 
             // label1
             // 
@@ -386,7 +385,6 @@
             this.cmb_numDocVendedor.pp_Value = null;
             this.cmb_numDocVendedor.Size = new System.Drawing.Size(208, 32);
             this.cmb_numDocVendedor.TabIndex = 9;
-            this.cmb_numDocVendedor.SelectedIndexChanged += new System.EventHandler(this.cmbLocalidades_SelectedIndexChanged);
             // 
             // label10
             // 
@@ -398,7 +396,6 @@
             this.label10.Size = new System.Drawing.Size(489, 69);
             this.label10.TabIndex = 8;
             this.label10.Text = "Modificar Pedido";
-            this.label10.Click += new System.EventHandler(this.label10_Click);
             // 
             // btn_Aceptar
             // 
@@ -431,7 +428,6 @@
             this.label9.Size = new System.Drawing.Size(67, 25);
             this.label9.TabIndex = 5;
             this.label9.Text = "Fecha";
-            this.label9.Click += new System.EventHandler(this.label9_Click);
             // 
             // label8
             // 
@@ -442,7 +438,6 @@
             this.label8.Size = new System.Drawing.Size(178, 25);
             this.label8.TabIndex = 4;
             this.label8.Text = "Numero Cotizacion";
-            this.label8.Click += new System.EventHandler(this.label8_Click);
             // 
             // label7
             // 

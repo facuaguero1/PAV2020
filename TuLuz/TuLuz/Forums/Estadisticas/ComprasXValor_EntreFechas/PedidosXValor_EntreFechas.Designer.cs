@@ -86,7 +86,6 @@
             this.label2.Size = new System.Drawing.Size(96, 17);
             this.label2.TabIndex = 20;
             this.label2.Text = "Precio Minimo";
-            this.label2.Click += new System.EventHandler(this.label2_Click);
             // 
             // Precio_Min
             // 
@@ -149,7 +148,6 @@
             this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "Pedidos_Entre_Años_Y_PrecioMin";
             this.Text = "Pedidos_Entre_Años_Y_PrecioMin";
-            this.Load += new System.EventHandler(this.Pedidos_Entre_Años_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 

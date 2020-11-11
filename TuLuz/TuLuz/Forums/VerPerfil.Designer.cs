@@ -118,7 +118,6 @@
             this.label6.Size = new System.Drawing.Size(46, 17);
             this.label6.TabIndex = 5;
             this.label6.Text = "Barrio";
-            this.label6.Click += new System.EventHandler(this.label6_Click);
             // 
             // label7
             // 
@@ -175,7 +174,6 @@
             this.label8.Size = new System.Drawing.Size(50, 17);
             this.label8.TabIndex = 19;
             this.label8.Text = "Rango";
-            this.label8.Click += new System.EventHandler(this.label8_Click);
             // 
             // panelJefe
             // 

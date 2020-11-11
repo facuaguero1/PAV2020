@@ -136,7 +136,6 @@
             this.Name = "Pedido_X_2Fechas";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
-            this.Load += new System.EventHandler(this.Pedido_X_2Fechas_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 

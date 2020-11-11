@@ -27,8 +27,6 @@ namespace TuLuz.Forums.Clientes
         {
             InitializeComponent();
             CerrarPanel();
-
-
         }
         private void CerrarPanel()
         {
@@ -60,12 +58,6 @@ namespace TuLuz.Forums.Clientes
 
             }
         }
-
-        private void btn_Cancelar_Click(object sender, EventArgs e)
-        {
-            CerrarPanel();
-        }
-
         private void btn_Buscar_Click(object sender, EventArgs e)
         {
             if (chk_activos.Checked == true)
@@ -115,9 +107,6 @@ namespace TuLuz.Forums.Clientes
         {
             txt_BuscarCuit.Text = "";
         }
-
-
-
         private void btn_salir_Click(object sender, EventArgs e)
         {
             this.Close();

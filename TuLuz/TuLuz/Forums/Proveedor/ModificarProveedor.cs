@@ -26,9 +26,7 @@ namespace TuLuz.Forums.Clientes
         public ModificarProveedor()
         {
             InitializeComponent();
-            CerrarPanel();
-           
-            
+            CerrarPanel(); 
         }
          private void CerrarPanel ()
         {
@@ -109,7 +107,6 @@ namespace TuLuz.Forums.Clientes
         {
             txt_BuscarCuit.Text = "";
         }
-
         private void btn_Aceptar_Click(object sender, EventArgs e)
         {
             TratamientosEspeciales tratamiento = new TratamientosEspeciales();
@@ -123,10 +120,8 @@ namespace TuLuz.Forums.Clientes
 
                 Proveedor.Modificar(_EC);
                 Panel_ModificarProveedor.Visible = false;
-            }
-            
+            } 
         }
-
         private void btn_salir_Click(object sender, EventArgs e)
         {
             this.Close();

@@ -15,9 +15,6 @@ namespace TuLuz.Forums
 {
     public partial class Cotizaciones : Form
     {
-
-
-        Be_BaseDatos _BD = new Be_BaseDatos();
         Ng_Cotizaciones Cotizacion = new Ng_Cotizaciones();
         Ng_Empleados Empleados = new Ng_Empleados();
         Ng_Clientes Clientes = new Ng_Clientes();
@@ -35,71 +32,7 @@ namespace TuLuz.Forums
             cmb_Estado.Cargar(EstadosCot.EstructuraCombo());
             groupBox1.Visible = false;
         }
-
-        //BOTON MODIFICAR....
-        //private void btn_cancelar_Click(object sender, EventArgs e)
-        //{
-        //    TratamientosEspeciales tratamiento = new TratamientosEspeciales();
-        //    Es_Cotizaciones _Ec = new Es_Cotizaciones();
-        //    if (tratamiento.validar(this.Controls) == TratamientosEspeciales.Validacion.correcta)
-        //    {
-        //        DataTable tabla = new DataTable();
-        //        tabla = Cotizacion.Buscar_Cotizcion(txt_numeroCotizacion.Text);
-        //        _Ec.numeroCotizacicon = txt_numeroCotizacion.Text;
-        //        _Ec.año = txt_Año.Text;
-        //        _Ec.cuitCliente = cmb_cliente.SelectedValue.ToString();
-        //        _Ec.numDocVendedor = cmb_Vendedor.SelectedValue.ToString();
-        //        _Ec.codEstadoCotizacion = cmb_Estado.SelectedValue.ToString();
-        //        _Ec.nombreSolicitante = txt_nombreSolicitante.Text;
-        //        _Ec.tipoDocVendedor = tabla.Rows[0]["tipoDocVendedor"].ToString();
-        //        _Ec.apellidoSolicitante = txt_ApellidoSolicitante.Text;
-        //        _Ec.observaciones = txt_Observaciones.Text;
-        //        _Ec.fecha = cmb_Dia.SelectedItem.ToString() + "/" + cmb_Mes.SelectedItem.ToString() + "/" + txt_Año2.Text;
-        //        _Ec.precioTotal = txt_Precio.Text;
-        //        _Ec.motivoPerdida = txt_motivoPerdida.Text;
-        //        _Ec.nomCompetidor = txt_Competidor.Text;
-        //        Cotizacion.Modificar(_Ec);
-        //        Cargar_grilla(Cotizacion.Todas_Las_Cotizciones());
-
-        //    }
-        //}
-        //private void btn_aceptar_Click(object sender, EventArgs e)
-        //{
-        //    //TratamientosEspeciales tratamiento = new TratamientosEspeciales();
-        //    //DataTable Verificacion = new DataTable();
-
-        //    //if (tratamiento.validar(this.Controls) == TratamientosEspeciales.Validacion.correcta)
-        //    //{
-        //    //    _Ec.numeroCotizacicon = txt_numeroCotizacion.Text;
-        //    //    _Ec.año = txt_Año.Text;
-        //    //    _Ec.cuitCliente = cmb_cliente.SelectedValue.ToString();
-        //    //    _Ec.numDocVendedor = cmb_Vendedor.SelectedValue.ToString();
-        //    //    _Ec.codEstadoCotizacion = cmb_Estado.SelectedValue.ToString();
-        //    //    _Ec.nombreSolicitante = txt_nombreSolicitante.Text;
-        //    //    _Ec.apellidoSolicitante = txt_ApellidoSolicitante.Text;
-        //    //    _Ec.observaciones = txt_Observaciones.Text;
-        //    //    _Ec.fecha = cmb_Dia.SelectedItem.ToString() + "/" + cmb_Mes.SelectedItem.ToString() + "/" + txt_Año2.Text;
-        //    //    _Ec.precioTotal = txt_Precio.Text;
-        //    //    _Ec.motivoPerdida = txt_motivoPerdida.Text;
-        //    //    _Ec.nomCompetidor = txt_Competidor.Text;
-        //    //    Verificacion = Cotizacion.Buscar_Cotizcion(_Ec.numeroCotizacicon);
-        //    //    if (Verificacion.Rows.Count > 0)
-        //    //    {
-
-        //    //        MessageBox.Show("La cotizacion que desea insertar ya existe. ", "ATENCION");
-
-        //    //    }
-        //    //    else
-        //    //    {
-        //    //        Cotizacion.Insertar(_Ec);
-        //    //        Cargar_grilla(Cotizacion.Todas_Las_Cotizciones());
-        //    //    }
-
-        //    //}
-        //}
-
-
-        private void brn_Load(object sender, EventArgs e)
+        private void Cotizaciones_Load(object sender, EventArgs e)
         {
             Cotizacion.IniciarTransaccion();
             Cargar_grilla(Cotizacion.Todas_Las_Cotizciones());
@@ -126,8 +59,8 @@ namespace TuLuz.Forums
 
             solicita.Enabled = false;
 
-            btn_aceptar.Visible = false;
-            btn_guardar.Visible = false;
+            btn_aceptar_cotizacion.Visible = false;
+            btn_guardar_cotizacion.Visible = false;
         }
         private void Cargar_grilla(DataTable tabla)
         {
@@ -141,10 +74,8 @@ namespace TuLuz.Forums
                 grid01.Rows[i].Cells[3].Value = tabla.Rows[i]["numDocVendedor"].ToString();
                 grid01.Rows[i].Cells[4].Value = tabla.Rows[i]["codEstadoCotizacion"].ToString();
                 grid01.Rows[i].Cells[5].Value = tabla.Rows[i]["precioTotal"].ToString();
-
             }
         }
-
         private void solicita_CheckedChanged(object sender, EventArgs e)
         {
             if (solicita.Checked == true)
@@ -169,7 +100,6 @@ namespace TuLuz.Forums
                 txt_ApellidoSolicitante.Enabled = true;
             }
         }
-
         private void txt_Año_TextChanged(object sender, EventArgs e)
         {
             txt_Año2.Text = txt_Año.Text;
@@ -187,10 +117,7 @@ namespace TuLuz.Forums
                 Vendedor = Empleados.Buscar_Empleados(cmb_Vendedor.SelectedValue.ToString());
                 _Ec.tipoDocVendedor = Vendedor.Rows[0]["tipoDoc"].ToString();
             }
-
         }
-
-
 
         private void cmb_Mes_SelectedIndexChanged(object sender, EventArgs e)
         {
@@ -222,9 +149,7 @@ namespace TuLuz.Forums
                         cmb_Dia.Items.Add(i);
                     }
                 }
-
             }
-
         }
 
         private void cmb_Estado_SelectedIndexChanged(object sender, EventArgs e)
@@ -245,7 +170,6 @@ namespace TuLuz.Forums
                 }
             }
         }
-
         private void txt_numeroCotizacion_KeyPress(object sender, KeyPressEventArgs e)
         {
             if (!char.IsControl(e.KeyChar) && !char.IsDigit(e.KeyChar))
@@ -253,7 +177,6 @@ namespace TuLuz.Forums
                 e.Handled = true;
             }
         }
-
         private void txt_Año_KeyPress(object sender, KeyPressEventArgs e)
         {
             if (!char.IsControl(e.KeyChar) && !char.IsDigit(e.KeyChar))
@@ -269,7 +192,6 @@ namespace TuLuz.Forums
                 e.Handled = true;
             }
         }
-
         private void btn_ingresar_cotizacion_Click(object sender, EventArgs e)
         {
             txt_ApellidoSolicitante.Enabled = true;
@@ -300,10 +222,9 @@ namespace TuLuz.Forums
 
             solicita.Enabled = true;
 
-            btn_aceptar.Visible = true;
-            btn_guardar.Visible = false;
+            btn_aceptar_cotizacion.Visible = true;
+            btn_guardar_cotizacion.Visible = false;
         }
-
         private void grid01_CellDoubleClick(object sender, DataGridViewCellEventArgs e)
         {
             txt_ApellidoSolicitante.Enabled = true;
@@ -352,28 +273,14 @@ namespace TuLuz.Forums
             txt_Competidor.Text = tabla.Rows[0]["nomCompetidor"].ToString();
             txt_Observaciones.Text = tabla.Rows[0]["observaciones"].ToString();
 
-            btn_guardar.Visible = true;
-            btn_aceptar.Visible = false;
+            btn_guardar_cotizacion.Visible = true;
+            btn_aceptar_cotizacion.Visible = false;
         }
 
-        private void button1_Click(object sender, EventArgs e)
+
+        private void btn_guardar_cotizacion_Click(object sender, EventArgs e)
         {
-            Cotizacion.CerrarTransaccion();
-            this.Close();
-        }
-
-        private void grid01_CellContentClick(object sender, DataGridViewCellEventArgs e)
-        {
-
-        }
-
-        private void cmb_Dia_SelectedIndexChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void button2_Click(object sender, EventArgs e)
-        {
+            
             TratamientosEspeciales tratamiento = new TratamientosEspeciales();
             Es_Cotizaciones _Ec = new Es_Cotizaciones();
             if (tratamiento.validar(this.Controls) == TratamientosEspeciales.Validacion.correcta)
@@ -398,7 +305,7 @@ namespace TuLuz.Forums
             }
         }
 
-        private void button3_Click(object sender, EventArgs e)
+        private void btn_aceptar_cotizacion_Click(object sender, EventArgs e)
         {
             TratamientosEspeciales tratamiento = new TratamientosEspeciales();
             DataTable Verificacion = new DataTable();
@@ -429,8 +336,18 @@ namespace TuLuz.Forums
                     Cotizacion.Insertar(_Ec);
                     Cargar_grilla(Cotizacion.Todas_Las_Cotizciones());
                 }
-
             }
+        }
+
+        private void btn_salir_Click(object sender, EventArgs e)
+        {
+            Cotizacion.CerrarTransaccion();
+            this.Close();
+        }
+
+        private void grid01_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
         }
     }
 }

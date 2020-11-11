@@ -26,13 +26,11 @@ namespace TuLuz.Negocio
             {
                 //decir que no existe ningun usaurio
                 return Respuesta.validacion_Fallida;
-
             }
             else
             {
                 //decir que si existe
                 return Respuesta.validacion_Correcta;
-
             }
         }
         public void Insertar(Es_Usuario usuario)
@@ -41,8 +39,6 @@ namespace TuLuz.Negocio
             String sqlInsertar = "INSERT INTO Usuario (usuario, password, numDocEmpleado) VALUES('" + usuario.usuario + "','" + usuario.password + "'," + usuario.numDocEmpleado + ")";
            
             BaseDatos.Insertar(sqlInsertar);
-
         }
-
     }
 }

@@ -43,7 +43,6 @@
             this.rv_VendedoresXCotizaciones.ServerReport.BearerToken = null;
             this.rv_VendedoresXCotizaciones.Size = new System.Drawing.Size(905, 368);
             this.rv_VendedoresXCotizaciones.TabIndex = 20;
-            this.rv_VendedoresXCotizaciones.Load += new System.EventHandler(this.reportViewer1_Load);
             // 
             // btn_Buscar
             // 
@@ -84,7 +83,6 @@
             this.Name = "Estadistica_VendedoresXCotizaciones";
             this.Text = "Estadistica_VendedoresXCotizaciones";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
-            this.Load += new System.EventHandler(this.Estadistica_VendedoresXCotizaciones_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 

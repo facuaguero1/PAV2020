@@ -27,15 +27,7 @@ namespace TuLuz.Forums
             InitializeComponent();
             cmb_Proveedor.Cargar(Proveedor.EstructuraCombo());
             cmb_Producto.Cargar(Producto.EstructuraCombo());
-
         }
-
-        private void btn_cancelar_Click(object sender, EventArgs e)
-        {
-            Detalle.Borrar(txt_codProd.Text);
-            this.Close();
-        }
-
         private void btn_aceptar_Click(object sender, EventArgs e)
         {
             this.Close();
@@ -45,59 +37,13 @@ namespace TuLuz.Forums
         {
             this.Close();
         }
-
-        //private void btn_limpiar_campo_Click(object sender, EventArgs e)
-        //{
-        //    cmb_Tipo_Doc_Jefe.SelectedIndex = -1;
-        //}
-
         private void brn_Load(object sender, EventArgs e)
         {
             grp_detalle.Visible = false;
             cmb_Componente.Cargar(Producto.EstructuraCombo());
             grdDetalle.Rows.Clear();
             cmb_Producto.SelectedIndex = -1;
-
-            
-
         }
-        private void button1_Click(object sender, EventArgs e)
-        {
-            if (grp_detalle.Visible == true)
-            {
-                grp_detalle.Visible = false;
-            }
-            else
-            {
-                grp_detalle.Visible = true;
-            }
-        }
-
-        private void label2_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void grp_usr_Enter(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label11_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label2_Click_1(object sender, EventArgs e)
-        {
-
-        }
-
-        private void chk_usr_CheckedChanged(object sender, EventArgs e)
-        {
-
-        }
-
         private void Cargar_grilla(DataTable tabla)
         {
             grdDetalle.Rows.Clear();
@@ -108,10 +54,8 @@ namespace TuLuz.Forums
                 grdDetalle.Rows[i].Cells[1].Value = tabla.Rows[i]["codProductoComponente"].ToString();
                 grdDetalle.Rows[i].Cells[2].Value = tabla.Rows[i]["cantidad"].ToString();
                 grdDetalle.Rows[i].Cells[3].Value = tabla.Rows[i]["Precio"].ToString();
-
             }
         }
-
         private void button1_Click_1(object sender, EventArgs e)
         {
             DataTable Consulta = new DataTable();
@@ -133,19 +77,17 @@ namespace TuLuz.Forums
             {
                 MessageBox.Show("Primero debe crear al producto", "Atencion");
             }
-
-
         }
-
         private void checkBox2_CheckedChanged(object sender, EventArgs e)
         {
-   
-        if (checkBox2.Checked == true)
+
+            if (checkBox2.Checked == true)
+            {
                 if (txt_codProd.Text == "")
                 {
                     checkBox2.Checked = false;
                     MessageBox.Show("Primero debe insertar el codigo del Producto a agregar", "Atencion");
-                    
+
                 }
                 else
                 {
@@ -162,20 +104,17 @@ namespace TuLuz.Forums
                     button2.Enabled = false;
 
                 }
+            } 
             else
             {
-
                 grp_detalle.Visible = false;
                 txt_codProd.Enabled = true;
-
             }
         }
-
         private void button2_Click(object sender, EventArgs e)
         {
             cmb_Producto.SelectedIndex = -1;
         }
-
         private void btn_crearProducto_Click(object sender, EventArgs e)
         {
 
@@ -203,9 +142,7 @@ namespace TuLuz.Forums
                 Verificacion = Producto.Buscar_ProductoPorCodigo(_Ee.codProducto);
                 if (Verificacion.Rows.Count > 0)
                 {
-
                     MessageBox.Show("El Producto que desea insertar ya existe. ", "ATENCION");
-
                 }
                 else
                 {
@@ -220,18 +157,8 @@ namespace TuLuz.Forums
                     button2.Enabled = false;
                     checkBox2.Checked = true;
                 }
-
-                
             }
-
-
         }
-
-        private void comboBox011_SelectedIndexChanged(object sender, EventArgs e)
-        {
-
-        }
-
         private void txt_codProd_KeyPress(object sender, KeyPressEventArgs e)
         {
             if (!char.IsControl(e.KeyChar) && !char.IsDigit(e.KeyChar))
@@ -239,7 +166,6 @@ namespace TuLuz.Forums
                 e.Handled = true;
             }
         }
-
         private void txt_Precio_KeyPress(object sender, KeyPressEventArgs e)
         {
             if (!char.IsControl(e.KeyChar) && !char.IsDigit(e.KeyChar))
@@ -247,7 +173,6 @@ namespace TuLuz.Forums
                 e.Handled = true;
             }
         }
-
         private void txt_Stock_KeyPress(object sender, KeyPressEventArgs e)
         {
             if (!char.IsControl(e.KeyChar) && !char.IsDigit(e.KeyChar))
@@ -255,7 +180,6 @@ namespace TuLuz.Forums
                 e.Handled = true;
             }
         }
-
         private void txt_CantComp_KeyPress(object sender, KeyPressEventArgs e)
         {
             if (!char.IsControl(e.KeyChar) && !char.IsDigit(e.KeyChar))
@@ -263,7 +187,6 @@ namespace TuLuz.Forums
                 e.Handled = true;
             }
         }
-
         private void txt_CantComp_TextChanged(object sender, EventArgs e)
         {
             int precio = Producto.cuantoVale(cmb_Componente.SelectedValue.ToString());
@@ -274,8 +197,7 @@ namespace TuLuz.Forums
             else
             {
                 txt_Subtotal.Text = (int.Parse(txt_CantComp.Text) * precio).ToString();
-            }
-            
+            }   
         }
     }
 }

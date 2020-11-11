@@ -56,7 +56,7 @@
             this.Column3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column5 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.button1 = new System.Windows.Forms.Button();
+            this.btn_salir = new System.Windows.Forms.Button();
             this.btn_guardar = new System.Windows.Forms.Button();
             this.btn_NuevoPedido = new System.Windows.Forms.Button();
             this.grd_Detalles = new System.Windows.Forms.DataGridView();
@@ -67,7 +67,7 @@
             this.dataGridViewTextBoxColumn3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Detalles = new System.Windows.Forms.Label();
-            this.button2 = new System.Windows.Forms.Button();
+            this.btn_ingresar_nuevo_pedido = new System.Windows.Forms.Button();
             this.btn_NuevoDetalle = new System.Windows.Forms.Button();
             this.cmb_Año = new System.Windows.Forms.ComboBox();
             this.cmb_Cotizaciones = new TuLuz.Clases.ComboBox01();
@@ -410,19 +410,19 @@
             this.Column5.ReadOnly = true;
             this.Column5.Width = 150;
             // 
-            // button1
+            // btn_salir
             // 
-            this.button1.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.button1.BackgroundImage = global::TuLuz.Properties.Resources._4115235_exit_logout_sign_out_114030;
-            this.button1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.button1.FlatAppearance.BorderSize = 0;
-            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button1.Location = new System.Drawing.Point(1121, 12);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(79, 59);
-            this.button1.TabIndex = 49;
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
+            this.btn_salir.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.btn_salir.BackgroundImage = global::TuLuz.Properties.Resources._4115235_exit_logout_sign_out_114030;
+            this.btn_salir.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btn_salir.FlatAppearance.BorderSize = 0;
+            this.btn_salir.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_salir.Location = new System.Drawing.Point(1121, 12);
+            this.btn_salir.Name = "btn_salir";
+            this.btn_salir.Size = new System.Drawing.Size(79, 59);
+            this.btn_salir.TabIndex = 49;
+            this.btn_salir.UseVisualStyleBackColor = true;
+            this.btn_salir.Click += new System.EventHandler(this.btn_salir_Click);
             // 
             // btn_guardar
             // 
@@ -436,7 +436,7 @@
             this.btn_guardar.Size = new System.Drawing.Size(70, 58);
             this.btn_guardar.TabIndex = 14;
             this.btn_guardar.UseVisualStyleBackColor = true;
-            this.btn_guardar.Click += new System.EventHandler(this.btn_cancelar_Click);
+            this.btn_guardar.Click += new System.EventHandler(this.btn_guardar_Click);
             // 
             // btn_NuevoPedido
             // 
@@ -521,17 +521,17 @@
             this.Detalles.TabIndex = 52;
             this.Detalles.Text = "Detalles";
             // 
-            // button2
+            // btn_ingresar_nuevo_pedido
             // 
-            this.button2.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button2.Location = new System.Drawing.Point(113, 336);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(561, 48);
-            this.button2.TabIndex = 53;
-            this.button2.Text = "INGRESAR NUEVO PEDIDO";
-            this.button2.UseVisualStyleBackColor = true;
-            this.button2.Click += new System.EventHandler(this.button2_Click);
+            this.btn_ingresar_nuevo_pedido.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.btn_ingresar_nuevo_pedido.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_ingresar_nuevo_pedido.Location = new System.Drawing.Point(113, 336);
+            this.btn_ingresar_nuevo_pedido.Name = "btn_ingresar_nuevo_pedido";
+            this.btn_ingresar_nuevo_pedido.Size = new System.Drawing.Size(561, 48);
+            this.btn_ingresar_nuevo_pedido.TabIndex = 53;
+            this.btn_ingresar_nuevo_pedido.Text = "INGRESAR NUEVO PEDIDO";
+            this.btn_ingresar_nuevo_pedido.UseVisualStyleBackColor = true;
+            this.btn_ingresar_nuevo_pedido.Click += new System.EventHandler(this.btn_ingresar_nuevo_pedido_Click);
             // 
             // btn_NuevoDetalle
             // 
@@ -681,10 +681,10 @@
             this.Controls.Add(this.cmb_Cotizaciones);
             this.Controls.Add(this.txt_CondicionPago);
             this.Controls.Add(this.btn_NuevoDetalle);
-            this.Controls.Add(this.button2);
+            this.Controls.Add(this.btn_ingresar_nuevo_pedido);
             this.Controls.Add(this.Detalles);
             this.Controls.Add(this.grd_Detalles);
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.btn_salir);
             this.Controls.Add(this.grd_Pedidos);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.cmb_Mes);
@@ -711,7 +711,7 @@
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
             this.Text = "Datos de Usuario";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
-            this.Load += new System.EventHandler(this.brn_Load);
+            this.Load += new System.EventHandler(this.Pedidos_Load);
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.grd_Pedidos)).EndInit();
@@ -750,7 +750,7 @@
         private System.Windows.Forms.ComboBox cmb_Mes;
         private System.Windows.Forms.GroupBox groupBox1;
         private System.Windows.Forms.DataGridView grd_Pedidos;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button btn_salir;
         private System.Windows.Forms.DataGridView grd_Detalles;
         private System.Windows.Forms.Label Detalles;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column1;
@@ -758,7 +758,7 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn Column3;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column4;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column5;
-        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Button btn_ingresar_nuevo_pedido;
         private System.Windows.Forms.Button btn_NuevoDetalle;
         private Clases.TextBox01 txt_CondicionPago;
         private Clases.ComboBox01 cmb_Cotizaciones;

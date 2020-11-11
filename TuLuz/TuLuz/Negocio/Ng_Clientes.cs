@@ -15,17 +15,11 @@ namespace TuLuz.Negocio
     {
         Be_BaseDatos _BD = new Be_BaseDatos();
 
-        //public void Insertar(Control.ControlCollection controles)
-        //{
-        //    _BD.InsertarAutomatizado("Cliente", controles);
-        //}
-
         public void Insertar(Es_Clientes Cliente)
         {
             String sqlInsertar = "INSERT INTO Cliente(cuitCliente,nombre,apellido,activo) VALUES(" + Cliente.cuitCliente + ",'" + Cliente.nombre + "','" + Cliente.apellido + "','" + Cliente.activo +"')";
             MessageBox.Show("El Cliente fue registrado con exito!", "REGISTRACION EXITOSA", MessageBoxButtons.OK, MessageBoxIcon.Information);
             _BD.Insertar(sqlInsertar);
-
         }
 
         public DataTable Todos_los_ClientesActivos()
@@ -69,7 +63,6 @@ namespace TuLuz.Negocio
             tabla = _BD.Consulta(sql);
             return tabla;
         }
-
         public DataTable Buscar_ClienteMasBajos(string cuit)
         {
             string sql = "SELECT * FROM Cliente WHERE cuitCliente like '%" + cuit.Trim() + "%' ";
@@ -77,7 +70,6 @@ namespace TuLuz.Negocio
             tabla = _BD.Consulta(sql);
             return tabla;
         }
-
         public int ContarPedidosDelCliente(string cuit) {
             DataTable Pedidos = new DataTable();
             Pedidos = _BD.Consulta("SELECT Pedidos.* FROM Cliente, Pedidos WHERE "+ cuit +" = Pedidos.cuitCliente");
@@ -89,13 +81,11 @@ namespace TuLuz.Negocio
             Cotizaciones = _BD.Consulta("SELECT Cotizaciones.* FROM Cliente, Cotizaciones WHERE " + cuit + " = Cotizaciones.cuitCliente");
             return Cotizaciones.Rows.Count;
         }
-
         public void DarBaja(string cuit)
         {
             string sqlUpdate = "UPDATE Cliente SET activo = 'false' WHERE cuitCliente = '"+ cuit+"'";
             _BD.Modificar(sqlUpdate);
         }
-
         public void Modificar (Es_Clientes datos)
         {
             string sqlUpdate = "UPDATE Cliente SET ";
@@ -106,7 +96,6 @@ namespace TuLuz.Negocio
 
             MessageBox.Show("El cliente fue modificado con exito!", "MODIFICACIÓN EXITOSA", MessageBoxButtons.OK, MessageBoxIcon.Information);
             _BD.Modificar(sqlUpdate);
-            
         }
         public void Borrar(string cuit)
         {
@@ -114,7 +103,6 @@ namespace TuLuz.Negocio
             MessageBox.Show("El cliente fue eliminado con exito!", "ELIMINACIÓN EXITOSA", MessageBoxButtons.OK, MessageBoxIcon.Information);
             _BD.Borrar(sqlDelete);
         }
-
         public EstructuraComboBox EstructuraCombo()
         {
             EstructuraComboBox EC = new EstructuraComboBox();
@@ -124,7 +112,6 @@ namespace TuLuz.Negocio
             EC.Tabla = _BD.Consulta(EC.Sql);
             return EC;
         }
-
         public EstructuraComboBox EstructuraComboxListado()
         {
             EstructuraComboBox EC = new EstructuraComboBox();
@@ -135,5 +122,4 @@ namespace TuLuz.Negocio
             return EC;
         }
     }
-    
 }

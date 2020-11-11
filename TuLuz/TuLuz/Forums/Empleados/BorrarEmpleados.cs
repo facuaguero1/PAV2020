@@ -20,7 +20,6 @@ namespace TuLuz.Forums.Clientes
 {
     public partial class BorrarEmpleados : Form
     {
-        Ng_Localidad Localidad = new Ng_Localidad();
         Ng_Barrios Barrio = new Ng_Barrios();
         Ng_Empleados Empleados = new Ng_Empleados();
         Ng_Tipo_Documentos TipoDoc = new Ng_Tipo_Documentos();
@@ -32,7 +31,6 @@ namespace TuLuz.Forums.Clientes
             InitializeComponent();
             CerrarPanel();
             cmb_barrio.Cargar(Barrio.EstructuraCombo());
-
         }
          private void CerrarPanel ()
         {
@@ -48,7 +46,6 @@ namespace TuLuz.Forums.Clientes
             }
             else
             {
-                
                 Panel_BorrarEmpleado.Visible = true;
                 this.Doc = grid01.CurrentRow.Cells[0].Value.ToString();
                 DataTable tabla = new DataTable();
@@ -77,12 +74,10 @@ namespace TuLuz.Forums.Clientes
                 }
             }
         }
-
         private void btn_Cancelar_Click(object sender, EventArgs e)
         {
             CerrarPanel();
         }
-
         private void btn_Buscar_Click(object sender, EventArgs e)
         {
             if (chk_Todos.Checked==true)
@@ -143,27 +138,6 @@ namespace TuLuz.Forums.Clientes
         {
             this.Close();
         }
-
-        private void label10_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label9_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void cmbLocalidades_SelectedIndexChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void btn_limpiarr_Click(object sender, EventArgs e)
-        {
-           cmb_TipoDocJefe.SelectedIndex = -1;
-        }
-
         private void txt_BuscarDoc_KeyPress(object sender, KeyPressEventArgs e)
         {
             if (!char.IsControl(e.KeyChar) && !char.IsDigit(e.KeyChar))

@@ -65,7 +65,6 @@ namespace TuLuz.Forums
             }
            
         }
-
         private void btn_aceptar_Click(object sender, EventArgs e)
         {
             this.Close();
@@ -76,16 +75,5 @@ namespace TuLuz.Forums
             groupJefe.Visible = false;
             Cargar();
         }
-
-        private void label8_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label6_Click(object sender, EventArgs e)
-        {
-
-        }
     }
-    
 }

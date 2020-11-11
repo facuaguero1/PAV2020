@@ -35,21 +35,6 @@ namespace TuLuz.Negocio
             tabla = _BD.Consulta(sql);
             return tabla;
         }
-        public DataTable Buscar_TipoDoc_Nombre(string nom)
-        {
-            string sql = "SELECT * FROM TiposDoc WHERE nombre like '%" + nom.Trim() + "%'";
-            DataTable tabla = new DataTable();
-            tabla = _BD.Consulta(sql);
-            return tabla;
-        }
-        public DataTable Recuperar_Tipo_Doc_Codigo(string cod)
-        {
-            return _BD.Consulta("SELECT * FROM TiposDoc WHERE idTIpoDoc = " + cod);
-        }
-        public DataTable Recuperar_Tipo_Doc_Nombre(string nom)
-        {
-            return _BD.Consulta("SELECT * FROM TiposDoc WHERE nombre like '%" + nom + "%'");
-        }
         public void Modificar(Es_TipoDocs datos)
         {
             string sqlUpdate = "UPDATE TiposDoc SET ";

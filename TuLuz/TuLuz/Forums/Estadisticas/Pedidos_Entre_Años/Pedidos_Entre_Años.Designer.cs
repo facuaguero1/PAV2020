@@ -120,7 +120,6 @@
             this.Controls.Add(this.label1);
             this.Name = "Pedidos_Entre_Años";
             this.Text = "Pedidos_Entre_Años";
-            this.Load += new System.EventHandler(this.Pedidos_Entre_Años_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 

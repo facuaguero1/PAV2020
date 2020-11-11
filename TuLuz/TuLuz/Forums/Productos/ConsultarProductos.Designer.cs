@@ -389,7 +389,6 @@
             this.label12.Size = new System.Drawing.Size(53, 20);
             this.label12.TabIndex = 20;
             this.label12.Text = "Precio";
-            this.label12.Click += new System.EventHandler(this.label12_Click);
             // 
             // txt_precio
             // 
@@ -437,7 +436,6 @@
             this.label11.Size = new System.Drawing.Size(84, 20);
             this.label11.TabIndex = 15;
             this.label11.Text = "CantStock";
-            this.label11.Click += new System.EventHandler(this.label11_Click);
             // 
             // txt_codProductoEq
             // 

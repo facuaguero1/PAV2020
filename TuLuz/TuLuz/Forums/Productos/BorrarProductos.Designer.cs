@@ -381,7 +381,6 @@
             this.label11.Size = new System.Drawing.Size(53, 20);
             this.label11.TabIndex = 15;
             this.label11.Text = "Precio";
-            this.label11.Click += new System.EventHandler(this.label11_Click);
             // 
             // label10
             // 
@@ -393,7 +392,6 @@
             this.label10.Size = new System.Drawing.Size(466, 69);
             this.label10.TabIndex = 8;
             this.label10.Text = "Borrar Producto";
-            this.label10.Click += new System.EventHandler(this.label10_Click);
             // 
             // btn_Aceptar
             // 
@@ -427,7 +425,6 @@
             this.label9.Size = new System.Drawing.Size(92, 20);
             this.label9.TabIndex = 5;
             this.label9.Text = "Descripcion";
-            this.label9.Click += new System.EventHandler(this.label9_Click);
             // 
             // label8
             // 
@@ -587,7 +584,6 @@
             this.cmb_cuitProveedor.pp_Value = null;
             this.cmb_cuitProveedor.Size = new System.Drawing.Size(208, 26);
             this.cmb_cuitProveedor.TabIndex = 9;
-            this.cmb_cuitProveedor.SelectedIndexChanged += new System.EventHandler(this.cmbLocalidades_SelectedIndexChanged);
             // 
             // txt_precio
             // 

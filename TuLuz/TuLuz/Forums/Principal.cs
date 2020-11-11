@@ -34,7 +34,6 @@ namespace TuLuz
             InitializeComponent();
             PersonalizarDiseño();
         }
-
         private void PersonalizarDiseño()
         {
             Panel_Barrios.Visible = false;
@@ -50,7 +49,6 @@ namespace TuLuz
             Panel_Estadisticas.Visible = false;
             panelUsuario.Visible = false;
         }
-
         private void OcultarMenu()
         {
             if (Panel_Barrios.Visible == true)
@@ -164,11 +162,6 @@ namespace TuLuz
         }
         #endregion
 
-        private void btn_Salir_Click(object sender, EventArgs e)
-        {
-            this.Close();
-        }
-
         private void btn_Exit_Click(object sender, EventArgs e)
         {
             this.Close();
@@ -249,17 +242,9 @@ namespace TuLuz
         }
 
         private void perfil_Click(object sender, EventArgs e)
-        {
-            
+        {   
             AbrirFormularioSubMenu(new VerPerfil(nomEmpleadoLog.Text));
-
         }
-
-        private void Panel_Centro_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
-
         private void btn_RegistrarEmpleados_Click(object sender, EventArgs e)
         {
             AbrirFormularioSubMenu(new AltaEmpleados());

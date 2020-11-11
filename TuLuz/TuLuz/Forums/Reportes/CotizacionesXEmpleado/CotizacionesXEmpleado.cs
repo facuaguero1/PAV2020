@@ -18,37 +18,26 @@ namespace TuLuz.Forums
     {
         Ng_Cotizaciones Cotizaciones = new Ng_Cotizaciones();
         Ng_Empleados Empleados = new Ng_Empleados();
-
         public CotizacionesXEmpleados()
         {
             InitializeComponent();
         }
-
         private void btn_salir_Click(object sender, EventArgs e)
         {
             this.Close();
         }
-
-        private void AltaBarrio_Load(object sender, EventArgs e)
+        private void CotizacionesXEmpleados_Load(object sender, EventArgs e)
         {
             cmb_Empleados.Cargar(Empleados.EstructuraComboxListado());
             cmb_Empleados.SelectedIndex = -1;
             this.RVCotizacionesXEmpleados.RefreshReport();
         }
-        private void comboBox011_SelectedIndexChanged(object sender, EventArgs e)
-        {
-            if (cmb_Empleados.SelectedIndex == -1)
-            {
-                cmb_Empleados.Text = "Seleccionar.";
-            }
-            
-        }
 
-        private void button1_Click(object sender, EventArgs e)
+        private void btn_Buscar_Click(object sender, EventArgs e)
         {
             if (cmb_Empleados.SelectedIndex == -1)
             {
-                MessageBox.Show("No se selecciono ningun empleado","ATENCION");
+                MessageBox.Show("No se selecciono ningun empleado", "ATENCION");
             }
             else
             {
@@ -66,15 +55,12 @@ namespace TuLuz.Forums
 
             }
         }
-
-        private void RVPedidosXEmpleados_Load(object sender, EventArgs e)
+        private void cmb_Empleados_SelectedIndexChanged(object sender, EventArgs e)
         {
-
-        }
-
-        private void label1_Click(object sender, EventArgs e)
-        {
-
+            if (cmb_Empleados.SelectedIndex == -1)
+            {
+                cmb_Empleados.Text = "Seleccionar.";
+            }
         }
     }
 }       

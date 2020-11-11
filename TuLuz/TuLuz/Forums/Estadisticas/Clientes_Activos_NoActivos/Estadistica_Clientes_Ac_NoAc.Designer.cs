@@ -82,7 +82,7 @@
             this.Name = "Estadistica_Clientes_Ac_NoAc";
             this.Text = "Estadistica_Clientes_Ac_NoAC";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
-            this.Load += new System.EventHandler(this.Estadistica_Prod_ProdEq_Load);
+
             this.ResumeLayout(false);
             this.PerformLayout();
 

@@ -22,12 +22,6 @@ namespace TuLuz.Forums._Estadisticas.Prod_con_ProdEq
         {
             InitializeComponent();
         }
-
-        private void Estadistica_Prod_ProdEq_Load(object sender, EventArgs e)
-        {
-
-            this.RV_Clientes_AC_NAC.RefreshReport();
-        }
         private void CalcularEstadistica()
         {
             DataTable tabla2 = new DataTable();
@@ -40,7 +34,6 @@ namespace TuLuz.Forums._Estadisticas.Prod_con_ProdEq
             ReportParameter[] parametros = new ReportParameter[2];
             parametros[0] = new ReportParameter("RP01", "Grafico sobre los clientes activos y no activos");
             parametros[1] = new ReportParameter("RP02", "Fecha: " + DateTime.Today.Day.ToString() + "/" + DateTime.Today.Month.ToString() + "/" + DateTime.Today.Year.ToString());
-            //parametros[2] = new ReportParameter("RP03", Activos().ToString());
             RV_Clientes_AC_NAC.LocalReport.DataSources.Clear();
             RV_Clientes_AC_NAC.LocalReport.SetParameters(parametros);
             RV_Clientes_AC_NAC.LocalReport.DataSources.Add(Datos);
@@ -48,15 +41,6 @@ namespace TuLuz.Forums._Estadisticas.Prod_con_ProdEq
             RV_Clientes_AC_NAC.RefreshReport();
 
         }
-
-        //private double Activos()
-        //{
-        //    DataTable tablaAC = new DataTable();
-
-        //    tablaAC = clientes.Todos_los_ClientesActivos();
-        //    return tablaAC.Rows.Count;
-            
-        //}
         private void btn_Buscar_Click(object sender, EventArgs e)
         {
             CalcularEstadistica();

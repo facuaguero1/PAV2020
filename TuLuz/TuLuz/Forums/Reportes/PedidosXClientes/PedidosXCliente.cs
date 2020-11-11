@@ -42,10 +42,8 @@ namespace TuLuz.Forums.Reportes.PedidosXClientes
             {
                 cmb_Clientes.Text = "Seleccionar.";
             }
-
         }
-
-        private void button1_Click(object sender, EventArgs e)
+        private void btn_buscar_Click(object sender, EventArgs e)
         {
             if (cmb_Clientes.SelectedIndex == -1)
             {
@@ -67,6 +65,5 @@ namespace TuLuz.Forums.Reportes.PedidosXClientes
 
             }
         }
-
     }
 }

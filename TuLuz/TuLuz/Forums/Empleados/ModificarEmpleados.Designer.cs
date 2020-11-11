@@ -356,7 +356,6 @@
             this.label17.Size = new System.Drawing.Size(66, 25);
             this.label17.TabIndex = 24;
             this.label17.Text = "Activo";
-            this.label17.Click += new System.EventHandler(this.label17_Click);
             // 
             // cmb_activo
             // 
@@ -545,7 +544,6 @@
             this.cmb_barrio.pp_Value = null;
             this.cmb_barrio.Size = new System.Drawing.Size(208, 32);
             this.cmb_barrio.TabIndex = 9;
-            this.cmb_barrio.SelectedIndexChanged += new System.EventHandler(this.cmbLocalidades_SelectedIndexChanged);
             // 
             // label10
             // 
@@ -557,7 +555,6 @@
             this.label10.Size = new System.Drawing.Size(574, 69);
             this.label10.TabIndex = 8;
             this.label10.Text = "Modificar Empleado";
-            this.label10.Click += new System.EventHandler(this.label10_Click);
             // 
             // btn_Aceptar
             // 
@@ -590,7 +587,6 @@
             this.label9.Size = new System.Drawing.Size(81, 25);
             this.label9.TabIndex = 5;
             this.label9.Text = "Nombre";
-            this.label9.Click += new System.EventHandler(this.label9_Click);
             // 
             // label8
             // 

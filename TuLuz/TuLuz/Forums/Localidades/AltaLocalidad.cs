@@ -22,12 +22,10 @@ namespace TuLuz.Forums
         {
             InitializeComponent();
         }
-
         private void btn_cancelar_Click(object sender, EventArgs e)
         {
             this.Close();
         }
-
         private void btn_aceptar_Click(object sender, EventArgs e)
         {
             TratamientosEspeciales tratamiento = new TratamientosEspeciales();
@@ -42,9 +40,7 @@ namespace TuLuz.Forums
                 Verificacion = Localidad.Buscar_Localidad_Codigo(_EL.codLocalidad);
                 if (Verificacion.Rows.Count > 0)
                 {
-
                     MessageBox.Show("La Localidad que desea insertar ya existe. ", "ATENCION");
-
                 }
                 else
                 {
@@ -53,18 +49,15 @@ namespace TuLuz.Forums
                 }
             }
         }
-
         private void btn_salir_Click(object sender, EventArgs e)
         {
             this.Close();
         }
-
         private void AltaLocalidad_Load(object sender, EventArgs e)
         {
             cmb_provincia.Cargar(Provincia.EstructuraCombo());
             cmb_provincia.SelectedIndex = - 1;
         }
-
         private void txt_Cod_localidad_KeyPress(object sender, KeyPressEventArgs e)
         {
             if (!char.IsControl(e.KeyChar) && !char.IsDigit(e.KeyChar))
@@ -72,7 +65,6 @@ namespace TuLuz.Forums
                 e.Handled = true;
             }
         }
-
         private void cmb_provincia_Click(object sender, EventArgs e)
         {
             cmb_provincia.Cargar(Provincia.EstructuraCombo());
@@ -82,7 +74,6 @@ namespace TuLuz.Forums
         {
             AbrirFormularioSubMenu(new AltaProvincia());
         }
-
         public void AbrirFormularioSubMenu(Form FormularioSubMenu)
         {
             //this.SendToBack();      //si existe un formulario abierto, lo cerramos 

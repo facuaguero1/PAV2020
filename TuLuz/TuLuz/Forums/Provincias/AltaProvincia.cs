@@ -26,7 +26,6 @@ namespace TuLuz.Forums
         {
             this.Close();
         }
-
         private void btn_aceptar_Click(object sender, EventArgs e)
         {
             TratamientosEspeciales tratamiento = new TratamientosEspeciales();
@@ -40,9 +39,7 @@ namespace TuLuz.Forums
                 Verificacion = Provincias.Buscar_Provincia_Codigo(_Ep.codProvincia);
                 if (Verificacion.Rows.Count > 0)
                 {
-
                     MessageBox.Show("La provincia que desea insertar ya existe. ", "ATENCION");
-
                 }
                 else
                 {
@@ -56,12 +53,6 @@ namespace TuLuz.Forums
         {
             this.Close();
         }
-
-        private void AltaProvincia_Load(object sender, EventArgs e)
-        {
-
-        }
-
         private void txt_codProvincia_KeyPress(object sender, KeyPressEventArgs e)
         {
             if (!char.IsControl(e.KeyChar) && !char.IsDigit(e.KeyChar))

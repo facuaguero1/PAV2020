@@ -313,7 +313,6 @@
             this.label7.Size = new System.Drawing.Size(75, 25);
             this.label7.TabIndex = 3;
             this.label7.Text = "Codigo";
-            this.label7.Click += new System.EventHandler(this.label7_Click);
             // 
             // txt_NombreNuevo
             // 
@@ -391,7 +390,6 @@
             this.Name = "ConsultarProvincia";
             this.Text = "Consultar Barrio";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
-            this.Load += new System.EventHandler(this.ConsultarBarrio_Load);
             this.btn_limpiarCampo.ResumeLayout(false);
             this.btn_limpiarCampo.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.grid01)).EndInit();

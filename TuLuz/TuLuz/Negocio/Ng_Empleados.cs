@@ -13,18 +13,11 @@ namespace TuLuz.Negocio
     class Ng_Empleados
     {
         Be_BaseDatos _BD = new Be_BaseDatos();
-        //public void Insertar(Control.ControlCollection controles)
-        //{
-        //    _BD.InsertarAutomatizado("Empleados", controles);
-        //}
-
         public void Insertar(Es_Empleados Empleado)
         {
-
             String sqlInsertar = "INSERT INTO Empleados(tipoDoc, numDoc, nombre, apellido, direccion, codBarrio, telefono, tipoDocJefe, numDocJefe, activo) VALUES(" + Empleado.tipoDoc + "," + Empleado.numDoc + ",'" + Empleado.nombre + "','" + Empleado.apellido + "','" + Empleado.direccion + "'," + Empleado.codBarrio + ",'" + Empleado.telefono + "'," + Empleado.tipoDocJefe + "," + Empleado.numDocJefe + ",'" + Empleado.activo + "')";
             MessageBox.Show("El Empleado fue creado con exito!", "CREACIÓN EXITOSA", MessageBoxButtons.OK, MessageBoxIcon.Information);
             _BD.Insertar(sqlInsertar);
-
         }
 
         public DataTable Todos_los_Empleados()
@@ -33,9 +26,7 @@ namespace TuLuz.Negocio
             DataTable tabla = new DataTable();
             tabla = _BD.Consulta(sql);
             return tabla;
-
         }
-
         public DataTable Todos_los_Jefes_Y_Empleados()
         {
             string sql = "SELECT 'Jefes' as tipo, * from Empleados AS e1 "+
@@ -46,9 +37,7 @@ namespace TuLuz.Negocio
             DataTable tabla = new DataTable();
             tabla = _BD.Consulta(sql);
             return tabla;
-
         }
-
         public DataTable ContarJefesYEmpleados()
         {
             string sql = "SELECT 'Jefes' as tipo, COUNT(*) as cantidad from Empleados AS e1 " +
@@ -60,16 +49,6 @@ namespace TuLuz.Negocio
             tabla = _BD.Consulta(sql);
             return tabla;
         }
-
-        public DataTable Es_Empleado_Jefe_Supervisor()
-        {
-            string sql = "SELECT j.tipoDoc, j.numDoc, j.nombre, j.apellido, j. direccion , j.telefono FROM empleados e join empleados j ON (e.numDocJefe = j.numDoc)";
-            DataTable tabla = new DataTable();
-            tabla = _BD.Consulta(sql);
-            return tabla;
-
-        }
-
         public DataTable EsJefeS(string doc)
         {
             string sql = "SELECT * FROM empleados WHERE numDocJefe like " + doc.Trim();
@@ -77,8 +56,6 @@ namespace TuLuz.Negocio
             Tabla = _BD.Consulta(sql);
             return Tabla;
         }
-
-
         public DataTable Buscar_Empleados(string doc)
         {
             string sql = "SELECT * FROM empleados WHERE numDoc like '%" + doc.Trim() + "%'";
@@ -98,9 +75,6 @@ namespace TuLuz.Negocio
         {
             return _BD.Consulta("SELECT * FROM empleados WHERE numDoc = " + doc);
         }
-
-        //AGREGAR BIEN LOS DATOS FALTANTES A LA MODIFICACION Y BORRADO
-
         public void Modificar(Es_Empleados datos)
         {
             string sqlUpdate = "UPDATE Empleados SET ";
@@ -126,7 +100,6 @@ namespace TuLuz.Negocio
 
             MessageBox.Show("El Empleado fue modificado con exito!", "MODIFICACIÓN EXITOSA", MessageBoxButtons.OK, MessageBoxIcon.Information);
             _BD.Modificar(sqlUpdate);
-
         }
         public void Borrar(string Doc)
         {
@@ -147,7 +120,6 @@ namespace TuLuz.Negocio
             string sqlUpdate = "UPDATE Empleados SET activo = 'false' WHERE numDoc = '" + cuit + "'";
             _BD.Modificar(sqlUpdate);
         }
-
         public EstructuraComboBox EstructuraCombo()
         {
             EstructuraComboBox EC = new EstructuraComboBox();
@@ -173,7 +145,6 @@ namespace TuLuz.Negocio
             DataTable tabla = new DataTable();
             tabla = _BD.Consulta(sql);
             return tabla;
-
         }
     }
 }

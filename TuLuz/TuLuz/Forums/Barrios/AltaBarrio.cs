@@ -45,7 +45,6 @@ namespace TuLuz.Forums
                 {
                     
                     MessageBox.Show("El barrio que desea insertar ya existe. ", "ATENCION");
-
                 }
                 else
                 {
@@ -53,8 +52,6 @@ namespace TuLuz.Forums
                     this.Close();
                 }
             }
-           
-            
         }
 
         private void btn_salir_Click(object sender, EventArgs e)
@@ -82,7 +79,6 @@ namespace TuLuz.Forums
 
         public void AbrirFormularioSubMenu(Form FormularioSubMenu)
         {
-            //this.SendToBack();      //si existe un formulario abierto, lo cerramos 
             FormularioSubMenu.TopLevel = true;
             FormularioSubMenu.FormBorderStyle = FormBorderStyle.None;   //sin bordes
             FormularioSubMenu.Dock = DockStyle.Fill;    //para rellenar formulario en el centro
@@ -90,7 +86,6 @@ namespace TuLuz.Forums
             FormularioSubMenu.Show(); //ejecutar formulario
 
         }
-
         private void cmb_Localidad_Click(object sender, EventArgs e)
         {
             if (cmb_Provincia.SelectedIndex == -1)

@@ -30,7 +30,7 @@
         {
             this.btn_salir = new System.Windows.Forms.Button();
             this.rpv_CotizacionXEstado = new Microsoft.Reporting.WinForms.ReportViewer();
-            this.button2 = new System.Windows.Forms.Button();
+            this.btn_buscar = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
@@ -57,19 +57,19 @@
             this.rpv_CotizacionXEstado.Size = new System.Drawing.Size(905, 368);
             this.rpv_CotizacionXEstado.TabIndex = 10;
             // 
-            // button2
+            // btn_buscar
             // 
-            this.button2.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.button2.BackgroundImage = global::TuLuz.Properties.Resources.buscar;
-            this.button2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.button2.FlatAppearance.BorderSize = 0;
-            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button2.Location = new System.Drawing.Point(412, 72);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(62, 45);
-            this.button2.TabIndex = 12;
-            this.button2.UseVisualStyleBackColor = true;
-            this.button2.Click += new System.EventHandler(this.button2_Click_1);
+            this.btn_buscar.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.btn_buscar.BackgroundImage = global::TuLuz.Properties.Resources.buscar;
+            this.btn_buscar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btn_buscar.FlatAppearance.BorderSize = 0;
+            this.btn_buscar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_buscar.Location = new System.Drawing.Point(412, 72);
+            this.btn_buscar.Name = "btn_buscar";
+            this.btn_buscar.Size = new System.Drawing.Size(62, 45);
+            this.btn_buscar.TabIndex = 12;
+            this.btn_buscar.UseVisualStyleBackColor = true;
+            this.btn_buscar.Click += new System.EventHandler(this.btn_buscar_Click);
             // 
             // label1
             // 
@@ -90,13 +90,12 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(929, 545);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.button2);
+            this.Controls.Add(this.btn_buscar);
             this.Controls.Add(this.rpv_CotizacionXEstado);
             this.Controls.Add(this.btn_salir);
             this.Name = "CotizacionXEstado";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
-            this.Load += new System.EventHandler(this.AltaBarrio_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -105,7 +104,7 @@
         #endregion
         private System.Windows.Forms.Button btn_salir;
         private Microsoft.Reporting.WinForms.ReportViewer rpv_CotizacionXEstado;
-        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Button btn_buscar;
         private System.Windows.Forms.Label label1;
     }
 }

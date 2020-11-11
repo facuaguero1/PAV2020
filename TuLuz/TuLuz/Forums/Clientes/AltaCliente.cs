@@ -41,9 +41,7 @@ namespace TuLuz.Forums
                 Verificacion = Cliente.Buscar_ClienteMasBajos(_Ec.cuitCliente);
                 if (Verificacion.Rows.Count > 0)
                 {
-
                     MessageBox.Show("El Cliente que desea insertar ya existe. ", "ATENCION");
-
                 }
                 else
                 {
@@ -51,22 +49,10 @@ namespace TuLuz.Forums
                     this.Close();
                 }
             }
-           
         }
-
         private void btn_salir_Click(object sender, EventArgs e)
         {
             this.Close();
-        }
-
-        private void txt_ApellidoCliente_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void AltaCliente_Load(object sender, EventArgs e)
-        {
-
         }
     }
 }

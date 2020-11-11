@@ -24,18 +24,6 @@ namespace TuLuz.Forums.Estadisticas.VendedoresXCotizaciones
         {
             InitializeComponent();
         }
-
-        private void Estadistica_VendedoresXCotizaciones_Load(object sender, EventArgs e)
-        {
-
-            this.rv_VendedoresXCotizaciones.RefreshReport();
-        }
-
-        private void reportViewer1_Load(object sender, EventArgs e)
-        {
-
-        }
-
         private void CalcularEstadistica_VendedoresXCotizaciones()
         {
             DataTable tabla2 = new DataTable();

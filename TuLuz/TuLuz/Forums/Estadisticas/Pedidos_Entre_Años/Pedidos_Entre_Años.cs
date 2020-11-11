@@ -16,16 +16,10 @@ namespace TuLuz.Forums.Estadisticas.Pedidos_Entre_Años
 {
     public partial class Pedidos_Entre_Años : Form
     {
-        DataTable tabla = new DataTable();
         Ng_Pedidos pedidos = new Ng_Pedidos();
         public Pedidos_Entre_Años()
         {
             InitializeComponent();
-        }
-
-        private void Pedidos_Entre_Años_Load(object sender, EventArgs e)
-        {
-
         }
         private DataTable Buscar_X_Fecha()
         {

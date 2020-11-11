@@ -293,7 +293,6 @@
             this.label10.Size = new System.Drawing.Size(490, 69);
             this.label10.TabIndex = 8;
             this.label10.Text = "Modificar Detalle";
-            this.label10.Click += new System.EventHandler(this.label10_Click);
             // 
             // btn_Aceptar
             // 
@@ -326,7 +325,6 @@
             this.label9.Size = new System.Drawing.Size(91, 25);
             this.label9.TabIndex = 5;
             this.label9.Text = "Cantidad";
-            this.label9.Click += new System.EventHandler(this.label9_Click);
             // 
             // label8
             // 
@@ -337,7 +335,6 @@
             this.label8.Size = new System.Drawing.Size(125, 25);
             this.label8.TabIndex = 4;
             this.label8.Text = "Componente";
-            this.label8.Click += new System.EventHandler(this.label8_Click);
             // 
             // label7
             // 
@@ -390,9 +387,11 @@
             this.btn_back.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.btn_back.BackgroundImage = global::TuLuz.Properties.Resources.go_back256_24856;
             this.btn_back.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.btn_back.Location = new System.Drawing.Point(923, 12);
+            this.btn_back.FlatAppearance.BorderSize = 0;
+            this.btn_back.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_back.Location = new System.Drawing.Point(967, 12);
             this.btn_back.Name = "btn_back";
-            this.btn_back.Size = new System.Drawing.Size(89, 77);
+            this.btn_back.Size = new System.Drawing.Size(45, 47);
             this.btn_back.TabIndex = 6;
             this.btn_back.UseVisualStyleBackColor = true;
             this.btn_back.Click += new System.EventHandler(this.btn_back_Click);

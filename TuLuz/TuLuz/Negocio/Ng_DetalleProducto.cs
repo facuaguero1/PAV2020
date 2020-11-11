@@ -13,19 +13,11 @@ namespace TuLuz.Negocio
     class Ng_DetalleProducto
     {
         Be_BaseDatos _BD = new Be_BaseDatos();
-        //public void Insertar(Control.ControlCollection controles)
-        //{
-        //    _BD.InsertarAutomatizado("Empleados", controles);
-        //}
-
         public void Insertar(Es_DetalleProducto detalle)
         {
-
             String sqlInsertar = "INSERT INTO DetalleProducto(codProductoComponente, codProductoGenerico, cantidad, precio) VALUES(" + detalle.CodigoComponente + "," + detalle.codigoProducto + "," + detalle.cantidad + "," + detalle.precio + ")";
             _BD.Insertar(sqlInsertar);
-
         }
-
         public DataTable RecuperarDetallesProducto(int cod)
         {
             return _BD.Consulta("SELECT * FROM DetalleProducto WHERE codProductoGenerico = "+cod);
@@ -34,8 +26,6 @@ namespace TuLuz.Negocio
         {
             return _BD.Consulta("SELECT * FROM DetalleProducto WHERE codProductoGenerico = " + codigoProducto + "AND codProductoComponente = "+ codigoComponente);
         }
-        //AGREGAR BIEN LOS DATOS FALTANTES A LA MODIFICACION Y BORRADO
-
         public void Modificar(Es_DetalleProducto datos)
         {
             string sqlUpdate = "UPDATE DetalleProducto SET ";
@@ -46,7 +36,6 @@ namespace TuLuz.Negocio
 
             MessageBox.Show("El Detalle de producto fue modificado con exito!", "MODIFICACIÓN EXITOSA", MessageBoxButtons.OK, MessageBoxIcon.Information);
             _BD.Modificar(sqlUpdate);
-
         }
         public void Borrar(string Doc)
         {
@@ -58,6 +47,5 @@ namespace TuLuz.Negocio
             string sqlDelete = "DELETE FROM DetalleProducto WHERE codProductoGenerico = " + codProductoGenerico + "AND codProductoComponente = " + codProductoComponente;
             _BD.Borrar(sqlDelete);
         }
-
     }
 }

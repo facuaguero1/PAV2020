@@ -27,12 +27,6 @@ namespace TuLuz.Forums
         {
             this.Close();
         }
-        private void Pedido_X_2Fechas_Load(object sender, EventArgs e)
-        {
-            //this.reportViewer1.RefreshReport();
-            //this.rv_listadoPedido_x_fecha.RefreshReport();
-        }
-
         private DataTable Buscar_X_Fecha ()
         {
             DataTable tabla = new DataTable();
@@ -61,9 +55,7 @@ namespace TuLuz.Forums
                     }
                 }
             }
-            
             return tabla;
-
         }
         private void CargarInforme (DataTable tabla)
         {

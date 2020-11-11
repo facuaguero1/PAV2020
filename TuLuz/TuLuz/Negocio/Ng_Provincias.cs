@@ -36,20 +36,9 @@ namespace TuLuz.Negocio
             tabla = _BD.Consulta(sql);
             return tabla;
         }
-        public DataTable Buscar_Provincia_Nombre(string nom)
-        {
-            string sql = "SELECT * FROM Provincia WHERE nombre like '%" + nom.Trim() + "%'";
-            DataTable tabla = new DataTable();
-            tabla = _BD.Consulta(sql);
-            return tabla;
-        }
         public DataTable RecuperarProvincia_Codigo(string cod)
         {
             return _BD.Consulta("SELECT * FROM Provincia WHERE codProvincia = " + cod);
-        }
-        public DataTable RecuperarProvincia_Nombre(string nom)
-        {
-            return _BD.Consulta("SELECT * FROM Provincia WHERE nombre like '%" + nom + "%'");
         }
         public void Modificar(Es_Provincia datos)
         {
@@ -59,7 +48,6 @@ namespace TuLuz.Negocio
 
             MessageBox.Show("La provincia fue modificada con exito!", "MODIFICACIÓN EXITOSA", MessageBoxButtons.OK, MessageBoxIcon.Information);
             _BD.Modificar(sqlUpdate);
-
         }
         public void Borrar(string cod)
         {
@@ -75,7 +63,6 @@ namespace TuLuz.Negocio
             EC.Sql = "SELECT * FROM Provincia";
             EC.Tabla = _BD.Consulta(EC.Sql);
             return EC;
-
         }
     }
 }

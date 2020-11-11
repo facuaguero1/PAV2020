@@ -13,9 +13,6 @@ using TuLuz.Clases;
 using TuLuz.Negocio;
 using TuLuz.Negocio.EstructuraNegocios;
 
-
-
-
 namespace TuLuz.Forums.Clientes
 {
     public partial class ModificarBarrio : Form
@@ -29,8 +26,6 @@ namespace TuLuz.Forums.Clientes
             InitializeComponent();
             CerrarPanel();
             cmbLocalidades.Cargar(Localidad.EstructuraCombo());
-           
-            
         }
          private void CerrarPanel ()
         {
@@ -58,12 +53,10 @@ namespace TuLuz.Forums.Clientes
 
             }
         }
-
         private void btn_Cancelar_Click(object sender, EventArgs e)
         {
             CerrarPanel();
         }
-
         private void btn_Buscar_Click(object sender, EventArgs e)
         {
             if (chk_Todos.Checked==true)
@@ -112,29 +105,11 @@ namespace TuLuz.Forums.Clientes
                 Barrio.Modificar(_EC);
                 Panel_ModificarCliente.Visible = false;
             }
-            
         }
-
         private void btn_salir_Click(object sender, EventArgs e)
         {
             this.Close();
         }
-
-        private void label10_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label9_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void cmbLocalidades_SelectedIndexChanged(object sender, EventArgs e)
-        {
-
-        }
-
         private void txt_BuscarCuit_KeyPress(object sender, KeyPressEventArgs e)
         {
             if (!char.IsControl(e.KeyChar) && !char.IsDigit(e.KeyChar))

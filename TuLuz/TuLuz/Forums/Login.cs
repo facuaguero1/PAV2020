@@ -20,7 +20,6 @@ namespace TuLuz.Forums
         public Login()
         {
             InitializeComponent();
-           
         }
 
         private void btn_Login_Click(object sender, EventArgs e)
@@ -34,39 +33,19 @@ namespace TuLuz.Forums
             Ng_Users usr = new Ng_Users();
             if (usr.validarUsuario(txt_Usr.Text, txtPsw.Text) == Ng_Users.Respuesta.validacion_Correcta)
             {
-              
                 Usuario = txt_Usr.Text;
                 this.Close();
-                logOK = 1;
-                
-               
-                
+                logOK = 1; 
             }
             else
             {
                 MessageBox.Show("Usuario o Contraseña incorrecta", "Atencion: ", MessageBoxButtons.OK);
                 return;
-
             }
         }
-        private void Login_Load(object sender, EventArgs e)
-        {
-            
-        }
-
         private void btn_Salir_Click(object sender, EventArgs e)
         {
             this.Close();
-        }
-
-        private void txt_Usr_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void panel2_Paint(object sender, PaintEventArgs e)
-        {
-
         }
     }
 }

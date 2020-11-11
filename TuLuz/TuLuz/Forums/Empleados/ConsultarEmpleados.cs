@@ -20,7 +20,6 @@ namespace TuLuz.Forums.Clientes
 {
     public partial class ConsultarEmpleados : Form
     {
-        Ng_Localidad Localidad = new Ng_Localidad();
         Ng_Barrios Barrio = new Ng_Barrios();
         Ng_Empleados Empleados = new Ng_Empleados();
         Ng_Tipo_Documentos TipoDoc = new Ng_Tipo_Documentos();
@@ -33,8 +32,6 @@ namespace TuLuz.Forums.Clientes
             InitializeComponent();
             CerrarPanel();
             cmb_barrio.Cargar(Barrio.EstructuraCombo());
-
-
         }
          private void CerrarPanel ()
         {
@@ -49,8 +46,7 @@ namespace TuLuz.Forums.Clientes
                 return;
             }
             else
-            {
-                
+            {  
                 Panel_ModificarCliente.Visible = true;
                 this.Doc = grid01.CurrentRow.Cells[0].Value.ToString();
                 DataTable tabla = new DataTable();
@@ -79,12 +75,10 @@ namespace TuLuz.Forums.Clientes
                 }
             }
         }
-
         private void btn_Cancelar_Click(object sender, EventArgs e)
         {
             CerrarPanel();
         }
-
         private void btn_Buscar_Click(object sender, EventArgs e)
         {
             if (chk_Todos.Checked==true)
@@ -127,12 +121,10 @@ namespace TuLuz.Forums.Clientes
         {
             Panel_ModificarCliente.Visible = false;
         }
-
         private void btn_salir_Click(object sender, EventArgs e)
         {
             this.Close();
         }
-
         private void txt_BuscarDoc_KeyPress(object sender, KeyPressEventArgs e)
         {
             if (!char.IsControl(e.KeyChar) && !char.IsDigit(e.KeyChar))
@@ -140,6 +132,5 @@ namespace TuLuz.Forums.Clientes
                 e.Handled = true;
             }
         }
-
     }
 }

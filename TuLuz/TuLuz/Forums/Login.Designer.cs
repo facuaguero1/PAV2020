@@ -79,7 +79,6 @@
             this.txt_Usr.Name = "txt_Usr";
             this.txt_Usr.Size = new System.Drawing.Size(100, 20);
             this.txt_Usr.TabIndex = 0;
-            this.txt_Usr.TextChanged += new System.EventHandler(this.txt_Usr_TextChanged);
             // 
             // txtPsw
             // 
@@ -127,7 +126,6 @@
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(434, 400);
             this.panel2.TabIndex = 5;
-            this.panel2.Paint += new System.Windows.Forms.PaintEventHandler(this.panel2_Paint);
             // 
             // Login
             // 
@@ -141,7 +139,6 @@
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
             this.Text = "Form1";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
-            this.Load += new System.EventHandler(this.Login_Load);
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
             this.ResumeLayout(false);

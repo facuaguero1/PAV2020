@@ -15,8 +15,6 @@ using TuLuz.Negocio;
 using TuLuz.Negocio.EstructuraNegocios;
 
 
-
-
 namespace TuLuz.Forums.Provincias
 {
     public partial class BorrarProvincia : Form
@@ -27,9 +25,7 @@ namespace TuLuz.Forums.Provincias
         public BorrarProvincia()
         {
             InitializeComponent();
-            CerrarPanel();
-           
-            
+            CerrarPanel();  
         }
          private void CerrarPanel ()
         {
@@ -58,12 +54,6 @@ namespace TuLuz.Forums.Provincias
                 }
             }
         }
-
-        private void btn_Cancelar_Click(object sender, EventArgs e)
-        {
-            CerrarPanel();
-        }
-
         private void btn_Buscar_Click(object sender, EventArgs e)
         {
             if (chk_Todos.Checked==true)
@@ -96,25 +86,15 @@ namespace TuLuz.Forums.Provincias
         {
             txt_BuscarCodProvincia.Text = "";
         }
-
-        
-
         private void btn_salir_Click(object sender, EventArgs e)
         {
             this.Close();
         }
-
         private void btn_Aceptar_Click(object sender, EventArgs e)
         {
             Provincias.Borrar(this.codProvincia);
             Panel_DatosProvincia.Visible = false;
         }
-
-        private void BorrarBarrio_Load(object sender, EventArgs e)
-        {
-
-        }
-
         private void txt_BuscarCodProvincia_KeyPress(object sender, KeyPressEventArgs e)
         {
             if (!char.IsControl(e.KeyChar) && !char.IsDigit(e.KeyChar))

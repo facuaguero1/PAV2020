@@ -27,13 +27,6 @@ namespace TuLuz.Forums.Reportes.ClientesXEstado
         {
             this.Close();
         }
-
-        private void ClientesXEstado_Load(object sender, EventArgs e)
-        {
-
-        }
-
-
         private void btn_Buscar_Click(object sender, EventArgs e)
         {
 

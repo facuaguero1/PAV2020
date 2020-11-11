@@ -14,8 +14,6 @@ using TuLuz.Negocio;
 using TuLuz.Negocio.EstructuraNegocios;
 
 
-
-
 namespace TuLuz.Forums.Clientes
 {
     public partial class ConsultarBarrio : Form
@@ -27,9 +25,7 @@ namespace TuLuz.Forums.Clientes
         public ConsultarBarrio()
         {
             InitializeComponent();
-            CerrarPanel();
-           
-            
+            CerrarPanel();  
         }
          private void CerrarPanel ()
         {
@@ -57,12 +53,6 @@ namespace TuLuz.Forums.Clientes
                 txt_Localidad.Text = tabla2.Rows[0]["nombre"].ToString();
             }
         }
-
-        private void btn_Cancelar_Click(object sender, EventArgs e)
-        {
-            CerrarPanel();
-        }
-
         private void btn_Buscar_Click(object sender, EventArgs e)
         {
             if (chk_Todos.Checked==true)
@@ -97,9 +87,6 @@ namespace TuLuz.Forums.Clientes
         {
             txt_BuscarCodigo.Text = "";
         }
-
-        
-
         private void btn_salir_Click(object sender, EventArgs e)
         {
             this.Close();
@@ -109,17 +96,6 @@ namespace TuLuz.Forums.Clientes
         {
             Panel_ConsultarCliente.Visible = false;
         }
-
-        private void label7_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void ConsultarBarrio_Load(object sender, EventArgs e)
-        {
-
-        }
-
         private void txt_BuscarCodigo_KeyPress(object sender, KeyPressEventArgs e)
         {
             if (!char.IsControl(e.KeyChar) && !char.IsDigit(e.KeyChar))

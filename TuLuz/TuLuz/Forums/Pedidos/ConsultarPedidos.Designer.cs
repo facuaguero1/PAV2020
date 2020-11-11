@@ -316,7 +316,6 @@
             this.label12.Size = new System.Drawing.Size(171, 25);
             this.label12.TabIndex = 20;
             this.label12.Text = "TipoDni Vnededor";
-            this.label12.Click += new System.EventHandler(this.label12_Click);
             // 
             // txt_tipoDniVendedor
             // 
@@ -360,7 +359,6 @@
             this.label11.Size = new System.Drawing.Size(176, 25);
             this.label11.TabIndex = 15;
             this.label11.Text = "Condicion de pago";
-            this.label11.Click += new System.EventHandler(this.label11_Click);
             // 
             // txt_cuitCliente
             // 
@@ -400,7 +398,6 @@
             this.txt_NumPedido.pp_validable = false;
             this.txt_NumPedido.Size = new System.Drawing.Size(208, 30);
             this.txt_NumPedido.TabIndex = 10;
-            this.txt_NumPedido.TextChanged += new System.EventHandler(this.txt_codigo_TextChanged);
             // 
             // label10
             // 

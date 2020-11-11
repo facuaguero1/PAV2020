@@ -139,7 +139,6 @@
             this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "ClientesXEstado1";
             this.Text = "CotizacionesXEstado";
-            this.Load += new System.EventHandler(this.ClientesXEstado_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 

@@ -87,7 +87,6 @@
             this.btn_limpiarCampo.TabIndex = 0;
             this.btn_limpiarCampo.TabStop = false;
             this.btn_limpiarCampo.Text = "Filtros";
-            this.btn_limpiarCampo.Enter += new System.EventHandler(this.btn_limpiarCampo_Enter);
             // 
             // chk_noActivos
             // 

@@ -14,18 +14,12 @@ namespace TuLuz.Negocio
     {
 
         Be_BaseDatos _BD = new Be_BaseDatos();
-        //public void Insertar(Control.ControlCollection controles)
-        //{
-        //    _BD.InsertarAutomatizado("Empleados", controles);
-        //}
 
         public void Insertar(Es_Pedidos Pedidos)
         {
-
             String sqlInsertar = "INSERT INTO Pedidos(numeroPedido, numeroCotizacion, fechaPedido, tipoDniVendedor, numDniVendedor, condicionPago, cuitCliente) VALUES(" + Pedidos.numeroPedido + "," + Pedidos.numeroCotizacion + "," + _BD.FormatearDato(Pedidos.fechaPedido, "Date") + "," + Pedidos.tipoDniVendedor + "," + Pedidos.numDniVendedor + ",'" + Pedidos.condicionPago + "','" + Pedidos.cuitCliente + "')";
             MessageBox.Show("El Pedido fue creado con exito!", "CREACIÓN EXITOSA", MessageBoxButtons.OK, MessageBoxIcon.Information);
             _BD.Insertar(sqlInsertar);
-
         }
 
         public DataTable Todos_los_Pedidos()
@@ -50,8 +44,6 @@ namespace TuLuz.Negocio
             tabla = _BD.Consulta(sql);
             return tabla;
         }
-       
-
 
         public DataTable Buscar_PedidoPorNumero(int codigo)
         {
@@ -80,16 +72,6 @@ namespace TuLuz.Negocio
             MessageBox.Show("El Pedido fue eliminado con exito!", "ELIMINACIÓN EXITOSA", MessageBoxButtons.OK, MessageBoxIcon.Information);
             _BD.Borrar(sqlDelete);
         }
-        //public EstructuraComboBox EstructuraCombo()
-        //{
-        //    EstructuraComboBox EC = new EstructuraComboBox();
-        //    EC.Display = "nombre";
-        //    EC.Value = "codProducto";
-        //    EC.Sql = "SELECT * FROM Productos";
-        //    EC.Tabla = _BD.Consulta(EC.Sql);
-        //    return EC;
-        //}
-
         public String TraerMes(string doc)
         {
             string sql = "SELECT MONTH(fechaPedido) FROM Pedidos WHERE numeroPedido =" + doc;
@@ -97,7 +79,6 @@ namespace TuLuz.Negocio
             tabla = _BD.Consulta(sql);
             return tabla.Rows[0][0].ToString();
         }
-
         public String TraerDia(string doc)
         {
             string sql = "SELECT DAY(fechaPedido) FROM Pedidos WHERE numeroPedido =" + doc;
@@ -169,9 +150,6 @@ namespace TuLuz.Negocio
             tabla = _BD.Consulta(sql);
             return tabla;
         }
-
-
-
         public EstructuraComboBox EstructuraCombo()
         {
             EstructuraComboBox EC = new EstructuraComboBox();
@@ -194,6 +172,5 @@ namespace TuLuz.Negocio
             return tabla;
         }
     }
-
 }
 

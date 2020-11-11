@@ -98,7 +98,6 @@
             this.chk_noActivos.TabIndex = 6;
             this.chk_noActivos.Text = "No activos";
             this.chk_noActivos.UseVisualStyleBackColor = true;
-            this.chk_noActivos.CheckedChanged += new System.EventHandler(this.checkBox2_CheckedChanged);
             // 
             // btn_Limpiar
             // 

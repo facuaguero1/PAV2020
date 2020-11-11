@@ -14,18 +14,12 @@ namespace TuLuz.Negocio
     class Ng_Producto
     {
         Be_BaseDatos _BD = new Be_BaseDatos();
-        //public void Insertar(Control.ControlCollection controles)
-        //{
-        //    _BD.InsertarAutomatizado("Empleados", controles);
-        //}
 
         public void Insertar(Es_Producto Producto)
         {
-
             String sqlInsertar = "INSERT INTO Productos(codProducto, nombre, descripcion, precio, cantStock, cuitProveedor, codProductoEq) VALUES(" + Producto.codProducto + ",'" + Producto.nombre + "','" + Producto.descripcion + "'," + Producto.precio + "," + Producto.cantStock + ",'" + Producto.cuitProveedor + "'," + Producto.codProductoEq + ")";
             MessageBox.Show("El Producto fue creado con exito!", "CREACIÓN EXITOSA", MessageBoxButtons.OK, MessageBoxIcon.Information);
             _BD.Insertar(sqlInsertar);
-
         }
 
         public DataTable Todos_los_Productos()
@@ -42,7 +36,6 @@ namespace TuLuz.Negocio
             tabla = _BD.Consulta(sql);
             return tabla;
         }
-
         public int cuantoVale(string codigo)
         {
             string sql = "SELECT precio FROM Productos WHERE codProducto = " + codigo;
@@ -50,8 +43,6 @@ namespace TuLuz.Negocio
             tabla = _BD.Consulta(sql);
             return int.Parse(tabla.Rows[0]["precio"].ToString());
         }
-
-
         public void Modificar(Es_Producto datos)
         {
             string sqlUpdate = "UPDATE Productos SET ";
@@ -89,7 +80,6 @@ namespace TuLuz.Negocio
             sqlUpdate += " WHERE codProducto =" + cod;
             _BD.Modificar(sqlUpdate);
         }
-
         public void sumarStock(int datos, string cod)
         {
             string sqlUpdate = "UPDATE Productos SET ";

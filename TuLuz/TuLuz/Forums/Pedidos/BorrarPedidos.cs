@@ -21,8 +21,6 @@ namespace TuLuz.Forums.Clientes
     public partial class BorrarPedido: Form
     {
         Ng_Pedidos Pedidos = new Ng_Pedidos();
-        Ng_DetallePedidos Detalle = new Ng_DetallePedidos();
-
 
         public int codigo { get; set; } 
         
@@ -36,7 +34,6 @@ namespace TuLuz.Forums.Clientes
         {
             Panel_BorrarPedido.Visible = false;
         }
-
         private void btn_Modificar_Click(object sender, EventArgs e)
         {
             if (this.grid01.Rows.Count == 0)
@@ -66,7 +63,6 @@ namespace TuLuz.Forums.Clientes
                 }
             }
         }
-
         private void btn_Cancelar_Click(object sender, EventArgs e)
         {
             CerrarPanel();
@@ -113,9 +109,7 @@ namespace TuLuz.Forums.Clientes
 
         private void btn_Aceptar_Click(object sender, EventArgs e)
         {
-            //Detalle.Borrar(this.codigo);
             Pedidos.Borrar(this.codigo);
-
             Panel_BorrarPedido.Visible = false;
         }
 

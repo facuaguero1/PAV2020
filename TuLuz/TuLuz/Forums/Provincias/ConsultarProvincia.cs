@@ -13,9 +13,6 @@ using TuLuz.Clases;
 using TuLuz.Negocio;
 using TuLuz.Negocio.EstructuraNegocios;
 
-
-
-
 namespace TuLuz.Forums.Provincias
 {
     public partial class ConsultarProvincia : Form
@@ -26,9 +23,7 @@ namespace TuLuz.Forums.Provincias
         public ConsultarProvincia()
         {
             InitializeComponent();
-            CerrarPanel();
-           
-            
+            CerrarPanel();  
         }
          private void CerrarPanel ()
         {
@@ -52,12 +47,6 @@ namespace TuLuz.Forums.Provincias
                 txt_NombreNuevo.Text = tabla.Rows[0]["nombre"].ToString();
             }
         }
-
-        private void btn_Cancelar_Click(object sender, EventArgs e)
-        {
-            CerrarPanel();
-        }
-
         private void btn_Buscar_Click(object sender, EventArgs e)
         {
             if (chk_Todos.Checked==true)
@@ -91,29 +80,14 @@ namespace TuLuz.Forums.Provincias
         {
             txt_BuscarCodigo.Text = "";
         }
-
-        
-
         private void btn_salir_Click(object sender, EventArgs e)
         {
             this.Close();
         }
-
         private void btn_Aceptar_Click(object sender, EventArgs e)
         {
             Panel_ConsultarCliente.Visible = false;
         }
-
-        private void label7_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void ConsultarBarrio_Load(object sender, EventArgs e)
-        {
-
-        }
-
         private void txt_BuscarCodigo_KeyPress(object sender, KeyPressEventArgs e)
         {
             if (!char.IsControl(e.KeyChar) && !char.IsDigit(e.KeyChar))

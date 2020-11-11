@@ -33,7 +33,7 @@
             this.label3 = new System.Windows.Forms.Label();
             this.btn_salir = new System.Windows.Forms.Button();
             this.RVproductoXprecio = new Microsoft.Reporting.WinForms.ReportViewer();
-            this.button1 = new System.Windows.Forms.Button();
+            this.btn_buscar = new System.Windows.Forms.Button();
             this.txt_precioMax = new TuLuz.Clases.TextBox01();
             this.txt_pracioMin = new TuLuz.Clases.TextBox01();
             this.SuspendLayout();
@@ -72,7 +72,6 @@
             this.label3.Size = new System.Drawing.Size(141, 25);
             this.label3.TabIndex = 2;
             this.label3.Text = "Precio Maximo";
-            this.label3.Click += new System.EventHandler(this.button2_Click);
             // 
             // btn_salir
             // 
@@ -97,19 +96,19 @@
             this.RVproductoXprecio.Size = new System.Drawing.Size(702, 408);
             this.RVproductoXprecio.TabIndex = 10;
             // 
-            // button1
+            // btn_buscar
             // 
-            this.button1.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.button1.BackgroundImage = global::TuLuz.Properties.Resources.buscar;
-            this.button1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.button1.FlatAppearance.BorderSize = 0;
-            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button1.Location = new System.Drawing.Point(645, 84);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(54, 30);
-            this.button1.TabIndex = 11;
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
+            this.btn_buscar.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.btn_buscar.BackgroundImage = global::TuLuz.Properties.Resources.buscar;
+            this.btn_buscar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btn_buscar.FlatAppearance.BorderSize = 0;
+            this.btn_buscar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_buscar.Location = new System.Drawing.Point(645, 84);
+            this.btn_buscar.Name = "btn_buscar";
+            this.btn_buscar.Size = new System.Drawing.Size(54, 30);
+            this.btn_buscar.TabIndex = 11;
+            this.btn_buscar.UseVisualStyleBackColor = true;
+            this.btn_buscar.Click += new System.EventHandler(this.btn_buscar_Click);
             // 
             // txt_precioMax
             // 
@@ -123,6 +122,7 @@
             this.txt_precioMax.pp_validable = true;
             this.txt_precioMax.Size = new System.Drawing.Size(86, 30);
             this.txt_precioMax.TabIndex = 5;
+            this.txt_precioMax.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txt_precioMax_KeyPress);
             // 
             // txt_pracioMin
             // 
@@ -136,14 +136,14 @@
             this.txt_pracioMin.pp_validable = true;
             this.txt_pracioMin.Size = new System.Drawing.Size(86, 30);
             this.txt_pracioMin.TabIndex = 4;
-            this.txt_pracioMin.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txt_codBarrio_KeyPress);
+            this.txt_pracioMin.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txt_pracioMin_KeyPress);
             // 
             // ProductoXrangoPrecio
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(929, 545);
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.btn_buscar);
             this.Controls.Add(this.RVproductoXprecio);
             this.Controls.Add(this.btn_salir);
             this.Controls.Add(this.txt_precioMax);
@@ -154,7 +154,7 @@
             this.Name = "ProductoXrangoPrecio";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
-            this.Load += new System.EventHandler(this.AltaBarrio_Load);
+            this.Load += new System.EventHandler(this.ProductoXrangoPrecio_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -169,6 +169,6 @@
         private Clases.TextBox01 txt_precioMax;
         private System.Windows.Forms.Button btn_salir;
         private Microsoft.Reporting.WinForms.ReportViewer RVproductoXprecio;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button btn_buscar;
     }
 }

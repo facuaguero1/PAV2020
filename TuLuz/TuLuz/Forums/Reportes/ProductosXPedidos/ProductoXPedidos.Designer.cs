@@ -33,7 +33,7 @@
             this.btn_salir = new System.Windows.Forms.Button();
             this.checkBox1 = new System.Windows.Forms.CheckBox();
             this.ProdcutXPedidos = new Microsoft.Reporting.WinForms.ReportViewer();
-            this.button1 = new System.Windows.Forms.Button();
+            this.btn_buscar = new System.Windows.Forms.Button();
             this.cmb_Pedidos = new TuLuz.Clases.ComboBox01();
             this.SuspendLayout();
             // 
@@ -96,19 +96,19 @@
             this.ProdcutXPedidos.Size = new System.Drawing.Size(702, 408);
             this.ProdcutXPedidos.TabIndex = 17;
             // 
-            // button1
+            // btn_buscar
             // 
-            this.button1.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.button1.BackgroundImage = global::TuLuz.Properties.Resources.buscar;
-            this.button1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.button1.FlatAppearance.BorderSize = 0;
-            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button1.Location = new System.Drawing.Point(684, 79);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(51, 33);
-            this.button1.TabIndex = 18;
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
+            this.btn_buscar.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.btn_buscar.BackgroundImage = global::TuLuz.Properties.Resources.buscar;
+            this.btn_buscar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btn_buscar.FlatAppearance.BorderSize = 0;
+            this.btn_buscar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_buscar.Location = new System.Drawing.Point(684, 79);
+            this.btn_buscar.Name = "btn_buscar";
+            this.btn_buscar.Size = new System.Drawing.Size(51, 33);
+            this.btn_buscar.TabIndex = 18;
+            this.btn_buscar.UseVisualStyleBackColor = true;
+            this.btn_buscar.Click += new System.EventHandler(this.btn_buscar_Click);
             // 
             // cmb_Pedidos
             // 
@@ -134,7 +134,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(929, 545);
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.btn_buscar);
             this.Controls.Add(this.ProdcutXPedidos);
             this.Controls.Add(this.checkBox1);
             this.Controls.Add(this.cmb_Pedidos);
@@ -144,7 +144,7 @@
             this.Name = "ProductoXPedidos";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
-            this.Load += new System.EventHandler(this.AltaBarrio_Load);
+            this.Load += new System.EventHandler(this.ProductoXPedidos_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -158,6 +158,6 @@
         private Clases.ComboBox01 cmb_Pedidos;
         private System.Windows.Forms.CheckBox checkBox1;
         private Microsoft.Reporting.WinForms.ReportViewer ProdcutXPedidos;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button btn_buscar;
     }
 }

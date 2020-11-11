@@ -21,7 +21,6 @@ namespace TuLuz.Forums.Clientes
     public partial class ConsultarPedidos: Form
     {
         Ng_Pedidos Pedidos = new Ng_Pedidos();
-        Ng_DetallePedidos Detalle = new Ng_DetallePedidos();
 
         public string Doc { get; set; } 
         
@@ -34,7 +33,6 @@ namespace TuLuz.Forums.Clientes
         {
             Panel_ConsultarPedidos.Visible = false;
         }
-
         private void btn_Modificar_Click(object sender, EventArgs e)
         {
             if (this.grid01.Rows.Count == 0)
@@ -44,13 +42,10 @@ namespace TuLuz.Forums.Clientes
             }
             else
             {
-                
                 Panel_ConsultarPedidos.Visible = true;
                 this.Doc = grid01.CurrentRow.Cells[0].Value.ToString();
                 DataTable tabla = new DataTable();
                 tabla = Pedidos.Buscar_PedidoPorNumero(int.Parse(Doc));
-
-               
 
                 txt_NumPedido.Text = tabla.Rows[0]["numeroPedido"].ToString();
                 txt_numCotizacion.Text = tabla.Rows[0]["numeroCotizacion"].ToString();
@@ -58,9 +53,7 @@ namespace TuLuz.Forums.Clientes
                 txt_tipoDniVendedor.Text = tabla.Rows[0]["tipoDniVendedor"].ToString();
                 txt_numDniVendedor.Text = tabla.Rows[0]["numDniVendedor"].ToString();
                 txt_condicionPago.Text =tabla.Rows[0]["condicionPago"].ToString();
-                txt_cuitCliente.Text = tabla.Rows[0]["cuitCliente"].ToString();
-
-                
+                txt_cuitCliente.Text = tabla.Rows[0]["cuitCliente"].ToString(); 
             }
         }
 
@@ -107,7 +100,6 @@ namespace TuLuz.Forums.Clientes
         {
             txt_BuscarDoc.Text = "";
         }
-
         private void btn_Aceptar_Click(object sender, EventArgs e)
         {
             Panel_ConsultarPedidos.Visible = false;
@@ -117,22 +109,6 @@ namespace TuLuz.Forums.Clientes
         {
             this.Close();
         }
-
-        private void label11_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label12_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void txt_codigo_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
         private void txt_BuscarDoc_KeyPress(object sender, KeyPressEventArgs e)
         {
             if (!char.IsControl(e.KeyChar) && !char.IsDigit(e.KeyChar))

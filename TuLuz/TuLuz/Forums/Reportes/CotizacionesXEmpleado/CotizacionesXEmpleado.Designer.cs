@@ -48,7 +48,6 @@
             this.label1.TabIndex = 0;
             this.label1.Text = "Listado de Cotizaciones por empleado";
             this.label1.TextAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
             // label2
             // 
@@ -84,7 +83,6 @@
             this.RVCotizacionesXEmpleados.ServerReport.BearerToken = null;
             this.RVCotizacionesXEmpleados.Size = new System.Drawing.Size(702, 408);
             this.RVCotizacionesXEmpleados.TabIndex = 11;
-            this.RVCotizacionesXEmpleados.Load += new System.EventHandler(this.RVPedidosXEmpleados_Load);
             // 
             // cmb_Empleados
             // 
@@ -103,7 +101,7 @@
             this.cmb_Empleados.pp_Value = null;
             this.cmb_Empleados.Size = new System.Drawing.Size(158, 32);
             this.cmb_Empleados.TabIndex = 10;
-            this.cmb_Empleados.SelectedIndexChanged += new System.EventHandler(this.comboBox011_SelectedIndexChanged);
+            this.cmb_Empleados.SelectedIndexChanged += new System.EventHandler(this.cmb_Empleados_SelectedIndexChanged);
             // 
             // btn_Buscar
             // 
@@ -118,7 +116,7 @@
             this.btn_Buscar.Size = new System.Drawing.Size(52, 32);
             this.btn_Buscar.TabIndex = 12;
             this.btn_Buscar.UseVisualStyleBackColor = true;
-            this.btn_Buscar.Click += new System.EventHandler(this.button1_Click);
+            this.btn_Buscar.Click += new System.EventHandler(this.btn_Buscar_Click);
             // 
             // CotizacionesXEmpleados
             // 
@@ -134,7 +132,7 @@
             this.Name = "CotizacionesXEmpleados";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
-            this.Load += new System.EventHandler(this.AltaBarrio_Load);
+            this.Load += new System.EventHandler(this.CotizacionesXEmpleados_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 

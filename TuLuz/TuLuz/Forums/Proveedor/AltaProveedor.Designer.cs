@@ -215,7 +215,6 @@
             this.Name = "AltaProveedor";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
-            this.Load += new System.EventHandler(this.AltaProveedor_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 

@@ -26,13 +26,6 @@ namespace TuLuz.Forums.Estadisticas.VentasXMes
             lblHasta.Enabled = false;
             lbl_Desde.Enabled = false;
         }
-
-        private void Estadistica_VentaXMes_Load(object sender, EventArgs e)
-        {
-
-            this.rv_productoMasVendido.RefreshReport();
-        }
-
         private void CalcularEstadistica_VentasXMes()
         {
             if (chk_filtro.Checked == true)
@@ -73,7 +66,7 @@ namespace TuLuz.Forums.Estadisticas.VentasXMes
 
             }
 
-            }
+        }
 
         private void btn_Buscar_Click(object sender, EventArgs e)
         {
@@ -93,11 +86,5 @@ namespace TuLuz.Forums.Estadisticas.VentasXMes
                 lbl_Desde.Enabled = false;
             }
         }
-
-        private void label1_Click(object sender, EventArgs e)
-        {
-
-        }
     }
-
 }

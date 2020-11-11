@@ -21,7 +21,6 @@ namespace TuLuz.Forums.Clientes
     public partial class ModificarDetalle : Form
     {
         Ng_Producto Productos = new Ng_Producto();
-        Ng_Proveedor Proveedores = new Ng_Proveedor();
         Ng_DetalleProducto Detalle = new Ng_DetalleProducto();
         public int salir = 0;
         public string codigo { get; set; } 
@@ -31,7 +30,6 @@ namespace TuLuz.Forums.Clientes
             InitializeComponent();
             CerrarPanel();
             codigo = cod;
-
         }
          private void CerrarPanel ()
         {
@@ -46,8 +44,7 @@ namespace TuLuz.Forums.Clientes
                 return;
             }
             else
-            {
-                
+            {  
                 Panel_ModificarProducto.Visible = true;
                 DataTable tabla = new DataTable();
                 tabla = Detalle.RecuperarDetallesProductoEspecifico(grid01.CurrentRow.Cells[0].Value.ToString(), grid01.CurrentRow.Cells[1].Value.ToString());
@@ -58,10 +55,8 @@ namespace TuLuz.Forums.Clientes
                 txt_precio.Text = tabla.Rows[0]["precio"].ToString();
             }
         }
-
         private void btn_Cancelar_Click(object sender, EventArgs e)
         {
-
             CerrarPanel();
         }
 
@@ -79,7 +74,6 @@ namespace TuLuz.Forums.Clientes
                 grid01.Rows[i].Cells[3].Value = tabla.Rows[i]["cantidad"].ToString();
                 
                 grid01.Rows[i].Cells[4].Value = tabla.Rows[i]["precio"].ToString();
-
             }
         }
         private void btn_Aceptar_Click(object sender, EventArgs e)
@@ -97,46 +91,16 @@ namespace TuLuz.Forums.Clientes
                 Detalle.Modificar(_DP);
                 Cargar_grilla(Detalle.RecuperarDetallesProducto(int.Parse(codigo)));
                 CerrarPanel();
-               
             }
-            
         }
-
-        private void btn_salir_Click(object sender, EventArgs e)
-        {
-            this.Close();
-        }
-
-        private void label10_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label9_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label8_Click(object sender, EventArgs e)
-        {
-
-        }
-
         private void ModificarDetalle_Load(object sender, EventArgs e)
         {
-
             Cargar_grilla(Detalle.RecuperarDetallesProducto(int.Parse(codigo)));
         }
         private void btn_back_Click(object sender, EventArgs e)
         {
             this.Close();
         }
-
-        private void btn_actualizar_Click(object sender, EventArgs e)
-        {
-            Cargar_grilla(Detalle.RecuperarDetallesProducto(int.Parse(codigo)));
-        }
-
         private void txt_cantidad_TextChanged(object sender, EventArgs e)
         {
             DataTable tabla = new DataTable();
@@ -145,11 +109,9 @@ namespace TuLuz.Forums.Clientes
             {
                 txt_precio.Text = "0";
                 txt_cantidad.Text = "0";
-
             }
             else
             {
-
                 txt_precio.Text = (int.Parse(tabla.Rows[0]["precio"].ToString()) * int.Parse(txt_cantidad.Text)).ToString(); 
             }
         }

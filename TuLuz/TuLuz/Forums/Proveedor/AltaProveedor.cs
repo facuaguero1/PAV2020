@@ -21,12 +21,10 @@ namespace TuLuz.Forums
         {
             InitializeComponent();
         }
-
         private void btn_cancelar_Click(object sender, EventArgs e)
         {
             this.Close();
         }
-
         private void btn_aceptar_Click(object sender, EventArgs e)
         {
             TratamientosEspeciales tratamiento = new TratamientosEspeciales();
@@ -43,9 +41,7 @@ namespace TuLuz.Forums
                 Verificacion = Proveedor.Buscar_Proveedor_Codigo(_EP.cuitProveedor);
                 if (Verificacion.Rows.Count > 0)
                 {
-
                     MessageBox.Show("El Proveedor que desea insertar ya existe. ", "ATENCION");
-
                 }
                 else
                 {
@@ -53,14 +49,11 @@ namespace TuLuz.Forums
                     this.Close();
                 }
             }
-
         }
-
         private void btn_salir_Click(object sender, EventArgs e)
         {
             this.Close();
         }
-
         private void txt_Cuit_Proveedor_KeyPress(object sender, KeyPressEventArgs e)
         {
             if (!char.IsControl(e.KeyChar) && !char.IsDigit(e.KeyChar))
@@ -68,18 +61,12 @@ namespace TuLuz.Forums
                 e.Handled = true;
             }
         }
-
         private void txt_telefono_KeyPress(object sender, KeyPressEventArgs e)
         {
             if (!char.IsControl(e.KeyChar) && !char.IsDigit(e.KeyChar))
             {
                 e.Handled = true;
             }
-        }
-
-        private void AltaProveedor_Load(object sender, EventArgs e)
-        {
-
         }
     }
 }

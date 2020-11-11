@@ -158,7 +158,6 @@
             this.Location = new System.Drawing.Point(240, 0);
             this.Name = "AltaProvincia";
             this.StartPosition = System.Windows.Forms.FormStartPosition.Manual;
-            this.Load += new System.EventHandler(this.AltaProvincia_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 

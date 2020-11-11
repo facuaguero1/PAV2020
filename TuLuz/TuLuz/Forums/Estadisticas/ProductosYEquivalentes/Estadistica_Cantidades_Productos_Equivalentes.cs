@@ -21,13 +21,6 @@ namespace TuLuz.Forums.Estadisticas.Cantidades_Jefes_Empleados
         {
             InitializeComponent();
         }
-
-        private void Estadistica_Cantidades_Jefes_Empleados_Load(object sender, EventArgs e)
-        {
-
-            this.RV_Cantidades_Productos_Equivalentes.RefreshReport();
-        }
-
         private void CalcularEstadistica()
         {
 
@@ -52,11 +45,6 @@ namespace TuLuz.Forums.Estadisticas.Cantidades_Jefes_Empleados
         private void btn_Buscar_Click(object sender, EventArgs e)
         {
             CalcularEstadistica();
-        }
-
-        private void label1_Click(object sender, EventArgs e)
-        {
-
         }
     }
 }

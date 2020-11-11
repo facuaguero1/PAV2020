@@ -16,11 +16,9 @@ namespace TuLuz.Negocio.EstructuraNegocios
 
         public void Insertar(Es_Proveedor Proveedor)
         {
-
             String sqlInsertar = "INSERT INTO Proveedor (cuitProveedor, razonSocial, contacto, telefono,activo) VALUES(" + Proveedor.cuitProveedor + ",'" + Proveedor.razonSocial + "','" + Proveedor.contacto + "',"+ Proveedor.telefono + ",'"+Proveedor.activo+"')";
             MessageBox.Show("El Proveedor fue creado con exito!", "CREACIÓN EXITOSA", MessageBoxButtons.OK, MessageBoxIcon.Information);
             _BD.Insertar(sqlInsertar);
-
         }
         public DataTable Todos_los_proveedores()
         {
@@ -36,7 +34,6 @@ namespace TuLuz.Negocio.EstructuraNegocios
             tabla = _BD.Consulta(sql);
             return tabla;
         }
-
         public DataTable Todos_los_proveedoresNoActivos()
         {
             string sql = "SELECT * FROM Proveedor WHERE activo = 'false'";
@@ -44,7 +41,6 @@ namespace TuLuz.Negocio.EstructuraNegocios
             tabla = _BD.Consulta(sql);
             return tabla;
         }
-
         public DataTable ContarProveedoresAcNoAc()
         {
             string sql = "SELECT Proveedor.activo, COUNT (Proveedor.cuitProveedor) AS 'cantidad' FROM Proveedor GROUP BY Proveedor.activo";
@@ -52,7 +48,6 @@ namespace TuLuz.Negocio.EstructuraNegocios
             tabla = _BD.Consulta(sql);
             return tabla;
         }
-
         public DataTable Buscar_Proveedor_Codigo(string cod)
         {
             string sql = "SELECT * FROM Proveedor WHERE cuitProveedor = " + cod.Trim();
@@ -60,20 +55,9 @@ namespace TuLuz.Negocio.EstructuraNegocios
             tabla = _BD.Consulta(sql);
             return tabla;
         }
-        public DataTable Buscar_Proveedor_Nombre(string nom)
-        {
-            string sql = "SELECT * FROM Proveedor WHERE nombre like '%" + nom.Trim() + "%'";
-            DataTable tabla = new DataTable();
-            tabla = _BD.Consulta(sql);
-            return tabla;
-        }
         public DataTable RecuperarProveedor_Codigo(string cod)
         {
             return _BD.Consulta("SELECT * FROM Proveedor WHERE cuitProveedor = " + cod);
-        }
-        public DataTable RecuperarProveedor_Nombre(string nom)
-        {
-            return _BD.Consulta("SELECT * FROM Proveedor WHERE nombre like '%" + nom + "%'");
         }
         public void Modificar(Es_Proveedor datos)
         {
@@ -85,7 +69,6 @@ namespace TuLuz.Negocio.EstructuraNegocios
 
             MessageBox.Show("El Proveedor fue modificado con exito!", "MODIFICACIÓN EXITOSA", MessageBoxButtons.OK, MessageBoxIcon.Information);
             _BD.Modificar(sqlUpdate);
-
         }
         public void Borrar(string cod)
         {
@@ -93,7 +76,6 @@ namespace TuLuz.Negocio.EstructuraNegocios
             MessageBox.Show("El Proveedor fue eliminado con exito!", "ELIMINACIÓN EXITOSA", MessageBoxButtons.OK, MessageBoxIcon.Information);
             _BD.Borrar(sqlDelete);
         }
-
         public EstructuraComboBox EstructuraCombo()
         {
             EstructuraComboBox EC = new EstructuraComboBox();

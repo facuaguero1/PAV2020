@@ -26,7 +26,6 @@ namespace TuLuz.Forums
         {
             this.Close();
         }
-
         private void btn_aceptar_Click(object sender, EventArgs e)
         {
             TratamientosEspeciales tratamiento = new TratamientosEspeciales();
@@ -42,9 +41,7 @@ namespace TuLuz.Forums
                 Verificacion = Documentos.Buscar_TiposDoc_Codigo(Docs.idTipoDoc);
                 if (Verificacion.Rows.Count > 0)
                 {
-
                     MessageBox.Show("El tipo documento que desea insertar ya existe. ", "ATENCION");
-
                 }
                 else
                 {
@@ -58,27 +55,6 @@ namespace TuLuz.Forums
         {
             this.Close();
         }
-
-        private void AltaBarrio_Load(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label1_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label4_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void txt_CuitCliente_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
         private void txt_idTipo_KeyPress(object sender, KeyPressEventArgs e)
         {
             if (!char.IsControl(e.KeyChar) && !char.IsDigit(e.KeyChar))

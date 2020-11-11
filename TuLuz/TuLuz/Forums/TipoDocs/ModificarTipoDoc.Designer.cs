@@ -310,7 +310,6 @@
             this.label10.Size = new System.Drawing.Size(586, 76);
             this.label10.TabIndex = 8;
             this.label10.Text = "Modificar TipoDoc";
-            this.label10.Click += new System.EventHandler(this.label10_Click);
             // 
             // btn_Aceptar
             // 
@@ -340,7 +339,6 @@
             this.label9.Size = new System.Drawing.Size(66, 25);
             this.label9.TabIndex = 5;
             this.label9.Text = "Siglas";
-            this.label9.Click += new System.EventHandler(this.label9_Click);
             // 
             // label8
             // 

@@ -28,9 +28,6 @@ namespace TuLuz.Clases
             this.DisplayMember = ec.Display;
             this.ValueMember = ec.Value;
             this.DataSource = ec.Tabla;
-        }
-       
+        } 
     }
-
-    
 }

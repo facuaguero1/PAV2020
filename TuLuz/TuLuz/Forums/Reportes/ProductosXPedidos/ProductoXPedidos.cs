@@ -17,7 +17,6 @@ namespace TuLuz.Forums
     public partial class ProductoXPedidos : Form
     {
         Ng_Pedidos Pedidos = new Ng_Pedidos();
-        Ng_Producto Producto = new Ng_Producto();
         Ng_DetallePedidos Detalle = new Ng_DetallePedidos();
 
         public ProductoXPedidos()
@@ -29,13 +28,6 @@ namespace TuLuz.Forums
         {
             this.Close();
         }
-
-        private void AltaBarrio_Load(object sender, EventArgs e)
-        {
-            cmb_Pedidos.Cargar(Pedidos.EstructuraCombo());
-            cmb_Pedidos.SelectedIndex = -1;
-        }
-
         private void cmb_Pedidos_SelectedIndexChanged(object sender, EventArgs e)
         {
             if (cmb_Pedidos.SelectedIndex == -1)
@@ -43,7 +35,6 @@ namespace TuLuz.Forums
                 cmb_Pedidos.Text = "Seleccionar...";
             }
         }
-
         private void checkBox1_CheckedChanged(object sender, EventArgs e)
         {
             if (checkBox1.Checked == true)
@@ -55,10 +46,10 @@ namespace TuLuz.Forums
                 cmb_Pedidos.Enabled = true;
             }
         }
-
-        private void button1_Click(object sender, EventArgs e)
+ 
+        private void btn_buscar_Click(object sender, EventArgs e)
         {
-            if(checkBox1.Checked == true)
+            if (checkBox1.Checked == true)
             {
                 DataTable tabla = new DataTable();
                 tabla = Detalle.TodosLosPedidosXProducto();
@@ -95,7 +86,12 @@ namespace TuLuz.Forums
 
                 }
             }
-          
+        }
+
+        private void ProductoXPedidos_Load(object sender, EventArgs e)
+        {
+            cmb_Pedidos.Cargar(Pedidos.EstructuraCombo());
+            cmb_Pedidos.SelectedIndex = -1;
         }
     }
 }

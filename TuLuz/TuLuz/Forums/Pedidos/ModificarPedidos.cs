@@ -14,14 +14,11 @@ using TuLuz.Negocio;
 using TuLuz.Negocio.EstructuraNegocios;
 
 
-
-
 namespace TuLuz.Forums.Clientes
 {
     public partial class ModificarPedidos: Form
     {
         Ng_Pedidos Pedidos = new Ng_Pedidos();
-        Ng_DetallePedidos Detalle = new Ng_DetallePedidos();
         Ng_Clientes Clientes = new Ng_Clientes();
         Ng_Empleados Empleados = new Ng_Empleados();
         Ng_Cotizaciones Cotizaciones = new Ng_Cotizaciones();
@@ -52,21 +49,17 @@ namespace TuLuz.Forums.Clientes
             }
             else
             {
-
                 Panel_ModificarPedidos.Visible = true;
                 this.codigo = grid01.CurrentRow.Cells[0].Value.ToString();
                 DataTable tabla = new DataTable();
                 tabla = Pedidos.Buscar_PedidoPorNumero(int.Parse(codigo));
-
-
 
                 txt_numeroPedido.Text = tabla.Rows[0]["numeroPedido"].ToString();
                 cmb_Cotizaciones.SelectedValue= tabla.Rows[0]["numeroCotizacion"].ToString();
                 txt_fecha.Text = tabla.Rows[0]["fechaPedido"].ToString();
                 txt_condicionPago.Text = tabla.Rows[0]["condicionPago"].ToString();
                 cmb_numDocVendedor.SelectedValue = int.Parse(tabla.Rows[0]["numDniVendedor"].ToString());
-                cmb_cuitCliente.SelectedValue = tabla.Rows[0]["cuitCliente"].ToString();
-               
+                cmb_cuitCliente.SelectedValue = tabla.Rows[0]["cuitCliente"].ToString();  
             }
         }
 
@@ -130,49 +123,14 @@ namespace TuLuz.Forums.Clientes
                 _EP.numDniVendedor= cmb_numDocVendedor.SelectedValue.ToString();
                 _EP.cuitCliente = cmb_cuitCliente.SelectedValue.ToString();
                 _EP.tipoDniVendedor= tabla.Rows[0]["tipoDniVendedor"].ToString();
-
-
                 Pedidos.Modificar(_EP);
-               
-            }
-            
+            }   
         }
 
         private void btn_salir_Click(object sender, EventArgs e)
         {
             this.Close();
         }
-
-        private void label10_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label9_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void cmbLocalidades_SelectedIndexChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void btn_limpiarr_Click(object sender, EventArgs e)
-        {
-           cmb_cuitCliente.SelectedIndex = -1;
-        }
-
-        private void label6_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label8_Click(object sender, EventArgs e)
-        {
-
-        }
-
         private void txt_BuscarDoc_KeyPress(object sender, KeyPressEventArgs e)
         {
             if (!char.IsControl(e.KeyChar) && !char.IsDigit(e.KeyChar))

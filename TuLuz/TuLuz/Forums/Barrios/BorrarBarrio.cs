@@ -13,9 +13,6 @@ using TuLuz.Clases;
 using TuLuz.Negocio;
 using TuLuz.Negocio.EstructuraNegocios;
 
-
-
-
 namespace TuLuz.Forums.Clientes
 {
     public partial class BorrarBarrio : Form
@@ -27,9 +24,7 @@ namespace TuLuz.Forums.Clientes
         public BorrarBarrio()
         {
             InitializeComponent();
-            CerrarPanel();
-           
-            
+            CerrarPanel();  
         }
          private void CerrarPanel ()
         {
@@ -63,12 +58,6 @@ namespace TuLuz.Forums.Clientes
                 }
             }
         }
-
-        private void btn_Cancelar_Click(object sender, EventArgs e)
-        {
-            CerrarPanel();
-        }
-
         private void btn_Buscar_Click(object sender, EventArgs e)
         {
             if (chk_Todos.Checked==true)
@@ -96,43 +85,29 @@ namespace TuLuz.Forums.Clientes
                 grid01.Rows[i].Cells[0].Value = tabla.Rows[i]["codBarrio"].ToString();
                 grid01.Rows[i].Cells[1].Value = tabla.Rows[i]["nombre"].ToString();
                 grid01.Rows[i].Cells[2].Value = tabla.Rows[i]["codLocalidad"].ToString();
-
             }
         }
         private void btn_Limpiar_Click(object sender, EventArgs e)
         {
             txt_BuscarCuit.Text = "";
         }
-
-        
-
         private void btn_salir_Click(object sender, EventArgs e)
         {
             this.Close();
         }
-
         private void btn_Aceptar_Click(object sender, EventArgs e)
         {
             DataTable Verificacion = new DataTable();
             Verificacion = Barrios.Buscar_Barrio_Codigo(this.cuit);
             if (Verificacion.Rows.Count == 0)
             {
-
                 MessageBox.Show("El barrio que desea eliminar no existe. ", "ATENCION");
-
             }
             else
             {
                 Barrios.Borrar(this.cuit);
                 Panel_ModificarCliente.Visible = false;
-          
-            }
-            
-        }
-
-        private void BorrarBarrio_Load(object sender, EventArgs e)
-        {
-
+            } 
         }
 
         private void txt_BuscarCuit_KeyPress(object sender, KeyPressEventArgs e)

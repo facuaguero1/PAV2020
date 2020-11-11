@@ -27,44 +27,7 @@ namespace TuLuz.Forums
         {
             this.Close();
         }
-
-        private void AltaBarrio_Load(object sender, EventArgs e)
-        {
-           
-        }
-
-        private void txt_codBarrio_KeyPress(object sender, KeyPressEventArgs e)
-        {
-            if (!char.IsControl(e.KeyChar) && !char.IsDigit(e.KeyChar))
-            {
-                e.Handled = true;
-            }
-        }
-
-        private void button2_Click(object sender, EventArgs e)
-        {
-            AbrirFormularioSubMenu(new AltaLocalidad());
-        }
-
-        public void AbrirFormularioSubMenu(Form FormularioSubMenu)
-        {
-            //this.SendToBack();      //si existe un formulario abierto, lo cerramos 
-            FormularioSubMenu.TopLevel = true;
-            FormularioSubMenu.FormBorderStyle = FormBorderStyle.None;   //sin bordes
-            FormularioSubMenu.Dock = DockStyle.Fill;    //para rellenar formulario en el centro
-            FormularioSubMenu.BringToFront(); //traer el formulario por delante de la imagen de fondo
-            FormularioSubMenu.Show(); //ejecutar formulario
-
-        }
-
-      
-
-        private void button1_Click(object sender, EventArgs e)
-        {
-            AbrirFormularioSubMenu(new AltaProvincia());
-        }
-
-        private void button2_Click_1(object sender, EventArgs e)
+        private void btn_buscar_Click(object sender, EventArgs e)
         {
             DataTable tabla = new DataTable();
             DataTable tabla2 = new DataTable();
@@ -77,7 +40,6 @@ namespace TuLuz.Forums
             ReportParameter[] parametros = new ReportParameter[2];
             parametros[0] = new ReportParameter("RP01", "Grafico sobre los estado de las cotizaciones");
             parametros[1] = new ReportParameter("RP02", "Fecha: " + DateTime.Today.Day.ToString() + "/" + DateTime.Today.Month.ToString() + "/" + DateTime.Today.Year.ToString());
-            //parametros[2] = new ReportParameter("RP03", Activos().ToString());
             rpv_CotizacionXEstado.LocalReport.DataSources.Clear();
             rpv_CotizacionXEstado.LocalReport.SetParameters(parametros);
             rpv_CotizacionXEstado.LocalReport.DataSources.Add(Datos);

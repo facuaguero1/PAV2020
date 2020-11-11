@@ -78,7 +78,6 @@
             this.rv_listadoEmpleados_Jefes.ServerReport.BearerToken = null;
             this.rv_listadoEmpleados_Jefes.Size = new System.Drawing.Size(702, 393);
             this.rv_listadoEmpleados_Jefes.TabIndex = 2;
-            this.rv_listadoEmpleados_Jefes.Load += new System.EventHandler(this.reportViewer1_Load);
             // 
             // btn_buscar
             // 

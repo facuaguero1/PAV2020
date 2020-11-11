@@ -19,16 +19,10 @@ namespace TuLuz.Forums
     {
         Ng_Cotizaciones cot = new Ng_Cotizaciones();
 
-        
         public cotizacionXprecio()
         {
             InitializeComponent();
         }
-
-      
-
-    
-
         private void btn_salir_Click(object sender, EventArgs e)
         {
             this.Close();
@@ -39,35 +33,7 @@ namespace TuLuz.Forums
 
             this.RVcotizacionXprecio.RefreshReport();
         }
-
-        private void txt_codBarrio_KeyPress(object sender, KeyPressEventArgs e)
-        {
-            if (!char.IsControl(e.KeyChar) && !char.IsDigit(e.KeyChar))
-            {
-                e.Handled = true;
-            }
-        }
-
-        private void button2_Click(object sender, EventArgs e)
-        {
-            AbrirFormularioSubMenu(new AltaLocalidad());
-        }
-
-        public void AbrirFormularioSubMenu(Form FormularioSubMenu)
-        {
-            //this.SendToBack();      //si existe un formulario abierto, lo cerramos 
-            FormularioSubMenu.TopLevel = true;
-            FormularioSubMenu.FormBorderStyle = FormBorderStyle.None;   //sin bordes
-            FormularioSubMenu.Dock = DockStyle.Fill;    //para rellenar formulario en el centro
-            FormularioSubMenu.BringToFront(); //traer el formulario por delante de la imagen de fondo
-            FormularioSubMenu.Show(); //ejecutar formulario
-
-        }
-
-
-
-
-        private void button1_Click_2(object sender, EventArgs e)
+        private void btn_buscar_Click(object sender, EventArgs e)
         {
             DataTable tabla = new DataTable();
             tabla = cot.BuscarCotizacionesXprecio(txt_pracioMinimo.Text, txt_precioMaximo.Text);
@@ -83,11 +49,6 @@ namespace TuLuz.Forums
             RVcotizacionXprecio.LocalReport.SetParameters(parametros);
             RVcotizacionXprecio.LocalReport.DataSources.Add(Datos);
             RVcotizacionXprecio.RefreshReport();
-        }
-
-        private void label2_Click(object sender, EventArgs e)
-        {
-
         }
     }
 }

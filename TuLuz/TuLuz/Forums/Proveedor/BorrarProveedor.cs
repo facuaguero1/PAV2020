@@ -14,8 +14,6 @@ using TuLuz.Negocio;
 using TuLuz.Negocio.EstructuraNegocios;
 
 
-
-
 namespace TuLuz.Forums.Clientes
 {
     public partial class BorrarProveedor : Form
@@ -26,9 +24,7 @@ namespace TuLuz.Forums.Clientes
         public BorrarProveedor()
         {
             InitializeComponent();
-            CerrarPanel();
-           
-            
+            CerrarPanel();  
         }
          private void CerrarPanel ()
         {
@@ -58,7 +54,6 @@ namespace TuLuz.Forums.Clientes
                     txt_contacto.Text = tabla.Rows[0]["contacto"].ToString();
                     txt_telefono.Text = tabla.Rows[0]["telefono"].ToString();
                 }
-
             }
         }
 
@@ -117,14 +112,10 @@ namespace TuLuz.Forums.Clientes
         {
             txt_BuscarCuit.Text = "";
         }
-
-        
-
         private void btn_salir_Click(object sender, EventArgs e)
         {
             this.Close();
         }
-
         private void btn_Aceptar_Click(object sender, EventArgs e)
         {
             if (Proveedor.ContarProductosDelProveeodor(this.cuit) > 0)
@@ -133,19 +124,12 @@ namespace TuLuz.Forums.Clientes
                 MessageBox.Show("El Proveedor tiene Productos asignados, por lo tanto se lo dara de baja pero no se lo eliminara", "ATNENCION");
                 Proveedor.DarBaja(this.cuit);
                 Panel_BorrarProveedor.Visible = false;
-
             }
             else
             {
                 Proveedor.Borrar(this.cuit);
                 Panel_BorrarProveedor.Visible = false;
             }
-
-        }
-
-        private void checkBox2_CheckedChanged(object sender, EventArgs e)
-        {
-
         }
     }
 }

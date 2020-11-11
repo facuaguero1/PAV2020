@@ -29,6 +29,7 @@
         private void InitializeComponent()
         {
             this.btn_limpiarCampo = new System.Windows.Forms.GroupBox();
+            this.chk_noActivos = new System.Windows.Forms.CheckBox();
             this.btn_Limpiar = new System.Windows.Forms.Button();
             this.grid01 = new System.Windows.Forms.DataGridView();
             this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -64,7 +65,6 @@
             this.label5 = new System.Windows.Forms.Label();
             this.btn_Modificar = new System.Windows.Forms.Button();
             this.btn_salir = new System.Windows.Forms.Button();
-            this.chk_noActivos = new System.Windows.Forms.CheckBox();
             this.btn_limpiarCampo.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.grid01)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
@@ -81,14 +81,24 @@
             this.btn_limpiarCampo.Controls.Add(this.txt_BuscarCuit);
             this.btn_limpiarCampo.Controls.Add(this.chk_activos);
             this.btn_limpiarCampo.Controls.Add(this.label6);
-            this.btn_limpiarCampo.Location = new System.Drawing.Point(110, 9);
+            this.btn_limpiarCampo.Location = new System.Drawing.Point(67, 9);
             this.btn_limpiarCampo.Margin = new System.Windows.Forms.Padding(6);
             this.btn_limpiarCampo.Name = "btn_limpiarCampo";
             this.btn_limpiarCampo.Padding = new System.Windows.Forms.Padding(6);
-            this.btn_limpiarCampo.Size = new System.Drawing.Size(639, 326);
+            this.btn_limpiarCampo.Size = new System.Drawing.Size(719, 326);
             this.btn_limpiarCampo.TabIndex = 0;
             this.btn_limpiarCampo.TabStop = false;
             this.btn_limpiarCampo.Text = "Filtros";
+            // 
+            // chk_noActivos
+            // 
+            this.chk_noActivos.AutoSize = true;
+            this.chk_noActivos.Location = new System.Drawing.Point(257, 96);
+            this.chk_noActivos.Name = "chk_noActivos";
+            this.chk_noActivos.Size = new System.Drawing.Size(125, 29);
+            this.chk_noActivos.TabIndex = 6;
+            this.chk_noActivos.Text = "No Activos";
+            this.chk_noActivos.UseVisualStyleBackColor = true;
             // 
             // btn_Limpiar
             // 
@@ -118,7 +128,7 @@
             this.grid01.ReadOnly = true;
             this.grid01.RowTemplate.Height = 30;
             this.grid01.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.grid01.Size = new System.Drawing.Size(621, 176);
+            this.grid01.Size = new System.Drawing.Size(701, 176);
             this.grid01.TabIndex = 4;
             // 
             // Column1
@@ -153,7 +163,7 @@
             // 
             // btn_Buscar
             // 
-            this.btn_Buscar.Location = new System.Drawing.Point(523, 96);
+            this.btn_Buscar.Location = new System.Drawing.Point(603, 96);
             this.btn_Buscar.Name = "btn_Buscar";
             this.btn_Buscar.Size = new System.Drawing.Size(107, 39);
             this.btn_Buscar.TabIndex = 3;
@@ -302,9 +312,9 @@
             this.Panel_ModificarProveedor.Controls.Add(this.txt_razonSocial);
             this.Panel_ModificarProveedor.Controls.Add(this.txt_contacto);
             this.Panel_ModificarProveedor.Controls.Add(this.txt_Cuit);
-            this.Panel_ModificarProveedor.Location = new System.Drawing.Point(110, 421);
+            this.Panel_ModificarProveedor.Location = new System.Drawing.Point(67, 421);
             this.Panel_ModificarProveedor.Name = "Panel_ModificarProveedor";
-            this.Panel_ModificarProveedor.Size = new System.Drawing.Size(639, 299);
+            this.Panel_ModificarProveedor.Size = new System.Drawing.Size(710, 299);
             this.Panel_ModificarProveedor.TabIndex = 5;
             // 
             // label11
@@ -455,16 +465,6 @@
             this.btn_salir.Text = "X";
             this.btn_salir.UseVisualStyleBackColor = true;
             this.btn_salir.Click += new System.EventHandler(this.btn_salir_Click);
-            // 
-            // chk_noActivos
-            // 
-            this.chk_noActivos.AutoSize = true;
-            this.chk_noActivos.Location = new System.Drawing.Point(257, 96);
-            this.chk_noActivos.Name = "chk_noActivos";
-            this.chk_noActivos.Size = new System.Drawing.Size(125, 29);
-            this.chk_noActivos.TabIndex = 6;
-            this.chk_noActivos.Text = "No Activos";
-            this.chk_noActivos.UseVisualStyleBackColor = true;
             // 
             // ModificarProveedor
             // 

@@ -27,8 +27,6 @@ namespace TuLuz.Forums.Clientes
         {
             InitializeComponent();
             CerrarPanel();
-           
-            
         }
          private void CerrarPanel ()
         {
@@ -52,16 +50,8 @@ namespace TuLuz.Forums.Clientes
                 txt_NombreNuevo.Text = tabla.Rows[0]["nombre"].ToString();
                 txt_ApellidoNuevo.Text = tabla.Rows[0]["apellido"].ToString();
                 txt_activo.Text = tabla.Rows[0]["activo"].ToString();
-
-
             }
         }
-
-        private void btn_Cancelar_Click(object sender, EventArgs e)
-        {
-            CerrarPanel();
-        }
-
         private void btn_Buscar_Click(object sender, EventArgs e)
         {
             if (chk_activos.Checked == true)
@@ -111,9 +101,6 @@ namespace TuLuz.Forums.Clientes
         {
             txt_BuscarCuit.Text = "";
         }
-
-        
-
         private void btn_salir_Click(object sender, EventArgs e)
         {
             this.Close();
@@ -122,11 +109,6 @@ namespace TuLuz.Forums.Clientes
         private void btn_Aceptar_Click(object sender, EventArgs e)
         {
             Panel_ConsultarCliente.Visible = false;
-        }
-
-        private void btn_limpiarCampo_Enter(object sender, EventArgs e)
-        {
-
         }
     }
 }

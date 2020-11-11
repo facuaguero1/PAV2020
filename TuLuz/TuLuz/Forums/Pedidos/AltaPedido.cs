@@ -18,7 +18,6 @@ namespace TuLuz.Forums
         Ng_Pedidos Pedidos = new Ng_Pedidos();
         Ng_Producto Producto = new Ng_Producto();
         Ng_Clientes Clientes = new Ng_Clientes();
-        Be_BaseDatos _BD = new Be_BaseDatos();
         Ng_DetallePedidos Detalle = new Ng_DetallePedidos();
         Ng_Empleados Empleados = new Ng_Empleados();
         Ng_Cotizaciones Cotizaciones = new Ng_Cotizaciones();
@@ -35,7 +34,6 @@ namespace TuLuz.Forums
         {
             this.Close();
         }
-
         private void btn_salir_Click(object sender, EventArgs e)
         {
             this.Close();
@@ -44,18 +42,6 @@ namespace TuLuz.Forums
         {
             grp_detalle.Visible = false;
         }
-        private void button1_Click(object sender, EventArgs e)
-        {
-            if (grp_detalle.Visible == true)
-            {
-                grp_detalle.Visible = false;
-            }
-            else
-            {
-                grp_detalle.Visible = true;
-            }
-        }
-
         private void Cargar_grilla(DataTable tabla)
         {
             grdDetalle.Rows.Clear();
@@ -69,7 +55,6 @@ namespace TuLuz.Forums
 
             }
         }
-
         private void button1_Click_1(object sender, EventArgs e)
         {
             DataTable Consulta = new DataTable();
@@ -88,18 +73,14 @@ namespace TuLuz.Forums
             {
                 MessageBox.Show("Primero debe crear al pedido", "Atencion");
             }
-
         }
-
         private void checkBox2_CheckedChanged(object sender, EventArgs e)
-        {
-            
+        {  
             if (checkBox2.Checked == true)
                 if (txt_NumPedido.Text == "")
                 {
                     checkBox2.Checked = false;
                     MessageBox.Show("Primero debe insertar el codigo del pedido a agregar", "Atencion");
-                    
                 }
                 else
                 {
@@ -107,7 +88,6 @@ namespace TuLuz.Forums
                     txt_NumeroPedidoDetalle.Text = txt_NumPedido.Text;
                     txt_NumPedido.Enabled = false;
                     cmb_CodProducto.Cargar(Producto.EstructuraCombo());
-
                 }
             else
             {
@@ -118,12 +98,6 @@ namespace TuLuz.Forums
 
             }
         }
-
-        private void button2_Click(object sender, EventArgs e)
-        {
-            cmb_CuitCliente.SelectedIndex = -1;
-        }
-
         private void btn_crearProducto_Click(object sender, EventArgs e)
         {
 
@@ -146,9 +120,7 @@ namespace TuLuz.Forums
                 Verificacion = Pedidos.Buscar_PedidoPorNumero(int.Parse(_Ep.numeroPedido));
                 if (Verificacion.Rows.Count > 0)
                 {
-
                     MessageBox.Show("El pedido que desea insertar ya existe. ", "ATENCION");
-
                 }
                 else
                 {
@@ -156,14 +128,7 @@ namespace TuLuz.Forums
                     this.Close();
                 }
             }
-
         }
-
-        private void btn_cancelar_Click(object sender, EventArgs e)
-        {
-            this.Close();
-        }
-
         private void txt_NumPedido_KeyPress(object sender, KeyPressEventArgs e)
         {
             if (!char.IsControl(e.KeyChar) && !char.IsDigit(e.KeyChar))
@@ -171,7 +136,6 @@ namespace TuLuz.Forums
                 e.Handled = true;
             }
         }
-
         private void comboBox012_SelectedIndexChanged(object sender, EventArgs e)
         {
             if (cmb_Mes.SelectedItem.ToString() == "2")

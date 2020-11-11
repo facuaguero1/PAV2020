@@ -352,15 +352,15 @@
     <Compile Include="Forums\Reportes\PedidosXEmpleados\PedidosXEmpleado.Designer.cs">
       <DependentUpon>PedidosXEmpleado.cs</DependentUpon>
     </Compile>
-    <Compile Include="Forums\Reportes\Productos con rango de precios\ProductoXprecio.Designer.cs">
+    <Compile Include="Forums\Reportes\Productos_rango_precios\ProductoXprecio.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>ProductoXprecio.xsd</DependentUpon>
     </Compile>
-    <Compile Include="Forums\Reportes\Productos con rango de precios\ProductoXrangoPrecio.cs">
+    <Compile Include="Forums\Reportes\Productos_rango_precios\ProductoXrangoPrecio.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Forums\Reportes\Productos con rango de precios\ProductoXrangoPrecio.Designer.cs">
+    <Compile Include="Forums\Reportes\Productos_rango_precios\ProductoXrangoPrecio.Designer.cs">
       <DependentUpon>ProductoXrangoPrecio.cs</DependentUpon>
     </Compile>
     <Compile Include="Forums\Reportes\ProductosXPedidos\ProductosXPedidos.Designer.cs">
@@ -628,7 +628,6 @@
     <Compile Include="Negocio\EstructuraNegocios\Es_DetallePedido.cs" />
     <Compile Include="Negocio\EstructuraNegocios\Es_DetalleProducto.cs" />
     <Compile Include="Negocio\EstructuraNegocios\Es_Empleados.cs" />
-    <Compile Include="Negocio\EstructuraNegocios\Es_EstadosCotizaciones.cs" />
     <Compile Include="Negocio\EstructuraNegocios\Es_Localidad.cs" />
     <Compile Include="Negocio\EstructuraNegocios\Es_Pedidos.cs" />
     <Compile Include="Negocio\EstructuraNegocios\Es_Producto.cs" />
@@ -759,10 +758,10 @@
       <DependentUpon>Pedido_X_2Fechas.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forums\Reportes\Pedido_Entre_Fechas\ReportePedidoXFecha.rdlc" />
-    <EmbeddedResource Include="Forums\Reportes\Productos con rango de precios\ProductoXrangoPrecio.resx">
+    <EmbeddedResource Include="Forums\Reportes\Productos_rango_precios\ProductoXrangoPrecio.resx">
       <DependentUpon>ProductoXrangoPrecio.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Forums\Reportes\Productos con rango de precios\Report1.rdlc" />
+    <EmbeddedResource Include="Forums\Reportes\Productos_rango_precios\Report1.rdlc" />
     <EmbeddedResource Include="Forums\Reportes\ProductosXPedidos\ProductoXPedidos.resx">
       <DependentUpon>ProductoXPedidos.cs</DependentUpon>
     </EmbeddedResource>
@@ -1088,15 +1087,15 @@
     <None Include="Forums\Reportes\PedidosXClientes\PedidosXClientes.xss">
       <DependentUpon>PedidosXClientes.xsd</DependentUpon>
     </None>
-    <None Include="Forums\Reportes\Productos con rango de precios\ProductoXprecio.xsc">
+    <None Include="Forums\Reportes\Productos_rango_precios\ProductoXprecio.xsc">
       <DependentUpon>ProductoXprecio.xsd</DependentUpon>
     </None>
-    <None Include="Forums\Reportes\Productos con rango de precios\ProductoXprecio.xsd">
+    <None Include="Forums\Reportes\Productos_rango_precios\ProductoXprecio.xsd">
       <SubType>Designer</SubType>
       <Generator>MSDataSetGenerator</Generator>
       <LastGenOutput>ProductoXprecio.Designer.cs</LastGenOutput>
     </None>
-    <None Include="Forums\Reportes\Productos con rango de precios\ProductoXprecio.xss">
+    <None Include="Forums\Reportes\Productos_rango_precios\ProductoXprecio.xss">
       <DependentUpon>ProductoXprecio.xsd</DependentUpon>
     </None>
     <None Include="Forums\Reportes\ProductosXPedidos\ProductosXPedidos.xsc">

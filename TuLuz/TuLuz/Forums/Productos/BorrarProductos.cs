@@ -91,7 +91,6 @@ namespace TuLuz.Forums.Clientes
                 }
             }
         }
-
         private void btn_Cancelar_Click(object sender, EventArgs e)
         {
             CerrarPanel();
@@ -135,7 +134,6 @@ namespace TuLuz.Forums.Clientes
         {
             txt_BuscarDoc.Text = "";
         }
-
         private void btn_Aceptar_Click(object sender, EventArgs e)
         {
             Detalle.Borrar(this.codigo);
@@ -143,37 +141,10 @@ namespace TuLuz.Forums.Clientes
             Panel_BorrarProducto.Visible = false;
             Cargar_grilla(Producto.Todos_los_Productos());
         }
-
         private void btn_salir_Click(object sender, EventArgs e)
         {
             this.Close();
         }
-
-        private void label10_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label9_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void cmbLocalidades_SelectedIndexChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void btn_limpiarr_Click(object sender, EventArgs e)
-        {
- 
-        }
-
-        private void label11_Click(object sender, EventArgs e)
-        {
-
-        }
-
         private void grd_componentes_CellDoubleClick(object sender, DataGridViewCellEventArgs e)
         {
             //SE BORRA UN SOLO DETALLE, PARA BORRAR MAS, HAY QUE VOLVER A ENTRAR.. PREGUNTAR!!
@@ -182,8 +153,6 @@ namespace TuLuz.Forums.Clientes
                 Detalle.BorrarDetalleEspecifico(txt_codigo.Text, grd_componentes.CurrentRow.Cells[0].Value.ToString());
                 grd_componentes.Rows.Remove(grd_componentes.CurrentRow);               
             }
-           
-
         }
     }
 }

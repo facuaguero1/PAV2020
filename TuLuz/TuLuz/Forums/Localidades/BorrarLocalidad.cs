@@ -61,7 +61,6 @@ namespace TuLuz.Forums.Provincias
                 }
             }
         }
-
         private void btn_Buscar_Click(object sender, EventArgs e)
         {
             if (chk_Todos.Checked==true)
@@ -95,9 +94,6 @@ namespace TuLuz.Forums.Provincias
         {
             txt_BuscarCodLocalidad.Text = "";
         }
-
-        
-
         private void btn_salir_Click(object sender, EventArgs e)
         {
             this.Close();
@@ -108,11 +104,6 @@ namespace TuLuz.Forums.Provincias
             Localidad.Borrar(this.codLocalidad);
             Panel_DatosProvincia.Visible = false;
         }
-
-        private void BorrarBarrio_Load(object sender, EventArgs e)
-        {
-        }
-
         private void txt_BuscarCodLocalidad_KeyPress(object sender, KeyPressEventArgs e)
         {
             if (!char.IsControl(e.KeyChar) && !char.IsDigit(e.KeyChar))

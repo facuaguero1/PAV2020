@@ -45,7 +45,6 @@
             this.label1.TabIndex = 16;
             this.label1.Text = "Cantidad de Productos y Equivalentes";
             this.label1.TextAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
             // btn_Buscar
             // 
@@ -84,7 +83,6 @@
             this.Name = "Estadistica_Cantidades_Productos_Equivalentes";
             this.Text = "Estadistica_Cantidades_Productos_Equivalentes";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
-            this.Load += new System.EventHandler(this.Estadistica_Cantidades_Jefes_Empleados_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 

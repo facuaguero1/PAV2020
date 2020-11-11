@@ -23,11 +23,6 @@ namespace TuLuz.Forums.Estadisticas.Pedidos_Entre_Años
         {
             InitializeComponent();
         }
-
-        private void Pedidos_Entre_Años_Load(object sender, EventArgs e)
-        {
-            cmb_Estado.Cargar(Estado.EstructuraCombo());
-        }
         private DataTable Buscar_X_Fecha()
         {
             DataTable tabla = new DataTable();
@@ -91,10 +86,9 @@ namespace TuLuz.Forums.Estadisticas.Pedidos_Entre_Años
             tabla = Buscar_X_Fecha();
             CargarInforme(tabla);
         }
-
-        private void label2_Click(object sender, EventArgs e)
+        private void CotizacionesXFechaXEstado_Load(object sender, EventArgs e)
         {
-
+            cmb_Estado.Cargar(Estado.EstructuraCombo());
         }
     }
 }

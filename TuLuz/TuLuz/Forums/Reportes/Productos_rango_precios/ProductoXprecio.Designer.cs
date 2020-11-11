@@ -10,7 +10,7 @@
 
 #pragma warning disable 1591
 
-namespace TuLuz.Forums.Reportes.Productos_con_rango_de_precios {
+namespace TuLuz.Forums.Reportes.Productos_rango_precios {
     
     
     /// <summary>

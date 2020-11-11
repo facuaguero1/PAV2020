@@ -29,14 +29,11 @@ namespace TuLuz.Forums.Provincias
             InitializeComponent();
             CerrarPanel();
             cmb_Provincia.Cargar(Provincia.EstructuraCombo());
-           
-            
         }
          private void CerrarPanel ()
-        {
+         {
             Panel_ConsultarCliente.Visible = false;
-        }
-
+         }
         private void btn_Consultar_Click(object sender, EventArgs e)
         {
             if (this.grid01.Rows.Count == 0)
@@ -55,12 +52,6 @@ namespace TuLuz.Forums.Provincias
                 cmb_Provincia.SelectedValue = int.Parse(tabla.Rows[0]["codProvincia"].ToString());
             }
         }
-
-        private void btn_Cancelar_Click(object sender, EventArgs e)
-        {
-            CerrarPanel();
-        }
-
         private void btn_Buscar_Click(object sender, EventArgs e)
         {
             if (chk_Todos.Checked==true)
@@ -88,16 +79,12 @@ namespace TuLuz.Forums.Provincias
                 grid01.Rows[i].Cells[0].Value = tabla.Rows[i]["codLocalidad"].ToString();
                 grid01.Rows[i].Cells[1].Value = tabla.Rows[i]["nombre"].ToString();
                 grid01.Rows[i].Cells[2].Value = tabla.Rows[i]["codProvincia"].ToString();
-
             }
         }
         private void btn_Limpiar_Click(object sender, EventArgs e)
         {
             txt_BuscarCodigo.Text = "";
         }
-
-        
-
         private void btn_salir_Click(object sender, EventArgs e)
         {
             this.Close();
@@ -107,17 +94,6 @@ namespace TuLuz.Forums.Provincias
         {
             Panel_ConsultarCliente.Visible = false;
         }
-
-        private void label7_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void ConsultarBarrio_Load(object sender, EventArgs e)
-        {
-
-        }
-
         private void txt_BuscarCodigo_KeyPress(object sender, KeyPressEventArgs e)
         {
             if (!char.IsControl(e.KeyChar) && !char.IsDigit(e.KeyChar))

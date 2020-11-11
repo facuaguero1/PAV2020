@@ -29,12 +29,6 @@ namespace TuLuz.Forums
             this.Close();
         }
 
-        private void AltaBarrio_Load(object sender, EventArgs e)
-        {
-            cmb_Empleados.Cargar(Empleados.EstructuraComboxListado());
-            cmb_Empleados.SelectedIndex = -1;
-            this.RVPedidosXEmpleados.RefreshReport();
-        }
         private void comboBox011_SelectedIndexChanged(object sender, EventArgs e)
         {
             if (cmb_Empleados.SelectedIndex == -1)
@@ -44,11 +38,18 @@ namespace TuLuz.Forums
             
         }
 
-        private void button1_Click(object sender, EventArgs e)
+        private void PedidosXEmpleados_Load(object sender, EventArgs e)
+        {
+            cmb_Empleados.Cargar(Empleados.EstructuraComboxListado());
+            cmb_Empleados.SelectedIndex = -1;
+            this.RVPedidosXEmpleados.RefreshReport();
+        }
+
+        private void btn_buscar_Click(object sender, EventArgs e)
         {
             if (cmb_Empleados.SelectedIndex == -1)
             {
-                MessageBox.Show("No se selecciono ningun empleado","ATENCION");
+                MessageBox.Show("No se selecciono ningun empleado", "ATENCION");
             }
             else
             {

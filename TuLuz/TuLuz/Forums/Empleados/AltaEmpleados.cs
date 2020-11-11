@@ -55,8 +55,6 @@ namespace TuLuz.Forums
                 _Ee.telefono = txt_Telefono.Text;
                 _Ee.tipoDocJefe = cmb_Tipo_Doc.SelectedValue.ToString();
                 _Ee.numDocJefe = txt_Num_Doc_Jefe.Text;
-                //string codProv = cmb_provincia.SelectedValue.ToString();
-                //cmb_localidad.Cargar(Localidad.EstructuraComboCOD(codProv));
                 _Ee.activo = "true";
                 if (txt_Num_Doc_Jefe.Text=="")
                 {
@@ -71,9 +69,7 @@ namespace TuLuz.Forums
                 Verificacion = Empleado.Buscar_Empleados(_Ee.numDoc);
                 if (Verificacion.Rows.Count > 0)
                 {
-
                     MessageBox.Show("El Empleado que desea insertar ya existe. ", "ATENCION");
-
                 }
                 else
                 {
@@ -89,23 +85,18 @@ namespace TuLuz.Forums
                     this.Close();
                 }
             }
-
         }
-
         private void btn_salir_Click(object sender, EventArgs e)
         {
             this.Close();
         }
-
         private void btn_limpiar_campo_Click(object sender, EventArgs e)
         {
             cmb_Tipo_Doc_Jefe.SelectedIndex = -1;
         }
-
         private void brn_Load(object sender, EventArgs e)
         {
-            grp_usr.Visible = false;
-            
+            grp_usr.Visible = false; 
         }
         private void button1_Click(object sender, EventArgs e)
         {
@@ -118,12 +109,10 @@ namespace TuLuz.Forums
                 grp_usr.Visible = true;
             }
         }
-
         private void cmb_provincia_SelectedIndexChanged(object sender, EventArgs e)
         {
             if (cmb_provincia.SelectedIndex == -1)
             {
-
             }
             else
             {
@@ -131,14 +120,11 @@ namespace TuLuz.Forums
                 cmb_localidad.Cargar(Localidad.EstructuraComboEspecial(int.Parse(cmb_provincia.SelectedValue.ToString())));
             }
             cmb_localidad.SelectedIndex = -1;
-
         }
-
         private void cmb_localidad_SelectedIndexChanged(object sender, EventArgs e)
         {
             if (cmb_localidad.SelectedIndex == -1)
             {
-
             }
             else
             {
@@ -147,7 +133,6 @@ namespace TuLuz.Forums
             }
             cmb_Barrio.SelectedIndex = -1;
         }
-
         private void txt_Num_Doc_KeyPress(object sender, KeyPressEventArgs e)
         {
             if (!char.IsControl(e.KeyChar) && !char.IsDigit(e.KeyChar))

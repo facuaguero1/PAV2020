@@ -140,7 +140,6 @@
             this.txt_ApellidoCliente.pp_validable = true;
             this.txt_ApellidoCliente.Size = new System.Drawing.Size(466, 30);
             this.txt_ApellidoCliente.TabIndex = 6;
-            this.txt_ApellidoCliente.TextChanged += new System.EventHandler(this.txt_ApellidoCliente_TextChanged);
             // 
             // txt_nombreCliente
             // 
@@ -186,7 +185,6 @@
             this.Name = "AltaCliente";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
-            this.Load += new System.EventHandler(this.AltaCliente_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 

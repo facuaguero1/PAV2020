@@ -31,8 +31,6 @@ namespace TuLuz.Forums.Clientes
             InitializeComponent();
             CerrarPanel();
             cmb_cuitProveedor.Cargar(Proveedores.EstructuraCombo());
-
-
         }
          private void CerrarPanel ()
         {
@@ -86,10 +84,8 @@ namespace TuLuz.Forums.Clientes
                 {
                     grp_detalle_compo.Visible = false;
                 }
-
             }
         }
-
         private void btn_Cancelar_Click(object sender, EventArgs e)
         {
             CerrarPanel();
@@ -142,16 +138,6 @@ namespace TuLuz.Forums.Clientes
         private void btn_salir_Click(object sender, EventArgs e)
         {
             this.Close();
-        }
-
-        private void label11_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label12_Click(object sender, EventArgs e)
-        {
-
         }
     }
 }

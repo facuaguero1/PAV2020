@@ -1553,7 +1553,7 @@
             this.Panel_Centro.Name = "Panel_Centro";
             this.Panel_Centro.Size = new System.Drawing.Size(684, 512);
             this.Panel_Centro.TabIndex = 2;
-            this.Panel_Centro.Paint += new System.Windows.Forms.PaintEventHandler(this.Panel_Centro_Paint);
+
             // 
             // pictureBox1
             // 

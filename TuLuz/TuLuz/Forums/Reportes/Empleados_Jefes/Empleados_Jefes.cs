@@ -28,13 +28,6 @@ namespace TuLuz.Forums.Reportes.Empleados_Jefes
         {
             cmb_nro_doc.Cargar(Empleados.EstructuraComboxListado());
             cmb_nro_doc.SelectedIndex = -1;
-            //this.rv_listadoEmpleados_Jefes.RefreshReport();
-            //this.rv_listadoEmpleados_Jefes.RefreshReport();
-        }
-
-        private void reportViewer1_Load(object sender, EventArgs e)
-        {
-
         }
         private DataTable EsJefeS()
         {
@@ -48,7 +41,6 @@ namespace TuLuz.Forums.Reportes.Empleados_Jefes
             }
             return Tabla;
         }
-
         private void CargarInforme(DataTable Tabla)
         {
             if (Tabla.Rows.Count == 0 )
@@ -96,15 +88,12 @@ namespace TuLuz.Forums.Reportes.Empleados_Jefes
             }
             else
             {
-
                 DataTable Tabla = new DataTable();
                 //Tabla 
                 Tabla = EsJefeS();
                 CargarInforme(Tabla);
-
             }
         }
-
         private void btn_salir_Click(object sender, EventArgs e)
         {
             this.Close();

@@ -25,12 +25,6 @@ namespace TuLuz.Forums.Estadisticas.VentasXMes
             InitializeComponent();
         }
 
-        private void Estadistica_VentaXMes_Load(object sender, EventArgs e)
-        {
-
-            this.rv_VentasXMes.RefreshReport();
-        }
-
         private void CalcularEstadistica_VentasXMes()
         {
             DataTable tabla2 = new DataTable();
@@ -50,15 +44,9 @@ namespace TuLuz.Forums.Estadisticas.VentasXMes
             rv_VentasXMes.RefreshReport();
 
         }
-
         private void btn_Buscar_Click(object sender, EventArgs e)
         {
             CalcularEstadistica_VentasXMes();
-        }
-
-        private void txt_CodProducto_TextChanged(object sender, EventArgs e)
-        {
-
         }
     }
 }

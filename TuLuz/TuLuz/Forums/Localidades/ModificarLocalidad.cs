@@ -15,8 +15,6 @@ using TuLuz.Negocio;
 using TuLuz.Negocio.EstructuraNegocios;
 
 
-
-
 namespace TuLuz.Forums.Provincias
 {
     public partial class ModificarLocalidad : Form
@@ -36,7 +34,6 @@ namespace TuLuz.Forums.Provincias
         {
             Panel_ModificarProvincia.Visible = false;
         }
-
         private void btn_Modificar_Click(object sender, EventArgs e)
         {
             if (this.grid01.Rows.Count == 0)
@@ -53,16 +50,12 @@ namespace TuLuz.Forums.Provincias
                 txt_codLocalidad.Text = tabla.Rows[0]["codLocalidad"].ToString();
                 txt_NombreNuevo.Text = tabla.Rows[0]["nombre"].ToString();
                 cmb_provincia.SelectedValue = int.Parse(tabla.Rows[0]["codProvincia"].ToString());
-
-
             }
         }
-
         private void btn_Cancelar_Click(object sender, EventArgs e)
         {
             CerrarPanel();
         }
-
         private void btn_Buscar_Click(object sender, EventArgs e)
         {
             if (chk_Todos.Checked==true)
@@ -111,14 +104,11 @@ namespace TuLuz.Forums.Provincias
                 Localidad.Modificar(_El);
                 Panel_ModificarProvincia.Visible = false;
             }
-            
         }
-
         private void btn_salir_Click(object sender, EventArgs e)
         {
             this.Close();
         }
-
         private void txt_BuscarLocalidad_KeyPress(object sender, KeyPressEventArgs e)
         {
             if (!char.IsControl(e.KeyChar) && !char.IsDigit(e.KeyChar))

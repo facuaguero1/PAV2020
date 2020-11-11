@@ -136,7 +136,6 @@
             this.label2.Size = new System.Drawing.Size(40, 13);
             this.label2.TabIndex = 21;
             this.label2.Text = "Estado";
-            this.label2.Click += new System.EventHandler(this.label2_Click);
             // 
             // CotizacionesXFechaXEstado
             // 
@@ -152,7 +151,7 @@
             this.Controls.Add(this.label1);
             this.Name = "CotizacionesXFechaXEstado";
             this.Text = "Pedidos_Entre_Años";
-            this.Load += new System.EventHandler(this.Pedidos_Entre_Años_Load);
+            this.Load += new System.EventHandler(this.CotizacionesXFechaXEstado_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 

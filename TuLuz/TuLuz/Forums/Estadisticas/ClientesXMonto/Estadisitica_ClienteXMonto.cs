@@ -23,15 +23,7 @@ namespace TuLuz.Forums.Estadisticas.VentasXMes
         public Estadistica_ClienteXMonto()
         {
             InitializeComponent();
-           
         }
-
-        private void Estadistica_VentaXMes_Load(object sender, EventArgs e)
-        {
-
-            this.rv_ClienteXMonto.RefreshReport();
-        }
-
         private void CalcularEstadistica_VentasXMes()
         {
             

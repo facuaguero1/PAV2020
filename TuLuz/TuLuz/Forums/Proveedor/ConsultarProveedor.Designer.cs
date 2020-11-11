@@ -471,7 +471,6 @@
             this.Name = "ConsultarProveedor";
             this.Text = "Consultar Barrio";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
-            this.Load += new System.EventHandler(this.ConsultarProveedor_Load);
             this.btn_limpiarCampo.ResumeLayout(false);
             this.btn_limpiarCampo.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.grid01)).EndInit();

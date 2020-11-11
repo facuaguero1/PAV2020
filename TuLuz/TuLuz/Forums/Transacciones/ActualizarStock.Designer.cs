@@ -38,7 +38,7 @@
             this.Column3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.txt_codigo = new TuLuz.Clases.TextBox01();
             this.txt_nombre = new TuLuz.Clases.TextBox01();
-            this.button1 = new System.Windows.Forms.Button();
+            this.btn_salir = new System.Windows.Forms.Button();
             this.btn_guardar = new System.Windows.Forms.Button();
             this.label2 = new System.Windows.Forms.Label();
             this.txt_cantStock = new TuLuz.Clases.TextBox01();
@@ -61,7 +61,6 @@
             this.label1.TabIndex = 0;
             this.label1.Text = "Actualizar Stock";
             this.label1.TextAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
             // label7
             // 
@@ -94,7 +93,6 @@
             this.label14.Size = new System.Drawing.Size(75, 25);
             this.label14.TabIndex = 28;
             this.label14.Text = "Codigo";
-            this.label14.Click += new System.EventHandler(this.label14_Click);
             // 
             // grid01
             // 
@@ -158,19 +156,19 @@
             this.txt_nombre.Size = new System.Drawing.Size(281, 30);
             this.txt_nombre.TabIndex = 7;
             // 
-            // button1
+            // btn_salir
             // 
-            this.button1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.button1.BackgroundImage = global::TuLuz.Properties.Resources._4115235_exit_logout_sign_out_114030;
-            this.button1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.button1.FlatAppearance.BorderSize = 0;
-            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button1.Location = new System.Drawing.Point(1008, 12);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(60, 52);
-            this.button1.TabIndex = 49;
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
+            this.btn_salir.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.btn_salir.BackgroundImage = global::TuLuz.Properties.Resources._4115235_exit_logout_sign_out_114030;
+            this.btn_salir.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btn_salir.FlatAppearance.BorderSize = 0;
+            this.btn_salir.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_salir.Location = new System.Drawing.Point(1008, 12);
+            this.btn_salir.Name = "btn_salir";
+            this.btn_salir.Size = new System.Drawing.Size(60, 52);
+            this.btn_salir.TabIndex = 49;
+            this.btn_salir.UseVisualStyleBackColor = true;
+            this.btn_salir.Click += new System.EventHandler(this.btn_salir_Click);
             // 
             // btn_guardar
             // 
@@ -179,12 +177,12 @@
             this.btn_guardar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.btn_guardar.FlatAppearance.BorderSize = 0;
             this.btn_guardar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_guardar.Location = new System.Drawing.Point(834, 385);
+            this.btn_guardar.Location = new System.Drawing.Point(838, 385);
             this.btn_guardar.Name = "btn_guardar";
             this.btn_guardar.Size = new System.Drawing.Size(70, 58);
             this.btn_guardar.TabIndex = 14;
             this.btn_guardar.UseVisualStyleBackColor = true;
-            this.btn_guardar.Click += new System.EventHandler(this.btn_cancelar_Click);
+            this.btn_guardar.Click += new System.EventHandler(this.btn_guardar_Click);
             // 
             // label2
             // 
@@ -271,7 +269,7 @@
             this.Controls.Add(this.label4);
             this.Controls.Add(this.txt_cantStock);
             this.Controls.Add(this.label2);
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.btn_salir);
             this.Controls.Add(this.grid01);
             this.Controls.Add(this.label14);
             this.Controls.Add(this.label9);
@@ -284,7 +282,7 @@
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
             this.Text = "Datos de Usuario";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
-            this.Load += new System.EventHandler(this.brn_Load);
+            this.Load += new System.EventHandler(this.ActualizarStock_Load);
             ((System.ComponentModel.ISupportInitialize)(this.grid01)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -301,7 +299,7 @@
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.Label label14;
         private System.Windows.Forms.DataGridView grid01;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button btn_salir;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column1;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column2;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column3;

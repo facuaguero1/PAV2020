@@ -23,17 +23,6 @@ namespace TuLuz.Forums.Reportes.Proveedores_Activos_Inactivos
             InitializeComponent();
         }
 
-        private void Proveedores_Activos_Inactivos_Load(object sender, EventArgs e)
-        {
-            //this.rv_Proveedores_Activos_NoActivos.RefreshReport();
-        }
-
-
-        private void btn_cancelar_Click(object sender, EventArgs e)
-        {
-            this.Close();
-        }
-
         private void btn_buscar_Click_1(object sender, EventArgs e)
         {
             DataTable tabla = new DataTable();

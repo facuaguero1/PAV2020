@@ -167,7 +167,6 @@
             this.grp_detalle.TabIndex = 22;
             this.grp_detalle.TabStop = false;
             this.grp_detalle.Text = "Detalle del Producto";
-            this.grp_detalle.Enter += new System.EventHandler(this.grp_usr_Enter);
             // 
             // button1
             // 
@@ -196,7 +195,6 @@
             this.label2.Size = new System.Drawing.Size(49, 13);
             this.label2.TabIndex = 6;
             this.label2.Text = "Cantidad";
-            this.label2.Click += new System.EventHandler(this.label2_Click_1);
             // 
             // label12
             // 
@@ -215,7 +213,6 @@
             this.label11.Size = new System.Drawing.Size(50, 13);
             this.label11.TabIndex = 2;
             this.label11.Text = "Producto";
-            this.label11.Click += new System.EventHandler(this.label11_Click);
             // 
             // label13
             // 

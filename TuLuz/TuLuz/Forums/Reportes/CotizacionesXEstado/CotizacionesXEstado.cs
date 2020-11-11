@@ -23,18 +23,15 @@ namespace TuLuz.Forums.Reportes.CotizacionesXEstado
         {
             InitializeComponent();
         }
-
         private void btn_salir_Click(object sender, EventArgs e)
         {
             this.Close();
         }
-
         private void CotizacionesXEstado_Load(object sender, EventArgs e)
         {
             cmb_Estados.Cargar(Estados.EstructuraComboxListado());
             cmb_Estados.SelectedIndex = -1;
         }
-
         private void cmb_Estados_SelectedIndexChanged(object sender, EventArgs e)
         {
             if (cmb_Estados.SelectedIndex == -1)
@@ -42,7 +39,6 @@ namespace TuLuz.Forums.Reportes.CotizacionesXEstado
                 cmb_Estados.Text = "Seleccionar.";
             }
         }
-
         private void btn_Buscar_Click(object sender, EventArgs e)
         {
 

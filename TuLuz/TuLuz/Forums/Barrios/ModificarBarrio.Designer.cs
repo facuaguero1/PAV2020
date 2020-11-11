@@ -305,7 +305,6 @@
             this.cmbLocalidades.pp_Value = null;
             this.cmbLocalidades.Size = new System.Drawing.Size(208, 33);
             this.cmbLocalidades.TabIndex = 9;
-            this.cmbLocalidades.SelectedIndexChanged += new System.EventHandler(this.cmbLocalidades_SelectedIndexChanged);
             // 
             // label10
             // 
@@ -316,7 +315,6 @@
             this.label10.Size = new System.Drawing.Size(514, 76);
             this.label10.TabIndex = 8;
             this.label10.Text = "Modificar Barrio";
-            this.label10.Click += new System.EventHandler(this.label10_Click);
             // 
             // btn_Aceptar
             // 
@@ -346,7 +344,6 @@
             this.label9.Size = new System.Drawing.Size(96, 25);
             this.label9.TabIndex = 5;
             this.label9.Text = "Localidad";
-            this.label9.Click += new System.EventHandler(this.label9_Click);
             // 
             // label8
             // 

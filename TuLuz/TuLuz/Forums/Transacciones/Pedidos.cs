@@ -15,9 +15,6 @@ namespace TuLuz.Forums
 {
     public partial class Pedidos : Form
     {
-        
-
-        Be_BaseDatos _BD = new Be_BaseDatos();
         Ng_Pedidos Pedido = new Ng_Pedidos();
         Ng_Empleados Empleados = new Ng_Empleados();
         Ng_Clientes Clientes = new Ng_Clientes();
@@ -25,7 +22,6 @@ namespace TuLuz.Forums
         Ng_Cotizaciones Cotizacion = new Ng_Cotizaciones();
         Ng_DetallePedidos Detalle = new Ng_DetallePedidos();
         Es_Pedidos EP = new Es_Pedidos();
-        Ng_EstadosCotizaciones EstadosCot = new Ng_EstadosCotizaciones();
 
         public string num { get; set; }
 
@@ -39,9 +35,7 @@ namespace TuLuz.Forums
             cmb_Productos.Cargar(Producto.EstructuraCombo());
             groupBox1.Visible = false;
         }
-
-        //BOTON MODIFICAR....
-        private void btn_cancelar_Click(object sender, EventArgs e)
+        private void btn_guardar_Click(object sender, EventArgs e)
         {
             TratamientosEspeciales tratamiento = new TratamientosEspeciales();
             Es_Pedidos _EP = new Es_Pedidos();
@@ -49,10 +43,10 @@ namespace TuLuz.Forums
             if (tratamiento.validar(this.Controls) == TratamientosEspeciales.Validacion.correcta)
             {
                 DataTable tabla = new DataTable();
-                tabla =Pedido.Buscar_PedidoPorNumero(int.Parse(txt_numeroPedido.Text));
+                tabla = Pedido.Buscar_PedidoPorNumero(int.Parse(txt_numeroPedido.Text));
                 _EP.numeroPedido = txt_numeroPedido.Text;
                 _EP.numeroCotizacion = cmb_Cotizaciones.SelectedValue.ToString();
-                _EP.fechaPedido = cmb_Dia.SelectedItem +"/"+ cmb_Mes.SelectedItem + "/" + cmb_Año.SelectedItem;
+                _EP.fechaPedido = cmb_Dia.SelectedItem + "/" + cmb_Mes.SelectedItem + "/" + cmb_Año.SelectedItem;
                 _EP.condicionPago = txt_CondicionPago.Text;
                 _EP.numDniVendedor = cmb_Vendedor.SelectedValue.ToString();
                 _EP.cuitCliente = cmb_cliente.SelectedValue.ToString();
@@ -64,7 +58,7 @@ namespace TuLuz.Forums
 
             }
         }
-            private void btn_aceptar_Click(object sender, EventArgs e)
+        private void btn_aceptar_Click(object sender, EventArgs e)
         {
 
             TratamientosEspeciales tratamiento = new TratamientosEspeciales();
@@ -100,43 +94,6 @@ namespace TuLuz.Forums
                 }
             }
         }
-            
-
-        private void brn_Load(object sender, EventArgs e)
-        {
-            Pedido.IniciarTransaccion();
-            Cargar_grilla(Pedido.Todos_los_Pedidos());
-  
-
-            txt_Cantidad.Enabled = false;
-            cmb_Cotizaciones.Enabled = false;
-            cmb_Año.Enabled = false;
-            cmb_Productos.Enabled = false;
-            txt_numeroPedido.Enabled = false;
-            txt_subTotal.Enabled = false;
-            txt_CondicionPago.Enabled = false; 
-
-
-            cmb_cliente.SelectedIndex = -1;
-            cmb_Dia.SelectedIndex = -1;
-            cmb_Año.SelectedIndex = -1;
-            cmb_Cotizaciones.SelectedIndex = -1;
-            cmb_Mes.SelectedIndex = -1;
-            cmb_Vendedor.SelectedIndex = -1;
-
-            cmb_cliente.Enabled = false;
-            cmb_Dia.Enabled = false;
-            cmb_Año.Enabled = false;
-            cmb_Cotizaciones.Enabled = false;
-            cmb_Mes.Enabled = false;
-            cmb_Vendedor.Enabled = false;
-
-            chk_agregarDetalles.Enabled = false;
-            groupBox1.Visible = false;
-            btn_NuevoPedido.Visible = false;
-            btn_guardar.Visible = false;
-            btn_NuevoDetalle.Visible = false;
-        }
         private void Cargar_grilla(DataTable tabla)
         {
             grd_Pedidos.Rows.Clear();
@@ -166,7 +123,6 @@ namespace TuLuz.Forums
                 grd_Detalles.Rows[i].Cells[5].Value = tabla.Rows[i]["precio"].ToString();
             }
         }
-
         private void solicita_CheckedChanged(object sender, EventArgs e)
         {
             if (chk_agregarDetalles.Checked == true)
@@ -206,8 +162,6 @@ namespace TuLuz.Forums
                     }
 
                 }
-
-   
             }
             else
             {
@@ -220,11 +174,8 @@ namespace TuLuz.Forums
                 cmb_Dia.Enabled = true;
                 cmb_Vendedor.Enabled = true;
                 txt_CondicionPago.Enabled = true;
-
             }
-
         }
-
         private void cmb_Vendedor_SelectedIndexChanged(object sender, EventArgs e)
         {
             if(cmb_Vendedor.SelectedIndex==-1)
@@ -237,7 +188,6 @@ namespace TuLuz.Forums
                 Vendedor= Empleados.Buscar_Empleados(cmb_Vendedor.SelectedValue.ToString());
                 EP.tipoDniVendedor = Vendedor.Rows[0]["tipoDoc"].ToString();
             }
-            
         }
 
         private void cmb_Mes_SelectedIndexChanged(object sender, EventArgs e)
@@ -270,12 +220,8 @@ namespace TuLuz.Forums
                         cmb_Dia.Items.Add(i);
                     }
                 }
-
-            }
-                
+            }      
         }
-
-
         private void txt_numeroCotizacion_KeyPress(object sender, KeyPressEventArgs e)
         {
             if (!char.IsControl(e.KeyChar) && !char.IsDigit(e.KeyChar))
@@ -283,23 +229,6 @@ namespace TuLuz.Forums
                 e.Handled = true;
             }
         }
-
-        private void txt_Año_KeyPress(object sender, KeyPressEventArgs e)
-        {
-            if (!char.IsControl(e.KeyChar) && !char.IsDigit(e.KeyChar))
-            {
-                e.Handled = true;
-            }
-        }
-
-        private void txt_Precio_KeyPress(object sender, KeyPressEventArgs e)
-        {
-            if (!char.IsControl(e.KeyChar) && !char.IsDigit(e.KeyChar))
-            {
-                e.Handled = true;
-            }
-        }
-
         private void grid01_CellDoubleClick(object sender, DataGridViewCellEventArgs e)
         {
             groupBox1.Visible = false;
@@ -336,15 +265,87 @@ namespace TuLuz.Forums
             btn_NuevoDetalle.Visible = false;
             btn_NuevoPedido.Visible = false;
         }
-
-        private void button1_Click(object sender, EventArgs e)
+        private void btn_NuevoDetalle_Click(object sender, EventArgs e)
         {
-            Pedido.CerrarTransaccion();
-            this.Close();
+            Es_DetallePedido _Ed = new Es_DetallePedido();
+            DataTable prod = new DataTable();
+            _Ed.numeroPedido = txt_numeroPedido.Text;
+            _Ed.codigoProducto = cmb_Productos.SelectedValue.ToString();
+            prod = Producto.Buscar_ProductoPorCodigo(cmb_Productos.SelectedValue.ToString());
+            _Ed.cantidad = txt_Cantidad.Text;
+            _Ed.precio = (int.Parse(prod.Rows[0]["precio"].ToString())*int.Parse(txt_Cantidad.Text)).ToString();
+            if (int.Parse(prod.Rows[0]["cantStock"].ToString()) >= int.Parse(txt_Cantidad.Text))
+            {
+                Detalle.Insertar(_Ed);
+                Producto.actualizarStock(int.Parse(txt_Cantidad.Text), cmb_Productos.SelectedValue.ToString());               
+                Cargar_grilla_Detalle(Detalle.RecuperarDetallesPedido(txt_numeroPedido.Text));
+            }
+            else
+            {
+                MessageBox.Show("No hay stock suficiente del producto seleccionado." + "El stock del prodcuto es de: " + prod.Rows[0]["cantStock"].ToString(), "Atencion");
+            }
+        }
+        private void txt_Cantidad_TextChanged(object sender, EventArgs e)
+        {
+            if (txt_Cantidad.Text == "")
+            {
+                txt_subTotal.Text = "0";
+
+            }
+            else
+            {
+                DataTable prod = new DataTable();
+                prod = Producto.Buscar_ProductoPorCodigo(cmb_Productos.SelectedValue.ToString());
+                txt_subTotal.Text = (int.Parse(prod.Rows[0]["precio"].ToString()) * int.Parse(txt_Cantidad.Text)).ToString();
+            }
         }
 
+        private void grd_Detalles_CellDoubleClick(object sender, DataGridViewCellEventArgs e)
+        {
+            if (MessageBox.Show("¿Desea borrar el detalle?", "ATENCION", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
+            {
+                Detalle.Borrar(txt_numeroPedido.Text,grd_Detalles.CurrentRow.Cells[1].Value.ToString());
+                grd_Detalles.Rows.Remove(grd_Detalles.CurrentRow);
+            }
+        }
 
-        private void button2_Click(object sender, EventArgs e)
+        private void Pedidos_Load(object sender, EventArgs e)
+        {
+            Pedido.IniciarTransaccion();
+            Cargar_grilla(Pedido.Todos_los_Pedidos());
+
+
+            txt_Cantidad.Enabled = false;
+            cmb_Cotizaciones.Enabled = false;
+            cmb_Año.Enabled = false;
+            cmb_Productos.Enabled = false;
+            txt_numeroPedido.Enabled = false;
+            txt_subTotal.Enabled = false;
+            txt_CondicionPago.Enabled = false;
+
+
+            cmb_cliente.SelectedIndex = -1;
+            cmb_Dia.SelectedIndex = -1;
+            cmb_Año.SelectedIndex = -1;
+            cmb_Cotizaciones.SelectedIndex = -1;
+            cmb_Mes.SelectedIndex = -1;
+            cmb_Vendedor.SelectedIndex = -1;
+
+            cmb_cliente.Enabled = false;
+            cmb_Dia.Enabled = false;
+            cmb_Año.Enabled = false;
+            cmb_Cotizaciones.Enabled = false;
+            cmb_Mes.Enabled = false;
+            cmb_Vendedor.Enabled = false;
+
+            chk_agregarDetalles.Enabled = false;
+            groupBox1.Visible = false;
+            btn_NuevoPedido.Visible = false;
+            btn_guardar.Visible = false;
+            btn_NuevoDetalle.Visible = false;
+        }
+
+        private void btn_ingresar_nuevo_pedido_Click(object sender, EventArgs e)
         {
             groupBox1.Visible = false;
             cmb_Cotizaciones.Enabled = true;
@@ -374,50 +375,10 @@ namespace TuLuz.Forums
             btn_NuevoDetalle.Visible = false;
         }
 
-        private void btn_NuevoDetalle_Click(object sender, EventArgs e)
+        private void btn_salir_Click(object sender, EventArgs e)
         {
-            Es_DetallePedido _Ed = new Es_DetallePedido();
-            DataTable prod = new DataTable();
-            _Ed.numeroPedido = txt_numeroPedido.Text;
-            _Ed.codigoProducto = cmb_Productos.SelectedValue.ToString();
-            prod = Producto.Buscar_ProductoPorCodigo(cmb_Productos.SelectedValue.ToString());
-            _Ed.cantidad = txt_Cantidad.Text;
-            _Ed.precio = (int.Parse(prod.Rows[0]["precio"].ToString())*int.Parse(txt_Cantidad.Text)).ToString();
-            if (int.Parse(prod.Rows[0]["cantStock"].ToString()) >= int.Parse(txt_Cantidad.Text))
-            {
-                Detalle.Insertar(_Ed);
-                Producto.actualizarStock(int.Parse(txt_Cantidad.Text), cmb_Productos.SelectedValue.ToString());               
-                Cargar_grilla_Detalle(Detalle.RecuperarDetallesPedido(txt_numeroPedido.Text));
-            }
-            else
-            {
-                MessageBox.Show("No hay stock suficiente del producto seleccionado." + "El stock del prodcuto es de: " + prod.Rows[0]["cantStock"].ToString(), "Atencion");
-            }
-           
-        }
-
-        private void txt_Cantidad_TextChanged(object sender, EventArgs e)
-        {
-            if (txt_Cantidad.Text == "")
-            {
-                txt_subTotal.Text = "0";
-
-            }
-            else
-            {
-                DataTable prod = new DataTable();
-                prod = Producto.Buscar_ProductoPorCodigo(cmb_Productos.SelectedValue.ToString());
-                txt_subTotal.Text = (int.Parse(prod.Rows[0]["precio"].ToString()) * int.Parse(txt_Cantidad.Text)).ToString();
-            }
-        }
-
-        private void grd_Detalles_CellDoubleClick(object sender, DataGridViewCellEventArgs e)
-        {
-            if (MessageBox.Show("¿Desea borrar el detalle?", "ATENCION", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
-            {
-                Detalle.Borrar(txt_numeroPedido.Text,grd_Detalles.CurrentRow.Cells[1].Value.ToString());
-                grd_Detalles.Rows.Remove(grd_Detalles.CurrentRow);
-            }
+            Pedido.CerrarTransaccion();
+            this.Close();
         }
     }
 }

@@ -15,8 +15,6 @@ using TuLuz.Negocio;
 using TuLuz.Negocio.EstructuraNegocios;
 
 
-
-
 namespace TuLuz.Forums.Provincias
 {
     public partial class ModificarProvincia : Form
@@ -27,9 +25,7 @@ namespace TuLuz.Forums.Provincias
         public ModificarProvincia()
         {
             InitializeComponent();
-            CerrarPanel();
-           
-            
+            CerrarPanel(); 
         }
          private void CerrarPanel ()
         {
@@ -51,16 +47,12 @@ namespace TuLuz.Forums.Provincias
                 tabla = Provincia.RecuperarProvincia_Codigo(cod);
                 txt_codProvincia.Text = tabla.Rows[0]["codProvincia"].ToString();
                 txt_NombreNuevo.Text = tabla.Rows[0]["nombre"].ToString();
-
-
             }
         }
-
         private void btn_Cancelar_Click(object sender, EventArgs e)
         {
             CerrarPanel();
         }
-
         private void btn_Buscar_Click(object sender, EventArgs e)
         {
             if (chk_Todos.Checked==true)
@@ -87,14 +79,12 @@ namespace TuLuz.Forums.Provincias
                 grid01.Rows.Add();
                 grid01.Rows[i].Cells[0].Value = tabla.Rows[i]["codProvincia"].ToString();
                 grid01.Rows[i].Cells[1].Value = tabla.Rows[i]["nombre"].ToString();
-
             }
         }
         private void btn_Limpiar_Click(object sender, EventArgs e)
         {
             txt_BuscarProvincia.Text = "";
         }
-
         private void btn_Aceptar_Click(object sender, EventArgs e)
         {
             TratamientosEspeciales tratamiento = new TratamientosEspeciales();
@@ -107,29 +97,11 @@ namespace TuLuz.Forums.Provincias
                 Provincia.Modificar(_EC);
                 Panel_ModificarProvincia.Visible = false;
             }
-            
         }
-
         private void btn_salir_Click(object sender, EventArgs e)
         {
             this.Close();
         }
-
-        private void label10_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label9_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void cmbLocalidades_SelectedIndexChanged(object sender, EventArgs e)
-        {
-
-        }
-
         private void txt_BuscarProvincia_KeyPress(object sender, KeyPressEventArgs e)
         {
             if (!char.IsControl(e.KeyChar) && !char.IsDigit(e.KeyChar))

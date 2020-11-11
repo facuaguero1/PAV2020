@@ -18,10 +18,8 @@ namespace TuLuz.Negocio
         {
             String sqlInsertar = "INSERT INTO Barrio(codBarrio,nombre,codLocalidad) VALUES(" +Barrio.codBarrio + ",'" + Barrio.nombre + "'," + Barrio.codLocalidad + ")";
             MessageBox.Show("El Barrio fue creado con exito!", "CREACIÓN EXITOSA", MessageBoxButtons.OK, MessageBoxIcon.Information);
-            _BD.Insertar(sqlInsertar);
-            
+            _BD.Insertar(sqlInsertar); 
         }
-
         public DataTable Todos_los_Barrios()
         {
             string sql = "SELECT * FROM Barrio";
@@ -36,20 +34,9 @@ namespace TuLuz.Negocio
             tabla = _BD.Consulta(sql);
             return tabla;
         }
-        public DataTable Buscar_Barrio_Nombre(string nom)
-        {
-            string sql = "SELECT * FROM Barrio WHERE nombre like '%" + nom.Trim() + "%'";
-            DataTable tabla = new DataTable();
-            tabla = _BD.Consulta(sql);
-            return tabla;
-        }
-            public DataTable RecuperarBarrio_Codigo(string cod)
+        public DataTable RecuperarBarrio_Codigo(string cod)
         {
             return _BD.Consulta("SELECT * FROM Barrio WHERE codBarrio = " + cod);
-        }
-        public DataTable RecuperarBarrio_Nombre(string nom)
-        {
-            return _BD.Consulta("SELECT * FROM Barrio WHERE nombre like '%" + nom + "%'");
         }
         public void Modificar(Es_Barrio datos)
         {
@@ -60,7 +47,6 @@ namespace TuLuz.Negocio
 
             MessageBox.Show("El Barrio fue modificado con exito!", "MODIFICACIÓN EXITOSA", MessageBoxButtons.OK, MessageBoxIcon.Information);
             _BD.Modificar(sqlUpdate);
-
         }
         public void Borrar(string cod)
         {
@@ -77,7 +63,6 @@ namespace TuLuz.Negocio
             EC.Tabla = _BD.Consulta(EC.Sql);
             return EC;
         }
-
         public EstructuraComboBox EstructuraComboEspecial(int cod)
         {
             EstructuraComboBox EC = new EstructuraComboBox();
@@ -88,6 +73,5 @@ namespace TuLuz.Negocio
             return EC;
         }
     }
-
 }
 

@@ -143,7 +143,6 @@
             this.Name = "Proveedores_Activos_Inactivos";
             this.Text = "Proveedores_Activos_Inactivos";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
-            this.Load += new System.EventHandler(this.Proveedores_Activos_Inactivos_Load);
             ((System.ComponentModel.ISupportInitialize)(this.DataTable1BindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.RepProveedores_Activos_Inactivos)).EndInit();
             this.ResumeLayout(false);

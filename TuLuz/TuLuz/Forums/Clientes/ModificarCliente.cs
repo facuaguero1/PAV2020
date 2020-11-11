@@ -27,8 +27,6 @@ namespace TuLuz.Forums.Clientes
         {
             InitializeComponent();
             CerrarPanel();
-           
-            
         }
          private void CerrarPanel ()
         {
@@ -54,12 +52,10 @@ namespace TuLuz.Forums.Clientes
                 cmb_activo.SelectedItem = tabla.Rows[0]["activo"].ToString();
             }
         }
-
         private void btn_Cancelar_Click(object sender, EventArgs e)
         {
             CerrarPanel();
         }
-
         private void btn_Buscar_Click(object sender, EventArgs e)
         {
             if (chk_activos.Checked==true)
@@ -124,17 +120,10 @@ namespace TuLuz.Forums.Clientes
                 cliente.Modificar(_EC);
                 Panel_ModificarCliente.Visible = false;
             }
-            
         }
-
         private void btn_salir_Click(object sender, EventArgs e)
         {
             this.Close();
-        }
-
-        private void chk_activos_CheckedChanged(object sender, EventArgs e)
-        {
-
         }
     }
 }
